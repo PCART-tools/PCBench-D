@@ -1,0 +1,12 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation code block
+   Changed the implementation of `apply_tickdir` from containing only a docstring to containing conditional statements, an API call, and attribute assignments.
+   The new implementation includes:
+
+   * Conditional statement: when `tickdir` is `None`, assign `mpl.rcParams[f'{self.__name__}.direction']` to it;
+   * API call: call `_api.check_in_list(['in', 'out', 'inout'], tickdir=tickdir)`;
+   * Attribute assignments: set `self._tickdir`, `self._pad`, and `self.stale` in sequence.
+# /detail
+# mode：Add method implementation (including conditional statement, call statement, and assignment statement)

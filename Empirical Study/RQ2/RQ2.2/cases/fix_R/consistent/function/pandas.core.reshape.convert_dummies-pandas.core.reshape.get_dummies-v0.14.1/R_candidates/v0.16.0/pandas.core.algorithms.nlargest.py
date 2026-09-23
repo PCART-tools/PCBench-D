@@ -1,0 +1,9 @@
+def nlargest(arr, n, take_last=False):
+    """
+    Find the indices of the n largest values of a numpy array.
+
+    Note: Fails silently with NaN.
+    """
+    sdtype = str(arr.dtype)
+    arr = arr.view(_dtype_map.get(sdtype, sdtype))
+    return nsmallest(-arr, n, take_last=take_last)

@@ -1,0 +1,11 @@
+# detail
+Number of changes: 1
+
+1. Added | `__init__` method
+   Added the constructor `__init__(self, *args, **kwargs)`.
+   This includes:
+
+   * Function call: call `warnings.warn(...)` with a deprecation-message string, `RemovedInDjango31Warning`, and `stacklevel=2`;
+   * Function call: call `super().__init__(*args, **kwargs)`.
+# /detail
+# mode：Add method

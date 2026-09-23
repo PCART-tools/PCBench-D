@@ -1,0 +1,11 @@
+@@ -49,4 +14,8 @@
+  
+-    # Unzip the zipped list of (tree, root) pairs.
+-    trees, roots = zip(*rooted_trees)
++    warnings.warn(
++        "The function `join` is deprecated and is renamed `join_trees`.\n"
++        "The ``join`` function itself will be removed in v3.4",
++        DeprecationWarning,
++        stacklevel=2,
++    )
+  

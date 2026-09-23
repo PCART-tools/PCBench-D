@@ -1,0 +1,11 @@
+# detail
+Number of changes: 1
+
+1. Removed | Conditional statement
+   Removed the `if q is not None:` conditional statement.
+   This included:
+
+   * Assignment statement: assign a deprecation-message string to `msg`;
+   * Function call: call `warnings.warn(msg, DeprecationWarning)`.
+# /detail
+# mode：Remove conditional statement (remove warning logic)

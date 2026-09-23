@@ -1,0 +1,25 @@
+    def pow(self, exponent: int | float | Series) -> Series:
+        """
+        Raise to the power of the given exponent.
+
+        Parameters
+        ----------
+        exponent
+            The exponent. Accepts Series input.
+
+        Examples
+        --------
+        >>> s = pl.Series("foo", [1, 2, 3, 4])
+        >>> s.pow(3)
+        shape: (4,)
+        Series: 'foo' [i64]
+        [
+            1
+            8
+            27
+            64
+        ]
+        """
+        if _check_for_numpy(exponent) and isinstance(exponent, np.ndarray):
+            exponent = Series(exponent)
+        return self.to_frame().select_seq(F.col(self.name).pow(exponent)).to_series()

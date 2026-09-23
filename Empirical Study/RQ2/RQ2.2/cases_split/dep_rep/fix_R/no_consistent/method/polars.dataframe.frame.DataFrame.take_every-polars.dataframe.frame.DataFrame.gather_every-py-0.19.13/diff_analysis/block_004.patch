@@ -1,0 +1,4 @@
+@@ -19,2 +13,2 @@
+         """
+-        return self.select(F.col("*").take_every(n))
++        return self.gather_every(n)

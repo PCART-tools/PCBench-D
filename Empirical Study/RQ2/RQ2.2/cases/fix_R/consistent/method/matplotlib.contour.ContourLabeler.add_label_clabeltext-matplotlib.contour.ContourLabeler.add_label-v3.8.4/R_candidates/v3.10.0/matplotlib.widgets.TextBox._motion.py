@@ -1,0 +1,8 @@
+    def _motion(self, event):
+        if self.ignore(event):
+            return
+        c = self.hovercolor if self.ax.contains(event)[0] else self.color
+        if not colors.same_color(c, self.ax.get_facecolor()):
+            self.ax.set_facecolor(c)
+            if self.drawon:
+                self.ax.get_figure(root=True).canvas.draw()

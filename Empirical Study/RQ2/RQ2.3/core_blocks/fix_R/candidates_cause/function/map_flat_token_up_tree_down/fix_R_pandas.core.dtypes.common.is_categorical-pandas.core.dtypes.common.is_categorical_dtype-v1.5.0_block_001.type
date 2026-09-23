@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Function call argument
+   Changed `find_stack_level(inspect.currentframe())` to `find_stack_level()` as the value of the `stacklevel` argument.
+# /detail
+# mode：Modify call statement (remove call argument)

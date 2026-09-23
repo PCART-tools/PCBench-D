@@ -1,0 +1,9 @@
+    def add_field(self, model, field):
+        """
+        Create a field on a model. Usually involves adding a column, but may
+        involve adding a table instead (for M2M fields).
+        """
+        # Special-case implicit M2M tables
+        if field.many_to_many and field.remote_field.through._meta.auto_created:
+            return self.create_model(field.remote_field.through)
+        self._remake_table(model, create_field=field)

@@ -1,0 +1,4 @@
+@@ -18,2 +21,3 @@
+     name = 'read-csv-%s-%s' % (fn, token)
++    bom = get_bom(fn)
+  

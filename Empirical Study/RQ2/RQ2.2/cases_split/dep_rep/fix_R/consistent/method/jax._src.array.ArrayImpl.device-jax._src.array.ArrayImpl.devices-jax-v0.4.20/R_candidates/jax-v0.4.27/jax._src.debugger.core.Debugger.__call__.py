@@ -1,0 +1,3 @@
+  def __call__(self, frames: list[DebuggerFrame], thread_id: int | None,
+      **kwargs: Any) -> None:
+    ...

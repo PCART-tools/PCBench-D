@@ -1,0 +1,9 @@
+@@ -15,7 +20,2 @@
+         """
+-        if isinstance(file, StringIO):
+-            file = BytesIO(file.getvalue().encode())
+-        elif isinstance(file, (str, Path)):
+-            file = normalise_filepath(file)
+-
+-        return cls._from_pyldf(PyLazyFrame.read_json(file))
++        return cls.deserialize(source)

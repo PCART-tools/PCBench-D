@@ -1,0 +1,30 @@
+    @doc(NDFrame.resample, **_shared_doc_kwargs)
+    def resample(
+        self,
+        rule,
+        axis=0,
+        closed: str | None = None,
+        label: str | None = None,
+        convention: str = "start",
+        kind: str | None = None,
+        loffset=None,
+        base: int | None = None,
+        on=None,
+        level=None,
+        origin: str | TimestampConvertibleTypes = "start_day",
+        offset: TimedeltaConvertibleTypes | None = None,
+    ) -> Resampler:
+        return super().resample(
+            rule=rule,
+            axis=axis,
+            closed=closed,
+            label=label,
+            convention=convention,
+            kind=kind,
+            loffset=loffset,
+            base=base,
+            on=on,
+            level=level,
+            origin=origin,
+            offset=offset,
+        )

@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Function implementation code block
+   Replaced the body of `is_safe_url`.
+   The original implementation included:
+
+   * Conditional statement: call `strip()` when `url` was not `None`;
+   * Conditional statement: return `False` when `url` was empty;
+   * Conditional statements: set `allowed_hosts` to `set()` when it was `None`, and convert it to a set when it was a string;
+   * Return statement: call `_is_safe_url()` for the original `url` and for `url` with backslashes replaced, and return the logical conjunction of the two results.
+
+   The new implementation includes:
+
+   * API call: call `warnings.warn()` to issue `RemovedInDjango40Warning`;
+   * Return statement: call and return `url_has_allowed_host_and_scheme(url, allowed_hosts, require_https)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with warning call and return-call statement)

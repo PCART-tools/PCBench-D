@@ -1,0 +1,5 @@
+@@ -53,2 +63,4 @@
+     elif len(axis) == 2 and ord == 2:
++        if x.ndim > 2:
++            raise NotImplementedError("SVD based norm not implemented for ndim > 2")
+         r = svd(x)[1][None].max(keepdims=keepdims)

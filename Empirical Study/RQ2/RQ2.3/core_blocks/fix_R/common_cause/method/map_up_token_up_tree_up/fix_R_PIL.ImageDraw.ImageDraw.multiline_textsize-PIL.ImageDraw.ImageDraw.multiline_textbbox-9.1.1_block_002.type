@@ -1,0 +1,15 @@
+# detail
+Number of changes: 2
+
+1. Modified | Assignment statement
+   Changed the expression assigned to `line_spacing` from `self.textsize("A", font=font, stroke_width=stroke_width)[1] + spacing` to `self._multiline_spacing(font, spacing, stroke_width)`.
+
+2. Added | Warning-handling context code block
+   Added a `warnings.catch_warnings()` context that suppresses `DeprecationWarning`; the original logic that iterated over `lines`, called `self.textsize(...)`, and updated `max_width` is enclosed in this context.
+   This includes:
+
+   * Context-manager statement: call `warnings.catch_warnings()`;
+   * Warning-filter call: call `warnings.filterwarnings("ignore", category=DeprecationWarning)`;
+   * Loop statement: iterate over `lines`, call `self.textsize(...)`, and update `max_width`.
+# /detail
+# mode：Modify call-assignment statement (change called function); Add context-manager statement (suppress warnings)

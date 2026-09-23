@@ -1,0 +1,11 @@
+def _hash_debug_options(hash_obj, debug_obj):
+  _hash_bool(hash_obj, debug_obj.xla_cpu_enable_fast_math)
+  _hash_bool(hash_obj, debug_obj.xla_cpu_fast_math_honor_infs)
+  _hash_bool(hash_obj, debug_obj.xla_cpu_fast_math_honor_nans)
+  _hash_bool(hash_obj, debug_obj.xla_cpu_fast_math_honor_division)
+  _hash_bool(hash_obj, debug_obj.xla_cpu_fast_math_honor_functions)
+  _hash_bool(hash_obj, debug_obj.xla_gpu_enable_fast_min_max)
+  _hash_int(hash_obj, debug_obj.xla_backend_optimization_level)
+  _hash_bool(hash_obj, debug_obj.xla_cpu_enable_xprof_traceme)
+  _hash_bool(hash_obj, debug_obj.xla_llvm_disable_expensive_passes)
+  _hash_bool(hash_obj, debug_obj.xla_test_all_input_layouts)

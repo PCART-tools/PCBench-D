@@ -1,0 +1,4 @@
+@@ -1,2 +1,2 @@
+-def use_deterministic_algorithms(mode):
++def use_deterministic_algorithms(mode, *, warn_only=False):
+     r""" Sets whether PyTorch operations must use "deterministic"

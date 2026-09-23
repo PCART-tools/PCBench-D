@@ -1,0 +1,5 @@
+@@ -1,3 +1,3 @@
+     @deprecate_renamed_function("gather_every", version="0.19.12")
+-    def take_every(self, n: int) -> DataFrame:
++    def take_every(self, n: int, offset: int = 0) -> DataFrame:
+         """

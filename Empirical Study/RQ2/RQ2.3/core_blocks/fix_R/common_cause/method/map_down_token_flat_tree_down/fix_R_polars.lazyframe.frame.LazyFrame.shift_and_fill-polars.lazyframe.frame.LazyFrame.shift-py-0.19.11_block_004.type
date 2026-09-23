@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Return statement
+   Changed the return statement from calling `self._from_pyldf(self._ldf.shift_and_fill(n, fill_value._pyexpr))` to calling `self.shift(n, fill_value=fill_value)`.
+# /detail
+# mode：Modify return-call statement (change called function)

@@ -1,0 +1,5 @@
+    def merge_used_characters(self, other):
+        for stat_key, (realpath, charset) in other.items():
+            used_characters = self.used_characters.setdefault(
+                stat_key, (realpath, set()))
+            used_characters[1].update(charset)

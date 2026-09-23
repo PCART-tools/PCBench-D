@@ -1,0 +1,1 @@
+class JaxStackTraceBeforeTransformation(Exception): pass

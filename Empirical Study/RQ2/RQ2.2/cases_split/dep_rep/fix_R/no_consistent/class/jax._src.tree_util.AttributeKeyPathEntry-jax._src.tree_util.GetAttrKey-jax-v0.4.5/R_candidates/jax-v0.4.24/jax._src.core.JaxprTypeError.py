@@ -1,0 +1,1 @@
+class JaxprTypeError(TypeError): pass

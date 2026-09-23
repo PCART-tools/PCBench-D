@@ -1,0 +1,602 @@
+[
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.gather_every",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.merge_sorted",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.with_row_count",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.map_groups",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.quantile",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.pipe",
+    "score": 0.919093851132686,
+    "rank": 6
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.clear",
+    "score": 0.9034749034749034,
+    "rank": 7
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.head",
+    "score": 0.9034749034749034,
+    "rank": 7
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.limit",
+    "score": 0.9034749034749034,
+    "rank": 7
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.std",
+    "score": 0.9034749034749034,
+    "rank": 7
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.tail",
+    "score": 0.9034749034749034,
+    "rank": 7
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.var",
+    "score": 0.9034749034749034,
+    "rank": 7
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.head",
+    "score": 0.9034749034749034,
+    "rank": 7
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.tail",
+    "score": 0.9034749034749034,
+    "rank": 7
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.inspect",
+    "score": 0.8134328358208955,
+    "rank": 15
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__contains__",
+    "score": 0.8119834710743802,
+    "rank": 16
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.set_sorted",
+    "score": 0.7955182072829132,
+    "rank": 17
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.quantile",
+    "score": 0.7952522255192879,
+    "rank": 18
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.melt",
+    "score": 0.7910863509749304,
+    "rank": 19
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__deepcopy__",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.approx_n_unique",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.cache",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.clone",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.collect_schema",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.count",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.first",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.interpolate",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.last",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.max",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.mean",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.median",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.min",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.null_count",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.reverse",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.sum",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.all",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.count",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.first",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.last",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.max",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.mean",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.median",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.min",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.n_unique",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.sum",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.in_process.InProcessQuery.fetch_blocking",
+    "score": 0.7863247863247863,
+    "rank": 20
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.slice",
+    "score": 0.7780821917808219,
+    "rank": 47
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.drop",
+    "score": 0.7768115942028986,
+    "rank": 48
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.lazy",
+    "score": 0.7713675213675214,
+    "rank": 49
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.explode",
+    "score": 0.7304347826086957,
+    "rank": 50
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.unnest",
+    "score": 0.7304347826086957,
+    "rank": 50
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.columns",
+    "score": 0.7244094488188977,
+    "rank": 52
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.dtypes",
+    "score": 0.7244094488188977,
+    "rank": 52
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.schema",
+    "score": 0.7244094488188977,
+    "rank": 52
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.width",
+    "score": 0.7244094488188977,
+    "rank": 52
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.with_context",
+    "score": 0.6987179487179487,
+    "rank": 56
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__copy__",
+    "score": 0.6912442396313364,
+    "rank": 57
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__getstate__",
+    "score": 0.6912442396313364,
+    "rank": 57
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__repr__",
+    "score": 0.6751152073732719,
+    "rank": 59
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__str__",
+    "score": 0.6751152073732719,
+    "rank": 59
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.unique",
+    "score": 0.6733668341708543,
+    "rank": 61
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.select",
+    "score": 0.6461538461538461,
+    "rank": 62
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.select_seq",
+    "score": 0.6461538461538461,
+    "rank": 62
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.with_columns",
+    "score": 0.6461538461538461,
+    "rank": 62
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.with_columns_seq",
+    "score": 0.6461538461538461,
+    "rank": 62
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.with_row_index",
+    "score": 0.6439024390243901,
+    "rank": 66
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.fill_nan",
+    "score": 0.6411764705882352,
+    "rank": 67
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__getitem__",
+    "score": 0.6349206349206349,
+    "rank": 68
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.bottom_k",
+    "score": 0.6335697399527186,
+    "rank": 69
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.top_k",
+    "score": 0.6335697399527186,
+    "rank": 69
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.drop_nulls",
+    "score": 0.6264367816091954,
+    "rank": 71
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.agg",
+    "score": 0.6146341463414633,
+    "rank": 72
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.serialize",
+    "score": 0.6049661399548532,
+    "rank": 73
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.shift",
+    "score": 0.6028708133971291,
+    "rank": 74
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.unpivot",
+    "score": 0.5929411764705881,
+    "rank": 75
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.sql",
+    "score": 0.581453634085213,
+    "rank": 76
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.group_by",
+    "score": 0.5686746987951805,
+    "rank": 77
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.fetch",
+    "score": 0.5579567779960706,
+    "rank": 78
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.len",
+    "score": 0.55470737913486,
+    "rank": 79
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.sink_ndjson",
+    "score": 0.5503080082135523,
+    "rank": 80
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame._set_sink_optimizations",
+    "score": 0.5342465753424657,
+    "rank": 81
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.map_batches",
+    "score": 0.5306930693069306,
+    "rank": 82
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.sink_ipc",
+    "score": 0.5234374999999998,
+    "rank": 83
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame._from_pyldf",
+    "score": 0.516025641025641,
+    "rank": 84
+  },
+  {
+    "api_name": "polars.lazyframe.group_by.LazyGroupBy.__init__",
+    "score": 0.4886877828054299,
+    "rank": 85
+  },
+  {
+    "api_name": "polars.lazyframe.in_process.InProcessQuery.__init__",
+    "score": 0.4886877828054299,
+    "rank": 85
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__eq__",
+    "score": 0.4821428571428572,
+    "rank": 87
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__ge__",
+    "score": 0.4821428571428572,
+    "rank": 87
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__gt__",
+    "score": 0.4821428571428572,
+    "rank": 87
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__le__",
+    "score": 0.4821428571428572,
+    "rank": 87
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__lt__",
+    "score": 0.4821428571428572,
+    "rank": 87
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__ne__",
+    "score": 0.4821428571428572,
+    "rank": 87
+  },
+  {
+    "api_name": "polars.lazyframe.in_process.InProcessQuery.cancel",
+    "score": 0.4821428571428572,
+    "rank": 87
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.rename",
+    "score": 0.47874720357941825,
+    "rank": 94
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.cast",
+    "score": 0.4422110552763817,
+    "rank": 95
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__setstate__",
+    "score": 0.4337349397590361,
+    "rank": 96
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame._comparison_error",
+    "score": 0.4337349397590361,
+    "rank": 96
+  },
+  {
+    "api_name": "polars.lazyframe.in_process.InProcessQuery.fetch",
+    "score": 0.42898550724637674,
+    "rank": 98
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.deserialize",
+    "score": 0.4189303904923598,
+    "rank": 99
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame._scan_python_function",
+    "score": 0.3968172484599588,
+    "rank": 100
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.sort",
+    "score": 0.3922734026745912,
+    "rank": 101
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__init__",
+    "score": 0.3659793814432989,
+    "rank": 102
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.sink_parquet",
+    "score": 0.35876840696117795,
+    "rank": 103
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.rolling",
+    "score": 0.34859675036927595,
+    "rank": 104
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame._fetch",
+    "score": 0.34426229508196726,
+    "rank": 105
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.__bool__",
+    "score": 0.3303571428571429,
+    "rank": 106
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.collect_async",
+    "score": 0.29617834394904463,
+    "rank": 107
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.sink_csv",
+    "score": 0.2881720430107533,
+    "rank": 108
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.group_by_dynamic",
+    "score": 0.2786304604486427,
+    "rank": 109
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.fill_null",
+    "score": 0.2781875658587991,
+    "rank": 110
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame._repr_html_",
+    "score": 0.24339207048458145,
+    "rank": 111
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.explain",
+    "score": 0.23946784922394693,
+    "rank": 112
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.filter",
+    "score": 0.23176823176823214,
+    "rank": 113
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.collect",
+    "score": 0.2199592668024445,
+    "rank": 114
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.join_asof",
+    "score": 0.1994047619047623,
+    "rank": 115
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.join",
+    "score": 0.19840000000000058,
+    "rank": 116
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.show_graph",
+    "score": 0.17156473391580662,
+    "rank": 117
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.profile",
+    "score": 0.1594650205761321,
+    "rank": 118
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.describe",
+    "score": 0.1354895104895113,
+    "rank": 119
+  },
+  {
+    "api_name": "polars.lazyframe.frame.LazyFrame.update",
+    "score": 0.10925644916540278,
+    "rank": 120
+  }
+]

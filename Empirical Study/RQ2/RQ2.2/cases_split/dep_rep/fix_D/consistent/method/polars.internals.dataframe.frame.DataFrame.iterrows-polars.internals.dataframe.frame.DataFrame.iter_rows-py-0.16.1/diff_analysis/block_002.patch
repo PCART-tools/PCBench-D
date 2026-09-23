@@ -1,0 +1,11 @@
+@@ -19,5 +19,7 @@
+  
+-        Returns
+-        -------
+-        An iterator of tuples (default) or dictionaries of row values.
++        Notes
++        -----
++        If you have ``ns``-precision temporal values you should be aware that python
++        natively only supports up to ``us``-precision; if this matters you should export
++        to a different format.
+  

@@ -1,0 +1,4 @@
+@_wraps(osp_special.erfc, module='scipy.special', update_doc=False)
+def erfc(x):
+  x, = _promote_args_inexact("erfc", x)
+  return lax.erfc(x)

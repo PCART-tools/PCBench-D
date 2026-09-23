@@ -1,0 +1,3 @@
+def bitwise_not(x: ArrayLike) -> Array:
+  r"""Elementwise NOT: :math:`\neg x`."""
+  return not_p.bind(x)

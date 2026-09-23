@@ -1,0 +1,5 @@
+    def _dt_to_pydatetime(self):
+        data = self._data.to_pylist()
+        if self._dtype.pyarrow_dtype.unit == "ns":
+            data = [None if ts is None else ts.to_pydatetime(warn=False) for ts in data]
+        return np.array(data, dtype=object)

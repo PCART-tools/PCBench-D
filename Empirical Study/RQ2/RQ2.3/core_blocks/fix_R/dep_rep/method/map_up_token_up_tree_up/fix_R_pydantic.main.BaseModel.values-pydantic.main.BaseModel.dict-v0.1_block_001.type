@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method definition and implementation code block
+   Changed `values` from a property method to a regular method with parameters and a return type annotation, and replaced its return implementation.
+   The original implementation included:
+
+   * Decorator: `@property`;
+   * Method definition: `def values(self)`;
+   * Return statement: return `dict(self)`.
+
+   The new implementation includes:
+
+   * Method definition: `def values(self, *, include: Set[str]=None, exclude: Set[str]=set()) -> Dict[str, Any>`;
+   * Return statement: return a dictionary comprehension with conditional filtering.
+# /detail
+# mode：Remove property accessor; Add parameter; Add return type annotation; Modify return statement

@@ -1,0 +1,4 @@
+def set_module(obj, mod):
+    if not isinstance(mod, str):
+        raise TypeError("The mod argument should be a string")
+    obj.__module__ = mod

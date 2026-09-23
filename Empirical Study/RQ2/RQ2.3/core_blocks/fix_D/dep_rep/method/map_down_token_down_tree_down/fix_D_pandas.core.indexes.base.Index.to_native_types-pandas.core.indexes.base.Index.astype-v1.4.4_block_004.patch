@@ -1,0 +1,12 @@
+@@ -54,3 +57,10 @@
+             try:
+-                new_values = values.astype(dtype, copy=copy)
++                if dtype == str:
++                    # GH#38607
++                    new_values = values.astype(dtype, copy=copy)
++                else:
++                    # GH#13149 specifically use astype_nansafe instead of astype
++                    new_values = astype_nansafe(values, dtype=dtype, copy=copy)
++            except IntCastingNaNError:
++                raise
+             except (TypeError, ValueError) as err:

@@ -1,0 +1,8 @@
+    def cla(self):
+        """Clear the Axes."""
+        # Act as an alias, or as the superclass implementation depending on the
+        # subclass implementation.
+        if self._subclass_uses_cla:
+            self.__clear()
+        else:
+            self.clear()

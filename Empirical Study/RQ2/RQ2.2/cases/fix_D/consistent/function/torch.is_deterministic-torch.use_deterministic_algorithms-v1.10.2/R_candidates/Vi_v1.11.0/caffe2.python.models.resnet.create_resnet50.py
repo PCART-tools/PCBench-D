@@ -1,0 +1,30 @@
+def create_resnet50(
+    model,
+    data,
+    num_input_channels,
+    num_labels,
+    label=None,
+    is_test=False,
+    no_loss=False,
+    no_bias=0,
+    conv1_kernel=7,
+    conv1_stride=2,
+    final_avg_kernel=7,
+):
+    # resnet50 is a special case for ResNeXt50-1x64d
+    return create_resnext(
+        model,
+        data,
+        num_input_channels,
+        num_labels,
+        num_layers=50,
+        num_groups=1,
+        num_width_per_group=64,
+        label=label,
+        is_test=is_test,
+        no_loss=no_loss,
+        no_bias=no_bias,
+        conv1_kernel=conv1_kernel,
+        conv1_stride=conv1_stride,
+        final_avg_kernel=final_avg_kernel,
+    )

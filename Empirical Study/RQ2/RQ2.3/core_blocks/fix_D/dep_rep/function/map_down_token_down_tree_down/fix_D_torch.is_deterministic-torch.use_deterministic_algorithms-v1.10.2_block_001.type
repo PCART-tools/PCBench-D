@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Function definition
+   Changed the parameter list of `use_deterministic_algorithms` from `mode` to `mode, *, warn_only=False`, adding the keyword-only parameter `warn_only` with a default value of `False`.
+# /detail
+# mode：Add keyword-only parameter

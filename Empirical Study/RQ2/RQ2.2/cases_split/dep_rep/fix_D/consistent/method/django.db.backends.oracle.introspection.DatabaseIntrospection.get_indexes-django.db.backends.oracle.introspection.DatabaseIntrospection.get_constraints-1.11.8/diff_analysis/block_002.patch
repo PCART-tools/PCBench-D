@@ -1,0 +1,5 @@
+@@ -9,3 +10,3 @@
+                 user_constraints.constraint_name,
+-                LOWER(cols.column_name) AS column_name,
++                LISTAGG(LOWER(cols.column_name), ',') WITHIN GROUP (ORDER BY cols.position),
+                 CASE user_constraints.constraint_type

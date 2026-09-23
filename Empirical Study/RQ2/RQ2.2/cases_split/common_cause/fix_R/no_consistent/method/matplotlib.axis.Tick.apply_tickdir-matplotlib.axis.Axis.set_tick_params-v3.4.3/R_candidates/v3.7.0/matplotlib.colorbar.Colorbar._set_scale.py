@@ -1,0 +1,27 @@
+    def _set_scale(self, scale, **kwargs):
+        """
+        Set the colorbar long axis scale.
+
+        Parameters
+        ----------
+        value : {"linear", "log", "symlog", "logit", ...} or `.ScaleBase`
+            The axis scale type to apply.
+
+        **kwargs
+            Different keyword arguments are accepted, depending on the scale.
+            See the respective class keyword arguments:
+
+            - `matplotlib.scale.LinearScale`
+            - `matplotlib.scale.LogScale`
+            - `matplotlib.scale.SymmetricalLogScale`
+            - `matplotlib.scale.LogitScale`
+            - `matplotlib.scale.FuncScale`
+
+        Notes
+        -----
+        By default, Matplotlib supports the above-mentioned scales.
+        Additionally, custom scales may be registered using
+        `matplotlib.scale.register_scale`. These scales can then also
+        be used here.
+        """
+        self._long_axis()._set_axes_scale(scale, **kwargs)

@@ -1,0 +1,51 @@
+def test_js_roots():
+    rf = lambda a, b: lambda n, mu: orth.js_roots(n, a, b, mu)
+    ef = lambda a, b: lambda n, x: orth.eval_sh_jacobi(n, a, b, x)
+    wf = lambda a, b: lambda x: (1. - x)**(a - b) * (x)**(b - 1.)
+
+    vgq = verify_gauss_quad
+    vgq(rf(-0.5, 0.25), ef(-0.5, 0.25), wf(-0.5, 0.25), 0., 1., 5)
+    vgq(rf(-0.5, 0.25), ef(-0.5, 0.25), wf(-0.5, 0.25), 0., 1.,
+        25, atol=1e-12)
+    vgq(rf(-0.5, 0.25), ef(-0.5, 0.25), wf(-0.5, 0.25), 0., 1.,
+        100, atol=1e-11)
+
+    vgq(rf(0.5, 0.5), ef(0.5, 0.5), wf(0.5, 0.5), 0., 1., 5)
+    vgq(rf(0.5, 0.5), ef(0.5, 0.5), wf(0.5, 0.5), 0., 1., 25, atol=1e-13)
+    vgq(rf(0.5, 0.5), ef(0.5, 0.5), wf(0.5, 0.5), 0., 1., 100, atol=1e-12)
+
+    vgq(rf(1, 0.5), ef(1, 0.5), wf(1, 0.5), 0., 1., 5)
+    vgq(rf(1, 0.5), ef(1, 0.5), wf(1, 0.5), 0., 1., 25, atol=1.5e-13)
+    vgq(rf(1, 0.5), ef(1, 0.5), wf(1, 0.5), 0., 1., 100, atol=1e-12)
+
+    vgq(rf(2, 0.9), ef(2, 0.9), wf(2, 0.9), 0., 1., 5)
+    vgq(rf(2, 0.9), ef(2, 0.9), wf(2, 0.9), 0., 1., 25, atol=1e-13)
+    vgq(rf(2, 0.9), ef(2, 0.9), wf(2, 0.9), 0., 1., 100, atol=1e-12)
+
+    vgq(rf(27.3, 18.24), ef(27.3, 18.24), wf(27.3, 18.24), 0., 1., 5)
+    vgq(rf(27.3, 18.24), ef(27.3, 18.24), wf(27.3, 18.24), 0., 1., 25)
+    vgq(rf(27.3, 18.24), ef(27.3, 18.24), wf(27.3, 18.24), 0., 1.,
+        100, atol=1e-13)
+
+    vgq(rf(47.1, 0.2), ef(47.1, 0.2), wf(47.1, 0.2), 0., 1., 5, atol=1e-12)
+    vgq(rf(47.1, 0.2), ef(47.1, 0.2), wf(47.1, 0.2), 0., 1., 25, atol=1e-11)
+    vgq(rf(47.1, 0.2), ef(47.1, 0.2), wf(47.1, 0.2), 0., 1., 100, atol=1e-10)
+
+    vgq(rf(68.9, 2.25), ef(68.9, 2.25), wf(68.9, 2.25), 0., 1., 5, atol=3.5e-14)
+    vgq(rf(68.9, 2.25), ef(68.9, 2.25), wf(68.9, 2.25), 0., 1., 25, atol=2e-13)
+    vgq(rf(68.9, 2.25), ef(68.9, 2.25), wf(68.9, 2.25), 0., 1.,
+        100, atol=1e-12)
+
+    x, w = orth.js_roots(5, 3, 2, False)
+    y, v, m = orth.js_roots(5, 3, 2, True)
+    assert_allclose(x, y, 1e-14, 1e-14)
+    assert_allclose(w, v, 1e-14, 1e-14)
+
+    muI, muI_err = integrate.quad(wf(3,2), 0, 1)
+    assert_allclose(m, muI, rtol=muI_err)
+
+    assert_raises(ValueError, orth.js_roots, 0, 1, 1)
+    assert_raises(ValueError, orth.js_roots, 3.3, 1, 1)
+    assert_raises(ValueError, orth.js_roots, 3, 1, 2)    # p - q <= -1
+    assert_raises(ValueError, orth.js_roots, 3, 2, -1)   # q <= 0
+    assert_raises(ValueError, orth.js_roots, 3, -2, -1)  # both

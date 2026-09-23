@@ -1,0 +1,142 @@
+    @cbook._delete_parameter("3.3", "offset_position")
+    def __init__(self,
+                 edgecolors=None,
+                 facecolors=None,
+                 linewidths=None,
+                 linestyles='solid',
+                 capstyle=None,
+                 joinstyle=None,
+                 antialiaseds=None,
+                 offsets=None,
+                 transOffset=None,
+                 norm=None,  # optional for ScalarMappable
+                 cmap=None,  # ditto
+                 pickradius=5.0,
+                 hatch=None,
+                 urls=None,
+                 offset_position='screen',
+                 zorder=1,
+                 **kwargs
+                 ):
+        """
+        Parameters
+        ----------
+        edgecolors : color or list of colors, default: :rc:`patch.edgecolor`
+            Edge color for each patch making up the collection. The special
+            value 'face' can be passed to make the edgecolor match the
+            facecolor.
+        facecolors : color or list of colors, default: :rc:`patch.facecolor`
+            Face color for each patch making up the collection.
+        linewidths : float or list of floats, default: :rc:`patch.linewidth`
+            Line width for each patch making up the collection.
+        linestyles : str or tuple or list thereof, default: 'solid'
+            Valid strings are ['solid', 'dashed', 'dashdot', 'dotted', '-',
+            '--', '-.', ':']. Dash tuples should be of the form::
+
+                (offset, onoffseq),
+
+            where *onoffseq* is an even length tuple of on and off ink lengths
+            in points. For examples, see
+            :doc:`/gallery/lines_bars_and_markers/linestyles`.
+        capstyle : str, default: :rc:`patch.capstyle`
+            Style to use for capping lines for all paths in the collection.
+            See :doc:`/gallery/lines_bars_and_markers/joinstyle` for
+            a demonstration of each of the allowed values.
+        joinstyle : str, default: :rc:`patch.joinstyle`
+            Style to use for joining lines for all paths in the collection.
+            See :doc:`/gallery/lines_bars_and_markers/joinstyle` for
+            a demonstration of each of the allowed values.
+        antialiaseds : bool or list of bool, default: :rc:`patch.antialiased`
+            Whether each pach in the collection should be drawn with
+            antialiasing.
+        offsets : (float, float) or list thereof, default: (0, 0)
+            A vector by which to translate each patch after rendering (default
+            is no translation). The translation is performed in screen (pixel)
+            coordinates (i.e. after the Artist's transform is applied).
+        transOffset : `~.transforms.Transform`, default: `.IdentityTransform`
+            A single transform which will be applied to each *offsets* vector
+            before it is used.
+        offset_position : {'screen' (default), 'data' (deprecated)}
+            If set to 'data' (deprecated), *offsets* will be treated as if it
+            is in data coordinates instead of in screen coordinates.
+        norm : `~.colors.Normalize`, optional
+            Forwarded to `.ScalarMappable`. The default of
+            ``None`` means that the first draw call will set ``vmin`` and
+            ``vmax`` using the minimum and maximum values of the data.
+        cmap : `~.colors.Colormap`, optional
+            Forwarded to `.ScalarMappable`. The default of
+            ``None`` will result in :rc:`image.cmap` being used.
+        hatch : str, optional
+            Hatching pattern to use in filled paths, if any. Valid strings are
+            ['/', '\\', '|', '-', '+', 'x', 'o', 'O', '.', '*']. See
+            :doc:`/gallery/shapes_and_collections/hatch_demo` for the meaning
+            of each hatch type.
+        pickradius : float, default: 5.0
+            If ``pickradius <= 0``, then `.Collection.contains` will return
+            ``True`` whenever the test point is inside of one of the polygons
+            formed by the control points of a Path in the Collection. On the
+            other hand, if it is greater than 0, then we instead check if the
+            test point is contained in a stroke of width ``2*pickradius``
+            following any of the Paths in the Collection.
+        urls : list of str, default: None
+            A URL for each patch to link to once drawn. Currently only works
+            for the SVG backend. See :doc:`/gallery/misc/hyperlinks_sgskip` for
+            examples.
+        zorder : float, default: 1
+            The drawing order, shared by all Patches in the Collection. See
+            :doc:`/gallery/misc/zorder_demo` for all defaults and examples.
+        """
+        artist.Artist.__init__(self)
+        cm.ScalarMappable.__init__(self, norm, cmap)
+        # list of un-scaled dash patterns
+        # this is needed scaling the dash pattern by linewidth
+        self._us_linestyles = [(0, None)]
+        # list of dash patterns
+        self._linestyles = [(0, None)]
+        # list of unbroadcast/scaled linewidths
+        self._us_lw = [0]
+        self._linewidths = [0]
+        self._is_filled = True  # May be modified by set_facecolor().
+
+        self._hatch_color = mcolors.to_rgba(mpl.rcParams['hatch.color'])
+        self.set_facecolor(facecolors)
+        self.set_edgecolor(edgecolors)
+        self.set_linewidth(linewidths)
+        self.set_linestyle(linestyles)
+        self.set_antialiased(antialiaseds)
+        self.set_pickradius(pickradius)
+        self.set_urls(urls)
+        self.set_hatch(hatch)
+        self._offset_position = "screen"
+        if offset_position != "screen":
+            self.set_offset_position(offset_position)  # emit deprecation.
+        self.set_zorder(zorder)
+
+        if capstyle:
+            self.set_capstyle(capstyle)
+        else:
+            self._capstyle = None
+
+        if joinstyle:
+            self.set_joinstyle(joinstyle)
+        else:
+            self._joinstyle = None
+
+        self._offsets = np.zeros((1, 2))
+        # save if offsets passed in were none...
+        self._offsetsNone = offsets is None
+        self._uniform_offsets = None
+        if offsets is not None:
+            offsets = np.asanyarray(offsets, float)
+            # Broadcast (2,) -> (1, 2) but nothing else.
+            if offsets.shape == (2,):
+                offsets = offsets[None, :]
+            if transOffset is not None:
+                self._offsets = offsets
+                self._transOffset = transOffset
+            else:
+                self._uniform_offsets = offsets
+
+        self._path_effects = None
+        self.update(kwargs)
+        self._paths = None

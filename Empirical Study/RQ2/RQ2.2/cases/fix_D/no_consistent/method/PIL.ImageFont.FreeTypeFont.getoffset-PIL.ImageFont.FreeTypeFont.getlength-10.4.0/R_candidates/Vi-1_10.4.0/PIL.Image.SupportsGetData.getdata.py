@@ -1,0 +1,3 @@
+    def getdata(
+        self,
+    ) -> tuple[Transform, Sequence[int]]: ...

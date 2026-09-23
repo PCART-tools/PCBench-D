@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation code block
+   Replaced the original `warnings.warn(...)` call in `device()` with a conditional branch: first call `deprecations.is_accelerated(__name__, "device-method")`; when true, raise `NotImplementedError("arr.device() is deprecated. Use arr.devices() instead.")`; otherwise, execute the original `warnings.warn(..., DeprecationWarning, stacklevel=2)` call. The subsequent `self._check_if_deleted()` call remains unchanged.
+# /detail
+# mode：Modify control-flow structure (replace direct warning call with conditional-branch handling)

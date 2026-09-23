@@ -1,0 +1,51 @@
+# detail
+Number of changes: 10
+
+1. Removed | Property
+   Removed the `inferred_type` property, which returned the string `"floating"`.
+
+2. Removed | Method
+   Removed the `astype` method.
+   This included:
+   * Assignment statement: convert `dtype` through `pandas_dtype(dtype)`;
+   * Conditional statement: test `needs_i8_conversion(dtype)` and raise `TypeError`;
+   * Conditional statement: test for an integer dtype that was not an extension-array dtype and return `Int64Index`;
+   * Return statement: call the parent-class `astype(dtype, copy=copy)`.
+
+3. Removed | Method
+   Removed `_should_fallback_to_positional`, which returned `False`.
+
+4. Removed | Method
+   Removed `_convert_slice_indexer`.
+   This included:
+   * Assertion statement: assert that `kind` belonged to `["loc", "getitem"]`;
+   * Return statement: call `self.slice_indexer(key.start, key.stop, key.step, kind=kind)`.
+
+5. Removed | Method
+   Removed `get_loc`.
+   This included:
+   * Conditional statement: test `is_bool(key)` and raise `KeyError(key)`;
+   * Conditional statement: test `is_float(key) and np.isnan(key)` and handle `self._nan_idxs`;
+   * Return statement: call the parent-class `get_loc(key, method=method, tolerance=tolerance)`.
+
+6. Removed | Method
+   Removed `_format_native_types`.
+   This included:
+   * Import statement: import `FloatArrayFormatter`;
+   * Assignment statement: create a `FloatArrayFormatter`;
+   * Return statement: call `formatter.get_result_as_array()`.
+
+7. Removed | Method
+   Removed `__contains__`.
+   This included:
+   * Call statement: call `hash(other)`;
+   * Conditional statement: return `True` when the parent-class `__contains__(other)` was true;
+   * Return statement: return `is_float(other) and np.isnan(other) and self.hasnans`.
+
+8. Removed | Method
+   Removed `_can_union_without_object_cast`, which returned `is_numeric_dtype(other.dtype)`.
+
+9. Added | Class attribute
+   Added `_dtype_validation_metadata`, assigned to `(is_float_dtype, "float")`.
+# /detail
+# mode：Remove property accessor; Remove method; Add class attribute

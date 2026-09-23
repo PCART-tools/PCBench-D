@@ -1,0 +1,45 @@
+    def _maybe_convert_timedelta(self, other):
+        """
+        Convert timedelta-like input to an integer multiple of self.freq
+
+        Parameters
+        ----------
+        other : timedelta, np.timedelta64, DateOffset, int, np.ndarray
+
+        Returns
+        -------
+        converted : int, np.ndarray[int64]
+
+        Raises
+        ------
+        IncompatibleFrequency : if the input cannot be written as a multiple
+            of self.freq.  Note IncompatibleFrequency subclasses ValueError.
+        """
+        if isinstance(
+                other, (timedelta, np.timedelta64, Tick, np.ndarray)):
+            offset = frequencies.to_offset(self.freq.rule_code)
+            if isinstance(offset, Tick):
+                # _check_timedeltalike_freq_compat will raise if incompatible
+                delta = self._data._check_timedeltalike_freq_compat(other)
+                return delta
+        elif isinstance(other, DateOffset):
+            freqstr = other.rule_code
+            base = libfrequencies.get_base_alias(freqstr)
+            if base == self.freq.rule_code:
+                return other.n
+
+            msg = DIFFERENT_FREQ.format(cls=type(self).__name__,
+                                        own_freq=self.freqstr,
+                                        other_freq=other.freqstr)
+            raise IncompatibleFrequency(msg)
+        elif is_integer(other):
+            # integer is passed to .shift via
+            # _add_datetimelike_methods basically
+            # but ufunc may pass integer to _add_delta
+            return other
+
+        # raise when input doesn't have freq
+        msg = DIFFERENT_FREQ.format(cls=type(self).__name__,
+                                    own_freq=self.freqstr,
+                                    other_freq=None)
+        raise IncompatibleFrequency(msg)

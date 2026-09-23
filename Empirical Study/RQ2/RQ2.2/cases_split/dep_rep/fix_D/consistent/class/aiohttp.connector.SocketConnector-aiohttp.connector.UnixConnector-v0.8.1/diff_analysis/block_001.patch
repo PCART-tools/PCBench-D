@@ -1,0 +1,10 @@
+@@ -5,3 +5,8 @@
+  
+-        self.path = path
++        self._path = path
++
++    @property
++    def path(self):
++        """Path to unix socket"""
++        return self._path
+  

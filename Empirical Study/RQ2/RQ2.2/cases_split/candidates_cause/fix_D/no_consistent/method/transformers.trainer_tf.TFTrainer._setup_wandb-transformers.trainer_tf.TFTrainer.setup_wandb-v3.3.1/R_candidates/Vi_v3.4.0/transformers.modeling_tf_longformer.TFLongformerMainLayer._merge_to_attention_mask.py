@@ -1,0 +1,13 @@
+    @staticmethod
+    def _merge_to_attention_mask(attention_mask: tf.Tensor, global_attention_mask: tf.Tensor):
+        # longformer self attention expects attention mask to have 0 (no attn), 1 (local attn), 2 (global attn)
+        # (global_attention_mask + 1) => 1 for local attention, 2 for global attention
+        # => final attention_mask => 0 for no attention, 1 for local attention 2 for global attention
+        if attention_mask is not None:
+            attention_mask = attention_mask * (global_attention_mask + 1)
+        else:
+            # simply use `global_attention_mask` as `attention_mask`
+            # if no `attention_mask` is given
+            attention_mask = global_attention_mask + 1
+
+        return attention_mask

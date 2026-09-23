@@ -1,0 +1,12 @@
+    def marginal_distribution(self, indices, sym):
+        sym = ImmutableMatrix([Indexed(sym, i) for i in indices])
+        _mu, _sigma = self.mu, self.sigma
+        k = self.mu.shape[0]
+        for i in range(k):
+            if i not in indices:
+                _mu = _mu.row_del(i)
+                _sigma = _sigma.col_del(i)
+                _sigma = _sigma.row_del(i)
+        return Lambda(tuple(sym), S.One/sqrt((2*pi)**(len(_mu))*det(_sigma))*exp(
+            Rational(-1, 2)*(_mu - sym).transpose()*(_sigma.inv()*\
+                (_mu - sym)))[0])

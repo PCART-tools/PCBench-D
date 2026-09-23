@@ -1,0 +1,47 @@
+    def as_matrix(self, columns=None):
+        """
+        Convert the frame to its Numpy-array representation.
+
+        .. deprecated:: 0.23.0
+            Use :meth:`DataFrame.values` instead.
+
+        Parameters
+        ----------
+        columns : list, optional, default:None
+            If None, return all columns, otherwise, returns specified columns.
+
+        Returns
+        -------
+        values : ndarray
+            If the caller is heterogeneous and contains booleans or objects,
+            the result will be of dtype=object. See Notes.
+
+        See Also
+        --------
+        DataFrame.values
+
+        Notes
+        -----
+        Return is NOT a Numpy-matrix, rather, a Numpy-array.
+
+        The dtype will be a lower-common-denominator dtype (implicit
+        upcasting); that is to say if the dtypes (even of numeric types)
+        are mixed, the one that accommodates all will be chosen. Use this
+        with care if you are not dealing with the blocks.
+
+        e.g. If the dtypes are float16 and float32, dtype will be upcast to
+        float32.  If dtypes are int32 and uint8, dtype will be upcase to
+        int32. By numpy.find_common_type convention, mixing int64 and uint64
+        will result in a float64 dtype.
+
+        This method is provided for backwards compatibility. Generally,
+        it is recommended to use '.values'.
+        """
+        warnings.warn(
+            "Method .as_matrix will be removed in a future version. "
+            "Use .values instead.",
+            FutureWarning,
+            stacklevel=2,
+        )
+        self._consolidate_inplace()
+        return self._data.as_array(transpose=self._AXIS_REVERSED, items=columns)

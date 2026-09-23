@@ -1,0 +1,2 @@
+class TerminateTrajectory(Exception):
+    pass

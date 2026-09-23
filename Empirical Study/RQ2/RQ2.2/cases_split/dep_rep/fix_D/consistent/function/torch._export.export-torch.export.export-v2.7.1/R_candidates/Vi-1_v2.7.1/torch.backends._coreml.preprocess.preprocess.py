@@ -1,0 +1,63 @@
+def preprocess(script_module: torch._C.ScriptObject, compile_spec: dict[str, tuple]):
+    spec = compile_spec["forward"]
+    (
+        input_specs,
+        output_specs,
+        backend,
+        allow_low_precision,
+        quantization_mode,
+        mlmodel_export_path,
+    ) = spec
+    mil_inputs = []
+    inputs = []
+    for index, input in enumerate(input_specs):
+        shape, dtype = input
+        name = "input_" + str(index)
+        inputs.append([name, str(dtype), str(shape)])
+        ml_type = _convert_to_mil_type(shape, dtype, name)
+        mil_inputs.append(ml_type)
+    model = torch.jit.RecursiveScriptModule._construct(script_module, lambda x: None)
+    mlmodel = ct.convert(model, inputs=mil_inputs)
+
+    if quantization_mode != CoreMLQuantizationMode.NONE:
+        quant_model_spec = quantization_utils.quantize_weights(
+            mlmodel, nbits=8, quantization_mode=quantization_mode
+        )
+        mlmodel = ct.models.MLModel(quant_model_spec)
+
+    spec = mlmodel.get_spec()
+    assert len(spec.description.output) == len(output_specs)  # type: ignore[attr-defined]
+    outputs = []
+    for index, output in enumerate(output_specs):
+        shape, dtype = output
+        name = spec.description.output[index].name  # type: ignore[attr-defined]
+        outputs.append([name, str(dtype), str(shape)])
+    mlmodel = ct.models.model.MLModel(spec)
+    print(mlmodel)
+
+    if mlmodel_export_path is not None:
+        print(f"Saving CoreML .mlmodel file to {mlmodel_export_path}")
+        mlmodel.save(mlmodel_export_path)
+
+    config = {
+        "spec_ver": str(spec.specificationVersion),  # type: ignore[attr-defined]
+        "backend": backend,
+        "allow_low_precision": str(allow_low_precision),
+    }
+    metadata = {
+        "coremltool_ver": mlmodel.user_defined_metadata[CT_METADATA_VERSION],
+        "torch_ver": mlmodel.user_defined_metadata[CT_METADATA_SOURCE],
+    }
+    coreml_compile_spec = {
+        "inputs": inputs,
+        "outputs": outputs,
+        "config": config,
+        "metadata": metadata,
+    }
+    mlmodel = spec.SerializeToString()  # type: ignore[attr-defined]
+
+    return {
+        "model": mlmodel,
+        "hash": str(hashlib.sha256(mlmodel).hexdigest()),
+        "extra": json.dumps(coreml_compile_spec),
+    }

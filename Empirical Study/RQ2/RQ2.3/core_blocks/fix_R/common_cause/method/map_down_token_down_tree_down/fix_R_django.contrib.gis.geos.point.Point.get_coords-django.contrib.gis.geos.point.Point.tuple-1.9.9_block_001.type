@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation code block
+   Changed the implementation of `get_coords` from returning `self._cs.tuple` to calling `warnings.warn(...)` and then returning `self.tuple`.
+   The original implementation included:
+
+   * Return statement: return `self._cs.tuple`.
+
+   The new implementation includes:
+
+   * API call: call `warnings.warn(...)`;
+   * Return statement: return `self.tuple`.
+# /detail
+# mode：Modify method implementation (add warning call and modify return statement)

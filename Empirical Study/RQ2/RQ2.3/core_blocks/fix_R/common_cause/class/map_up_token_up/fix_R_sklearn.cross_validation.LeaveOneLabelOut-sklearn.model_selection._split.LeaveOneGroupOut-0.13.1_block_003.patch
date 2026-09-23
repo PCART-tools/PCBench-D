@@ -1,0 +1,17 @@
+@@ -53,14 +55,5 @@
+  
+-    def __iter__(self):
+-        # We make a copy here to avoid side-effects during iteration
+-        labels = np.array(self.labels, copy=True)
+-        for i in unique(labels):
+-            test_index = np.zeros(len(labels), dtype=np.bool)
+-            test_index[labels == i] = True
+-            train_index = np.logical_not(test_index)
+-            if self.indices:
+-                ind = np.arange(len(labels))
+-                train_index = ind[train_index]
+-                test_index = ind[test_index]
+-            yield train_index, test_index
++    def _iter_test_masks(self):
++        for i in self.unique_labels:
++            yield self.labels == i

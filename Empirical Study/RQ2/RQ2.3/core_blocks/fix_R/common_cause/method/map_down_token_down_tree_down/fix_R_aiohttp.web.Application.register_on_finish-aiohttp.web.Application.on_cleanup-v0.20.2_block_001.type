@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation
+   Changed `register_on_finish` from directly inserting `(func, args, kwargs)` into `_finish_callbacks` to first issuing a `DeprecationWarning` and then appending an anonymous function that calls `func(app, *args, **kwargs)` to `on_cleanup`.
+   The original implementation included:
+
+   * List insertion: `self._finish_callbacks.insert(0, (func, args, kwargs))`.
+
+   The new implementation includes:
+
+   * Warning call: `warnings.warn("Use .on_cleanup.append() instead", DeprecationWarning)`;
+   * Callback append: `self.on_cleanup.append(lambda app: func(app, *args, **kwargs))`.
+# /detail
+# mode：Modify method implementation (add warning call and modify call statement)

@@ -1,0 +1,11 @@
+# detail
+Number of changes: 1
+
+1. Added | Conditional statement
+   Added an `if hasattr(super(), "resize")` condition and corresponding branches.
+   This includes:
+
+   * Return statement: when true, return `super().resize(w, h)`;
+   * API call: otherwise, call `_api.warn_deprecated(...)`.
+# /detail
+# mode：Add conditional statement

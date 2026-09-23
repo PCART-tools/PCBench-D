@@ -1,0 +1,21 @@
+@@ -16,17 +16,5 @@
+  
+-        # check/convert indicies here
+-        if convert:
+-            axis = self._get_axis_number(axis)
+-            indices = _maybe_convert_indices(
+-                indices, len(self._get_axis(axis)))
+-
+-        baxis = self._get_block_manager_axis(axis)
+-        if baxis == 0:
+-            labels = self._get_axis(axis)
+-            new_items = labels.take(indices)
+-            new_data = self._data.reindex_axis(new_items, indexer=indices,
+-                                               axis=baxis)
+-        else:
+-            new_data = self._data.take(indices, axis=baxis)
+-
++        new_data = self._data.take(indices,
++                                   axis=self._get_block_manager_axis(axis),
++                                   convert=True, verify=True)
+         result = self._constructor(new_data).__finalize__(self)

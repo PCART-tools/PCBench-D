@@ -1,0 +1,59 @@
+    @doc(
+        template_header,
+        create_section_header("Parameters"),
+        dedent(
+            """
+        ddof : int, default 1
+            Delta Degrees of Freedom.  The divisor used in calculations
+            is ``N - ddof``, where ``N`` represents the number of elements.\n
+        """
+        ).replace("\n", "", 1),
+        kwargs_numeric_only,
+        window_agg_numba_parameters("1.4"),
+        create_section_header("Returns"),
+        template_returns,
+        create_section_header("See Also"),
+        "numpy.std : Equivalent method for NumPy array.\n",
+        template_see_also,
+        create_section_header("Notes"),
+        dedent(
+            """
+        The default ``ddof`` of 1 used in :meth:`Series.std` is different
+        than the default ``ddof`` of 0 in :func:`numpy.std`.
+
+        A minimum of one period is required for the rolling calculation.\n
+        """
+        ).replace("\n", "", 1),
+        create_section_header("Examples"),
+        dedent(
+            """
+        >>> s = pd.Series([5, 5, 6, 7, 5, 5, 5])
+
+        >>> s.expanding(3).std()
+        0         NaN
+        1         NaN
+        2    0.577350
+        3    0.957427
+        4    0.894427
+        5    0.836660
+        6    0.786796
+        dtype: float64
+        """
+        ).replace("\n", "", 1),
+        window_method="expanding",
+        aggregation_description="standard deviation",
+        agg_method="std",
+    )
+    def std(
+        self,
+        ddof: int = 1,
+        numeric_only: bool = False,
+        engine: str | None = None,
+        engine_kwargs: dict[str, bool] | None = None,
+    ):
+        return super().std(
+            ddof=ddof,
+            numeric_only=numeric_only,
+            engine=engine,
+            engine_kwargs=engine_kwargs,
+        )

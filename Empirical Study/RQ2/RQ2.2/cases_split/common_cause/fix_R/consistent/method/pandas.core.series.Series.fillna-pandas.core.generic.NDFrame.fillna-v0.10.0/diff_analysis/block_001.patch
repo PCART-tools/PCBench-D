@@ -1,0 +1,8 @@
+@@ -29,2 +29,7 @@
+         """
++        if inplace:
++            import warnings
++            warnings.warn("Series.fillna with inplace=True  will return None"
++                          " from pandas 0.11 onward", FutureWarning)
++
+         if not self._can_hold_na:

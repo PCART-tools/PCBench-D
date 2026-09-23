@@ -1,0 +1,7 @@
+    def _onLeftButtonUp(self, evt):
+        """End measuring on an axis."""
+        x = evt.GetX()
+        y = self.figure.bbox.height - evt.GetY()
+        evt.Skip()
+        self._set_capture(False)
+        FigureCanvasBase.button_release_event(self, x, y, 1, guiEvent=evt)

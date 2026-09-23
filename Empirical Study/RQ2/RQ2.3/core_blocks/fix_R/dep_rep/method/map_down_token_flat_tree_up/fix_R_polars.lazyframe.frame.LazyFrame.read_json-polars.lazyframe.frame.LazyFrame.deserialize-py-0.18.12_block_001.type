@@ -1,0 +1,14 @@
+# detail
+Number of changes: 2
+
+1. Added | Decorator
+   Added two decorators to `read_json`.
+   This includes:
+
+   * Decorator: `@deprecate_renamed_function("deserialize", version="0.18.12")`;
+   * Decorator: `@deprecate_renamed_parameter("file", "source", version="0.18.12")`.
+
+2. Modified | Method definition
+   Changed the parameter name of `read_json` from `file` to `source`; the parameter type `str | Path | IOBase` and return type `Self` remain unchanged.
+# /detail
+# mode：Add decorator; Rename parameter

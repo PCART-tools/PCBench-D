@@ -1,0 +1,5 @@
+@@ -18,2 +19,3 @@
+         self.norm = norm
+-        self.changed()
++        if not in_init:
++            self.changed()  # Things are not set up properly yet.

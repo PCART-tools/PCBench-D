@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Return statement
+   Changed the implementation from calling `text_to_path.get_text_path(prop, clean_line, ismath=ismath)`, assigning the result to `verts, codes`, and then returning `verts, codes` to directly returning the call result in the current code block.
+# /detail
+# mode：Remove call-assignment statement; Replace return statement with return-call statement

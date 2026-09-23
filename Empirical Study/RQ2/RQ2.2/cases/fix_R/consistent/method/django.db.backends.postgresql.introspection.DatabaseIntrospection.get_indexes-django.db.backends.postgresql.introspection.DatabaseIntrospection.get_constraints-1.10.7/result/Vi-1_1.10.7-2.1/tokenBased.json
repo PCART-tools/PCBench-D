@@ -1,0 +1,322 @@
+[
+  {
+    "api_name": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_table_description",
+    "score": 0.4803921568627451,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_relations",
+    "score": 0.46987951807228917,
+    "rank": 2
+  },
+  {
+    "api_name": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_sequences",
+    "score": 0.4318181818181818,
+    "rank": 3
+  },
+  {
+    "api_name": "django.db.backends.postgresql.base.DatabaseWrapper.get_connection_params",
+    "score": 0.4057971014492754,
+    "rank": 4
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.sequence_reset_by_name_sql",
+    "score": 0.37623762376237624,
+    "rank": 5
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.explain_query_prefix",
+    "score": 0.35714285714285715,
+    "rank": 6
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.sql_flush",
+    "score": 0.3565217391304348,
+    "rank": 7
+  },
+  {
+    "api_name": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_field_type",
+    "score": 0.3548387096774194,
+    "rank": 8
+  },
+  {
+    "api_name": "django.db.backends.postgresql.base.DatabaseWrapper.get_new_connection",
+    "score": 0.34375,
+    "rank": 9
+  },
+  {
+    "api_name": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_table_list",
+    "score": 0.32967032967032966,
+    "rank": 10
+  },
+  {
+    "api_name": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_constraints",
+    "score": 0.32335329341317365,
+    "rank": 11
+  },
+  {
+    "api_name": "django.db.backends.postgresql.schema.DatabaseSchemaEditor._create_like_index_sql",
+    "score": 0.3185840707964602,
+    "rank": 12
+  },
+  {
+    "api_name": "django.db.backends.postgresql.base.DatabaseWrapper._nodb_connection",
+    "score": 0.3181818181818182,
+    "rank": 13
+  },
+  {
+    "api_name": "django.db.backends.postgresql.creation.DatabaseCreation._get_database_create_suffix",
+    "score": 0.3125,
+    "rank": 14
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.subtract_temporals",
+    "score": 0.3125,
+    "rank": 14
+  },
+  {
+    "api_name": "django.db.backends.postgresql.schema.DatabaseSchemaEditor._field_indexes_sql",
+    "score": 0.3118279569892473,
+    "rank": 16
+  },
+  {
+    "api_name": "django.db.backends.postgresql.creation.DatabaseCreation._clone_test_db",
+    "score": 0.30985915492957744,
+    "rank": 17
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.lookup_cast",
+    "score": 0.2831858407079646,
+    "rank": 18
+  },
+  {
+    "api_name": "django.db.backends.postgresql.introspection.DatabaseIntrospection.get_key_columns",
+    "score": 0.2808988764044944,
+    "rank": 19
+  },
+  {
+    "api_name": "django.db.backends.postgresql.creation.DatabaseCreation._execute_create_test_db",
+    "score": 0.26851851851851855,
+    "rank": 20
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.window_frame_range_start_end",
+    "score": 0.2647058823529412,
+    "rank": 21
+  },
+  {
+    "api_name": "django.db.backends.postgresql.base.DatabaseWrapper.create_cursor",
+    "score": 0.2553191489361702,
+    "rank": 22
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.bulk_insert_sql",
+    "score": 0.2553191489361702,
+    "rank": 22
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.unification_cast_sql",
+    "score": 0.25510204081632654,
+    "rank": 24
+  },
+  {
+    "api_name": "django.db.backends.postgresql.base.DatabaseWrapper.ensure_timezone",
+    "score": 0.2549019607843137,
+    "rank": 25
+  },
+  {
+    "api_name": "django.db.backends.postgresql.creation.DatabaseCreation.sql_table_creation_suffix",
+    "score": 0.24731182795698925,
+    "rank": 26
+  },
+  {
+    "api_name": "django.db.backends.postgresql.schema.DatabaseSchemaEditor._alter_column_type_sql",
+    "score": 0.2388888888888889,
+    "rank": 27
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.distinct_sql",
+    "score": 0.23655913978494625,
+    "rank": 28
+  },
+  {
+    "api_name": "django.db.backends.postgresql.schema.DatabaseSchemaEditor._alter_field",
+    "score": 0.2182741116751269,
+    "rank": 29
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.quote_name",
+    "score": 0.2,
+    "rank": 30
+  },
+  {
+    "api_name": "django.db.backends.postgresql.client.DatabaseClient.runshell_db",
+    "score": 0.1963470319634703,
+    "rank": 31
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.tablespace_sql",
+    "score": 0.18681318681318682,
+    "rank": 32
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.sequence_reset_sql",
+    "score": 0.1834862385321101,
+    "rank": 33
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations._convert_field_to_tz",
+    "score": 0.17777777777777778,
+    "rank": 34
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.datetime_extract_sql",
+    "score": 0.17391304347826086,
+    "rank": 35
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.datetime_trunc_sql",
+    "score": 0.17391304347826086,
+    "rank": 35
+  },
+  {
+    "api_name": "django.db.backends.postgresql.base.DatabaseWrapper.is_usable",
+    "score": 0.16666666666666666,
+    "rank": 37
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.datetime_cast_date_sql",
+    "score": 0.16666666666666666,
+    "rank": 37
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.datetime_cast_time_sql",
+    "score": 0.16666666666666666,
+    "rank": 37
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.date_extract_sql",
+    "score": 0.16129032258064516,
+    "rank": 40
+  },
+  {
+    "api_name": "django.db.backends.postgresql.base.DatabaseWrapper.init_connection_state",
+    "score": 0.15306122448979592,
+    "rank": 41
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.fetch_returned_insert_ids",
+    "score": 0.14606741573033707,
+    "rank": 42
+  },
+  {
+    "api_name": "django.db.backends.postgresql.base.DatabaseWrapper.check_constraints",
+    "score": 0.14130434782608695,
+    "rank": 43
+  },
+  {
+    "api_name": "django.db.backends.postgresql.base.DatabaseWrapper.chunked_cursor",
+    "score": 0.14130434782608695,
+    "rank": 43
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.last_executed_query",
+    "score": 0.1368421052631579,
+    "rank": 45
+  },
+  {
+    "api_name": "django.db.backends.postgresql.creation.DatabaseCreation._quote_name",
+    "score": 0.12790697674418605,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.postgresql.schema.DatabaseSchemaEditor.quote_value",
+    "score": 0.12790697674418605,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.adapt_ipaddressfield_value",
+    "score": 0.12087912087912088,
+    "rank": 48
+  },
+  {
+    "api_name": "django.db.backends.postgresql.client.DatabaseClient.runshell",
+    "score": 0.11904761904761904,
+    "rank": 49
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.date_trunc_sql",
+    "score": 0.1111111111111111,
+    "rank": 50
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.time_trunc_sql",
+    "score": 0.1111111111111111,
+    "rank": 50
+  },
+  {
+    "api_name": "django.db.backends.postgresql.base.DatabaseWrapper._set_autocommit",
+    "score": 0.10344827586206896,
+    "rank": 52
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.prepare_sql_script",
+    "score": 0.09090909090909091,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.backends.postgresql.base.DatabaseWrapper.pg_version",
+    "score": 0.0898876404494382,
+    "rank": 54
+  },
+  {
+    "api_name": "django.db.backends.postgresql.features.DatabaseFeatures.is_postgresql_9_5",
+    "score": 0.08888888888888889,
+    "rank": 55
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.adapt_datefield_value",
+    "score": 0.07954545454545454,
+    "rank": 56
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.adapt_datetimefield_value",
+    "score": 0.07954545454545454,
+    "rank": 56
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.adapt_timefield_value",
+    "score": 0.07954545454545454,
+    "rank": 56
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.prep_for_iexact_query",
+    "score": 0.07954545454545454,
+    "rank": 56
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.deferrable_sql",
+    "score": 0.07058823529411765,
+    "rank": 60
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.max_name_length",
+    "score": 0.06818181818181818,
+    "rank": 61
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.set_time_zone_sql",
+    "score": 0.06818181818181818,
+    "rank": 61
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.return_insert_id",
+    "score": 0.06666666666666667,
+    "rank": 63
+  },
+  {
+    "api_name": "django.db.backends.postgresql.operations.DatabaseOperations.no_limit_value",
+    "score": 0.056179775280898875,
+    "rank": 64
+  }
+]

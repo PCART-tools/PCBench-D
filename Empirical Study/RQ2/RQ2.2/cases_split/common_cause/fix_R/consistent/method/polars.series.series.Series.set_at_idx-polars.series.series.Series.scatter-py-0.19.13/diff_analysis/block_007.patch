@@ -1,0 +1,47 @@
+@@ -27,44 +33,4 @@
+             Integers representing the index locations.
+-        value
+-            replacement values.
+-
+-        Returns
+-        -------
+-        Series
+-            The mutated series.
+-
+-        Notes
+-        -----
+-        Use of this function is frequently an anti-pattern, as it can
+-        block optimisation (predicate pushdown, etc). Consider using
+-        `pl.when(predicate).then(value).otherwise(self)` instead.
+-
+-        Examples
+-        --------
+-        >>> s = pl.Series("a", [1, 2, 3])
+-        >>> s.set_at_idx(1, 10)
+-        shape: (3,)
+-        Series: 'a' [i64]
+-        [
+-                1
+-                10
+-                3
+-        ]
+-
+-        It is better to implement this as follows:
+-
+-        >>> s.to_frame().with_row_count("row_nr").select(
+-        ...     pl.when(pl.col("row_nr") == 1).then(10).otherwise(pl.col("a"))
+-        ... )
+-        shape: (3, 1)
+-        ┌─────────┐
+-        │ literal │
+-        │ ---     │
+-        │ i64     │
+-        ╞═════════╡
+-        │ 1       │
+-        │ 10      │
+-        │ 3       │
+-        └─────────┘
+-
++        values
++            Replacement values.
+         """

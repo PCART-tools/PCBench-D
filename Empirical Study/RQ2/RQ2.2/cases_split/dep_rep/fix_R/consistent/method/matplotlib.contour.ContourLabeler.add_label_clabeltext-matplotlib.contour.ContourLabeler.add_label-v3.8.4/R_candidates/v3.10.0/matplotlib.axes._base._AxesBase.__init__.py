@@ -1,0 +1,167 @@
+    def __init__(self, fig,
+                 *args,
+                 facecolor=None,  # defaults to rc axes.facecolor
+                 frameon=True,
+                 sharex=None,  # use Axes instance's xaxis info
+                 sharey=None,  # use Axes instance's yaxis info
+                 label='',
+                 xscale=None,
+                 yscale=None,
+                 box_aspect=None,
+                 forward_navigation_events="auto",
+                 **kwargs
+                 ):
+        """
+        Build an Axes in a figure.
+
+        Parameters
+        ----------
+        fig : `~matplotlib.figure.Figure`
+            The Axes is built in the `.Figure` *fig*.
+
+        *args
+            ``*args`` can be a single ``(left, bottom, width, height)``
+            rectangle or a single `.Bbox`.  This specifies the rectangle (in
+            figure coordinates) where the Axes is positioned.
+
+            ``*args`` can also consist of three numbers or a single three-digit
+            number; in the latter case, the digits are considered as
+            independent numbers.  The numbers are interpreted as ``(nrows,
+            ncols, index)``: ``(nrows, ncols)`` specifies the size of an array
+            of subplots, and ``index`` is the 1-based index of the subplot
+            being created.  Finally, ``*args`` can also directly be a
+            `.SubplotSpec` instance.
+
+        sharex, sharey : `~matplotlib.axes.Axes`, optional
+            The x- or y-`~.matplotlib.axis` is shared with the x- or y-axis in
+            the input `~.axes.Axes`.  Note that it is not possible to unshare
+            axes.
+
+        frameon : bool, default: True
+            Whether the Axes frame is visible.
+
+        box_aspect : float, optional
+            Set a fixed aspect for the Axes box, i.e. the ratio of height to
+            width. See `~.axes.Axes.set_box_aspect` for details.
+
+        forward_navigation_events : bool or "auto", default: "auto"
+            Control whether pan/zoom events are passed through to Axes below
+            this one. "auto" is *True* for axes with an invisible patch and
+            *False* otherwise.
+
+        **kwargs
+            Other optional keyword arguments:
+
+            %(Axes:kwdoc)s
+
+        Returns
+        -------
+        `~.axes.Axes`
+            The new `~.axes.Axes` object.
+        """
+
+        super().__init__()
+        if "rect" in kwargs:
+            if args:
+                raise TypeError(
+                    "'rect' cannot be used together with positional arguments")
+            rect = kwargs.pop("rect")
+            _api.check_isinstance((mtransforms.Bbox, Iterable), rect=rect)
+            args = (rect,)
+        subplotspec = None
+        if len(args) == 1 and isinstance(args[0], mtransforms.Bbox):
+            self._position = args[0]
+        elif len(args) == 1 and np.iterable(args[0]):
+            self._position = mtransforms.Bbox.from_bounds(*args[0])
+        else:
+            self._position = self._originalPosition = mtransforms.Bbox.unit()
+            subplotspec = SubplotSpec._from_subplot_args(fig, args)
+        if self._position.width < 0 or self._position.height < 0:
+            raise ValueError('Width and height specified must be non-negative')
+        self._originalPosition = self._position.frozen()
+        self.axes = self
+        self._aspect = 'auto'
+        self._adjustable = 'box'
+        self._anchor = 'C'
+        self._stale_viewlims = dict.fromkeys(self._axis_names, False)
+        self._forward_navigation_events = forward_navigation_events
+        self._sharex = sharex
+        self._sharey = sharey
+        self.set_label(label)
+        self.set_figure(fig)
+        # The subplotspec needs to be set after the figure (so that
+        # figure-level subplotpars are taken into account), but the figure
+        # needs to be set after self._position is initialized.
+        if subplotspec:
+            self.set_subplotspec(subplotspec)
+        else:
+            self._subplotspec = None
+        self.set_box_aspect(box_aspect)
+        self._axes_locator = None  # Optionally set via update(kwargs).
+
+        self._children = []
+
+        # placeholder for any colorbars added that use this Axes.
+        # (see colorbar.py):
+        self._colorbars = []
+        self.spines = mspines.Spines.from_dict(self._gen_axes_spines())
+
+        # this call may differ for non-sep axes, e.g., polar
+        self._init_axis()
+        if facecolor is None:
+            facecolor = mpl.rcParams['axes.facecolor']
+        self._facecolor = facecolor
+        self._frameon = frameon
+        self.set_axisbelow(mpl.rcParams['axes.axisbelow'])
+
+        self._rasterization_zorder = None
+        self.clear()
+
+        # funcs used to format x and y - fall back on major formatters
+        self.fmt_xdata = None
+        self.fmt_ydata = None
+
+        self.set_navigate(True)
+        self.set_navigate_mode(None)
+
+        if xscale:
+            self.set_xscale(xscale)
+        if yscale:
+            self.set_yscale(yscale)
+
+        self._internal_update(kwargs)
+
+        for name, axis in self._axis_map.items():
+            axis.callbacks._connect_picklable(
+                'units', self._unit_change_handler(name))
+
+        rcParams = mpl.rcParams
+        self.tick_params(
+            top=rcParams['xtick.top'] and rcParams['xtick.minor.top'],
+            bottom=rcParams['xtick.bottom'] and rcParams['xtick.minor.bottom'],
+            labeltop=(rcParams['xtick.labeltop'] and
+                      rcParams['xtick.minor.top']),
+            labelbottom=(rcParams['xtick.labelbottom'] and
+                         rcParams['xtick.minor.bottom']),
+            left=rcParams['ytick.left'] and rcParams['ytick.minor.left'],
+            right=rcParams['ytick.right'] and rcParams['ytick.minor.right'],
+            labelleft=(rcParams['ytick.labelleft'] and
+                       rcParams['ytick.minor.left']),
+            labelright=(rcParams['ytick.labelright'] and
+                        rcParams['ytick.minor.right']),
+            which='minor')
+
+        self.tick_params(
+            top=rcParams['xtick.top'] and rcParams['xtick.major.top'],
+            bottom=rcParams['xtick.bottom'] and rcParams['xtick.major.bottom'],
+            labeltop=(rcParams['xtick.labeltop'] and
+                      rcParams['xtick.major.top']),
+            labelbottom=(rcParams['xtick.labelbottom'] and
+                         rcParams['xtick.major.bottom']),
+            left=rcParams['ytick.left'] and rcParams['ytick.major.left'],
+            right=rcParams['ytick.right'] and rcParams['ytick.major.right'],
+            labelleft=(rcParams['ytick.labelleft'] and
+                       rcParams['ytick.major.left']),
+            labelright=(rcParams['ytick.labelright'] and
+                        rcParams['ytick.major.right']),
+            which='major')

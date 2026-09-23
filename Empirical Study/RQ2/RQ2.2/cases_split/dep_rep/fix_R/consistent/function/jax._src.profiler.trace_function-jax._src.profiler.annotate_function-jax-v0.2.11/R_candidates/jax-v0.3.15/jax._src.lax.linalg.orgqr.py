@@ -1,0 +1,14 @@
+def orgqr(a, taus):
+  """Product of elementary Householder reflectors.
+
+  Args:
+    a: A matrix with shape ``[..., m, n]``, whose lower triangle contains
+      elementary Householder reflectors.
+    taus: A vector with shape ``[..., k]``, where ``k < min(m, n)``, containing
+      the scalar factors of the elementary Householder reflectors.
+
+  Returns:
+    A batch of orthogonal (unitary) matrices with the same shape as ``a``,
+    containing the products of the elementary Householder reflectors.
+  """
+  return orgqr_p.bind(a, taus)

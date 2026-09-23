@@ -1,0 +1,29 @@
+    def _prep_values(self, values=None, kill_inf=True):
+
+        if values is None:
+            values = getattr(self._selected_obj, 'values', self._selected_obj)
+
+        # GH #12373 : rolling functions error on float32 data
+        # make sure the data is coerced to float64
+        if is_float_dtype(values.dtype):
+            values = _ensure_float64(values)
+        elif is_integer_dtype(values.dtype):
+            values = _ensure_float64(values)
+        elif needs_i8_conversion(values.dtype):
+            raise NotImplementedError("ops for {action} for this "
+                                      "dtype {dtype} are not "
+                                      "implemented".format(
+                                          action=self._window_type,
+                                          dtype=values.dtype))
+        else:
+            try:
+                values = _ensure_float64(values)
+            except (ValueError, TypeError):
+                raise TypeError("cannot handle this type -> {0}"
+                                "".format(values.dtype))
+
+        if kill_inf:
+            values = values.copy()
+            values[np.isinf(values)] = np.NaN
+
+        return values

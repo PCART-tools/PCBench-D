@@ -1,0 +1,11 @@
+# detail
+Number of changes: 1
+
+1. Added | Exception-handling structure
+   Added a `try-finally` structure that calls `self._stream.resume_stream()` before the existing buffer-waiting, buffer-return, and EOF-raising logic, and calls `self._stream.pause_stream()` in the `finally` block; the original logic is enclosed in the `try` block.
+   This includes:
+
+   * Call statement: call `self._stream.resume_stream()`;
+   * Try-finally statement: the `try` block contains the original waiting, return, and raising logic, while the `finally` block calls `self._stream.pause_stream()`.
+# /detail
+# mode：Add exception-handling structure (try-finally)

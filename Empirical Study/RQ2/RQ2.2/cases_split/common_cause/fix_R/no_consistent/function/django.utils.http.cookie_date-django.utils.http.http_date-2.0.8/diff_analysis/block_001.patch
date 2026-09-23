@@ -1,0 +1,8 @@
+@@ -10,2 +10,7 @@
+     """
++    warnings.warn(
++        'cookie_date() is deprecated in favor of http_date(), which follows '
++        'the format of the latest RFC.',
++        RemovedInDjango30Warning, stacklevel=2,
++    )
+     rfcdate = formatdate(epoch_seconds)

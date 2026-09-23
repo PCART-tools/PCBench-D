@@ -1,0 +1,6 @@
+@@ -94,4 +27,2 @@
+         """
+-        exprs = parse_as_list_of_expressions(by, *more_by)
+-        lgb = self._ldf.groupby(exprs, maintain_order)
+-        return LazyGroupBy(lgb)
++        return self.group_by(by, *more_by, maintain_order=maintain_order)

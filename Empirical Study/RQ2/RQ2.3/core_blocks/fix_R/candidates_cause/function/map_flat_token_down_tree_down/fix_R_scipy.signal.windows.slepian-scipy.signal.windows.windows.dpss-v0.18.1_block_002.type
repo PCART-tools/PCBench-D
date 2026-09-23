@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original length checks, array returns, and even-length extension logic based on `M` and `sym` with calls to the helper functions `_len_guards(M)` and `_extend(M, sym)`.
+   The original implementation included:
+
+   * Conditional statement: when `M < 1`, return `np.array([])`;
+   * Conditional statement: when `M == 1`, return `np.ones(1, 'd')`;
+   * Assignment statement: compute `odd = M % 2`;
+   * Conditional statement: when `not sym and not odd`, execute `M = M + 1`.
+
+   The new implementation includes:
+
+   * Conditional statement: when `_len_guards(M)` is true, return `np.ones(M)`;
+   * Assignment statement: update `M` through `_extend(M, sym)` and assign the other result to `needs_trunc`.
+# /detail
+# mode：Modify implementation block (replace inline conditional logic with helper-function call)

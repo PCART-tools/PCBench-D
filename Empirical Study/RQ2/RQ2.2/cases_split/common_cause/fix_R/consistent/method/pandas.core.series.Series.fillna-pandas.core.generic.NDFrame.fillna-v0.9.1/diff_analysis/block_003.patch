@@ -1,0 +1,5 @@
+@@ -33,2 +33,4 @@
+         if value is not None:
++            if method is not None:
++                raise ValueError('Cannot specify both a fill value and method')
+             result = self.copy() if not inplace else self

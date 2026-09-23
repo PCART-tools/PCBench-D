@@ -1,0 +1,5 @@
+@@ -74,3 +77,3 @@
+         def get_weight(edge_dict):
+-            return min([eattr.get(weight,1) for eattr in edge_dict.values()])
++            return min(eattr.get(weight, 1) for eattr in edge_dict.values())
+     else:

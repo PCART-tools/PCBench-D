@@ -1,0 +1,3 @@
+    def __setitem__(self, tag: int, value: Any) -> None:
+        for legacy_api in (False, True):
+            self._setitem(tag, value, legacy_api)

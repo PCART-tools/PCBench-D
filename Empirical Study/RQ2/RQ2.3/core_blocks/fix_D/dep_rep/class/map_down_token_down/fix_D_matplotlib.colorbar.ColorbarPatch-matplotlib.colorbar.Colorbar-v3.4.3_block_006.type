@@ -1,0 +1,134 @@
+# detail
+Number of changes: 16
+
+1. Removed | Method definition
+   Removed the `update_bruteforce(self, mappable)` method.
+   This included:
+   * Decorator: `@_api.deprecated("3.3", alternative="update_normal")`;
+   * Statements: clear `self.ax` and reset `locator` and `formatter`;
+   * Loop statement: iterate over `self.ax.spines.values()` and hide each spine;
+   * Assignment statements: recreate `outline`, `patch`, `solids`, and `lines`;
+   * Method calls: call `update_normal(mappable)` and `draw_all()`;
+   * Conditional statement: call `add_lines(CS)` when `self.mappable` is an unfilled `contour.ContourSet`.
+
+2. Added | Method definition
+   Added the `draw_all(self)` method.
+   This includes:
+   * Conditional statements: configure minor ticks based on `self.orientation` and `rcParams`;
+   * Method calls: set the label and tick positions of the long axis and clear ticks on the short axis;
+   * Method calls: call `_process_values()`, `_mesh()`, `_do_extends(extendlen)`, and `update_ticks()`;
+   * Assignment statements: set `self.vmin` and `self.vmax`;
+   * Conditional statements: set `xlim` and `ylim` based on the orientation;
+   * Conditional statement: when `self.filled` is true, compute indices and call `_add_solids(...)`.
+
+3. Added | Method definition
+   Added the `_add_solids(self, X, Y, C)` method.
+   This includes:
+   * Conditional statement: remove an existing `self.solids` object;
+   * Loop statement: iterate over and remove objects in `self.solids_patches`;
+   * Assignment statement: read `self.mappable`;
+   * Conditional statement: depending on the `ContourSet` and hatching state, call `_add_solids_patches(...)` or create a `pcolormesh`;
+   * Conditional statement: set rasterization based on `drawedges` and the length of `_y`;
+   * Method call: set the segments of `self.dividers`.
+
+4. Added | Method definition
+   Added the `_add_solids_patches(self, X, Y, C, mappable)` method.
+   This includes:
+   * Assignment statements: generate `hatches` and `patches`;
+   * Loop statement: iterate over intervals in `X`, construct `xy`, create a `PathPatch`, and add the patch;
+   * Assignment statement: assign the generated patch list to `self.solids_patches`.
+
+5. Added | Method definition
+   Added the `_do_extends(self, extendlen)` method.
+   This includes:
+   * Assignment statements: compute `bot` and `top`;
+   * Conditional statement: construct `xyout` based on `self.extendrect`;
+   * Conditional statement: reverse `xyout` for a horizontal orientation;
+   * Method call: set the coordinates of `self.outline`;
+   * Conditional statement: return when `self.filled` is false;
+   * Conditional statement: set `hatches` based on the `ContourSet` and hatching state;
+   * Conditional statement: create and add a lower patch when a lower extension exists;
+   * Conditional statement: create and add an upper patch when an upper extension exists.
+
+6. Added | Method definition
+   Added the `add_lines(self, *args, **kwargs)` method.
+   This includes:
+   * Assignment statement: parse arguments using `_api.select_matching_signature(...)`;
+   * Conditional statement: when the arguments contain `CS`, validate the `ContourSet` and recursively call `add_lines(...)`;
+   * Assignment statements: locate levels, compute filtering conditions, and filter `y`, `colors`, and `linewidths`;
+   * Assignment statements: generate a mesh grid and `xy`;
+   * Assignment statement: create a `collections.LineCollection`;
+   * Conditional statement: remove existing lines according to `erase`;
+   * Method call: append the line collection;
+   * Assignment statement: construct clip-path coordinates;
+   * Conditional statement: transpose `xy` for a horizontal orientation;
+   * Method calls: set the clip path and add the collection;
+   * Assignment statement: set `self.stale = True`.
+
+7. Added | Method definition
+   Added the `update_ticks(self)` method.
+   This includes:
+   * Method call: call `_get_ticker_locator_formatter()`;
+   * Method calls: set the major locator, minor locator, and major formatter of the long axis.
+
+8. Added | Method definition
+   Added the `_get_ticker_locator_formatter(self)` method.
+   This includes:
+   * Assignment statements: read `self.locator`, `self.formatter`, and `self.minorlocator`;
+   * Conditional statements: set the locator depending on whether `self.norm` is a `BoundaryNorm`, whether `self.boundaries` is present, or other conditions;
+   * Conditional statement: set `ticker.NullLocator()` when `minorlocator` is absent;
+   * Conditional statement: read the long-axis formatter when `formatter` is absent;
+   * Assignment statements: write back `self.locator`, `self.formatter`, and `self.minorlocator`;
+   * Method call: record a debug log message.
+
+9. Added | Method definition
+   Added the `set_ticks(self, ticks, update_ticks=True, labels=None, *, minor=False, **kwargs)` method.
+   This includes:
+   * Decorator: `@_api.delete_parameter("3.5", "update_ticks")`;
+   * Conditional statement: when `ticks` is iterable, call `set_ticks(...)` on the long axis and update `self.locator`;
+   * Conditional statement: otherwise, use `ticks` as the locator and set the major locator;
+   * Assignment statement: set `self.stale = True`.
+
+10. Added | Method definition
+    Added the `get_ticks(self, minor=False)` method.
+    This includes:
+    * Conditional statement: return the minor tick locations of the long axis when `minor` is true;
+    * Conditional statement: otherwise, return the major tick locations of the long axis.
+
+11. Added | Method definition
+    Added the `set_ticklabels(self, ticklabels, update_ticks=True, *, minor=False, **kwargs)` method.
+    This includes:
+    * Decorator: `@_api.delete_parameter("3.5", "update_ticks")`;
+    * Method call: call `set_ticklabels(ticklabels, minor=minor, **kwargs)` on the long axis.
+
+12. Added | Method definition
+    Added the `minorticks_on(self)` method.
+    This includes:
+    * Method call: call `self.ax.minorticks_on()`;
+    * Assignment statement: read the minor locator from the long axis into `self.minorlocator`;
+    * Method call: set the short-axis minor locator to `ticker.NullLocator()`.
+
+13. Added | Method definition
+    Added the `minorticks_off(self)` method.
+    This includes:
+    * Assignment statement: set `self.minorlocator` to `ticker.NullLocator()`;
+    * Method call: set the long-axis minor locator to `self.minorlocator`.
+
+14. Added | Method definition
+    Added the `set_label(self, label, *, loc=None, **kwargs)` method.
+    This includes:
+    * Conditional statement: call `self.ax.set_ylabel(...)` or `self.ax.set_xlabel(...)` according to `self.orientation`;
+    * Assignment statement: set `self.stale = True`.
+
+15. Added | Method definition
+    Added the `set_alpha(self, alpha)` method.
+    This includes:
+    * Assignment statement: set `self.alpha` to `None` when `alpha` is an `np.ndarray`; otherwise, set it to `alpha`.
+
+16. Added | Method definition
+    Added the `_set_scale(self, scale, **kwargs)` method.
+    This includes:
+    * Conditional statement: call `self.ax.set_yscale(...)` or `self.ax.set_xscale(...)` according to `self.orientation`;
+    * Conditional statement: set `self.__scale` to `scale.name` when `scale` is an `mscale.ScaleBase`; otherwise, set it to `scale`.
+# /detail
+# mode：Remove method; Add method

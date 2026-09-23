@@ -1,0 +1,11 @@
+@@ -15,9 +20,2 @@
+         """
+-        if not isinstance(self.index, MultiIndex):
+-            raise TypeError('can only sort by level with a hierarchical index')
+-
+-        new_index, indexer = self.index.sortlevel(level, ascending=ascending,
+-                                                 sort_remaining=sort_remaining)
+-        new_values = self.values.take(indexer)
+-        return self._constructor(new_values,
+-                                 index=new_index).__finalize__(self)
++        return self.sort_index(level=level, ascending=ascending, sort_remaining=sort_remaining)

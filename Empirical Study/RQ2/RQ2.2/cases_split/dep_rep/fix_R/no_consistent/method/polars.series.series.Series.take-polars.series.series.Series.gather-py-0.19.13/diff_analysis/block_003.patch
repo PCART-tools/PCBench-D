@@ -1,0 +1,15 @@
+@@ -10,14 +14,2 @@
+             Index location used for selection.
+-
+-        Examples
+-        --------
+-        >>> s = pl.Series("a", [1, 2, 3, 4])
+-        >>> s.take([1, 3])
+-        shape: (2,)
+-        Series: 'a' [i64]
+-        [
+-                2
+-                4
+-        ]
+-
+         """

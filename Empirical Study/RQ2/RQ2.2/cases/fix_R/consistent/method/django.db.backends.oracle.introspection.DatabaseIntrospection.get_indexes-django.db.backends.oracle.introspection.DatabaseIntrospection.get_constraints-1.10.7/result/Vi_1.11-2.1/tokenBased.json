@@ -1,0 +1,737 @@
+[
+  {
+    "api_name": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_relations",
+    "score": 0.6301369863013698,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_sequences",
+    "score": 0.573170731707317,
+    "rank": 2
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._maindb_connection",
+    "score": 0.46987951807228917,
+    "rank": 3
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.sequence_reset_by_name_sql",
+    "score": 0.44680851063829785,
+    "rank": 4
+  },
+  {
+    "api_name": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_table_description",
+    "score": 0.4344262295081967,
+    "rank": 5
+  },
+  {
+    "api_name": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_field_type",
+    "score": 0.42857142857142855,
+    "rank": 6
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor._get_decimal_converter",
+    "score": 0.4177215189873418,
+    "rank": 7
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_settings_get",
+    "score": 0.4025974025974026,
+    "rank": 8
+  },
+  {
+    "api_name": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_table_list",
+    "score": 0.4,
+    "rank": 9
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations._get_sequence_name",
+    "score": 0.3972602739726027,
+    "rank": 10
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor._guess_input_sizes",
+    "score": 0.3942307692307692,
+    "rank": 11
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._execute_statements",
+    "score": 0.39285714285714285,
+    "rank": 12
+  },
+  {
+    "api_name": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_key_columns",
+    "score": 0.3835616438356164,
+    "rank": 13
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper._dsn",
+    "score": 0.379746835443038,
+    "rank": 14
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.bulk_insert_sql",
+    "score": 0.37719298245614036,
+    "rank": 15
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor.executemany",
+    "score": 0.375,
+    "rank": 16
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.adapt_timefield_value",
+    "score": 0.3723404255319149,
+    "rank": 17
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper._commit",
+    "score": 0.37209302325581395,
+    "rank": 18
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.subtract_temporals",
+    "score": 0.3670886075949367,
+    "rank": 19
+  },
+  {
+    "api_name": "django.db.backends.oracle.schema.DatabaseSchemaEditor._is_identity_column",
+    "score": 0.3670886075949367,
+    "rank": 19
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor._output_type_handler",
+    "score": 0.35106382978723405,
+    "rank": 21
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._execute_test_db_creation",
+    "score": 0.345679012345679,
+    "rank": 22
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.last_insert_id",
+    "score": 0.34210526315789475,
+    "rank": 23
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.adapt_datetimefield_value",
+    "score": 0.3409090909090909,
+    "rank": 24
+  },
+  {
+    "api_name": "django.db.backends.oracle.schema.DatabaseSchemaEditor.quote_value",
+    "score": 0.34,
+    "rank": 25
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._destroy_test_db",
+    "score": 0.3392857142857143,
+    "rank": 26
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._destroy_test_user",
+    "score": 0.3333333333333333,
+    "rank": 27
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.quote_name",
+    "score": 0.32941176470588235,
+    "rank": 28
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations._foreign_key_constraints",
+    "score": 0.3291139240506329,
+    "rank": 29
+  },
+  {
+    "api_name": "django.db.backends.oracle.validation.DatabaseValidation.check_field_type",
+    "score": 0.325,
+    "rank": 30
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._create_test_user",
+    "score": 0.31932773109243695,
+    "rank": 31
+  },
+  {
+    "api_name": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_constraints",
+    "score": 0.3184713375796178,
+    "rank": 32
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._execute_allow_fail_statements",
+    "score": 0.31521739130434784,
+    "rank": 33
+  },
+  {
+    "api_name": "django.db.backends.oracle.base._UninitializedOperatorsDescriptor.__get__",
+    "score": 0.3142857142857143,
+    "rank": 34
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.combine_expression",
+    "score": 0.3140495867768595,
+    "rank": 35
+  },
+  {
+    "api_name": "django.db.backends.oracle.schema.DatabaseSchemaEditor.alter_field",
+    "score": 0.3125,
+    "rank": 36
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._execute_test_db_destruction",
+    "score": 0.3116883116883117,
+    "rank": 37
+  },
+  {
+    "api_name": "django.db.backends.oracle.schema.DatabaseSchemaEditor.normalize_name",
+    "score": 0.30666666666666664,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.get_db_converters",
+    "score": 0.29850746268656714,
+    "rank": 39
+  },
+  {
+    "api_name": "django.db.backends.oracle.schema.DatabaseSchemaEditor._field_should_be_indexed",
+    "score": 0.2976190476190476,
+    "rank": 40
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor.execute",
+    "score": 0.2972972972972973,
+    "rank": 41
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations._get_no_autofield_sequence_name",
+    "score": 0.2972972972972973,
+    "rank": 41
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.time_trunc_sql",
+    "score": 0.2962962962962963,
+    "rank": 43
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation.test_db_signature",
+    "score": 0.28378378378378377,
+    "rank": 44
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._switch_to_test_user",
+    "score": 0.2831858407079646,
+    "rank": 45
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor._fix_for_params",
+    "score": 0.28187919463087246,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper.get_connection_params",
+    "score": 0.28169014084507044,
+    "rank": 47
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.datetime_trunc_sql",
+    "score": 0.2773109243697479,
+    "rank": 48
+  },
+  {
+    "api_name": "django.db.backends.oracle.schema.DatabaseSchemaEditor._generate_temp_name",
+    "score": 0.2727272727272727,
+    "rank": 49
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper.init_connection_state",
+    "score": 0.2711864406779661,
+    "rank": 50
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.sequence_reset_sql",
+    "score": 0.267515923566879,
+    "rank": 51
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.convert_binaryfield_value",
+    "score": 0.26666666666666666,
+    "rank": 52
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation.set_as_test_mirror",
+    "score": 0.2638888888888889,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.backends.oracle.utils.InsertIdVar.bind_parameter",
+    "score": 0.2608695652173913,
+    "rank": 54
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper.__init__",
+    "score": 0.2602739726027397,
+    "rank": 55
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor._param_generator",
+    "score": 0.2602739726027397,
+    "rank": 55
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_tblspace_tmp",
+    "score": 0.25675675675675674,
+    "rank": 57
+  },
+  {
+    "api_name": "django.db.backends.oracle.schema.DatabaseSchemaEditor.remove_field",
+    "score": 0.2564102564102564,
+    "rank": 58
+  },
+  {
+    "api_name": "django.db.backends.oracle.schema.DatabaseSchemaEditor.delete_model",
+    "score": 0.25333333333333335,
+    "rank": 59
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.limit_offset_sql",
+    "score": 0.25316455696202533,
+    "rank": 60
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper.get_new_connection",
+    "score": 0.25,
+    "rank": 61
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor._format_params",
+    "score": 0.25,
+    "rank": 61
+  },
+  {
+    "api_name": "django.db.backends.oracle.client.DatabaseClient.runshell",
+    "score": 0.25,
+    "rank": 61
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._handle_objects_preventing_db_destruction",
+    "score": 0.24691358024691357,
+    "rank": 64
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.last_executed_query",
+    "score": 0.2465753424657534,
+    "rank": 65
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations._convert_field_to_tz",
+    "score": 0.24390243902439024,
+    "rank": 66
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.convert_datefield_value",
+    "score": 0.24324324324324326,
+    "rank": 67
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.convert_textfield_value",
+    "score": 0.24324324324324326,
+    "rank": 67
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.convert_timefield_value",
+    "score": 0.24324324324324326,
+    "rank": 67
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.date_extract_sql",
+    "score": 0.23863636363636365,
+    "rank": 70
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.date_trunc_sql",
+    "score": 0.23333333333333334,
+    "rank": 71
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.VariableWrapper.__setattr__",
+    "score": 0.2318840579710145,
+    "rank": 72
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.OracleParam.__init__",
+    "score": 0.22981366459627328,
+    "rank": 73
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.convert_booleanfield_value",
+    "score": 0.22972972972972974,
+    "rank": 74
+  },
+  {
+    "api_name": "django.db.backends.oracle.utils.Oracle_datetime.from_datetime",
+    "score": 0.22972972972972974,
+    "rank": 74
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.regex_lookup",
+    "score": 0.22857142857142856,
+    "rank": 76
+  },
+  {
+    "api_name": "django.db.backends.oracle.schema.DatabaseSchemaEditor._alter_field_type_workaround",
+    "score": 0.2222222222222222,
+    "rank": 77
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.fetch_returned_insert_id",
+    "score": 0.22077922077922077,
+    "rank": 78
+  },
+  {
+    "api_name": "django.db.backends.oracle.schema.DatabaseSchemaEditor._drop_identity",
+    "score": 0.2191780821917808,
+    "rank": 79
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_passwd",
+    "score": 0.21518987341772153,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.bulk_batch_size",
+    "score": 0.21052631578947367,
+    "rank": 81
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.convert_datetimefield_value",
+    "score": 0.21052631578947367,
+    "rank": 81
+  },
+  {
+    "api_name": "django.db.backends.oracle.schema.DatabaseSchemaEditor._unique_should_be_added",
+    "score": 0.21052631578947367,
+    "rank": 81
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper._savepoint_commit",
+    "score": 0.20270270270270271,
+    "rank": 84
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.convert_uuidfield_value",
+    "score": 0.2,
+    "rank": 85
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.datetime_extract_sql",
+    "score": 0.2,
+    "rank": 85
+  },
+  {
+    "api_name": "django.db.backends.oracle.functions.IntervalToSeconds.__init__",
+    "score": 0.19718309859154928,
+    "rank": 87
+  },
+  {
+    "api_name": "django.db.backends.oracle.functions.SecondsToInterval.__init__",
+    "score": 0.19718309859154928,
+    "rank": 87
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor.fetchmany",
+    "score": 0.19444444444444445,
+    "rank": 89
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper.check_constraints",
+    "score": 0.1917808219178082,
+    "rank": 90
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.datetime_cast_date_sql",
+    "score": 0.1917808219178082,
+    "rank": 90
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.sql_flush",
+    "score": 0.19138755980861244,
+    "rank": 92
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor._output_number_converter",
+    "score": 0.1891891891891892,
+    "rank": 93
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.field_cast_sql",
+    "score": 0.1891891891891892,
+    "rank": 93
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor.__init__",
+    "score": 0.18571428571428572,
+    "rank": 95
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.tablespace_sql",
+    "score": 0.18421052631578946,
+    "rank": 96
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper.oracle_version",
+    "score": 0.17333333333333334,
+    "rank": 97
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._get_test_db_params",
+    "score": 0.16363636363636364,
+    "rank": 98
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.lookup_cast",
+    "score": 0.16216216216216217,
+    "rank": 99
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._get_test_db_name",
+    "score": 0.16176470588235295,
+    "rank": 100
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_tblspace_datafile",
+    "score": 0.16,
+    "rank": 101
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_tblspace_tmp_datafile",
+    "score": 0.16,
+    "rank": 101
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor.fetchall",
+    "score": 0.15151515151515152,
+    "rank": 103
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper._connect_string",
+    "score": 0.1506849315068493,
+    "rank": 104
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor.arrayvar",
+    "score": 0.14705882352941177,
+    "rank": 105
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor.var",
+    "score": 0.14705882352941177,
+    "rank": 105
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.datetime_cast_time_sql",
+    "score": 0.1388888888888889,
+    "rank": 107
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.process_clob",
+    "score": 0.136986301369863,
+    "rank": 108
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._create_test_db",
+    "score": 0.13664596273291926,
+    "rank": 109
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor.__getattr__",
+    "score": 0.13636363636363635,
+    "rank": 110
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.VariableWrapper.__getattr__",
+    "score": 0.13636363636363635,
+    "rank": 110
+  },
+  {
+    "api_name": "django.db.backends.oracle.introspection.DatabaseIntrospection.table_name_converter",
+    "score": 0.1267605633802817,
+    "rank": 112
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.savepoint_create_sql",
+    "score": 0.1232876712328767,
+    "rank": 113
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.savepoint_rollback_sql",
+    "score": 0.1232876712328767,
+    "rank": 113
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper.is_usable",
+    "score": 0.12162162162162163,
+    "rank": 115
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor.close",
+    "score": 0.11764705882352941,
+    "rank": 116
+  },
+  {
+    "api_name": "django.db.backends.oracle.schema.DatabaseSchemaEditor.prepare_default",
+    "score": 0.11594202898550725,
+    "rank": 117
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper._set_autocommit",
+    "score": 0.11428571428571428,
+    "rank": 118
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper.create_cursor",
+    "score": 0.11428571428571428,
+    "rank": 118
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_name",
+    "score": 0.1111111111111111,
+    "rank": 120
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_tblspace",
+    "score": 0.1111111111111111,
+    "rank": 120
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_tblspace_extsize",
+    "score": 0.1111111111111111,
+    "rank": 120
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_tblspace_maxsize",
+    "score": 0.1111111111111111,
+    "rank": 120
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_tblspace_size",
+    "score": 0.1111111111111111,
+    "rank": 120
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_tblspace_tmp_extsize",
+    "score": 0.1111111111111111,
+    "rank": 120
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_tblspace_tmp_maxsize",
+    "score": 0.1111111111111111,
+    "rank": 120
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_tblspace_tmp_size",
+    "score": 0.1111111111111111,
+    "rank": 120
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_user",
+    "score": 0.1111111111111111,
+    "rank": 120
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.return_insert_id",
+    "score": 0.1095890410958904,
+    "rank": 129
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.convert_empty_bytes",
+    "score": 0.10666666666666667,
+    "rank": 130
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.convert_empty_string",
+    "score": 0.10666666666666667,
+    "rank": 130
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.FormatStylePlaceholderCursor.__iter__",
+    "score": 0.10606060606060606,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.adapt_datefield_value",
+    "score": 0.1,
+    "rank": 133
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.prep_for_iexact_query",
+    "score": 0.1,
+    "rank": 133
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_database_create",
+    "score": 0.0958904109589041,
+    "rank": 135
+  },
+  {
+    "api_name": "django.db.backends.oracle.creation.DatabaseCreation._test_user_create",
+    "score": 0.0958904109589041,
+    "rank": 135
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.DatabaseWrapper.oracle_full_version",
+    "score": 0.09333333333333334,
+    "rank": 137
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.VariableWrapper.__init__",
+    "score": 0.09090909090909091,
+    "rank": 138
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.deferrable_sql",
+    "score": 0.08955223880597014,
+    "rank": 139
+  },
+  {
+    "api_name": "django.db.backends.oracle.base.VariableWrapper.bind_parameter",
+    "score": 0.08823529411764706,
+    "rank": 140
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.cache_key_culling_sql",
+    "score": 0.08571428571428572,
+    "rank": 141
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.max_in_list_size",
+    "score": 0.08571428571428572,
+    "rank": 141
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.max_name_length",
+    "score": 0.08571428571428572,
+    "rank": 141
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.pk_default_value",
+    "score": 0.08571428571428572,
+    "rank": 141
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.random_function_sql",
+    "score": 0.08571428571428572,
+    "rank": 141
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.no_limit_value",
+    "score": 0.07042253521126761,
+    "rank": 146
+  },
+  {
+    "api_name": "django.db.backends.oracle.operations.DatabaseOperations.start_transaction_sql",
+    "score": 0.07042253521126761,
+    "rank": 146
+  }
+]

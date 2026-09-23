@@ -1,0 +1,8 @@
+@needs_usetex
+@image_comparison(["empty.eps"])
+def test_transparency_tex():
+    mpl.rcParams['text.usetex'] = True
+    fig, ax = plt.subplots()
+    ax.set_axis_off()
+    ax.plot([0, 1], color="r", alpha=0)
+    ax.text(.5, .5, "foo", color="r", alpha=0)

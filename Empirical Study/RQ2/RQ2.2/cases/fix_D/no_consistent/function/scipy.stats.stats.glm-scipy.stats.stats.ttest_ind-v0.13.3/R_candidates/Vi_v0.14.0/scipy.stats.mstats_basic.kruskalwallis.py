@@ -1,0 +1,19 @@
+def kruskalwallis(*args):
+    output = argstoarray(*args)
+    ranks = ma.masked_equal(rankdata(output, use_missing=False), 0)
+    sumrk = ranks.sum(-1)
+    ngrp = ranks.count(-1)
+    ntot = ranks.count()
+#    ssbg = (sumrk**2/ranks.count(-1)).sum() - ranks.sum()**2/ntotal
+#    H = ssbg / (ntotal*(ntotal+1)/12.)
+    H = 12./(ntot*(ntot+1)) * (sumrk**2/ngrp).sum() - 3*(ntot+1)
+    # Tie correction
+    ties = count_tied_groups(ranks)
+    T = 1. - np.sum(v*(k**3-k) for (k,v) in iteritems(ties))/float(ntot**3-ntot)
+    if T == 0:
+        raise ValueError('All numbers are identical in kruskal')
+    H /= T
+    #
+    df = len(output) - 1
+    prob = stats.chisqprob(H,df)
+    return (H, prob)

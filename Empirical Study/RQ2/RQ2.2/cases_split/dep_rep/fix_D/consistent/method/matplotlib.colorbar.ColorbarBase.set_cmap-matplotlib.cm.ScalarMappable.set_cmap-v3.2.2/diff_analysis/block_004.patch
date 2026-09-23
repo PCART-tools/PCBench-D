@@ -1,0 +1,5 @@
+@@ -10,2 +11,3 @@
+         self.cmap = cmap
+-        self.changed()
++        if not in_init:
++            self.changed()  # Things are not set up properly yet.

@@ -1,0 +1,17 @@
+def test_no_label_replacements():
+    """Test with "label_namer=None" -> no label replacement at all."""
+
+    @_preprocess_data(replace_names=["x", "y"], label_namer=None)
+    def func_no_label(ax, x, y, ls="x", label=None, w="xyz"):
+        return "x: %s, y: %s, ls: %s, w: %s, label: %s" % (
+            list(x), list(y), ls, w, label)
+
+    data = {"a": [1, 2], "b": [8, 9], "w": "NOT"}
+    assert (func_no_label(None, "a", "b", data=data) ==
+            "x: [1, 2], y: [8, 9], ls: x, w: xyz, label: None")
+    assert (func_no_label(None, x="a", y="b", data=data) ==
+            "x: [1, 2], y: [8, 9], ls: x, w: xyz, label: None")
+    assert (func_no_label(None, "a", "b", label="", data=data) ==
+            "x: [1, 2], y: [8, 9], ls: x, w: xyz, label: ")
+    assert (func_no_label(None, "a", "b", label="text", data=data) ==
+            "x: [1, 2], y: [8, 9], ls: x, w: xyz, label: text")

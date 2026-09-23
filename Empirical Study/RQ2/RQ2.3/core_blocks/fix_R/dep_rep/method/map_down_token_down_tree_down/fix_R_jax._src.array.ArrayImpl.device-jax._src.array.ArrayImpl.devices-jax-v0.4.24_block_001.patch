@@ -1,0 +1,10 @@
+@@ -1,4 +1,7 @@
+   def device(self) -> Device:
+-    warnings.warn("arr.device() is deprecated. Use arr.devices() instead.",
+-                  DeprecationWarning, stacklevel=2)
++    if deprecations.is_accelerated(__name__, "device-method"):
++      raise NotImplementedError("arr.device() is deprecated. Use arr.devices() instead.")
++    else:
++      warnings.warn("arr.device() is deprecated. Use arr.devices() instead.",
++                    DeprecationWarning, stacklevel=2)
+     self._check_if_deleted()

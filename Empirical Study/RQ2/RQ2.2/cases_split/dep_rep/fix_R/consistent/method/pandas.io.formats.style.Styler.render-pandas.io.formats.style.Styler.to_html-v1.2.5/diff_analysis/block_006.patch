@@ -1,0 +1,17 @@
+@@ -38,11 +50,6 @@
+         """
+-        self._compute()
+-        # TODO: namespace all the pandas keys
+-        d = self._translate()
+-        # filter out empty styles, every cell will have a class
+-        # but the list of props may just be [['', '']].
+-        # so we have the nested anys below
+-        trimmed = [x for x in d["cellstyle"] if any(any(y) for y in x["props"])]
+-        d["cellstyle"] = trimmed
+-        d.update(kwargs)
+-        return self.template.render(**d)
++        if sparse_index is None:
++            sparse_index = get_option("styler.sparse.index")
++        if sparse_columns is None:
++            sparse_columns = get_option("styler.sparse.columns")
++        return self._render_html(sparse_index, sparse_columns, **kwargs)

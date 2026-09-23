@@ -1,0 +1,6 @@
+@@ -8,4 +8,3 @@
+         """
+-        self.set_cmap(mappable.get_cmap())
+-        self.set_clim(mappable.get_clim())
++        _log.debug('colorbar mappable changed')
+         self.update_normal(mappable)

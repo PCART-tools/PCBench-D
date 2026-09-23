@@ -1,0 +1,9 @@
+def test_modularity_increase():
+    G = nx.LFR_benchmark_graph(
+        250, 3, 1.5, 0.009, average_degree=5, min_community=20, seed=10
+    )
+    partition = [{u} for u in G.nodes()]
+    mod = modularity(G, partition)
+    partition = louvain_communities(G)
+
+    assert modularity(G, partition) > mod

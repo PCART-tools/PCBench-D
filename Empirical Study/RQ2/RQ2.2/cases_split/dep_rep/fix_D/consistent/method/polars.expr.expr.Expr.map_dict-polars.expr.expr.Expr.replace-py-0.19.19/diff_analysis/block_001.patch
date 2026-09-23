@@ -1,0 +1,6 @@
+@@ -2,3 +2,4 @@
+         self,
+-        mapping: dict[Any, Any],
++        old: IntoExpr | Sequence[Any] | Mapping[Any, Any],
++        new: IntoExpr | Sequence[Any] | NoDefault = no_default,
+         *,

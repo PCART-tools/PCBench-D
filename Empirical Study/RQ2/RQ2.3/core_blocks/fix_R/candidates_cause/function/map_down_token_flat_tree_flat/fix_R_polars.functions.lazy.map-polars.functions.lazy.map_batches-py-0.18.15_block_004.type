@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Return statement
+   Changed the return expression from a `wrap_expr(plr.map_mul(...))` call to a `map_batches(exprs, function, return_dtype)` call.
+# /detail
+# mode：Modify return-call statement (change called function)

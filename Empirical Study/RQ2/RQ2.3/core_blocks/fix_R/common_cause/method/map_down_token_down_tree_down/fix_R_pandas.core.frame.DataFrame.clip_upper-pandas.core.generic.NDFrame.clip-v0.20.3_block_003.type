@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original threshold validation, scalar-threshold branch, conditional-mask computation, and `where` call with a single `_clip_with_one_bound` call.
+   The original implementation included:
+
+   * Conditional statement: test whether `threshold` contained null values and raise `ValueError`;
+   * Conditional statement: test whether `threshold` was a numeric scalar and return `_clip_with_scalar(None, threshold)`;
+   * Assignment statement: assign the comparison result combined with the null-value check to `subset`;
+   * Return statement: return `self.where(subset, threshold, axis=axis)`.
+
+   The new implementation includes:
+
+   * Return statement: return `self._clip_with_one_bound(threshold, method=self.le, axis=axis, inplace=inplace)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

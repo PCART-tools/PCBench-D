@@ -1,0 +1,16 @@
+@@ -15,4 +13,13 @@
+         ----------
+-        mapping
+-            Mapping of values to their replacement.
++        old
++            Value or sequence of values to replace.
++            Accepts expression input. Sequences are parsed as Series,
++            other non-expression inputs are parsed as literals.
++            Also accepts a mapping of values to their replacement as syntactic sugar for
++            `replace(new=Series(mapping.keys()), old=Series(mapping.values()))`.
++        new
++            Value or sequence of values to replace by.
++            Accepts expression input. Sequences are parsed as Series,
++            other non-expression inputs are parsed as literals.
++            Length must match the length of `old` or have length 1.
+         default

@@ -1,0 +1,9 @@
+@@ -4,2 +4,8 @@
+         Attempt to infer better dtype for object columns
++        Always returns a copy (even if no object columns)
++
++        Parameters
++        ----------
++        convert_dates : if True, attempt to soft convert_dates, if 'coerce', force conversion (and non-convertibles get NaT)
++        convert_numeric : if True attempt to coerce to numerbers (including strings), non-convertibles get NaN
+  

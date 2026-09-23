@@ -1,0 +1,6 @@
+@@ -157,3 +168,3 @@
+             name = '%s-%s' % (type(obj).__name__, tokenize(task, pure=pure))
+-        dasks.append({name: task})
+-        return Delayed(name, dasks)
++        dsk = sharedict.merge(dsk, (name, {name: task}))
++        return Delayed(name, dsk)

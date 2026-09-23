@@ -1,0 +1,8 @@
+@@ -106,6 +105,3 @@
+  
+-        # If df is undefined, variances are zero (assumes n1 > 0 & n2 > 0).
+-        # Hence it doesn't matter what df is as long as it's not NaN.
+-        df = np.where(np.isnan(df), 1, df)
+-        denom = np.sqrt(vn1 + vn2)
++    res = _ttest_ind_from_stats(np.mean(a, axis), np.mean(b, axis), denom, df)
+  

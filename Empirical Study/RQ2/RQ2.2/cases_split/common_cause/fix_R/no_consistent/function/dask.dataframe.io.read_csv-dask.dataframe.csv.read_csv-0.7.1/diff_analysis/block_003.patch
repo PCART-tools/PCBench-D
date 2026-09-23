@@ -1,0 +1,6 @@
+@@ -7,4 +10,3 @@
+     index = kwargs.pop('index', None)
+-    if index and categorize == None:
+-        categorize = True
++    kwargs = kwargs.copy()
+  

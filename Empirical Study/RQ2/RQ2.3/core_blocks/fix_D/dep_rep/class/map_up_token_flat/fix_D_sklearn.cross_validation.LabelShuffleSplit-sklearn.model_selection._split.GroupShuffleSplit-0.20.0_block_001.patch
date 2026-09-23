@@ -1,0 +1,36 @@
+@@ -79,3 +79,35 @@
+             test = np.flatnonzero(np.in1d(group_indices, group_test))
+ 
+             yield train, test
++
++    def split(self, X, y=None, groups=None):
++        """Generate indices to split data into training and test set.
++
++        Parameters
++        ----------
++        X : array-like, shape (n_samples, n_features)
++            Training data, where n_samples is the number of samples
++            and n_features is the number of features.
++
++        y : array-like, shape (n_samples,), optional
++            The target variable for supervised learning problems.
++
++        groups : array-like, with shape (n_samples,)
++            Group labels for the samples used while splitting the dataset into
++            train/test set.
++
++        Yields
++        ------
++        train : ndarray
++            The training set indices for that split.
++
++        test : ndarray
++            The testing set indices for that split.
++
++        Notes
++        -----
++        Randomized CV splitters may return different results for each call of
++        split. You can make the results identical by setting ``random_state``
++        to an integer.
++        """
++        return super(GroupShuffleSplit, self).split(X, y, groups)

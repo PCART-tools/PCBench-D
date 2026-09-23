@@ -1,0 +1,59 @@
+    def point(
+        self,
+        lut: (
+            Sequence[float]
+            | NumpyArray
+            | Callable[[int], float]
+            | Callable[[ImagePointTransform], ImagePointTransform | float]
+            | ImagePointHandler
+        ),
+        mode: str | None = None,
+    ) -> Image:
+        """
+        Maps this image through a lookup table or function.
+
+        :param lut: A lookup table, containing 256 (or 65536 if
+           self.mode=="I" and mode == "L") values per band in the
+           image.  A function can be used instead, it should take a
+           single argument. The function is called once for each
+           possible pixel value, and the resulting table is applied to
+           all bands of the image.
+
+           It may also be an :py:class:`~PIL.Image.ImagePointHandler`
+           object::
+
+               class Example(Image.ImagePointHandler):
+                 def point(self, im: Image) -> Image:
+                   # Return result
+        :param mode: Output mode (default is same as input). This can only be used if
+           the source image has mode "L" or "P", and the output has mode "1" or the
+           source image mode is "I" and the output mode is "L".
+        :returns: An :py:class:`~PIL.Image.Image` object.
+        """
+
+        self.load()
+
+        if isinstance(lut, ImagePointHandler):
+            return lut.point(self)
+
+        if callable(lut):
+            # if it isn't a list, it should be a function
+            if self.mode in ("I", "I;16", "F"):
+                # check if the function can be used with point_transform
+                # UNDONE wiredfool -- I think this prevents us from ever doing
+                # a gamma function point transform on > 8bit images.
+                scale, offset = _getscaleoffset(lut)  # type: ignore[arg-type]
+                return self._new(self.im.point_transform(scale, offset))
+            # for other modes, convert the function to a table
+            flatLut = [lut(i) for i in range(256)] * self.im.bands  # type: ignore[arg-type]
+        else:
+            flatLut = lut
+
+        if self.mode == "F":
+            # FIXME: _imaging returns a confusing error message for this case
+            msg = "point operation not supported for this mode"
+            raise ValueError(msg)
+
+        if mode != "F":
+            flatLut = [round(i) for i in flatLut]
+        return self._new(self.im.point(flatLut, mode))

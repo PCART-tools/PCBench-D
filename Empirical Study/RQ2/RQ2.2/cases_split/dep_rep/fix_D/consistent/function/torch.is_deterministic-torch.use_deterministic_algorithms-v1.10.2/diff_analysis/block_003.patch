@@ -1,0 +1,8 @@
+@@ -101,2 +104,7 @@
+  
++    Keyword args:
++        warn_only (:class:`bool`, optional): If True, operations that do not
++            have a deterministic implementation will throw a warning instead of
++            an error. Default: ``False``
++
+     Example::

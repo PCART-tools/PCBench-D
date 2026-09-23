@@ -1,0 +1,10 @@
+# detail
+Number of changes: 2
+
+1. Added | Expression statement
+   Added a statement that calls `super().url()`.
+
+2. Modified | Return statement
+   Changed the returned value from `self._append_query(self._path, query)` to `str(self.url_for().with_query(query))`.
+# /detail
+# mode：Add call statement; Modify return-call statement

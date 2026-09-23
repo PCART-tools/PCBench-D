@@ -1,0 +1,19 @@
+@@ -37,17 +65,3 @@
+             feature_names=feature_names,
+-            feature_types=feature_types)
+-        self.handle = handle
+-
+-        self.feature_names = feature_names
+-        self.feature_types = feature_types
+-
+-    def _set_data_from_cuda_interface(self, data):
+-        '''Set data from CUDA array interface.'''
+-        interface = data.__cuda_array_interface__
+-        interface_str = bytes(json.dumps(interface, indent=2), 'utf-8')
+-        _check_call(
+-            _LIB.XGDeviceQuantileDMatrixSetDataCudaArrayInterface(
+-                self.handle,
+-                interface_str
+-            )
++            feature_types=feature_types,
+         )

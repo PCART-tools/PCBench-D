@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the method-body implementation that parsed expressions, called the underlying `groupby`, and constructed and returned `LazyGroupBy` with directly returning `self.group_by(by, *more_by, maintain_order=maintain_order)`.
+   The original implementation included:
+
+   * Assignment statement: assign the result of `parse_as_list_of_expressions(by, *more_by)` to `exprs`;
+   * Assignment statement: assign the result of `self._ldf.groupby(exprs, maintain_order)` to `lgb`;
+   * Return statement: return `LazyGroupBy(lgb)`.
+
+   The new implementation includes:
+
+   * Return statement: return `self.group_by(by, *more_by, maintain_order=maintain_order)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

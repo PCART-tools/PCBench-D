@@ -1,0 +1,12 @@
+@@ -18,9 +21,3 @@
+         """
+-        if np.any(isnull(threshold)):
+-            raise ValueError("Cannot use an NA value as a clip threshold")
+-
+-        if is_scalar(threshold) and is_number(threshold):
+-            return self._clip_with_scalar(threshold, None)
+-
+-        subset = self.ge(threshold, axis=axis) | isnull(self)
+-        return self.where(subset, threshold, axis=axis)
++        return self._clip_with_one_bound(threshold, method=self.ge,
++                                         axis=axis, inplace=inplace)

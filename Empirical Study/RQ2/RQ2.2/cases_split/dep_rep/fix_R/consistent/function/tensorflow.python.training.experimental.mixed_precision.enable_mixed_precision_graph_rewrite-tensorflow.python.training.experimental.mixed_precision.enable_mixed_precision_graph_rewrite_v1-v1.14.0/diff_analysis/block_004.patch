@@ -1,0 +1,13 @@
+@@ -16,8 +16,6 @@
+   When this function is used, gradients should only be computed and applied with
+-  the returned optimizer, either by calling `opt.minimize()` or
+-  `opt.compute_gradients()` followed by `opt.apply_gradients()`. Gradients
+-  should not be computed with `tf.gradients` or `tf.GradientTape`. This is
+-  because the returned optimizer will apply loss scaling, and
+-  `tf.gradients`/`tf.GradientTape` will not. If you do directly use
+-  `tf.gradients` or `tf.GradientTape`, your model may train to a worse quality.
++  the returned optimizer through `opt.minimize()`, and not with a
++  `tf.GradientTape`. This is because the returned optimizer will apply loss
++  scaling, and `tf.GradientTape` will not. If you do use a `tf.GradientTape`,
++  your model may train to a worse quality.
+  

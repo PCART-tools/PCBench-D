@@ -1,0 +1,77 @@
+def device_put_sharded(shards: Sequence[Any], devices: Sequence[xc.Device]):  # noqa: F811
+  """Transfer array shards to specified devices and form ShardedDeviceArray(s).
+
+  Args:
+    shards: A sequence of arrays, scalars, or (nested) standard Python
+      containers thereof representing the shards to be stacked together to form
+      the output. The length of ``shards`` must equal the length of ``devices``.
+    devices: A sequence of :py:class:`Device` instances representing the devices
+      to which corresponding shards in ``shards`` will be transferred.
+
+  This function is always asynchronous, i.e. returns immediately.
+
+  Returns:
+    A ShardedDeviceArray or (nested) Python container thereof representing the
+    elements of ``shards`` stacked together, with each shard backed by physical
+    device memory specified by the corresponding entry in ``devices``.
+
+  Examples:
+    Passing a list of arrays for ``shards`` results in a sharded array
+    containing a stacked version of the inputs:
+
+    >>> import jax
+    >>> devices = jax.local_devices()
+    >>> x = [jax.numpy.ones(5) for device in devices]
+    >>> y = jax.device_put_sharded(x, devices)
+    >>> np.allclose(y, jax.numpy.stack(x))
+    True
+
+    Passing a list of nested container objects with arrays at the leaves for
+    ``shards`` corresponds to stacking the shards at each leaf. This requires
+    all entries in the list to have the same tree structure:
+
+    >>> x = [(i, jax.numpy.arange(i, i + 4)) for i in range(len(devices))]
+    >>> y = jax.device_put_sharded(x, devices)
+    >>> type(y)
+    <class 'tuple'>
+    >>> y0 = jax.device_put_sharded([a for a, b in x], devices)
+    >>> y1 = jax.device_put_sharded([b for a, b in x], devices)
+    >>> np.allclose(y[0], y0)
+    True
+    >>> np.allclose(y[1], y1)
+    True
+
+  See Also:
+    - device_put
+    - device_put_replicated
+  """
+  # TODO(jakevdp): provide a default for devices that considers both local
+  # devices and pods
+  if not isinstance(shards, Sequence):
+    raise ValueError("device_put_sharded `shards` input must be a sequence; "
+                     f"got {type(shards)}")
+  if len(shards) != len(devices):
+    raise ValueError(f"len(shards) = {len(shards)} must equal "
+                     f"len(devices) = {len(devices)}.")
+
+  def _device_put_sharded(*xs):
+    avals = [core.raise_to_shaped(core.get_aval(x)) for x in xs]
+    if not all(a1 == a2 for a1, a2 in zip(avals[:-1], avals[1:])):
+      a1, a2 = next((a1, a2) for a1, a2 in zip(avals[:-1], avals[1:])
+                    if a1 != a2)
+      raise ValueError("the shards passed to device_put_sharded must have "
+                       f"consistent shape and dtype, but got {a1} and {a2}.")
+    stacked_aval = avals[0].update(shape=(len(devices),) + avals[0].shape)
+    buffers = [buf for x, d in zip(xs, devices)
+               for buf in dispatch.device_put(x, d)]
+    if config.jax_array:
+      sharding_spec = pxla._create_pmap_sharding_spec(stacked_aval)
+      return array.ArrayImpl(
+          stacked_aval,
+          PmapSharding(np.array(devices), sharding_spec),
+          buffers, committed=True, _skip_checks=True)
+    else:
+      return pxla.make_sharded_device_array(stacked_aval, None, buffers)
+
+  with config_explicit_device_put_scope():
+    return tree_map(_device_put_sharded, *shards)

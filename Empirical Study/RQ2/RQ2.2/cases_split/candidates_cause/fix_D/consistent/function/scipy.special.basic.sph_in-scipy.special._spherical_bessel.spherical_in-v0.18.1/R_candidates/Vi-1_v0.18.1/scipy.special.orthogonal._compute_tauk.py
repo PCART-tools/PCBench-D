@@ -1,0 +1,34 @@
+def _compute_tauk(n, k, maxit=5):
+    """Helper function for Tricomi initial guesses
+
+    For details, see formula 3.1 in lemma 3.1 in the
+    original paper.
+
+    Parameters
+    ----------
+    n : int
+        Quadrature order
+    k : ndarray of type int
+        Index of roots :math:`\tau_k` to compute
+    maxit : int
+        Number of Newton maxit performed, the default
+        value of 5 is sufficient.
+
+    Returns
+    -------
+    tauk : ndarray
+        Roots of equation 3.1
+
+    See Also
+    --------
+    initial_nodes_a
+    h_roots_asy
+    """
+    a = n % 2 - 0.5
+    c = (4.0*floor(n/2.0) - 4.0*k + 3.0)*pi / (4.0*floor(n/2.0) + 2.0*a + 2.0)
+    f = lambda x: x - sin(x) - c
+    df = lambda x: 1.0 - cos(x)
+    xi = 0.5*pi
+    for i in range(maxit):
+        xi = xi - f(xi)/df(xi)
+    return xi

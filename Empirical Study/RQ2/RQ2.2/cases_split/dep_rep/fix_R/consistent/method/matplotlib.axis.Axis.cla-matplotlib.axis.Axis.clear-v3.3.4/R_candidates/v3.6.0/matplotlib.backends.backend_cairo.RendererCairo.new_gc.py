@@ -1,0 +1,6 @@
+    def new_gc(self):
+        # docstring inherited
+        self.gc.ctx.save()
+        self.gc._alpha = 1
+        self.gc._forced_alpha = False  # if True, _alpha overrides A from RGBA
+        return self.gc

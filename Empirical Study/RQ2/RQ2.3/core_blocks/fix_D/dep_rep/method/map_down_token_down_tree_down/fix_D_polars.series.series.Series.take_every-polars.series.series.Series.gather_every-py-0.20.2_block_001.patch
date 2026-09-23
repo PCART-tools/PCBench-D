@@ -1,0 +1,6 @@
+@@ -1,4 +1,4 @@
+-    def gather_every(self, n: int) -> Series:
++    def gather_every(self, n: int, offset: int = 0) -> Series:
+         """
+         Take every nth value in the Series and return as new Series.
+ 

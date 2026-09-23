@@ -1,0 +1,4 @@
+@@ -15,2 +15,3 @@
+         cbook._check_isinstance((colors.Normalize, None), norm=norm)
++        in_init = self.norm is None
+         if norm is None:

@@ -1,0 +1,75 @@
+def load_wine(return_X_y=False):
+    """Load and return the wine dataset (classification).
+
+    .. versionadded:: 0.18
+
+    The wine dataset is a classic and very easy multi-class classification
+    dataset.
+
+    =================   ==============
+    Classes                          3
+    Samples per class        [59,71,48]
+    Samples total                  178
+    Dimensionality                  13
+    Features            real, positive
+    =================   ==============
+
+    Read more in the :ref:`User Guide <wine_dataset>`.
+
+    Parameters
+    ----------
+    return_X_y : boolean, default=False.
+        If True, returns ``(data, target)`` instead of a Bunch object.
+        See below for more information about the `data` and `target` object.
+
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are: 'data', the
+        data to learn, 'target', the classification labels, 'target_names', the
+        meaning of the labels, 'feature_names', the meaning of the features,
+        and 'DESCR', the full description of the dataset.
+
+    (data, target) : tuple if ``return_X_y`` is True
+
+    The copy of UCI ML Wine Data Set dataset is downloaded and modified to fit
+    standard format from:
+    https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data
+
+    Examples
+    --------
+    Let's say you are interested in the samples 10, 80, and 140, and want to
+    know their class name.
+
+    >>> from sklearn.datasets import load_wine
+    >>> data = load_wine()
+    >>> data.target[[10, 80, 140]]
+    array([0, 1, 2])
+    >>> list(data.target_names)
+    ['class_0', 'class_1', 'class_2']
+    """
+    module_path = dirname(__file__)
+    data, target, target_names = load_data(module_path, 'wine_data.csv')
+
+    with open(join(module_path, 'descr', 'wine_data.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    if return_X_y:
+        return data, target
+
+    return Bunch(data=data, target=target,
+                 target_names=target_names,
+                 DESCR=fdescr,
+                 feature_names=['alcohol',
+                                'malic_acid',
+                                'ash',
+                                'alcalinity_of_ash',
+                                'magnesium',
+                                'total_phenols',
+                                'flavanoids',
+                                'nonflavanoid_phenols',
+                                'proanthocyanins',
+                                'color_intensity',
+                                'hue',
+                                'od280/od315_of_diluted_wines',
+                                'proline'])

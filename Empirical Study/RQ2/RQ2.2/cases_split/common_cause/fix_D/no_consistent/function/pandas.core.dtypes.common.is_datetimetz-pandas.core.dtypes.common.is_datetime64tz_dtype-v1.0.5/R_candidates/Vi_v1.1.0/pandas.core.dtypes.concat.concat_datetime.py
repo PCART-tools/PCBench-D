@@ -1,0 +1,37 @@
+def concat_datetime(to_concat, axis=0, typs=None):
+    """
+    provide concatenation of an datetimelike array of arrays each of which is a
+    single M8[ns], datetime64[ns, tz] or m8[ns] dtype
+
+    Parameters
+    ----------
+    to_concat : array of arrays
+    axis : axis to provide concatenation
+    typs : set of to_concat dtypes
+
+    Returns
+    -------
+    a single array, preserving the combined dtypes
+    """
+    if typs is None:
+        typs = get_dtype_kinds(to_concat)
+
+    to_concat = [_wrap_datetimelike(x) for x in to_concat]
+    single_dtype = len({x.dtype for x in to_concat}) == 1
+
+    # multiple types, need to coerce to object
+    if not single_dtype:
+        # wrap_datetimelike ensures that astype(object) wraps in Timestamp/Timedelta
+        return _concatenate_2d([x.astype(object) for x in to_concat], axis=axis)
+
+    if axis == 1:
+        # TODO(EA2D): kludge not necessary with 2D EAs
+        to_concat = [x.reshape(1, -1) if x.ndim == 1 else x for x in to_concat]
+
+    result = type(to_concat[0])._concat_same_type(to_concat, axis=axis)
+
+    if result.ndim == 2 and is_extension_array_dtype(result.dtype):
+        # TODO(EA2D): kludge not necessary with 2D EAs
+        assert result.shape[0] == 1
+        result = result[0]
+    return result

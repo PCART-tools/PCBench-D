@@ -1,0 +1,9 @@
+@@ -6,5 +6,5 @@
+   and is used to make the model run faster. This function will use mixed
+-  precision to speed up the execution time of your model when run on a GPU. It
+-  does this by changing the dtype of certain operations in the graph from
+-  float32 to float16.
++  precision to speed up the execution time of `tf.function`s when run on a GPU.
++  It does this by changing the dtype of certain operations in the function's
++  graph from float32 to float16.
+  

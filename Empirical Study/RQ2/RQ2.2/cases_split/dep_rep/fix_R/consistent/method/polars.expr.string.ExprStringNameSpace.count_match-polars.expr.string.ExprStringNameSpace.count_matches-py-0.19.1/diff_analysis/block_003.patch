@@ -1,0 +1,5 @@
+@@ -18,3 +18,3 @@
+         --------
+-        >>> df = pl.DataFrame({"foo": ["123 bla 45 asd", "xyz 678 910t"]})
++        >>> df = pl.DataFrame({"foo": ["123 bla 45 asd", "xyz 678 910t", "bar", None]})
+         >>> df.select(

@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the implementation that called `self._df.apply(...)` and returned different results according to `is_df` with directly returning `self.map_rows(function, return_dtype, inference_size=inference_size)`.
+   The original implementation included:
+
+   * Assignment statement: unpack the result of `self._df.apply(function, return_dtype, inference_size)` into `out, is_df`;
+   * Conditional statement: according to `is_df`, return `self._from_pydf(out)` or `wrap_s(out).to_frame()`.
+
+   The new implementation includes:
+
+   * Return statement: return the result of `self.map_rows(function, return_dtype, inference_size=inference_size)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

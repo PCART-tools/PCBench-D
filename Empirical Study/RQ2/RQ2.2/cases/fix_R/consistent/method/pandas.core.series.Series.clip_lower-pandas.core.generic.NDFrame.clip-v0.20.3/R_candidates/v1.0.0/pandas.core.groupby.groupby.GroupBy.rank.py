@@ -1,0 +1,48 @@
+    @Substitution(name="groupby")
+    @Appender(_common_see_also)
+    def rank(
+        self,
+        method: str = "average",
+        ascending: bool = True,
+        na_option: str = "keep",
+        pct: bool = False,
+        axis: int = 0,
+    ):
+        """
+        Provide the rank of values within each group.
+
+        Parameters
+        ----------
+        method : {'average', 'min', 'max', 'first', 'dense'}, default 'average'
+            * average: average rank of group.
+            * min: lowest rank in group.
+            * max: highest rank in group.
+            * first: ranks assigned in order they appear in the array.
+            * dense: like 'min', but rank always increases by 1 between groups.
+        ascending : bool, default True
+            False for ranks by high (1) to low (N).
+        na_option : {'keep', 'top', 'bottom'}, default 'keep'
+            * keep: leave NA values where they are.
+            * top: smallest rank if ascending.
+            * bottom: smallest rank if descending.
+        pct : bool, default False
+            Compute percentage rank of data within each group.
+        axis : int, default 0
+            The axis of the object over which to compute the rank.
+
+        Returns
+        -------
+        DataFrame with ranking of values within each group
+        """
+        if na_option not in {"keep", "top", "bottom"}:
+            msg = "na_option must be one of 'keep', 'top', or 'bottom'"
+            raise ValueError(msg)
+        return self._cython_transform(
+            "rank",
+            numeric_only=False,
+            ties_method=method,
+            ascending=ascending,
+            na_option=na_option,
+            pct=pct,
+            axis=axis,
+        )

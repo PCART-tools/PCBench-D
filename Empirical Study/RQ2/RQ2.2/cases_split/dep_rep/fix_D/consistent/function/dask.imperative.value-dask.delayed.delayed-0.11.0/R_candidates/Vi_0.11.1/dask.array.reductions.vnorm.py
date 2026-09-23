@@ -1,0 +1,20 @@
+def vnorm(a, ord=None, axis=None, dtype=None, keepdims=False, split_every=None):
+    """ Vector norm
+
+    See np.linalg.norm
+    """
+    if ord is None or ord == 'fro':
+        ord = 2
+    if ord == np.inf:
+        return max(abs(a), axis=axis, keepdims=keepdims, split_every=split_every)
+    elif ord == -np.inf:
+        return min(abs(a), axis=axis, keepdims=keepdims, split_every=split_every)
+    elif ord == 1:
+        return sum(abs(a), axis=axis, dtype=dtype, keepdims=keepdims,
+                   split_every=split_every)
+    elif ord % 2 == 0:
+        return sum(a ** ord, axis=axis, dtype=dtype, keepdims=keepdims,
+                   split_every=split_every) ** (1. / ord)
+    else:
+        return sum(abs(a) ** ord, axis=axis, dtype=dtype, keepdims=keepdims,
+                   split_every=split_every) ** (1. / ord)

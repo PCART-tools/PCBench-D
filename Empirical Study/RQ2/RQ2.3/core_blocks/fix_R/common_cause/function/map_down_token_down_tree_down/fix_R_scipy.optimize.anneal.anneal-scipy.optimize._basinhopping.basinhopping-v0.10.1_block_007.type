@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original full implementation code block with a call to `_minimize_anneal(func, x0, args, **opts)` assigned to `res`.
+   The original implementation included:
+
+   * Assignment statements: initialize `current_state`, `last_state`, `best_state`, `x0`, `fval`, `schedule.T`, `fqueue`, `iters`, and other variables;
+   * Conditional statements: perform branch handling based on `T0`, state cost, stopping conditions, and other conditions;
+   * Loop statements: execute a `while` loop and an inner `for n in xrange(dwell)` loop;
+   * Function calls: call `schedule.getstart_temp`, `func`, `schedule.update_guess`, `schedule.accept_test`, `schedule.update_temp`, and other functions;
+   * Break statements: set `retval` and execute `break` when multiple stopping conditions were satisfied.
+
+   The new implementation includes:
+
+   * Assignment statement: assign the return value of `_minimize_anneal(func, x0, args, **opts)` to `res`.
+# /detail
+# mode：Modify implementation block (replace original implementation with call-assignment statement)

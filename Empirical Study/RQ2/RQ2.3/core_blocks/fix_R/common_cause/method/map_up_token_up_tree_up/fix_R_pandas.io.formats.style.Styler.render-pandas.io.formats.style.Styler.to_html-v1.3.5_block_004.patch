@@ -1,0 +1,8 @@
+@@ -50,2 +55,7 @@
+         """
++        warnings.warn(
++            "this method is deprecated in favour of `Styler.to_html()`",
++            FutureWarning,
++            stacklevel=find_stack_level(),
++        )
+         if sparse_index is None:

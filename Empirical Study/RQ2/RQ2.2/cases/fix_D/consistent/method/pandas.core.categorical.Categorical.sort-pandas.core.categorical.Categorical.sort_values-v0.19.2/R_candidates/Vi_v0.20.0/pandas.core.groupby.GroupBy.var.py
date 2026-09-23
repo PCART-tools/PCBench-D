@@ -1,0 +1,20 @@
+    @Substitution(name='groupby')
+    @Appender(_doc_template)
+    def var(self, ddof=1, *args, **kwargs):
+        """
+        Compute variance of groups, excluding missing values
+
+        For multiple groupings, the result index will be a MultiIndex
+
+        Parameters
+        ----------
+        ddof : integer, default 1
+            degrees of freedom
+        """
+        nv.validate_groupby_func('var', args, kwargs)
+        if ddof == 1:
+            return self._cython_agg_general('var', **kwargs)
+        else:
+            self._set_group_selection()
+            f = lambda x: x.var(ddof=ddof, **kwargs)
+            return self._python_agg_general(f)

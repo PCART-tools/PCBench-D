@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the direct handling of the `subs` parameter and assignment to `self._subs` with a call to `self._set_subs(subs)`.
+   The original implementation included:
+
+   * Conditional statements: test `subs is None`, whether `subs` was a string, and other cases;
+   * Assignment statements: assign `'auto'`, `subs`, or `np.asarray(subs, dtype=float)` to `self._subs`;
+   * API call: call `_api.check_in_list(('all', 'auto'), subs=subs)`;
+   * Exception-handling structure: catch `ValueError` and re-raise a `ValueError` with a message;
+   * Conditional statement: check `self._subs.ndim != 1` and raise `ValueError`.
+
+   The new implementation includes:
+
+   * Method call: call `self._set_subs(subs)`.
+# /detail
+# mode：Modify implementation block (replace inline logic with call statement)

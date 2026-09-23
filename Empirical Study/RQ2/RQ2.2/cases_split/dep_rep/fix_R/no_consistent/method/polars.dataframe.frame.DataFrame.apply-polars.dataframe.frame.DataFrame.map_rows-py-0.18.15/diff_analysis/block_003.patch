@@ -1,0 +1,57 @@
+@@ -38,56 +24,2 @@
+  
+-        Notes
+-        -----
+-        * The frame-level ``apply`` cannot track column names (as the UDF is a black-box
+-          that may arbitrarily drop, rearrange, transform, or add new columns); if you
+-          want to apply a UDF such that column names are preserved, you should use the
+-          expression-level ``apply`` syntax instead.
+-
+-        * If your function is expensive and you don't want it to be called more than
+-          once for a given input, consider applying an ``@lru_cache`` decorator to it.
+-          With suitable data you may achieve order-of-magnitude speedups (or more).
+-
+-        Examples
+-        --------
+-        >>> df = pl.DataFrame({"foo": [1, 2, 3], "bar": [-1, 5, 8]})
+-
+-        Return a DataFrame by mapping each row to a tuple:
+-
+-        >>> df.apply(lambda t: (t[0] * 2, t[1] * 3))
+-        shape: (3, 2)
+-        ┌──────────┬──────────┐
+-        │ column_0 ┆ column_1 │
+-        │ ---      ┆ ---      │
+-        │ i64      ┆ i64      │
+-        ╞══════════╪══════════╡
+-        │ 2        ┆ -3       │
+-        │ 4        ┆ 15       │
+-        │ 6        ┆ 24       │
+-        └──────────┴──────────┘
+-
+-        However, it is much better to implement this with a native expression:
+-
+-        >>> df.select(
+-        ...     pl.col("foo") * 2,
+-        ...     pl.col("bar") * 3,
+-        ... )  # doctest: +IGNORE_RESULT
+-
+-        Return a DataFrame with a single column by mapping each row to a scalar:
+-
+-        >>> df.apply(lambda t: (t[0] * 2 + t[1]))  # doctest: +SKIP
+-        shape: (3, 1)
+-        ┌───────┐
+-        │ apply │
+-        │ ---   │
+-        │ i64   │
+-        ╞═══════╡
+-        │ 1     │
+-        │ 9     │
+-        │ 14    │
+-        └───────┘
+-
+-        In this case it is better to use the following native expression:
+-
+-        >>> df.select(pl.col("foo") * 2 + pl.col("bar"))  # doctest: +IGNORE_RESULT
+-
+         """

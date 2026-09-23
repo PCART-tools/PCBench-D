@@ -1,0 +1,2 @@
+class PlotError(RuntimeError):
+    pass

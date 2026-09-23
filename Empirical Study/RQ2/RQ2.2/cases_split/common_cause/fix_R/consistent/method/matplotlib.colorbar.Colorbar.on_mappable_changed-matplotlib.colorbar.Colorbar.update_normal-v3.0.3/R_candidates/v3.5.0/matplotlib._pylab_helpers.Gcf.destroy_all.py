@@ -1,0 +1,11 @@
+    @classmethod
+    def destroy_all(cls):
+        """Destroy all figures."""
+        # Reimport gc in case the module globals have already been removed
+        # during interpreter shutdown.
+        import gc
+        for manager in list(cls.figs.values()):
+            manager.canvas.mpl_disconnect(manager._cidgcf)
+            manager.destroy()
+        cls.figs.clear()
+        gc.collect(1)

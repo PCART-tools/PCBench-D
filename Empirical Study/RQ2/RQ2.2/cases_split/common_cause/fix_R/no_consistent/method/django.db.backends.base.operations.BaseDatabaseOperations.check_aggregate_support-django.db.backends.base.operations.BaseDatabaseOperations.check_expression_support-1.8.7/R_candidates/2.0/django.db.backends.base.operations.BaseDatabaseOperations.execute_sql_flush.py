@@ -1,0 +1,6 @@
+    def execute_sql_flush(self, using, sql_list):
+        """Execute a list of SQL statements to flush the database."""
+        with transaction.atomic(using=using, savepoint=self.connection.features.can_rollback_ddl):
+            with self.connection.cursor() as cursor:
+                for sql in sql_list:
+                    cursor.execute(sql)

@@ -1,0 +1,2 @@
+    class mydict(dict):
+        pass

@@ -1,0 +1,2 @@
+class FigureManagerPgf(FigureManagerBase):
+    pass

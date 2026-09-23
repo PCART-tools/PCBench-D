@@ -1,0 +1,28 @@
+def _set_element(root_dict: STATE_DICT_TYPE, path: OBJ_PATH, value: Any) -> None:
+    """Set ``value`` in ``root_dict`` along the ``path`` object path."""
+    cur_container = cast(CONTAINER_TYPE, root_dict)
+
+    def extend_list(lst: list[Any], idx: int) -> None:
+        while len(lst) <= idx:
+            lst.append(None)
+
+    for i in range(1, len(path)):
+        prev_key = path[i - 1]
+        key = path[i]
+        def_val: Union[CONTAINER_TYPE, list[Any]] = {} if type(key) == str else []
+
+        if isinstance(cur_container, Mapping):
+            cur_container = cast(
+                CONTAINER_TYPE, cur_container.setdefault(prev_key, def_val)
+            )
+        else:
+            extend_list(cur_container, prev_key)
+            if cur_container[prev_key] is None:
+                cur_container[prev_key] = def_val
+            cur_container = cur_container[prev_key]
+
+    key = path[-1]
+    if type(key) == int:
+        extend_list(cast(list[Any], cur_container), key)
+
+    cur_container[key] = value

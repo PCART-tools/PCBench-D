@@ -1,0 +1,14 @@
+@@ -1,3 +1,11 @@
+     def __invert__(self):
+-        arr = operator.inv(_values_from_object(self))
+-        return self._wrap_array(arr, self.axes, copy=False)
++        try:
++            arr = operator.inv(_values_from_object(self))
++            return self.__array_wrap__(arr)
++        except:
++
++            # inv fails with 0 len
++            if not np.prod(self.shape):
++                return self
++
++            raise

@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Removed | Conditional statement
+   Removed the branch logic for `style`: when `style in self.dashd`, unpack `offset, dashes` from `self.dashd[style]`; when `style` is a `tuple`, unpack `style`; otherwise, raise `ValueError('Unrecognized linestyle: %s' % str(style))`.
+# /detail
+# mode：Remove conditional statement

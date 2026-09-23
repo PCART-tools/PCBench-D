@@ -1,0 +1,21 @@
+@deprecated_alias(file="source")
+def read_parquet_schema(
+    source: str | BinaryIO | Path | bytes,
+) -> dict[str, PolarsDataType]:
+    """
+    Get the schema of a Parquet file without reading data.
+
+    Parameters
+    ----------
+    source
+        Path to a file or a file-like object.
+
+    Returns
+    -------
+    Dictionary mapping column names to datatypes
+
+    """
+    if isinstance(source, (str, Path)):
+        source = normalise_filepath(source)
+
+    return _parquet_schema(source)

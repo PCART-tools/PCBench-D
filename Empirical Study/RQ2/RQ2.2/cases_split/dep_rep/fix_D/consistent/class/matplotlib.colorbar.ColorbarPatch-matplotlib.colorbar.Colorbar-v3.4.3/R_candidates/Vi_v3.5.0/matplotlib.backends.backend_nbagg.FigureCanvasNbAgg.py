@@ -1,0 +1,2 @@
+class FigureCanvasNbAgg(FigureCanvasWebAggCore):
+    pass

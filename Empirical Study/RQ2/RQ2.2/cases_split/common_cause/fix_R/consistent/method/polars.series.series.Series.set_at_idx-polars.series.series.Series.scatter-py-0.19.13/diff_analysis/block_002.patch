@@ -1,0 +1,7 @@
+@@ -2,4 +5,4 @@
+         self,
+-        idx: Series | np.ndarray[Any, Any] | Sequence[int] | int,
+-        value: (
++        indices: Series | np.ndarray[Any, Any] | Sequence[int] | int,
++        values: (
+             int

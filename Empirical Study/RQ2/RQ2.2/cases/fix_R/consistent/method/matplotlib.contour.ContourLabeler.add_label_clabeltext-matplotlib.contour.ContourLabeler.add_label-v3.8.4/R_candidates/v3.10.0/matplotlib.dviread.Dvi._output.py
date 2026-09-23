@@ -1,0 +1,44 @@
+    def _output(self):
+        """
+        Output the text and boxes belonging to the most recent page.
+        page = dvi._output()
+        """
+        minx = miny = np.inf
+        maxx = maxy = -np.inf
+        maxy_pure = -np.inf
+        for elt in self.text + self.boxes:
+            if isinstance(elt, Box):
+                x, y, h, w = elt
+                e = 0  # zero depth
+            else:  # glyph
+                x, y, font, g, w = elt
+                h, e = font._height_depth_of(g)
+            minx = min(minx, x)
+            miny = min(miny, y - h)
+            maxx = max(maxx, x + w)
+            maxy = max(maxy, y + e)
+            maxy_pure = max(maxy_pure, y)
+        if self._baseline_v is not None:
+            maxy_pure = self._baseline_v  # This should normally be the case.
+            self._baseline_v = None
+
+        if not self.text and not self.boxes:  # Avoid infs/nans from inf+/-inf.
+            return Page(text=[], boxes=[], width=0, height=0, descent=0)
+
+        if self.dpi is None:
+            # special case for ease of debugging: output raw dvi coordinates
+            return Page(text=self.text, boxes=self.boxes,
+                        width=maxx-minx, height=maxy_pure-miny,
+                        descent=maxy-maxy_pure)
+
+        # convert from TeX's "scaled points" to dpi units
+        d = self.dpi / (72.27 * 2**16)
+        descent = (maxy - maxy_pure) * d
+
+        text = [Text((x-minx)*d, (maxy-y)*d - descent, f, g, w*d)
+                for (x, y, f, g, w) in self.text]
+        boxes = [Box((x-minx)*d, (maxy-y)*d - descent, h*d, w*d)
+                 for (x, y, h, w) in self.boxes]
+
+        return Page(text=text, boxes=boxes, width=(maxx-minx)*d,
+                    height=(maxy_pure-miny)*d, descent=descent)

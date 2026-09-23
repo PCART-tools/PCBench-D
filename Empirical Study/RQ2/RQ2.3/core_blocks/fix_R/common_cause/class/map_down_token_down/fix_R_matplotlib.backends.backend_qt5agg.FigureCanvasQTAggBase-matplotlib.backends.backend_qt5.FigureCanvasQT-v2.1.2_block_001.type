@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Class definition
+   Replaced the entire `FigureCanvasQTAggBase` class: the original class inherited from `FigureCanvasAgg` and contained multiple methods and attribute-initialization logic; the new class adds the `@cbook.deprecated("2.2")` decorator, inherits from `FigureCanvasQTAgg`, and contains only `pass`.
+   The original implementation included:
+
+   * Constructor: initialize Qt attributes, drawing state, the bounding-box queue, and the drawing rectangle;
+   * Property: define the deprecated `blitbox` property;
+   * Instance methods: define `drawRectangle`, `paintEvent`, `draw`, `draw_idle`, `__draw_idle_agg`, `blit`, and `print_figure`.
+
+   The new implementation includes:
+
+   * Class decorator: add `@cbook.deprecated("2.2")`;
+   * Class inheritance: change the base class from `FigureCanvasAgg` to `FigureCanvasQTAgg`;
+   * Class-body statement: use `pass`.
+# /detail
+# mode：Add decorator; Modify superclass; Remove class-body implementation

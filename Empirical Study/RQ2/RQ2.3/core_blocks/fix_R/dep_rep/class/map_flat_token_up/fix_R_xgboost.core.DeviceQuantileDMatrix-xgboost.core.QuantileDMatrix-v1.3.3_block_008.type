@@ -1,0 +1,23 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method definition
+   Replaced `_set_data_from_cuda_columnar(self, data)` with `_init(self, data, feature_names, feature_types, **meta)`.
+   The original implementation included:
+
+   * Import statement: import `_cudf_array_interfaces` from `.data`;
+   * Assignment statement: call `_cudf_array_interfaces(data)` to generate `interfaces_str`;
+   * Function call: call `_LIB.XGDeviceQuantileDMatrixSetDataCudaColumnar(self.handle, interfaces_str)` through `_check_call`.
+
+   The new implementation includes:
+
+   * Import statement: import `_is_dlpack`, `_transform_dlpack`, `_is_iter`, and `SingleBatchInternalIter` from `.data`;
+   * Conditional statement: when `data` is dlpack, call `_transform_dlpack(data)` and reassign it to `data`;
+   * Conditional statement: when `data` is an iterator, assign it to `it`; otherwise, construct `SingleBatchInternalIter`;
+   * Assignment statements: create `reset_callback`, `next_callback`, and `handle`;
+   * Assignment statement: call `_LIB.XGDeviceQuantileDMatrixCreateFromCallback(...)` and assign the result to `ret`;
+   * Conditional statement: when `it.exception` is not `None`, raise that exception;
+   * Function call: call `_check_call(ret)`;
+   * Assignment statement: assign `handle` to `self.handle`.
+# /detail
+# mode：Remove method; Add method

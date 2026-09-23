@@ -1,0 +1,19 @@
+# detail
+Number of changes: 1
+
+1. Modified | Constructor
+   Replaced the `__init__` method containing full initialization logic with a constructor that accepts `*args` and `**kwargs`.
+   The original implementation included:
+
+   * Assignment statements: set `max_bin`, `missing`, `nthread`, and `_silent`;
+   * Conditional statement: handle `data` of type `ctypes.c_void_p`;
+   * Conditional statement: check whether `qid` and `group` were both provided and raise `ValueError`;
+   * Method call: call `self._init(...)` with data and metadata;
+   * Method definition: define `_init(...)`, including data-iterator construction, callback retrieval, cache-prefix checking, a low-level matrix-creation call, exception checking, and handle assignment.
+
+   The new implementation includes:
+
+   * Warning call: call `warnings.warn(...)` to issue a `FutureWarning`;
+   * Parent-class method call: call `super().__init__(*args, **kwargs)`.
+# /detail
+# mode：Convert parameter to variadic parameter; Modify method implementation (replace original implementation with warning call and superclass-call statement)

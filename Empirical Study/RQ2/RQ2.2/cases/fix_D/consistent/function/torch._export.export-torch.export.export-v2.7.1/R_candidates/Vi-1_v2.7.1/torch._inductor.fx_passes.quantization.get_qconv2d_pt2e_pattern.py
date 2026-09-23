@@ -1,0 +1,22 @@
+def get_qconv2d_pt2e_pattern(users=1):
+    return CallFunction(
+        torch.ops.onednn.qconv2d_pointwise.default,
+        KeywordArg("x"),
+        KeywordArg("x_scale"),
+        KeywordArg("x_zp"),
+        KeywordArg("packed_weight"),
+        KeywordArg("w_scale"),
+        KeywordArg("w_zp"),
+        KeywordArg("b"),
+        KeywordArg("stride"),
+        KeywordArg("padding"),
+        KeywordArg("dilation"),
+        KeywordArg("groups"),
+        KeywordArg("output_scale"),
+        KeywordArg("output_zero_point"),
+        KeywordArg("output_dtype"),
+        KeywordArg("postop_name"),
+        KeywordArg("postop_args"),
+        KeywordArg("postop_algorithm"),
+        _users=users,
+    )

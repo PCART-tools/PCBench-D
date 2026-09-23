@@ -1,0 +1,18 @@
+def test_diagonal():
+    m = Matrix(3, 3, range(9))
+    d = m.diagonal()
+    assert d == m.diagonal(0)
+    assert tuple(d) == (0, 4, 8)
+    assert tuple(m.diagonal(1)) == (1, 5)
+    assert tuple(m.diagonal(-1)) == (3, 7)
+    assert tuple(m.diagonal(2)) == (2,)
+    assert type(m.diagonal()) == type(m)
+    s = SparseMatrix(3, 3, {(1, 1): 1})
+    assert type(s.diagonal()) == type(s)
+    assert type(m) != type(s)
+    raises(ValueError, lambda: m.diagonal(3))
+    raises(ValueError, lambda: m.diagonal(-3))
+    raises(ValueError, lambda: m.diagonal(pi))
+    M = ones(2, 3)
+    assert banded({i: list(M.diagonal(i))
+        for i in range(1-M.rows, M.cols)}) == M

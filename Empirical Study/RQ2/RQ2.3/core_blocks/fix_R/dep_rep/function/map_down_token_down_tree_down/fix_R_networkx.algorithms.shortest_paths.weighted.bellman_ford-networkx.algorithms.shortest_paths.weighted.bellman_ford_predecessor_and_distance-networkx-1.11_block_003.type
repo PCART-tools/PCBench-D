@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced multiple implementation sections in the function with a single return statement.
+   The original implementation included:
+
+   * Loop statement: iterate over `G.selfloop_edges(data=True)` and raise `nx.NetworkXUnbounded` when a weight was negative;
+   * Assignment statements: initialize `dist` and `pred`;
+   * Conditional statement: return `pred, dist` when `len(G) == 1`;
+   * Return statement: return `_bellman_ford_relaxation(G, pred, dist, [source], weight)`.
+
+   The new implementation includes:
+
+   * Return statement: return `bellman_ford_predecessor_and_distance(G, source, weight=weight)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with return-call statement)

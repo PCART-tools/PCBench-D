@@ -1,0 +1,13 @@
+# detail
+Number of changes: 2
+
+1. Removed | Assignment statement
+   Removed the statement assigning `frac` to `self._orig_color`.
+
+2. Added | Warning code block
+   Added code that constructs a deprecation-message string and calls `warnings.warn` to issue the warning.
+   This includes:
+   * Assignment statement: assign the deprecation-message string to `msg`;
+   * Call statement: call `warnings.warn(msg, mplDeprecation)`.
+# /detail
+# mode：Remove assignment statement; Add warning call

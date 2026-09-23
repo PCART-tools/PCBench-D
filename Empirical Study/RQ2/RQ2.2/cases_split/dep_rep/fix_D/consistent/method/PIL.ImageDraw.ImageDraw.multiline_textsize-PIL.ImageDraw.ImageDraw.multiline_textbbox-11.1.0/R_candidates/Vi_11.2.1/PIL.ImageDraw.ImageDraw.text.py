@@ -1,0 +1,126 @@
+    def text(
+        self,
+        xy: tuple[float, float],
+        text: AnyStr,
+        fill: _Ink | None = None,
+        font: (
+            ImageFont.ImageFont
+            | ImageFont.FreeTypeFont
+            | ImageFont.TransposedFont
+            | None
+        ) = None,
+        anchor: str | None = None,
+        spacing: float = 4,
+        align: str = "left",
+        direction: str | None = None,
+        features: list[str] | None = None,
+        language: str | None = None,
+        stroke_width: float = 0,
+        stroke_fill: _Ink | None = None,
+        embedded_color: bool = False,
+        *args: Any,
+        **kwargs: Any,
+    ) -> None:
+        """Draw text."""
+        if embedded_color and self.mode not in ("RGB", "RGBA"):
+            msg = "Embedded color supported only in RGB and RGBA modes"
+            raise ValueError(msg)
+
+        if font is None:
+            font = self._getfont(kwargs.get("font_size"))
+
+        if self._multiline_check(text):
+            return self.multiline_text(
+                xy,
+                text,
+                fill,
+                font,
+                anchor,
+                spacing,
+                align,
+                direction,
+                features,
+                language,
+                stroke_width,
+                stroke_fill,
+                embedded_color,
+            )
+
+        def getink(fill: _Ink | None) -> int:
+            ink, fill_ink = self._getink(fill)
+            if ink is None:
+                assert fill_ink is not None
+                return fill_ink
+            return ink
+
+        def draw_text(ink: int, stroke_width: float = 0) -> None:
+            mode = self.fontmode
+            if stroke_width == 0 and embedded_color:
+                mode = "RGBA"
+            coord = []
+            for i in range(2):
+                coord.append(int(xy[i]))
+            start = (math.modf(xy[0])[0], math.modf(xy[1])[0])
+            try:
+                mask, offset = font.getmask2(  # type: ignore[union-attr,misc]
+                    text,
+                    mode,
+                    direction=direction,
+                    features=features,
+                    language=language,
+                    stroke_width=stroke_width,
+                    stroke_filled=True,
+                    anchor=anchor,
+                    ink=ink,
+                    start=start,
+                    *args,
+                    **kwargs,
+                )
+                coord = [coord[0] + offset[0], coord[1] + offset[1]]
+            except AttributeError:
+                try:
+                    mask = font.getmask(  # type: ignore[misc]
+                        text,
+                        mode,
+                        direction,
+                        features,
+                        language,
+                        stroke_width,
+                        anchor,
+                        ink,
+                        start=start,
+                        *args,
+                        **kwargs,
+                    )
+                except TypeError:
+                    mask = font.getmask(text)
+            if mode == "RGBA":
+                # font.getmask2(mode="RGBA") returns color in RGB bands and mask in A
+                # extract mask and set text alpha
+                color, mask = mask, mask.getband(3)
+                ink_alpha = struct.pack("i", ink)[3]
+                color.fillband(3, ink_alpha)
+                x, y = coord
+                if self.im is not None:
+                    self.im.paste(
+                        color, (x, y, x + mask.size[0], y + mask.size[1]), mask
+                    )
+            else:
+                self.draw.draw_bitmap(coord, mask, ink)
+
+        ink = getink(fill)
+        if ink is not None:
+            stroke_ink = None
+            if stroke_width:
+                stroke_ink = getink(stroke_fill) if stroke_fill is not None else ink
+
+            if stroke_ink is not None:
+                # Draw stroked text
+                draw_text(stroke_ink, stroke_width)
+
+                # Draw normal text
+                if ink != stroke_ink:
+                    draw_text(ink)
+            else:
+                # Only draw normal text
+                draw_text(ink)

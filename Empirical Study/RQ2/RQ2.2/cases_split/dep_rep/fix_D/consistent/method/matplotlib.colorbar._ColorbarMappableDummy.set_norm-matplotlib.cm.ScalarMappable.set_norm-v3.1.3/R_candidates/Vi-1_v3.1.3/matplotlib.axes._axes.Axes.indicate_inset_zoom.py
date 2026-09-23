@@ -1,0 +1,42 @@
+    def indicate_inset_zoom(self, inset_ax, **kwargs):
+        """
+        Add an inset indicator rectangle to the axes based on the axis
+        limits for an *inset_ax* and draw connectors between *inset_ax*
+        and the rectangle.
+
+        Warnings
+        --------
+
+        This method is experimental as of 3.0, and the API may change.
+
+        Parameters
+        ----------
+
+        inset_ax : `.Axes`
+            Inset axes to draw connecting lines to.  Two lines are
+            drawn connecting the indicator box to the inset axes on corners
+            chosen so as to not overlap with the indicator box.
+
+        **kwargs
+            Other *kwargs* are passed on to `.Axes.inset_rectangle`
+
+        Returns
+        -------
+
+        rectangle_patch : `.Patches.Rectangle`
+             Rectangle artist.
+
+        connector_lines : 4-tuple of `.Patches.ConnectionPatch`
+            One for each of four connector lines.  Two are set with visibility
+            to *False*,  but the user can set the visibility to True if the
+            automatic choice is not deemed correct.
+
+        """
+
+        xlim = inset_ax.get_xlim()
+        ylim = inset_ax.get_ylim()
+        rect = [xlim[0], ylim[0], xlim[1] - xlim[0], ylim[1] - ylim[0]]
+        rectpatch, connects = self.indicate_inset(
+                rect, inset_ax, **kwargs)
+
+        return rectpatch, connects

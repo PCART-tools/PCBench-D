@@ -1,0 +1,21 @@
+    def _get_nearest_indexer(self, target, limit, tolerance):
+        """
+        Get the indexer for the nearest index labels; requires an index with
+        values that can be subtracted from each other (e.g., not strings or
+        tuples).
+        """
+        left_indexer = self.get_indexer(target, "pad", limit=limit)
+        right_indexer = self.get_indexer(target, "backfill", limit=limit)
+
+        left_distances = np.abs(self[left_indexer] - target)
+        right_distances = np.abs(self[right_indexer] - target)
+
+        op = operator.lt if self.is_monotonic_increasing else operator.le
+        indexer = np.where(
+            op(left_distances, right_distances) | (right_indexer == -1),
+            left_indexer,
+            right_indexer,
+        )
+        if tolerance is not None:
+            indexer = self._filter_indexer_tolerance(target, indexer, tolerance)
+        return indexer

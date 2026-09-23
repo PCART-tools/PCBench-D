@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation code block
+   Replaced the original implementation of `set_labels` with a deprecation message and forwarding to `set_codes`.
+   The original implementation included:
+
+   * Parameter type checks: validate the list-like structure of `level` and `labels`, and raise `TypeError` when invalid;
+   * Object selection: choose `self` or a shallow-copied `idx` according to `inplace`;
+   * State reset and assignment: call `_reset_identity()`, then call `_set_labels(labels, level=level, verify_integrity=verify_integrity)`;
+   * Return handling: return the new `idx` when not operating in place.
+
+   The new implementation includes:
+
+   * Deprecation warning: call `warnings.warn(..., FutureWarning, stacklevel=2)`;
+   * Method forwarding: directly call and return `self.set_codes(codes=labels, level=level, inplace=inplace, verify_integrity=verify_integrity)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with warning call and return-call statement)

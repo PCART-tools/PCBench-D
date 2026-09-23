@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the method body with a call to `self._clip_with_one_bound(...)` and returned its result.
+   The original implementation included:
+
+   * Conditional statement: raise `ValueError` when `threshold` contained null values;
+   * Conditional statement: when `threshold` was a numeric scalar, return `self._clip_with_scalar(None, threshold)`;
+   * Assignment statement: assign the comparison and null-check results to `subset`;
+   * Return statement: return `self.where(subset, threshold, axis=axis)`.
+
+   The new implementation includes:
+
+   * Return statement: return `self._clip_with_one_bound(threshold, method=self.le, axis=axis, inplace=inplace)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

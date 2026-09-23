@@ -1,0 +1,38 @@
+    def _onmove(self, event):
+        """on motion notify event"""
+        if self.pressv is None:
+            return
+        x, y = self._get_data(event)
+        if x is None:
+            return
+
+        self.prev = x, y
+        if self.direction == 'horizontal':
+            v = x
+        else:
+            v = y
+
+        minv, maxv = v, self.pressv
+        if minv > maxv:
+            minv, maxv = maxv, minv
+        if self.direction == 'horizontal':
+            self.rect.set_x(minv)
+            self.rect.set_width(maxv - minv)
+        else:
+            self.rect.set_y(minv)
+            self.rect.set_height(maxv - minv)
+
+        if self.onmove_callback is not None:
+            vmin = self.pressv
+            xdata, ydata = self._get_data(event)
+            if self.direction == 'horizontal':
+                vmax = xdata or self.prev[0]
+            else:
+                vmax = ydata or self.prev[1]
+
+            if vmin > vmax:
+                vmin, vmax = vmax, vmin
+            self.onmove_callback(vmin, vmax)
+
+        self.update()
+        return False

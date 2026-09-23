@@ -1,0 +1,6 @@
+    def __init__(self, env, engine, parser, **kwargs):
+        super(ExprVisitor, self).__init__(env, engine, parser)
+        for bin_op in self.binary_ops:
+            setattr(self, 'visit_{0}'.format(self.binary_op_nodes_map[bin_op]),
+                    lambda node, bin_op=bin_op: partial(BinOp, bin_op,
+                                                        **kwargs))

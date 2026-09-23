@@ -1,0 +1,4 @@
+def _mul_inverse(r, x, y):
+  xr = r / y
+  yr = r / x
+  return xr, yr

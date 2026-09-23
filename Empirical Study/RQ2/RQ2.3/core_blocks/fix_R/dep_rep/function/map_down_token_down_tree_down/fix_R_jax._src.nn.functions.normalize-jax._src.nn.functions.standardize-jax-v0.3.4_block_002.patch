@@ -1,0 +1,14 @@
+@@ -8,11 +7,3 @@
+   r"""Normalizes an array by subtracting ``mean`` and dividing by :math:`\sqrt{\mathrm{variance}}`."""
+-  if mean is None:
+-    mean = jnp.mean(x, axis, keepdims=True, where=where)
+-  if variance is None:
+-    # this definition is traditionally seen as less accurate than jnp.var's
+-    # mean((x - mean(x))**2) but may be faster and even, given typical
+-    # activation distributions and low-precision arithmetic, more accurate
+-    # when used in neural network normalization layers
+-    variance = jnp.mean(
+-        jnp.square(x), axis, keepdims=True, where=where) - jnp.square(mean)
+-  return (x - mean) * lax.rsqrt(variance + epsilon)
++  warnings.warn("jax.nn.normalize will be deprecated. Use jax.nn.standardize instead.", DeprecationWarning)
++  return standardize(x, axis, mean, variance, epsilon, where)

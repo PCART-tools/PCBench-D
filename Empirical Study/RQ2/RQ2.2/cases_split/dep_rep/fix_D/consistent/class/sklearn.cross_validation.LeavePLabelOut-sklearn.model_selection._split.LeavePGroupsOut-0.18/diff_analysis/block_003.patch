@@ -1,0 +1,5 @@
+@@ -33,3 +33,3 @@
+     LeavePGroupsOut(n_groups=2)
+-    >>> for train_index, test_index in lpl.split(X, y, groups):
++    >>> for train_index, test_index in lpgo.split(X, y, groups):
+     ...    print("TRAIN:", train_index, "TEST:", test_index)

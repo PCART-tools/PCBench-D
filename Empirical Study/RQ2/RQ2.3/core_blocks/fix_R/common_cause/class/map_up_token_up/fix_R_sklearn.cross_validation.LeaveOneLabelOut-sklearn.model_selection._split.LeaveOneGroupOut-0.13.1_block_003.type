@@ -1,0 +1,19 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method definition
+   Changed `__iter__` to `_iter_test_masks` and replaced its implementation.
+   The original implementation included:
+
+   * Assignment statement: copy `self.labels` to `labels`;
+   * Loop statement: iterate over `unique(labels)`;
+   * Assignment statements: create and set `test_index` and compute `train_index`;
+   * Conditional statement: when `self.indices` was true, convert Boolean indices to integer indices;
+   * Yield statement: yield `train_index, test_index`.
+
+   The new implementation includes:
+
+   * Loop statement: iterate over `self.unique_labels`;
+   * Yield statement: yield `self.labels == i`.
+# /detail
+# mode：Rename method; Modify method implementation

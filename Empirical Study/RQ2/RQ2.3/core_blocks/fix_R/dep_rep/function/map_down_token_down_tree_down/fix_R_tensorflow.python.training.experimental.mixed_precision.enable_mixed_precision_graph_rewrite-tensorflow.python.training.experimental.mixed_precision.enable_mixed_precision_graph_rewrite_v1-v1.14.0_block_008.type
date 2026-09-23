@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the function-body implementation with directly returning the result of `_enable_mixed_precision_graph_rewrite_base(opt, loss_scale, use_v1_behavior=False)`.
+   The original implementation included:
+
+   * Conditional statement: check `mixed_precision_global_state.non_mixed_precision_session_created` and call `tf_logging.warn(...)`;
+   * Assignment statement: assign the result of `_wrap_optimizer(opt, loss_scale)` to `opt`;
+   * API call: call `config.set_optimizer_experimental_options({'auto_mixed_precision': True})`;
+   * Assignment statement: set `mixed_precision_global_state.mixed_precision_is_enabled` to `True`;
+   * Return statement: return `opt`.
+
+   The new implementation includes:
+
+   * Return statement: return the result of `_enable_mixed_precision_graph_rewrite_base(opt, loss_scale, use_v1_behavior=False)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with return-call statement)

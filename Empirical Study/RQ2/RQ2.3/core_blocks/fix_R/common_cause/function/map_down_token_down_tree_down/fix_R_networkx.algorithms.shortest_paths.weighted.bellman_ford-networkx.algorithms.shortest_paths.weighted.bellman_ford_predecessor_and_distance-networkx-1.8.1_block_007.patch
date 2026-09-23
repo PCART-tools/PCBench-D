@@ -1,0 +1,39 @@
+@@ -79,9 +82,31 @@
+  
+-    for i in range(numb_nodes):
+-        no_changes=True
+-        # Only need edges from nodes in dist b/c all others have dist==inf
+-        for u, dist_u in list(dist.items()): # get all edges from nodes in dist
+-            for v, edict in G[u].items():  # double loop handles undirected too
+-                dist_v = dist_u + get_weight(edict)
+-                if v not in dist or dist[v] > dist_v:
++    if G.is_directed():
++        G_succ = G.succ
++    else:
++        G_succ = G.adj
++
++    inf = float('inf')
++    n = len(G)
++
++    count = {}
++    q = deque([source])
++    in_q = set([source])
++
++    while q:
++        u = q.popleft()
++        in_q.remove(u)
++        # Skip relaxations if the predecessor of u is in the queue.
++        if pred[u] not in in_q:
++            dist_u = dist[u]
++            for v, e in G_succ[u].items():
++                dist_v = dist_u + get_weight(e)
++                if dist_v < dist.get(v, inf):
++                    if v not in in_q:
++                        q.append(v)
++                        in_q.add(v)
++                        count_v = count.get(v, 0) + 1
++                        if count_v == n:
++                            raise nx.NetworkXUnbounded(
++                                "Negative cost cycle detected.")
++                        count[v] = count_v
+                     dist[v] = dist_v

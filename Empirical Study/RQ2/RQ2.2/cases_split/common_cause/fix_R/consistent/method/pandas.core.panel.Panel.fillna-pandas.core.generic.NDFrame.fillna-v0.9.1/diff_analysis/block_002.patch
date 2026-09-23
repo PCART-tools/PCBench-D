@@ -1,0 +1,5 @@
+@@ -26,2 +26,4 @@
+         if value is None:
++            if method is None:
++                raise ValueError('must specify a fill method or value')
+             result = {}

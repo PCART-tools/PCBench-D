@@ -1,0 +1,22 @@
+@@ -79,21 +53,2 @@
+  
+-    fail_keys = [k for k in required if k not in ret]
+-    if fail_keys:
+-        raise TypeError("The required keys {keys!r} "
+-                        "are not in kwargs".format(keys=fail_keys))
+-
+-    fail_keys = [k for k in forbidden if k in ret]
+-    if fail_keys:
+-        raise TypeError("The forbidden keys {keys!r} "
+-                        "are in kwargs".format(keys=fail_keys))
+-
+-    if allowed is not None:
+-        allowed_set = {*required, *allowed}
+-        fail_keys = [k for k in ret if k not in allowed_set]
+-        if fail_keys:
+-            raise TypeError(
+-                "kwargs contains {keys!r} which are not in the required "
+-                "{req!r} or allowed {allow!r} keys".format(
+-                    keys=fail_keys, req=required, allow=allowed))
+-
+     return ret

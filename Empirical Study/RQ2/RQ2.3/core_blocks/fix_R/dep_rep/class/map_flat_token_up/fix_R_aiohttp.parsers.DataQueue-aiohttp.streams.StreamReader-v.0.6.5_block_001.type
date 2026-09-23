@@ -1,0 +1,10 @@
+# detail
+Number of changes: 2
+
+1. Modified | Method definition
+   Changed the parameter list of `__init__` from `self, *, loop=None` to `self, stream, *, loop=None`.
+
+2. Added | Assignment statement
+   Added `self._stream = stream`, assigning the `stream` parameter to the instance attribute `self._stream`.
+# /detail
+# mode：Add parameter; Add instance attribute

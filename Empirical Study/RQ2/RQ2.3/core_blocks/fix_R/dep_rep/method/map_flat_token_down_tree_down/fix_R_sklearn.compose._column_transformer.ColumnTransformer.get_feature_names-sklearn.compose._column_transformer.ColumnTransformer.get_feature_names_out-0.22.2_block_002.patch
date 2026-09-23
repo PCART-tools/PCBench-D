@@ -1,0 +1,20 @@
+@@ -13,7 +14,14 @@
+                 continue
+-            elif trans == 'passthrough':
+-                raise NotImplementedError(
+-                    "get_feature_names is not yet supported when using "
+-                    "a 'passthrough' transformer.")
+-            elif not hasattr(trans, 'get_feature_names'):
++            if trans == 'passthrough':
++                if hasattr(self, '_df_columns'):
++                    if ((not isinstance(column, slice))
++                            and all(isinstance(col, str) for col in column)):
++                        feature_names.extend(column)
++                    else:
++                        feature_names.extend(self._df_columns[column])
++                else:
++                    indices = np.arange(self._n_features)
++                    feature_names.extend(['x%d' % i for i in indices[column]])
++                continue
++            if not hasattr(trans, 'get_feature_names'):
+                 raise AttributeError("Transformer %s (type %s) does not "

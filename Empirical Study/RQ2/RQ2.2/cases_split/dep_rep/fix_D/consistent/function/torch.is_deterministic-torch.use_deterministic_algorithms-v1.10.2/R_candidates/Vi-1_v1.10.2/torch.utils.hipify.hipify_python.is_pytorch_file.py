@@ -1,0 +1,10 @@
+def is_pytorch_file(filepath):
+    if filepath.startswith("aten/"):
+        if filepath.startswith("aten/src/ATen/core/"):
+            return False
+        return True
+    if filepath.startswith("torch/"):
+        return True
+    if filepath.startswith("tools/autograd/templates/"):
+        return True
+    return False

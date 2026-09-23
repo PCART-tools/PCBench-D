@@ -1,0 +1,51 @@
+@partial(jit, static_argnames=('axis', 'mode'))
+def _take(a, indices, axis: Optional[int] = None, out=None, mode=None):
+  if out is not None:
+    raise NotImplementedError("The 'out' argument to jnp.take is not supported.")
+  _check_arraylike("take", a, indices)
+  a = asarray(a)
+  indices = asarray(indices)
+
+  if axis is None:
+    a = ravel(a)
+    axis_idx = 0
+  else:
+    axis_idx = _canonicalize_axis(axis, ndim(a))
+
+  if mode is None or mode == "fill":
+    gather_mode = lax.GatherScatterMode.FILL_OR_DROP
+    # lax.gather() does not support negative indices, so we wrap them here
+    indices = where(indices < 0, indices + a.shape[axis_idx], indices)
+  elif mode == "raise":
+    # TODO(phawkins): we have no way to report out of bounds errors yet.
+    raise NotImplementedError("The 'raise' mode to jnp.take is not supported.")
+  elif mode == "wrap":
+    indices = mod(indices, _lax_const(indices, a.shape[axis_idx]))
+    gather_mode = lax.GatherScatterMode.PROMISE_IN_BOUNDS
+  elif mode == "clip":
+    gather_mode = lax.GatherScatterMode.CLIP
+  else:
+    raise ValueError(f"Invalid mode '{mode}' for np.take")
+
+  index_dims = len(shape(indices))
+  slice_sizes = list(shape(a))
+  if slice_sizes[axis_idx] == 0:
+    if indices.size != 0:
+      raise IndexError("Cannot do a non-empty jnp.take() from an empty axis.")
+    return a
+
+  if indices.size == 0:
+    out_shape = (slice_sizes[:axis_idx] + list(indices.shape) +
+                 slice_sizes[axis_idx + 1:])
+    return full_like(a, 0, shape=out_shape)
+
+  slice_sizes[axis_idx] = 1
+  dnums = lax.GatherDimensionNumbers(
+    offset_dims=tuple(
+      list(range(axis_idx)) +
+      list(range(axis_idx + index_dims, len(a.shape) + index_dims - 1))),
+    collapsed_slice_dims=(axis_idx,),
+    start_index_map=(axis_idx,))
+  return lax.gather(a, indices[..., None], dimension_numbers=dnums,
+                    slice_sizes=tuple(slice_sizes),
+                    mode=gather_mode)

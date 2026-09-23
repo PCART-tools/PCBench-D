@@ -1,0 +1,74 @@
+@_onnx_symbolic(
+    "aten::avg_pool1d",
+    decorate=[
+        symbolic_helper._apply_params("avg_pool1d", torch.nn.modules.utils._single),
+        _export("avg_pool1d"),
+    ],
+)
+@_onnx_symbolic(
+    "aten::avg_pool2d",
+    decorate=[
+        symbolic_helper._apply_params("avg_pool2d", torch.nn.modules.utils._pair),
+        _export("avg_pool2d"),
+    ],
+)
+@_onnx_symbolic(
+    "aten::avg_pool3d",
+    decorate=[
+        symbolic_helper._apply_params("avg_pool3d", torch.nn.modules.utils._triple),
+        _export("avg_pool3d"),
+    ],
+)
+def _avg_pool(name, tuple_fn):
+    @symbolic_helper.quantized_args(True)
+    @symbolic_helper.parse_args("v", "is", "is", "is", "i", "i", "none")
+    def symbolic_fn(
+        g,
+        input: _C.Value,
+        kernel_size: Sequence[int],
+        stride: Sequence[int],
+        padding: int | Sequence[int],
+        ceil_mode: int,
+        count_include_pad: int,
+        divisor_override=None,
+    ):
+        if not stride:
+            stride = kernel_size
+        padding = symbolic_helper._avgpool_helper(
+            tuple_fn, padding, kernel_size, stride, divisor_override, name
+        )
+        assert isinstance(padding, tuple)
+        adjusted_padding = padding
+        # Although onnx::AvgPool provides count_include_pad,
+        # The corner case of Average Pooling with ceil_mode on
+        # PyTorch allows sliding window go off bound, which leads to
+        # this accommodation.
+        # More detail on https://github.com/pytorch/pytorch/issues/57178
+        if count_include_pad:
+            input = symbolic_helper._op_with_optional_float_cast(
+                g,
+                "Pad",
+                input,
+                pads_i=((0,) * 2 + padding) * 2,
+                mode_s="constant",
+                value_f=0.0,
+                opset_before=11,
+            )
+            adjusted_padding = (0,) * len(padding)
+        if ceil_mode:
+            padding_ceil = get_pool_ceil_padding(input, kernel_size, stride, padding)
+            adjusted_padding = adjusted_padding + tuple(
+                a + b for (a, b) in zip(padding_ceil, adjusted_padding)
+            )
+        else:
+            adjusted_padding = adjusted_padding * 2
+        output = g.op(
+            "AveragePool",
+            input,
+            kernel_shape_i=tuple_fn(kernel_size),
+            strides_i=tuple_fn(stride),
+            pads_i=adjusted_padding,
+        )
+        return output
+
+    return symbolic_fn

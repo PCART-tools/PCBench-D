@@ -1,0 +1,16 @@
+def plugin(version: str):
+    correct_version = get_correct_mypy_version()
+    if version != correct_version:
+        print(f'''\
+You are using mypy version {version}, which is not supported
+in the PyTorch repo. Please switch to mypy version {correct_version}.
+
+For example, if you installed mypy via pip, run this:
+
+    pip install mypy=={correct_version}
+
+Or if you installed mypy via conda, run this:
+
+    conda install -c conda-forge mypy={correct_version}
+''', file=sys.stderr)
+    return Plugin

@@ -1,0 +1,30 @@
+@@ -27,29 +23,2 @@
+  
+-        Warnings
+-        --------
+-        If ``return_dtype`` is not provided, this may lead to unexpected results.
+-        We allow this, but it is considered a bug in the user's query.
+-
+-        See Also
+-        --------
+-        map_dict
+-
+-        Examples
+-        --------
+-        >>> df = pl.DataFrame(
+-        ...     {
+-        ...         "sine": [0.0, 1.0, 0.0, -1.0],
+-        ...         "cosine": [1.0, 0.0, -1.0, 0.0],
+-        ...     }
+-        ... )
+-        >>> df.select(pl.all().map(lambda x: x.to_numpy().argmax()))
+-        shape: (1, 2)
+-        ┌──────┬────────┐
+-        │ sine ┆ cosine │
+-        │ ---  ┆ ---    │
+-        │ i64  ┆ i64    │
+-        ╞══════╪════════╡
+-        │ 1    ┆ 0      │
+-        └──────┴────────┘
+-
+         """

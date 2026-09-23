@@ -1,0 +1,14 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced a single-line Boolean-expression return with an `if/elif/else` conditional-return structure.
+   The original implementation included:
+   * Return statement: return `isinstance(dtype, ExtensionDtype) or registry.find(dtype) is not None`.
+
+   The new implementation includes:
+   * Conditional statement: return `True` when `dtype` is an `ExtensionDtype`;
+   * Conditional statement: return `False` when `dtype` is an `np.dtype`;
+   * Return statement: otherwise, return `registry.find(dtype) is not None`.
+# /detail
+# mode：Modify control-flow structure (replace direct return with multi-branch conditional returns)

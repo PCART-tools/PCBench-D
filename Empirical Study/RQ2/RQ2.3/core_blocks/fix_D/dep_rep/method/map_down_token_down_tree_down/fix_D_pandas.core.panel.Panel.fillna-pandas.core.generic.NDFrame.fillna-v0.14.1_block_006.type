@@ -1,0 +1,13 @@
+# detail
+Number of changes: 2
+
+1. Modified | Conditional branch statement
+   Changed the original `else` branch to an `elif not com.is_list_like(value)` branch; the branch still calls `self._data.fillna(...)` and assigns the result to `new_data`.
+
+2. Added | Conditional branch statement
+   Added a conditional branch for `isinstance(value, DataFrame) and self.ndim == 2` and a final `else` branch.
+   This includes:
+   * Conditional branch: when `value` is a `DataFrame` and `self.ndim == 2`, call `self.where(self.notnull(), value)` and assign the result to `new_data`;
+   * Exception statement: in the final `else` branch, raise `ValueError("invalid fill value with a %s" % type(value))`.
+# /detail
+# mode：Modify conditional branch; Add conditional branch

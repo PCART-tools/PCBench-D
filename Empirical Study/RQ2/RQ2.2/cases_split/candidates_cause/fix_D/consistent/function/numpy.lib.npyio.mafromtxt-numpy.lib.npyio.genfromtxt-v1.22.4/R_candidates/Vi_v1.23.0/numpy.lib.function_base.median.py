@@ -1,0 +1,88 @@
+@array_function_dispatch(_median_dispatcher)
+def median(a, axis=None, out=None, overwrite_input=False, keepdims=False):
+    """
+    Compute the median along the specified axis.
+
+    Returns the median of the array elements.
+
+    Parameters
+    ----------
+    a : array_like
+        Input array or object that can be converted to an array.
+    axis : {int, sequence of int, None}, optional
+        Axis or axes along which the medians are computed. The default
+        is to compute the median along a flattened version of the array.
+        A sequence of axes is supported since version 1.9.0.
+    out : ndarray, optional
+        Alternative output array in which to place the result. It must
+        have the same shape and buffer length as the expected output,
+        but the type (of the output) will be cast if necessary.
+    overwrite_input : bool, optional
+       If True, then allow use of memory of input array `a` for
+       calculations. The input array will be modified by the call to
+       `median`. This will save memory when you do not need to preserve
+       the contents of the input array. Treat the input as undefined,
+       but it will probably be fully or partially sorted. Default is
+       False. If `overwrite_input` is ``True`` and `a` is not already an
+       `ndarray`, an error will be raised.
+    keepdims : bool, optional
+        If this is set to True, the axes which are reduced are left
+        in the result as dimensions with size one. With this option,
+        the result will broadcast correctly against the original `arr`.
+
+        .. versionadded:: 1.9.0
+
+    Returns
+    -------
+    median : ndarray
+        A new array holding the result. If the input contains integers
+        or floats smaller than ``float64``, then the output data-type is
+        ``np.float64``.  Otherwise, the data-type of the output is the
+        same as that of the input. If `out` is specified, that array is
+        returned instead.
+
+    See Also
+    --------
+    mean, percentile
+
+    Notes
+    -----
+    Given a vector ``V`` of length ``N``, the median of ``V`` is the
+    middle value of a sorted copy of ``V``, ``V_sorted`` - i
+    e., ``V_sorted[(N-1)/2]``, when ``N`` is odd, and the average of the
+    two middle values of ``V_sorted`` when ``N`` is even.
+
+    Examples
+    --------
+    >>> a = np.array([[10, 7, 4], [3, 2, 1]])
+    >>> a
+    array([[10,  7,  4],
+           [ 3,  2,  1]])
+    >>> np.median(a)
+    3.5
+    >>> np.median(a, axis=0)
+    array([6.5, 4.5, 2.5])
+    >>> np.median(a, axis=1)
+    array([7.,  2.])
+    >>> m = np.median(a, axis=0)
+    >>> out = np.zeros_like(m)
+    >>> np.median(a, axis=0, out=m)
+    array([6.5,  4.5,  2.5])
+    >>> m
+    array([6.5,  4.5,  2.5])
+    >>> b = a.copy()
+    >>> np.median(b, axis=1, overwrite_input=True)
+    array([7.,  2.])
+    >>> assert not np.all(a==b)
+    >>> b = a.copy()
+    >>> np.median(b, axis=None, overwrite_input=True)
+    3.5
+    >>> assert not np.all(a==b)
+
+    """
+    r, k = _ureduce(a, func=_median, axis=axis, out=out,
+                    overwrite_input=overwrite_input)
+    if keepdims:
+        return r.reshape(k)
+    else:
+        return r

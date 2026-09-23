@@ -1,0 +1,11 @@
+@@ -49,5 +49,7 @@
+     def __init__(self, labels, indices=True):
+-        self.labels = labels
+-        self.n_unique_labels = unique(labels).size
+-        self.indices = indices
++        super(LeaveOneLabelOut, self).__init__(len(labels), indices)
++        # We make a copy of labels to avoid side-effects during iteration
++        self.labels = np.array(labels, copy=True)
++        self.unique_labels = unique(labels)
++        self.n_unique_labels = len(self.unique_labels)
+  

@@ -1,0 +1,29 @@
+def _quantize_weight(float_wt, observer):
+    wt_scale, wt_zp = observer.calculate_qparams()
+    if observer.qscheme in [torch.per_tensor_symmetric, torch.per_tensor_affine]:
+        qweight = torch.quantize_per_tensor(
+            float_wt, float(wt_scale), int(wt_zp), torch.qint8
+        )
+        qweight = _clamp_weights(qweight, observer, wt_scale, wt_zp)
+    elif observer.qscheme in [torch.per_channel_symmetric, torch.per_channel_affine]:
+        wt_axis = observer.ch_axis
+        qweight = torch.quantize_per_channel(
+            float_wt,
+            wt_scale.to(torch.double),
+            wt_zp.to(torch.int64),
+            wt_axis,
+            torch.qint8,
+        )
+        qweight = _clamp_weights(qweight, observer, wt_scale, wt_zp)
+    elif observer.qscheme in [torch.per_channel_affine_float_qparams]:
+        qweight = torch.quantize_per_channel(
+            float_wt,
+            wt_scale.to(torch.float),
+            wt_zp.to(torch.float),
+            observer.ch_axis,
+            observer.dtype,
+        )
+        qweight = _clamp_weights(qweight, observer, wt_scale, wt_zp)
+    else:
+        raise ValueError("Unexpected qscheme " + observer.qscheme)
+    return qweight

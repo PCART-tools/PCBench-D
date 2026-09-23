@@ -1,0 +1,10 @@
+@@ -28,6 +30,5 @@
+  
+-        Notes
+-        -----
+-        If you are planning to materialise all frame data at once you should prefer
+-        calling ``rows()``, which will be faster.
++        Returns
++        -------
++        An iterator of tuples (default) or dictionaries of python row values.
+  

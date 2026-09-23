@@ -1,0 +1,46 @@
+    @final
+    def _reindex_with_indexers(
+        self,
+        reindexers,
+        fill_value=None,
+        copy: bool_t | None = False,
+        allow_dups: bool_t = False,
+    ) -> Self:
+        """allow_dups indicates an internal call here"""
+        # reindex doing multiple operations on different axes if indicated
+        new_data = self._mgr
+        for axis in sorted(reindexers.keys()):
+            index, indexer = reindexers[axis]
+            baxis = self._get_block_manager_axis(axis)
+
+            if index is None:
+                continue
+
+            index = ensure_index(index)
+            if indexer is not None:
+                indexer = ensure_platform_int(indexer)
+
+            # TODO: speed up on homogeneous DataFrame objects (see _reindex_multi)
+            new_data = new_data.reindex_indexer(
+                index,
+                indexer,
+                axis=baxis,
+                fill_value=fill_value,
+                allow_dups=allow_dups,
+                copy=copy,
+            )
+            # If we've made a copy once, no need to make another one
+            copy = False
+
+        if (
+            (copy or copy is None)
+            and new_data is self._mgr
+            and not using_copy_on_write()
+        ):
+            new_data = new_data.copy(deep=copy)
+        elif using_copy_on_write() and new_data is self._mgr:
+            new_data = new_data.copy(deep=False)
+
+        return self._constructor_from_mgr(new_data, axes=new_data.axes).__finalize__(
+            self
+        )

@@ -1,0 +1,76 @@
+{
+  "case": "sklearn.cross_validation.LabelShuffleSplit-sklearn.model_selection._split.GroupShuffleSplit-0.20.0",
+  "fix_type": "fix_D",
+  "candidate_api": "sklearn.model_selection._split.GroupShuffleSplit",
+  "error": null,
+  "threshold_10pct": 4.0,
+  "algorithms_meeting_threshold": [
+    "mapBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 21,
+      "vi_rank": 9,
+      "delta": 12,
+      "exceeds_10pct": true
+    },
+    "tokenBased": {
+      "vi1_rank": 1,
+      "vi_rank": 1,
+      "delta": 0,
+      "exceeds_10pct": false
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.1947,
+      "baseline_rank": 24,
+      "delta_baseline_to_vi": 15
+    },
+    "tokenBased": {
+      "baseline_score": 0.6286,
+      "baseline_rank": 1,
+      "delta_baseline_to_vi": 0
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 9,
+          "vi_score": 0.2778,
+          "restored_score": 0.1947,
+          "restored_rank": 24,
+          "delta_vi_to_restored": -15,
+          "distance_to_baseline": 0
+        },
+        "tokenBased": {
+          "vi_rank": 1,
+          "vi_score": 0.601,
+          "restored_score": 0.6286,
+          "restored_rank": 1,
+          "delta_vi_to_restored": 0
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "mapBased": [
+      "block_001"
+    ],
+    "tokenBased": [
+      "block_001"
+    ]
+  },
+  "block_sign_labels": {
+    "map_up_token_flat": [
+      "block_001"
+    ]
+  }
+}

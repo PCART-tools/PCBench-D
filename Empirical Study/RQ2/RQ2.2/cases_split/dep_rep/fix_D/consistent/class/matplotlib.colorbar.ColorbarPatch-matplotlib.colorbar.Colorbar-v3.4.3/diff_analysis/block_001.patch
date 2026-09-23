@@ -1,0 +1,117 @@
+@@ -1,14 +1,104 @@
+-class Colorbar(ColorbarBase):
++class Colorbar:
++    r"""
++    Draw a colorbar in an existing axes.
++
++    Typically, colorbars are created using `.Figure.colorbar` or
++    `.pyplot.colorbar` and associated with `.ScalarMappable`\s (such as an
++    `.AxesImage` generated via `~.axes.Axes.imshow`).
++
++    In order to draw a colorbar not associated with other elements in the
++    figure, e.g. when showing a colormap by itself, one can create an empty
++    `.ScalarMappable`, or directly pass *cmap* and *norm* instead of *mappable*
++    to `Colorbar`.
++
++    Useful public methods are :meth:`set_label` and :meth:`add_lines`.
++
++    Attributes
++    ----------
++    ax : `~matplotlib.axes.Axes`
++        The `~.axes.Axes` instance in which the colorbar is drawn.
++    lines : list
++        A list of `.LineCollection` (empty if no lines were drawn).
++    dividers : `.LineCollection`
++        A LineCollection (empty if *drawedges* is ``False``).
++
++    Parameters
++    ----------
++    ax : `~matplotlib.axes.Axes`
++        The `~.axes.Axes` instance in which the colorbar is drawn.
++
++    mappable : `.ScalarMappable`
++        The mappable whose colormap and norm will be used.
++
++        To show the under- and over- value colors, the mappable's norm should
++        be specified as ::
++
++            norm = colors.Normalize(clip=False)
++
++        To show the colors versus index instead of on a 0-1 scale, use::
++
++            norm=colors.NoNorm()
++
++    cmap : `~matplotlib.colors.Colormap`, default: :rc:`image.cmap`
++        The colormap to use.  This parameter is ignored, unless *mappable* is
++        None.
++
++    norm : `~matplotlib.colors.Normalize`
++        The normalization to use.  This parameter is ignored, unless *mappable*
++        is None.
++
++    alpha : float
++        The colorbar transparency between 0 (transparent) and 1 (opaque).
++
++    values, boundaries
++        If unset, the colormap will be displayed on a 0-1 scale.
++
++    orientation : {'vertical', 'horizontal'}
++
++    ticklocation : {'auto', 'left', 'right', 'top', 'bottom'}
++
++    extend : {'neither', 'both', 'min', 'max'}
++
++    spacing : {'uniform', 'proportional'}
++
++    ticks : `~matplotlib.ticker.Locator` or array-like of float
++
++    format : str or `~matplotlib.ticker.Formatter`
++
++    drawedges : bool
++
++    filled : bool
++
++    extendfrac
++
++    extendrec
++
++    label : str
+     """
+-    This class connects a `ColorbarBase` to a `~.cm.ScalarMappable`
+-    such as an `~.image.AxesImage` generated via `~.axes.Axes.imshow`.
+-
+-    .. note::
+-        This class is not intended to be instantiated directly; instead, use
+-        `.Figure.colorbar` or `.pyplot.colorbar` to create a colorbar.
+-    """
+-
+-    def __init__(self, ax, mappable, **kwargs):
+-        # Ensure the given mappable's norm has appropriate vmin and vmax set
+-        # even if mappable.draw has not yet been called.
++
++    n_rasterize = 50  # rasterize solids if number of colors >= n_rasterize
++
++    def __init__(self, ax, mappable=None, *, cmap=None,
++                 norm=None,
++                 alpha=None,
++                 values=None,
++                 boundaries=None,
++                 orientation='vertical',
++                 ticklocation='auto',
++                 extend=None,
++                 spacing='uniform',  # uniform or proportional
++                 ticks=None,
++                 format=None,
++                 drawedges=False,
++                 filled=True,
++                 extendfrac=None,
++                 extendrect=False,
++                 label='',
++                 ):
++
++        if mappable is None:
++            mappable = cm.ScalarMappable(norm=norm, cmap=cmap)
++
++        # Ensure the given mappable's norm has appropriate vmin and vmax
++        # set even if mappable.draw has not yet been called.
+         if mappable.get_array() is not None:

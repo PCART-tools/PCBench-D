@@ -1,0 +1,10 @@
+@@ -26,4 +25,7 @@
+  
+-  When enabled, mixed precision is only used on Volta GPUs and above. The parts
+-  of the graph on CPUs and TPUs are untouched by the graph rewrite.
++  WARNING: This rewrite silently affects the entire model and can have
++  unintended consequences. One example: If a NaN occurs during dynamic loss
++  scaling, the data for the batch is silently dropped while the
++  LossScaleOptimizer attempts to find the appropriate scaling value on the next
++  batch.
+  

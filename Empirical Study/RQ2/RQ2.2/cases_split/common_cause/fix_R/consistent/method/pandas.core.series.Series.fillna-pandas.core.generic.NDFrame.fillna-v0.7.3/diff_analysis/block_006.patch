@@ -1,0 +1,11 @@
+@@ -45,3 +40,9 @@
+             if inplace:
+-                self.values[:] = self.values.take(indexer)
++                values = self.values
++            else:
++                values = self.values.copy()
++
++            fill_f(values, limit=limit)
++
++            if inplace:
+                 result = self

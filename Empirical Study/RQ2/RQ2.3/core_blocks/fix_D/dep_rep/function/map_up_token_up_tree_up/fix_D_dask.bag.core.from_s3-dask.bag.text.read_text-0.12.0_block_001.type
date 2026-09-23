@@ -1,0 +1,12 @@
+# detail
+Number of changes: 1
+
+1. Removed | Conditional statement block
+   Removed the `compression` processing and validation logic from the `else` branch.
+   This included:
+
+   * Conditional statement: when `compression == 'infer'`, assign `infer_compression(urlpath)` to `compression`;
+   * Conditional statement: when `blocksize` is set and `compression` is not in `seekable_files`, construct `msg` and raise `ValueError`;
+   * Conditional statement: when `compression` is in neither `seekable_files` nor `cfiles`, raise `NotImplementedError`.
+# /detail
+# mode：Remove conditional branch

@@ -1,0 +1,12 @@
+    @Appender(_shared_docs['str_partition'] % {
+        'side': 'first',
+        'return': '3 elements containing the string itself, followed by two '
+                  'empty strings',
+        'also': 'rpartition : Split the string at the last occurrence of '
+                '`sep`.'
+    })
+    @deprecate_kwarg(old_arg_name='pat', new_arg_name='sep')
+    def partition(self, sep=' ', expand=True):
+        f = lambda x: x.partition(sep)
+        result = _na_map(f, self._parent)
+        return self._wrap_result(result, expand=expand)

@@ -1,0 +1,5 @@
+@@ -34,3 +22,2 @@
+         """
+-        fill_value = parse_as_expression(fill_value, str_as_lit=True)
+-        return self._from_pyexpr(self._pyexpr.shift_and_fill(n, fill_value))
++        return self.shift(n, fill_value=fill_value)

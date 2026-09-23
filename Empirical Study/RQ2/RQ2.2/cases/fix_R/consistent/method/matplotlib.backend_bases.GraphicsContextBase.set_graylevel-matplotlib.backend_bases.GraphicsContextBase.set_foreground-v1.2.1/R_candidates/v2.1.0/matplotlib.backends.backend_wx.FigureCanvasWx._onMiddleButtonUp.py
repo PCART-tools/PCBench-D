@@ -1,0 +1,8 @@
+    def _onMiddleButtonUp(self, evt):
+        """End measuring on an axis."""
+        x = evt.GetX()
+        y = self.figure.bbox.height - evt.GetY()
+        # print 'release button', 1
+        evt.Skip()
+        self._set_capture(False)
+        FigureCanvasBase.button_release_event(self, x, y, 2, guiEvent=evt)

@@ -1,0 +1,3 @@
+  def __call__(self, event: str, duration_secs: float,
+               **kwargs: str | int) -> None:
+    ...

@@ -1,0 +1,114 @@
+# detail
+Number of changes: 18
+
+1. Added | Method `_ticker`
+   Added a method that generates ticks, tick labels, and an offset string based on `locator` and `formatter`.
+   This includes:
+   * Conditional statement: select `intv` based on whether `self.norm` is `colors.NoNorm` and `self.boundaries` is `None`;
+   * API calls: configure the dummy axis, view interval, and data interval of `locator`, and set the axis for `formatter`;
+   * Conditional statement: use different `eps` values to filter tick values depending on whether `locator` is a `ticker.LogLocator`;
+   * Assignment statements: compute `ticks`, `ticklabels`, and `offset_string`;
+   * Return statement: return `(ticks, ticklabels, offset_string)`.
+
+2. Added | Method `_process_values`
+   Added a method that sets `self._boundaries` and `self._values`.
+   This includes:
+   * Conditional statement: when `self.values` is not `None`, set `_values` and `_boundaries` based on `self.values` and `self.boundaries`, and return early;
+   * Conditional statement: select the boundary source based on whether `self.norm` is `colors.BoundaryNorm`, or generate boundaries through `_uniform_y`;
+   * Conditional statements: append extension boundaries to the boundary array according to `_extend_lower()` and `_extend_upper()`;
+   * Conditional statement: set `self.norm.vmin` and `self.norm.vmax` when `self.norm` is not scaled;
+   * API call: call `mtransforms.nonsingular` to update the norm range;
+   * Conditional statement: call `self.norm.inverse` on the boundaries when the norm is not a `BoundaryNorm`;
+   * Assignment statements: set `self._boundaries` and `self._values`, and convert `_values` to `int16` for `NoNorm`.
+
+3. Added | Method `_mesh`
+   Added a method that generates colorbar grid-coordinate arrays.
+   This includes:
+   * Assignment statements: deep-copy `self.norm` and set `norm.vmin` and `norm.vmax`;
+   * API calls: create the `x` array and call `_proportional_y()` to obtain `y` and `extendlen`;
+   * Conditional statement: linearly transform `y` or call `norm.inverse` according to the norm type or `self.__scale`;
+   * Assignment statements: set `self._y` and generate `X` and `Y` through `np.meshgrid`;
+   * Conditional statement: return `(X, Y, extendlen)` or `(Y, X, extendlen)` according to `self.orientation`.
+
+4. Added | Method `_forward_boundaries`
+   Added a method that interpolates input `x` values onto boundary coordinates according to `self._boundaries`, assigning `-1` or `2` to values outside the boundaries.
+
+5. Added | Method `_inverse_boundaries`
+   Added a method that interpolates input `x` values from boundary coordinates back to `self._boundaries`.
+
+6. Added | Method `_reset_locator_formatter_scale`
+   Added a method that resets the locator, formatter, and scale.
+   This includes:
+   * API call: call `self._process_values()`;
+   * Assignment statements: set `self.locator`, `self.minorlocator`, and `self.formatter` to `None`;
+   * Conditional statements: set different scales according to `self.boundaries`, the type of `self.norm`, `self.spacing`, and `self.norm._scale`;
+   * API calls: call `self._set_scale(...)`, passing the `functions` argument in some branches.
+
+7. Added | Method `_locate`
+   Added a method that returns colorbar data coordinates for input color-data values.
+   This includes:
+   * Conditional statement: depending on whether `self.norm` is `NoNorm` or `BoundaryNorm`, directly use the boundaries and values or use their normalized forms;
+   * Assignment statements: extract `bunique` and `yunique`;
+   * API call: compute `z` through `np.interp`;
+   * Return statement: return `z`.
+
+8. Added | Method `_uniform_y`
+   Added a method that generates uniform boundary coordinates and extension lengths for a given number `N`.
+   This includes:
+   * Assignment statements: compute `automin` and `automax`;
+   * API call: call `_get_extension_lengths` to compute `extendlength`;
+   * API call: generate `y` through `np.linspace`;
+   * Return statement: return `(y, extendlength)`.
+
+9. Added | Method `_proportional_y`
+   Added a method that generates proportional colorbar boundary coordinates and extension lengths.
+   This includes:
+   * Conditional statement: compute `y` using boundary differences or the norm, depending on whether `self.norm` is `colors.BoundaryNorm`;
+   * Conditional statement: when `self.spacing == 'uniform'`, call `_forward_boundaries` to set `yscaled`;
+   * Assignment statements: slice `y` and `yscaled` according to `self._inside`;
+   * API calls: normalize `y` and `yscaled` using `colors.Normalize` and `np.ma.filled`;
+   * Assignment statements: compute `automin` and `automax`, and initialize `extendlength`;
+   * Conditional statement: call `_get_extension_lengths` when a lower or upper extension exists;
+   * Return statement: return `(y, extendlength)`.
+
+10. Added | Method `_get_extension_lengths`
+    Added a method that returns extension lengths based on `frac`, `automin`, `automax`, and `default`.
+    This includes:
+    * Assignment statement: initialize `extendlength` as `[default, default]`;
+    * Conditional statement: when `frac` is a string, validate its value and set it to `[automin, automax]`;
+    * Conditional statement: when `frac` is not `None`, attempt to assign it to `extendlength`;
+    * Exception handling: catch `TypeError` and `ValueError` and raise a new `ValueError('invalid value for extendfrac')`;
+    * Return statement: return `extendlength`.
+
+11. Added | Method `_extend_lower`
+    Added a method that tests whether `self.extend` is `'both'` or `'min'` and returns the resulting Boolean expression.
+
+12. Added | Method `_extend_upper`
+    Added a method that tests whether `self.extend` is `'both'` or `'max'` and returns the resulting Boolean expression.
+
+13. Added | Method `_long_axis`
+    Added a method that returns the long-axis object according to `self.orientation`: return `self.ax.yaxis` for `vertical`; otherwise, return `self.ax.xaxis`.
+
+14. Added | Method `_short_axis`
+    Added a method that returns the short-axis object according to `self.orientation`: return `self.ax.xaxis` for `vertical`; otherwise, return `self.ax.yaxis`.
+
+15. Added | Method `_get_view`
+    Added a method that returns `(self.norm.vmin, self.norm.vmax)`.
+
+16. Added | Method `_set_view`
+    Added a method that unpacks `view` into `self.norm.vmin` and `self.norm.vmax`.
+
+17. Added | Method `_set_view_from_bbox`
+    Added a method that updates `self.norm.vmin` and `self.norm.vmax` based on a bounding box.
+    This includes:
+    * API call: call `self.ax._prepare_view_from_bbox(...)` to obtain `new_xbound` and `new_ybound`;
+    * Conditional statement: use `new_xbound` for assignment when `self.orientation == 'horizontal'`;
+    * Conditional statement: use `new_ybound` for assignment when `self.orientation == 'vertical'`.
+
+18. Added | Method `drag_pan`
+    Added a method that updates `self.norm.vmin` and `self.norm.vmax` during drag panning.
+    This includes:
+    * API call: call `self.ax._get_pan_points(button, key, x, y)` to obtain `points`;
+    * Conditional statement: when `points` is not `None`, assign values from `points[:, 0]` or `points[:, 1]` to `self.norm.vmin` and `self.norm.vmax` according to `self.orientation`.
+# /detail
+# mode：Add method

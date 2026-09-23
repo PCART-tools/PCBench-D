@@ -1,0 +1,14 @@
+@@ -151,4 +728,11 @@
+         """
+-        super().remove()
+-        self.mappable.callbacksSM.disconnect(self.mappable.colorbar_cid)
++        if hasattr(self.ax, '_colorbar_info'):
++            parents = self.ax._colorbar_info['parents']
++            for a in parents:
++                if self.ax in a._colorbars:
++                    a._colorbars.remove(self.ax)
++
++        self.ax.remove()
++
++        self.mappable.callbacks.disconnect(self.mappable.colorbar_cid)
+         self.mappable.colorbar = None

@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Modified | `for` loop
+   Changed the variables unpacked from `cursor.fetchall()` from `constraint, column, order, type_` to `constraint, type_, columns, orders`; changed the loop body from initializing a dictionary per `constraint` and appending `column` and `order` incrementally to directly assigning a complete dictionary to `constraints[constraint]` on each iteration, with column and ordering lists produced using `columns.split(',')` and `orders.split(',')`.
+   The original implementation included:
+
+   * Conditional statement: initialize a constraint-information dictionary when `constraint` was not in `constraints`;
+   * Method call: append `column` to `constraints[constraint]['columns']`;
+   * Method call: append `order` to `constraints[constraint]['orders']`.
+
+   The new implementation includes:
+
+   * Assignment statement: assign to `constraints[constraint]` a dictionary containing primary-key, unique, foreign-key, check, index, type, column, and ordering information.
+# /detail
+# mode：Modify for loop (modify loop variables and body, remove conditional statement, and modify call arguments)

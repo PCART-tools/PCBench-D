@@ -1,0 +1,84 @@
+@@ -6,82 +12,2 @@
+     _default_dtype = np.dtype(np.float64)
+-
+-    @property
+-    def inferred_type(self) -> str:
+-        """
+-        Always 'floating' for ``Float64Index``
+-        """
+-        return "floating"
+-
+-    @doc(Index.astype)
+-    def astype(self, dtype, copy=True):
+-        dtype = pandas_dtype(dtype)
+-        if needs_i8_conversion(dtype):
+-            raise TypeError(
+-                f"Cannot convert Float64Index to dtype {dtype}; integer "
+-                "values are required for conversion"
+-            )
+-        elif is_integer_dtype(dtype) and not is_extension_array_dtype(dtype):
+-            # TODO(jreback); this can change once we have an EA Index type
+-            # GH 13149
+-            arr = astype_nansafe(self._values, dtype=dtype)
+-            return Int64Index(arr, name=self.name)
+-        return super().astype(dtype, copy=copy)
+-
+-    # ----------------------------------------------------------------
+-    # Indexing Methods
+-
+-    @doc(Index._should_fallback_to_positional)
+-    def _should_fallback_to_positional(self) -> bool:
+-        return False
+-
+-    @doc(Index._convert_slice_indexer)
+-    def _convert_slice_indexer(self, key: slice, kind: str):
+-        assert kind in ["loc", "getitem"]
+-
+-        # We always treat __getitem__ slicing as label-based
+-        # translate to locations
+-        return self.slice_indexer(key.start, key.stop, key.step, kind=kind)
+-
+-    @doc(Index.get_loc)
+-    def get_loc(self, key, method=None, tolerance=None):
+-        if is_bool(key):
+-            # Catch this to avoid accidentally casting to 1.0
+-            raise KeyError(key)
+-
+-        if is_float(key) and np.isnan(key):
+-            nan_idxs = self._nan_idxs
+-            if not len(nan_idxs):
+-                raise KeyError(key)
+-            elif len(nan_idxs) == 1:
+-                return nan_idxs[0]
+-            return nan_idxs
+-
+-        return super().get_loc(key, method=method, tolerance=tolerance)
+-
+-    # ----------------------------------------------------------------
+-
+-    def _format_native_types(
+-        self, na_rep="", float_format=None, decimal=".", quoting=None, **kwargs
+-    ):
+-        from pandas.io.formats.format import FloatArrayFormatter
+-
+-        formatter = FloatArrayFormatter(
+-            self._values,
+-            na_rep=na_rep,
+-            float_format=float_format,
+-            decimal=decimal,
+-            quoting=quoting,
+-            fixed_width=False,
+-        )
+-        return formatter.get_result_as_array()
+-
+-    def __contains__(self, other: Any) -> bool:
+-        hash(other)
+-        if super().__contains__(other):
+-            return True
+-
+-        return is_float(other) and np.isnan(other) and self.hasnans
+-
+-    def _can_union_without_object_cast(self, other) -> bool:
+-        # See GH#26778, further casting may occur in NumericIndex._union
+-        return is_numeric_dtype(other.dtype)
++    _dtype_validation_metadata = (is_float_dtype, "float")

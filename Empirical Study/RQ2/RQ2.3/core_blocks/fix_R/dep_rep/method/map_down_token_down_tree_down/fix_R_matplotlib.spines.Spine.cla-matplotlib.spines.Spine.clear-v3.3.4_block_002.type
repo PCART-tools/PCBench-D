@@ -1,0 +1,13 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation
+   Changed the implementation of `cla` from directly setting `self._position = None` and calling `self.axis.cla()` when `self.axis is not None` to calling `self.clear()`.
+   The original implementation included:
+   * Assignment statement: set `self._position` to `None`;
+   * Conditional statement: test `self.axis is not None` and call `self.axis.cla()`.
+
+   The new implementation includes:
+   * Method call: `self.clear()`.
+# /detail
+# mode：Modify method implementation (replace original implementation with call statement)

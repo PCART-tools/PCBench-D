@@ -1,0 +1,4 @@
+@@ -60,2 +61,3 @@
+         for constraint, columns, other_table, other_column in cursor.fetchall():
++            constraint = self.identifier_converter(constraint)
+             constraints[constraint] = {

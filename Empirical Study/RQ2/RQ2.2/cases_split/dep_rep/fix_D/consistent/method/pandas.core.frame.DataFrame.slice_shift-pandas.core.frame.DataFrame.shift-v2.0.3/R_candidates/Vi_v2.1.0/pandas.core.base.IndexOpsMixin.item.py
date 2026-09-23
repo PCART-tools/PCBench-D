@@ -1,0 +1,30 @@
+    @final
+    def item(self):
+        """
+        Return the first element of the underlying data as a Python scalar.
+
+        Returns
+        -------
+        scalar
+            The first element of Series or Index.
+
+        Raises
+        ------
+        ValueError
+            If the data is not length = 1.
+
+        Examples
+        --------
+        >>> s = pd.Series([1])
+        >>> s.item()
+        1
+
+        For an index:
+
+        >>> s = pd.Series([1], index=['a'])
+        >>> s.index.item()
+        'a'
+        """
+        if len(self) == 1:
+            return next(iter(self))
+        raise ValueError("can only convert an array of size 1 to a Python scalar")

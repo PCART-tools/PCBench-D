@@ -1,0 +1,8 @@
+# detail
+Change count: 1
+
+1. Add | Call-assignment statement
+
+   Added a two-step assignment to `get_key`: first assigning the return value of `self._get_key_factory(by_alias)` to `get_key`, then reassigning `get_key` using `partial(get_key, self.fields)`.
+# /detail
+# mode: Add call-assignment statement

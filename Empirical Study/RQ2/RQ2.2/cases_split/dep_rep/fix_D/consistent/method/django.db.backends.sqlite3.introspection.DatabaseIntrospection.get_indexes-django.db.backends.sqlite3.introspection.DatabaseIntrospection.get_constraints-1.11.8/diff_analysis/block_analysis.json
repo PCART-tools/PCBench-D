@@ -1,0 +1,126 @@
+{
+  "case": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_indexes-django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_constraints-1.11.8",
+  "fix_type": "fix_D",
+  "candidate_api": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_constraints",
+  "error": null,
+  "threshold_10pct": 7.8,
+  "algorithms_meeting_threshold": [
+    "tokenBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 3,
+      "vi_rank": 6,
+      "delta": -3,
+      "exceeds_10pct": false
+    },
+    "tokenBased": {
+      "vi1_rank": 4,
+      "vi_rank": 12,
+      "delta": -8,
+      "exceeds_10pct": true
+    },
+    "treeBased": {
+      "vi1_rank": 3,
+      "vi_rank": 7,
+      "delta": -4,
+      "exceeds_10pct": false
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.4932,
+      "baseline_rank": 3,
+      "delta_baseline_to_vi": -3
+    },
+    "tokenBased": {
+      "baseline_score": 0.4931,
+      "baseline_rank": 4,
+      "delta_baseline_to_vi": -8
+    },
+    "treeBased": {
+      "baseline_score": 0.4765,
+      "baseline_rank": 3,
+      "delta_baseline_to_vi": -4
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 6,
+          "vi_score": 0.4451,
+          "restored_score": 0.4451,
+          "restored_rank": 6,
+          "delta_vi_to_restored": 0
+        },
+        "tokenBased": {
+          "vi_rank": 12,
+          "vi_score": 0.4113,
+          "restored_score": 0.4113,
+          "restored_rank": 12,
+          "delta_vi_to_restored": 0,
+          "distance_to_baseline": 8
+        },
+        "treeBased": {
+          "vi_rank": 7,
+          "vi_score": 0.4383,
+          "restored_score": 0.4383,
+          "restored_rank": 7,
+          "delta_vi_to_restored": 0
+        }
+      }
+    },
+    {
+      "block": "block_002",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 6,
+          "vi_score": 0.4451,
+          "restored_score": 0.4932,
+          "restored_rank": 3,
+          "delta_vi_to_restored": 3
+        },
+        "tokenBased": {
+          "vi_rank": 12,
+          "vi_score": 0.4113,
+          "restored_score": 0.4931,
+          "restored_rank": 4,
+          "delta_vi_to_restored": 8,
+          "distance_to_baseline": 0
+        },
+        "treeBased": {
+          "vi_rank": 7,
+          "vi_score": 0.4383,
+          "restored_score": 0.4765,
+          "restored_rank": 3,
+          "delta_vi_to_restored": 4
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "tokenBased": [
+      "block_002"
+    ],
+    "mapBased": [
+      "block_002"
+    ],
+    "treeBased": [
+      "block_002"
+    ]
+  },
+  "block_sign_labels": {
+    "map_down_token_down_tree_down": [
+      "block_002"
+    ]
+  }
+}

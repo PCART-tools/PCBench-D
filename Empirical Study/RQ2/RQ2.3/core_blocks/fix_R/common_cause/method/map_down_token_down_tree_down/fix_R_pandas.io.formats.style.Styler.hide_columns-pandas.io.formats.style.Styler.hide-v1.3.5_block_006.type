@@ -1,0 +1,14 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the conditional and hidden-column assignment logic in the method body with a warning call and a returned call to the hiding method.
+   The original implementation included:
+   * Conditional statement: test `subset is None` and set `self.hide_columns_ = True`, or compute hidden-column indices from `subset` and assign them to `self.hidden_columns`;
+   * Return statement: return `self`.
+
+   The new implementation includes:
+   * API call: call `warnings.warn(...)` to issue a deprecation warning;
+   * Return statement: return the result of `self.hide(axis=1, level=level, subset=subset, names=names)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with warning call and return-call statement)

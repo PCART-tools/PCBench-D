@@ -1,0 +1,8 @@
+    def setfd(self, fd: IO[bytes]) -> None:
+        """
+        Called from ImageFile to set the Python file-like object
+
+        :param fd: A Python file-like object
+        :returns: None
+        """
+        self.fd = fd

@@ -1,0 +1,16 @@
+def test_eye():
+    assert_eq(da.eye(9, chunks=3), np.eye(9))
+    assert_eq(da.eye(10, chunks=3), np.eye(10))
+    assert_eq(da.eye(9, chunks=3, M=11), np.eye(9, M=11))
+    assert_eq(da.eye(11, chunks=3, M=9), np.eye(11, M=9))
+    assert_eq(da.eye(7, chunks=3, M=11), np.eye(7, M=11))
+    assert_eq(da.eye(11, chunks=3, M=7), np.eye(11, M=7))
+    assert_eq(da.eye(9, chunks=3, k=2), np.eye(9, k=2))
+    assert_eq(da.eye(9, chunks=3, k=-2), np.eye(9, k=-2))
+    assert_eq(da.eye(7, chunks=3, M=11, k=5), np.eye(7, M=11, k=5))
+    assert_eq(da.eye(11, chunks=3, M=7, k=-6), np.eye(11, M=7, k=-6))
+    assert_eq(da.eye(6, chunks=3, M=9, k=7), np.eye(6, M=9, k=7))
+    assert_eq(da.eye(12, chunks=3, M=6, k=-3), np.eye(12, M=6, k=-3))
+
+    assert_eq(da.eye(9, chunks=3, dtype=int), np.eye(9, dtype=int))
+    assert_eq(da.eye(10, chunks=3, dtype=int), np.eye(10, dtype=int))

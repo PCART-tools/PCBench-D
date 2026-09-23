@@ -1,0 +1,9 @@
+class ForceRHR(GeomOutputGeoFunc):
+    arity = 1
+
+    def __init__(self, *args, **kwargs):
+        warnings.warn(
+            'ForceRHR is deprecated in favor of ForcePolygonCW.',
+            RemovedInDjango30Warning, stacklevel=2,
+        )
+        super().__init__(*args, **kwargs)

@@ -1,0 +1,15 @@
+@@ -1,8 +1,8 @@
+ class DeviceQuantileDMatrix(DMatrix):
+-    """Device memory Data Matrix used in XGBoost for training with
+-    tree_method='gpu_hist'. Do not use this for test/validation tasks as some
+-    information may be lost in quantisation. This DMatrix is primarily designed
+-    to save memory in training from device memory inputs by avoiding
+-    intermediate storage. Set max_bin to control the number of bins during
+-    quantisation.
++    """Device memory Data Matrix used in XGBoost for training with tree_method='gpu_hist'. Do
++    not use this for test/validation tasks as some information may be lost in
++    quantisation. This DMatrix is primarily designed to save memory in training from
++    device memory inputs by avoiding intermediate storage. Set max_bin to control the
++    number of bins during quantisation.  See doc string in :py:obj:`xgboost.DMatrix` for
++    documents on meta info.
+  

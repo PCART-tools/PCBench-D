@@ -1,0 +1,8 @@
+@@ -5,5 +9,3 @@
+         """
+-        if is_torch_tpu_available():
+-            return xm.is_master_ordinal(local=False)
+-        else:
+-            return self.args.local_rank == -1 or torch.distributed.get_rank() == 0
++        warnings.warn("This method is deprecated, use `Trainer.is_world_process_zero()` instead.", FutureWarning)
++        return self.is_world_process_zero()

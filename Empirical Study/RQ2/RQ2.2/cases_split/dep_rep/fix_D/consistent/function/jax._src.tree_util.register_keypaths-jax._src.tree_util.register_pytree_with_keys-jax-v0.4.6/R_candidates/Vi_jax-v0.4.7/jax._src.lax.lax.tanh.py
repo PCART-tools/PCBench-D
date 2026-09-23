@@ -1,0 +1,3 @@
+def tanh(x: ArrayLike) -> Array:
+  r"""Elementwise hyperbolic tangent: :math:`\mathrm{tanh}(x)`."""
+  return tanh_p.bind(x)

@@ -1,0 +1,2 @@
+def non_mixed_precision_session_created():
+  return _non_mixed_precision_session_created

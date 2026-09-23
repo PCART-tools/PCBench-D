@@ -1,0 +1,54 @@
+    def set_data(self, x, y, A):
+        """
+        Set the grid for the rectangle boundaries, and the data values.
+
+          *x* and *y* are monotonic 1-D ndarrays of lengths N+1 and M+1,
+             respectively, specifying rectangle boundaries.  If None,
+             they will be created as uniform arrays from 0 through N
+             and 0 through M, respectively.
+
+          *A* is an (M,N) ndarray or masked array of values to be
+            colormapped, or a (M,N,3) RGB array, or a (M,N,4) RGBA
+            array.
+
+        """
+        A = cbook.safe_masked_invalid(A, copy=True)
+        if x is None:
+            x = np.arange(0, A.shape[1]+1, dtype=np.float64)
+        else:
+            x = np.array(x, np.float64).ravel()
+        if y is None:
+            y = np.arange(0, A.shape[0]+1, dtype=np.float64)
+        else:
+            y = np.array(y, np.float64).ravel()
+
+        if A.shape[:2] != (y.size-1, x.size-1):
+            raise ValueError(
+                "Axes don't match array shape. Got %s, expected %s." %
+                (A.shape[:2], (y.size - 1, x.size - 1)))
+        if A.ndim not in [2, 3]:
+            raise ValueError("A must be 2D or 3D")
+        if A.ndim == 3 and A.shape[2] == 1:
+            A.shape = A.shape[:2]
+        self.is_grayscale = False
+        if A.ndim == 3:
+            if A.shape[2] in [3, 4]:
+                if ((A[:, :, 0] == A[:, :, 1]).all() and
+                        (A[:, :, 0] == A[:, :, 2]).all()):
+                    self.is_grayscale = True
+            else:
+                raise ValueError("3D arrays must have RGB or RGBA as last dim")
+
+        # For efficient cursor readout, ensure x and y are increasing.
+        if x[-1] < x[0]:
+            x = x[::-1]
+            A = A[:, ::-1]
+        if y[-1] < y[0]:
+            y = y[::-1]
+            A = A[::-1]
+
+        self._A = A
+        self._Ax = x
+        self._Ay = y
+        self._rgbacache = None
+        self.stale = True

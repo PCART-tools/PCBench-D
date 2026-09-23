@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the conditional conversion of `return_dtype` and `_pyexpr.map(...)` return logic with directly calling and returning `self.map_batches(...)`.
+   The original implementation included:
+
+   * Conditional statement: when `return_dtype is not None`, call `py_type_to_dtype(return_dtype)` and reassign the result;
+   * Return statement: return `self._from_pyexpr(self._pyexpr.map(function, return_dtype, agg_list))`.
+
+   The new implementation includes:
+
+   * Return statement: return `self.map_batches(function, return_dtype, agg_list=agg_list)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

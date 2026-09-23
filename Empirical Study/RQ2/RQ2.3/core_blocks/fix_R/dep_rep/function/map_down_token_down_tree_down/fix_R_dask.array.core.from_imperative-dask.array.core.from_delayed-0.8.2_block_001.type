@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Modified | Function
+   Replaced the signature and entire implementation of `from_imperative`: instead of accepting `value`, `shape`, `dtype`, and `name` and constructing an `Array`, it now accepts `*args` and `**kwargs`, issues a `warn` call, and returns `from_delayed(*args, **kwargs)`.
+   The original implementation included:
+
+   * Assignment statements: set `name`, construct `dsk`, update `dsk`, and construct `chunks`;
+   * Return statement: return `Array(dsk, name, chunks, dtype)`.
+
+   The new implementation includes:
+
+   * Function call: call `warn("Deprecation warning: moved to from_delayed")`;
+   * Return statement: return `from_delayed(*args, **kwargs)`.
+# /detail
+# mode：Convert parameter to variadic parameter; Modify function implementation (replace original implementation with warning call and return-call statement)

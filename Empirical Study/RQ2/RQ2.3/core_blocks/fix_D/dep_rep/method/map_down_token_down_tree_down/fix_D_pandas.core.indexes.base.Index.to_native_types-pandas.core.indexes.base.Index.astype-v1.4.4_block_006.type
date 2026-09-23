@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Added | Conditional statement
+   Added a check of `self._is_backward_compat_public_numeric_index`; inside this branch, further test whether `dtype` is an `np.dtype` and a numeric type, and, when true, return `self._constructor(new_values, name=self.name, dtype=dtype, copy=False)`.
+# /detail
+# mode：Add conditional statement

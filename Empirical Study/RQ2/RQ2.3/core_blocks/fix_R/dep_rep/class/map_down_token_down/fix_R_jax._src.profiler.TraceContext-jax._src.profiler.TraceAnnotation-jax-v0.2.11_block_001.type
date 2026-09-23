@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Modified | Class definition
+   Changed the base class of `TraceContext` from `xla_client.profiler.TraceMe` to `TraceAnnotation`, and changed the class body from an empty implementation to a constructor implementation.
+   The original implementation included:
+
+   * Empty statement: `pass`.
+
+   The new implementation includes:
+
+   * Method definition: add `__init__(self, *args, **kwargs)`;
+   * Function call: call `warnings.warn(...)`;
+   * Parent-class method call: call `super().__init__(*args, **kwargs)`.
+# /detail
+# mode：Modify superclass; Add method

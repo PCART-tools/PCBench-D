@@ -1,0 +1,22 @@
+def test_quadmesh_alpha_array():
+    x = np.arange(4)
+    y = np.arange(4)
+    z = np.arange(9).reshape((3, 3))
+    alpha = z / z.max()
+    alpha_flat = alpha.ravel()
+    # Provide 2-D alpha:
+    fig, (ax0, ax1) = plt.subplots(2)
+    coll1 = ax0.pcolormesh(x, y, z, alpha=alpha)
+    coll2 = ax1.pcolormesh(x, y, z)
+    coll2.set_alpha(alpha)
+    plt.draw()
+    assert_array_equal(coll1.get_facecolors()[:, -1], alpha_flat)
+    assert_array_equal(coll2.get_facecolors()[:, -1], alpha_flat)
+    # Or provide 1-D alpha:
+    fig, (ax0, ax1) = plt.subplots(2)
+    coll1 = ax0.pcolormesh(x, y, z, alpha=alpha_flat)
+    coll2 = ax1.pcolormesh(x, y, z)
+    coll2.set_alpha(alpha_flat)
+    plt.draw()
+    assert_array_equal(coll1.get_facecolors()[:, -1], alpha_flat)
+    assert_array_equal(coll2.get_facecolors()[:, -1], alpha_flat)

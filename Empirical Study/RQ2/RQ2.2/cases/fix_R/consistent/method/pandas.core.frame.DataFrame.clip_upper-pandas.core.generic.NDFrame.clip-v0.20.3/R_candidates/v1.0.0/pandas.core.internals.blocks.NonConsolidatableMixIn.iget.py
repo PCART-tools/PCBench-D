@@ -1,0 +1,15 @@
+    def iget(self, col):
+
+        if self.ndim == 2 and isinstance(col, tuple):
+            col, loc = col
+            if not com.is_null_slice(col) and col != 0:
+                raise IndexError(f"{self} only contains one item")
+            elif isinstance(col, slice):
+                if col != slice(None):
+                    raise NotImplementedError(col)
+                return self.values[[loc]]
+            return self.values[loc]
+        else:
+            if col != 0:
+                raise IndexError(f"{self} only contains one item")
+            return self.values

@@ -1,0 +1,126 @@
+{
+  "case": "matplotlib.projections.polar.RadialAxis.cla-matplotlib.projections.polar.RadialAxis.clear-v3.3.4",
+  "fix_type": "fix_R",
+  "candidate_api": "matplotlib.projections.polar.RadialAxis.clear",
+  "error": null,
+  "threshold_10pct": 15.2,
+  "algorithms_meeting_threshold": [
+    "treeBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 1,
+      "vi_rank": 11,
+      "delta": -10,
+      "exceeds_10pct": false
+    },
+    "tokenBased": {
+      "vi1_rank": 1,
+      "vi_rank": 13,
+      "delta": -12,
+      "exceeds_10pct": false
+    },
+    "treeBased": {
+      "vi1_rank": 1,
+      "vi_rank": 21,
+      "delta": -20,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.9961,
+      "baseline_rank": 1,
+      "delta_baseline_to_vi": -10
+    },
+    "tokenBased": {
+      "baseline_score": 0.6667,
+      "baseline_rank": 1,
+      "delta_baseline_to_vi": -12
+    },
+    "treeBased": {
+      "baseline_score": 0.95,
+      "baseline_rank": 1,
+      "delta_baseline_to_vi": -20
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 11,
+          "vi_score": 0.6355,
+          "restored_score": 0.6355,
+          "restored_rank": 11,
+          "delta_vi_to_restored": 0
+        },
+        "tokenBased": {
+          "vi_rank": 13,
+          "vi_score": 0.2917,
+          "restored_score": 0.3043,
+          "restored_rank": 13,
+          "delta_vi_to_restored": 0
+        },
+        "treeBased": {
+          "vi_rank": 21,
+          "vi_score": 0.5833,
+          "restored_score": 0.6,
+          "restored_rank": 63,
+          "delta_vi_to_restored": -42,
+          "distance_to_baseline": 62
+        }
+      }
+    },
+    {
+      "block": "block_002",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 11,
+          "vi_score": 0.6355,
+          "restored_score": 0.9961,
+          "restored_rank": 1,
+          "delta_vi_to_restored": 10
+        },
+        "tokenBased": {
+          "vi_rank": 13,
+          "vi_score": 0.2917,
+          "restored_score": 0.64,
+          "restored_rank": 1,
+          "delta_vi_to_restored": 12
+        },
+        "treeBased": {
+          "vi_rank": 21,
+          "vi_score": 0.5833,
+          "restored_score": 0.8261,
+          "restored_rank": 1,
+          "delta_vi_to_restored": 20,
+          "distance_to_baseline": 0
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "treeBased": [
+      "block_002"
+    ],
+    "mapBased": [
+      "block_002"
+    ],
+    "tokenBased": [
+      "block_002"
+    ]
+  },
+  "block_sign_labels": {
+    "map_down_token_down_tree_down": [
+      "block_002"
+    ]
+  }
+}

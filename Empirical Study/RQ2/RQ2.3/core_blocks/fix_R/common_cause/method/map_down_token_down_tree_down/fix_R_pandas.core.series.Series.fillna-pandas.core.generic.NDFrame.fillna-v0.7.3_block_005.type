@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original fill-method cleanup, mask-type conversion, and branch-based indexer selection with a call to `_get_fill_func(method)` assigned to `fill_f`.
+   The original implementation included:
+
+   * Assignment statement: call `com._clean_fill_method(method)` to update `method`;
+   * Assignment statement: call `mask.astype(np.uint8)` to update `mask`;
+   * Conditional statement: according to whether `method` was `'pad'` or `'backfill'`, call the corresponding `lib.get_*_indexer(mask)` and assign the result to `indexer`.
+
+   The new implementation includes:
+
+   * Assignment statement: call `_get_fill_func(method)` and assign the result to `fill_f`.
+# /detail
+# mode：Modify implementation block (remove original logic and add call-assignment statement)

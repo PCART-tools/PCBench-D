@@ -1,0 +1,2 @@
+    def freeze(self):
+        pass

@@ -1,0 +1,7 @@
+@@ -65,4 +65,4 @@
+         >>> cat.take([0, -1, -1], allow_fill=True, fill_value='a')
+-        [a, a, a]
+-        Categories (3, object): [a, b]
++        ['a', 'a', 'a']
++        Categories (2, object): ['a', 'b']
+  

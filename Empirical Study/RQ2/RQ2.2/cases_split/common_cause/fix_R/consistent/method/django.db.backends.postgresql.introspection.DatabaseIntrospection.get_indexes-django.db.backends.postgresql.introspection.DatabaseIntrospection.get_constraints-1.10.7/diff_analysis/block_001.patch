@@ -1,0 +1,7 @@
+@@ -1,2 +1,6 @@
+     def get_indexes(self, cursor, table_name):
++        warnings.warn(
++            "get_indexes() is deprecated in favor of get_constraints().",
++            RemovedInDjango21Warning, stacklevel=2
++        )
+         # This query retrieves each index on the given table, including the

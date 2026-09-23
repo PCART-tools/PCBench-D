@@ -1,0 +1,4 @@
+@@ -1,2 +1,2 @@
+-@tf_export(v1=['train.experimental.enable_mixed_precision_graph_rewrite'])
++@tf_export('train.experimental.enable_mixed_precision_graph_rewrite', v1=[])
+ def enable_mixed_precision_graph_rewrite(opt, loss_scale='dynamic'):

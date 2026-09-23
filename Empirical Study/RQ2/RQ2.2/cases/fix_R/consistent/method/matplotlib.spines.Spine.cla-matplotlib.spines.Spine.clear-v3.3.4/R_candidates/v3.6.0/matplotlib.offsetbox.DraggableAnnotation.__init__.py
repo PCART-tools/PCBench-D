@@ -1,0 +1,3 @@
+    def __init__(self, annotation, use_blit=False):
+        super().__init__(annotation, use_blit=use_blit)
+        self.annotation = annotation

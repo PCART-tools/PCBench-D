@@ -1,0 +1,5 @@
+    def _get_set_deprecation_msg_params(self):
+        return (  # RemovedInDjango20Warning
+            '%s side of a many-to-many set' % ('reverse' if self.reverse else 'forward'),
+            self.rel.get_accessor_name() if self.reverse else self.field.name,
+        )

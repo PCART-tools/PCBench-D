@@ -1,0 +1,6 @@
+@@ -2,3 +2,4 @@
+                                transform):
+-        self.writer.start('g', **self._get_clip_attrs(gc))
++        writer = self.writer
++        writer.start('g', **self._get_clip_attrs(gc))
+         transform = transform.frozen()

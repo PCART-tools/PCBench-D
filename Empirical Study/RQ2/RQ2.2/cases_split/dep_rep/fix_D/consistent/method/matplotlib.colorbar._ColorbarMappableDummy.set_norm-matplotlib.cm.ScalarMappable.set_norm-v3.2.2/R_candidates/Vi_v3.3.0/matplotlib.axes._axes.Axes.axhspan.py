@@ -1,0 +1,52 @@
+    @docstring.dedent_interpd
+    def axhspan(self, ymin, ymax, xmin=0, xmax=1, **kwargs):
+        """
+        Add a horizontal span (rectangle) across the axis.
+
+        The rectangle spans from *ymin* to *ymax* vertically, and, by default,
+        the whole x-axis horizontally.  The x-span can be set using *xmin*
+        (default: 0) and *xmax* (default: 1) which are in axis units; e.g.
+        ``xmin = 0.5`` always refers to the middle of the x-axis regardless of
+        the limits set by `~.Axes.set_xlim`.
+
+        Parameters
+        ----------
+        ymin : float
+            Lower y-coordinate of the span, in data units.
+        ymax : float
+            Upper y-coordinate of the span, in data units.
+        xmin : float, default: 0
+            Lower x-coordinate of the span, in x-axis (0-1) units.
+        xmax : float, default: 1
+            Upper x-coordinate of the span, in x-axis (0-1) units.
+
+        Returns
+        -------
+        `~matplotlib.patches.Polygon`
+            Horizontal span (rectangle) from (xmin, ymin) to (xmax, ymax).
+
+        Other Parameters
+        ----------------
+        **kwargs : `~matplotlib.patches.Polygon` properties
+
+        %(Polygon)s
+
+        See Also
+        --------
+        axvspan : Add a vertical span across the axes.
+        """
+        trans = self.get_yaxis_transform(which='grid')
+
+        # process the unit information
+        self._process_unit_info([xmin, xmax], [ymin, ymax], kwargs=kwargs)
+
+        # first we need to strip away the units
+        xmin, xmax = self.convert_xunits([xmin, xmax])
+        ymin, ymax = self.convert_yunits([ymin, ymax])
+
+        verts = (xmin, ymin), (xmin, ymax), (xmax, ymax), (xmax, ymin)
+        p = mpatches.Polygon(verts, **kwargs)
+        p.set_transform(trans)
+        self.add_patch(p)
+        self._request_autoscale_view(scalex=False)
+        return p

@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation code block
+   Replaced the entire implementation of `finish`.
+   The original implementation included:
+
+   * Assignment statements: read and clear `_finish_callbacks`;
+   * Loop statement: iterate over `callbacks` and invoke each callback;
+   * Conditional statement: test whether a callback result is a coroutine or `asyncio.Future`;
+   * Exception-handling structure: catch `Exception` and call `_loop.call_exception_handler`.
+
+   The new implementation includes:
+
+   * Call statement: call `warnings.warn("Use .cleanup() instead", DeprecationWarning)`;
+   * `yield from` statement: execute `self.cleanup()`.
+# /detail
+# mode：Modify method implementation (replace original implementation with warning call and call statement)

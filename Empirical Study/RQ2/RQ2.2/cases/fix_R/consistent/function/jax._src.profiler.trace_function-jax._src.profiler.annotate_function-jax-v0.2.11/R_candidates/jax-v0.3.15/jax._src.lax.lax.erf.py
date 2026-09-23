@@ -1,0 +1,3 @@
+def erf(x: Array) -> Array:
+  r"""Elementwise error function: :math:`\mathrm{erf}(x)`."""
+  return erf_p.bind(x)

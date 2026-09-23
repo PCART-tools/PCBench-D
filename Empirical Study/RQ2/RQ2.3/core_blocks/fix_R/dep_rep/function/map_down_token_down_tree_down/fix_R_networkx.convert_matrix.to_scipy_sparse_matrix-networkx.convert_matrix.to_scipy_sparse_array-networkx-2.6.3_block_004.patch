@@ -1,0 +1,34 @@
+@@ -106,29 +91,5 @@
+     )
+-    try:
+-        row, col, data = coefficients
+-    except ValueError:
+-        # there is no edge in the subgraph
+-        row, col, data = [], [], []
+-
+-    if G.is_directed():
+-        M = sp.sparse.coo_matrix((data, (row, col)), shape=(nlen, nlen), dtype=dtype)
+-    else:
+-        # symmetrize matrix
+-        d = data + data
+-        r = row + col
+-        c = col + row
+-        # selfloop entries get double counted when symmetrizing
+-        # so we subtract the data on the diagonal
+-        selfloops = list(nx.selfloop_edges(G, data=weight, default=1))
+-        if selfloops:
+-            diag_index, diag_data = zip(*((index[u], -wt) for u, v, wt in selfloops))
+-            d += diag_data
+-            r += diag_index
+-            c += diag_index
+-        M = sp.sparse.coo_matrix((d, (r, c)), shape=(nlen, nlen), dtype=dtype)
+-    try:
+-        return M.asformat(format)
+-    # From Scipy 1.1.0, asformat will throw a ValueError instead of an
+-    # AttributeError if the format if not recognized.
+-    except (AttributeError, ValueError) as e:
+-        raise nx.NetworkXError(f"Unknown sparse matrix format: {format}") from e
++    A = to_scipy_sparse_array(
++        G, nodelist=nodelist, dtype=dtype, weight=weight, format=format
++    )
++    return sp.sparse.csr_matrix(A).asformat(format)

@@ -1,0 +1,11 @@
+@image_comparison(['colorbar_extensions_uniform.png',
+                   'colorbar_extensions_proportional.png'],
+                  tol=1.0)
+def test_colorbar_extension_length():
+    """Test variable length colorbar extensions."""
+    # Remove this line when this test image is regenerated.
+    plt.rcParams['pcolormesh.snap'] = False
+
+    # Create figures for uniform and proportionally spaced colorbars.
+    _colorbar_extension_length('uniform')
+    _colorbar_extension_length('proportional')

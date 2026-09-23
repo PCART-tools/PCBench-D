@@ -1,0 +1,6 @@
+@@ -5,4 +5,3 @@
+             return resp_impl
+-        for app in request.match_info.apps:
+-            yield from app.on_response_prepare.send(request, self)
++        yield from request._prepare_hook(self)
+  

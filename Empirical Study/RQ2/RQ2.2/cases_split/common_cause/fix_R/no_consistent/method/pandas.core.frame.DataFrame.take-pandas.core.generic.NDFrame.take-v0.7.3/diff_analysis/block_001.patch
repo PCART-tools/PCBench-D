@@ -1,0 +1,5 @@
+@@ -15,2 +15,4 @@
+         """
++        if isinstance(indices, list):
++            indices = np.array(indices)
+         if self._data.is_mixed_dtype():

@@ -1,0 +1,7 @@
+@@ -20,4 +26,4 @@
+     for variable in cat_variables:
+-        dummies = get_dummies(data[variable], prefix=variable,
+-                              prefix_sep=prefix_sep)
++        dummies = _get_dummies_1d(data[variable], prefix=variable,
++                                  prefix_sep=prefix_sep)
+         result = result.join(dummies)

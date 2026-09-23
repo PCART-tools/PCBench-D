@@ -1,0 +1,23 @@
+@@ -27,7 +43,17 @@
+             return
+-        from .data import init_device_quantile_dmatrix
+-        handle, feature_names, feature_types = init_device_quantile_dmatrix(
+-            data, missing=self.missing, threads=self.nthread,
+-            max_bin=self.max_bin,
+-            label=label, weight=weight,
++
++        if enable_categorical:
++            raise NotImplementedError(
++                'categorical support is not enabled on DeviceQuantileDMatrix.'
++            )
++        if qid is not None and group is not None:
++            raise ValueError(
++                'Only one of the eval_qid or eval_group for each evaluation '
++                'dataset should be provided.'
++            )
++
++        self._init(
++            data,
++            label=label,
++            weight=weight,
+             base_margin=base_margin,

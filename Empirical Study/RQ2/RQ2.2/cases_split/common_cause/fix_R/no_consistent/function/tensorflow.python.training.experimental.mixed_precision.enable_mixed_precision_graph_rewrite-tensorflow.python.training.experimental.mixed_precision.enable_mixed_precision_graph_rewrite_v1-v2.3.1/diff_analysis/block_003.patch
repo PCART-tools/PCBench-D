@@ -1,0 +1,5 @@
+@@ -63,3 +69,3 @@
+   float16, and thus are always converted. E.g. `Conv2D`.
+-  * `BlackList`: Ops that are numerically unsafe to execute in float16 and
++  * `DenyList`: Ops that are numerically unsafe to execute in float16 and
+   can negatively affect downstream nodes. E.g. `Softmax`.

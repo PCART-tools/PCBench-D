@@ -1,0 +1,76 @@
+{
+  "case": "matplotlib.backends.backend_qt5agg.FigureCanvasQTAggBase-matplotlib.backends.backend_qt5.FigureCanvasQT-v2.1.2",
+  "fix_type": "fix_R",
+  "candidate_api": "matplotlib.backends.backend_qt5.FigureCanvasQT",
+  "error": null,
+  "threshold_10pct": 16.8,
+  "algorithms_meeting_threshold": [
+    "tokenBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 56,
+      "vi_rank": 64,
+      "delta": -8,
+      "exceeds_10pct": false
+    },
+    "tokenBased": {
+      "vi1_rank": 36,
+      "vi_rank": 150,
+      "delta": -114,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.1597,
+      "baseline_rank": 56,
+      "delta_baseline_to_vi": -8
+    },
+    "tokenBased": {
+      "baseline_score": 0.3632,
+      "baseline_rank": 36,
+      "delta_baseline_to_vi": -114
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 64,
+          "vi_score": null,
+          "restored_score": 0.1597,
+          "restored_rank": 56,
+          "delta_vi_to_restored": 8
+        },
+        "tokenBased": {
+          "vi_rank": 150,
+          "vi_score": 0.0101,
+          "restored_score": 0.3632,
+          "restored_rank": 36,
+          "delta_vi_to_restored": 114,
+          "distance_to_baseline": 0
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "tokenBased": [
+      "block_001"
+    ],
+    "mapBased": [
+      "block_001"
+    ]
+  },
+  "block_sign_labels": {
+    "map_down_token_down": [
+      "block_001"
+    ]
+  }
+}

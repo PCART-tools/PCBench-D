@@ -1,0 +1,8 @@
+@@ -19,2 +25,7 @@
+       ``nodetype``.
++    flatten_func: an optional function similar to ``flatten_with_keys``, but
++      returns only children and auxiliary data. It must return the children
++      in the same order as ``flatten_with_keys``, and return the same aux data.
++      This argument is optional and only needed for faster traversal when
++      calling functions without keys like ``tree_map`` and ``tree_flatten``.
+   """

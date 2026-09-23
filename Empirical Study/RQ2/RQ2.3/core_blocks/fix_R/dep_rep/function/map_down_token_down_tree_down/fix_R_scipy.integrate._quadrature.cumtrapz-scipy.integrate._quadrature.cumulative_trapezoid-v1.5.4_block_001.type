@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Function implementation code block
+   Replaced the original complete implementation of `cumtrapz` with a call to `cumulative_trapezoid` and returned its result.
+   The original implementation included:
+
+   * Assignment statement: convert `y` to an array;
+   * Conditional statements: compute `d` based on whether `x` was `None`, its dimensions, and its shape, or raise `ValueError`;
+   * Assignment statements: construct slices and compute `res`;
+   * Conditional statement: handle the `initial` parameter, validate it as a scalar, and concatenate the initial value;
+   * Return statement: return `res`.
+
+   The new implementation includes:
+
+   * Return statement: return the result of `cumulative_trapezoid(y, x=x, dx=dx, axis=axis, initial=initial)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with return-call statement)

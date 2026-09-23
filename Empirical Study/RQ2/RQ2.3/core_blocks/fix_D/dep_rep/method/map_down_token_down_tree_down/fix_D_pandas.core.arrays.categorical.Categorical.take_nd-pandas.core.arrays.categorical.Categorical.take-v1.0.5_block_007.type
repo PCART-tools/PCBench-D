@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original multi-step implementation with directly returning the result of `NDArrayBackedExtensionArray.take(...)`.
+   The original implementation included:
+
+   * Assignment statements: convert `indexer` to an array of type `np.intp` and store `self.dtype`;
+   * Conditional statements: set the fill-value code or raise `TypeError` based on whether `fill_value` is missing, whether filling is allowed, and whether it belongs to `self.categories`;
+   * Assignment statements: call `take(self._codes, ...)` to generate `codes`, then call `type(self).from_codes(...)` to generate `result`;
+   * Return statement: return `result`.
+
+   The new implementation includes:
+
+   * Return statement: return the result of `NDArrayBackedExtensionArray.take(self, indexer, allow_fill=allow_fill, fill_value=fill_value)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

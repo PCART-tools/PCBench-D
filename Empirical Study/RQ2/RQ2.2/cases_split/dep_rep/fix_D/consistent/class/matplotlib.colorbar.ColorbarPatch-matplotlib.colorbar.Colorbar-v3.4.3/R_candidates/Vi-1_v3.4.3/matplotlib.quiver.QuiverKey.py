@@ -1,0 +1,181 @@
+class QuiverKey(martist.Artist):
+    """Labelled arrow for use as a quiver plot scale key."""
+    halign = {'N': 'center', 'S': 'center', 'E': 'left', 'W': 'right'}
+    valign = {'N': 'bottom', 'S': 'top', 'E': 'center', 'W': 'center'}
+    pivot = {'N': 'middle', 'S': 'middle', 'E': 'tip', 'W': 'tail'}
+
+    def __init__(self, Q, X, Y, U, label,
+                 *, angle=0, coordinates='axes', color=None, labelsep=0.1,
+                 labelpos='N', labelcolor=None, fontproperties=None,
+                 **kw):
+        """
+        Add a key to a quiver plot.
+
+        The positioning of the key depends on *X*, *Y*, *coordinates*, and
+        *labelpos*.  If *labelpos* is 'N' or 'S', *X*, *Y* give the position of
+        the middle of the key arrow.  If *labelpos* is 'E', *X*, *Y* positions
+        the head, and if *labelpos* is 'W', *X*, *Y* positions the tail; in
+        either of these two cases, *X*, *Y* is somewhere in the middle of the
+        arrow+label key object.
+
+        Parameters
+        ----------
+        Q : `matplotlib.quiver.Quiver`
+            A `.Quiver` object as returned by a call to `~.Axes.quiver()`.
+        X, Y : float
+            The location of the key.
+        U : float
+            The length of the key.
+        label : str
+            The key label (e.g., length and units of the key).
+        angle : float, default: 0
+            The angle of the key arrow, in degrees anti-clockwise from the
+            x-axis.
+        coordinates : {'axes', 'figure', 'data', 'inches'}, default: 'axes'
+            Coordinate system and units for *X*, *Y*: 'axes' and 'figure' are
+            normalized coordinate systems with (0, 0) in the lower left and
+            (1, 1) in the upper right; 'data' are the axes data coordinates
+            (used for the locations of the vectors in the quiver plot itself);
+            'inches' is position in the figure in inches, with (0, 0) at the
+            lower left corner.
+        color : color
+            Overrides face and edge colors from *Q*.
+        labelpos : {'N', 'S', 'E', 'W'}
+            Position the label above, below, to the right, to the left of the
+            arrow, respectively.
+        labelsep : float, default: 0.1
+            Distance in inches between the arrow and the label.
+        labelcolor : color, default: :rc:`text.color`
+            Label color.
+        fontproperties : dict, optional
+            A dictionary with keyword arguments accepted by the
+            `~matplotlib.font_manager.FontProperties` initializer:
+            *family*, *style*, *variant*, *size*, *weight*.
+        **kwargs
+            Any additional keyword arguments are used to override vector
+            properties taken from *Q*.
+        """
+        super().__init__()
+        self.Q = Q
+        self.X = X
+        self.Y = Y
+        self.U = U
+        self.angle = angle
+        self.coord = coordinates
+        self.color = color
+        self.label = label
+        self._labelsep_inches = labelsep
+        self.labelsep = (self._labelsep_inches * Q.axes.figure.dpi)
+
+        # try to prevent closure over the real self
+        weak_self = weakref.ref(self)
+
+        def on_dpi_change(fig):
+            self_weakref = weak_self()
+            if self_weakref is not None:
+                self_weakref.labelsep = self_weakref._labelsep_inches * fig.dpi
+                # simple brute force update works because _init is called at
+                # the start of draw.
+                self_weakref._initialized = False
+
+        self._cid = Q.axes.figure.callbacks.connect(
+            'dpi_changed', on_dpi_change)
+
+        self.labelpos = labelpos
+        self.labelcolor = labelcolor
+        self.fontproperties = fontproperties or dict()
+        self.kw = kw
+        _fp = self.fontproperties
+        # boxprops = dict(facecolor='red')
+        self.text = mtext.Text(
+            text=label,  # bbox=boxprops,
+            horizontalalignment=self.halign[self.labelpos],
+            verticalalignment=self.valign[self.labelpos],
+            fontproperties=font_manager.FontProperties._from_any(_fp))
+
+        if self.labelcolor is not None:
+            self.text.set_color(self.labelcolor)
+        self._initialized = False
+        self.zorder = Q.zorder + 0.1
+
+    def remove(self):
+        # docstring inherited
+        self.Q.axes.figure.callbacks.disconnect(self._cid)
+        self._cid = None
+        super().remove()  # pass the remove call up the stack
+
+    def _init(self):
+        if True:  # not self._initialized:
+            if not self.Q._initialized:
+                self.Q._init()
+            self._set_transform()
+            with cbook._setattr_cm(self.Q, pivot=self.pivot[self.labelpos],
+                                   # Hack: save and restore the Umask
+                                   Umask=ma.nomask):
+                u = self.U * np.cos(np.radians(self.angle))
+                v = self.U * np.sin(np.radians(self.angle))
+                angle = (self.Q.angles if isinstance(self.Q.angles, str)
+                         else 'uv')
+                self.verts = self.Q._make_verts(
+                    np.array([u]), np.array([v]), angle)
+            kw = self.Q.polykw
+            kw.update(self.kw)
+            self.vector = mcollections.PolyCollection(
+                                        self.verts,
+                                        offsets=[(self.X, self.Y)],
+                                        transOffset=self.get_transform(),
+                                        **kw)
+            if self.color is not None:
+                self.vector.set_color(self.color)
+            self.vector.set_transform(self.Q.get_transform())
+            self.vector.set_figure(self.get_figure())
+            self._initialized = True
+
+    def _text_x(self, x):
+        if self.labelpos == 'E':
+            return x + self.labelsep
+        elif self.labelpos == 'W':
+            return x - self.labelsep
+        else:
+            return x
+
+    def _text_y(self, y):
+        if self.labelpos == 'N':
+            return y + self.labelsep
+        elif self.labelpos == 'S':
+            return y - self.labelsep
+        else:
+            return y
+
+    @martist.allow_rasterization
+    def draw(self, renderer):
+        self._init()
+        self.vector.draw(renderer)
+        x, y = self.get_transform().transform((self.X, self.Y))
+        self.text.set_x(self._text_x(x))
+        self.text.set_y(self._text_y(y))
+        self.text.draw(renderer)
+        self.stale = False
+
+    def _set_transform(self):
+        self.set_transform(_api.check_getitem({
+            "data": self.Q.axes.transData,
+            "axes": self.Q.axes.transAxes,
+            "figure": self.Q.axes.figure.transFigure,
+            "inches": self.Q.axes.figure.dpi_scale_trans,
+        }, coordinates=self.coord))
+
+    def set_figure(self, fig):
+        super().set_figure(fig)
+        self.text.set_figure(fig)
+
+    def contains(self, mouseevent):
+        inside, info = self._default_contains(mouseevent)
+        if inside is not None:
+            return inside, info
+        # Maybe the dictionary should allow one to
+        # distinguish between a text hit and a vector hit.
+        if (self.text.contains(mouseevent)[0] or
+                self.vector.contains(mouseevent)[0]):
+            return True, {}
+        return False, {}

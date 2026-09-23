@@ -1,0 +1,5 @@
+    def _is_comparable_dtype(self, dtype: DtypeObj) -> bool:
+        """
+        Can we compare values of the given dtype to our own?
+        """
+        return is_timedelta64_dtype(dtype)  # aka self._data._is_recognized_dtype

@@ -1,0 +1,500 @@
+@@ -103,42 +263,459 @@
+  
+-    @_api.deprecated("3.3", alternative="update_normal")
+-    def update_bruteforce(self, mappable):
+-        """
+-        Destroy and rebuild the colorbar.  This is
+-        intended to become obsolete, and will probably be
+-        deprecated and then removed.  It is not called when
+-        the pyplot.colorbar function or the Figure.colorbar
+-        method are used to create the colorbar.
+-        """
+-        # We are using an ugly brute-force method: clearing and
+-        # redrawing the whole thing.  The problem is that if any
+-        # properties have been changed by methods other than the
+-        # colorbar methods, those changes will be lost.
+-        self.ax.cla()
+-        self.locator = None
+-        self.formatter = None
+-
+-        # clearing the axes will delete outline, patch, solids, and lines:
+-        for spine in self.ax.spines.values():
+-            spine.set_visible(False)
+-        self.outline = self.ax.spines['outline'] = _ColorbarSpine(self.ax)
+-        self.patch = mpatches.Polygon(
+-            np.empty((0, 2)),
+-            color=mpl.rcParams['axes.facecolor'], linewidth=0.01, zorder=-1)
+-        self.ax.add_artist(self.patch)
+-        self.solids = None
+-        self.lines = []
+-        self.update_normal(mappable)
+-        self.draw_all()
+-        if isinstance(self.mappable, contour.ContourSet):
+-            CS = self.mappable
+-            if not CS.filled:
+-                self.add_lines(CS)
+-            #if self.lines is not None:
+-            #    tcolors = [c[0] for c in CS.tcolors]
+-            #    self.lines.set_color(tcolors)
+-        #Fixme? Recalculate boundaries, ticks if vmin, vmax have changed.
+-        #Fixme: Some refactoring may be needed; we should not
+-        # be recalculating everything if there was a simple alpha
+-        # change.
++    def draw_all(self):
++        """
++        Calculate any free parameters based on the current cmap and norm,
++        and do all the drawing.
++        """
++        if self.orientation == 'vertical':
++            if mpl.rcParams['ytick.minor.visible']:
++                self.minorticks_on()
++        else:
++            if mpl.rcParams['xtick.minor.visible']:
++                self.minorticks_on()
++        self._long_axis().set(label_position=self.ticklocation,
++                              ticks_position=self.ticklocation)
++        self._short_axis().set_ticks([])
++        self._short_axis().set_ticks([], minor=True)
++
++        # Set self._boundaries and self._values, including extensions.
++        # self._boundaries are the edges of each square of color, and
++        # self._values are the value to map into the norm to get the
++        # color:
++        self._process_values()
++        # Set self.vmin and self.vmax to first and last boundary, excluding
++        # extensions:
++        self.vmin, self.vmax = self._boundaries[self._inside][[0, -1]]
++        # Compute the X/Y mesh.
++        X, Y, extendlen = self._mesh()
++        # draw the extend triangles, and shrink the inner axes to accommodate.
++        # also adds the outline path to self.outline spine:
++        self._do_extends(extendlen)
++
++        if self.orientation == 'vertical':
++            self.ax.set_xlim(0, 1)
++            self.ax.set_ylim(self.vmin, self.vmax)
++        else:
++            self.ax.set_ylim(0, 1)
++            self.ax.set_xlim(self.vmin, self.vmax)
++
++        # set up the tick locators and formatters.  A bit complicated because
++        # boundary norms + uniform spacing requires a manual locator.
++        self.update_ticks()
++
++        if self.filled:
++            ind = np.arange(len(self._values))
++            if self._extend_lower():
++                ind = ind[1:]
++            if self._extend_upper():
++                ind = ind[:-1]
++            self._add_solids(X, Y, self._values[ind, np.newaxis])
++
++    def _add_solids(self, X, Y, C):
++        """Draw the colors; optionally add separators."""
++        # Cleanup previously set artists.
++        if self.solids is not None:
++            self.solids.remove()
++        for solid in self.solids_patches:
++            solid.remove()
++        # Add new artist(s), based on mappable type.  Use individual patches if
++        # hatching is needed, pcolormesh otherwise.
++        mappable = getattr(self, 'mappable', None)
++        if (isinstance(mappable, contour.ContourSet)
++                and any(hatch is not None for hatch in mappable.hatches)):
++            self._add_solids_patches(X, Y, C, mappable)
++        else:
++            self.solids = self.ax.pcolormesh(
++                X, Y, C, cmap=self.cmap, norm=self.norm, alpha=self.alpha,
++                edgecolors='none', shading='flat')
++            if not self.drawedges:
++                if len(self._y) >= self.n_rasterize:
++                    self.solids.set_rasterized(True)
++        self.dividers.set_segments(
++            np.dstack([X, Y])[1:-1] if self.drawedges else [])
++
++    def _add_solids_patches(self, X, Y, C, mappable):
++        hatches = mappable.hatches * len(C)  # Have enough hatches.
++        patches = []
++        for i in range(len(X) - 1):
++            xy = np.array([[X[i, 0], Y[i, 0]],
++                           [X[i, 1], Y[i, 0]],
++                           [X[i + 1, 1], Y[i + 1, 0]],
++                           [X[i + 1, 0], Y[i + 1, 1]]])
++            patch = mpatches.PathPatch(mpath.Path(xy),
++                                       facecolor=self.cmap(self.norm(C[i][0])),
++                                       hatch=hatches[i], linewidth=0,
++                                       antialiased=False, alpha=self.alpha)
++            self.ax.add_patch(patch)
++            patches.append(patch)
++        self.solids_patches = patches
++
++    def _do_extends(self, extendlen):
++        """
++        Add the extend tri/rectangles on the outside of the axes.
++        """
++        # extend lengths are fraction of the *inner* part of colorbar,
++        # not the total colorbar:
++        bot = 0 - (extendlen[0] if self._extend_lower() else 0)
++        top = 1 + (extendlen[1] if self._extend_upper() else 0)
++
++        # xyout is the outline of the colorbar including the extend patches:
++        if not self.extendrect:
++            # triangle:
++            xyout = np.array([[0, 0], [0.5, bot], [1, 0],
++                              [1, 1], [0.5, top], [0, 1], [0, 0]])
++        else:
++            # rectangle:
++            xyout = np.array([[0, 0], [0, bot], [1, bot], [1, 0],
++                              [1, 1], [1, top], [0, top], [0, 1],
++                              [0, 0]])
++
++        if self.orientation == 'horizontal':
++            xyout = xyout[:, ::-1]
++
++        # xyout is the path for the spine:
++        self.outline.set_xy(xyout)
++        if not self.filled:
++            return
++
++        # Make extend triangles or rectangles filled patches.  These are
++        # defined in the outer parent axes' coordinates:
++        mappable = getattr(self, 'mappable', None)
++        if (isinstance(mappable, contour.ContourSet)
++                and any(hatch is not None for hatch in mappable.hatches)):
++            hatches = mappable.hatches
++        else:
++            hatches = [None]
++
++        if self._extend_lower():
++            if not self.extendrect:
++                # triangle
++                xy = np.array([[0, 0], [0.5, bot], [1, 0]])
++            else:
++                # rectangle
++                xy = np.array([[0, 0], [0, bot], [1., bot], [1, 0]])
++            if self.orientation == 'horizontal':
++                xy = xy[:, ::-1]
++            # add the patch
++            color = self.cmap(self.norm(self._values[0]))
++            patch = mpatches.PathPatch(
++                mpath.Path(xy), facecolor=color, linewidth=0,
++                antialiased=False, transform=self.ax.transAxes,
++                hatch=hatches[0], clip_on=False)
++            self.ax.add_patch(patch)
++        if self._extend_upper():
++            if not self.extendrect:
++                # triangle
++                xy = np.array([[0, 1], [0.5, top], [1, 1]])
++            else:
++                # rectangle
++                xy = np.array([[0, 1], [0, top], [1, top], [1, 1]])
++            if self.orientation == 'horizontal':
++                xy = xy[:, ::-1]
++            # add the patch
++            color = self.cmap(self.norm(self._values[-1]))
++            patch = mpatches.PathPatch(
++                mpath.Path(xy), facecolor=color,
++                linewidth=0, antialiased=False,
++                transform=self.ax.transAxes, hatch=hatches[-1], clip_on=False)
++            self.ax.add_patch(patch)
++        return
++
++    def add_lines(self, *args, **kwargs):
++        """
++        Draw lines on the colorbar.
++
++        The lines are appended to the list :attr:`lines`.
++
++        Parameters
++        ----------
++        levels : array-like
++            The positions of the lines.
++        colors : color or list of colors
++            Either a single color applying to all lines or one color value for
++            each line.
++        linewidths : float or array-like
++            Either a single linewidth applying to all lines or one linewidth
++            for each line.
++        erase : bool, default: True
++            Whether to remove any previously added lines.
++
++        Notes
++        -----
++        Alternatively, this method can also be called with the signature
++        ``colorbar.add_lines(contour_set, erase=True)``, in which case
++        *levels*, *colors*, and *linewidths* are taken from *contour_set*.
++        """
++        params = _api.select_matching_signature(
++            [lambda self, CS, erase=True: locals(),
++             lambda self, levels, colors, linewidths, erase=True: locals()],
++            self, *args, **kwargs)
++        if "CS" in params:
++            self, CS, erase = params.values()
++            if not isinstance(CS, contour.ContourSet) or CS.filled:
++                raise ValueError("If a single artist is passed to add_lines, "
++                                 "it must be a ContourSet of lines")
++            # TODO: Make colorbar lines auto-follow changes in contour lines.
++            return self.add_lines(
++                CS.levels,
++                [c[0] for c in CS.tcolors],
++                [t[0] for t in CS.tlinewidths],
++                erase=erase)
++        else:
++            self, levels, colors, linewidths, erase = params.values()
++
++        y = self._locate(levels)
++        rtol = (self._y[-1] - self._y[0]) * 1e-10
++        igood = (y < self._y[-1] + rtol) & (y > self._y[0] - rtol)
++        y = y[igood]
++        if np.iterable(colors):
++            colors = np.asarray(colors)[igood]
++        if np.iterable(linewidths):
++            linewidths = np.asarray(linewidths)[igood]
++        X, Y = np.meshgrid([0, 1], y)
++        if self.orientation == 'vertical':
++            xy = np.stack([X, Y], axis=-1)
++        else:
++            xy = np.stack([Y, X], axis=-1)
++        col = collections.LineCollection(xy, linewidths=linewidths,
++                                         colors=colors)
++
++        if erase and self.lines:
++            for lc in self.lines:
++                lc.remove()
++            self.lines = []
++        self.lines.append(col)
++
++        # make a clip path that is just a linewidth bigger than the axes...
++        fac = np.max(linewidths) / 72
++        xy = np.array([[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]])
++        inches = self.ax.get_figure().dpi_scale_trans
++        # do in inches:
++        xy = inches.inverted().transform(self.ax.transAxes.transform(xy))
++        xy[[0, 1, 4], 1] -= fac
++        xy[[2, 3], 1] += fac
++        # back to axes units...
++        xy = self.ax.transAxes.inverted().transform(inches.transform(xy))
++        if self.orientation == 'horizontal':
++            xy = xy.T
++        col.set_clip_path(mpath.Path(xy, closed=True),
++                          self.ax.transAxes)
++        self.ax.add_collection(col)
++        self.stale = True
++
++    def update_ticks(self):
++        """
++        Setup the ticks and ticklabels. This should not be needed by users.
++        """
++        # Get the locator and formatter; defaults to self.locator if not None.
++        self._get_ticker_locator_formatter()
++        self._long_axis().set_major_locator(self.locator)
++        self._long_axis().set_minor_locator(self.minorlocator)
++        self._long_axis().set_major_formatter(self.formatter)
++
++    def _get_ticker_locator_formatter(self):
++        """
++        Return the ``locator`` and ``formatter`` of the colorbar.
++
++        If they have not been defined (i.e. are *None*), the formatter and
++        locator are retrieved from the axis, or from the value of the
++        boundaries for a boundary norm.
++
++        Called by update_ticks...
++        """
++        locator = self.locator
++        formatter = self.formatter
++        minorlocator = self.minorlocator
++        if isinstance(self.norm, colors.BoundaryNorm):
++            b = self.norm.boundaries
++            if locator is None:
++                locator = ticker.FixedLocator(b, nbins=10)
++        elif self.boundaries is not None:
++            b = self._boundaries[self._inside]
++            if locator is None:
++                locator = ticker.FixedLocator(b, nbins=10)
++        else:  # most cases:
++            if locator is None:
++                # we haven't set the locator explicitly, so use the default
++                # for this axis:
++                locator = self._long_axis().get_major_locator()
++            if minorlocator is None:
++                minorlocator = self._long_axis().get_minor_locator()
++            if isinstance(self.norm, colors.NoNorm):
++                # default locator:
++                nv = len(self._values)
++                base = 1 + int(nv / 10)
++                locator = ticker.IndexLocator(base=base, offset=0)
++
++        if minorlocator is None:
++            minorlocator = ticker.NullLocator()
++
++        if formatter is None:
++            formatter = self._long_axis().get_major_formatter()
++
++        self.locator = locator
++        self.formatter = formatter
++        self.minorlocator = minorlocator
++        _log.debug('locator: %r', locator)
++
++    @_api.delete_parameter("3.5", "update_ticks")
++    def set_ticks(self, ticks, update_ticks=True, labels=None, *,
++                  minor=False, **kwargs):
++        """
++        Set tick locations.
++
++        Parameters
++        ----------
++        ticks : list of floats
++            List of tick locations.
++        labels : list of str, optional
++            List of tick labels. If not set, the labels show the data value.
++        minor : bool, default: False
++            If ``False``, set the major ticks; if ``True``, the minor ticks.
++        **kwargs
++            `.Text` properties for the labels. These take effect only if you
++            pass *labels*. In other cases, please use `~.Axes.tick_params`.
++        """
++        if np.iterable(ticks):
++            self._long_axis().set_ticks(ticks, labels=labels, minor=minor,
++                                        **kwargs)
++            self.locator = self._long_axis().get_major_locator()
++        else:
++            self.locator = ticks
++            self._long_axis().set_major_locator(self.locator)
++        self.stale = True
++
++    def get_ticks(self, minor=False):
++        """
++        Return the ticks as a list of locations.
++
++        Parameters
++        ----------
++        minor : boolean, default: False
++            if True return the minor ticks.
++        """
++        if minor:
++            return self._long_axis().get_minorticklocs()
++        else:
++            return self._long_axis().get_majorticklocs()
++
++    @_api.delete_parameter("3.5", "update_ticks")
++    def set_ticklabels(self, ticklabels, update_ticks=True, *, minor=False,
++                       **kwargs):
++        """
++        Set tick labels.
++
++        .. admonition:: Discouraged
++
++            The use of this method is discouraged, because of the dependency
++            on tick positions. In most cases, you'll want to use
++            ``set_ticks(positions, labels=labels)`` instead.
++
++            If you are using this method, you should always fix the tick
++            positions before, e.g. by using `.Colorbar.set_ticks` or by
++            explicitly setting a `~.ticker.FixedLocator` on the long axis
++            of the colorbar. Otherwise, ticks are free to move and the
++            labels may end up in unexpected positions.
++
++        Parameters
++        ----------
++        ticklabels : sequence of str or of `.Text`
++            Texts for labeling each tick location in the sequence set by
++            `.Colorbar.set_ticks`; the number of labels must match the number
++            of locations.
++
++        update_ticks : bool, default: True
++            This keyword argument is ignored and will be be removed.
++            Deprecated
++
++         minor : bool
++            If True, set minor ticks instead of major ticks.
++
++        **kwargs
++            `.Text` properties for the labels.
++        """
++        self._long_axis().set_ticklabels(ticklabels, minor=minor, **kwargs)
++
++    def minorticks_on(self):
++        """
++        Turn on colorbar minor ticks.
++        """
++        self.ax.minorticks_on()
++        self.minorlocator = self._long_axis().get_minor_locator()
++        self._short_axis().set_minor_locator(ticker.NullLocator())
++
++    def minorticks_off(self):
++        """Turn the minor ticks of the colorbar off."""
++        self.minorlocator = ticker.NullLocator()
++        self._long_axis().set_minor_locator(self.minorlocator)
++
++    def set_label(self, label, *, loc=None, **kwargs):
++        """
++        Add a label to the long axis of the colorbar.
++
++        Parameters
++        ----------
++        label : str
++            The label text.
++        loc : str, optional
++            The location of the label.
++
++            - For horizontal orientation one of {'left', 'center', 'right'}
++            - For vertical orientation one of {'bottom', 'center', 'top'}
++
++            Defaults to :rc:`xaxis.labellocation` or :rc:`yaxis.labellocation`
++            depending on the orientation.
++        **kwargs
++            Keyword arguments are passed to `~.Axes.set_xlabel` /
++            `~.Axes.set_ylabel`.
++            Supported keywords are *labelpad* and `.Text` properties.
++        """
++        if self.orientation == "vertical":
++            self.ax.set_ylabel(label, loc=loc, **kwargs)
++        else:
++            self.ax.set_xlabel(label, loc=loc, **kwargs)
++        self.stale = True
++
++    def set_alpha(self, alpha):
++        """
++        Set the transparency between 0 (transparent) and 1 (opaque).
++
++        If an array is provided, *alpha* will be set to None to use the
++        transparency values associated with the colormap.
++        """
++        self.alpha = None if isinstance(alpha, np.ndarray) else alpha
++
++    def _set_scale(self, scale, **kwargs):
++        """
++        Set the colorbar long axis scale.
++
++        Parameters
++        ----------
++        value : {"linear", "log", "symlog", "logit", ...} or `.ScaleBase`
++            The axis scale type to apply.
++
++        **kwargs
++            Different keyword arguments are accepted, depending on the scale.
++            See the respective class keyword arguments:
++
++            - `matplotlib.scale.LinearScale`
++            - `matplotlib.scale.LogScale`
++            - `matplotlib.scale.SymmetricalLogScale`
++            - `matplotlib.scale.LogitScale`
++            - `matplotlib.scale.FuncScale`
++
++        Notes
++        -----
++        By default, Matplotlib supports the above mentioned scales.
++        Additionally, custom scales may be registered using
++        `matplotlib.scale.register_scale`. These scales can then also
++        be used here.
++        """
++        if self.orientation == 'vertical':
++            self.ax.set_yscale(scale, **kwargs)
++        else:
++            self.ax.set_xscale(scale, **kwargs)
++        if isinstance(scale, mscale.ScaleBase):
++            self.__scale = scale.name
++        else:
++            self.__scale = scale
+  

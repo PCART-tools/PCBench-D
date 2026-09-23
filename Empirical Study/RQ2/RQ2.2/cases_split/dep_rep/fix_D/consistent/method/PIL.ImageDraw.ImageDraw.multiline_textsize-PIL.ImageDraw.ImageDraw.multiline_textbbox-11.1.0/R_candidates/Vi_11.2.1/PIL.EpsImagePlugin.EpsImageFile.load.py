@@ -1,0 +1,10 @@
+    def load(
+        self, scale: int = 1, transparency: bool = False
+    ) -> Image.core.PixelAccess | None:
+        # Load EPS via Ghostscript
+        if self.tile:
+            self.im = Ghostscript(self.tile, self.size, self.fp, scale, transparency)
+            self._mode = self.im.mode
+            self._size = self.im.size
+            self.tile = []
+        return Image.Image.load(self)

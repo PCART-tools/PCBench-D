@@ -1,0 +1,4 @@
+@@ -1,2 +1,2 @@
+-def unsafe_rbg_key(seed: int) -> KeyArray:
++def unsafe_rbg_key(seed: int | ArrayLike) -> KeyArray:
+   """Creates an unsafe RBG PRNG key from an integer seed."""

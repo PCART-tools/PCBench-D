@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original `return_dtype` handling, `warn_on_inefficient_apply` call, and return implementation based on `self._s.apply_lambda(...)` and `self._from_pyseries(...)` with directly returning `self.map_elements(function, return_dtype, skip_nulls=skip_nulls)`.
+
+   The original implementation included:
+   * Convert `return_dtype` to `pl_return_dtype` when it was not null;
+   * Call `warn_on_inefficient_apply(...)`;
+   * Generate a result through `self._s.apply_lambda(function, pl_return_dtype, skip_nulls)` and wrap and return it with `self._from_pyseries(...)`.
+
+   The new implementation includes:
+   * Directly call and return `self.map_elements(function, return_dtype, skip_nulls=skip_nulls)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

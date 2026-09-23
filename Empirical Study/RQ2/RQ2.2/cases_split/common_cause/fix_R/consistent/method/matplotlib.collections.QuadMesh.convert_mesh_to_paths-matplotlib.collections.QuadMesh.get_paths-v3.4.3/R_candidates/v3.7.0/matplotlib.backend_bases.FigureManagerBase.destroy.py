@@ -1,0 +1,2 @@
+    def destroy(self):
+        pass

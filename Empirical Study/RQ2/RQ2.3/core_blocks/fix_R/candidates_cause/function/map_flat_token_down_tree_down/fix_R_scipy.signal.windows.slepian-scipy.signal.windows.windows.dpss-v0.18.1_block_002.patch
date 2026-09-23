@@ -1,0 +1,12 @@
+@@ -48,9 +57,5 @@
+     """
+-    if M < 1:
+-        return np.array([])
+-    if M == 1:
+-        return np.ones(1, 'd')
+-    odd = M % 2
+-    if not sym and not odd:
+-        M = M + 1
++    if _len_guards(M):
++        return np.ones(M)
++    M, needs_trunc = _extend(M, sym)

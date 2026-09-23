@@ -1,0 +1,6 @@
+    def refresh(self):
+        'refresh internal information based on current lim'
+        vmin, vmax = self.axis.get_view_interval()
+        vmin, vmax = mtransforms.nonsingular(vmin, vmax, expander=0.05)
+        d = abs(vmax - vmin)
+        self._locator = self.get_locator(d)

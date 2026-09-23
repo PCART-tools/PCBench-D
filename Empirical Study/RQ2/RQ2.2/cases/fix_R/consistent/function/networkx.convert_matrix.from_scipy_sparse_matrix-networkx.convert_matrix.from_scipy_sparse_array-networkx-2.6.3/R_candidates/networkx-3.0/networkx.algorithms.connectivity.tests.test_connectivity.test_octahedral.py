@@ -1,0 +1,6 @@
+def test_octahedral():
+    G = nx.octahedral_graph()
+    for flow_func in flow_funcs:
+        errmsg = f"Assertion failed in function: {flow_func.__name__}"
+        assert 4 == nx.node_connectivity(G, flow_func=flow_func), errmsg
+        assert 4 == nx.edge_connectivity(G, flow_func=flow_func), errmsg

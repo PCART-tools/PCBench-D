@@ -1,0 +1,13 @@
+def test_margins():
+    fig = plt.figure()
+    ax = fig.add_subplot(projection='3d')
+    ax.margins(0.2)
+    assert ax.margins() == (0.2, 0.2, 0.2)
+    ax.margins(0.1, 0.2, 0.3)
+    assert ax.margins() == (0.1, 0.2, 0.3)
+    ax.margins(x=0)
+    assert ax.margins() == (0, 0.2, 0.3)
+    ax.margins(y=0.1)
+    assert ax.margins() == (0, 0.1, 0.3)
+    ax.margins(z=0)
+    assert ax.margins() == (0, 0.1, 0)

@@ -1,0 +1,5 @@
+@@ -1,2 +1,3 @@
+     def url(self, *, query=None):
+-        return self._append_query(self._path, query)
++        super().url()
++        return str(self.url_for().with_query(query))

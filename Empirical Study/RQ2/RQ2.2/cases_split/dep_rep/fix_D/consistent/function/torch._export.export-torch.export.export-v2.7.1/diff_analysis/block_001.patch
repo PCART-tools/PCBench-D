@@ -1,0 +1,5 @@
+@@ -6,3 +6,3 @@
+     dynamic_shapes: Optional[Union[dict[str, Any], tuple[Any], list[Any]]] = None,
+-    strict: bool = True,
++    strict: bool = False,
+     preserve_module_call_signature: tuple[str, ...] = (),

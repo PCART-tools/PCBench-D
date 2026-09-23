@@ -1,0 +1,11 @@
+    @add_start_docstrings_to_model_forward(ELECTRA_INPUTS_DOCSTRING.format("batch_size, sequence_length"))
+    @add_code_sample_docstrings(
+        tokenizer_class=_TOKENIZER_FOR_DOC,
+        checkpoint="google/electra-small-discriminator",
+        output_type=TFBaseModelOutput,
+        config_class=_CONFIG_FOR_DOC,
+    )
+    def call(self, inputs, **kwargs):
+        outputs = self.electra(inputs, **kwargs)
+
+        return outputs

@@ -1,0 +1,5 @@
+@@ -7,3 +8,3 @@
+         pass_name: bool = False,
+-        strategy: ApplyStrategy = "thread_local",
++        strategy: MapElementsStrategy = "thread_local",
+     ) -> Self:

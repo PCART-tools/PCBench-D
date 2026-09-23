@@ -1,0 +1,4 @@
+@@ -1,2 +1,2 @@
+-def rbg_key(seed: int) -> KeyArray:
++def rbg_key(seed: int | ArrayLike) -> KeyArray:
+   """Creates an RBG PRNG key from an integer seed."""

@@ -1,0 +1,8 @@
+@@ -111,6 +107,2 @@
+  
+-    d = np.mean(a, axis) - np.mean(b, axis)
+-    t = np.divide(d, denom)
+-    t, prob = _ttest_finish(df, t)
+-
+-    return t, prob
++    return Ttest_indResult(*res)

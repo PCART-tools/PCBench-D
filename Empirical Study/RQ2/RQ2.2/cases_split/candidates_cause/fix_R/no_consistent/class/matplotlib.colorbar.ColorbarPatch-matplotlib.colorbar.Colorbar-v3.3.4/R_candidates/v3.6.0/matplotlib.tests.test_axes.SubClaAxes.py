@@ -1,0 +1,2 @@
+    class SubClaAxes(ClaAxes):
+        pass

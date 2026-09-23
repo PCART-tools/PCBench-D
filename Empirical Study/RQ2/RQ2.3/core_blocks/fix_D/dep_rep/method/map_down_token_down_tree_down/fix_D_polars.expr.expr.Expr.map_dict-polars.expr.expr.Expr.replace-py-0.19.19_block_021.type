@@ -1,0 +1,20 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original implementation based on mapping Series objects, a LazyFrame join, and `map_batches` with an implementation that parses expressions and directly calls the underlying `_pyexpr.replace` operation.
+   The original implementation included:
+
+   * Function definition: define `_remap_key_or_value_series` to create and validate a mapping-key or mapping-value `Series`;
+   * Function definition: define `inner_func`, which converts the input `Series` to a DataFrame, constructs a mapping table, performs a join, and generates the result according to the default value;
+   * Conditional statement: when `default is no_default`, set `default` to `F.first()`;
+   * Assignment statement: create `mapping_func` using `partial(inner_func, default_value=default)`;
+   * Return statement: call `self.map_batches(function=mapping_func, return_dtype=return_dtype)`.
+
+   The new implementation includes:
+
+   * Assignment statements: convert `old` and `new` through `parse_as_expression(..., str_as_lit=True)`;
+   * Assignment statement: set `default` to `None` when `default is no_default`; otherwise, convert it through `parse_as_expression(..., str_as_lit=True)`;
+   * Return statement: return `self._from_pyexpr(self._pyexpr.replace(old, new, default, return_dtype))`.
+# /detail
+# mode：Modify method implementation (replace complex implementation with call-assignment statement and return-call statement)

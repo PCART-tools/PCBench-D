@@ -1,0 +1,34 @@
+    def _contour_level_args(self, z, args):
+        """
+        Determine the contour levels and store in self.levels.
+        """
+        if self.filled:
+            fn = 'contourf'
+        else:
+            fn = 'contour'
+        self._auto = False
+        if self.levels is None:
+            if len(args) == 0:
+                levels_arg = 7  # Default, hard-wired.
+            else:
+                levels_arg = args[0]
+        else:
+            levels_arg = self.levels
+        if isinstance(levels_arg, Integral):
+            self.levels = self._autolev(levels_arg)
+        else:
+            self.levels = np.asarray(levels_arg).astype(np.float64)
+
+        if not self.filled:
+            inside = (self.levels > self.zmin) & (self.levels < self.zmax)
+            levels_in = self.levels[inside]
+            if len(levels_in) == 0:
+                self.levels = [self.zmin]
+                warnings.warn("No contour levels were found"
+                              " within the data range.")
+
+        if self.filled and len(self.levels) < 2:
+            raise ValueError("Filled contours require at least 2 levels.")
+
+        if len(self.levels) > 1 and np.min(np.diff(self.levels)) <= 0.0:
+            raise ValueError("Contour levels must be increasing")

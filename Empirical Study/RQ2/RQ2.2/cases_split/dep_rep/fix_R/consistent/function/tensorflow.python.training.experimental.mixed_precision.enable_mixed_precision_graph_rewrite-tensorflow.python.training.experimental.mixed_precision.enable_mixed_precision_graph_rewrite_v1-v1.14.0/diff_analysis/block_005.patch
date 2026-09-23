@@ -1,0 +1,8 @@
+@@ -23,4 +21,5 @@
+  
+-  When eager execution is enabled, the mixed precision graph rewrite is only
+-  enabled within `tf.function`s, as outside `tf.function`s, there is no graph.
++  Currently, mixed precision is only enabled on Volta GPUs and above. TPU
++  support is coming soon. CPUs are not supported, as CPUs do not run float16
++  operations faster than float32 operations.
+  

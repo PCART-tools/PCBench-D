@@ -1,0 +1,10 @@
+# detail
+Number of changes: 2
+
+1. Added | Private method
+   Added `_warn_if_event_writer_is_closed`, which first checks `self._closed` and calls `warnings.warn(...)` with a notification message when the condition is true.
+
+2. Added | Method
+   Added `_add_event(self, event, step)`, which first calls `_warn_if_event_writer_is_closed()` and then calls `super(FileWriter, self)._add_event(event, step)`.
+# /detail
+# mode：Add method

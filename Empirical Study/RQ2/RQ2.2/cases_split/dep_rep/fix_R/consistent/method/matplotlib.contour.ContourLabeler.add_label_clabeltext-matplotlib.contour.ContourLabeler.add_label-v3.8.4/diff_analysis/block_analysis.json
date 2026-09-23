@@ -1,0 +1,132 @@
+{
+  "case": "matplotlib.contour.ContourLabeler.add_label_clabeltext-matplotlib.contour.ContourLabeler.add_label-v3.8.4",
+  "fix_type": "fix_R",
+  "candidate_api": "matplotlib.contour.ContourLabeler.add_label",
+  "error": null,
+  "threshold_10pct": 500.1,
+  "algorithms_meeting_threshold": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 343,
+      "vi_rank": 1189,
+      "delta": -846,
+      "exceeds_10pct": true
+    },
+    "tokenBased": {
+      "vi1_rank": 30,
+      "vi_rank": 1259,
+      "delta": -1229,
+      "exceeds_10pct": true
+    },
+    "treeBased": {
+      "vi1_rank": 127,
+      "vi_rank": 4009,
+      "delta": -3882,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.5853,
+      "baseline_rank": 343,
+      "delta_baseline_to_vi": -846
+    },
+    "tokenBased": {
+      "baseline_score": 0.4364,
+      "baseline_rank": 30,
+      "delta_baseline_to_vi": -1229
+    },
+    "treeBased": {
+      "baseline_score": 0.5089,
+      "baseline_rank": 127,
+      "delta_baseline_to_vi": -3882
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 1189,
+          "vi_score": 0.4157,
+          "restored_score": 0.4157,
+          "restored_rank": 1189,
+          "delta_vi_to_restored": 0,
+          "distance_to_baseline": 846
+        },
+        "tokenBased": {
+          "vi_rank": 1259,
+          "vi_score": 0.2321,
+          "restored_score": 0.2342,
+          "restored_rank": 1304,
+          "delta_vi_to_restored": -45,
+          "distance_to_baseline": 1274
+        },
+        "treeBased": {
+          "vi_rank": 4009,
+          "vi_score": 0.3072,
+          "restored_score": 0.2857,
+          "restored_rank": 4074,
+          "delta_vi_to_restored": -65,
+          "distance_to_baseline": 3947
+        }
+      }
+    },
+    {
+      "block": "block_002",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 1189,
+          "vi_score": 0.4157,
+          "restored_score": 0.5853,
+          "restored_rank": 343,
+          "delta_vi_to_restored": 846,
+          "distance_to_baseline": 0
+        },
+        "tokenBased": {
+          "vi_rank": 1259,
+          "vi_score": 0.2321,
+          "restored_score": 0.4324,
+          "restored_rank": 27,
+          "delta_vi_to_restored": 1232,
+          "distance_to_baseline": 3
+        },
+        "treeBased": {
+          "vi_rank": 4009,
+          "vi_score": 0.3072,
+          "restored_score": 0.4914,
+          "restored_rank": 100,
+          "delta_vi_to_restored": 3909,
+          "distance_to_baseline": 27
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "mapBased": [
+      "block_002"
+    ],
+    "tokenBased": [
+      "block_002"
+    ],
+    "treeBased": [
+      "block_002"
+    ]
+  },
+  "block_sign_labels": {
+    "map_down_token_down_tree_down": [
+      "block_002"
+    ]
+  }
+}

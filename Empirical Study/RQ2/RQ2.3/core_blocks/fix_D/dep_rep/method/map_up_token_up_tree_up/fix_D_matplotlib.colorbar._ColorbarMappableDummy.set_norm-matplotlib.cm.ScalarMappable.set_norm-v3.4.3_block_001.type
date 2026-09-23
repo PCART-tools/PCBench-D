@@ -1,0 +1,13 @@
+# detail
+Number of changes: 3
+
+1. Removed | Function call statement
+   Removed the `_api.check_isinstance((colors.Normalize, None), norm=norm)` call.
+
+2. Removed | Assignment statement
+   Removed the `in_init = self.norm is None` assignment.
+
+3. Removed | Conditional statement
+   Removed the `if norm is None` conditional and the enclosed assignment `norm = colors.Normalize()`.
+# /detail
+# mode：Remove call statement, assignment statement, and conditional statement

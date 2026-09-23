@@ -1,0 +1,2 @@
+def synchronize():
+    pass

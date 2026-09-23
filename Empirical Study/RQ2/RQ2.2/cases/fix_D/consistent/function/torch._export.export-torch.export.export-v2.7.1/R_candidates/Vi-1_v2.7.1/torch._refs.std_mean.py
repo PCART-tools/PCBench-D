@@ -1,0 +1,24 @@
+@register_decomposition(aten.std_mean)
+@out_wrapper("out0", "out1")
+def std_mean(
+    a: TensorLikeType,
+    dim: Optional[DimsType] = None,
+    *,
+    unbiased: Optional[bool] = None,
+    keepdim: bool = False,
+    correction: Optional[NumberType] = None,
+):
+    dim, unbiased = _dim_var_dispatch(dim, unbiased)
+    correction = utils.set_correction(unbiased, correction)
+    opmath_dtype, dtype = utils.reduction_dtypes(
+        a, REDUCTION_OUTPUT_TYPE_KIND.COMPLEX_TO_FLOAT
+    )
+    original_dtype = a.dtype
+    a = _maybe_convert_to_dtype(a, opmath_dtype)
+    a_var, a_mean = torch.var_mean(a, dim, correction=correction, keepdim=keepdim)
+    a_std = torch.sqrt(a_var)
+    assert dtype is not None
+    return (
+        _maybe_convert_to_dtype(a_std, dtype),
+        _maybe_convert_to_dtype(a_mean, original_dtype),
+    )

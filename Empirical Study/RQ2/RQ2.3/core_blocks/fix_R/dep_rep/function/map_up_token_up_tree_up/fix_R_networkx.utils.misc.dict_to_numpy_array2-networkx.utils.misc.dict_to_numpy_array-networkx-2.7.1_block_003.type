@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the entire original implementation with a new implementation code block.
+   The original implementation included:
+   * Conditional statement: when `mapping is None`, construct `mapping` from `d.keys()` and nested dictionary keys;
+   * Assignment statements: compute `n = len(mapping)` and create `a = np.zeros((n, n))`;
+   * Loop statement: iterate over keys and values in `mapping.items()`;
+   * Exception-handling statement: attempt `a[i, j] = d[k1][k2]`, catch `KeyError`, and execute `pass`;
+   * Return statement: return `a`.
+
+   The new implementation includes:
+   * Assignment statement: create the deprecation-message string `msg`;
+   * Call statement: call `warnings.warn(msg, DeprecationWarning, stacklevel=2)`;
+   * Return statement: return `_dict_to_numpy_array2(d, mapping)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with warning call and return-call statement)

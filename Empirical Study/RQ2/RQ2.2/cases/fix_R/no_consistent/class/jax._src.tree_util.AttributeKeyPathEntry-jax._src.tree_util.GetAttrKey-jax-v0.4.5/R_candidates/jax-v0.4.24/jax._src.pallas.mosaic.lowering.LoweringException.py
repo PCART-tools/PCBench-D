@@ -1,0 +1,2 @@
+class LoweringException(Exception):
+  pass

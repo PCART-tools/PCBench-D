@@ -1,0 +1,1 @@
+class StoreException(Exception): pass

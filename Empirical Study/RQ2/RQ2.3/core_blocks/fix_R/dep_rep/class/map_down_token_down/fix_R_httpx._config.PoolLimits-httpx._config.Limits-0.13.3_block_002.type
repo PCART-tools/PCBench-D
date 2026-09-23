@@ -1,0 +1,10 @@
+# detail
+Number of changes: 2
+
+1. Removed | Method
+   Removed the `__repr__` method, including the internal class-name assignment and string return statement.
+
+2. Added | Call statement
+   Added a call to `super().__init__(**kwargs)`.
+# /detail
+# mode：Remove method; Add call statement

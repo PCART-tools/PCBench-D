@@ -1,0 +1,70 @@
+def check_series_arithmetics(l, r, el, er, allow_comparison_ops=True):
+    assert isinstance(l, dd.Series)
+    assert isinstance(r, (dd.Series, pd.Series))
+    assert isinstance(el, pd.Series)
+    assert isinstance(er, pd.Series)
+
+    # l, r may be repartitioned, test whether repartition keeps original data
+    assert eq(l, el)
+    assert eq(r, er)
+
+    assert eq(l + r, el + er)
+    assert eq(l * r, el * er)
+    assert eq(l - r, el - er)
+    assert eq(l / r, el / er)
+    assert eq(l // r, el // er)
+    assert eq(l ** r, el ** er)
+    assert eq(l % r, el % er)
+
+    if allow_comparison_ops:
+        # comparison is allowed if data have same index
+        assert eq(l & r, el & er)
+        assert eq(l | r, el | er)
+        assert eq(l ^ r, el ^ er)
+        assert eq(l > r, el > er)
+        assert eq(l < r, el < er)
+        assert eq(l >= r, el >= er)
+        assert eq(l <= r, el <= er)
+        assert eq(l == r, el == er)
+        assert eq(l != r, el != er)
+
+    assert eq(l + 2, el + 2)
+    assert eq(l * 2, el * 2)
+    assert eq(l - 2, el - 2)
+    assert eq(l / 2, el / 2)
+    assert eq(l & True, el & True)
+    assert eq(l | True, el | True)
+    assert eq(l ^ True, el ^ True)
+    assert eq(l // 2, el // 2)
+    assert eq(l ** 2, el ** 2)
+    assert eq(l % 2, el % 2)
+    assert eq(l > 2, el > 2)
+    assert eq(l < 2, el < 2)
+    assert eq(l >= 2, el >= 2)
+    assert eq(l <= 2, el <= 2)
+    assert eq(l == 2, el == 2)
+    assert eq(l != 2, el != 2)
+
+    assert eq(2 + r, 2 + er)
+    assert eq(2 * r, 2 * er)
+    assert eq(2 - r, 2 - er)
+    assert eq(2 / r, 2 / er)
+    assert eq(True & r, True & er)
+    assert eq(True | r, True | er)
+    assert eq(True ^ r, True ^ er)
+    assert eq(2 // r, 2 // er)
+    assert eq(2 ** r, 2 ** er)
+    assert eq(2 % r, 2 % er)
+    assert eq(2 > r, 2 > er)
+    assert eq(2 < r, 2 < er)
+    assert eq(2 >= r, 2 >= er)
+    assert eq(2 <= r, 2 <= er)
+    assert eq(2 == r, 2 == er)
+    assert eq(2 != r, 2 != er)
+
+    assert eq(-l, -el)
+    assert eq(abs(l), abs(el))
+
+    if allow_comparison_ops:
+        # comparison is allowed if data have same index
+        assert eq(~(l == r), ~(el == er))

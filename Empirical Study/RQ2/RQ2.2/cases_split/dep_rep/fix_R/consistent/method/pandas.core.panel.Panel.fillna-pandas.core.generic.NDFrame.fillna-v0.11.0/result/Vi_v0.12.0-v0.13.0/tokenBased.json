@@ -1,0 +1,6157 @@
+[
+  {
+    "api_name": "pandas.core.generic.NDFrame.filter",
+    "score": 0.5403225806451613,
+    "rank": 1
+  },
+  {
+    "api_name": "pandas.core.index.Index.copy",
+    "score": 0.5338983050847458,
+    "rank": 2
+  },
+  {
+    "api_name": "pandas.core.internals.Block.__init__",
+    "score": 0.5210084033613446,
+    "rank": 3
+  },
+  {
+    "api_name": "pandas.core.series.Series.to_string",
+    "score": 0.5206611570247934,
+    "rank": 4
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.drop",
+    "score": 0.5190839694656488,
+    "rank": 5
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.join",
+    "score": 0.5151515151515151,
+    "rank": 6
+  },
+  {
+    "api_name": "pandas.core.index.Index.diff",
+    "score": 0.5135135135135135,
+    "rank": 7
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._reindex_multi",
+    "score": 0.5132743362831859,
+    "rank": 8
+  },
+  {
+    "api_name": "pandas.core.indexing._iLocIndexer._getitem_axis",
+    "score": 0.5086206896551724,
+    "rank": 9
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.align",
+    "score": 0.5083333333333333,
+    "rank": 10
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.from_dict",
+    "score": 0.5079365079365079,
+    "rank": 11
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical.__init__",
+    "score": 0.504424778761062,
+    "rank": 12
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._cython_agg_general",
+    "score": 0.5042016806722689,
+    "rank": 13
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._getitem_array",
+    "score": 0.5039370078740157,
+    "rank": 14
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._has_valid_positional_setitem_indexer",
+    "score": 0.5038759689922481,
+    "rank": 15
+  },
+  {
+    "api_name": "pandas.core.internals.Block._interpolate",
+    "score": 0.5036496350364964,
+    "rank": 16
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.rank",
+    "score": 0.5,
+    "rank": 17
+  },
+  {
+    "api_name": "pandas.core.index.Index.summary",
+    "score": 0.49242424242424243,
+    "rank": 18
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.from_tuples",
+    "score": 0.49166666666666664,
+    "rank": 19
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.swapaxes",
+    "score": 0.4915254237288136,
+    "rank": 20
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.merge",
+    "score": 0.49074074074074076,
+    "rank": 21
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.tz_convert",
+    "score": 0.4883720930232558,
+    "rank": 22
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.rename_axis",
+    "score": 0.48717948717948717,
+    "rank": 23
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__init__",
+    "score": 0.48695652173913045,
+    "rank": 24
+  },
+  {
+    "api_name": "pandas.core.series.Series._maybe_box",
+    "score": 0.48695652173913045,
+    "rank": 24
+  },
+  {
+    "api_name": "pandas.core.internals.TimeDeltaBlock._try_fill",
+    "score": 0.48623853211009177,
+    "rank": 26
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.take",
+    "score": 0.4855072463768116,
+    "rank": 27
+  },
+  {
+    "api_name": "pandas.core.internals.Block._astype",
+    "score": 0.48484848484848486,
+    "rank": 28
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._init_mgr",
+    "score": 0.4830508474576271,
+    "rank": 29
+  },
+  {
+    "api_name": "pandas.core.series.Series.argsort",
+    "score": 0.4824561403508772,
+    "rank": 30
+  },
+  {
+    "api_name": "pandas.core.format.DataFrameFormatter.to_string",
+    "score": 0.48201438848920863,
+    "rank": 31
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper._get_aggregate_function",
+    "score": 0.48201438848920863,
+    "rank": 31
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.insert",
+    "score": 0.48120300751879697,
+    "rank": 33
+  },
+  {
+    "api_name": "pandas.core.index.Index.reindex",
+    "score": 0.48026315789473684,
+    "rank": 34
+  },
+  {
+    "api_name": "pandas.core.format.HTMLFormatter.write_tr",
+    "score": 0.48,
+    "rank": 35
+  },
+  {
+    "api_name": "pandas.core.common.UnicodeWriter.writerows",
+    "score": 0.4796747967479675,
+    "rank": 36
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._init_matrix",
+    "score": 0.4796747967479675,
+    "rank": 36
+  },
+  {
+    "api_name": "pandas.core.series.Series._ixs",
+    "score": 0.4778761061946903,
+    "rank": 38
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.reindex",
+    "score": 0.47770700636942676,
+    "rank": 39
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.clip",
+    "score": 0.4774774774774775,
+    "rank": 40
+  },
+  {
+    "api_name": "pandas.core.series.Series._set_axis",
+    "score": 0.4774774774774775,
+    "rank": 40
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.tz_localize",
+    "score": 0.4772727272727273,
+    "rank": 42
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._setitem_array",
+    "score": 0.47586206896551725,
+    "rank": 43
+  },
+  {
+    "api_name": "pandas.core.groupby.BinGrouper._aggregate",
+    "score": 0.47413793103448276,
+    "rank": 44
+  },
+  {
+    "api_name": "pandas.core.index.Index.slice_locs",
+    "score": 0.47333333333333333,
+    "rank": 45
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.slice_locs",
+    "score": 0.4732142857142857,
+    "rank": 46
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._prep_ndarray",
+    "score": 0.4732142857142857,
+    "rank": 46
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.__unicode__",
+    "score": 0.4727272727272727,
+    "rank": 48
+  },
+  {
+    "api_name": "pandas.core.series.Series.reset_index",
+    "score": 0.4726027397260274,
+    "rank": 49
+  },
+  {
+    "api_name": "pandas.core.internals.Block.interpolate",
+    "score": 0.472,
+    "rank": 50
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.__getitem__",
+    "score": 0.47058823529411764,
+    "rank": 51
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._construct_axes_from_arguments",
+    "score": 0.47058823529411764,
+    "rank": 51
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.reindex_indexer",
+    "score": 0.4700854700854701,
+    "rank": 53
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer.__setitem__",
+    "score": 0.46956521739130436,
+    "rank": 54
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._apply_broadcast",
+    "score": 0.4666666666666667,
+    "rank": 55
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._convert_for_reindex",
+    "score": 0.4661016949152542,
+    "rank": 56
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.count",
+    "score": 0.46564885496183206,
+    "rank": 57
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.__setstate__",
+    "score": 0.4649122807017544,
+    "rank": 58
+  },
+  {
+    "api_name": "pandas.core.internals.TimeDeltaBlock.to_native_types",
+    "score": 0.464,
+    "rank": 59
+  },
+  {
+    "api_name": "pandas.core.series.Series.count",
+    "score": 0.4632352941176471,
+    "rank": 60
+  },
+  {
+    "api_name": "pandas.core.index.Index.asof",
+    "score": 0.46296296296296297,
+    "rank": 61
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_period",
+    "score": 0.46153846153846156,
+    "rank": 62
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.item_dtypes",
+    "score": 0.4608695652173913,
+    "rank": 63
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.__setitem__",
+    "score": 0.46078431372549017,
+    "rank": 64
+  },
+  {
+    "api_name": "pandas.core.index.Index.intersection",
+    "score": 0.460431654676259,
+    "rank": 65
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._slice_blocks",
+    "score": 0.46017699115044247,
+    "rank": 66
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.truncate",
+    "score": 0.46,
+    "rank": 67
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._set_levels",
+    "score": 0.4596774193548387,
+    "rank": 68
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._join_compat",
+    "score": 0.45962732919254656,
+    "rank": 69
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.values",
+    "score": 0.4594594594594595,
+    "rank": 70
+  },
+  {
+    "api_name": "pandas.core.series.Series.sort_index",
+    "score": 0.4594594594594595,
+    "rank": 70
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.as_matrix",
+    "score": 0.45901639344262296,
+    "rank": 72
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.sortlevel",
+    "score": 0.4589041095890411,
+    "rank": 73
+  },
+  {
+    "api_name": "pandas.core.index.Float64Index.get_value",
+    "score": 0.45871559633027525,
+    "rank": 74
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_timestamp",
+    "score": 0.4576271186440678,
+    "rank": 75
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper._aggregate_series_pure_python",
+    "score": 0.45652173913043476,
+    "rank": 76
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper._aggregate",
+    "score": 0.456,
+    "rank": 77
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._transform_item_by_item",
+    "score": 0.456,
+    "rank": 77
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.pct_change",
+    "score": 0.45535714285714285,
+    "rank": 79
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._make_na_block",
+    "score": 0.45535714285714285,
+    "rank": 79
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__setattr__",
+    "score": 0.45454545454545453,
+    "rank": 81
+  },
+  {
+    "api_name": "pandas.core.indexing._LocIndexer._getitem_axis",
+    "score": 0.45454545454545453,
+    "rank": 81
+  },
+  {
+    "api_name": "pandas.core.series.Series._repr_footer",
+    "score": 0.453125,
+    "rank": 83
+  },
+  {
+    "api_name": "pandas.core.common.UnicodeWriter.writerow",
+    "score": 0.452991452991453,
+    "rank": 84
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._verify_integrity",
+    "score": 0.45185185185185184,
+    "rank": 85
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.copy",
+    "score": 0.45112781954887216,
+    "rank": 86
+  },
+  {
+    "api_name": "pandas.core.format.ExcelFormatter._format_header",
+    "score": 0.44881889763779526,
+    "rank": 87
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.get_items_map",
+    "score": 0.4485294117647059,
+    "rank": 88
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.combine_first",
+    "score": 0.4482758620689655,
+    "rank": 89
+  },
+  {
+    "api_name": "pandas.core.format.ExcelFormatter._format_header_regular",
+    "score": 0.44776119402985076,
+    "rank": 90
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock.to_native_types",
+    "score": 0.44755244755244755,
+    "rank": 91
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.get_loc",
+    "score": 0.4473684210526316,
+    "rank": 92
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._getitem_tuple",
+    "score": 0.4473684210526316,
+    "rank": 92
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.equals",
+    "score": 0.44696969696969696,
+    "rank": 94
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.dropna",
+    "score": 0.44642857142857145,
+    "rank": 95
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._get_level_number",
+    "score": 0.4462809917355372,
+    "rank": 96
+  },
+  {
+    "api_name": "pandas.core.series.Series.combine",
+    "score": 0.4453125,
+    "rank": 97
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.reindex_axis",
+    "score": 0.4444444444444444,
+    "rank": 98
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.get_indexer",
+    "score": 0.4444444444444444,
+    "rank": 98
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.to_excel",
+    "score": 0.4444444444444444,
+    "rank": 98
+  },
+  {
+    "api_name": "pandas.core.internals.FloatBlock.to_native_types",
+    "score": 0.4426229508196721,
+    "rank": 101
+  },
+  {
+    "api_name": "pandas.core.index.Index.append",
+    "score": 0.44166666666666665,
+    "rank": 102
+  },
+  {
+    "api_name": "pandas.core.groupby.SeriesGroupBy.filter",
+    "score": 0.4409448818897638,
+    "rank": 103
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._delete_from_all_blocks",
+    "score": 0.44036697247706424,
+    "rank": 104
+  },
+  {
+    "api_name": "pandas.core.index.Index.get_indexer_non_unique",
+    "score": 0.4396551724137931,
+    "rank": 105
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.rename_items",
+    "score": 0.4393939393939394,
+    "rank": 106
+  },
+  {
+    "api_name": "pandas.core.series.Series._set_labels",
+    "score": 0.4392523364485981,
+    "rank": 107
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.quantile",
+    "score": 0.43859649122807015,
+    "rank": 108
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.shift",
+    "score": 0.43859649122807015,
+    "rank": 108
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._apply_filter",
+    "score": 0.43846153846153846,
+    "rank": 110
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.__repr__",
+    "score": 0.4383561643835616,
+    "rank": 111
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.reindex_items_from",
+    "score": 0.4383561643835616,
+    "rank": 111
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._verify_integrity",
+    "score": 0.4380165289256198,
+    "rank": 113
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.cov",
+    "score": 0.43795620437956206,
+    "rank": 114
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.__unicode__",
+    "score": 0.43795620437956206,
+    "rank": 114
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.isin",
+    "score": 0.4375,
+    "rank": 116
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_latex",
+    "score": 0.4375,
+    "rank": 116
+  },
+  {
+    "api_name": "pandas.core.index.Index.slice_indexer",
+    "score": 0.4375,
+    "rank": 116
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._maybe_rename_join",
+    "score": 0.4375,
+    "rank": 116
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.shift",
+    "score": 0.4370860927152318,
+    "rank": 120
+  },
+  {
+    "api_name": "pandas.core.internals.TimeDeltaBlock._try_coerce_args",
+    "score": 0.43703703703703706,
+    "rank": 121
+  },
+  {
+    "api_name": "pandas.core.series.Series.isin",
+    "score": 0.43661971830985913,
+    "rank": 122
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.__init__",
+    "score": 0.436241610738255,
+    "rank": 123
+  },
+  {
+    "api_name": "pandas.core.series.Series._binop",
+    "score": 0.4358974358974359,
+    "rank": 124
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._concat_objects",
+    "score": 0.43548387096774194,
+    "rank": 125
+  },
+  {
+    "api_name": "pandas.core.index.Index._join_non_unique",
+    "score": 0.43548387096774194,
+    "rank": 125
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._expand_axes",
+    "score": 0.4351851851851852,
+    "rank": 127
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.tshift",
+    "score": 0.4350282485875706,
+    "rank": 128
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._create_indexer",
+    "score": 0.43478260869565216,
+    "rank": 129
+  },
+  {
+    "api_name": "pandas.core.groupby.BinGrouper.apply",
+    "score": 0.43478260869565216,
+    "rank": 129
+  },
+  {
+    "api_name": "pandas.core.index.Index.get_value",
+    "score": 0.43478260869565216,
+    "rank": 129
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.update",
+    "score": 0.4339622641509434,
+    "rank": 132
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy.filter",
+    "score": 0.43373493975903615,
+    "rank": 133
+  },
+  {
+    "api_name": "pandas.core.groupby.PanelGroupBy._aggregate_item_by_item",
+    "score": 0.43333333333333335,
+    "rank": 134
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.from_arrays",
+    "score": 0.43333333333333335,
+    "rank": 134
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._init_data",
+    "score": 0.43312101910828027,
+    "rank": 136
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper._aggregate_series_fast",
+    "score": 0.43283582089552236,
+    "rank": 137
+  },
+  {
+    "api_name": "pandas.core.indexing._LocationIndexer._get_slice_axis",
+    "score": 0.43243243243243246,
+    "rank": 138
+  },
+  {
+    "api_name": "pandas.core.series.Series._set_with",
+    "score": 0.43243243243243246,
+    "rank": 138
+  },
+  {
+    "api_name": "pandas.core.series.Series.map",
+    "score": 0.43243243243243246,
+    "rank": 138
+  },
+  {
+    "api_name": "pandas.core.index.Index._format_with_header",
+    "score": 0.4318181818181818,
+    "rank": 141
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._combine_panel",
+    "score": 0.43119266055045874,
+    "rank": 142
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._cumcount_array",
+    "score": 0.43103448275862066,
+    "rank": 143
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._aggregate_multiple_funcs",
+    "score": 0.43103448275862066,
+    "rank": 143
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.truncate",
+    "score": 0.43089430894308944,
+    "rank": 145
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._add_new_block",
+    "score": 0.4306569343065693,
+    "rank": 146
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock._try_coerce_args",
+    "score": 0.4298245614035088,
+    "rank": 147
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._reindex_axes",
+    "score": 0.42962962962962964,
+    "rank": 148
+  },
+  {
+    "api_name": "pandas.core.index.Float64Index.__new__",
+    "score": 0.42962962962962964,
+    "rank": 148
+  },
+  {
+    "api_name": "pandas.core.internals.Block.downcast",
+    "score": 0.4294478527607362,
+    "rank": 150
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.first",
+    "score": 0.42857142857142855,
+    "rank": 151
+  },
+  {
+    "api_name": "pandas.core.groupby.SeriesGroupBy._aggregate_named",
+    "score": 0.42857142857142855,
+    "rank": 151
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.droplevel",
+    "score": 0.42857142857142855,
+    "rank": 151
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.has_duplicates",
+    "score": 0.42857142857142855,
+    "rank": 151
+  },
+  {
+    "api_name": "pandas.core.indexing._iLocIndexer._has_valid_type",
+    "score": 0.42857142857142855,
+    "rank": 151
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.block_id_vector",
+    "score": 0.42857142857142855,
+    "rank": 151
+  },
+  {
+    "api_name": "pandas.core.nanops.disallow.__call__",
+    "score": 0.42857142857142855,
+    "rank": 151
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.__getitem__",
+    "score": 0.42758620689655175,
+    "rank": 158
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._cython_agg_blocks",
+    "score": 0.4264705882352941,
+    "rank": 159
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.__new__",
+    "score": 0.4260355029585799,
+    "rank": 160
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.lookup",
+    "score": 0.42592592592592593,
+    "rank": 161
+  },
+  {
+    "api_name": "pandas.core.series.Series.__getitem__",
+    "score": 0.42483660130718953,
+    "rank": 162
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.combine",
+    "score": 0.4247787610619469,
+    "rank": 163
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.diff",
+    "score": 0.4246575342465753,
+    "rank": 164
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__delitem__",
+    "score": 0.424,
+    "rank": 165
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.get_group_levels",
+    "score": 0.424,
+    "rank": 165
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._interleave",
+    "score": 0.423841059602649,
+    "rank": 167
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.reindex_axis",
+    "score": 0.423841059602649,
+    "rank": 167
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._define_paths",
+    "score": 0.423728813559322,
+    "rank": 169
+  },
+  {
+    "api_name": "pandas.core.format.SeriesFormatter._get_footer",
+    "score": 0.4236111111111111,
+    "rank": 170
+  },
+  {
+    "api_name": "pandas.core.index.Index.__getitem__",
+    "score": 0.4230769230769231,
+    "rank": 171
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._get_join_index",
+    "score": 0.42276422764227645,
+    "rank": 172
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.reorder_levels",
+    "score": 0.42201834862385323,
+    "rank": 173
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._getitem_multilevel",
+    "score": 0.421875,
+    "rank": 174
+  },
+  {
+    "api_name": "pandas.core.groupby.SeriesGroupBy._wrap_applied_output",
+    "score": 0.4217687074829932,
+    "rank": 175
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.from_items",
+    "score": 0.42168674698795183,
+    "rank": 176
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock._try_coerce_result",
+    "score": 0.4214876033057851,
+    "rank": 177
+  },
+  {
+    "api_name": "pandas.core.format.DataFrameFormatter._get_formatted_index",
+    "score": 0.42142857142857143,
+    "rank": 178
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._combine_frame",
+    "score": 0.42142857142857143,
+    "rank": 178
+  },
+  {
+    "api_name": "pandas.core.series.Series.tz_localize",
+    "score": 0.42105263157894735,
+    "rank": 180
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._compare_frame_evaluate",
+    "score": 0.42028985507246375,
+    "rank": 181
+  },
+  {
+    "api_name": "pandas.core.internals.Block.replace",
+    "score": 0.41964285714285715,
+    "rank": 182
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.sortlevel",
+    "score": 0.41911764705882354,
+    "rank": 183
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._choose_path",
+    "score": 0.4188034188034188,
+    "rank": 184
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._set_axis",
+    "score": 0.41818181818181815,
+    "rank": 185
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.update",
+    "score": 0.4177215189873418,
+    "rank": 186
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._ixs",
+    "score": 0.41739130434782606,
+    "rank": 187
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.dropna",
+    "score": 0.4166666666666667,
+    "rank": 188
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.fast_2d_xs",
+    "score": 0.4161073825503356,
+    "rank": 189
+  },
+  {
+    "api_name": "pandas.core.groupby.DataFrameGroupBy._wrap_aggregated_output",
+    "score": 0.4154929577464789,
+    "rank": 190
+  },
+  {
+    "api_name": "pandas.core.internals.Block.post_merge",
+    "score": 0.4153846153846154,
+    "rank": 191
+  },
+  {
+    "api_name": "pandas.core.internals.TimeDeltaBlock._try_coerce_result",
+    "score": 0.4144144144144144,
+    "rank": 192
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.append",
+    "score": 0.41420118343195267,
+    "rank": 193
+  },
+  {
+    "api_name": "pandas.core.internals.Block._try_cast_result",
+    "score": 0.4140127388535032,
+    "rank": 194
+  },
+  {
+    "api_name": "pandas.core.internals.Block.shift",
+    "score": 0.41379310344827586,
+    "rank": 195
+  },
+  {
+    "api_name": "pandas.core.internals.Block.split_block_at",
+    "score": 0.4132231404958678,
+    "rank": 196
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.rename",
+    "score": 0.41317365269461076,
+    "rank": 197
+  },
+  {
+    "api_name": "pandas.core.daterange.DateRange.__new__",
+    "score": 0.41284403669724773,
+    "rank": 198
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.select",
+    "score": 0.41284403669724773,
+    "rank": 198
+  },
+  {
+    "api_name": "pandas.core.indexing._iLocIndexer._getitem_tuple",
+    "score": 0.41284403669724773,
+    "rank": 198
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.duplicated",
+    "score": 0.4117647058823529,
+    "rank": 201
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._agg_by_level",
+    "score": 0.4117647058823529,
+    "rank": 201
+  },
+  {
+    "api_name": "pandas.core.reshape._Unstacker.__init__",
+    "score": 0.4117647058823529,
+    "rank": 201
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.take",
+    "score": 0.41134751773049644,
+    "rank": 204
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._reindex_axes",
+    "score": 0.4107142857142857,
+    "rank": 205
+  },
+  {
+    "api_name": "pandas.core.format.HTMLFormatter._write_regular_rows",
+    "score": 0.40993788819875776,
+    "rank": 206
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.intersection",
+    "score": 0.4098360655737705,
+    "rank": 207
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.__setitem__",
+    "score": 0.40963855421686746,
+    "rank": 208
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._repr_html_",
+    "score": 0.4094488188976378,
+    "rank": 209
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_excel",
+    "score": 0.4094488188976378,
+    "rank": 209
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.insert",
+    "score": 0.4094488188976378,
+    "rank": 209
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical._repr_footer",
+    "score": 0.4090909090909091,
+    "rank": 212
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._count_level",
+    "score": 0.4090909090909091,
+    "rank": 212
+  },
+  {
+    "api_name": "pandas.core.series.Series._unpickle_series_compat",
+    "score": 0.40816326530612246,
+    "rank": 214
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.from_dict",
+    "score": 0.40789473684210525,
+    "rank": 215
+  },
+  {
+    "api_name": "pandas.core.index.Index.get_indexer",
+    "score": 0.40782122905027934,
+    "rank": 216
+  },
+  {
+    "api_name": "pandas.core.series.Series.__setitem__",
+    "score": 0.4069767441860465,
+    "rank": 217
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.transpose",
+    "score": 0.40540540540540543,
+    "rank": 218
+  },
+  {
+    "api_name": "pandas.core.series.Series.apply",
+    "score": 0.40522875816993464,
+    "rank": 219
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._construct_return_type",
+    "score": 0.4049586776859504,
+    "rank": 220
+  },
+  {
+    "api_name": "pandas.core.format.CSVFormatter._save_chunk",
+    "score": 0.40476190476190477,
+    "rank": 221
+  },
+  {
+    "api_name": "pandas.core.series.Series._get_values_tuple",
+    "score": 0.4036697247706422,
+    "rank": 222
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._get_axis_resolvers",
+    "score": 0.4028776978417266,
+    "rank": 223
+  },
+  {
+    "api_name": "pandas.core.format.HTMLFormatter._write_body",
+    "score": 0.40268456375838924,
+    "rank": 224
+  },
+  {
+    "api_name": "pandas.core.groupby.SeriesGroupBy.aggregate",
+    "score": 0.40268456375838924,
+    "rank": 224
+  },
+  {
+    "api_name": "pandas.core.indexing._ScalarAccessIndexer.__setitem__",
+    "score": 0.4019607843137255,
+    "rank": 226
+  },
+  {
+    "api_name": "pandas.core.series.Series.take",
+    "score": 0.40186915887850466,
+    "rank": 227
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical.from_array",
+    "score": 0.4017857142857143,
+    "rank": 228
+  },
+  {
+    "api_name": "pandas.core.groupby.DataFrameGroupBy.__getitem__",
+    "score": 0.4017857142857143,
+    "rank": 228
+  },
+  {
+    "api_name": "pandas.core.series.Series.__unicode__",
+    "score": 0.4015151515151515,
+    "rank": 230
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__setstate__",
+    "score": 0.4012738853503185,
+    "rank": 231
+  },
+  {
+    "api_name": "pandas.core.groupby.SeriesGroupBy.transform",
+    "score": 0.4012738853503185,
+    "rank": 231
+  },
+  {
+    "api_name": "pandas.core.format.FloatArrayFormatter._format_with",
+    "score": 0.4,
+    "rank": 233
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper._get_compressed_labels",
+    "score": 0.4,
+    "rank": 233
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.apply",
+    "score": 0.4,
+    "rank": 233
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._aggregate_item_by_item",
+    "score": 0.4,
+    "rank": 233
+  },
+  {
+    "api_name": "pandas.core.internals.Block._interpolate_with_fill",
+    "score": 0.4,
+    "rank": 233
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._make_wrapper",
+    "score": 0.39880952380952384,
+    "rank": 238
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.set_value",
+    "score": 0.39869281045751637,
+    "rank": 239
+  },
+  {
+    "api_name": "pandas.core.format.CategoricalFormatter.to_string",
+    "score": 0.3983050847457627,
+    "rank": 240
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.make_block",
+    "score": 0.39669421487603307,
+    "rank": 241
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._python_agg_general",
+    "score": 0.39490445859872614,
+    "rank": 242
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.as_blocks",
+    "score": 0.3944954128440367,
+    "rank": 243
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._getitem_axis",
+    "score": 0.3939393939393939,
+    "rank": 244
+  },
+  {
+    "api_name": "pandas.core.internals.Block.ref_locs",
+    "score": 0.3937007874015748,
+    "rank": 245
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.get_slice",
+    "score": 0.3933333333333333,
+    "rank": 246
+  },
+  {
+    "api_name": "pandas.core.groupby.PanelGroupBy._wrap_generic_output",
+    "score": 0.39285714285714285,
+    "rank": 247
+  },
+  {
+    "api_name": "pandas.core.format.GenericArrayFormatter._format_strings",
+    "score": 0.3924731182795699,
+    "rank": 248
+  },
+  {
+    "api_name": "pandas.core.series.Series.sortlevel",
+    "score": 0.39215686274509803,
+    "rank": 249
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_dict",
+    "score": 0.391025641025641,
+    "rank": 250
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._aggregate_generic",
+    "score": 0.39072847682119205,
+    "rank": 251
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_csv",
+    "score": 0.390625,
+    "rank": 252
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._homogenize_dict",
+    "score": 0.3905325443786982,
+    "rank": 253
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.append",
+    "score": 0.3904761904761905,
+    "rank": 254
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._set_ref_locs",
+    "score": 0.39037433155080214,
+    "rank": 255
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._index_with_as_index",
+    "score": 0.3902439024390244,
+    "rank": 256
+  },
+  {
+    "api_name": "pandas.core.config.DictWrapper.__getattr__",
+    "score": 0.3883495145631068,
+    "rank": 257
+  },
+  {
+    "api_name": "pandas.core.index.Index._convert_scalar_indexer",
+    "score": 0.3879310344827586,
+    "rank": 258
+  },
+  {
+    "api_name": "pandas.core.format.CategoricalFormatter._get_footer",
+    "score": 0.3875,
+    "rank": 259
+  },
+  {
+    "api_name": "pandas.core.series.Series.dot",
+    "score": 0.3870967741935484,
+    "rank": 260
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._unpickle_matrix_compat",
+    "score": 0.3865546218487395,
+    "rank": 261
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._reindex_multi",
+    "score": 0.3854748603351955,
+    "rank": 262
+  },
+  {
+    "api_name": "pandas.core.format.SeriesFormatter._get_formatted_index",
+    "score": 0.3853211009174312,
+    "rank": 263
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._get_item_cache",
+    "score": 0.3853211009174312,
+    "rank": 263
+  },
+  {
+    "api_name": "pandas.core.ops._TimeOp.__init__",
+    "score": 0.38461538461538464,
+    "rank": 265
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._reduce",
+    "score": 0.38461538461538464,
+    "rank": 265
+  },
+  {
+    "api_name": "pandas.core.series.Series.combine_first",
+    "score": 0.38392857142857145,
+    "rank": 267
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.bool",
+    "score": 0.3838383838383838,
+    "rank": 268
+  },
+  {
+    "api_name": "pandas.core.internals.Block.reindex_items_from",
+    "score": 0.38372093023255816,
+    "rank": 269
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_html",
+    "score": 0.3835616438356164,
+    "rank": 270
+  },
+  {
+    "api_name": "pandas.core.format.DataFrameFormatter.to_html",
+    "score": 0.38317757009345793,
+    "rank": 271
+  },
+  {
+    "api_name": "pandas.core.internals.Block.__unicode__",
+    "score": 0.38317757009345793,
+    "rank": 271
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._get_level_indexer",
+    "score": 0.3826086956521739,
+    "rank": 273
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.reorder_levels",
+    "score": 0.3826086956521739,
+    "rank": 273
+  },
+  {
+    "api_name": "pandas.core.config.option_context.__init__",
+    "score": 0.3821138211382114,
+    "rank": 275
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.xs",
+    "score": 0.38181818181818183,
+    "rank": 276
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_string",
+    "score": 0.38064516129032255,
+    "rank": 277
+  },
+  {
+    "api_name": "pandas.core.format.CSVFormatter.save",
+    "score": 0.3787878787878788,
+    "rank": 278
+  },
+  {
+    "api_name": "pandas.core.index.Index.format",
+    "score": 0.37735849056603776,
+    "rank": 279
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._getitem_multilevel",
+    "score": 0.3772455089820359,
+    "rank": 280
+  },
+  {
+    "api_name": "pandas.core.series.Series.asof",
+    "score": 0.3772455089820359,
+    "rank": 280
+  },
+  {
+    "api_name": "pandas.core.series.Series.sort",
+    "score": 0.37719298245614036,
+    "rank": 282
+  },
+  {
+    "api_name": "pandas.core.reshape._Unstacker._make_selectors",
+    "score": 0.37662337662337664,
+    "rank": 283
+  },
+  {
+    "api_name": "pandas.core.index.Int64Index.__new__",
+    "score": 0.3765432098765432,
+    "rank": 284
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._repr_fits_horizontal_",
+    "score": 0.3764705882352941,
+    "rank": 285
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._decide_output_index",
+    "score": 0.3761467889908257,
+    "rank": 286
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.get_for_nan_indexer",
+    "score": 0.3761467889908257,
+    "rank": 286
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._wrap_agged_blocks",
+    "score": 0.37606837606837606,
+    "rank": 288
+  },
+  {
+    "api_name": "pandas.core.format.SeriesFormatter.to_string",
+    "score": 0.37575757575757573,
+    "rank": 289
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_records",
+    "score": 0.375,
+    "rank": 290
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.reindex",
+    "score": 0.375,
+    "rank": 290
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy.transform",
+    "score": 0.375,
+    "rank": 290
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock.fillna",
+    "score": 0.375,
+    "rank": 290
+  },
+  {
+    "api_name": "pandas.core.reshape._Unstacker.get_new_columns",
+    "score": 0.375,
+    "rank": 290
+  },
+  {
+    "api_name": "pandas.core.series.Series._get_repr",
+    "score": 0.375,
+    "rank": 290
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.drop",
+    "score": 0.37305699481865284,
+    "rank": 296
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._add_aggregate_operations",
+    "score": 0.3724137931034483,
+    "rank": 297
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.apply",
+    "score": 0.37222222222222223,
+    "rank": 298
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.to_frame",
+    "score": 0.3712574850299401,
+    "rank": 299
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.__reduce__",
+    "score": 0.37037037037037035,
+    "rank": 300
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.fillna",
+    "score": 0.37,
+    "rank": 301
+  },
+  {
+    "api_name": "pandas.core.format.CSVFormatter._save",
+    "score": 0.36936936936936937,
+    "rank": 302
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.sort_index",
+    "score": 0.36936936936936937,
+    "rank": 302
+  },
+  {
+    "api_name": "pandas.core.groupby.BinGrouper.get_iterator",
+    "score": 0.3691275167785235,
+    "rank": 304
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.iget",
+    "score": 0.36893203883495146,
+    "rank": 305
+  },
+  {
+    "api_name": "pandas.core.format.TableFormatter._get_formatter",
+    "score": 0.36792452830188677,
+    "rank": 306
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._get_axis_name",
+    "score": 0.36792452830188677,
+    "rank": 306
+  },
+  {
+    "api_name": "pandas.core.groupby.DataSplitter.__iter__",
+    "score": 0.36792452830188677,
+    "rank": 306
+  },
+  {
+    "api_name": "pandas.core.series.Series.to_period",
+    "score": 0.36792452830188677,
+    "rank": 306
+  },
+  {
+    "api_name": "pandas.core.internals.ObjectBlock.convert",
+    "score": 0.3670886075949367,
+    "rank": 310
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._combine_match_columns",
+    "score": 0.3669724770642202,
+    "rank": 311
+  },
+  {
+    "api_name": "pandas.core.groupby.SeriesGroupBy._aggregate_multiple_funcs",
+    "score": 0.3668639053254438,
+    "rank": 312
+  },
+  {
+    "api_name": "pandas.core.index.Index._convert_slice_indexer",
+    "score": 0.36683417085427134,
+    "rank": 313
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.set_labels",
+    "score": 0.36607142857142855,
+    "rank": 314
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.abs",
+    "score": 0.3652173913043478,
+    "rank": 315
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._reindex_with_indexers",
+    "score": 0.3645833333333333,
+    "rank": 316
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical.describe",
+    "score": 0.3644859813084112,
+    "rank": 317
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.post_merge",
+    "score": 0.3644859813084112,
+    "rank": 317
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.reindex",
+    "score": 0.3644859813084112,
+    "rank": 317
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._compare_constructor",
+    "score": 0.3644859813084112,
+    "rank": 317
+  },
+  {
+    "api_name": "pandas.core.index.Index.asof_locs",
+    "score": 0.36363636363636365,
+    "rank": 321
+  },
+  {
+    "api_name": "pandas.core.internals.FloatBlock._can_hold_element",
+    "score": 0.36363636363636365,
+    "rank": 321
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.set_levels",
+    "score": 0.36283185840707965,
+    "rank": 323
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._unpickle_panel_compat",
+    "score": 0.36283185840707965,
+    "rank": 323
+  },
+  {
+    "api_name": "pandas.core.format.FloatArrayFormatter.get_result",
+    "score": 0.3619631901840491,
+    "rank": 325
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.__setstate__",
+    "score": 0.3619047619047619,
+    "rank": 326
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._rebuild_ref_locs",
+    "score": 0.3611111111111111,
+    "rank": 327
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._unpickle_frame_compat",
+    "score": 0.36036036036036034,
+    "rank": 328
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._partial_tup_index",
+    "score": 0.359375,
+    "rank": 329
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._combine",
+    "score": 0.3592233009708738,
+    "rank": 330
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.idxmax",
+    "score": 0.3584905660377358,
+    "rank": 331
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.idxmin",
+    "score": 0.3584905660377358,
+    "rank": 331
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.last",
+    "score": 0.3584905660377358,
+    "rank": 331
+  },
+  {
+    "api_name": "pandas.core.internals.Block.fillna",
+    "score": 0.3584905660377358,
+    "rank": 331
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.reindex",
+    "score": 0.3584905660377358,
+    "rank": 331
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.rename",
+    "score": 0.3584905660377358,
+    "rank": 331
+  },
+  {
+    "api_name": "pandas.core.format.HTMLFormatter._write_cell",
+    "score": 0.35833333333333334,
+    "rank": 337
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._combine_match_index",
+    "score": 0.3577981651376147,
+    "rank": 338
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.get",
+    "score": 0.3575418994413408,
+    "rank": 339
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical.__unicode__",
+    "score": 0.35714285714285715,
+    "rank": 340
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_panel",
+    "score": 0.35714285714285715,
+    "rank": 340
+  },
+  {
+    "api_name": "pandas.core.internals.Block.reindex_axis",
+    "score": 0.35714285714285715,
+    "rank": 340
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.get_scalar",
+    "score": 0.35714285714285715,
+    "rank": 340
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._align_frame",
+    "score": 0.35678391959798994,
+    "rank": 344
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.all",
+    "score": 0.3564356435643564,
+    "rank": 345
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.any",
+    "score": 0.3564356435643564,
+    "rank": 345
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._extract_axis",
+    "score": 0.35602094240837695,
+    "rank": 347
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.__init__",
+    "score": 0.3559322033898305,
+    "rank": 348
+  },
+  {
+    "api_name": "pandas.core.format.EngFormatter.__call__",
+    "score": 0.35555555555555557,
+    "rank": 349
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._maybe_update_cacher",
+    "score": 0.35537190082644626,
+    "rank": 350
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._combine_series",
+    "score": 0.35514018691588783,
+    "rank": 351
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._get_axis_number",
+    "score": 0.35514018691588783,
+    "rank": 351
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.__unicode__",
+    "score": 0.35514018691588783,
+    "rank": 351
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._init_ndarray",
+    "score": 0.3544973544973545,
+    "rank": 354
+  },
+  {
+    "api_name": "pandas.core.series.Series.order",
+    "score": 0.35294117647058826,
+    "rank": 355
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._apply_raw",
+    "score": 0.35185185185185186,
+    "rank": 356
+  },
+  {
+    "api_name": "pandas.core.groupby.DataFrameGroupBy._wrap_generic_output",
+    "score": 0.35185185185185186,
+    "rank": 356
+  },
+  {
+    "api_name": "pandas.core.nanops.bottleneck_switch.__call__",
+    "score": 0.35135135135135137,
+    "rank": 358
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.dot",
+    "score": 0.35096153846153844,
+    "rank": 359
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.__unicode__",
+    "score": 0.35,
+    "rank": 360
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.eval",
+    "score": 0.3490566037735849,
+    "rank": 361
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.set_value",
+    "score": 0.3490566037735849,
+    "rank": 361
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.union",
+    "score": 0.3486238532110092,
+    "rank": 363
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._get_slice_axis",
+    "score": 0.3486238532110092,
+    "rank": 363
+  },
+  {
+    "api_name": "pandas.core.internals.Block.to_native_types",
+    "score": 0.3486238532110092,
+    "rank": 363
+  },
+  {
+    "api_name": "pandas.core.series.Series._get_with",
+    "score": 0.3471502590673575,
+    "rank": 366
+  },
+  {
+    "api_name": "pandas.core.config.DictWrapper.__setattr__",
+    "score": 0.34615384615384615,
+    "rank": 367
+  },
+  {
+    "api_name": "pandas.core.ops._TimeOp._convert_for_datetime",
+    "score": 0.34574468085106386,
+    "rank": 368
+  },
+  {
+    "api_name": "pandas.core.index.Float64Index._convert_slice_indexer",
+    "score": 0.34545454545454546,
+    "rank": 369
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.__init__",
+    "score": 0.344,
+    "rank": 370
+  },
+  {
+    "api_name": "pandas.core.index.Index.drop",
+    "score": 0.3431372549019608,
+    "rank": 371
+  },
+  {
+    "api_name": "pandas.core.index.Index.insert",
+    "score": 0.3431372549019608,
+    "rank": 371
+  },
+  {
+    "api_name": "pandas.core.indexing._ScalarAccessIndexer.__getitem__",
+    "score": 0.3431372549019608,
+    "rank": 371
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.swaplevel",
+    "score": 0.34306569343065696,
+    "rank": 374
+  },
+  {
+    "api_name": "pandas.core.index.Index._coerce_to_ndarray",
+    "score": 0.34234234234234234,
+    "rank": 375
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._drop_from_level",
+    "score": 0.34234234234234234,
+    "rank": 375
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.__array_finalize__",
+    "score": 0.34210526315789475,
+    "rank": 377
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._multi_take_opportunity",
+    "score": 0.3418803418803419,
+    "rank": 378
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._combine_series_infer",
+    "score": 0.3416666666666667,
+    "rank": 379
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.shift",
+    "score": 0.33962264150943394,
+    "rank": 380
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.get_value",
+    "score": 0.33962264150943394,
+    "rank": 380
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._box_item_values",
+    "score": 0.3394495412844037,
+    "rank": 382
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.xs",
+    "score": 0.3383084577114428,
+    "rank": 383
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.swaplevel",
+    "score": 0.33663366336633666,
+    "rank": 384
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.get_value",
+    "score": 0.33516483516483514,
+    "rank": 385
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.replace_list",
+    "score": 0.33507853403141363,
+    "rank": 386
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.swaplevel",
+    "score": 0.3333333333333333,
+    "rank": 387
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.interpolate",
+    "score": 0.3333333333333333,
+    "rank": 387
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.get_level_values",
+    "score": 0.3333333333333333,
+    "rank": 387
+  },
+  {
+    "api_name": "pandas.core.internals.Block._maybe_downcast",
+    "score": 0.3333333333333333,
+    "rank": 387
+  },
+  {
+    "api_name": "pandas.core.indexing._LocIndexer._has_valid_type",
+    "score": 0.3317972350230415,
+    "rank": 391
+  },
+  {
+    "api_name": "pandas.core.reshape._Unstacker.get_new_index",
+    "score": 0.3305785123966942,
+    "rank": 392
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock._can_hold_element",
+    "score": 0.3302752293577982,
+    "rank": 393
+  },
+  {
+    "api_name": "pandas.core.indexing._iAtIndexer._convert_key",
+    "score": 0.3300970873786408,
+    "rank": 394
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._ixs",
+    "score": 0.3299492385786802,
+    "rank": 395
+  },
+  {
+    "api_name": "pandas.core.format.DataFrameFormatter.__init__",
+    "score": 0.32786885245901637,
+    "rank": 396
+  },
+  {
+    "api_name": "pandas.core.ops._TimeOp.maybe_convert_for_time_op",
+    "score": 0.3274336283185841,
+    "rank": 397
+  },
+  {
+    "api_name": "pandas.core.groupby.FrameSplitter.fast_apply",
+    "score": 0.32710280373831774,
+    "rank": 398
+  },
+  {
+    "api_name": "pandas.core.indexing._LocationIndexer._getbool_axis",
+    "score": 0.32710280373831774,
+    "rank": 398
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.consolidate",
+    "score": 0.3269230769230769,
+    "rank": 400
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.stack",
+    "score": 0.32673267326732675,
+    "rank": 401
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.corr",
+    "score": 0.3251231527093596,
+    "rank": 402
+  },
+  {
+    "api_name": "pandas.core.reshape._Unstacker._make_sorted_values_labels",
+    "score": 0.3248407643312102,
+    "rank": 403
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.describe",
+    "score": 0.3247422680412371,
+    "rank": 404
+  },
+  {
+    "api_name": "pandas.core.format.DataFrameFormatter._get_column_name_list",
+    "score": 0.32407407407407407,
+    "rank": 405
+  },
+  {
+    "api_name": "pandas.core.index.Index._validate_slicer",
+    "score": 0.32407407407407407,
+    "rank": 405
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._get_label",
+    "score": 0.32407407407407407,
+    "rank": 405
+  },
+  {
+    "api_name": "pandas.core.series.Series.corr",
+    "score": 0.3235294117647059,
+    "rank": 408
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._ensure_valid_index",
+    "score": 0.32142857142857145,
+    "rank": 409
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._check_setitem_copy",
+    "score": 0.32142857142857145,
+    "rank": 409
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.resample",
+    "score": 0.32142857142857145,
+    "rank": 409
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._iterate_slices",
+    "score": 0.3211009174311927,
+    "rank": 412
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._set_names",
+    "score": 0.32075471698113206,
+    "rank": 413
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.apply",
+    "score": 0.32065217391304346,
+    "rank": 414
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._getitem_column",
+    "score": 0.32,
+    "rank": 415
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._delete_from_block",
+    "score": 0.319047619047619,
+    "rank": 416
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._set_labels",
+    "score": 0.3185840707964602,
+    "rank": 417
+  },
+  {
+    "api_name": "pandas.core.series.Series.to_timestamp",
+    "score": 0.3173076923076923,
+    "rank": 418
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical.__getitem__",
+    "score": 0.31683168316831684,
+    "rank": 419
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.applymap",
+    "score": 0.31683168316831684,
+    "rank": 419
+  },
+  {
+    "api_name": "pandas.core.format.HTMLFormatter.write_result",
+    "score": 0.3157894736842105,
+    "rank": 421
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._init_dict",
+    "score": 0.3157894736842105,
+    "rank": 421
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.delete",
+    "score": 0.3148148148148148,
+    "rank": 423
+  },
+  {
+    "api_name": "pandas.core.groupby.PanelGroupBy._iterate_slices",
+    "score": 0.3142857142857143,
+    "rank": 424
+  },
+  {
+    "api_name": "pandas.core.index.Index.union",
+    "score": 0.3140096618357488,
+    "rank": 425
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.cumcount",
+    "score": 0.3137254901960784,
+    "rank": 426
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.head",
+    "score": 0.3137254901960784,
+    "rank": 426
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.corrwith",
+    "score": 0.3125,
+    "rank": 428
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.get_block_map",
+    "score": 0.31140350877192985,
+    "rank": 429
+  },
+  {
+    "api_name": "pandas.core.common.UnicodeWriter.__init__",
+    "score": 0.3113207547169811,
+    "rank": 430
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.drop_duplicates",
+    "score": 0.3113207547169811,
+    "rank": 430
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._from_elements",
+    "score": 0.3113207547169811,
+    "rank": 430
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._multi_take",
+    "score": 0.3113207547169811,
+    "rank": 430
+  },
+  {
+    "api_name": "pandas.core.internals.Block.set_ref_items",
+    "score": 0.3113207547169811,
+    "rank": 430
+  },
+  {
+    "api_name": "pandas.core.groupby.SeriesGroupBy._wrap_aggregated_output",
+    "score": 0.3106796116504854,
+    "rank": 435
+  },
+  {
+    "api_name": "pandas.core.series.Series.cov",
+    "score": 0.31,
+    "rank": 436
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.fillna",
+    "score": 0.30927835051546393,
+    "rank": 437
+  },
+  {
+    "api_name": "pandas.core.format.DataFrameFormatter._get_formatted_column_labels",
+    "score": 0.3088235294117647,
+    "rank": 438
+  },
+  {
+    "api_name": "pandas.core.series.Series._tidy_repr",
+    "score": 0.30833333333333335,
+    "rank": 439
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.__getattr__",
+    "score": 0.3076923076923077,
+    "rank": 440
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._init_dict",
+    "score": 0.3076923076923077,
+    "rank": 440
+  },
+  {
+    "api_name": "pandas.core.internals.Block.copy",
+    "score": 0.3069306930693069,
+    "rank": 442
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.format",
+    "score": 0.30638297872340425,
+    "rank": 443
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._getitem_lowerdim",
+    "score": 0.3059360730593607,
+    "rank": 444
+  },
+  {
+    "api_name": "pandas.core.internals.ObjectBlock.replace",
+    "score": 0.30526315789473685,
+    "rank": 445
+  },
+  {
+    "api_name": "pandas.core.format.SeriesFormatter.__init__",
+    "score": 0.3050847457627119,
+    "rank": 446
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.tail",
+    "score": 0.3047619047619048,
+    "rank": 447
+  },
+  {
+    "api_name": "pandas.core.index.Index.set_names",
+    "score": 0.3047619047619048,
+    "rank": 447
+  },
+  {
+    "api_name": "pandas.core.internals.ObjectBlock._replace_single",
+    "score": 0.30454545454545456,
+    "rank": 449
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._is_indexed_like",
+    "score": 0.30357142857142855,
+    "rank": 450
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._get_plane_axes",
+    "score": 0.30357142857142855,
+    "rank": 450
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.reindex_axis",
+    "score": 0.30275229357798167,
+    "rank": 452
+  },
+  {
+    "api_name": "pandas.core.series.Series.from_csv",
+    "score": 0.30275229357798167,
+    "rank": 452
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical._tidy_repr",
+    "score": 0.3025210084033613,
+    "rank": 454
+  },
+  {
+    "api_name": "pandas.core.series.Series.quantile",
+    "score": 0.3018867924528302,
+    "rank": 455
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.set_index",
+    "score": 0.3013698630136986,
+    "rank": 456
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._try_cast",
+    "score": 0.30097087378640774,
+    "rank": 457
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.median",
+    "score": 0.30097087378640774,
+    "rank": 457
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.size",
+    "score": 0.3,
+    "rank": 459
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.count",
+    "score": 0.3,
+    "rank": 459
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.__init__",
+    "score": 0.2995391705069124,
+    "rank": 461
+  },
+  {
+    "api_name": "pandas.core.reshape._Unstacker.get_new_values",
+    "score": 0.2994350282485876,
+    "rank": 462
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._align_series",
+    "score": 0.29924242424242425,
+    "rank": 463
+  },
+  {
+    "api_name": "pandas.core.internals.ObjectBlock.__init__",
+    "score": 0.29906542056074764,
+    "rank": 464
+  },
+  {
+    "api_name": "pandas.core.internals.BoolBlock._can_hold_element",
+    "score": 0.2980769230769231,
+    "rank": 465
+  },
+  {
+    "api_name": "pandas.core.indexing._IXIndexer._has_valid_type",
+    "score": 0.2972972972972973,
+    "rank": 466
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._validate_dtype",
+    "score": 0.297029702970297,
+    "rank": 467
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._setup_axes",
+    "score": 0.2962962962962963,
+    "rank": 468
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.query",
+    "score": 0.29523809523809524,
+    "rank": 469
+  },
+  {
+    "api_name": "pandas.core.series.Series.round",
+    "score": 0.29411764705882354,
+    "rank": 470
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.info",
+    "score": 0.2938775510204082,
+    "rank": 471
+  },
+  {
+    "api_name": "pandas.core.indexing._iLocIndexer._get_slice_axis",
+    "score": 0.29357798165137616,
+    "rank": 472
+  },
+  {
+    "api_name": "pandas.core.format.ExcelFormatter._format_regular_rows",
+    "score": 0.2932692307692308,
+    "rank": 473
+  },
+  {
+    "api_name": "pandas.core.series.Series._slice",
+    "score": 0.29245283018867924,
+    "rank": 474
+  },
+  {
+    "api_name": "pandas.core.groupby.DataFrameGroupBy._wrap_agged_blocks",
+    "score": 0.291866028708134,
+    "rank": 475
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.set",
+    "score": 0.2916666666666667,
+    "rank": 476
+  },
+  {
+    "api_name": "pandas.core.index.Index._join_monotonic",
+    "score": 0.2914798206278027,
+    "rank": 477
+  },
+  {
+    "api_name": "pandas.core.internals.Block.delete",
+    "score": 0.2912621359223301,
+    "rank": 478
+  },
+  {
+    "api_name": "pandas.core.series.Series.tz_convert",
+    "score": 0.2912621359223301,
+    "rank": 478
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper._get_group_keys",
+    "score": 0.2909090909090909,
+    "rank": 480
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.make_empty",
+    "score": 0.2909090909090909,
+    "rank": 480
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._combine_frame",
+    "score": 0.29004329004329005,
+    "rank": 482
+  },
+  {
+    "api_name": "pandas.core.reshape._Unstacker.get_result",
+    "score": 0.2898550724637681,
+    "rank": 483
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._has_valid_tuple",
+    "score": 0.2897196261682243,
+    "rank": 484
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.reindex_items",
+    "score": 0.2892561983471074,
+    "rank": 485
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._convert_tuple",
+    "score": 0.28846153846153844,
+    "rank": 486
+  },
+  {
+    "api_name": "pandas.core.index.Index.order",
+    "score": 0.2871287128712871,
+    "rank": 487
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._reindex_indexer_items",
+    "score": 0.28708133971291866,
+    "rank": 488
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.lexsort_depth",
+    "score": 0.2857142857142857,
+    "rank": 489
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._wrap_result",
+    "score": 0.2857142857142857,
+    "rank": 489
+  },
+  {
+    "api_name": "pandas.core.format.DataFrameFormatter._join_multiline",
+    "score": 0.28440366972477066,
+    "rank": 491
+  },
+  {
+    "api_name": "pandas.core.index.Index._ensure_compat_concat",
+    "score": 0.28440366972477066,
+    "rank": 491
+  },
+  {
+    "api_name": "pandas.core.series.Series.reshape",
+    "score": 0.28440366972477066,
+    "rank": 491
+  },
+  {
+    "api_name": "pandas.core.base.FrozenNDArray.__new__",
+    "score": 0.28431372549019607,
+    "rank": 494
+  },
+  {
+    "api_name": "pandas.core.series.Series.reorder_levels",
+    "score": 0.28431372549019607,
+    "rank": 494
+  },
+  {
+    "api_name": "pandas.core.index.Index.equals",
+    "score": 0.2830188679245283,
+    "rank": 496
+  },
+  {
+    "api_name": "pandas.core.format.ExcelFormatter._format_value",
+    "score": 0.2815533980582524,
+    "rank": 497
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._setitem_frame",
+    "score": 0.2815533980582524,
+    "rank": 497
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.itertuples",
+    "score": 0.2815533980582524,
+    "rank": 497
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.groups",
+    "score": 0.27884615384615385,
+    "rank": 500
+  },
+  {
+    "api_name": "pandas.core.series.Series._reindex_indexer",
+    "score": 0.27884615384615385,
+    "rank": 500
+  },
+  {
+    "api_name": "pandas.core.format.DataFrameFormatter.to_latex",
+    "score": 0.27636363636363637,
+    "rank": 502
+  },
+  {
+    "api_name": "pandas.core.index.Index.to_datetime",
+    "score": 0.2761904761904762,
+    "rank": 503
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock.set",
+    "score": 0.2755102040816326,
+    "rank": 504
+  },
+  {
+    "api_name": "pandas.core.series.Series.to_csv",
+    "score": 0.2743362831858407,
+    "rank": 505
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._box_item_values",
+    "score": 0.27358490566037735,
+    "rank": 506
+  },
+  {
+    "api_name": "pandas.core.internals.Block.take",
+    "score": 0.27358490566037735,
+    "rank": 506
+  },
+  {
+    "api_name": "pandas.core.series.Series._set_with_engine",
+    "score": 0.27358490566037735,
+    "rank": 506
+  },
+  {
+    "api_name": "pandas.core.index.Index.take",
+    "score": 0.2727272727272727,
+    "rank": 509
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.set_axis",
+    "score": 0.2727272727272727,
+    "rank": 509
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.nth",
+    "score": 0.27184466019417475,
+    "rank": 511
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.get_iterator",
+    "score": 0.27184466019417475,
+    "rank": 511
+  },
+  {
+    "api_name": "pandas.core.index.Index.__setstate__",
+    "score": 0.27184466019417475,
+    "rank": 511
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.sparse_reindex",
+    "score": 0.27184466019417475,
+    "rank": 511
+  },
+  {
+    "api_name": "pandas.core.format.ExcelFormatter._format_header_mi",
+    "score": 0.27155172413793105,
+    "rank": 515
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._set_item",
+    "score": 0.2692307692307692,
+    "rank": 516
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouping._make_labels",
+    "score": 0.2692307692307692,
+    "rank": 516
+  },
+  {
+    "api_name": "pandas.core.daterange.DateRange.__setstate__",
+    "score": 0.26851851851851855,
+    "rank": 518
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock.astype",
+    "score": 0.26732673267326734,
+    "rank": 519
+  },
+  {
+    "api_name": "pandas.core.internals.IntBlock._can_hold_element",
+    "score": 0.26666666666666666,
+    "rank": 520
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._reindex_index",
+    "score": 0.26605504587155965,
+    "rank": 521
+  },
+  {
+    "api_name": "pandas.core.groupby._KeyMapper.__init__",
+    "score": 0.26605504587155965,
+    "rank": 521
+  },
+  {
+    "api_name": "pandas.core.base.FrozenList.__getitem__",
+    "score": 0.2647058823529412,
+    "rank": 523
+  },
+  {
+    "api_name": "pandas.core.internals.Block.eval",
+    "score": 0.2647058823529412,
+    "rank": 523
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._reindex_axis",
+    "score": 0.2641509433962264,
+    "rank": 525
+  },
+  {
+    "api_name": "pandas.core.internals.Block.setitem",
+    "score": 0.26296296296296295,
+    "rank": 526
+  },
+  {
+    "api_name": "pandas.core.internals.Block.__setstate__",
+    "score": 0.26262626262626265,
+    "rank": 527
+  },
+  {
+    "api_name": "pandas.core.index.Index._join_level",
+    "score": 0.2623574144486692,
+    "rank": 528
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.sort",
+    "score": 0.2621359223300971,
+    "rank": 529
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.indices",
+    "score": 0.2621359223300971,
+    "rank": 529
+  },
+  {
+    "api_name": "pandas.core.format.HTMLFormatter.__init__",
+    "score": 0.2619047619047619,
+    "rank": 531
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.aggregate",
+    "score": 0.2619047619047619,
+    "rank": 531
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.take",
+    "score": 0.26,
+    "rank": 533
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.iteritems",
+    "score": 0.25961538461538464,
+    "rank": 534
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.interpolate",
+    "score": 0.25961538461538464,
+    "rank": 534
+  },
+  {
+    "api_name": "pandas.core.format.HTMLFormatter.write_th",
+    "score": 0.25925925925925924,
+    "rank": 536
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._reindex_columns",
+    "score": 0.25925925925925924,
+    "rank": 536
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._reduce",
+    "score": 0.2589928057553957,
+    "rank": 538
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.iterrows",
+    "score": 0.25773195876288657,
+    "rank": 539
+  },
+  {
+    "api_name": "pandas.core.index.Index._convert_indexer_error",
+    "score": 0.25742574257425743,
+    "rank": 540
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.rename_axis",
+    "score": 0.2571428571428571,
+    "rank": 541
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.get_dtype_counts",
+    "score": 0.25688073394495414,
+    "rank": 542
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager._delete_from_block",
+    "score": 0.25663716814159293,
+    "rank": 543
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.apply",
+    "score": 0.25510204081632654,
+    "rank": 544
+  },
+  {
+    "api_name": "pandas.core.base.PandasObject._reset_cache",
+    "score": 0.2549019607843137,
+    "rank": 545
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.group_info",
+    "score": 0.2549019607843137,
+    "rank": 545
+  },
+  {
+    "api_name": "pandas.core.index.Index.__reduce__",
+    "score": 0.2549019607843137,
+    "rank": 545
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.copy",
+    "score": 0.2549019607843137,
+    "rank": 545
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._sanitize_column",
+    "score": 0.2537313432835821,
+    "rank": 549
+  },
+  {
+    "api_name": "pandas.core.base.FrozenList.__eq__",
+    "score": 0.25252525252525254,
+    "rank": 550
+  },
+  {
+    "api_name": "pandas.core.series.Series.repeat",
+    "score": 0.25252525252525254,
+    "rank": 550
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameSplitter._get_sorted_data",
+    "score": 0.2524271844660194,
+    "rank": 552
+  },
+  {
+    "api_name": "pandas.core.internals.ObjectBlock._maybe_downcast",
+    "score": 0.2524271844660194,
+    "rank": 552
+  },
+  {
+    "api_name": "pandas.core.base.FrozenList.__add__",
+    "score": 0.25,
+    "rank": 554
+  },
+  {
+    "api_name": "pandas.core.groupby.PanelGroupBy.aggregate",
+    "score": 0.25,
+    "rank": 554
+  },
+  {
+    "api_name": "pandas.core.index.Index.view",
+    "score": 0.25,
+    "rank": 554
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.get_ftype_counts",
+    "score": 0.25,
+    "rank": 554
+  },
+  {
+    "api_name": "pandas.core.series.Series.duplicated",
+    "score": 0.25,
+    "rank": 554
+  },
+  {
+    "api_name": "pandas.core.series.Series.last_valid_index",
+    "score": 0.25,
+    "rank": 554
+  },
+  {
+    "api_name": "pandas.core.format.DataFrameFormatter._to_str_columns",
+    "score": 0.24897959183673468,
+    "rank": 560
+  },
+  {
+    "api_name": "pandas.core.series.Series.first_valid_index",
+    "score": 0.24770642201834864,
+    "rank": 561
+  },
+  {
+    "api_name": "pandas.core.config.CallableDynamicDoc.__doc__",
+    "score": 0.24752475247524752,
+    "rank": 562
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._slice",
+    "score": 0.24752475247524752,
+    "rank": 562
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.get_group",
+    "score": 0.24752475247524752,
+    "rank": 562
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.__getitem__",
+    "score": 0.24742268041237114,
+    "rank": 565
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._from_axes",
+    "score": 0.24545454545454545,
+    "rank": 566
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.get_data",
+    "score": 0.24528301886792453,
+    "rank": 567
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer.__getitem__",
+    "score": 0.24509803921568626,
+    "rank": 568
+  },
+  {
+    "api_name": "pandas.core.series.Series.idxmax",
+    "score": 0.24509803921568626,
+    "rank": 568
+  },
+  {
+    "api_name": "pandas.core.series.Series.idxmin",
+    "score": 0.24509803921568626,
+    "rank": 568
+  },
+  {
+    "api_name": "pandas.core.format.CSVFormatter._save_header",
+    "score": 0.24475524475524477,
+    "rank": 571
+  },
+  {
+    "api_name": "pandas.core.format.CategoricalFormatter.__init__",
+    "score": 0.24324324324324326,
+    "rank": 572
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical._get_repr",
+    "score": 0.24299065420560748,
+    "rank": 573
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock.__init__",
+    "score": 0.24299065420560748,
+    "rank": 573
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._protect_consolidate",
+    "score": 0.24271844660194175,
+    "rank": 575
+  },
+  {
+    "api_name": "pandas.core.series.Series.append",
+    "score": 0.24271844660194175,
+    "rank": 575
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.xs",
+    "score": 0.24242424242424243,
+    "rank": 577
+  },
+  {
+    "api_name": "pandas.core.index.Float64Index.astype",
+    "score": 0.24242424242424243,
+    "rank": 577
+  },
+  {
+    "api_name": "pandas.core.format.ExcelFormatter.__init__",
+    "score": 0.24166666666666667,
+    "rank": 579
+  },
+  {
+    "api_name": "pandas.core.index.Index._getitem_slice",
+    "score": 0.2403846153846154,
+    "rank": 580
+  },
+  {
+    "api_name": "pandas.core.series.Series.__setslice__",
+    "score": 0.2403846153846154,
+    "rank": 580
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical.equals",
+    "score": 0.24,
+    "rank": 582
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock._try_fill",
+    "score": 0.24,
+    "rank": 582
+  },
+  {
+    "api_name": "pandas.core.series.Series.rank",
+    "score": 0.24,
+    "rank": 582
+  },
+  {
+    "api_name": "pandas.core.indexing._SeriesIndexer._setitem_with_indexer",
+    "score": 0.23809523809523808,
+    "rank": 585
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.get_values",
+    "score": 0.23809523809523808,
+    "rank": 585
+  },
+  {
+    "api_name": "pandas.core.index.Index._get_method",
+    "score": 0.2376237623762376,
+    "rank": 587
+  },
+  {
+    "api_name": "pandas.core.series.Series.update",
+    "score": 0.2376237623762376,
+    "rank": 587
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._align_frame",
+    "score": 0.23734177215189872,
+    "rank": 589
+  },
+  {
+    "api_name": "pandas.core.index.Index._get_level_number",
+    "score": 0.2358490566037736,
+    "rank": 590
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._reset_ref_locs",
+    "score": 0.2358490566037736,
+    "rank": 590
+  },
+  {
+    "api_name": "pandas.core.series.Series.describe",
+    "score": 0.23550724637681159,
+    "rank": 592
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock.get_values",
+    "score": 0.23529411764705882,
+    "rank": 593
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.to_sparse",
+    "score": 0.23529411764705882,
+    "rank": 593
+  },
+  {
+    "api_name": "pandas.core.array.SNDArray.__new__",
+    "score": 0.23469387755102042,
+    "rank": 595
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.__getstate__",
+    "score": 0.23469387755102042,
+    "rank": 595
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.merge",
+    "score": 0.23423423423423423,
+    "rank": 597
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._construct_axes_dict_for_slice",
+    "score": 0.2336448598130841,
+    "rank": 598
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.between_time",
+    "score": 0.2336448598130841,
+    "rank": 598
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.equal_levels",
+    "score": 0.2336448598130841,
+    "rank": 598
+  },
+  {
+    "api_name": "pandas.core.format.IntArrayFormatter.get_result",
+    "score": 0.23300970873786409,
+    "rank": 601
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._bounds",
+    "score": 0.23300970873786409,
+    "rank": 601
+  },
+  {
+    "api_name": "pandas.core.series.Series.__getslice__",
+    "score": 0.23300970873786409,
+    "rank": 601
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.combine",
+    "score": 0.2326388888888889,
+    "rank": 604
+  },
+  {
+    "api_name": "pandas.core.index.Index.__add__",
+    "score": 0.23232323232323232,
+    "rank": 605
+  },
+  {
+    "api_name": "pandas.core.series.Series._set_values",
+    "score": 0.23232323232323232,
+    "rank": 605
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.reindex_axis0_with_method",
+    "score": 0.23148148148148148,
+    "rank": 607
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods._wrap_result",
+    "score": 0.23076923076923078,
+    "rank": 608
+  },
+  {
+    "api_name": "pandas.core.format.ExcelFormatter._format_hierarchical_rows",
+    "score": 0.22992700729927007,
+    "rank": 609
+  },
+  {
+    "api_name": "pandas.core.format.Datetime64Formatter.get_result",
+    "score": 0.22772277227722773,
+    "rank": 610
+  },
+  {
+    "api_name": "pandas.core.format.Timedelta64Formatter.get_result",
+    "score": 0.22772277227722773,
+    "rank": 610
+  },
+  {
+    "api_name": "pandas.core.groupby.BinGrouper.agg_series",
+    "score": 0.22772277227722773,
+    "rank": 610
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._get_index",
+    "score": 0.22772277227722773,
+    "rank": 610
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.apply",
+    "score": 0.22772277227722773,
+    "rank": 610
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.sort_index",
+    "score": 0.22727272727272727,
+    "rank": 615
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._apply_standard",
+    "score": 0.22686567164179106,
+    "rank": 616
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.head",
+    "score": 0.22549019607843138,
+    "rank": 617
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.tail",
+    "score": 0.22549019607843138,
+    "rank": 617
+  },
+  {
+    "api_name": "pandas.core.index.Index.__array_finalize__",
+    "score": 0.22549019607843138,
+    "rank": 617
+  },
+  {
+    "api_name": "pandas.core.index.Index.__new__",
+    "score": 0.22491349480968859,
+    "rank": 620
+  },
+  {
+    "api_name": "pandas.core.format.DataFrameFormatter._format_col",
+    "score": 0.22330097087378642,
+    "rank": 621
+  },
+  {
+    "api_name": "pandas.core.series.Series.drop_duplicates",
+    "score": 0.22330097087378642,
+    "rank": 621
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.__iter__",
+    "score": 0.22330097087378642,
+    "rank": 621
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._convert_to_indexer",
+    "score": 0.22291021671826625,
+    "rank": 624
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._flex_compare_frame",
+    "score": 0.2222222222222222,
+    "rank": 625
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.copy",
+    "score": 0.2222222222222222,
+    "rank": 625
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.__getitem__",
+    "score": 0.2222222222222222,
+    "rank": 625
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.at_time",
+    "score": 0.22115384615384615,
+    "rank": 628
+  },
+  {
+    "api_name": "pandas.core.groupby.DataFrameGroupBy._iterate_column_groupbys",
+    "score": 0.22115384615384615,
+    "rank": 628
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.get_slice",
+    "score": 0.22115384615384615,
+    "rank": 628
+  },
+  {
+    "api_name": "pandas.core.format.CSVFormatter.__init__",
+    "score": 0.22054380664652568,
+    "rank": 631
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.reindex_axis",
+    "score": 0.22018348623853212,
+    "rank": 632
+  },
+  {
+    "api_name": "pandas.core.index.Index._format_native_types",
+    "score": 0.22018348623853212,
+    "rank": 632
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.reindex_axis",
+    "score": 0.22018348623853212,
+    "rank": 632
+  },
+  {
+    "api_name": "pandas.core.base.FrozenList.__radd__",
+    "score": 0.22,
+    "rank": 635
+  },
+  {
+    "api_name": "pandas.core.common.UnicodeReader.__init__",
+    "score": 0.22,
+    "rank": 635
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.get_value",
+    "score": 0.22,
+    "rank": 635
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._tuplify",
+    "score": 0.22,
+    "rank": 635
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._combine_const",
+    "score": 0.22,
+    "rank": 635
+  },
+  {
+    "api_name": "pandas.core.series.Series.swaplevel",
+    "score": 0.22,
+    "rank": 635
+  },
+  {
+    "api_name": "pandas.core.index.Index.join",
+    "score": 0.2195845697329377,
+    "rank": 641
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._consolidate_check",
+    "score": 0.21904761904761905,
+    "rank": 642
+  },
+  {
+    "api_name": "pandas.core.ops._TimeOp._convert_to_array",
+    "score": 0.21846153846153846,
+    "rank": 643
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.insert",
+    "score": 0.21782178217821782,
+    "rank": 644
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._find_block",
+    "score": 0.21782178217821782,
+    "rank": 644
+  },
+  {
+    "api_name": "pandas.core.format.HTMLFormatter._write_hierarchical_rows",
+    "score": 0.21710526315789475,
+    "rank": 646
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._combine_const",
+    "score": 0.21568627450980393,
+    "rank": 647
+  },
+  {
+    "api_name": "pandas.core.series.Series.to_frame",
+    "score": 0.21568627450980393,
+    "rank": 647
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._construct_axes_dict",
+    "score": 0.21495327102803738,
+    "rank": 649
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.mode",
+    "score": 0.21359223300970873,
+    "rank": 650
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._python_apply_general",
+    "score": 0.21359223300970873,
+    "rank": 650
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.groupby",
+    "score": 0.21296296296296297,
+    "rank": 652
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.astype",
+    "score": 0.21212121212121213,
+    "rank": 653
+  },
+  {
+    "api_name": "pandas.core.series.Series.__iter__",
+    "score": 0.21212121212121213,
+    "rank": 653
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.cat",
+    "score": 0.21212121212121213,
+    "rank": 653
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.where",
+    "score": 0.21164021164021163,
+    "rank": 656
+  },
+  {
+    "api_name": "pandas.core.index.Index.to_native_types",
+    "score": 0.21153846153846154,
+    "rank": 657
+  },
+  {
+    "api_name": "pandas.core.series.Series.dropna",
+    "score": 0.21153846153846154,
+    "rank": 657
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical._set_levels",
+    "score": 0.21,
+    "rank": 659
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__getattr__",
+    "score": 0.21,
+    "rank": 659
+  },
+  {
+    "api_name": "pandas.core.format.GenericArrayFormatter.__init__",
+    "score": 0.20909090909090908,
+    "rank": 661
+  },
+  {
+    "api_name": "pandas.core.base.FrozenNDArray.__unicode__",
+    "score": 0.2079207920792079,
+    "rank": 662
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.as_matrix",
+    "score": 0.2079207920792079,
+    "rank": 662
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.astype",
+    "score": 0.2079207920792079,
+    "rank": 662
+  },
+  {
+    "api_name": "pandas.core.groupby._KeyMapper._populate_tables",
+    "score": 0.2079207920792079,
+    "rank": 662
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.shape",
+    "score": 0.2079207920792079,
+    "rank": 662
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.fill_value",
+    "score": 0.2079207920792079,
+    "rank": 662
+  },
+  {
+    "api_name": "pandas.core.series.Series.diff",
+    "score": 0.2079207920792079,
+    "rank": 662
+  },
+  {
+    "api_name": "pandas.core.index.Index.get_duplicates",
+    "score": 0.20754716981132076,
+    "rank": 669
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._convert_slice_indexer",
+    "score": 0.20754716981132076,
+    "rank": 669
+  },
+  {
+    "api_name": "pandas.core.ops._TimeOp._validate",
+    "score": 0.20754716981132076,
+    "rank": 669
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._compare_frame",
+    "score": 0.20588235294117646,
+    "rank": 672
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.mean",
+    "score": 0.20588235294117646,
+    "rank": 672
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.std",
+    "score": 0.20588235294117646,
+    "rank": 672
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.var",
+    "score": 0.20588235294117646,
+    "rank": 672
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.shape",
+    "score": 0.20588235294117646,
+    "rank": 672
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.contains",
+    "score": 0.20588235294117646,
+    "rank": 672
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._construct_axes_dict_from",
+    "score": 0.205607476635514,
+    "rank": 678
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.to_json",
+    "score": 0.205607476635514,
+    "rank": 678
+  },
+  {
+    "api_name": "pandas.core.series.Series.between",
+    "score": 0.205607476635514,
+    "rank": 678
+  },
+  {
+    "api_name": "pandas.core.indexing._LocationIndexer.__getitem__",
+    "score": 0.20408163265306123,
+    "rank": 681
+  },
+  {
+    "api_name": "pandas.core.index.Index._possibly_promote",
+    "score": 0.20388349514563106,
+    "rank": 682
+  },
+  {
+    "api_name": "pandas.core.index.Index.identical",
+    "score": 0.20388349514563106,
+    "rank": 682
+  },
+  {
+    "api_name": "pandas.core.series.Series.set_value",
+    "score": 0.20388349514563106,
+    "rank": 682
+  },
+  {
+    "api_name": "pandas.core.series.Series.from_array",
+    "score": 0.2037037037037037,
+    "rank": 685
+  },
+  {
+    "api_name": "pandas.core.format.HTMLFormatter._write_header",
+    "score": 0.20224719101123595,
+    "rank": 686
+  },
+  {
+    "api_name": "pandas.core.index.Index._set_names",
+    "score": 0.20192307692307693,
+    "rank": 687
+  },
+  {
+    "api_name": "pandas.core.format.ExcelCell.__init__",
+    "score": 0.2,
+    "rank": 688
+  },
+  {
+    "api_name": "pandas.core.format.ExcelFormatter.get_formatted_cells",
+    "score": 0.2,
+    "rank": 688
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._getitem_frame",
+    "score": 0.2,
+    "rank": 688
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__finalize__",
+    "score": 0.2,
+    "rank": 688
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__unicode__",
+    "score": 0.2,
+    "rank": 688
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.clip_lower",
+    "score": 0.2,
+    "rank": 688
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.clip_upper",
+    "score": 0.2,
+    "rank": 688
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._slice",
+    "score": 0.2,
+    "rank": 688
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._convert_scalar_indexer",
+    "score": 0.19811320754716982,
+    "rank": 696
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._convert_slice_indexer",
+    "score": 0.19811320754716982,
+    "rank": 696
+  },
+  {
+    "api_name": "pandas.core.common.groupby.__init__",
+    "score": 0.19801980198019803,
+    "rank": 698
+  },
+  {
+    "api_name": "pandas.core.internals.Block.merge",
+    "score": 0.19801980198019803,
+    "rank": 698
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._needs_reindex_multi",
+    "score": 0.19626168224299065,
+    "rank": 700
+  },
+  {
+    "api_name": "pandas.core.internals.ObjectBlock.should_store",
+    "score": 0.19607843137254902,
+    "rank": 701
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._extract_axes_for_slice",
+    "score": 0.19444444444444445,
+    "rank": 702
+  },
+  {
+    "api_name": "pandas.core.base.PandasObject.__dir__",
+    "score": 0.1941747572815534,
+    "rank": 703
+  },
+  {
+    "api_name": "pandas.core.index.Index._wrap_union_result",
+    "score": 0.1941747572815534,
+    "rank": 703
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.get",
+    "score": 0.19387755102040816,
+    "rank": 705
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.reset_index",
+    "score": 0.19329896907216496,
+    "rank": 706
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._wrap_array",
+    "score": 0.19230769230769232,
+    "rank": 707
+  },
+  {
+    "api_name": "pandas.core.index.Index.shift",
+    "score": 0.19230769230769232,
+    "rank": 707
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.set_axis",
+    "score": 0.19230769230769232,
+    "rank": 707
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.take",
+    "score": 0.19230769230769232,
+    "rank": 707
+  },
+  {
+    "api_name": "pandas.core.series.Series._get_values",
+    "score": 0.19230769230769232,
+    "rank": 707
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.replace",
+    "score": 0.19230769230769232,
+    "rank": 707
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.delete",
+    "score": 0.1919191919191919,
+    "rank": 713
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.consolidate",
+    "score": 0.1919191919191919,
+    "rank": 713
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.conform",
+    "score": 0.1919191919191919,
+    "rank": 713
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_stata",
+    "score": 0.19047619047619047,
+    "rank": 716
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._get_block_manager_axis",
+    "score": 0.19047619047619047,
+    "rank": 716
+  },
+  {
+    "api_name": "pandas.core.index.Float64Index._convert_scalar_indexer",
+    "score": 0.19047619047619047,
+    "rank": 716
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._is_v2",
+    "score": 0.19047619047619047,
+    "rank": 716
+  },
+  {
+    "api_name": "pandas.core.groupby.BinGrouper.__init__",
+    "score": 0.19,
+    "rank": 720
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper._get_splitter",
+    "score": 0.19,
+    "rank": 720
+  },
+  {
+    "api_name": "pandas.core.internals.Block.diff",
+    "score": 0.19,
+    "rank": 720
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.slice",
+    "score": 0.19,
+    "rank": 720
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._is_v1",
+    "score": 0.18867924528301888,
+    "rank": 724
+  },
+  {
+    "api_name": "pandas.core.groupby.DataSplitter.__init__",
+    "score": 0.18811881188118812,
+    "rank": 725
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._selection_list",
+    "score": 0.18811881188118812,
+    "rank": 725
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouping.__init__",
+    "score": 0.18717948717948718,
+    "rank": 727
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._get_data_to_aggregate",
+    "score": 0.18691588785046728,
+    "rank": 728
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._wrap_joined_index",
+    "score": 0.18446601941747573,
+    "rank": 729
+  },
+  {
+    "api_name": "pandas.core.internals.Block.set_ref_locs",
+    "score": 0.18446601941747573,
+    "rank": 729
+  },
+  {
+    "api_name": "pandas.core.series.Series.__invert__",
+    "score": 0.1836734693877551,
+    "rank": 731
+  },
+  {
+    "api_name": "pandas.core.series.Series.__neg__",
+    "score": 0.1836734693877551,
+    "rank": 731
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.decode",
+    "score": 0.1836734693877551,
+    "rank": 731
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.encode",
+    "score": 0.1836734693877551,
+    "rank": 731
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.pad",
+    "score": 0.1836734693877551,
+    "rank": 731
+  },
+  {
+    "api_name": "pandas.core.groupby.FrameSplitter._chop",
+    "score": 0.18181818181818182,
+    "rank": 736
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.ndim",
+    "score": 0.18181818181818182,
+    "rank": 736
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.split",
+    "score": 0.18181818181818182,
+    "rank": 736
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._wrap_applied_output",
+    "score": 0.18115942028985507,
+    "rank": 739
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._consolidate_inplace",
+    "score": 0.1810344827586207,
+    "rank": 740
+  },
+  {
+    "api_name": "pandas.core.format.HTMLFormatter.write",
+    "score": 0.18,
+    "rank": 741
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._get_resolvers",
+    "score": 0.18,
+    "rank": 741
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._get_agg_axis",
+    "score": 0.1792452830188679,
+    "rank": 743
+  },
+  {
+    "api_name": "pandas.core.indexing._iLocIndexer._convert_to_indexer",
+    "score": 0.1792452830188679,
+    "rank": 743
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy.aggregate",
+    "score": 0.17922077922077922,
+    "rank": 745
+  },
+  {
+    "api_name": "pandas.core.format.CSVFormatter._helper_csv",
+    "score": 0.17882352941176471,
+    "rank": 746
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._obj_with_exclusions",
+    "score": 0.17857142857142858,
+    "rank": 747
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.split_block_at",
+    "score": 0.17857142857142858,
+    "rank": 747
+  },
+  {
+    "api_name": "pandas.core.format.FloatArrayFormatter.__init__",
+    "score": 0.1782178217821782,
+    "rank": 749
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.add_prefix",
+    "score": 0.1782178217821782,
+    "rank": 749
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.add_suffix",
+    "score": 0.1782178217821782,
+    "rank": 749
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.rename",
+    "score": 0.1782178217821782,
+    "rank": 749
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.tshift",
+    "score": 0.1782178217821782,
+    "rank": 749
+  },
+  {
+    "api_name": "pandas.core.internals.Block.set",
+    "score": 0.17708333333333334,
+    "rank": 754
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__array_wrap__",
+    "score": 0.17647058823529413,
+    "rank": 755
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._update_inplace",
+    "score": 0.17647058823529413,
+    "rank": 755
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameSplitter.__init__",
+    "score": 0.17647058823529413,
+    "rank": 755
+  },
+  {
+    "api_name": "pandas.core.groupby._KeyMapper.get_key",
+    "score": 0.17647058823529413,
+    "rank": 755
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.__init__",
+    "score": 0.17647058823529413,
+    "rank": 755
+  },
+  {
+    "api_name": "pandas.core.internals.Block.where",
+    "score": 0.1750599520383693,
+    "rank": 760
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_gbq",
+    "score": 0.17475728155339806,
+    "rank": 761
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._clear_item_cache",
+    "score": 0.17475728155339806,
+    "rank": 761
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._indexed_same",
+    "score": 0.17475728155339806,
+    "rank": 761
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.reindex_like",
+    "score": 0.17475728155339806,
+    "rank": 761
+  },
+  {
+    "api_name": "pandas.core.index.Index._wrap_joined_index",
+    "score": 0.17475728155339806,
+    "rank": 761
+  },
+  {
+    "api_name": "pandas.core.index.Int64Index._wrap_joined_index",
+    "score": 0.17475728155339806,
+    "rank": 761
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._align_panel",
+    "score": 0.17475728155339806,
+    "rank": 761
+  },
+  {
+    "api_name": "pandas.core.nanops.disallow.__init__",
+    "score": 0.17475728155339806,
+    "rank": 761
+  },
+  {
+    "api_name": "pandas.core.series.Series.reindex_axis",
+    "score": 0.17475728155339806,
+    "rank": 761
+  },
+  {
+    "api_name": "pandas.core.index.Index.isin",
+    "score": 0.17346938775510204,
+    "rank": 770
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.groupby",
+    "score": 0.17346938775510204,
+    "rank": 770
+  },
+  {
+    "api_name": "pandas.core.series.Series.view",
+    "score": 0.17346938775510204,
+    "rank": 770
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.bfill",
+    "score": 0.1717171717171717,
+    "rank": 773
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.ffill",
+    "score": 0.1717171717171717,
+    "rank": 773
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._from_arrays",
+    "score": 0.17142857142857143,
+    "rank": 775
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.convert_objects",
+    "score": 0.17142857142857143,
+    "rank": 775
+  },
+  {
+    "api_name": "pandas.core.groupby.DataFrameGroupBy._get_data_to_aggregate",
+    "score": 0.17142857142857143,
+    "rank": 775
+  },
+  {
+    "api_name": "pandas.core.format.ExcelFormatter._format_body",
+    "score": 0.17,
+    "rank": 778
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.reindex",
+    "score": 0.17,
+    "rank": 778
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.rename",
+    "score": 0.17,
+    "rank": 778
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.squeeze",
+    "score": 0.16981132075471697,
+    "rank": 781
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.replace",
+    "score": 0.1683366733466934,
+    "rank": 782
+  },
+  {
+    "api_name": "pandas.core.internals.Block.putmask",
+    "score": 0.16706443914081145,
+    "rank": 783
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.agg_series",
+    "score": 0.16666666666666666,
+    "rank": 784
+  },
+  {
+    "api_name": "pandas.core.series.Series.__init__",
+    "score": 0.16551724137931034,
+    "rank": 785
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._getitem_iterable",
+    "score": 0.16511627906976745,
+    "rank": 786
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.join",
+    "score": 0.1650485436893204,
+    "rank": 787
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.diff",
+    "score": 0.16494845360824742,
+    "rank": 788
+  },
+  {
+    "api_name": "pandas.core.index.Index.delete",
+    "score": 0.16494845360824742,
+    "rank": 788
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._needs_reindex_multi",
+    "score": 0.16363636363636364,
+    "rank": 790
+  },
+  {
+    "api_name": "pandas.core.base.StringMixin.__bytes__",
+    "score": 0.16326530612244897,
+    "rank": 791
+  },
+  {
+    "api_name": "pandas.core.common.UnicodeReader.next",
+    "score": 0.16326530612244897,
+    "rank": 791
+  },
+  {
+    "api_name": "pandas.core.nanops.disallow.check",
+    "score": 0.16326530612244897,
+    "rank": 791
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.lstrip",
+    "score": 0.16326530612244897,
+    "rank": 791
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.rstrip",
+    "score": 0.16326530612244897,
+    "rank": 791
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.strip",
+    "score": 0.16326530612244897,
+    "rank": 791
+  },
+  {
+    "api_name": "pandas.core.base.FrozenList.__getslice__",
+    "score": 0.16161616161616163,
+    "rank": 797
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__invert__",
+    "score": 0.16,
+    "rank": 798
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__neg__",
+    "score": 0.16,
+    "rank": 798
+  },
+  {
+    "api_name": "pandas.core.internals.FloatBlock.should_store",
+    "score": 0.15841584158415842,
+    "rank": 800
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._align_series",
+    "score": 0.15690866510538642,
+    "rank": 801
+  },
+  {
+    "api_name": "pandas.core.index.Index.set_value",
+    "score": 0.1568627450980392,
+    "rank": 802
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._check_have",
+    "score": 0.1568627450980392,
+    "rank": 802
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.__init__",
+    "score": 0.15677966101694915,
+    "rank": 804
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.from_records",
+    "score": 0.1564625850340136,
+    "rank": 805
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer.__init__",
+    "score": 0.15625,
+    "rank": 806
+  },
+  {
+    "api_name": "pandas.core.internals.Block.get",
+    "score": 0.15625,
+    "rank": 806
+  },
+  {
+    "api_name": "pandas.core.index.Int64Index.equals",
+    "score": 0.1553398058252427,
+    "rank": 808
+  },
+  {
+    "api_name": "pandas.core.series.Series._set_subtyp",
+    "score": 0.1553398058252427,
+    "rank": 808
+  },
+  {
+    "api_name": "pandas.core.config.option_context.__exit__",
+    "score": 0.15463917525773196,
+    "rank": 810
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.from_csv",
+    "score": 0.15454545454545454,
+    "rank": 811
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.__init__",
+    "score": 0.15384615384615385,
+    "rank": 812
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper._max_groupsize",
+    "score": 0.15384615384615385,
+    "rank": 812
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._cython_agg_general",
+    "score": 0.15384615384615385,
+    "rank": 812
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.pivot",
+    "score": 0.15306122448979592,
+    "rank": 815
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouping.groups",
+    "score": 0.15306122448979592,
+    "rank": 815
+  },
+  {
+    "api_name": "pandas.core.series.Series.ptp",
+    "score": 0.15306122448979592,
+    "rank": 815
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.center",
+    "score": 0.15306122448979592,
+    "rank": 815
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.get",
+    "score": 0.15306122448979592,
+    "rank": 815
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.join",
+    "score": 0.15306122448979592,
+    "rank": 815
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.repeat",
+    "score": 0.15306122448979592,
+    "rank": 815
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._info_repr",
+    "score": 0.1523809523809524,
+    "rank": 822
+  },
+  {
+    "api_name": "pandas.core.index.Index._convert_slice_indexer_getitem",
+    "score": 0.1523809523809524,
+    "rank": 822
+  },
+  {
+    "api_name": "pandas.core.index.Index._convert_slice_indexer_iloc",
+    "score": 0.1523809523809524,
+    "rank": 822
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_sparse",
+    "score": 0.15151515151515152,
+    "rank": 825
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.asfreq",
+    "score": 0.15,
+    "rank": 826
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._slice",
+    "score": 0.15,
+    "rank": 826
+  },
+  {
+    "api_name": "pandas.core.series.Series.weekday",
+    "score": 0.15,
+    "rank": 826
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.get_loc_level",
+    "score": 0.14931237721021612,
+    "rank": 829
+  },
+  {
+    "api_name": "pandas.core.config.DictWrapper.__init__",
+    "score": 0.1485148514851485,
+    "rank": 830
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.add_prefix",
+    "score": 0.1485148514851485,
+    "rank": 830
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.add_suffix",
+    "score": 0.1485148514851485,
+    "rank": 830
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.sp_values",
+    "score": 0.1485148514851485,
+    "rank": 830
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__hash__",
+    "score": 0.14736842105263157,
+    "rank": 834
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__nonzero__",
+    "score": 0.14736842105263157,
+    "rank": 834
+  },
+  {
+    "api_name": "pandas.core.series.Series.to_sparse",
+    "score": 0.14705882352941177,
+    "rank": 836
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.to_sql",
+    "score": 0.14563106796116504,
+    "rank": 837
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._local_dir",
+    "score": 0.14563106796116504,
+    "rank": 837
+  },
+  {
+    "api_name": "pandas.core.index.Float64Index.equals",
+    "score": 0.14563106796116504,
+    "rank": 837
+  },
+  {
+    "api_name": "pandas.core.base.FrozenNDArray.values",
+    "score": 0.14432989690721648,
+    "rank": 840
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.load",
+    "score": 0.14432989690721648,
+    "rank": 840
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameSplitter._chop",
+    "score": 0.14432989690721648,
+    "rank": 840
+  },
+  {
+    "api_name": "pandas.core.index.Index.astype",
+    "score": 0.14432989690721648,
+    "rank": 840
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._extract_axes",
+    "score": 0.14423076923076922,
+    "rank": 844
+  },
+  {
+    "api_name": "pandas.core.series.Series._reduce",
+    "score": 0.14423076923076922,
+    "rank": 844
+  },
+  {
+    "api_name": "pandas.core.series.Series.value_counts",
+    "score": 0.14423076923076922,
+    "rank": 844
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.save",
+    "score": 0.14285714285714285,
+    "rank": 847
+  },
+  {
+    "api_name": "pandas.core.index.Index._scalar_data_error",
+    "score": 0.14285714285714285,
+    "rank": 847
+  },
+  {
+    "api_name": "pandas.core.series.Series.get",
+    "score": 0.14285714285714285,
+    "rank": 847
+  },
+  {
+    "api_name": "pandas.core.groupby.DataFrameGroupBy._apply_to_column_groupbys",
+    "score": 0.14150943396226415,
+    "rank": 850
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.prepare_for_merge",
+    "score": 0.14150943396226415,
+    "rank": 850
+  },
+  {
+    "api_name": "pandas.core.base.FrozenList.__mul__",
+    "score": 0.1414141414141414,
+    "rank": 852
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.iterkv",
+    "score": 0.1414141414141414,
+    "rank": 852
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.convert",
+    "score": 0.1414141414141414,
+    "rank": 852
+  },
+  {
+    "api_name": "pandas.core.internals.Block.astype",
+    "score": 0.14,
+    "rank": 855
+  },
+  {
+    "api_name": "pandas.core.series.Series.reindex",
+    "score": 0.14,
+    "rank": 855
+  },
+  {
+    "api_name": "pandas.core.series.Series.rename",
+    "score": 0.14,
+    "rank": 855
+  },
+  {
+    "api_name": "pandas.core.format.HTMLFormatter.write_td",
+    "score": 0.13861386138613863,
+    "rank": 858
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._consolidate_inplace",
+    "score": 0.13861386138613863,
+    "rank": 858
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._get_axis",
+    "score": 0.13861386138613863,
+    "rank": 858
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.to_clipboard",
+    "score": 0.13861386138613863,
+    "rank": 858
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.result_index",
+    "score": 0.13861386138613863,
+    "rank": 858
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.__contains__",
+    "score": 0.13861386138613863,
+    "rank": 858
+  },
+  {
+    "api_name": "pandas.core.groupby.FrameSplitter.__init__",
+    "score": 0.13725490196078433,
+    "rank": 864
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.set_ref_items",
+    "score": 0.13725490196078433,
+    "rank": 864
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.fillna",
+    "score": 0.1368421052631579,
+    "rank": 866
+  },
+  {
+    "api_name": "pandas.core.format.CategoricalFormatter._get_formatted_values",
+    "score": 0.13592233009708737,
+    "rank": 867
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical.__array__",
+    "score": 0.13541666666666666,
+    "rank": 868
+  },
+  {
+    "api_name": "pandas.core.index.Index.is_",
+    "score": 0.13541666666666666,
+    "rank": 868
+  },
+  {
+    "api_name": "pandas.core.base.StringMixin.__str__",
+    "score": 0.13402061855670103,
+    "rank": 870
+  },
+  {
+    "api_name": "pandas.core.common.UTF8Recoder.__init__",
+    "score": 0.13402061855670103,
+    "rank": 870
+  },
+  {
+    "api_name": "pandas.core.groupby.SeriesSplitter._chop",
+    "score": 0.13402061855670103,
+    "rank": 870
+  },
+  {
+    "api_name": "pandas.core.index.Index.__hash__",
+    "score": 0.13402061855670103,
+    "rank": 870
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.__getslice__",
+    "score": 0.13402061855670103,
+    "rank": 870
+  },
+  {
+    "api_name": "pandas.core.common.UTF8Recoder.read",
+    "score": 0.1326530612244898,
+    "rank": 875
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.get",
+    "score": 0.1326530612244898,
+    "rank": 875
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._post_process_cython_aggregate",
+    "score": 0.1320754716981132,
+    "rank": 877
+  },
+  {
+    "api_name": "pandas.core.index.Index.argsort",
+    "score": 0.13131313131313133,
+    "rank": 878
+  },
+  {
+    "api_name": "pandas.core.internals.BoolBlock.should_store",
+    "score": 0.13131313131313133,
+    "rank": 878
+  },
+  {
+    "api_name": "pandas.core.internals.ComplexBlock.should_store",
+    "score": 0.13131313131313133,
+    "rank": 878
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock.should_store",
+    "score": 0.13131313131313133,
+    "rank": 878
+  },
+  {
+    "api_name": "pandas.core.internals.TimeDeltaBlock.should_store",
+    "score": 0.13131313131313133,
+    "rank": 878
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.reindex_axis0_with_method",
+    "score": 0.1308411214953271,
+    "rank": 883
+  },
+  {
+    "api_name": "pandas.core.format.GenericArrayFormatter.get_result",
+    "score": 0.13,
+    "rank": 884
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._set_axis",
+    "score": 0.13,
+    "rank": 884
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._set_item",
+    "score": 0.13,
+    "rank": 884
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.shape",
+    "score": 0.13,
+    "rank": 884
+  },
+  {
+    "api_name": "pandas.core.index.Index.__contains__",
+    "score": 0.13,
+    "rank": 884
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.to_hdf",
+    "score": 0.12871287128712872,
+    "rank": 889
+  },
+  {
+    "api_name": "pandas.core.internals.IntBlock.should_store",
+    "score": 0.12871287128712872,
+    "rank": 889
+  },
+  {
+    "api_name": "pandas.core.series.Series.__array_wrap__",
+    "score": 0.12871287128712872,
+    "rank": 889
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._box_col_values",
+    "score": 0.1262135922330097,
+    "rank": 892
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.empty",
+    "score": 0.1262135922330097,
+    "rank": 892
+  },
+  {
+    "api_name": "pandas.core.internals.Block.reset_ref_locs",
+    "score": 0.1262135922330097,
+    "rank": 892
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._get_bool_data",
+    "score": 0.125,
+    "rank": 895
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._get_numeric_data",
+    "score": 0.125,
+    "rank": 895
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.name",
+    "score": 0.125,
+    "rank": 895
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._repr_fits_vertical_",
+    "score": 0.12380952380952381,
+    "rank": 898
+  },
+  {
+    "api_name": "pandas.core.format.EngFormatter.__init__",
+    "score": 0.12371134020618557,
+    "rank": 899
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouping.labels",
+    "score": 0.12371134020618557,
+    "rank": 899
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.iget_value",
+    "score": 0.12244897959183673,
+    "rank": 901
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.shape",
+    "score": 0.12244897959183673,
+    "rank": 901
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.pop",
+    "score": 0.12244897959183673,
+    "rank": 901
+  },
+  {
+    "api_name": "pandas.core.indexing._SeriesIndexer._slice",
+    "score": 0.12244897959183673,
+    "rank": 901
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager._post_setstate",
+    "score": 0.12121212121212122,
+    "rank": 905
+  },
+  {
+    "api_name": "pandas.core.series.Series.iteritems",
+    "score": 0.12121212121212122,
+    "rank": 905
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouping.group_index",
+    "score": 0.12,
+    "rank": 907
+  },
+  {
+    "api_name": "pandas.core.index.Index.get_loc",
+    "score": 0.12,
+    "rank": 907
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._get_loc",
+    "score": 0.12,
+    "rank": 907
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._init_arrays",
+    "score": 0.12,
+    "rank": 907
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.to_msgpack",
+    "score": 0.1188118811881188,
+    "rank": 911
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.transpose",
+    "score": 0.1188118811881188,
+    "rank": 911
+  },
+  {
+    "api_name": "pandas.core.format.SeriesFormatter._get_formatted_values",
+    "score": 0.11764705882352941,
+    "rank": 913
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.major_xs",
+    "score": 0.11764705882352941,
+    "rank": 913
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.minor_xs",
+    "score": 0.11764705882352941,
+    "rank": 913
+  },
+  {
+    "api_name": "pandas.core.groupby.DataSplitter._chop",
+    "score": 0.11578947368421053,
+    "rank": 916
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._is_mixed_type",
+    "score": 0.11538461538461539,
+    "rank": 917
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._is_numeric_mixed_type",
+    "score": 0.11538461538461539,
+    "rank": 917
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.get_bool_data",
+    "score": 0.11538461538461539,
+    "rank": 917
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.get_numeric_data",
+    "score": 0.11538461538461539,
+    "rank": 917
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager._reindex_indexer_items",
+    "score": 0.11538461538461539,
+    "rank": 917
+  },
+  {
+    "api_name": "pandas.core.config.CallableDynamicDoc.__init__",
+    "score": 0.11458333333333333,
+    "rank": 922
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.iteritems",
+    "score": 0.11458333333333333,
+    "rank": 922
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.mask",
+    "score": 0.11458333333333333,
+    "rank": 922
+  },
+  {
+    "api_name": "pandas.core.series.Series.ravel",
+    "score": 0.11458333333333333,
+    "rank": 922
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.is_numeric_mixed_type",
+    "score": 0.11428571428571428,
+    "rank": 926
+  },
+  {
+    "api_name": "pandas.core.common.UTF8Recoder.next",
+    "score": 0.1134020618556701,
+    "rank": 927
+  },
+  {
+    "api_name": "pandas.core.common.UTF8Recoder.readline",
+    "score": 0.1134020618556701,
+    "rank": 927
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.shape",
+    "score": 0.1134020618556701,
+    "rank": 927
+  },
+  {
+    "api_name": "pandas.core.nanops.bottleneck_switch.__init__",
+    "score": 0.1134020618556701,
+    "rank": 927
+  },
+  {
+    "api_name": "pandas.core.base.FrozenList.__repr__",
+    "score": 0.11224489795918367,
+    "rank": 931
+  },
+  {
+    "api_name": "pandas.core.base.FrozenList.__unicode__",
+    "score": 0.11224489795918367,
+    "rank": 931
+  },
+  {
+    "api_name": "pandas.core.base.FrozenList._disabled",
+    "score": 0.11224489795918367,
+    "rank": 931
+  },
+  {
+    "api_name": "pandas.core.groupby.DataFrameGroupBy.ohlc",
+    "score": 0.11224489795918367,
+    "rank": 931
+  },
+  {
+    "api_name": "pandas.core.index.Index.rename",
+    "score": 0.11224489795918367,
+    "rank": 931
+  },
+  {
+    "api_name": "pandas.core.index.Index.sort",
+    "score": 0.11224489795918367,
+    "rank": 931
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.should_store",
+    "score": 0.11224489795918367,
+    "rank": 931
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._add_numeric_operations",
+    "score": 0.11145510835913312,
+    "rank": 938
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._setitem_slice",
+    "score": 0.1111111111111111,
+    "rank": 939
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.agg",
+    "score": 0.1111111111111111,
+    "rank": 939
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.levshape",
+    "score": 0.1111111111111111,
+    "rank": 939
+  },
+  {
+    "api_name": "pandas.core.indexing._SeriesIndexer._get_loc",
+    "score": 0.1111111111111111,
+    "rank": 939
+  },
+  {
+    "api_name": "pandas.core.series.Series.get_value",
+    "score": 0.1111111111111111,
+    "rank": 939
+  },
+  {
+    "api_name": "pandas.core.series.Series._xs",
+    "score": 0.11,
+    "rank": 944
+  },
+  {
+    "api_name": "pandas.core.groupby.DataSplitter.sort_idx",
+    "score": 0.10891089108910891,
+    "rank": 945
+  },
+  {
+    "api_name": "pandas.core.internals.BoolBlock._try_cast",
+    "score": 0.10891089108910891,
+    "rank": 945
+  },
+  {
+    "api_name": "pandas.core.internals.ComplexBlock._can_hold_element",
+    "score": 0.10891089108910891,
+    "rank": 945
+  },
+  {
+    "api_name": "pandas.core.internals.ComplexBlock._try_cast",
+    "score": 0.10891089108910891,
+    "rank": 945
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock._try_cast",
+    "score": 0.10891089108910891,
+    "rank": 945
+  },
+  {
+    "api_name": "pandas.core.internals.FloatBlock._try_cast",
+    "score": 0.10891089108910891,
+    "rank": 945
+  },
+  {
+    "api_name": "pandas.core.internals.IntBlock._try_cast",
+    "score": 0.10891089108910891,
+    "rank": 945
+  },
+  {
+    "api_name": "pandas.core.internals.ObjectBlock.is_bool",
+    "score": 0.10891089108910891,
+    "rank": 945
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._maybe_cache_changed",
+    "score": 0.10784313725490197,
+    "rank": 953
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._set_has_sparse",
+    "score": 0.10679611650485436,
+    "rank": 954
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.prepare_for_merge",
+    "score": 0.10576923076923077,
+    "rank": 955
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.set_items_norename",
+    "score": 0.10476190476190476,
+    "rank": 956
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.__iter__",
+    "score": 0.10416666666666667,
+    "rank": 957
+  },
+  {
+    "api_name": "pandas.core.index.Index.groupby",
+    "score": 0.10416666666666667,
+    "rank": 957
+  },
+  {
+    "api_name": "pandas.core.index.Index.map",
+    "score": 0.10416666666666667,
+    "rank": 957
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock._slice",
+    "score": 0.10416666666666667,
+    "rank": 957
+  },
+  {
+    "api_name": "pandas.core.base.FrozenList.__reduce__",
+    "score": 0.10309278350515463,
+    "rank": 961
+  },
+  {
+    "api_name": "pandas.core.config.DictWrapper.__dir__",
+    "score": 0.10309278350515463,
+    "rank": 961
+  },
+  {
+    "api_name": "pandas.core.base.FrozenNDArray._disabled",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.common.groupby.__iter__",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.irow",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.groupby.DataSplitter.slabels",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.shape",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.astype",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.convert",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.diff",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.downcast",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.eval",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.interpolate",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.putmask",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.replace",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.setitem",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.shift",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.where",
+    "score": 0.10204081632653061,
+    "rank": 963
+  },
+  {
+    "api_name": "pandas.core.indexing._SeriesIndexer._get_label",
+    "score": 0.10101010101010101,
+    "rank": 979
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock._try_operate",
+    "score": 0.10101010101010101,
+    "rank": 979
+  },
+  {
+    "api_name": "pandas.core.internals.TimeDeltaBlock._try_operate",
+    "score": 0.10101010101010101,
+    "rank": 979
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.slice_replace",
+    "score": 0.10101010101010101,
+    "rank": 979
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.transpose",
+    "score": 0.1,
+    "rank": 983
+  },
+  {
+    "api_name": "pandas.core.index.Index._engine",
+    "score": 0.1,
+    "rank": 983
+  },
+  {
+    "api_name": "pandas.core.index.Index.to_series",
+    "score": 0.1,
+    "rank": 983
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._get_names",
+    "score": 0.1,
+    "rank": 983
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.is_consolidated",
+    "score": 0.1,
+    "rank": 983
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.as_matrix",
+    "score": 0.1,
+    "rank": 983
+  },
+  {
+    "api_name": "pandas.core.internals.Block._try_coerce_args",
+    "score": 0.09900990099009901,
+    "rank": 989
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._post_setstate",
+    "score": 0.09900990099009901,
+    "rank": 989
+  },
+  {
+    "api_name": "pandas.core.series.Series.to_dict",
+    "score": 0.09900990099009901,
+    "rank": 989
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.get_dtype_counts",
+    "score": 0.0970873786407767,
+    "rank": 992
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.get_ftype_counts",
+    "score": 0.0970873786407767,
+    "rank": 992
+  },
+  {
+    "api_name": "pandas.core.groupby.DataSplitter._get_sorted_data",
+    "score": 0.0970873786407767,
+    "rank": 992
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.is_lexsorted_for_tuple",
+    "score": 0.0970873786407767,
+    "rank": 992
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.get_series_dict",
+    "score": 0.0970873786407767,
+    "rank": 992
+  },
+  {
+    "api_name": "pandas.core.internals.Block.__getstate__",
+    "score": 0.09473684210526316,
+    "rank": 997
+  },
+  {
+    "api_name": "pandas.core.internals.Block._slice",
+    "score": 0.09473684210526316,
+    "rank": 997
+  },
+  {
+    "api_name": "pandas.core.internals.Block.iget",
+    "score": 0.09473684210526316,
+    "rank": 997
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.set",
+    "score": 0.09473684210526316,
+    "rank": 997
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.is_mixed_type",
+    "score": 0.09433962264150944,
+    "rank": 1001
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__getitem__",
+    "score": 0.09375,
+    "rank": 1002
+  },
+  {
+    "api_name": "pandas.core.index.Index.__and__",
+    "score": 0.09375,
+    "rank": 1002
+  },
+  {
+    "api_name": "pandas.core.index.Index.__or__",
+    "score": 0.09375,
+    "rank": 1002
+  },
+  {
+    "api_name": "pandas.core.index.Index.__sub__",
+    "score": 0.09375,
+    "rank": 1002
+  },
+  {
+    "api_name": "pandas.core.series.Series.__getstate__",
+    "score": 0.09375,
+    "rank": 1002
+  },
+  {
+    "api_name": "pandas.core.series.Series.imag",
+    "score": 0.09375,
+    "rank": 1002
+  },
+  {
+    "api_name": "pandas.core.series.Series.real",
+    "score": 0.09375,
+    "rank": 1002
+  },
+  {
+    "api_name": "pandas.core.series.Series.unique",
+    "score": 0.09375,
+    "rank": 1002
+  },
+  {
+    "api_name": "pandas.core.common._ABCGeneric.__instancecheck__",
+    "score": 0.09278350515463918,
+    "rank": 1010
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.icol",
+    "score": 0.09278350515463918,
+    "rank": 1010
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__array__",
+    "score": 0.09278350515463918,
+    "rank": 1010
+  },
+  {
+    "api_name": "pandas.core.index.Index.__deepcopy__",
+    "score": 0.09278350515463918,
+    "rank": 1010
+  },
+  {
+    "api_name": "pandas.core.index.Int64Index.asi8",
+    "score": 0.09278350515463918,
+    "rank": 1010
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.__len__",
+    "score": 0.09278350515463918,
+    "rank": 1010
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.dtype",
+    "score": 0.09278350515463918,
+    "rank": 1010
+  },
+  {
+    "api_name": "pandas.core.internals.Block.ftype",
+    "score": 0.09278350515463918,
+    "rank": 1010
+  },
+  {
+    "api_name": "pandas.core.series.Series.nunique",
+    "score": 0.09278350515463918,
+    "rank": 1010
+  },
+  {
+    "api_name": "pandas.core.base.FrozenList.__hash__",
+    "score": 0.09183673469387756,
+    "rank": 1019
+  },
+  {
+    "api_name": "pandas.core.config.CallableDynamicDoc.__call__",
+    "score": 0.09183673469387756,
+    "rank": 1019
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.unstack",
+    "score": 0.09183673469387756,
+    "rank": 1019
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.axes",
+    "score": 0.09183673469387756,
+    "rank": 1019
+  },
+  {
+    "api_name": "pandas.core.series.Series.autocorr",
+    "score": 0.09183673469387756,
+    "rank": 1019
+  },
+  {
+    "api_name": "pandas.core.series.Series.put",
+    "score": 0.09183673469387756,
+    "rank": 1019
+  },
+  {
+    "api_name": "pandas.core.series.Series.unstack",
+    "score": 0.09183673469387756,
+    "rank": 1019
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.dtypes",
+    "score": 0.09090909090909091,
+    "rank": 1026
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.ftypes",
+    "score": 0.09090909090909091,
+    "rank": 1026
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.isnull",
+    "score": 0.09090909090909091,
+    "rank": 1026
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.notnull",
+    "score": 0.09090909090909091,
+    "rank": 1026
+  },
+  {
+    "api_name": "pandas.core.index.Index._get_names",
+    "score": 0.09090909090909091,
+    "rank": 1026
+  },
+  {
+    "api_name": "pandas.core.indexing._ScalarAccessIndexer._convert_key",
+    "score": 0.09090909090909091,
+    "rank": 1026
+  },
+  {
+    "api_name": "pandas.core.internals.Block._consolidate_key",
+    "score": 0.09090909090909091,
+    "rank": 1026
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._getitem_slice",
+    "score": 0.09,
+    "rank": 1033
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.combineAdd",
+    "score": 0.09,
+    "rank": 1033
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.combineMult",
+    "score": 0.09,
+    "rank": 1033
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.to_pickle",
+    "score": 0.09,
+    "rank": 1033
+  },
+  {
+    "api_name": "pandas.core.indexing._LocationIndexer._getitem_axis",
+    "score": 0.09,
+    "rank": 1033
+  },
+  {
+    "api_name": "pandas.core.groupby.NDFrameGroupBy._wrap_aggregated_output",
+    "score": 0.0891089108910891,
+    "rank": 1038
+  },
+  {
+    "api_name": "pandas.core.groupby.PanelGroupBy._wrap_aggregated_output",
+    "score": 0.0891089108910891,
+    "rank": 1038
+  },
+  {
+    "api_name": "pandas.core.index.Index._convert_list_indexer",
+    "score": 0.0891089108910891,
+    "rank": 1038
+  },
+  {
+    "api_name": "pandas.core.internals.Block.convert",
+    "score": 0.0891089108910891,
+    "rank": 1038
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock._try_cast_result",
+    "score": 0.0891089108910891,
+    "rank": 1038
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._has_valid_type",
+    "score": 0.08823529411764706,
+    "rank": 1043
+  },
+  {
+    "api_name": "pandas.core.format.DataFrameFormatter.has_column_names",
+    "score": 0.08737864077669903,
+    "rank": 1044
+  },
+  {
+    "api_name": "pandas.core.format.DataFrameFormatter.has_index_names",
+    "score": 0.08737864077669903,
+    "rank": 1044
+  },
+  {
+    "api_name": "pandas.core.index.Index._string_data_error",
+    "score": 0.08737864077669903,
+    "rank": 1044
+  },
+  {
+    "api_name": "pandas.core.index.Index.get_level_values",
+    "score": 0.08737864077669903,
+    "rank": 1044
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.set_items_clear",
+    "score": 0.08653846153846154,
+    "rank": 1048
+  },
+  {
+    "api_name": "pandas.core.series.Series.__array__",
+    "score": 0.08421052631578947,
+    "rank": 1049
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.first_valid_index",
+    "score": 0.08411214953271028,
+    "rank": 1050
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.last_valid_index",
+    "score": 0.08411214953271028,
+    "rank": 1050
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical.__len__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.__len__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__contains__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__iter__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__len__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.__len__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.ohlc",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.size",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.__iter__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouping.__iter__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.index.Index.__iter__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.index.Index.tolist",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.index.Index.unique",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer.__iter__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.internals.Block.__contains__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.internals.Block.__len__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.__contains__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.__len__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.series.Series.__contains__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.series.Series.__len__",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.series.Series.item",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.series.Series.nonzero",
+    "score": 0.08333333333333333,
+    "rank": 1052
+  },
+  {
+    "api_name": "pandas.core.array.SNDArray.values",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.base.PandasObject.__unicode__",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._series",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.groupby.BinGrouper.ngroups",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.__unicode__",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.labels",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.levels",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.names",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.ngroups",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper.nkeys",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouping.indices",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouping.ngroups",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.nlevels",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.nblocks",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.values",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.panel.Panel._constructor",
+    "score": 0.08247422680412371,
+    "rank": 1074
+  },
+  {
+    "api_name": "pandas.core.index.Index.values",
+    "score": 0.08163265306122448,
+    "rank": 1090
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.argsort",
+    "score": 0.08163265306122448,
+    "rank": 1090
+  },
+  {
+    "api_name": "pandas.core.internals.Block.get_values",
+    "score": 0.08163265306122448,
+    "rank": 1090
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.__len__",
+    "score": 0.08163265306122448,
+    "rank": 1090
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._reindex_multi",
+    "score": 0.08080808080808081,
+    "rank": 1094
+  },
+  {
+    "api_name": "pandas.core.index.Index._reset_identity",
+    "score": 0.08080808080808081,
+    "rank": 1094
+  },
+  {
+    "api_name": "pandas.core.internals.Block._try_cast",
+    "score": 0.08080808080808081,
+    "rank": 1094
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._setitem_with_indexer",
+    "score": 0.0804851157662624,
+    "rank": 1097
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouper._overflow_possible",
+    "score": 0.08,
+    "rank": 1098
+  },
+  {
+    "api_name": "pandas.core.index.Index.holds_integer",
+    "score": 0.08,
+    "rank": 1098
+  },
+  {
+    "api_name": "pandas.core.index.Index.is_floating",
+    "score": 0.08,
+    "rank": 1098
+  },
+  {
+    "api_name": "pandas.core.index.Index.is_numeric",
+    "score": 0.08,
+    "rank": 1098
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._tuple_index",
+    "score": 0.08,
+    "rank": 1098
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._box_item_values",
+    "score": 0.07920792079207921,
+    "rank": 1103
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._info_axis",
+    "score": 0.07920792079207921,
+    "rank": 1103
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._stat_axis",
+    "score": 0.07920792079207921,
+    "rank": 1103
+  },
+  {
+    "api_name": "pandas.core.index.Index.inferred_type",
+    "score": 0.07920792079207921,
+    "rank": 1103
+  },
+  {
+    "api_name": "pandas.core.index.Index.is_type_compatible",
+    "score": 0.0784313725490196,
+    "rank": 1107
+  },
+  {
+    "api_name": "pandas.core.indexing._iAtIndexer._has_valid_setitem_indexer",
+    "score": 0.0784313725490196,
+    "rank": 1107
+  },
+  {
+    "api_name": "pandas.core.indexing._iLocIndexer._has_valid_setitem_indexer",
+    "score": 0.0784313725490196,
+    "rank": 1107
+  },
+  {
+    "api_name": "pandas.core.internals.Block._can_hold_element",
+    "score": 0.0784313725490196,
+    "rank": 1107
+  },
+  {
+    "api_name": "pandas.core.internals.Block.get_merge_length",
+    "score": 0.0784313725490196,
+    "rank": 1107
+  },
+  {
+    "api_name": "pandas.core.series.Series.is_time_series",
+    "score": 0.07692307692307693,
+    "rank": 1112
+  },
+  {
+    "api_name": "pandas.core.groupby.DataSplitter.apply",
+    "score": 0.07368421052631578,
+    "rank": 1113
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.__getitem__",
+    "score": 0.07368421052631578,
+    "rank": 1113
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__abs__",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.ndim",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.groups",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.indices",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.ngroups",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.groupby.Grouping.__repr__",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.index.Index._cleanup",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.index.Index.dtype",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._constructor",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.internals.Block.dtype",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.internals.Block.itemsize",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.internals.Block.shape",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.dtype",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.ftype",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.itemsize",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.itemsize",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.kind",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.head",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.panel.Panel.tail",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.series.Series.base",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.series.Series.data",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.series.Series.dtype",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.series.Series.flags",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.series.Series.ftype",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.series.Series.shape",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.series.Series.size",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.series.Series.strides",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.series.Series.values",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.strings.StringMethods.__init__",
+    "score": 0.07291666666666667,
+    "rank": 1115
+  },
+  {
+    "api_name": "pandas.core.base.StringMixin.__repr__",
+    "score": 0.07216494845360824,
+    "rank": 1144
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame.axes",
+    "score": 0.07216494845360824,
+    "rank": 1144
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.blocks",
+    "score": 0.07216494845360824,
+    "rank": 1144
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.values",
+    "score": 0.07216494845360824,
+    "rank": 1144
+  },
+  {
+    "api_name": "pandas.core.groupby.BinGrouper.names",
+    "score": 0.07216494845360824,
+    "rank": 1144
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.aggregate",
+    "score": 0.07216494845360824,
+    "rank": 1144
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy.transform",
+    "score": 0.07216494845360824,
+    "rank": 1144
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.index",
+    "score": 0.07216494845360824,
+    "rank": 1144
+  },
+  {
+    "api_name": "pandas.core.series.Series.mode",
+    "score": 0.07216494845360824,
+    "rank": 1144
+  },
+  {
+    "api_name": "pandas.core.series.Series.tolist",
+    "score": 0.07216494845360824,
+    "rank": 1144
+  },
+  {
+    "api_name": "pandas.core.groupby.CustomGrouper.get_grouper",
+    "score": 0.07142857142857142,
+    "rank": 1154
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._iterate_slices",
+    "score": 0.07142857142857142,
+    "rank": 1154
+  },
+  {
+    "api_name": "pandas.core.internals.Block._try_fill",
+    "score": 0.07142857142857142,
+    "rank": 1154
+  },
+  {
+    "api_name": "pandas.core.internals.Block._try_operate",
+    "score": 0.07142857142857142,
+    "rank": 1154
+  },
+  {
+    "api_name": "pandas.core.internals.ObjectBlock._try_cast",
+    "score": 0.07142857142857142,
+    "rank": 1154
+  },
+  {
+    "api_name": "pandas.core.series.Series.get_values",
+    "score": 0.07142857142857142,
+    "rank": 1154
+  },
+  {
+    "api_name": "pandas.core.series.Series.str",
+    "score": 0.07142857142857142,
+    "rank": 1154
+  },
+  {
+    "api_name": "pandas.core.base.FrozenNDArray._shallow_copy",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._local_dir",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.get_values",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.index.Index._shallow_copy",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.index.Index.is_mixed",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.index.Index.is_monotonic",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.index.Index.is_unique",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.is_lexsorted",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.internals.Block.fill_value",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager._get_items",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.internals.DatetimeBlock.fill_value",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.sp_index",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.internals.TimeDeltaBlock.fill_value",
+    "score": 0.0707070707070707,
+    "rank": 1161
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._get_values",
+    "score": 0.07,
+    "rank": 1174
+  },
+  {
+    "api_name": "pandas.core.index.Index.is_integer",
+    "score": 0.07,
+    "rank": 1174
+  },
+  {
+    "api_name": "pandas.core.internals.Block._try_coerce_result",
+    "score": 0.06930693069306931,
+    "rank": 1176
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager._can_hold_na",
+    "score": 0.06862745098039216,
+    "rank": 1177
+  },
+  {
+    "api_name": "pandas.core.series.Series._can_hold_na",
+    "score": 0.06862745098039216,
+    "rank": 1177
+  },
+  {
+    "api_name": "pandas.core.index.Index.is_all_dates",
+    "score": 0.06796116504854369,
+    "rank": 1179
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._format_native_types",
+    "score": 0.06796116504854369,
+    "rank": 1179
+  },
+  {
+    "api_name": "pandas.core.series.Series._needs_reindex_multi",
+    "score": 0.06796116504854369,
+    "rank": 1179
+  },
+  {
+    "api_name": "pandas.core.base.StringMixin.__unicode__",
+    "score": 0.06315789473684211,
+    "rank": 1182
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.__getstate__",
+    "score": 0.06315789473684211,
+    "rank": 1182
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.keys",
+    "score": 0.06315789473684211,
+    "rank": 1182
+  },
+  {
+    "api_name": "pandas.core.series.Series.keys",
+    "score": 0.06315789473684211,
+    "rank": 1182
+  },
+  {
+    "api_name": "pandas.core.base.PandasObject._constructor",
+    "score": 0.0625,
+    "rank": 1186
+  },
+  {
+    "api_name": "pandas.core.frame.DataFrame._constructor",
+    "score": 0.0625,
+    "rank": 1186
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._constructor",
+    "score": 0.0625,
+    "rank": 1186
+  },
+  {
+    "api_name": "pandas.core.series.Series._constructor",
+    "score": 0.0625,
+    "rank": 1186
+  },
+  {
+    "api_name": "pandas.core.groupby.BinGrouper.levels",
+    "score": 0.061855670103092786,
+    "rank": 1190
+  },
+  {
+    "api_name": "pandas.core.series.Series.axes",
+    "score": 0.061855670103092786,
+    "rank": 1190
+  },
+  {
+    "api_name": "pandas.core.categorical.Categorical._get_levels",
+    "score": 0.061224489795918366,
+    "rank": 1192
+  },
+  {
+    "api_name": "pandas.core.index.Index._mpl_repr",
+    "score": 0.061224489795918366,
+    "rank": 1192
+  },
+  {
+    "api_name": "pandas.core.index.Index.get_values",
+    "score": 0.061224489795918366,
+    "rank": 1192
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._array_values",
+    "score": 0.061224489795918366,
+    "rank": 1192
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._get_labels",
+    "score": 0.061224489795918366,
+    "rank": 1192
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._get_levels",
+    "score": 0.061224489795918366,
+    "rank": 1192
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame._constructor_sliced",
+    "score": 0.06060606060606061,
+    "rank": 1198
+  },
+  {
+    "api_name": "pandas.core.groupby.BinGrouper.result_index",
+    "score": 0.06060606060606061,
+    "rank": 1198
+  },
+  {
+    "api_name": "pandas.core.index.Float64Index.inferred_type",
+    "score": 0.06060606060606061,
+    "rank": 1198
+  },
+  {
+    "api_name": "pandas.core.index.Int64Index.inferred_type",
+    "score": 0.06060606060606061,
+    "rank": 1198
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.inferred_type",
+    "score": 0.06060606060606061,
+    "rank": 1198
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.post_merge",
+    "score": 0.06,
+    "rank": 1203
+  },
+  {
+    "api_name": "pandas.core.index.Index._assert_can_do_setop",
+    "score": 0.058823529411764705,
+    "rank": 1204
+  },
+  {
+    "api_name": "pandas.core.index.Index.is_lexsorted_for_tuple",
+    "score": 0.058823529411764705,
+    "rank": 1204
+  },
+  {
+    "api_name": "pandas.core.indexing._NDFrameIndexer._has_valid_setitem_indexer",
+    "score": 0.058823529411764705,
+    "rank": 1204
+  },
+  {
+    "api_name": "pandas.core.internals.ObjectBlock._can_hold_element",
+    "score": 0.058823529411764705,
+    "rank": 1204
+  },
+  {
+    "api_name": "pandas.core.groupby.GroupBy._wrap_applied_output",
+    "score": 0.05825242718446602,
+    "rank": 1208
+  },
+  {
+    "api_name": "pandas.core.internals.Block._is_single_block",
+    "score": 0.057692307692307696,
+    "rank": 1209
+  },
+  {
+    "api_name": "pandas.core.common.UTF8Recoder.__iter__",
+    "score": 0.052083333333333336,
+    "rank": 1210
+  },
+  {
+    "api_name": "pandas.core.common.UnicodeReader.__iter__",
+    "score": 0.052083333333333336,
+    "rank": 1210
+  },
+  {
+    "api_name": "pandas.core.internals.BlockManager.__nonzero__",
+    "score": 0.052083333333333336,
+    "rank": 1210
+  },
+  {
+    "api_name": "pandas.core.series.Series.transpose",
+    "score": 0.052083333333333336,
+    "rank": 1210
+  },
+  {
+    "api_name": "pandas.core.groupby.BinGrouper.nkeys",
+    "score": 0.05154639175257732,
+    "rank": 1214
+  },
+  {
+    "api_name": "pandas.core.index.Index.nlevels",
+    "score": 0.05154639175257732,
+    "rank": 1214
+  },
+  {
+    "api_name": "pandas.core.series.Series.ndim",
+    "score": 0.05154639175257732,
+    "rank": 1214
+  },
+  {
+    "api_name": "pandas.core.base.PandasObject._local_dir",
+    "score": 0.050505050505050504,
+    "rank": 1217
+  },
+  {
+    "api_name": "pandas.core.generic.NDFrame.to_dense",
+    "score": 0.050505050505050504,
+    "rank": 1217
+  },
+  {
+    "api_name": "pandas.core.index.Index._array_values",
+    "score": 0.050505050505050504,
+    "rank": 1217
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager.is_consolidated",
+    "score": 0.050505050505050504,
+    "rank": 1217
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._assert_can_do_setop",
+    "score": 0.04950495049504951,
+    "rank": 1221
+  },
+  {
+    "api_name": "pandas.core.internals.SparseBlock.get_merge_length",
+    "score": 0.049019607843137254,
+    "rank": 1222
+  },
+  {
+    "api_name": "pandas.core.index.Index._has_complex_internals",
+    "score": 0.04854368932038835,
+    "rank": 1223
+  },
+  {
+    "api_name": "pandas.core.index.Int64Index.is_all_dates",
+    "score": 0.04854368932038835,
+    "rank": 1223
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex._has_complex_internals",
+    "score": 0.04854368932038835,
+    "rank": 1223
+  },
+  {
+    "api_name": "pandas.core.index.MultiIndex.is_all_dates",
+    "score": 0.04854368932038835,
+    "rank": 1223
+  },
+  {
+    "api_name": "pandas.core.internals.Block.prepare_for_merge",
+    "score": 0.04854368932038835,
+    "rank": 1223
+  },
+  {
+    "api_name": "pandas.core.series.Series._is_mixed_type",
+    "score": 0.04854368932038835,
+    "rank": 1223
+  },
+  {
+    "api_name": "pandas.core.config.option_context.__enter__",
+    "score": 0.042105263157894736,
+    "rank": 1229
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager._consolidate_check",
+    "score": 0.04081632653061224,
+    "rank": 1230
+  },
+  {
+    "api_name": "pandas.core.internals.SingleBlockManager._consolidate_inplace",
+    "score": 0.04081632653061224,
+    "rank": 1230
+  }
+]

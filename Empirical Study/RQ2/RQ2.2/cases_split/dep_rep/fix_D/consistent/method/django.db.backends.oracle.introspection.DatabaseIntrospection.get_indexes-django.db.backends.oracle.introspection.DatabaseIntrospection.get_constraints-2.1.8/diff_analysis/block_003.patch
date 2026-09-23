@@ -1,0 +1,4 @@
+@@ -87,2 +89,3 @@
+         for constraint, type_, columns, orders in cursor.fetchall():
++            constraint = self.identifier_converter(constraint)
+             constraints[constraint] = {

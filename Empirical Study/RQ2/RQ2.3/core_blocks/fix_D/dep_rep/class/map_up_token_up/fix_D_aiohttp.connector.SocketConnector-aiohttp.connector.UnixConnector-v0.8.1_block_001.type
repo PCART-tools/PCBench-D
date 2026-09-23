@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Attribute definition / instance property accessor
+   Changed `self.path = path` in the initializer to `self._path = path`, and added a `path` property that directly returns `self._path`.
+# /detail
+# mode：Modify instance attribute (make it private); Add property accessor

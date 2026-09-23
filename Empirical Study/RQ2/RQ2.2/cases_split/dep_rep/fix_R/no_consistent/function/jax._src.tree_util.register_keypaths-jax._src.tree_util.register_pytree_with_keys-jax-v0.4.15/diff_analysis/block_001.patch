@@ -1,0 +1,12 @@
+@@ -9,11 +9,2 @@
+   """
+-  warnings.warn(
+-      (
+-          "jax.tree_util.register_keypaths is deprecated, and will be removed"
+-          " in a future release. Please use `register_pytree_with_keys()`"
+-          " instead."
+-      ),
+-      category=FutureWarning,
+-      stacklevel=2,
+-  )
+   _register_keypaths(ty, handler)

@@ -1,0 +1,5 @@
+@@ -99,3 +84,3 @@
+                 ) AND cols.index_name = ind.index_name
+-            ORDER BY cols.column_position
++            GROUP BY ind.index_name, ind.index_type
+         """, [table_name])

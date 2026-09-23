@@ -1,0 +1,2 @@
+    def __rsub__(self, other: _Operand | float) -> _Operand:
+        return self.apply("sub", other, self)

@@ -1,0 +1,5 @@
+@@ -35,3 +21,2 @@
+         """
+-        pattern = parse_as_expression(pattern, str_as_lit=True)
+-        return wrap_expr(self._pyexpr.str_count_match(pattern))
++        return self.count_matches(pattern)

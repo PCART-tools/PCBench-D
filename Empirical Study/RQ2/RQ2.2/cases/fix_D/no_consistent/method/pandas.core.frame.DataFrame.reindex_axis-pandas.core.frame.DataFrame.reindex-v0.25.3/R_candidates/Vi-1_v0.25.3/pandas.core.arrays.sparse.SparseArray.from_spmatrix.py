@@ -1,0 +1,46 @@
+    @classmethod
+    def from_spmatrix(cls, data):
+        """
+        Create a SparseArray from a scipy.sparse matrix.
+
+        .. versionadded:: 0.25.0
+
+        Parameters
+        ----------
+        data : scipy.sparse.sp_matrix
+            This should be a SciPy sparse matrix where the size
+            of the second dimension is 1. In other words, a
+            sparse matrix with a single column.
+
+        Returns
+        -------
+        SparseArray
+
+        Examples
+        --------
+        >>> import scipy.sparse
+        >>> mat = scipy.sparse.coo_matrix((4, 1))
+        >>> pd.SparseArray.from_spmatrix(mat)
+        [0.0, 0.0, 0.0, 0.0]
+        Fill: 0.0
+        IntIndex
+        Indices: array([], dtype=int32)
+        """
+        length, ncol = data.shape
+
+        if ncol != 1:
+            raise ValueError("'data' must have a single column, not '{}'".format(ncol))
+
+        # our sparse index classes require that the positions be strictly
+        # increasing. So we need to sort loc, and arr accordingly.
+        arr = data.data
+        idx, _ = data.nonzero()
+        loc = np.argsort(idx)
+        arr = arr.take(loc)
+        idx.sort()
+
+        zero = np.array(0, dtype=arr.dtype).item()
+        dtype = SparseDtype(arr.dtype, zero)
+        index = IntIndex(length, idx)
+
+        return cls._simple_new(arr, index, dtype)

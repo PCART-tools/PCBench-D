@@ -1,0 +1,98 @@
+{
+  "case": "pydantic.main.BaseModel.values-pydantic.main.BaseModel.dict-v0.0.6",
+  "fix_type": "fix_R",
+  "candidate_api": "pydantic.main.BaseModel.dict",
+  "error": null,
+  "threshold_10pct": 6.1,
+  "algorithms_meeting_threshold": [
+    "tokenBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 17,
+      "vi_rank": 17,
+      "delta": 0,
+      "exceeds_10pct": false
+    },
+    "tokenBased": {
+      "vi1_rank": 37,
+      "vi_rank": 30,
+      "delta": 7,
+      "exceeds_10pct": true
+    },
+    "treeBased": {
+      "vi1_rank": 40,
+      "vi_rank": 40,
+      "delta": 0,
+      "exceeds_10pct": false
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.6751,
+      "baseline_rank": 17,
+      "delta_baseline_to_vi": 0
+    },
+    "tokenBased": {
+      "baseline_score": 0.1111,
+      "baseline_rank": 37,
+      "delta_baseline_to_vi": 7
+    },
+    "treeBased": {
+      "baseline_score": 0.2727,
+      "baseline_rank": 40,
+      "delta_baseline_to_vi": 0
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 17,
+          "vi_score": 0.6751,
+          "restored_score": 0.6751,
+          "restored_rank": 17,
+          "delta_vi_to_restored": 0
+        },
+        "tokenBased": {
+          "vi_rank": 30,
+          "vi_score": 0.1778,
+          "restored_score": 0.1111,
+          "restored_rank": 37,
+          "delta_vi_to_restored": -7,
+          "distance_to_baseline": 0
+        },
+        "treeBased": {
+          "vi_rank": 40,
+          "vi_score": 0.2857,
+          "restored_score": 0.2727,
+          "restored_rank": 40,
+          "delta_vi_to_restored": 0
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "tokenBased": [
+      "block_001"
+    ],
+    "mapBased": [
+      "block_001"
+    ],
+    "treeBased": [
+      "block_001"
+    ]
+  },
+  "block_sign_labels": {
+    "map_flat_token_up_tree_flat": [
+      "block_001"
+    ]
+  }
+}

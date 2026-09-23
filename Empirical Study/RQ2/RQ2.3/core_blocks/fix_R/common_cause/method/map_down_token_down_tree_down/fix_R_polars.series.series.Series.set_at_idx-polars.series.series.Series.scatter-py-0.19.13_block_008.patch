@@ -1,0 +1,19 @@
+@@ -70,17 +36,2 @@
+         """
+-        if isinstance(idx, int):
+-            idx = [idx]
+-        if len(idx) == 0:
+-            return self
+-
+-        idx = Series("", idx)
+-        if isinstance(value, (int, float, bool, str)) or (value is None):
+-            value = Series("", [value])
+-
+-            # if we need to set more than a single value, we extend it
+-            if len(idx) > 0:
+-                value = value.extend_constant(value[0], len(idx) - 1)
+-        elif not isinstance(value, Series):
+-            value = Series("", value)
+-        self._s.set_at_idx(idx._s, value._s)
+-        return self
++        return self.scatter(indices, values)

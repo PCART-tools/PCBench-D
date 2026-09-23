@@ -1,0 +1,732 @@
+[
+  {
+    "api_name": "dask.array.core.Array.to_delayed",
+    "score": 0.8596491228070176,
+    "rank": 1
+  },
+  {
+    "api_name": "dask.array.core.Array.copy",
+    "score": 0.5777777777777777,
+    "rank": 2
+  },
+  {
+    "api_name": "dask.array.core.Array.__reduce__",
+    "score": 0.5652173913043479,
+    "rank": 3
+  },
+  {
+    "api_name": "dask.array.core.Array.numblocks",
+    "score": 0.5348837209302326,
+    "rank": 4
+  },
+  {
+    "api_name": "dask.array.core.Array.shape",
+    "score": 0.5348837209302326,
+    "rank": 4
+  },
+  {
+    "api_name": "dask.array.core.Array.__bool__",
+    "score": 0.525,
+    "rank": 6
+  },
+  {
+    "api_name": "dask.array.core.Array.__complex__",
+    "score": 0.525,
+    "rank": 6
+  },
+  {
+    "api_name": "dask.array.core.Array.__float__",
+    "score": 0.525,
+    "rank": 6
+  },
+  {
+    "api_name": "dask.array.core.Array.__int__",
+    "score": 0.525,
+    "rank": 6
+  },
+  {
+    "api_name": "dask.array.core.Array.__len__",
+    "score": 0.5121951219512195,
+    "rank": 10
+  },
+  {
+    "api_name": "dask.array.core.Array.__deepcopy__",
+    "score": 0.5102040816326531,
+    "rank": 11
+  },
+  {
+    "api_name": "dask.array.core.Array.__abs__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__add__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__and__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__div__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__eq__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__floordiv__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__ge__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__gt__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__invert__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__le__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__lshift__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__lt__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__mod__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__mul__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__ne__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__neg__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__or__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__pow__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__radd__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__rand__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__rdiv__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__rfloordiv__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__rlshift__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__rmod__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__rmul__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__ror__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__rpow__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__rrshift__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__rshift__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__rsub__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__rtruediv__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__rxor__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__sub__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__truediv__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.__xor__",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.conj",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.nbytes",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.npartitions",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.size",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.store",
+    "score": 0.5,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.array.core.Array.to_dask_dataframe",
+    "score": 0.48888888888888893,
+    "rank": 52
+  },
+  {
+    "api_name": "dask.array.core.Array.to_hdf5",
+    "score": 0.48888888888888893,
+    "rank": 52
+  },
+  {
+    "api_name": "dask.array.core.Array._set_chunks",
+    "score": 0.4883720930232558,
+    "rank": 54
+  },
+  {
+    "api_name": "dask.array.core.Array.imag",
+    "score": 0.4878048780487805,
+    "rank": 55
+  },
+  {
+    "api_name": "dask.array.core.Array.real",
+    "score": 0.4878048780487805,
+    "rank": 55
+  },
+  {
+    "api_name": "dask.array.core.Array.cumprod",
+    "score": 0.4782608695652174,
+    "rank": 57
+  },
+  {
+    "api_name": "dask.array.core.Array.cumsum",
+    "score": 0.4782608695652174,
+    "rank": 57
+  },
+  {
+    "api_name": "dask.array.core.Array.ndim",
+    "score": 0.475,
+    "rank": 59
+  },
+  {
+    "api_name": "dask.array.core.Array.vindex",
+    "score": 0.475,
+    "rank": 59
+  },
+  {
+    "api_name": "dask.array.core.Array.map_blocks",
+    "score": 0.4693877551020408,
+    "rank": 61
+  },
+  {
+    "api_name": "dask.array.core.Array.dot",
+    "score": 0.4642857142857143,
+    "rank": 62
+  },
+  {
+    "api_name": "dask.array.core.Array.T",
+    "score": 0.46153846153846156,
+    "rank": 63
+  },
+  {
+    "api_name": "dask.array.core.Array.rechunk",
+    "score": 0.45999999999999996,
+    "rank": 64
+  },
+  {
+    "api_name": "dask.array.core.Array.map_overlap",
+    "score": 0.4545454545454546,
+    "rank": 65
+  },
+  {
+    "api_name": "dask.array.core.Array.vnorm",
+    "score": 0.44999999999999996,
+    "rank": 66
+  },
+  {
+    "api_name": "dask.array.core.Array.argmax",
+    "score": 0.4444444444444444,
+    "rank": 67
+  },
+  {
+    "api_name": "dask.array.core.Array.argmin",
+    "score": 0.4444444444444444,
+    "rank": 67
+  },
+  {
+    "api_name": "dask.array.random.RandomState.__init__",
+    "score": 0.4444444444444444,
+    "rank": 67
+  },
+  {
+    "api_name": "dask.array.core.Array.topk",
+    "score": 0.4418604651162791,
+    "rank": 70
+  },
+  {
+    "api_name": "dask.array.random.RandomState.seed",
+    "score": 0.4418604651162791,
+    "rank": 70
+  },
+  {
+    "api_name": "dask.array.core.Array.all",
+    "score": 0.44067796610169496,
+    "rank": 72
+  },
+  {
+    "api_name": "dask.array.core.Array.any",
+    "score": 0.44067796610169496,
+    "rank": 72
+  },
+  {
+    "api_name": "dask.array.core.Array.max",
+    "score": 0.44067796610169496,
+    "rank": 72
+  },
+  {
+    "api_name": "dask.array.core.Array.min",
+    "score": 0.44067796610169496,
+    "rank": 72
+  },
+  {
+    "api_name": "dask.array.core.Array.squeeze",
+    "score": 0.4390243902439024,
+    "rank": 76
+  },
+  {
+    "api_name": "dask.array.core.Array.itemsize",
+    "score": 0.4358974358974359,
+    "rank": 77
+  },
+  {
+    "api_name": "dask.array.core.Array.swapaxes",
+    "score": 0.4347826086956522,
+    "rank": 78
+  },
+  {
+    "api_name": "dask.array.core.Array._get_chunks",
+    "score": 0.43243243243243246,
+    "rank": 79
+  },
+  {
+    "api_name": "dask.array.random.RandomState.random_sample",
+    "score": 0.43103448275862066,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.array.random.RandomState.standard_cauchy",
+    "score": 0.43103448275862066,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.array.random.RandomState.standard_exponential",
+    "score": 0.43103448275862066,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.array.random.RandomState.standard_normal",
+    "score": 0.43103448275862066,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.array.random.RandomState.tomaxint",
+    "score": 0.43103448275862066,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.array.core.Array.ravel",
+    "score": 0.4285714285714286,
+    "rank": 85
+  },
+  {
+    "api_name": "dask.array.core.Array.repeat",
+    "score": 0.4285714285714286,
+    "rank": 85
+  },
+  {
+    "api_name": "dask.array.core.Array.round",
+    "score": 0.42553191489361697,
+    "rank": 87
+  },
+  {
+    "api_name": "dask.array.core.Array.clip",
+    "score": 0.42307692307692313,
+    "rank": 88
+  },
+  {
+    "api_name": "dask.array.core.Array.mean",
+    "score": 0.421875,
+    "rank": 89
+  },
+  {
+    "api_name": "dask.array.core.Array.prod",
+    "score": 0.421875,
+    "rank": 89
+  },
+  {
+    "api_name": "dask.array.core.Array.sum",
+    "score": 0.421875,
+    "rank": 89
+  },
+  {
+    "api_name": "dask.array.core.Array.moment",
+    "score": 0.417910447761194,
+    "rank": 92
+  },
+  {
+    "api_name": "dask.array.core.Array.__pos__",
+    "score": 0.41666666666666663,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.chisquare",
+    "score": 0.41666666666666663,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.geometric",
+    "score": 0.41666666666666663,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.logseries",
+    "score": 0.41666666666666663,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.pareto",
+    "score": 0.41666666666666663,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.power",
+    "score": 0.41666666666666663,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.standard_gamma",
+    "score": 0.41666666666666663,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.standard_t",
+    "score": 0.41666666666666663,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.weibull",
+    "score": 0.41666666666666663,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.zipf",
+    "score": 0.41666666666666663,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.rechunk._PrettyBlocks.__init__",
+    "score": 0.41025641025641024,
+    "rank": 103
+  },
+  {
+    "api_name": "dask.array.core.Array.__repr__",
+    "score": 0.4084507042253521,
+    "rank": 104
+  },
+  {
+    "api_name": "dask.array.random.RandomState.hypergeometric",
+    "score": 0.40625,
+    "rank": 105
+  },
+  {
+    "api_name": "dask.array.random.RandomState.noncentral_f",
+    "score": 0.40625,
+    "rank": 105
+  },
+  {
+    "api_name": "dask.array.random.RandomState.triangular",
+    "score": 0.40625,
+    "rank": 105
+  },
+  {
+    "api_name": "dask.array.core.Array.std",
+    "score": 0.4057971014492754,
+    "rank": 108
+  },
+  {
+    "api_name": "dask.array.core.Array.var",
+    "score": 0.4057971014492754,
+    "rank": 108
+  },
+  {
+    "api_name": "dask.array.core.Array.A",
+    "score": 0.4054054054054054,
+    "rank": 110
+  },
+  {
+    "api_name": "dask.array.core.Array.__array__",
+    "score": 0.4054054054054054,
+    "rank": 110
+  },
+  {
+    "api_name": "dask.array.random.RandomState.beta",
+    "score": 0.4032258064516129,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.array.random.RandomState.binomial",
+    "score": 0.4032258064516129,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.array.random.RandomState.exponential",
+    "score": 0.4032258064516129,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.array.random.RandomState.f",
+    "score": 0.4032258064516129,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.array.random.RandomState.negative_binomial",
+    "score": 0.4032258064516129,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.array.random.RandomState.noncentral_chisquare",
+    "score": 0.4032258064516129,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.array.random.RandomState.poisson",
+    "score": 0.4032258064516129,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.array.random.RandomState.rayleigh",
+    "score": 0.4032258064516129,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.array.random.RandomState.vonmises",
+    "score": 0.4032258064516129,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.array.random.RandomState.wald",
+    "score": 0.4032258064516129,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.array.core.Array.reshape",
+    "score": 0.4029850746268657,
+    "rank": 122
+  },
+  {
+    "api_name": "dask.array.core.Array.transpose",
+    "score": 0.3972602739726028,
+    "rank": 123
+  },
+  {
+    "api_name": "dask.array.random.RandomState.multinomial",
+    "score": 0.3970588235294118,
+    "rank": 124
+  },
+  {
+    "api_name": "dask.array.random.RandomState.gamma",
+    "score": 0.390625,
+    "rank": 125
+  },
+  {
+    "api_name": "dask.array.random.RandomState.randint",
+    "score": 0.390625,
+    "rank": 125
+  },
+  {
+    "api_name": "dask.array.random.RandomState.random_integers",
+    "score": 0.390625,
+    "rank": 125
+  },
+  {
+    "api_name": "dask.array.random.RandomState.choice",
+    "score": 0.3857142857142857,
+    "rank": 128
+  },
+  {
+    "api_name": "dask.array.random.RandomState.gumbel",
+    "score": 0.3787878787878788,
+    "rank": 129
+  },
+  {
+    "api_name": "dask.array.random.RandomState.laplace",
+    "score": 0.3787878787878788,
+    "rank": 129
+  },
+  {
+    "api_name": "dask.array.random.RandomState.logistic",
+    "score": 0.3787878787878788,
+    "rank": 129
+  },
+  {
+    "api_name": "dask.array.random.RandomState.lognormal",
+    "score": 0.3787878787878788,
+    "rank": 129
+  },
+  {
+    "api_name": "dask.array.random.RandomState.normal",
+    "score": 0.3787878787878788,
+    "rank": 129
+  },
+  {
+    "api_name": "dask.array.random.RandomState.uniform",
+    "score": 0.3787878787878788,
+    "rank": 129
+  },
+  {
+    "api_name": "dask.array.core.Array._elemwise",
+    "score": 0.3783783783783784,
+    "rank": 135
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.ReturnItem.__getitem__",
+    "score": 0.3783783783783784,
+    "rank": 135
+  },
+  {
+    "api_name": "dask.array.core.Array.__setitem__",
+    "score": 0.3626373626373627,
+    "rank": 137
+  },
+  {
+    "api_name": "dask.array.core.Array._keys",
+    "score": 0.2892561983471075,
+    "rank": 138
+  },
+  {
+    "api_name": "dask.array.core.Array.astype",
+    "score": 0.26717557251908397,
+    "rank": 139
+  },
+  {
+    "api_name": "dask.array.core.Array.view",
+    "score": 0.23684210526315785,
+    "rank": 140
+  },
+  {
+    "api_name": "dask.array.core.Array.__new__",
+    "score": 0.21678321678321677,
+    "rank": 141
+  },
+  {
+    "api_name": "dask.array.core.Array.cache",
+    "score": 0.1968911917098446,
+    "rank": 142
+  },
+  {
+    "api_name": "dask.array.rechunk._PrettyBlocks.__str__",
+    "score": 0.16748768472906406,
+    "rank": 143
+  },
+  {
+    "api_name": "dask.array.core.Array._vindex",
+    "score": 0.16267942583732053,
+    "rank": 144
+  },
+  {
+    "api_name": "dask.array.core.Array.__getitem__",
+    "score": 0.15662650602409633,
+    "rank": 145
+  },
+  {
+    "api_name": "dask.array.random.RandomState._wrap",
+    "score": 0.06138933764135701,
+    "rank": 146
+  }
+]

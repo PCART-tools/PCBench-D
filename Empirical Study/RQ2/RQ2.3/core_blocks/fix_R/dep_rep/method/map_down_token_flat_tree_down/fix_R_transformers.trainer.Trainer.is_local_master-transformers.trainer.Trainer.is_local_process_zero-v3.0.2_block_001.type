@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation code block
+   Replaced the original conditional and return logic of `is_local_master` with a warning call and a return call.
+   The original implementation included:
+
+   * Conditional statement: test `is_torch_tpu_available()`;
+   * Return statement: return `xm.is_master_ordinal(local=True)` or `self.args.local_rank in [-1, 0]`.
+
+   The new implementation includes:
+
+   * Expression statement: call `warnings.warn(...)`;
+   * Return statement: return `self.is_local_process_zero()`.
+# /detail
+# mode：Modify method implementation (replace original implementation with warning call and return-call statement)

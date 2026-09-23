@@ -1,0 +1,36 @@
+@@ -95,5 +91,32 @@
+  
+-        To reference other columns as a `default` value, a struct column must be
+-        constructed first. The first field must be the column in which values are
+-        replaced. The other columns can be used in the default expression.
++        Replacing by values of a different data type sets the return type based on
++        a combination of the `new` data type and either the original data type or the
++        default data type if it was set.
++
++        >>> df = pl.DataFrame({"a": ["x", "y", "z"]})
++        >>> mapping = {"x": 1, "y": 2, "z": 3}
++        >>> df.with_columns(replaced=pl.col("a").replace(mapping))
++        shape: (3, 2)
++        ┌─────┬──────────┐
++        │ a   ┆ replaced │
++        │ --- ┆ ---      │
++        │ str ┆ str      │
++        ╞═════╪══════════╡
++        │ x   ┆ 1        │
++        │ y   ┆ 2        │
++        │ z   ┆ 3        │
++        └─────┴──────────┘
++        >>> df.with_columns(replaced=pl.col("a").replace(mapping, default=None))
++        shape: (3, 2)
++        ┌─────┬──────────┐
++        │ a   ┆ replaced │
++        │ --- ┆ ---      │
++        │ str ┆ i64      │
++        ╞═════╪══════════╡
++        │ x   ┆ 1        │
++        │ y   ┆ 2        │
++        │ z   ┆ 3        │
++        └─────┴──────────┘
++
++        Set the `return_dtype` parameter to control the resulting data type directly.
+  

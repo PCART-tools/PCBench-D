@@ -1,0 +1,687 @@
+[
+  {
+    "api_name": "django.http.request.HttpHeaders.__getitem__",
+    "score": 0.3939393939393939,
+    "rank": 1
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.accepted_types",
+    "score": 0.3939393939393939,
+    "rank": 1
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.is_secure",
+    "score": 0.39285714285714285,
+    "rank": 3
+  },
+  {
+    "api_name": "django.http.response.ResponseHeaders.pop",
+    "score": 0.36363636363636365,
+    "rank": 4
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.get",
+    "score": 0.3548387096774194,
+    "rank": 5
+  },
+  {
+    "api_name": "django.http.request.MediaType.is_all_types",
+    "score": 0.34285714285714286,
+    "rank": 6
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.accepts",
+    "score": 0.3333333333333333,
+    "rank": 7
+  },
+  {
+    "api_name": "django.http.multipartparser.MultiPartParser._close_files",
+    "score": 0.32432432432432434,
+    "rank": 8
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.serialize_headers",
+    "score": 0.3181818181818182,
+    "rank": 9
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.scheme",
+    "score": 0.3148148148148148,
+    "rank": 10
+  },
+  {
+    "api_name": "django.http.request.QueryDict.pop",
+    "score": 0.3142857142857143,
+    "rank": 11
+  },
+  {
+    "api_name": "django.http.request.MediaType.__str__",
+    "score": 0.3125,
+    "rank": 12
+  },
+  {
+    "api_name": "django.http.request.QueryDict.popitem",
+    "score": 0.3125,
+    "rank": 12
+  },
+  {
+    "api_name": "django.http.request.QueryDict.setlistdefault",
+    "score": 0.3055555555555556,
+    "rank": 14
+  },
+  {
+    "api_name": "django.http.request.QueryDict.__delitem__",
+    "score": 0.30303030303030304,
+    "rank": 15
+  },
+  {
+    "api_name": "django.http.response.HttpResponse.__repr__",
+    "score": 0.30303030303030304,
+    "rank": 15
+  },
+  {
+    "api_name": "django.http.response.StreamingHttpResponse.__repr__",
+    "score": 0.30303030303030304,
+    "rank": 15
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.get_port",
+    "score": 0.29545454545454547,
+    "rank": 18
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.read",
+    "score": 0.2926829268292683,
+    "rank": 19
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.readline",
+    "score": 0.2926829268292683,
+    "rank": 19
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.setdefault",
+    "score": 0.2903225806451613,
+    "rank": 21
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.tell",
+    "score": 0.2903225806451613,
+    "rank": 21
+  },
+  {
+    "api_name": "django.http.response.HttpResponseRedirectBase.__repr__",
+    "score": 0.2857142857142857,
+    "rank": 23
+  },
+  {
+    "api_name": "django.http.request.MediaType.match",
+    "score": 0.2826086956521739,
+    "rank": 24
+  },
+  {
+    "api_name": "django.http.request.QueryDict.clear",
+    "score": 0.28125,
+    "rank": 25
+  },
+  {
+    "api_name": "django.http.response.HttpResponse.write",
+    "score": 0.28125,
+    "rank": 25
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.write",
+    "score": 0.28125,
+    "rank": 25
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.writelines",
+    "score": 0.28125,
+    "rank": 25
+  },
+  {
+    "api_name": "django.http.response.StreamingHttpResponse.content",
+    "score": 0.28125,
+    "rank": 25
+  },
+  {
+    "api_name": "django.http.request.HttpRequest._initialize_handlers",
+    "score": 0.2777777777777778,
+    "rank": 30
+  },
+  {
+    "api_name": "django.http.response.HttpResponse.__iter__",
+    "score": 0.27586206896551724,
+    "rank": 31
+  },
+  {
+    "api_name": "django.http.response.HttpResponse.tell",
+    "score": 0.27586206896551724,
+    "rank": 31
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.items",
+    "score": 0.27586206896551724,
+    "rank": 31
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.encoding",
+    "score": 0.275,
+    "rank": 34
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.upload_handlers",
+    "score": 0.275,
+    "rank": 34
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.__repr__",
+    "score": 0.2727272727272727,
+    "rank": 36
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.close",
+    "score": 0.2727272727272727,
+    "rank": 36
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.delete_cookie",
+    "score": 0.2727272727272727,
+    "rank": 36
+  },
+  {
+    "api_name": "django.http.multipartparser.Parser.__iter__",
+    "score": 0.2702702702702703,
+    "rank": 39
+  },
+  {
+    "api_name": "django.http.response.HttpResponseNotAllowed.__repr__",
+    "score": 0.2702702702702703,
+    "rank": 39
+  },
+  {
+    "api_name": "django.http.response.HttpResponseNotAllowed.__init__",
+    "score": 0.2682926829268293,
+    "rank": 41
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.__iter__",
+    "score": 0.26666666666666666,
+    "rank": 42
+  },
+  {
+    "api_name": "django.http.request.HttpRequest._get_full_path",
+    "score": 0.26666666666666666,
+    "rank": 42
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.headers",
+    "score": 0.26666666666666666,
+    "rank": 42
+  },
+  {
+    "api_name": "django.http.request.MediaType.__init__",
+    "score": 0.26666666666666666,
+    "rank": 42
+  },
+  {
+    "api_name": "django.http.response.StreamingHttpResponse._set_streaming_content",
+    "score": 0.26666666666666666,
+    "rank": 42
+  },
+  {
+    "api_name": "django.http.response.StreamingHttpResponse.getvalue",
+    "score": 0.26666666666666666,
+    "rank": 42
+  },
+  {
+    "api_name": "django.http.multipartparser.InterBoundaryIter.__next__",
+    "score": 0.2631578947368421,
+    "rank": 48
+  },
+  {
+    "api_name": "django.http.request.HttpRequest._current_scheme_host",
+    "score": 0.2631578947368421,
+    "rank": 48
+  },
+  {
+    "api_name": "django.http.request.HttpRequest._set_content_type_params",
+    "score": 0.2631578947368421,
+    "rank": 48
+  },
+  {
+    "api_name": "django.http.request.MediaType.__repr__",
+    "score": 0.25806451612903225,
+    "rank": 51
+  },
+  {
+    "api_name": "django.http.response.HttpResponseNotModified.content",
+    "score": 0.2571428571428571,
+    "rank": 52
+  },
+  {
+    "api_name": "django.http.multipartparser.ChunkIter.__next__",
+    "score": 0.2558139534883721,
+    "rank": 53
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.close",
+    "score": 0.2558139534883721,
+    "rank": 53
+  },
+  {
+    "api_name": "django.http.response.ResponseHeaders.__setitem__",
+    "score": 0.2553191489361702,
+    "rank": 55
+  },
+  {
+    "api_name": "django.http.request.QueryDict.__copy__",
+    "score": 0.25,
+    "rank": 56
+  },
+  {
+    "api_name": "django.http.response.HttpResponse.writelines",
+    "score": 0.25,
+    "rank": 56
+  },
+  {
+    "api_name": "django.http.response.HttpResponseNotModified.__init__",
+    "score": 0.25,
+    "rank": 56
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.parse_file_upload",
+    "score": 0.24489795918367346,
+    "rank": 59
+  },
+  {
+    "api_name": "django.http.response.HttpResponse.__init__",
+    "score": 0.23684210526315788,
+    "rank": 60
+  },
+  {
+    "api_name": "django.http.response.StreamingHttpResponse.__init__",
+    "score": 0.23684210526315788,
+    "rank": 60
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.set_signed_cookie",
+    "score": 0.23529411764705882,
+    "rank": 62
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.readlines",
+    "score": 0.23333333333333334,
+    "rank": 63
+  },
+  {
+    "api_name": "django.http.request.QueryDict.copy",
+    "score": 0.23333333333333334,
+    "rank": 63
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.__getitem__",
+    "score": 0.23333333333333334,
+    "rank": 63
+  },
+  {
+    "api_name": "django.http.response.ResponseHeaders.__delitem__",
+    "score": 0.23333333333333334,
+    "rank": 63
+  },
+  {
+    "api_name": "django.http.request.HttpRequest._mark_post_parse_error",
+    "score": 0.23076923076923078,
+    "rank": 67
+  },
+  {
+    "api_name": "django.http.multipartparser.MultiPartParser.sanitize_file_name",
+    "score": 0.22950819672131148,
+    "rank": 68
+  },
+  {
+    "api_name": "django.http.request.QueryDict._assert_mutable",
+    "score": 0.22857142857142856,
+    "rank": 69
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase._content_type_for_repr",
+    "score": 0.225,
+    "rank": 70
+  },
+  {
+    "api_name": "django.http.multipartparser.LazyStream.unget",
+    "score": 0.2222222222222222,
+    "rank": 71
+  },
+  {
+    "api_name": "django.http.request.QueryDict.setdefault",
+    "score": 0.22,
+    "rank": 72
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.__setitem__",
+    "score": 0.21875,
+    "rank": 73
+  },
+  {
+    "api_name": "django.http.multipartparser.LazyStream.tell",
+    "score": 0.21428571428571427,
+    "rank": 74
+  },
+  {
+    "api_name": "django.http.response.HttpResponse.getvalue",
+    "score": 0.21428571428571427,
+    "rank": 74
+  },
+  {
+    "api_name": "django.http.response.StreamingHttpResponse.__iter__",
+    "score": 0.21428571428571427,
+    "rank": 74
+  },
+  {
+    "api_name": "django.http.multipartparser.LazyStream.__next__",
+    "score": 0.2127659574468085,
+    "rank": 77
+  },
+  {
+    "api_name": "django.http.response.HttpResponse.serialize",
+    "score": 0.21212121212121213,
+    "rank": 78
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.has_header",
+    "score": 0.21212121212121213,
+    "rank": 78
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.get_full_path",
+    "score": 0.21052631578947367,
+    "rank": 80
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.get_full_path_info",
+    "score": 0.21052631578947367,
+    "rank": 80
+  },
+  {
+    "api_name": "django.http.response.FileResponse.__init__",
+    "score": 0.20930232558139536,
+    "rank": 82
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.body",
+    "score": 0.2077922077922078,
+    "rank": 83
+  },
+  {
+    "api_name": "django.http.multipartparser.LazyStream._update_unget_history",
+    "score": 0.20754716981132076,
+    "rank": 84
+  },
+  {
+    "api_name": "django.http.multipartparser.MultiPartParser.handle_file_complete",
+    "score": 0.20689655172413793,
+    "rank": 85
+  },
+  {
+    "api_name": "django.http.request.HttpHeaders.parse_header_name",
+    "score": 0.20689655172413793,
+    "rank": 85
+  },
+  {
+    "api_name": "django.http.response.StreamingHttpResponse.streaming_content",
+    "score": 0.20588235294117646,
+    "rank": 87
+  },
+  {
+    "api_name": "django.http.request.QueryDict.__setitem__",
+    "score": 0.20408163265306123,
+    "rank": 88
+  },
+  {
+    "api_name": "django.http.request.QueryDict.appendlist",
+    "score": 0.20408163265306123,
+    "rank": 88
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.__delitem__",
+    "score": 0.2,
+    "rank": 90
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.make_bytes",
+    "score": 0.19672131147540983,
+    "rank": 91
+  },
+  {
+    "api_name": "django.http.request.QueryDict.setlist",
+    "score": 0.19607843137254902,
+    "rank": 92
+  },
+  {
+    "api_name": "django.http.multipartparser.ChunkIter.__init__",
+    "score": 0.19444444444444445,
+    "rank": 93
+  },
+  {
+    "api_name": "django.http.request.HttpRequest._get_raw_host",
+    "score": 0.19444444444444445,
+    "rank": 93
+  },
+  {
+    "api_name": "django.http.request.HttpRequest._get_scheme",
+    "score": 0.1935483870967742,
+    "rank": 95
+  },
+  {
+    "api_name": "django.http.request.QueryDict.__deepcopy__",
+    "score": 0.1935483870967742,
+    "rank": 95
+  },
+  {
+    "api_name": "django.http.request.QueryDict.encoding",
+    "score": 0.1935483870967742,
+    "rank": 95
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.charset",
+    "score": 0.1935483870967742,
+    "rank": 95
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.get_host",
+    "score": 0.189873417721519,
+    "rank": 99
+  },
+  {
+    "api_name": "django.http.response.HttpResponseRedirectBase.__init__",
+    "score": 0.1875,
+    "rank": 100
+  },
+  {
+    "api_name": "django.http.multipartparser.BoundaryIter.__init__",
+    "score": 0.1864406779661017,
+    "rank": 101
+  },
+  {
+    "api_name": "django.http.request.HttpHeaders.__init__",
+    "score": 0.18518518518518517,
+    "rank": 102
+  },
+  {
+    "api_name": "django.http.response.HttpResponse.content",
+    "score": 0.18055555555555555,
+    "rank": 103
+  },
+  {
+    "api_name": "django.http.request.QueryDict.fromkeys",
+    "score": 0.17857142857142858,
+    "rank": 104
+  },
+  {
+    "api_name": "django.http.multipartparser.InterBoundaryIter.__init__",
+    "score": 0.17647058823529413,
+    "rank": 105
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.reason_phrase",
+    "score": 0.17647058823529413,
+    "rank": 105
+  },
+  {
+    "api_name": "django.http.multipartparser.BoundaryIter.__iter__",
+    "score": 0.1724137931034483,
+    "rank": 107
+  },
+  {
+    "api_name": "django.http.multipartparser.ChunkIter.__iter__",
+    "score": 0.1724137931034483,
+    "rank": 107
+  },
+  {
+    "api_name": "django.http.multipartparser.InterBoundaryIter.__iter__",
+    "score": 0.1724137931034483,
+    "rank": 107
+  },
+  {
+    "api_name": "django.http.multipartparser.LazyStream.__iter__",
+    "score": 0.1724137931034483,
+    "rank": 107
+  },
+  {
+    "api_name": "django.http.response.HttpResponse.writable",
+    "score": 0.1724137931034483,
+    "rank": 107
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.readable",
+    "score": 0.1724137931034483,
+    "rank": 107
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.seekable",
+    "score": 0.1724137931034483,
+    "rank": 107
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.writable",
+    "score": 0.1724137931034483,
+    "rank": 107
+  },
+  {
+    "api_name": "django.http.response.FileResponse._set_streaming_content",
+    "score": 0.17073170731707318,
+    "rank": 115
+  },
+  {
+    "api_name": "django.http.multipartparser.LazyStream.close",
+    "score": 0.16666666666666666,
+    "rank": 116
+  },
+  {
+    "api_name": "django.http.multipartparser.Parser.__init__",
+    "score": 0.16666666666666666,
+    "rank": 116
+  },
+  {
+    "api_name": "django.http.response.JsonResponse.__init__",
+    "score": 0.16666666666666666,
+    "rank": 116
+  },
+  {
+    "api_name": "django.http.response.ResponseHeaders.setdefault",
+    "score": 0.16216216216216217,
+    "rank": 119
+  },
+  {
+    "api_name": "django.http.response.ResponseHeaders.__init__",
+    "score": 0.16071428571428573,
+    "rank": 120
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.get_signed_cookie",
+    "score": 0.16,
+    "rank": 121
+  },
+  {
+    "api_name": "django.http.request.QueryDict.urlencode",
+    "score": 0.1590909090909091,
+    "rank": 122
+  },
+  {
+    "api_name": "django.http.multipartparser.LazyStream.read",
+    "score": 0.15853658536585366,
+    "rank": 123
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.build_absolute_uri",
+    "score": 0.1509433962264151,
+    "rank": 124
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.flush",
+    "score": 0.14285714285714285,
+    "rank": 125
+  },
+  {
+    "api_name": "django.http.request.QueryDict.__init__",
+    "score": 0.13,
+    "rank": 126
+  },
+  {
+    "api_name": "django.http.multipartparser.BoundaryIter._find_boundary",
+    "score": 0.1276595744680851,
+    "rank": 127
+  },
+  {
+    "api_name": "django.http.request.HttpRequest.__init__",
+    "score": 0.12307692307692308,
+    "rank": 128
+  },
+  {
+    "api_name": "django.http.multipartparser.LazyStream.__init__",
+    "score": 0.12,
+    "rank": 129
+  },
+  {
+    "api_name": "django.http.request.HttpRequest._load_post_and_files",
+    "score": 0.11864406779661017,
+    "rank": 130
+  },
+  {
+    "api_name": "django.http.response.ResponseHeaders._convert_to_charset",
+    "score": 0.11475409836065574,
+    "rank": 131
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.__init__",
+    "score": 0.10084033613445378,
+    "rank": 132
+  },
+  {
+    "api_name": "django.http.multipartparser.BoundaryIter.__next__",
+    "score": 0.0967741935483871,
+    "rank": 133
+  },
+  {
+    "api_name": "django.http.multipartparser.MultiPartParser.__init__",
+    "score": 0.08379888268156424,
+    "rank": 134
+  },
+  {
+    "api_name": "django.http.response.FileResponse.set_headers",
+    "score": 0.08196721311475409,
+    "rank": 135
+  },
+  {
+    "api_name": "django.http.response.HttpResponseBase.set_cookie",
+    "score": 0.07009345794392523,
+    "rank": 136
+  },
+  {
+    "api_name": "django.http.multipartparser.MultiPartParser.parse",
+    "score": 0.03237410071942446,
+    "rank": 137
+  }
+]

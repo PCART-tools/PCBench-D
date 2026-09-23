@@ -1,0 +1,2067 @@
+[
+  {
+    "api_name": "django.db.models.fields.Field.db_type_parameters",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.Field.db_type_suffix",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.db_type",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.get_foreign_related_value",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.get_local_related_value",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.get_path_info",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.get_reverse_path_info",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_queryset",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.is_cached",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor.get_queryset",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor.is_cached",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.related_lookups.MultiColSource.get_lookup",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.related_lookups.MultiColSource.relabeled_clone",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.get_lookup",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.get_path_info",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.models.fields.mixins.FieldCacheMixin.is_cached",
+    "score": 0.9825,
+    "rank": 16
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.db_parameters",
+    "score": 0.9825,
+    "rank": 16
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.value_from_object",
+    "score": 0.9825,
+    "rank": 16
+  },
+  {
+    "api_name": "django.db.models.fields.AutoField.rel_db_type",
+    "score": 0.9583333333333334,
+    "rank": 19
+  },
+  {
+    "api_name": "django.db.models.fields.BigAutoField.rel_db_type",
+    "score": 0.9583333333333334,
+    "rank": 19
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey._check_unique",
+    "score": 0.9401041666666666,
+    "rank": 21
+  },
+  {
+    "api_name": "django.db.models.fields.BinaryField.value_to_string",
+    "score": 0.9216589861751152,
+    "rank": 22
+  },
+  {
+    "api_name": "django.db.models.fields.Field.rel_db_type",
+    "score": 0.9216589861751152,
+    "rank": 22
+  },
+  {
+    "api_name": "django.db.models.fields.Field.value_from_object",
+    "score": 0.9216589861751152,
+    "rank": 22
+  },
+  {
+    "api_name": "django.db.models.fields.Field.value_to_string",
+    "score": 0.9216589861751152,
+    "rank": 22
+  },
+  {
+    "api_name": "django.db.models.fields.Field.get_filter_kwargs_for_object",
+    "score": 0.9055299539170507,
+    "rank": 26
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.get_forward_related_filter",
+    "score": 0.9055299539170507,
+    "rank": 26
+  },
+  {
+    "api_name": "django.db.models.fields.AutoField.formfield",
+    "score": 0.8940217391304348,
+    "rank": 28
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.db_check",
+    "score": 0.8940217391304348,
+    "rank": 28
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.db_check",
+    "score": 0.8940217391304348,
+    "rank": 28
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.db_parameters",
+    "score": 0.8940217391304348,
+    "rank": 28
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.db_type",
+    "score": 0.8940217391304348,
+    "rank": 28
+  },
+  {
+    "api_name": "django.db.models.fields.related.OneToOneField._check_unique",
+    "score": 0.8940217391304348,
+    "rank": 28
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.db_type",
+    "score": 0.8940217391304348,
+    "rank": 28
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField.get_db_prep_save",
+    "score": 0.8888888888888888,
+    "rank": 35
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.get_col",
+    "score": 0.8888888888888888,
+    "rank": 35
+  },
+  {
+    "api_name": "django.db.models.fields.Field.to_python",
+    "score": 0.8636363636363636,
+    "rank": 37
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField.context",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.Field.__hash__",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile.__hash__",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.foreign_related_fields",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.get_reverse_joining_columns",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.local_related_fields",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.RelatedObjectDoesNotExist",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor.RelatedObjectDoesNotExist",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.related_lookups.MultiColSource.__repr__",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.get_internal_type",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.get_joining_columns",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.hidden",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.name",
+    "score": 0.8571428571428572,
+    "rank": 38
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField.format_number",
+    "score": 0.8547008547008547,
+    "rank": 51
+  },
+  {
+    "api_name": "django.db.models.fields.Field.pre_save",
+    "score": 0.8547008547008547,
+    "rank": 51
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField.validators",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.Field._description",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.Field.db_tablespace",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.Field.get_attname",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.Field.get_internal_type",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.Field.unique",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile.__getstate__",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.get_attname",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.target_field",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.reverse_related_fields",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.get_cache_name",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ManyToManyDescriptor._get_set_deprecation_msg_params",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ManyToManyDescriptor.through",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ReverseManyToOneDescriptor._get_set_deprecation_msg_params",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.__repr__",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.db_type",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.many_to_many",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.many_to_one",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.one_to_many",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.one_to_one",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.remote_field",
+    "score": 0.8371428571428572,
+    "rank": 53
+  },
+  {
+    "api_name": "django.db.models.fields.Field.get_db_prep_save",
+    "score": 0.8264462809917356,
+    "rank": 74
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.get_extra_descriptor_filter",
+    "score": 0.818407960199005,
+    "rank": 75
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.get_choices",
+    "score": 0.8119834710743802,
+    "rank": 76
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.get_db_prep_value",
+    "score": 0.8,
+    "rank": 77
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.get_extra_restriction",
+    "score": 0.8,
+    "rank": 77
+  },
+  {
+    "api_name": "django.db.models.fields.BinaryField.get_placeholder",
+    "score": 0.7863247863247863,
+    "rank": 79
+  },
+  {
+    "api_name": "django.db.models.fields.AutoField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.BigAutoField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.BigIntegerField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.BinaryField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.BooleanField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.CharField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.DateField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.DateTimeCheckMixin._check_fix_default_value",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.DateTimeField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.DurationField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.FilePathField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.FloatField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.GenericIPAddressField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.IPAddressField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.IntegerField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.NullBooleanField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.PositiveIntegerField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.PositiveSmallIntegerField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.SlugField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.SmallIntegerField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.TextField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.TimeField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.UUIDField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileField.get_internal_type",
+    "score": 0.7814371257485031,
+    "rank": 80
+  },
+  {
+    "api_name": "django.db.models.fields.Field.cached_col",
+    "score": 0.78125,
+    "rank": 105
+  },
+  {
+    "api_name": "django.db.models.fields.Field.get_default",
+    "score": 0.78125,
+    "rank": 105
+  },
+  {
+    "api_name": "django.db.models.fields.Field.validators",
+    "score": 0.78125,
+    "rank": 105
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.get_cache_name",
+    "score": 0.78125,
+    "rank": 105
+  },
+  {
+    "api_name": "django.db.models.fields.Field.has_default",
+    "score": 0.7630208333333334,
+    "rank": 109
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.related_query_name",
+    "score": 0.7630208333333334,
+    "rank": 109
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.is_hidden",
+    "score": 0.7630208333333334,
+    "rank": 109
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.related_model",
+    "score": 0.7512820512820513,
+    "rank": 112
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.get_joining_columns",
+    "score": 0.7466666666666666,
+    "rank": 113
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_object",
+    "score": 0.7434944237918215,
+    "rank": 114
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile.path",
+    "score": 0.7389162561576355,
+    "rank": 115
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile.url",
+    "score": 0.7389162561576355,
+    "rank": 115
+  },
+  {
+    "api_name": "django.db.models.fields.related.OneToOneField.formfield",
+    "score": 0.736,
+    "rank": 117
+  },
+  {
+    "api_name": "django.db.models.fields.CharField.get_prep_value",
+    "score": 0.7272727272727273,
+    "rank": 118
+  },
+  {
+    "api_name": "django.db.models.fields.DateField.get_prep_value",
+    "score": 0.7272727272727273,
+    "rank": 118
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField.get_prep_value",
+    "score": 0.7272727272727273,
+    "rank": 118
+  },
+  {
+    "api_name": "django.db.models.fields.TextField.get_prep_value",
+    "score": 0.7272727272727273,
+    "rank": 118
+  },
+  {
+    "api_name": "django.db.models.fields.TimeField.get_prep_value",
+    "score": 0.7272727272727273,
+    "rank": 118
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ManyToManyDescriptor.related_manager_cls",
+    "score": 0.7211538461538463,
+    "rank": 123
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ReverseManyToOneDescriptor.related_manager_cls",
+    "score": 0.7211538461538463,
+    "rank": 123
+  },
+  {
+    "api_name": "django.db.models.fields.CharField.cast_db_type",
+    "score": 0.7131782945736433,
+    "rank": 125
+  },
+  {
+    "api_name": "django.db.models.fields.CharField.to_python",
+    "score": 0.7131782945736433,
+    "rank": 125
+  },
+  {
+    "api_name": "django.db.models.fields.TextField.to_python",
+    "score": 0.7131782945736433,
+    "rank": 125
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.get_extra_restriction",
+    "score": 0.7000000000000001,
+    "rank": 128
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.get_reverse_path_info",
+    "score": 0.6943462897526502,
+    "rank": 129
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.get_path_info",
+    "score": 0.6943462897526502,
+    "rank": 129
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.get_reverse_path_info",
+    "score": 0.6943462897526502,
+    "rank": 129
+  },
+  {
+    "api_name": "django.db.models.fields.BigIntegerField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.DateField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.DateTimeField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.DurationField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.EmailField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.FloatField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.IntegerField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.NullBooleanField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.PositiveIntegerField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.PositiveSmallIntegerField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.TimeField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.URLField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.UUIDField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.files.ImageField.formfield",
+    "score": 0.6857142857142857,
+    "rank": 132
+  },
+  {
+    "api_name": "django.db.models.fields.Field.__eq__",
+    "score": 0.6841085271317828,
+    "rank": 146
+  },
+  {
+    "api_name": "django.db.models.fields.Field.__lt__",
+    "score": 0.6841085271317828,
+    "rank": 146
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ReverseManyToOneDescriptor.__get__",
+    "score": 0.6666666666666666,
+    "rank": 148
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField.formfield",
+    "score": 0.6640316205533596,
+    "rank": 149
+  },
+  {
+    "api_name": "django.db.models.fields.FilePathField.formfield",
+    "score": 0.6640316205533596,
+    "rank": 149
+  },
+  {
+    "api_name": "django.db.models.fields.GenericIPAddressField.formfield",
+    "score": 0.6640316205533596,
+    "rank": 149
+  },
+  {
+    "api_name": "django.db.models.fields.SlugField.formfield",
+    "score": 0.6640316205533596,
+    "rank": 149
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileField.formfield",
+    "score": 0.6640316205533596,
+    "rank": 149
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.related_model",
+    "score": 0.6569506726457399,
+    "rank": 154
+  },
+  {
+    "api_name": "django.db.models.fields.Field.select_format",
+    "score": 0.655378486055777,
+    "rank": 155
+  },
+  {
+    "api_name": "django.db.models.fields.DateField.value_to_string",
+    "score": 0.650197628458498,
+    "rank": 156
+  },
+  {
+    "api_name": "django.db.models.fields.DateTimeField.value_to_string",
+    "score": 0.650197628458498,
+    "rank": 156
+  },
+  {
+    "api_name": "django.db.models.fields.DurationField.value_to_string",
+    "score": 0.650197628458498,
+    "rank": 156
+  },
+  {
+    "api_name": "django.db.models.fields.TimeField.value_to_string",
+    "score": 0.650197628458498,
+    "rank": 156
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile.__eq__",
+    "score": 0.6441605839416058,
+    "rank": 160
+  },
+  {
+    "api_name": "django.db.models.fields.DurationField.get_db_converters",
+    "score": 0.6423487544483986,
+    "rank": 161
+  },
+  {
+    "api_name": "django.db.models.fields.BooleanField._check_null",
+    "score": 0.642,
+    "rank": 162
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField._check_decimal_places_and_max_digits",
+    "score": 0.642,
+    "rank": 162
+  },
+  {
+    "api_name": "django.db.models.fields.Field.get_db_converters",
+    "score": 0.642,
+    "rank": 162
+  },
+  {
+    "api_name": "django.db.models.fields.FilePathField._check_allowing_files_or_folders",
+    "score": 0.642,
+    "rank": 162
+  },
+  {
+    "api_name": "django.db.models.fields.GenericIPAddressField._check_blank_and_null_values",
+    "score": 0.642,
+    "rank": 162
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField._check_unique",
+    "score": 0.642,
+    "rank": 162
+  },
+  {
+    "api_name": "django.db.models.fields.PositiveIntegerRelDbTypeMixin.rel_db_type",
+    "score": 0.6360424028268551,
+    "rank": 168
+  },
+  {
+    "api_name": "django.db.models.fields.BinaryField.to_python",
+    "score": 0.6356589147286822,
+    "rank": 169
+  },
+  {
+    "api_name": "django.db.models.fields.mixins.FieldCacheMixin.delete_cached_value",
+    "score": 0.631578947368421,
+    "rank": 170
+  },
+  {
+    "api_name": "django.db.models.fields.Field.get_pk_value_on_save",
+    "score": 0.6142322097378277,
+    "rank": 171
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile._set_file",
+    "score": 0.6033519553072626,
+    "rank": 172
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileDescriptor.__init__",
+    "score": 0.6033519553072626,
+    "rank": 172
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.__init__",
+    "score": 0.6033519553072626,
+    "rank": 172
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor.__init__",
+    "score": 0.6033519553072626,
+    "rank": 172
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.get_db_prep_save",
+    "score": 0.6020066889632107,
+    "rank": 176
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.get_attname_column",
+    "score": 0.5931818181818183,
+    "rank": 177
+  },
+  {
+    "api_name": "django.db.models.fields.BooleanField.get_prep_value",
+    "score": 0.5916398713826367,
+    "rank": 178
+  },
+  {
+    "api_name": "django.db.models.fields.NullBooleanField.get_prep_value",
+    "score": 0.5916398713826367,
+    "rank": 178
+  },
+  {
+    "api_name": "django.db.models.fields.AutoField.check",
+    "score": 0.5854092526690392,
+    "rank": 180
+  },
+  {
+    "api_name": "django.db.models.fields.IntegerField.check",
+    "score": 0.5854092526690392,
+    "rank": 180
+  },
+  {
+    "api_name": "django.db.models.fields.files.ImageField.check",
+    "score": 0.5854092526690392,
+    "rank": 180
+  },
+  {
+    "api_name": "django.db.models.fields.Field.clone",
+    "score": 0.5747126436781611,
+    "rank": 183
+  },
+  {
+    "api_name": "django.db.models.fields.AutoField.validate",
+    "score": 0.5744680851063829,
+    "rank": 184
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile.closed",
+    "score": 0.5723684210526316,
+    "rank": 185
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.related_fields",
+    "score": 0.572265625,
+    "rank": 186
+  },
+  {
+    "api_name": "django.db.models.fields.BooleanField.check",
+    "score": 0.569204152249135,
+    "rank": 187
+  },
+  {
+    "api_name": "django.db.models.fields.CharField.check",
+    "score": 0.569204152249135,
+    "rank": 187
+  },
+  {
+    "api_name": "django.db.models.fields.FilePathField.check",
+    "score": 0.569204152249135,
+    "rank": 187
+  },
+  {
+    "api_name": "django.db.models.fields.GenericIPAddressField.check",
+    "score": 0.569204152249135,
+    "rank": 187
+  },
+  {
+    "api_name": "django.db.models.fields.Field.get_prep_value",
+    "score": 0.5672413793103448,
+    "rank": 191
+  },
+  {
+    "api_name": "django.db.models.fields.CharField.formfield",
+    "score": 0.5637583892617448,
+    "rank": 192
+  },
+  {
+    "api_name": "django.db.models.fields.TextField.formfield",
+    "score": 0.5637583892617448,
+    "rank": 192
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile.size",
+    "score": 0.5576208178438662,
+    "rank": 194
+  },
+  {
+    "api_name": "django.db.models.fields.Field.cast_db_type",
+    "score": 0.5555555555555556,
+    "rank": 195
+  },
+  {
+    "api_name": "django.db.models.fields.AutoField.get_prep_value",
+    "score": 0.5544554455445545,
+    "rank": 196
+  },
+  {
+    "api_name": "django.db.models.fields.FilePathField.get_prep_value",
+    "score": 0.5544554455445545,
+    "rank": 196
+  },
+  {
+    "api_name": "django.db.models.fields.FloatField.get_prep_value",
+    "score": 0.5544554455445545,
+    "rank": 196
+  },
+  {
+    "api_name": "django.db.models.fields.IPAddressField.get_prep_value",
+    "score": 0.5544554455445545,
+    "rank": 196
+  },
+  {
+    "api_name": "django.db.models.fields.IntegerField.get_prep_value",
+    "score": 0.5544554455445545,
+    "rank": 196
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileField.get_prep_value",
+    "score": 0.5544554455445545,
+    "rank": 196
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.get_db_converters",
+    "score": 0.5520134228187918,
+    "rank": 202
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileDescriptor.__set__",
+    "score": 0.5510204081632653,
+    "rank": 203
+  },
+  {
+    "api_name": "django.db.models.fields.mixins.FieldCacheMixin.set_cached_value",
+    "score": 0.5510204081632653,
+    "rank": 203
+  },
+  {
+    "api_name": "django.db.models.fields.Field._check_backend_specific_checks",
+    "score": 0.5504587155963303,
+    "rank": 205
+  },
+  {
+    "api_name": "django.db.models.fields.AutoField._check_primary_key",
+    "score": 0.5429184549356224,
+    "rank": 206
+  },
+  {
+    "api_name": "django.db.models.fields.Field._check_db_index",
+    "score": 0.5429184549356224,
+    "rank": 206
+  },
+  {
+    "api_name": "django.db.models.fields.Field._check_null_allowed_for_primary_keys",
+    "score": 0.5429184549356224,
+    "rank": 206
+  },
+  {
+    "api_name": "django.db.models.fields.IntegerField._check_max_length_warning",
+    "score": 0.5429184549356224,
+    "rank": 206
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileField._check_primary_key",
+    "score": 0.5429184549356224,
+    "rank": 206
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileField._check_upload_to",
+    "score": 0.5429184549356224,
+    "rank": 206
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ReverseManyToOneDescriptor.__set__",
+    "score": 0.5427135678391959,
+    "rank": 212
+  },
+  {
+    "api_name": "django.db.models.fields.EmailField.deconstruct",
+    "score": 0.5348360655737705,
+    "rank": 213
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ReverseManyToOneDescriptor.__init__",
+    "score": 0.5294117647058824,
+    "rank": 214
+  },
+  {
+    "api_name": "django.db.models.fields.DurationField.get_db_prep_value",
+    "score": 0.5257142857142857,
+    "rank": 215
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile.open",
+    "score": 0.5231884057971014,
+    "rank": 216
+  },
+  {
+    "api_name": "django.db.models.fields.DateField.get_db_prep_value",
+    "score": 0.5201238390092878,
+    "rank": 217
+  },
+  {
+    "api_name": "django.db.models.fields.DateTimeField.get_db_prep_value",
+    "score": 0.5201238390092878,
+    "rank": 217
+  },
+  {
+    "api_name": "django.db.models.fields.GenericIPAddressField.get_db_prep_value",
+    "score": 0.5201238390092878,
+    "rank": 217
+  },
+  {
+    "api_name": "django.db.models.fields.TimeField.get_db_prep_value",
+    "score": 0.5201238390092878,
+    "rank": 217
+  },
+  {
+    "api_name": "django.db.models.fields.DateTimeCheckMixin.check",
+    "score": 0.5189274447949526,
+    "rank": 221
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileField.check",
+    "score": 0.5189274447949526,
+    "rank": 221
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.check",
+    "score": 0.5189274447949526,
+    "rank": 221
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.check",
+    "score": 0.5189274447949526,
+    "rank": 221
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.get_lookups",
+    "score": 0.5183566433566432,
+    "rank": 225
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile._get_file",
+    "score": 0.5158450704225352,
+    "rank": 226
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ManyToOneRel.__getstate__",
+    "score": 0.509765625,
+    "rank": 227
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.convert_empty_strings",
+    "score": 0.5088028169014085,
+    "rank": 228
+  },
+  {
+    "api_name": "django.db.models.fields.CharField._check_max_length_attribute",
+    "score": 0.5079113924050633,
+    "rank": 229
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileField.pre_save",
+    "score": 0.504601226993865,
+    "rank": 230
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.get_limit_choices_to",
+    "score": 0.503875968992248,
+    "rank": 231
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.formfield",
+    "score": 0.5029940119760479,
+    "rank": 232
+  },
+  {
+    "api_name": "django.db.models.fields.Field.save_form_data",
+    "score": 0.5023255813953489,
+    "rank": 233
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.save_form_data",
+    "score": 0.5023255813953489,
+    "rank": 233
+  },
+  {
+    "api_name": "django.db.models.fields.BinaryField.deconstruct",
+    "score": 0.5,
+    "rank": 235
+  },
+  {
+    "api_name": "django.db.models.fields.BooleanField.deconstruct",
+    "score": 0.5,
+    "rank": 235
+  },
+  {
+    "api_name": "django.db.models.fields.IPAddressField.deconstruct",
+    "score": 0.5,
+    "rank": 235
+  },
+  {
+    "api_name": "django.db.models.fields.UUIDField.deconstruct",
+    "score": 0.5,
+    "rank": 235
+  },
+  {
+    "api_name": "django.db.models.fields.Field.db_check",
+    "score": 0.4957865168539326,
+    "rank": 239
+  },
+  {
+    "api_name": "django.db.models.fields.Field.db_type",
+    "score": 0.4957865168539326,
+    "rank": 239
+  },
+  {
+    "api_name": "django.db.models.fields.BooleanField.formfield",
+    "score": 0.49557522123893794,
+    "rank": 241
+  },
+  {
+    "api_name": "django.db.models.fields.Field.get_db_prep_value",
+    "score": 0.49548192771084343,
+    "rank": 242
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.target_field",
+    "score": 0.49245283018867925,
+    "rank": 243
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.target_field",
+    "score": 0.49245283018867925,
+    "rank": 243
+  },
+  {
+    "api_name": "django.db.models.fields.AutoField.to_python",
+    "score": 0.49101796407185627,
+    "rank": 245
+  },
+  {
+    "api_name": "django.db.models.fields.FloatField.to_python",
+    "score": 0.49101796407185627,
+    "rank": 245
+  },
+  {
+    "api_name": "django.db.models.fields.IntegerField.to_python",
+    "score": 0.49101796407185627,
+    "rank": 245
+  },
+  {
+    "api_name": "django.db.models.fields.UUIDField.to_python",
+    "score": 0.49101796407185627,
+    "rank": 245
+  },
+  {
+    "api_name": "django.db.models.fields.Field.db_parameters",
+    "score": 0.48525073746312675,
+    "rank": 249
+  },
+  {
+    "api_name": "django.db.models.fields.Field.get_attname_column",
+    "score": 0.4851301115241635,
+    "rank": 250
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.get_attname_column",
+    "score": 0.4851301115241635,
+    "rank": 250
+  },
+  {
+    "api_name": "django.db.models.fields.files.ImageField._check_image_library_installed",
+    "score": 0.48282442748091603,
+    "rank": 252
+  },
+  {
+    "api_name": "django.db.models.fields.AutoField.__init__",
+    "score": 0.4821428571428571,
+    "rank": 253
+  },
+  {
+    "api_name": "django.db.models.fields.BooleanField.__init__",
+    "score": 0.4821428571428571,
+    "rank": 253
+  },
+  {
+    "api_name": "django.db.models.fields.IPAddressField.__init__",
+    "score": 0.4821428571428571,
+    "rank": 253
+  },
+  {
+    "api_name": "django.db.models.fields.UUIDField.__init__",
+    "score": 0.4821428571428571,
+    "rank": 253
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ManyToManyDescriptor.__init__",
+    "score": 0.4821428571428571,
+    "rank": 253
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile._del_file",
+    "score": 0.48051948051948057,
+    "rank": 258
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.set_attributes_from_rel",
+    "score": 0.48051948051948057,
+    "rank": 258
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.formfield",
+    "score": 0.4786324786324785,
+    "rank": 260
+  },
+  {
+    "api_name": "django.db.models.fields.Field.get_col",
+    "score": 0.47745358090185674,
+    "rank": 261
+  },
+  {
+    "api_name": "django.db.models.fields.files.ImageFieldFile.delete",
+    "score": 0.4757709251101323,
+    "rank": 262
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField._check_referencing_to_swapped_model",
+    "score": 0.4755639097744361,
+    "rank": 263
+  },
+  {
+    "api_name": "django.db.models.fields.mixins.FieldCacheMixin.get_cache_name",
+    "score": 0.4713375796178344,
+    "rank": 264
+  },
+  {
+    "api_name": "django.db.models.fields.AutoField.deconstruct",
+    "score": 0.46942446043165453,
+    "rank": 265
+  },
+  {
+    "api_name": "django.db.models.fields.NullBooleanField.deconstruct",
+    "score": 0.46942446043165453,
+    "rank": 265
+  },
+  {
+    "api_name": "django.db.models.fields.CharField.__init__",
+    "score": 0.4595744680851064,
+    "rank": 267
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.do_related_class",
+    "score": 0.4595744680851064,
+    "rank": 267
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ManyToOneRel.set_field_name",
+    "score": 0.45679012345679015,
+    "rank": 269
+  },
+  {
+    "api_name": "django.db.models.fields.URLField.deconstruct",
+    "score": 0.45155709342560557,
+    "rank": 270
+  },
+  {
+    "api_name": "django.db.models.fields.related.OneToOneField.deconstruct",
+    "score": 0.45155709342560557,
+    "rank": 270
+  },
+  {
+    "api_name": "django.db.models.fields.Field.clean",
+    "score": 0.44822888283378737,
+    "rank": 272
+  },
+  {
+    "api_name": "django.db.models.fields.NullBooleanField.__init__",
+    "score": 0.4481327800829875,
+    "rank": 273
+  },
+  {
+    "api_name": "django.db.models.fields.proxy.OrderWrt.__init__",
+    "score": 0.4481327800829875,
+    "rank": 273
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField.to_python",
+    "score": 0.4411764705882353,
+    "rank": 275
+  },
+  {
+    "api_name": "django.db.models.fields.BooleanField.to_python",
+    "score": 0.4408602150537635,
+    "rank": 276
+  },
+  {
+    "api_name": "django.db.models.fields.Field.__copy__",
+    "score": 0.4379194630872483,
+    "rank": 277
+  },
+  {
+    "api_name": "django.db.models.fields.related_lookups.RelatedIn.get_prep_lookup",
+    "score": 0.43790849673202603,
+    "rank": 278
+  },
+  {
+    "api_name": "django.db.models.fields.AutoField.get_db_prep_value",
+    "score": 0.4374999999999998,
+    "rank": 279
+  },
+  {
+    "api_name": "django.db.models.fields.Field._check_validators",
+    "score": 0.43499999999999994,
+    "rank": 280
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ManyToOneRel.get_related_field",
+    "score": 0.4335548172757475,
+    "rank": 281
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.set_field_name",
+    "score": 0.432748538011696,
+    "rank": 282
+  },
+  {
+    "api_name": "django.db.models.fields.DateField.pre_save",
+    "score": 0.43157894736842106,
+    "rank": 283
+  },
+  {
+    "api_name": "django.db.models.fields.DateTimeField.pre_save",
+    "score": 0.43157894736842106,
+    "rank": 283
+  },
+  {
+    "api_name": "django.db.models.fields.TimeField.pre_save",
+    "score": 0.43157894736842106,
+    "rank": 283
+  },
+  {
+    "api_name": "django.db.models.fields.Field._check_deprecation_details",
+    "score": 0.42307692307692313,
+    "rank": 286
+  },
+  {
+    "api_name": "django.db.models.fields.EmailField.__init__",
+    "score": 0.41538461538461524,
+    "rank": 287
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.contribute_to_related_class",
+    "score": 0.41538461538461524,
+    "rank": 287
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileField.generate_filename",
+    "score": 0.41348314606741565,
+    "rank": 289
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField._check_ignored_options",
+    "score": 0.41022443890274307,
+    "rank": 290
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.get_default",
+    "score": 0.40752351097178685,
+    "rank": 291
+  },
+  {
+    "api_name": "django.db.models.fields.Field.__deepcopy__",
+    "score": 0.4071782178217821,
+    "rank": 292
+  },
+  {
+    "api_name": "django.db.models.fields.DateTimeCheckMixin._check_mutually_exclusive_options",
+    "score": 0.40675241157556274,
+    "rank": 293
+  },
+  {
+    "api_name": "django.db.models.fields.mixins.FieldCacheMixin.get_cached_value",
+    "score": 0.4053030303030304,
+    "rank": 294
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileField.contribute_to_class",
+    "score": 0.4029850746268656,
+    "rank": 295
+  },
+  {
+    "api_name": "django.db.models.fields.related_lookups.RelatedLookupMixin.get_prep_lookup",
+    "score": 0.401197604790419,
+    "rank": 296
+  },
+  {
+    "api_name": "django.db.models.fields.BinaryField.get_db_prep_value",
+    "score": 0.40108401084010836,
+    "rank": 297
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField._get_m2m_db_table",
+    "score": 0.39572192513368987,
+    "rank": 298
+  },
+  {
+    "api_name": "django.db.models.fields.related.OneToOneField.__init__",
+    "score": 0.3941605839416058,
+    "rank": 299
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.check",
+    "score": 0.3907363420427551,
+    "rank": 300
+  },
+  {
+    "api_name": "django.db.models.fields.related_lookups.MultiColSource.__init__",
+    "score": 0.38709677419354827,
+    "rank": 301
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.check",
+    "score": 0.38705882352941157,
+    "rank": 302
+  },
+  {
+    "api_name": "django.db.models.fields.BinaryField.__init__",
+    "score": 0.38571428571428557,
+    "rank": 303
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.formfield",
+    "score": 0.3844393592677344,
+    "rank": 304
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile._require_file",
+    "score": 0.3834196891191711,
+    "rank": 305
+  },
+  {
+    "api_name": "django.db.models.fields.AutoField.contribute_to_class",
+    "score": 0.3829787234042552,
+    "rank": 306
+  },
+  {
+    "api_name": "django.db.models.fields.URLField.__init__",
+    "score": 0.3789473684210525,
+    "rank": 307
+  },
+  {
+    "api_name": "django.db.models.fields.Field._get_flatchoices",
+    "score": 0.3782608695652173,
+    "rank": 308
+  },
+  {
+    "api_name": "django.db.models.fields.GenericIPAddressField.get_prep_value",
+    "score": 0.37788018433179726,
+    "rank": 309
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileField.save_form_data",
+    "score": 0.3749999999999999,
+    "rank": 310
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField.deconstruct",
+    "score": 0.3728571428571428,
+    "rank": 311
+  },
+  {
+    "api_name": "django.db.models.fields.files.ImageField.deconstruct",
+    "score": 0.3728571428571428,
+    "rank": 311
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField.check",
+    "score": 0.37217194570135737,
+    "rank": 313
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.contribute_to_class",
+    "score": 0.3686006825938566,
+    "rank": 314
+  },
+  {
+    "api_name": "django.db.models.fields.BinaryField.get_default",
+    "score": 0.36773255813953487,
+    "rank": 315
+  },
+  {
+    "api_name": "django.db.models.fields.related.OneToOneField.save_form_data",
+    "score": 0.36610169491525413,
+    "rank": 316
+  },
+  {
+    "api_name": "django.db.models.fields.files.ImageField.contribute_to_class",
+    "score": 0.3648648648648647,
+    "rank": 317
+  },
+  {
+    "api_name": "django.db.models.fields.Field.__reduce__",
+    "score": 0.36455331412103753,
+    "rank": 318
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField.__init__",
+    "score": 0.3612040133779263,
+    "rank": 319
+  },
+  {
+    "api_name": "django.db.models.fields.files.ImageField.__init__",
+    "score": 0.3612040133779263,
+    "rank": 319
+  },
+  {
+    "api_name": "django.db.models.fields.Field.__str__",
+    "score": 0.3607594936708859,
+    "rank": 321
+  },
+  {
+    "api_name": "django.db.models.fields.GenericIPAddressField.to_python",
+    "score": 0.3580786026200873,
+    "rank": 322
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileField.deconstruct",
+    "score": 0.35558583106267017,
+    "rank": 323
+  },
+  {
+    "api_name": "django.db.models.fields.Field._check_choices",
+    "score": 0.35434173669467794,
+    "rank": 324
+  },
+  {
+    "api_name": "django.db.models.fields.Field._get_default",
+    "score": 0.35434173669467794,
+    "rank": 324
+  },
+  {
+    "api_name": "django.db.models.fields.Field.check",
+    "score": 0.3507462686567163,
+    "rank": 326
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile.__init__",
+    "score": 0.35064935064935066,
+    "rank": 327
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.swappable_setting",
+    "score": 0.34756097560975596,
+    "rank": 328
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.get_instance_value_for_fields",
+    "score": 0.34558823529411764,
+    "rank": 329
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey._check_on_delete",
+    "score": 0.3437499999999999,
+    "rank": 330
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField._check_relation_model_exists",
+    "score": 0.3437499999999998,
+    "rank": 331
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.contribute_to_related_class",
+    "score": 0.34285714285714275,
+    "rank": 332
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ForwardOneToOneDescriptor.get_object",
+    "score": 0.34011090573012914,
+    "rank": 333
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.get_accessor_name",
+    "score": 0.33920187793427214,
+    "rank": 334
+  },
+  {
+    "api_name": "django.db.models.fields.NullBooleanField.to_python",
+    "score": 0.3360655737704916,
+    "rank": 335
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile.delete",
+    "score": 0.3352668213457076,
+    "rank": 336
+  },
+  {
+    "api_name": "django.db.models.fields.Field._check_field_name",
+    "score": 0.3311518324607329,
+    "rank": 337
+  },
+  {
+    "api_name": "django.db.models.fields.GenericIPAddressField.deconstruct",
+    "score": 0.3303797468354429,
+    "rank": 338
+  },
+  {
+    "api_name": "django.db.models.fields.DateField.deconstruct",
+    "score": 0.32954545454545436,
+    "rank": 339
+  },
+  {
+    "api_name": "django.db.models.fields.UUIDField.get_db_prep_value",
+    "score": 0.3291571753986332,
+    "rank": 340
+  },
+  {
+    "api_name": "django.db.models.fields.DateField.contribute_to_class",
+    "score": 0.32530120481927705,
+    "rank": 341
+  },
+  {
+    "api_name": "django.db.models.fields.files.ImageFileDescriptor.__set__",
+    "score": 0.32530120481927705,
+    "rank": 341
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.deconstruct",
+    "score": 0.323821339950372,
+    "rank": 343
+  },
+  {
+    "api_name": "django.db.models.fields.SlugField.deconstruct",
+    "score": 0.32301980198019786,
+    "rank": 344
+  },
+  {
+    "api_name": "django.db.models.fields.DurationField.to_python",
+    "score": 0.32228915662650603,
+    "rank": 345
+  },
+  {
+    "api_name": "django.db.models.fields.Field.__repr__",
+    "score": 0.32122093023255804,
+    "rank": 346
+  },
+  {
+    "api_name": "django.db.models.fields.TimeField.deconstruct",
+    "score": 0.3167475728155339,
+    "rank": 347
+  },
+  {
+    "api_name": "django.db.models.fields.SlugField.__init__",
+    "score": 0.31395348837209314,
+    "rank": 348
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField._check_decimal_places",
+    "score": 0.31311881188118806,
+    "rank": 349
+  },
+  {
+    "api_name": "django.db.models.fields.DecimalField._check_max_digits",
+    "score": 0.31311881188118806,
+    "rank": 349
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField._get_m2m_attr",
+    "score": 0.30654205607476614,
+    "rank": 351
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.set_attributes_from_rel",
+    "score": 0.3045267489711935,
+    "rank": 352
+  },
+  {
+    "api_name": "django.db.models.fields.Field.run_validators",
+    "score": 0.3023012552301254,
+    "rank": 353
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile.close",
+    "score": 0.30081300813008116,
+    "rank": 354
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ManyToManyRel.get_related_field",
+    "score": 0.296590909090909,
+    "rank": 355
+  },
+  {
+    "api_name": "django.db.models.fields.Field.set_attributes_from_name",
+    "score": 0.2950819672131145,
+    "rank": 356
+  },
+  {
+    "api_name": "django.db.models.fields.DateTimeField.get_prep_value",
+    "score": 0.29480286738351236,
+    "rank": 357
+  },
+  {
+    "api_name": "django.db.models.fields.DateField.__init__",
+    "score": 0.2926829268292682,
+    "rank": 358
+  },
+  {
+    "api_name": "django.db.models.fields.TimeField.__init__",
+    "score": 0.2926829268292682,
+    "rank": 358
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ManyToOneRel.__init__",
+    "score": 0.28877005347593565,
+    "rank": 360
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.OneToOneRel.__init__",
+    "score": 0.28877005347593565,
+    "rank": 360
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.get_reverse_related_filter",
+    "score": 0.2867063492063492,
+    "rank": 362
+  },
+  {
+    "api_name": "django.db.models.fields.TimeField.to_python",
+    "score": 0.28521739130434764,
+    "rank": 363
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor.get_prefetch_queryset",
+    "score": 0.28203124999999996,
+    "rank": 364
+  },
+  {
+    "api_name": "django.db.models.fields.related_lookups.RelatedLookupMixin.as_sql",
+    "score": 0.27516778523489904,
+    "rank": 365
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileField.__init__",
+    "score": 0.2741116751269034,
+    "rank": 366
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.resolve_related_fields",
+    "score": 0.2609999999999998,
+    "rank": 367
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ForwardOneToOneDescriptor.__set__",
+    "score": 0.2602409638554215,
+    "rank": 368
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject._check_to_fields_exist",
+    "score": 0.25938967136150215,
+    "rank": 369
+  },
+  {
+    "api_name": "django.db.models.fields.files.FieldFile.save",
+    "score": 0.2577565632458233,
+    "rank": 370
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.deconstruct",
+    "score": 0.257396449704142,
+    "rank": 371
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.validate",
+    "score": 0.2499999999999999,
+    "rank": 372
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField._check_related_query_name_is_valid",
+    "score": 0.24720357941834448,
+    "rank": 373
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField._check_related_name_is_valid",
+    "score": 0.2466517857142858,
+    "rank": 374
+  },
+  {
+    "api_name": "django.db.models.fields.FilePathField.__init__",
+    "score": 0.24324324324324298,
+    "rank": 375
+  },
+  {
+    "api_name": "django.db.models.fields.GenericIPAddressField.__init__",
+    "score": 0.24324324324324298,
+    "rank": 375
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField._check_table_uniqueness",
+    "score": 0.24123539232053415,
+    "rank": 377
+  },
+  {
+    "api_name": "django.db.models.fields.FilePathField.deconstruct",
+    "score": 0.23555956678700352,
+    "rank": 378
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ForeignObjectRel.__init__",
+    "score": 0.23225806451612896,
+    "rank": 379
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.get_prefetch_queryset",
+    "score": 0.227044025157233,
+    "rank": 380
+  },
+  {
+    "api_name": "django.db.models.fields.IntegerField.validators",
+    "score": 0.22193877551020402,
+    "rank": 381
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField._get_m2m_reverse_attr",
+    "score": 0.21954484605087043,
+    "rank": 382
+  },
+  {
+    "api_name": "django.db.models.fields.Field.validate",
+    "score": 0.21827794561933522,
+    "rank": 383
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.__get__",
+    "score": 0.2098039215686276,
+    "rank": 384
+  },
+  {
+    "api_name": "django.db.models.fields.DateField.to_python",
+    "score": 0.20641562064156216,
+    "rank": 385
+  },
+  {
+    "api_name": "django.db.models.fields.Field.contribute_to_class",
+    "score": 0.2037735849056601,
+    "rank": 386
+  },
+  {
+    "api_name": "django.db.models.fields.Field.get_choices",
+    "score": 0.20323488045007043,
+    "rank": 387
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor.__get__",
+    "score": 0.20012468827930208,
+    "rank": 388
+  },
+  {
+    "api_name": "django.db.models.fields.Field.formfield",
+    "score": 0.19928825622775814,
+    "rank": 389
+  },
+  {
+    "api_name": "django.db.models.fields.reverse_related.ManyToManyRel.__init__",
+    "score": 0.19217081850533801,
+    "rank": 390
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.deconstruct",
+    "score": 0.19162995594713672,
+    "rank": 391
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject.__init__",
+    "score": 0.1914893617021276,
+    "rank": 392
+  },
+  {
+    "api_name": "django.db.models.fields.files.ImageField.update_dimension_fields",
+    "score": 0.17995018679950203,
+    "rank": 393
+  },
+  {
+    "api_name": "django.db.models.fields.files.FileDescriptor.__get__",
+    "score": 0.17853170189099044,
+    "rank": 394
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField.contribute_to_class",
+    "score": 0.1761827079934748,
+    "rank": 395
+  },
+  {
+    "api_name": "django.db.models.fields.related_lookups.RelatedIn.as_sql",
+    "score": 0.17172774869109986,
+    "rank": 396
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.contribute_to_class",
+    "score": 0.1664098613251157,
+    "rank": 397
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.deconstruct",
+    "score": 0.16456494325346838,
+    "rank": 398
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField._get_path_info",
+    "score": 0.16206896551724181,
+    "rank": 399
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.contribute_to_related_class",
+    "score": 0.16191904047976025,
+    "rank": 400
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignKey.__init__",
+    "score": 0.1616766467065872,
+    "rank": 401
+  },
+  {
+    "api_name": "django.db.models.fields.Field.deconstruct",
+    "score": 0.1511867905056764,
+    "rank": 402
+  },
+  {
+    "api_name": "django.db.models.fields.DateTimeField.to_python",
+    "score": 0.1490433031218532,
+    "rank": 403
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField.__init__",
+    "score": 0.14285714285714324,
+    "rank": 404
+  },
+  {
+    "api_name": "django.db.models.fields.DateField._check_fix_default_value",
+    "score": 0.12571103526734972,
+    "rank": 405
+  },
+  {
+    "api_name": "django.db.models.fields.related.ForeignObject._check_unique_target",
+    "score": 0.12471783295711092,
+    "rank": 406
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ReverseOneToOneDescriptor.__set__",
+    "score": 0.11203319502074749,
+    "rank": 407
+  },
+  {
+    "api_name": "django.db.models.fields.TimeField._check_fix_default_value",
+    "score": 0.10984095427435436,
+    "rank": 408
+  },
+  {
+    "api_name": "django.db.models.fields.DateTimeField._check_fix_default_value",
+    "score": 0.10801564027370536,
+    "rank": 409
+  },
+  {
+    "api_name": "django.db.models.fields.related_descriptors.ForwardManyToOneDescriptor.__set__",
+    "score": 0.10588235294117698,
+    "rank": 410
+  },
+  {
+    "api_name": "django.db.models.fields.related.RelatedField._check_clashes",
+    "score": 0.10365853658536661,
+    "rank": 411
+  },
+  {
+    "api_name": "django.db.models.fields.related.ManyToManyField._check_relationship_model",
+    "score": 0.08457583547557923,
+    "rank": 412
+  },
+  {
+    "api_name": "django.db.models.fields.Field.__init__",
+    "score": 0.07584269662921417,
+    "rank": 413
+  }
+]

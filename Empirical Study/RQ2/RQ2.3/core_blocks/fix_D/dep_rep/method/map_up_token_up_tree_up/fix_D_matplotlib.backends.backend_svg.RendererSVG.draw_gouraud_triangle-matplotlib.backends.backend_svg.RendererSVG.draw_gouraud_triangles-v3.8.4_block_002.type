@@ -1,0 +1,14 @@
+# detail
+Number of changes: 2
+
+1. Added | Conditional statement
+   Added an `if not self._has_gouraud` conditional statement that sets `self._has_gouraud` and writes two `filter` elements when the condition is satisfied.
+   This includes:
+
+   * Assignment statement: assign `True` to `self._has_gouraud`;
+   * Method calls: call `writer.start`, `writer.element`, and `writer.end` to write elements related to `colorAdd` and `colorMat`.
+
+2. Modified | Loop statement
+   Changed the iteration variables from `tri, col` to `points, colors`, and changed the arguments of `_draw_gouraud_triangle` in the loop body from `gc, tri, col, transform` to `trans_and_flip.transform(points), colors`.
+# /detail
+# mode：Add conditional statement; Modify for loop (rename loop variables and modify internal call arguments)

@@ -1,0 +1,100 @@
+{
+  "case": "django.utils.http.cookie_date-django.utils.http.http_date-2.0.8",
+  "fix_type": "fix_R",
+  "candidate_api": "django.utils.http.http_date",
+  "error": null,
+  "threshold_10pct": 27.6,
+  "algorithms_meeting_threshold": [
+    "tokenBased",
+    "treeBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 35,
+      "vi_rank": 31,
+      "delta": 4,
+      "exceeds_10pct": false
+    },
+    "tokenBased": {
+      "vi1_rank": 5,
+      "vi_rank": 52,
+      "delta": -47,
+      "exceeds_10pct": true
+    },
+    "treeBased": {
+      "vi1_rank": 33,
+      "vi_rank": 128,
+      "delta": -95,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.6941,
+      "baseline_rank": 35,
+      "delta_baseline_to_vi": 4
+    },
+    "tokenBased": {
+      "baseline_score": 0.3611,
+      "baseline_rank": 5,
+      "delta_baseline_to_vi": -47
+    },
+    "treeBased": {
+      "baseline_score": 0.4889,
+      "baseline_rank": 33,
+      "delta_baseline_to_vi": -95
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 31,
+          "vi_score": 0.6401,
+          "restored_score": 0.6941,
+          "restored_rank": 35,
+          "delta_vi_to_restored": -4
+        },
+        "tokenBased": {
+          "vi_rank": 52,
+          "vi_score": 0.3023,
+          "restored_score": 0.3611,
+          "restored_rank": 5,
+          "delta_vi_to_restored": 47,
+          "distance_to_baseline": 0
+        },
+        "treeBased": {
+          "vi_rank": 128,
+          "vi_score": 0.4151,
+          "restored_score": 0.4889,
+          "restored_rank": 33,
+          "delta_vi_to_restored": 95,
+          "distance_to_baseline": 0
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "tokenBased": [
+      "block_001"
+    ],
+    "treeBased": [
+      "block_001"
+    ],
+    "mapBased": [
+      "block_001"
+    ]
+  },
+  "block_sign_labels": {
+    "map_up_token_down_tree_down": [
+      "block_001"
+    ]
+  }
+}

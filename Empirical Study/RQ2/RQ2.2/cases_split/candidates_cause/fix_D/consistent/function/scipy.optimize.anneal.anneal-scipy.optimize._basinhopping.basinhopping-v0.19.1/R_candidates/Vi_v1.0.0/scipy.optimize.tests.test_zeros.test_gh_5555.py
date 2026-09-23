@@ -1,0 +1,13 @@
+def test_gh_5555():
+    root = 0.1
+
+    def f(x):
+        return x - root
+
+    methods = [cc.bisect, cc.ridder]
+    xtol = 4*finfo(float).eps
+    rtol = 4*finfo(float).eps
+    for method in methods:
+        res = method(f, -1e8, 1e7, xtol=xtol, rtol=rtol)
+        assert_allclose(root, res, atol=xtol, rtol=rtol,
+                        err_msg='method %s' % method.__name__)

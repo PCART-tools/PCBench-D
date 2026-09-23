@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Changed the method-body implementation from parsing `pattern`, calling `_pyexpr.str_count_match`, and wrapping the result to directly returning `self.count_matches(pattern)`.
+   The original implementation included:
+
+   * Assignment statement: assign `parse_as_expression(pattern, str_as_lit=True)` to `pattern`;
+   * Return statement: return `wrap_expr(self._pyexpr.str_count_match(pattern))`.
+
+   The new implementation includes:
+
+   * Return statement: return `self.count_matches(pattern)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

@@ -1,0 +1,5 @@
+@@ -8,3 +8,3 @@
+         if usetex:
+-            verts, codes = text_to_path.get_text_path(prop, s, usetex=True)
++            return text_to_path.get_text_path(prop, s, usetex=True)
+         else:

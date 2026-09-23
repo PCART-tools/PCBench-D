@@ -1,0 +1,20 @@
+@@ -137,12 +51,9 @@
+         """
+-        index_column = parse_as_expression(index_column)
+-        if offset is None:
+-            offset = _negate_duration(_timedelta_to_pl_duration(period))
+-
+-        pyexprs_by = parse_as_list_of_expressions(by) if by is not None else []
+-        period = _timedelta_to_pl_duration(period)
+-        offset = _timedelta_to_pl_duration(offset)
+-
+-        lgb = self._ldf.group_by_rolling(
+-            index_column, period, offset, closed, pyexprs_by, check_sorted
++        return self.rolling(
++            index_column,
++            period=period,
++            offset=offset,
++            closed=closed,
++            by=by,
++            check_sorted=check_sorted,
+         )

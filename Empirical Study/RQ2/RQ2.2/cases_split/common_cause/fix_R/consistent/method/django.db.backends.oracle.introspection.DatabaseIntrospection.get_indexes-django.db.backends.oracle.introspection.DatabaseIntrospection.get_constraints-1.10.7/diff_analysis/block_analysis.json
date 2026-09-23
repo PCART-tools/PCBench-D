@@ -1,0 +1,100 @@
+{
+  "case": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_indexes-django.db.backends.oracle.introspection.DatabaseIntrospection.get_constraints-1.10.7",
+  "fix_type": "fix_R",
+  "candidate_api": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_constraints",
+  "error": null,
+  "threshold_10pct": 14.7,
+  "algorithms_meeting_threshold": [
+    "mapBased",
+    "treeBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 32,
+      "vi_rank": 11,
+      "delta": 21,
+      "exceeds_10pct": true
+    },
+    "tokenBased": {
+      "vi1_rank": 43,
+      "vi_rank": 32,
+      "delta": 11,
+      "exceeds_10pct": false
+    },
+    "treeBased": {
+      "vi1_rank": 85,
+      "vi_rank": 51,
+      "delta": 34,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.5528,
+      "baseline_rank": 32,
+      "delta_baseline_to_vi": 21
+    },
+    "tokenBased": {
+      "baseline_score": 0.2903,
+      "baseline_rank": 43,
+      "delta_baseline_to_vi": 11
+    },
+    "treeBased": {
+      "baseline_score": 0.381,
+      "baseline_rank": 85,
+      "delta_baseline_to_vi": 34
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 11,
+          "vi_score": 0.5902,
+          "restored_score": 0.5528,
+          "restored_rank": 32,
+          "delta_vi_to_restored": -21,
+          "distance_to_baseline": 0
+        },
+        "tokenBased": {
+          "vi_rank": 32,
+          "vi_score": 0.3185,
+          "restored_score": 0.2903,
+          "restored_rank": 43,
+          "delta_vi_to_restored": -11
+        },
+        "treeBased": {
+          "vi_rank": 51,
+          "vi_score": 0.4128,
+          "restored_score": 0.381,
+          "restored_rank": 85,
+          "delta_vi_to_restored": -34,
+          "distance_to_baseline": 0
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "mapBased": [
+      "block_001"
+    ],
+    "treeBased": [
+      "block_001"
+    ],
+    "tokenBased": [
+      "block_001"
+    ]
+  },
+  "block_sign_labels": {
+    "map_up_token_up_tree_up": [
+      "block_001"
+    ]
+  }
+}

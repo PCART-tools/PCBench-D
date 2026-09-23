@@ -1,0 +1,21 @@
+import polars as pl
+import inspect
+
+def main():
+    # Create a LazyFrame with sample data
+    data = {"a": [1, 2, 3, 4, 5]}
+    lazy_df = pl.LazyFrame(data)
+
+    # Call the shift_and_fill method
+    result = lazy_df.shift_and_fill(periods=1, fill_value=0).collect()
+    print("shift_and_fill result:")
+    print(result)
+
+    print("-----getsource_output-----")
+    try:
+        print(inspect.getsource(pl.LazyFrame.shift_and_fill))
+    except Exception as e:
+        print(type(e).__name__)
+
+if __name__ == "__main__":
+    main()

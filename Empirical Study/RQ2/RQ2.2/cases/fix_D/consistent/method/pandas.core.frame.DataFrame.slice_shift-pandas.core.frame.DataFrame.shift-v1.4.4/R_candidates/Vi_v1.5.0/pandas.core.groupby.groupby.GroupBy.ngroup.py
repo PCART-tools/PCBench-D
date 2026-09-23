@@ -1,0 +1,76 @@
+    @final
+    @Substitution(name="groupby")
+    def ngroup(self, ascending: bool = True):
+        """
+        Number each group from 0 to the number of groups - 1.
+
+        This is the enumerative complement of cumcount.  Note that the
+        numbers given to the groups match the order in which the groups
+        would be seen when iterating over the groupby object, not the
+        order they are first observed.
+
+        Parameters
+        ----------
+        ascending : bool, default True
+            If False, number in reverse, from number of group - 1 to 0.
+
+        Returns
+        -------
+        Series
+            Unique numbers for each group.
+
+        See Also
+        --------
+        .cumcount : Number the rows in each group.
+
+        Examples
+        --------
+        >>> df = pd.DataFrame({"A": list("aaabba")})
+        >>> df
+           A
+        0  a
+        1  a
+        2  a
+        3  b
+        4  b
+        5  a
+        >>> df.groupby('A').ngroup()
+        0    0
+        1    0
+        2    0
+        3    1
+        4    1
+        5    0
+        dtype: int64
+        >>> df.groupby('A').ngroup(ascending=False)
+        0    1
+        1    1
+        2    1
+        3    0
+        4    0
+        5    1
+        dtype: int64
+        >>> df.groupby(["A", [1,1,2,3,2,1]]).ngroup()
+        0    0
+        1    0
+        2    1
+        3    3
+        4    2
+        5    0
+        dtype: int64
+        """
+        with self._group_selection_context():
+            index = self._selected_obj.index
+            comp_ids = self.grouper.group_info[0]
+
+            dtype: type
+            if self.grouper.has_dropped_na:
+                comp_ids = np.where(comp_ids == -1, np.nan, comp_ids)
+                dtype = np.float64
+            else:
+                dtype = np.int64
+
+            result = self._obj_1d_constructor(comp_ids, index, dtype=dtype)
+            if not ascending:
+                result = self.ngroups - 1 - result
+            return result

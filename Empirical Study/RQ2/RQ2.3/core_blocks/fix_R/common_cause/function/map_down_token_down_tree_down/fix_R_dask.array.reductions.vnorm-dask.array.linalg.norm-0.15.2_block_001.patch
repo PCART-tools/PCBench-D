@@ -1,0 +1,6 @@
+@@ -17,5 +17,2 @@
+                    split_every=split_every, out=out)
+-    elif ord % 2 == 0:
+-        return sum(a ** ord, axis=axis, dtype=dtype, keepdims=keepdims,
+-                   split_every=split_every, out=out) ** (1. / ord)
+     else:

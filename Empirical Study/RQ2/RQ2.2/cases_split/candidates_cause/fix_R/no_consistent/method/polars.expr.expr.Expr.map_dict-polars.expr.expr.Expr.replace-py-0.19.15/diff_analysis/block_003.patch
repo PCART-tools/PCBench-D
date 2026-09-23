@@ -1,0 +1,9 @@
+@@ -10,4 +17,6 @@
+  
+-        Needs a global string cache for lazily evaluated queries on columns of
+-        type `pl.Categorical`.
++        .. deprecated:: 0.19.16
++            This method has been renamed to :meth:`replace`. The default behavior
++            has changed to keep any values not present in the mapping unchanged.
++            Pass `default=None` to keep existing behavior.
+  

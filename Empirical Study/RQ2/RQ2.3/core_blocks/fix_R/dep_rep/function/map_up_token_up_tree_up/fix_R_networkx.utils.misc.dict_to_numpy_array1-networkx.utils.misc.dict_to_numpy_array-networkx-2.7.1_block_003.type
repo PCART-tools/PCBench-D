@@ -1,0 +1,19 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Changed the function body from directly constructing and returning a NumPy array to constructing a deprecation message, issuing a warning, and calling `_dict_to_numpy_array1(d, mapping)` to return the result.
+   The original implementation included:
+
+   * Conditional statement: when `mapping is None`, create a set from `d.keys()` and generate `mapping`;
+   * Assignment statements: compute `n = len(mapping)` and create `a = np.zeros(n)`;
+   * Loop statement: iterate over `mapping.items()` and assign `d[k1]` to `a[i]`;
+   * Return statement: return `a`.
+
+   The new implementation includes:
+
+   * Assignment statement: create the deprecation-message string `msg`;
+   * Call statement: call `warnings.warn(msg, DeprecationWarning, stacklevel=2)`;
+   * Return statement: return the result of `_dict_to_numpy_array1(d, mapping)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with warning call and return-call statement)

@@ -1,0 +1,24 @@
+@@ -139,7 +143,18 @@
+  
+-    schedule = eval(schedule+'_sa()')
+-    #   initialize the schedule
+-    schedule.init(dims=shape(x0),func=func,args=args,boltzmann=boltzmann,T0=T0,
+-                  learn_rate=learn_rate, lower=lower, upper=upper,
+-                  m=m, n=n, quench=quench, dwell=dwell)
++    opts = {'schedule'  : schedule,
++            'T0'        : T0,
++            'Tf'        : Tf,
++            'maxfev'    : maxeval,
++            'maxaccept' : maxaccept,
++            'maxiter'   : maxiter,
++            'boltzmann' : boltzmann,
++            'learn_rate': learn_rate,
++            'ftol'      : feps,
++            'quench'    : quench,
++            'm'         : m,
++            'n'         : n,
++            'lower'     : lower,
++            'upper'     : upper,
++            'dwell'     : dwell,
++            'disp'      : disp}
+  

@@ -1,0 +1,4 @@
+@@ -1,2 +1,2 @@
+-    def count_match(self, pattern: str) -> Series:
++    def count_match(self, pattern: str | Series) -> Series:
+         r"""

@@ -1,0 +1,5 @@
+@@ -74,3 +102,3 @@
+                 )
+-                res_df = self._constructor(mgr)
++                res_df = self._constructor_from_mgr(mgr, axes=mgr.axes)
+                 return res_df.__finalize__(self, method="shift")

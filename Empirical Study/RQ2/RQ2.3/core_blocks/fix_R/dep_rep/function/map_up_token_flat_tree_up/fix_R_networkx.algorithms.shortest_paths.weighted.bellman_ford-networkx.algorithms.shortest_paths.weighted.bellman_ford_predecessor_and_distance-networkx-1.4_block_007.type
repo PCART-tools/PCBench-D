@@ -1,0 +1,13 @@
+# detail
+Number of changes: 3
+
+1. Removed | Conditional statement
+   Removed the conditional that tested `G.is_directed()` and assigned a value to `directed`.
+
+2. Added | Conditional statement
+   Added a `source not in G` check that raises `KeyError("Node %s is not found in the graph"%source)` when true.
+
+3. Added | Assignment statement
+   Added `numb_nodes = len(G)`.
+# /detail
+# mode：Remove conditional statement; Add conditional statement; Add assignment statement

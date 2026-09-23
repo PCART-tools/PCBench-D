@@ -1,0 +1,18 @@
+def flattened_fun_in_tree(fn: lu.WrappedFun) -> Optional[Tuple[PyTreeDef, bool]]:
+  # This implementation relies on internal details of linear_util.py's
+  # WrappedFun, but it's for the worthy cause of better user error messages.
+  # It can fail (i.e. return None) if its WrappedFun argument is not transformed
+  # with flatten_fun or flatten_fun_nokwargs, which could happen e.g. when
+  # core.eval_jaxpr encounters a call primitive (though at that point we're just
+  # round-tripping jaxprs and the user errors in question are impossible).
+  assert isinstance(flatten_fun, partial) and len(flatten_fun.args) == 1
+  assert (isinstance(flatten_fun_nokwargs, partial) and
+          len(flatten_fun_nokwargs.args) == 1)
+  flat_xforms = {flatten_fun.args[0], flatten_fun_nokwargs.args[0]}
+  try:
+    (in_tree, has_kwargs), = ((args[0], f is flatten_fun.args[0])
+                              for f, args in fn.transforms if f in flat_xforms)
+  except ValueError:
+    return None
+  else:
+    return in_tree, has_kwargs

@@ -1,0 +1,18 @@
+# detail
+Number of changes: 2
+
+1. Modified | Function definition
+   Changed the parameter type annotations of `register_keypaths` from `Type` and `Callable[[Any], Sequence[KeyPathEntry]]` to `Type[T]` and `Callable[[T], Tuple[KeyEntry, ...]]`, and adjusted the line wrapping of the function definition.
+
+2. Modified | Function implementation code block
+   Changed the direct assignment `_keypath_registry[ty] = handler` in the function body to a `warnings.warn` call followed by a call to `_register_keypaths(ty, handler)`.
+   The original implementation included:
+
+   * Assignment statement: assign `handler` to `_keypath_registry[ty]`.
+
+   The new implementation includes:
+
+   * Call statement: call `warnings.warn` with a deprecation-message string, the `FutureWarning` category, and `stacklevel=2`;
+   * Call statement: call `_register_keypaths(ty, handler)`.
+# /detail
+# mode：Modify parameter type annotation; Modify function implementation (replace original implementation with warning call and call statement)

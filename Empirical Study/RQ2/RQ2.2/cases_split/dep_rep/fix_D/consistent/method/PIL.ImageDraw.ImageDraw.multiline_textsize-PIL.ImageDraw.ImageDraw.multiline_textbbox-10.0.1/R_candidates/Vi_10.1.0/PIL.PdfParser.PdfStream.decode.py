@@ -1,0 +1,14 @@
+    def decode(self):
+        try:
+            filter = self.dictionary.Filter
+        except AttributeError:
+            return self.buf
+        if filter == b"FlateDecode":
+            try:
+                expected_length = self.dictionary.DL
+            except AttributeError:
+                expected_length = self.dictionary.Length
+            return zlib.decompress(self.buf, bufsize=int(expected_length))
+        else:
+            msg = f"stream filter {repr(self.dictionary.Filter)} unknown/unsupported"
+            raise NotImplementedError(msg)

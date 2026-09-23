@@ -1,0 +1,5 @@
+@@ -5,3 +5,3 @@
+             FutureWarning,
+-            stacklevel=find_stack_level(),
++            stacklevel=find_stack_level(inspect.currentframe()),
+         )

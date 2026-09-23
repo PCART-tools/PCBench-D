@@ -1,0 +1,28 @@
+@register_transformation_rule(IndexSelect)
+def transform_index_select(constraint, counter):
+    """
+    The constraints consider the given tensor size, checks if the index is valid
+    and if so, generates a constraint for replacing the input dimension
+    with the required dimension
+    """
+    dims, counter = gen_tensor_dims(constraint.tensor_size, counter)
+    is_valid_index = valid_index(constraint.index, dims)
+    nat_constraints = gen_nat_constraints(dims)
+
+    # if the index is valid then replace the input dimension with the new dimension
+    # otherwise the dimension will not be replaced and the clause will contain False
+    if is_valid_index == T():
+        new_dims = copy.deepcopy(dims)
+        new_dims[constraint.index] = constraint.dim_replace
+
+    transformed_constraint = Conj(
+        [
+            BinConstraintT(constraint.input_var, TensorType(dims), op_eq),
+            *nat_constraints,
+            is_valid_index,
+            BinConstraintT(constraint.output, TensorType(new_dims), op_eq),
+        ]
+    )
+
+    # print(constraints)
+    return transformed_constraint, counter

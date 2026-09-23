@@ -1,0 +1,11 @@
+# detail
+Number of changes: 1
+
+1. Added | Warning-call code block
+   After the function docstring, added an import of the `warnings` module and a call to `warnings.warn` to issue a `FutureWarning`.
+   This includes:
+
+   * Import statement: import `warnings`;
+   * Function call: call `warnings.warn` with a deprecation-message string and `FutureWarning`.
+# /detail
+# mode：Add import statement; Add warning call

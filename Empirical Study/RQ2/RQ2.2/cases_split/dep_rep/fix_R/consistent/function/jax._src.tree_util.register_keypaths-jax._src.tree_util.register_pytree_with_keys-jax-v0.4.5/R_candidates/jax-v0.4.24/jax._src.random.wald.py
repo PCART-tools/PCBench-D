@@ -1,0 +1,38 @@
+def wald(key: KeyArrayLike,
+         mean: RealArray,
+         shape: Shape | None = None,
+         dtype: DTypeLikeFloat = float) -> Array:
+  r"""Sample Wald random values with given shape and float dtype.
+
+  The values are returned according to the probability density function:
+
+  .. math::
+     f(x;\mu) = \frac{1}{\sqrt{2\pi x^3}} \exp\left(-\frac{(x - \mu)^2}{2\mu^2 x}\right)
+
+  on the domain :math:`-\infty < x < \infty`, and where :math:`\mu > 0` is the location
+  parameter of the distribution.
+
+
+  Args:
+    key: a PRNG key used as the random key.
+    mean: a float or array of floats broadcast-compatible with ``shape``
+      representing the mean parameter of the distribution.
+    shape: optional, a tuple of nonnegative integers specifying the result
+      shape. Must be broadcast-compatible with ``mean``. The default
+      (None) produces a result shape equal to ``np.shape(mean)``.
+    dtype: optional, a float dtype for the returned values (default float64 if
+      jax_enable_x64 is true, otherwise float32).
+
+  Returns:
+    A random array with the specified dtype and with shape given by ``shape`` if
+    ``shape`` is not None, or else by ``mean.shape``.
+  """
+  key, _ = _check_prng_key("wald", key)
+  dtypes.check_user_dtype_supported(dtype)
+  if not dtypes.issubdtype(dtype, np.floating):
+    raise ValueError("dtype argument to `wald` must be a float "
+                     f"dtype, got {dtype}")
+  dtype = dtypes.canonicalize_dtype(dtype)
+  if shape is not None:
+    shape = core.canonicalize_shape(shape)
+  return _wald(key, mean, shape, dtype)

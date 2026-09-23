@@ -1,0 +1,70 @@
+    def append(self, to_append, ignore_index=False, verify_integrity=False):
+        """
+        Concatenate two or more Series.
+
+        Parameters
+        ----------
+        to_append : Series or list/tuple of Series
+        ignore_index : boolean, default False
+            If True, do not use the index labels.
+
+            .. versionadded: 0.19.0
+
+        verify_integrity : boolean, default False
+            If True, raise Exception on creating index with duplicates
+
+        Returns
+        -------
+        appended : Series
+
+        Examples
+        --------
+        >>> s1 = pd.Series([1, 2, 3])
+        >>> s2 = pd.Series([4, 5, 6])
+        >>> s3 = pd.Series([4, 5, 6], index=[3,4,5])
+        >>> s1.append(s2)
+        0    1
+        1    2
+        2    3
+        0    4
+        1    5
+        2    6
+        dtype: int64
+
+        >>> s1.append(s3)
+        0    1
+        1    2
+        2    3
+        3    4
+        4    5
+        5    6
+        dtype: int64
+
+        With `ignore_index` set to True:
+
+        >>> s1.append(s2, ignore_index=True)
+        0    1
+        1    2
+        2    3
+        3    4
+        4    5
+        5    6
+        dtype: int64
+
+        With `verify_integrity` set to True:
+
+        >>> s1.append(s2, verify_integrity=True)
+        Traceback (most recent call last):
+        ...
+        ValueError: Indexes have overlapping values: [0, 1, 2]
+
+
+        """
+        from pandas.core.reshape.concat import concat
+
+        if isinstance(to_append, (list, tuple)):
+            to_concat = [self] + to_append
+        else:
+            to_concat = [self, to_append]
+        return concat(to_concat, ignore_index=ignore_index,
+                      verify_integrity=verify_integrity)

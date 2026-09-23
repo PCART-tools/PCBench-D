@@ -1,0 +1,15 @@
+    def contains(self, mouseevent):
+        """Test whether the mouse event occurred in the x-axis."""
+        if self._different_canvas(mouseevent):
+            return False, {}
+        x, y = mouseevent.x, mouseevent.y
+        try:
+            trans = self.axes.transAxes.inverted()
+            xaxes, yaxes = trans.transform((x, y))
+        except ValueError:
+            return False, {}
+        (l, b), (r, t) = self.axes.transAxes.transform([(0, 0), (1, 1)])
+        inaxis = 0 <= xaxes <= 1 and (
+            b - self._pickradius < y < b or
+            t < y < t + self._pickradius)
+        return inaxis, {}

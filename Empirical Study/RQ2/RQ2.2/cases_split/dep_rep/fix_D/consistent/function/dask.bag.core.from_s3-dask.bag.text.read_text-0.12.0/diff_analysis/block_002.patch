@@ -1,0 +1,6 @@
+@@ -68,3 +57,4 @@
+                                     **(storage_options or {}))
+-            blocks = [delayed(list)(file) for file in files]
++            blocks = [delayed(list, pure=True)(delayed(file_to_blocks)(file))
++                      for file in files]
+  

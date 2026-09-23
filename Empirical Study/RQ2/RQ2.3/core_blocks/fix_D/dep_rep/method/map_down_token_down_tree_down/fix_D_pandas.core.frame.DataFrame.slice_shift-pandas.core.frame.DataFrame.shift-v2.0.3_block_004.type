@@ -1,0 +1,12 @@
+# detail
+Number of changes: 1
+
+1. Added | Conditional statement
+   Added branch handling for list-like `periods` and for the presence of `suffix`.
+   This includes:
+
+   * `if` statement: test `is_list_like(periods)`, convert `periods` to `Sequence`, validate `axis`, the length, and the integer type of each `period`, iteratively generate `shifted_dataframes`, and return `concat(shifted_dataframes, axis=1)`;
+   * `elif` statement: test `suffix` and raise `ValueError`;
+   * Assignment statement: convert `periods` to `int`.
+# /detail
+# mode：Add conditional statement (including multiple conditional branches)

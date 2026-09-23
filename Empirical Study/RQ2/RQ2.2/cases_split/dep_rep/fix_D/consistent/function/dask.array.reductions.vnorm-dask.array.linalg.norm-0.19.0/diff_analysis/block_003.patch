@@ -1,0 +1,5 @@
+@@ -25,2 +25,4 @@
+             raise ValueError("Invalid norm order for vectors.")
++        if x.ndim > 2:
++            raise NotImplementedError("SVD based norm not implemented for ndim > 2")
+  

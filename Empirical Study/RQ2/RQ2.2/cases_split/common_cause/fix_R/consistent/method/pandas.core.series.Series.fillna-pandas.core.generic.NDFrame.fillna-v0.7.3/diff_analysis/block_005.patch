@@ -1,0 +1,13 @@
+@@ -34,11 +37,3 @@
+  
+-            method = com._clean_fill_method(method)
+-
+-            # sadness. for Python 2.5 compatibility
+-            mask = mask.astype(np.uint8)
+-
+-            if method == 'pad':
+-                indexer = lib.get_pad_indexer(mask)
+-            elif method == 'backfill':
+-                indexer = lib.get_backfill_indexer(mask)
++            fill_f = _get_fill_func(method)
+  

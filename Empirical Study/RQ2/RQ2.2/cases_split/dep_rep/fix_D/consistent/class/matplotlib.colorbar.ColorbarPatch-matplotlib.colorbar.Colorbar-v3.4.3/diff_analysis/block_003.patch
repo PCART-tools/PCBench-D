@@ -1,0 +1,31 @@
+@@ -21,21 +112,11 @@
+             cs = mappable
+-            _add_disjoint_kwargs(
+-                kwargs,
+-                alpha=cs.get_alpha(),
+-                boundaries=cs._levels,
+-                values=cs.cvalues,
+-                extend=cs.extend,
+-                filled=cs.filled,
+-            )
+-            kwargs.setdefault(
+-                'ticks', ticker.FixedLocator(cs.levels, nbins=10))
+-            super().__init__(ax, **kwargs)
+-            if not cs.filled:
+-                self.add_lines(cs)
+-        else:
+-            if getattr(mappable.cmap, 'colorbar_extend', False) is not False:
+-                kwargs.setdefault('extend', mappable.cmap.colorbar_extend)
+-            if isinstance(mappable, martist.Artist):
+-                _add_disjoint_kwargs(kwargs, alpha=mappable.get_alpha())
+-            super().__init__(ax, **kwargs)
++            alpha = cs.get_alpha()
++            boundaries = cs._levels
++            values = cs.cvalues
++            extend = cs.extend
++            filled = cs.filled
++            if ticks is None:
++                ticks = ticker.FixedLocator(cs.levels, nbins=10)
++        elif isinstance(mappable, martist.Artist):
++            alpha = mappable.get_alpha()
+  

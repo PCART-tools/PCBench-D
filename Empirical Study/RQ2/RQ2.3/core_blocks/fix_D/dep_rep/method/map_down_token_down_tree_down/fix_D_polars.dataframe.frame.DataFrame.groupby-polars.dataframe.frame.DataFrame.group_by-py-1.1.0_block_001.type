@@ -1,0 +1,12 @@
+# detail
+Number of changes: 1
+
+1. Added | Loop statement
+   Added iteration over `named_by.items()` and type checks for each `value`; when a value is not a `str`, `pl.Expr`, or `pl.Series`, construct `msg` and raise `TypeError`.
+   This includes:
+
+   * Conditional statement: test whether `value` is not one of the specified types;
+   * Assignment statement: assign an error-message string to `msg`;
+   * Exception statement: raise `TypeError(msg)`.
+# /detail
+# mode：Add for loop

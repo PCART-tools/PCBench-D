@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Added | Conditional statement
+   Inside the `value is None` branch, added a `method is None` check that raises `ValueError('must specify a fill method or value')` when true.
+# /detail
+# mode：Add conditional statement

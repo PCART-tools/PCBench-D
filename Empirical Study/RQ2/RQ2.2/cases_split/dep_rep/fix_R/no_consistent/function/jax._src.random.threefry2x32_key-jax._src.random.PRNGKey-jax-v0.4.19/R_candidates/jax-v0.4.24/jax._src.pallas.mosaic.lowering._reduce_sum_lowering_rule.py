@@ -1,0 +1,23 @@
+def _reduce_sum_lowering_rule(ctx: LoweringRuleContext, x, *, axes):
+  (x_aval,) = ctx.avals_in
+  out_type = aval_to_ir_type(ctx.avals_out[0])
+  if jnp.issubdtype(x_aval.dtype, jnp.floating):
+    kind = ir.Attribute.parse("#vector.kind<add>")
+    val = ir.FloatAttr.get(ir.F32Type.get(), 0.0)
+    identity = ir.DenseElementsAttr.get_splat(out_type, val)
+  elif jnp.issubdtype(x_aval.dtype, jnp.signedinteger):
+    kind = ir.Attribute.parse("#vector.kind<add>")
+    raise NotImplementedError
+  elif jnp.issubdtype(x_aval.dtype, jnp.unsignedinteger):
+    kind = ir.Attribute.parse("#vector.kind<add>")
+    raise NotImplementedError
+  acc = arith.ConstantOp(out_type, identity)
+  op = vector.MultiDimReductionOp(
+      kind,
+      x,
+      acc,
+      ir.ArrayAttr.get(
+          [ir.IntegerAttr.get(ir.IntegerType.get_signless(64), a) for a in axes]
+      ),
+  )
+  return op.result

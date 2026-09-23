@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Added | Warning-handling structure
+   Added a `warnings.catch_warnings()` context-manager structure around the original `line_spacing` assignment and `for line in lines` loop, and called `warnings.filterwarnings("ignore", category=DeprecationWarning)` within it.
+# /detail
+# mode：Add context-manager statement (suppress warnings)

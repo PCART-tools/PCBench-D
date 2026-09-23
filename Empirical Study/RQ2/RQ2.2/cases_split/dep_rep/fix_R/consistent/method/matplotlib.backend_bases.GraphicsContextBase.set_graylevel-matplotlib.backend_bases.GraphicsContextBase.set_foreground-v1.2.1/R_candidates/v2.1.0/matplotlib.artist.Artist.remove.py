@@ -1,0 +1,40 @@
+    def remove(self):
+        """
+        Remove the artist from the figure if possible.  The effect
+        will not be visible until the figure is redrawn, e.g., with
+        :meth:`matplotlib.axes.Axes.draw_idle`.  Call
+        :meth:`matplotlib.axes.Axes.relim` to update the axes limits
+        if desired.
+
+        Note: :meth:`~matplotlib.axes.Axes.relim` will not see
+        collections even if the collection was added to axes with
+        *autolim* = True.
+
+        Note: there is no support for removing the artist's legend entry.
+        """
+
+        # There is no method to set the callback.  Instead the parent should
+        # set the _remove_method attribute directly.  This would be a
+        # protected attribute if Python supported that sort of thing.  The
+        # callback has one parameter, which is the child to be removed.
+        if self._remove_method is not None:
+            self._remove_method(self)
+            # clear stale callback
+            self.stale_callback = None
+            _ax_flag = False
+            if hasattr(self, 'axes') and self.axes:
+                # remove from the mouse hit list
+                self.axes.mouseover_set.discard(self)
+                # mark the axes as stale
+                self.axes.stale = True
+                # decouple the artist from the axes
+                self.axes = None
+                _ax_flag = True
+
+            if self.figure:
+                self.figure = None
+                if not _ax_flag:
+                    self.figure = True
+
+        else:
+            raise NotImplementedError('cannot remove artist')

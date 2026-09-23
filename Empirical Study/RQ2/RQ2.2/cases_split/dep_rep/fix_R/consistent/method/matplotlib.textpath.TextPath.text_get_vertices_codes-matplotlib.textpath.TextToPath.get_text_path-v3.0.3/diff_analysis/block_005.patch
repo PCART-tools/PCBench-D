@@ -1,0 +1,7 @@
+@@ -11,5 +11,2 @@
+             clean_line, ismath = self.is_math_text(s)
+-            verts, codes = text_to_path.get_text_path(prop, clean_line,
+-                                                      ismath=ismath)
+-
+-        return verts, codes
++            return text_to_path.get_text_path(prop, clean_line, ismath=ismath)

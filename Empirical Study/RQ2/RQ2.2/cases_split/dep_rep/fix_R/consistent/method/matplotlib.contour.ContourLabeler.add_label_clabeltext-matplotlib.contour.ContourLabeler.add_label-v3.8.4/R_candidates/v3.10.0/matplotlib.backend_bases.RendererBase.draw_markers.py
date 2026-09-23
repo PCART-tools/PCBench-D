@@ -1,0 +1,30 @@
+    def draw_markers(self, gc, marker_path, marker_trans, path,
+                     trans, rgbFace=None):
+        """
+        Draw a marker at each of *path*'s vertices (excluding control points).
+
+        The base (fallback) implementation makes multiple calls to `draw_path`.
+        Backends may want to override this method in order to draw the marker
+        only once and reuse it multiple times.
+
+        Parameters
+        ----------
+        gc : `.GraphicsContextBase`
+            The graphics context.
+        marker_path : `~matplotlib.path.Path`
+            The path for the marker.
+        marker_trans : `~matplotlib.transforms.Transform`
+            An affine transform applied to the marker.
+        path : `~matplotlib.path.Path`
+            The locations to draw the markers.
+        trans : `~matplotlib.transforms.Transform`
+            An affine transform applied to the path.
+        rgbFace : :mpltype:`color`, optional
+        """
+        for vertices, codes in path.iter_segments(trans, simplify=False):
+            if len(vertices):
+                x, y = vertices[-2:]
+                self.draw_path(gc, marker_path,
+                               marker_trans +
+                               transforms.Affine2D().translate(x, y),
+                               rgbFace)

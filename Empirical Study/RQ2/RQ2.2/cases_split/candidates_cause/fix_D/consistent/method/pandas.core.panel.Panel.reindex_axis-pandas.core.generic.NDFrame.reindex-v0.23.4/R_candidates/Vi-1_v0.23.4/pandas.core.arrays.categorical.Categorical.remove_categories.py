@@ -1,0 +1,51 @@
+    def remove_categories(self, removals, inplace=False):
+        """ Removes the specified categories.
+
+        `removals` must be included in the old categories. Values which were in
+        the removed categories will be set to NaN
+
+        Raises
+        ------
+        ValueError
+            If the removals are not contained in the categories
+
+        Parameters
+        ----------
+        removals : category or list of categories
+           The categories which should be removed.
+        inplace : boolean (default: False)
+           Whether or not to remove the categories inplace or return a copy of
+           this categorical with removed categories.
+
+        Returns
+        -------
+        cat : Categorical with removed categories or None if inplace.
+
+        See also
+        --------
+        rename_categories
+        reorder_categories
+        add_categories
+        remove_unused_categories
+        set_categories
+        """
+        inplace = validate_bool_kwarg(inplace, 'inplace')
+        if not is_list_like(removals):
+            removals = [removals]
+
+        removal_set = set(list(removals))
+        not_included = removal_set - set(self.dtype.categories)
+        new_categories = [c for c in self.dtype.categories
+                          if c not in removal_set]
+
+        # GH 10156
+        if any(isna(removals)):
+            not_included = [x for x in not_included if notna(x)]
+            new_categories = [x for x in new_categories if notna(x)]
+
+        if len(not_included) != 0:
+            msg = "removals must all be in old categories: {not_included!s}"
+            raise ValueError(msg.format(not_included=not_included))
+
+        return self.set_categories(new_categories, ordered=self.ordered,
+                                   rename=False, inplace=inplace)

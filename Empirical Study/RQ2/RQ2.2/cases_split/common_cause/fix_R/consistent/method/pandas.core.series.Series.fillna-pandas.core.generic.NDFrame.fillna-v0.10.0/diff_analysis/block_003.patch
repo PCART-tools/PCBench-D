@@ -1,0 +1,7 @@
+@@ -56,2 +61,5 @@
+  
+-        return result if not inplace else None
++        if inplace:
++            return self
++        else:
++            return result

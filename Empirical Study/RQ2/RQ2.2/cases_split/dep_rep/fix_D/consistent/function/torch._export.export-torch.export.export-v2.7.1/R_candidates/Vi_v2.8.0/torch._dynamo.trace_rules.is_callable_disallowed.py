@@ -1,0 +1,3 @@
+def is_callable_disallowed(obj) -> bool:
+    _maybe_init_lazy_module(obj)
+    return id(obj) in _disallowed_callable_ids

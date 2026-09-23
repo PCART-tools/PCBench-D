@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Function definition
+   Changed `_callback(env)` to `_callback(env: CallbackEnv) -> None`, adding the `CallbackEnv` type annotation to `env` and the return type annotation `None`.
+# /detail
+# mode：Add parameter type annotation; Add return type annotation

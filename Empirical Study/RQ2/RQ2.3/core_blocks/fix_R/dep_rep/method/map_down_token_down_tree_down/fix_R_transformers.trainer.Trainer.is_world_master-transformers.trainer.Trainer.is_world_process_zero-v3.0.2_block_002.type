@@ -1,0 +1,13 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method body
+   The original implementation included:
+   * Conditional branch: branch according to `is_torch_tpu_available()`;
+   * Return statements: when TPU was available, return `xm.is_master_ordinal(local=False)`; otherwise, return `self.args.local_rank == -1 or torch.distributed.get_rank() == 0`.
+
+   The new implementation includes:
+   * Warning call: call `warnings.warn(...)` to issue a `FutureWarning`;
+   * Return statement: directly return `self.is_world_process_zero()`.
+# /detail
+# mode：Modify method implementation (replace original implementation with warning call and return-call statement)

@@ -1,0 +1,6 @@
+@@ -68,4 +73,2 @@
+  
+-    if not sym and not odd:
+-        win = win[:-1]
+-    return win
++    return _truncate(win, needs_trunc)

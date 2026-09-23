@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original sparse-matrix construction, format conversion, and exception handling with a call to `to_scipy_sparse_array`, conversion to `csr_matrix`, and return in the requested format.
+   The original implementation included:
+
+   * Exception-handling structure: catch `ValueError` while unpacking `coefficients`, and set `row`, `col`, and `data` to empty lists;
+   * Conditional statement: construct directed or undirected `coo_matrix` objects according to `G.is_directed()`;
+   * Exception-handling structure: call `M.asformat(format)`, and catch `AttributeError` or `ValueError` to raise `nx.NetworkXError`.
+
+   The new implementation includes:
+
+   * Assignment statement: assign the result of `to_scipy_sparse_array(G, nodelist=nodelist, dtype=dtype, weight=weight, format=format)` to `A`;
+   * Return statement: return `sp.sparse.csr_matrix(A).asformat(format)`.
+# /detail
+# mode：Modify implementation block (replace original implementation with call-assignment statement and return-call statement)

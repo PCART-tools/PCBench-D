@@ -1,0 +1,3 @@
+  @property
+  @abc.abstractmethod
+  def type(self) -> type: ...

@@ -1,0 +1,31 @@
+    def create_hatch(self, hatch, linewidth):
+        sidelen = 72
+        if hatch in self._hatches:
+            return self._hatches[hatch]
+        name = 'H%d' % len(self._hatches)
+        pageheight = self.height * 72
+        self._pswriter.write(f"""\
+  << /PatternType 1
+     /PaintType 2
+     /TilingType 2
+     /BBox[0 0 {sidelen:d} {sidelen:d}]
+     /XStep {sidelen:d}
+     /YStep {sidelen:d}
+
+     /PaintProc {{
+        pop
+        {linewidth:g} setlinewidth
+{self._convert_path(Path.hatch(hatch), Affine2D().scale(sidelen), simplify=False)}
+        gsave
+        fill
+        grestore
+        stroke
+     }} bind
+   >>
+   matrix
+   0 {pageheight:g} translate
+   makepattern
+   /{name} exch def
+""")
+        self._hatches[hatch] = name
+        return name

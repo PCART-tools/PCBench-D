@@ -1,0 +1,7 @@
+@@ -4,2 +4,6 @@
+ def read_csv(fn, *args, **kwargs):
++    if 'nrows' in kwargs:  # Just create single partition
++        df = read_csv(fn, *args, **dissoc(kwargs, 'nrows'))
++        return df.head(kwargs['nrows'], compute=False)
++
+     chunkbytes = kwargs.pop('chunkbytes', 2**25)  # 50 MB

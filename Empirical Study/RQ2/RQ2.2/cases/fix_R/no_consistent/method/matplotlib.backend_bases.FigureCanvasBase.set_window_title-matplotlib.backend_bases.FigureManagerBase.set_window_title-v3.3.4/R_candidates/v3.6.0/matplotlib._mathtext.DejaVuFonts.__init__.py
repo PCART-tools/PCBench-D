@@ -1,0 +1,21 @@
+    def __init__(self, *args, **kwargs):
+        # This must come first so the backend's owner is set correctly
+        if isinstance(self, DejaVuSerifFonts):
+            self._fallback_font = StixFonts(*args, **kwargs)
+        else:
+            self._fallback_font = StixSansFonts(*args, **kwargs)
+        self.bakoma = BakomaFonts(*args, **kwargs)
+        TruetypeFonts.__init__(self, *args, **kwargs)
+        self.fontmap = {}
+        # Include Stix sized alternatives for glyphs
+        self._fontmap.update({
+            1: 'STIXSizeOneSym',
+            2: 'STIXSizeTwoSym',
+            3: 'STIXSizeThreeSym',
+            4: 'STIXSizeFourSym',
+            5: 'STIXSizeFiveSym',
+        })
+        for key, name in self._fontmap.items():
+            fullpath = findfont(name)
+            self.fontmap[key] = fullpath
+            self.fontmap[name] = fullpath

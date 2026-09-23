@@ -1,0 +1,12 @@
+def _compare_lower_hlo(direction: str, ctx, x, y):
+  avals_in, (aval_out,) = ctx.avals_in, ctx.avals_out
+  x_dtype = avals_in[0].dtype
+  x, y = mlir.multi_broadcast_in_dim(ctx, (x, y), avals_in, aval_out.shape)
+
+  if dtypes.issubdtype(x_dtype, np.inexact):
+    compare_type = "FLOAT"
+  elif dtypes.issubdtype(x_dtype, np.signedinteger):
+    compare_type = "SIGNED"
+  else:
+    compare_type = "UNSIGNED"
+  return mlir.compare_hlo(x, y, direction, compare_type).results

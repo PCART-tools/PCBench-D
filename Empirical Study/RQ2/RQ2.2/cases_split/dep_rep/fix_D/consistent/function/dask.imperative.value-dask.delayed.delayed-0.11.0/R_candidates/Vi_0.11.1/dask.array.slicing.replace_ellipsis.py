@@ -1,0 +1,14 @@
+def replace_ellipsis(n, index):
+    """ Replace ... with slices, :, : ,:
+
+    >>> replace_ellipsis(4, (3, Ellipsis, 2))
+    (3, slice(None, None, None), slice(None, None, None), 2)
+    """
+    # Careful about using in or index because index may contain arrays
+    isellipsis = [i for i, ind in enumerate(index) if ind is Ellipsis]
+    if not isellipsis:
+        return index
+    else:
+        loc = isellipsis[0]
+    return (index[:loc] + (slice(None, None, None),) * (n - len(index) + 1) +
+            index[loc + 1:])

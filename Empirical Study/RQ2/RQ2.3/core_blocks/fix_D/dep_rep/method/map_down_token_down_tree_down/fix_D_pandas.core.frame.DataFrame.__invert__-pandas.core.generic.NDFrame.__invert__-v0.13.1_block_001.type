@@ -1,0 +1,10 @@
+# detail
+Number of changes: 1
+
+1. Added | Exception-handling structure
+   Wrapped the existing `operator.inv(_values_from_object(self))` call and return logic in a `try-except` structure, and added an empty-size check and exception re-raising in the exception branch.
+   This includes:
+   * `try` block: execute `operator.inv(_values_from_object(self))` and return the wrapped result;
+   * `except` block: return `self` when `not np.prod(self.shape)`; otherwise, execute `raise`.
+# /detail
+# mode：Add exception-handling structure (wrap call and return logic)

@@ -1,0 +1,62 @@
+def ctc_loss(
+    log_probs: Tensor,
+    targets: Tensor,
+    input_lengths: Tensor,
+    target_lengths: Tensor,
+    blank: int = 0,
+    reduction: str = "mean",
+    zero_infinity: bool = False,
+) -> Tensor:
+    r"""The Connectionist Temporal Classification loss.
+
+    See :class:`~torch.nn.CTCLoss` for details.
+
+    Note:
+        {cudnn_reproducibility_note}
+
+    Note:
+        {backward_reproducibility_note}
+
+    Args:
+        log_probs: :math:`(T, N, C)` where `C = number of characters in alphabet including blank`,
+            `T = input length`, and `N = batch size`.
+            The logarithmized probabilities of the outputs
+            (e.g. obtained with :func:`torch.nn.functional.log_softmax`).
+        targets: :math:`(N, S)` or `(sum(target_lengths))`.
+            Targets cannot be blank. In the second form, the targets are assumed to be concatenated.
+        input_lengths: :math:`(N)`.
+            Lengths of the inputs (must each be :math:`\leq T`)
+        target_lengths: :math:`(N)`.
+            Lengths of the targets
+        blank (int, optional):
+            Blank label. Default :math:`0`.
+        reduction (string, optional): Specifies the reduction to apply to the output:
+            ``'none'`` | ``'mean'`` | ``'sum'``. ``'none'``: no reduction will be applied,
+            ``'mean'``: the output losses will be divided by the target lengths and
+            then the mean over the batch is taken, ``'sum'``: the output will be
+            summed. Default: ``'mean'``
+        zero_infinity (bool, optional):
+            Whether to zero infinite losses and the associated gradients.
+            Default: ``False``
+            Infinite losses mainly occur when the inputs are too short
+            to be aligned to the targets.
+
+    Example::
+
+        >>> log_probs = torch.randn(50, 16, 20).log_softmax(2).detach().requires_grad_()
+        >>> targets = torch.randint(1, 20, (16, 30), dtype=torch.long)
+        >>> input_lengths = torch.full((16,), 50, dtype=torch.long)
+        >>> target_lengths = torch.randint(10,30,(16,), dtype=torch.long)
+        >>> loss = F.ctc_loss(log_probs, targets, input_lengths, target_lengths)
+        >>> loss.backward()
+    """
+    if has_torch_function_variadic(log_probs, targets, input_lengths, target_lengths):
+        return handle_torch_function(
+            ctc_loss,
+            (log_probs, targets, input_lengths, target_lengths),
+            log_probs, targets, input_lengths, target_lengths,
+            blank=blank, reduction=reduction, zero_infinity=zero_infinity
+        )
+    return torch.ctc_loss(
+        log_probs, targets, input_lengths, target_lengths, blank, _Reduction.get_enum(reduction), zero_infinity
+    )

@@ -1,0 +1,135 @@
+    @classmethod
+    def from_records(cls, data, index=None, exclude=None, columns=None,
+                     coerce_float=False, nrows=None):
+        """
+        Convert structured or record ndarray to DataFrame
+
+        Parameters
+        ----------
+        data : ndarray (structured dtype), list of tuples, dict, or DataFrame
+        index : string, list of fields, array-like
+            Field of array to use as the index, alternately a specific set of
+            input labels to use
+        exclude : sequence, default None
+            Columns or fields to exclude
+        columns : sequence, default None
+            Column names to use. If the passed data do not have names
+            associated with them, this argument provides names for the
+            columns. Otherwise this argument indicates the order of the columns
+            in the result (any names not found in the data will become all-NA
+            columns)
+        coerce_float : boolean, default False
+            Attempt to convert values to non-string, non-numeric objects (like
+            decimal.Decimal) to floating point, useful for SQL result sets
+
+        Returns
+        -------
+        df : DataFrame
+        """
+        # Make a copy of the input columns so we can modify it
+        if columns is not None:
+            columns = _ensure_index(columns)
+
+        if com.is_iterator(data):
+            if nrows == 0:
+                return cls()
+
+            try:
+                if compat.PY3:
+                    first_row = next(data)
+                else:
+                    first_row = next(data)
+            except StopIteration:
+                return cls(index=index, columns=columns)
+
+            dtype = None
+            if hasattr(first_row, 'dtype') and first_row.dtype.names:
+                dtype = first_row.dtype
+
+            values = [first_row]
+
+            # if unknown length iterable (generator)
+            if nrows is None:
+                # consume whole generator
+                values += list(data)
+            else:
+                i = 1
+                for row in data:
+                    values.append(row)
+                    i += 1
+                    if i >= nrows:
+                        break
+
+            if dtype is not None:
+                data = np.array(values, dtype=dtype)
+            else:
+                data = values
+
+        if isinstance(data, dict):
+            if columns is None:
+                columns = arr_columns = _ensure_index(sorted(data))
+                arrays = [data[k] for k in columns]
+            else:
+                arrays = []
+                arr_columns = []
+                for k, v in compat.iteritems(data):
+                    if k in columns:
+                        arr_columns.append(k)
+                        arrays.append(v)
+
+                arrays, arr_columns = _reorder_arrays(arrays, arr_columns,
+                                                      columns)
+
+        elif isinstance(data, (np.ndarray, DataFrame)):
+            arrays, columns = _to_arrays(data, columns)
+            if columns is not None:
+                columns = _ensure_index(columns)
+            arr_columns = columns
+        else:
+            arrays, arr_columns = _to_arrays(data, columns,
+                                             coerce_float=coerce_float)
+
+            arr_columns = _ensure_index(arr_columns)
+            if columns is not None:
+                columns = _ensure_index(columns)
+            else:
+                columns = arr_columns
+
+        if exclude is None:
+            exclude = set()
+        else:
+            exclude = set(exclude)
+
+        result_index = None
+        if index is not None:
+            if (isinstance(index, compat.string_types) or
+                    not hasattr(index, "__iter__")):
+                i = columns.get_loc(index)
+                exclude.add(index)
+                if len(arrays) > 0:
+                    result_index = Index(arrays[i], name=index)
+                else:
+                    result_index = Index([], name=index)
+            else:
+                try:
+                    to_remove = [arr_columns.get_loc(field) for field in index]
+
+                    result_index = MultiIndex.from_arrays(
+                        [arrays[i] for i in to_remove], names=index)
+
+                    exclude.update(index)
+                except Exception:
+                    result_index = index
+
+        if any(exclude):
+            arr_exclude = [x for x in exclude if x in arr_columns]
+            to_remove = [arr_columns.get_loc(col) for col in arr_exclude]
+            arrays = [v for i, v in enumerate(arrays) if i not in to_remove]
+
+            arr_columns = arr_columns.drop(arr_exclude)
+            columns = columns.drop(exclude)
+
+        mgr = _arrays_to_mgr(arrays, arr_columns, result_index,
+                             columns)
+
+        return cls(mgr)

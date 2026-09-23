@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the entire implementation of `allow_lazy`.
+   The original implementation included:
+
+   * Assignment statement: assign `lazy(func, *resultclasses)` to `lazy_func`;
+   * Nested function definition: define `wrapper(*args, **kwargs)` with the decorator `@wraps(func)`;
+   * Loop and conditional statements: iterate over `args` and `kwargs.values()` and check for `Promise` instances;
+   * Return statements: return `func(*args, **kwargs)` when no lazy argument exists, otherwise return `lazy_func(*args, **kwargs)`, and finally return `wrapper`.
+
+   The new implementation includes:
+
+   * Function call statement: call `warnings.warn(...)` to issue a deprecation warning;
+   * Return statement: return `keep_lazy(*resultclasses)(func)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with warning call and return-call statement)

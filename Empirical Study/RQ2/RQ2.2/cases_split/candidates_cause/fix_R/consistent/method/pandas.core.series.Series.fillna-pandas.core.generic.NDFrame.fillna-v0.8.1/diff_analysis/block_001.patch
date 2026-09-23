@@ -1,0 +1,6 @@
+@@ -29,2 +29,5 @@
+         """
++        if not self._can_hold_na:
++            return self.copy() if not inplace else self
++
+         if value is not None:

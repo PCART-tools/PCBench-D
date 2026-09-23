@@ -1,0 +1,2 @@
+    class subdate(datetime):
+        pass

@@ -1,0 +1,792 @@
+[
+  {
+    "api_name": "dask.array.core.Array.to_delayed",
+    "score": 0.48936170212765956,
+    "rank": 1
+  },
+  {
+    "api_name": "dask.array.ufunc.ufunc.__dir__",
+    "score": 0.40540540540540543,
+    "rank": 2
+  },
+  {
+    "api_name": "dask.array.ufunc.ufunc.__getattr__",
+    "score": 0.36363636363636365,
+    "rank": 3
+  },
+  {
+    "api_name": "dask.array.core.Array.to_hdf5",
+    "score": 0.35135135135135137,
+    "rank": 4
+  },
+  {
+    "api_name": "dask.array.core.Array.__deepcopy__",
+    "score": 0.3333333333333333,
+    "rank": 5
+  },
+  {
+    "api_name": "dask.array.ufunc.ufunc.__call__",
+    "score": 0.32,
+    "rank": 6
+  },
+  {
+    "api_name": "dask.array.core.Array.numblocks",
+    "score": 0.3142857142857143,
+    "rank": 7
+  },
+  {
+    "api_name": "dask.array.core.Array.shape",
+    "score": 0.3142857142857143,
+    "rank": 7
+  },
+  {
+    "api_name": "dask.array.core.Array.__repr__",
+    "score": 0.3137254901960784,
+    "rank": 9
+  },
+  {
+    "api_name": "dask.array.random.RandomState.beta",
+    "score": 0.30952380952380953,
+    "rank": 10
+  },
+  {
+    "api_name": "dask.array.random.RandomState.binomial",
+    "score": 0.30952380952380953,
+    "rank": 10
+  },
+  {
+    "api_name": "dask.array.random.RandomState.f",
+    "score": 0.30952380952380953,
+    "rank": 10
+  },
+  {
+    "api_name": "dask.array.random.RandomState.vonmises",
+    "score": 0.30952380952380953,
+    "rank": 10
+  },
+  {
+    "api_name": "dask.array.random.RandomState.wald",
+    "score": 0.30952380952380953,
+    "rank": 10
+  },
+  {
+    "api_name": "dask.array.random.RandomState.gamma",
+    "score": 0.3023255813953488,
+    "rank": 15
+  },
+  {
+    "api_name": "dask.array.random.RandomState.randint",
+    "score": 0.3023255813953488,
+    "rank": 15
+  },
+  {
+    "api_name": "dask.array.random.RandomState.multinomial",
+    "score": 0.2978723404255319,
+    "rank": 17
+  },
+  {
+    "api_name": "dask.array.random.RandomState.gumbel",
+    "score": 0.29545454545454547,
+    "rank": 18
+  },
+  {
+    "api_name": "dask.array.random.RandomState.hypergeometric",
+    "score": 0.29545454545454547,
+    "rank": 18
+  },
+  {
+    "api_name": "dask.array.random.RandomState.laplace",
+    "score": 0.29545454545454547,
+    "rank": 18
+  },
+  {
+    "api_name": "dask.array.random.RandomState.logistic",
+    "score": 0.29545454545454547,
+    "rank": 18
+  },
+  {
+    "api_name": "dask.array.random.RandomState.lognormal",
+    "score": 0.29545454545454547,
+    "rank": 18
+  },
+  {
+    "api_name": "dask.array.random.RandomState.normal",
+    "score": 0.29545454545454547,
+    "rank": 18
+  },
+  {
+    "api_name": "dask.array.random.RandomState.triangular",
+    "score": 0.29545454545454547,
+    "rank": 18
+  },
+  {
+    "api_name": "dask.array.random.RandomState.uniform",
+    "score": 0.29545454545454547,
+    "rank": 18
+  },
+  {
+    "api_name": "dask.array.core.Array.copy",
+    "score": 0.29411764705882354,
+    "rank": 26
+  },
+  {
+    "api_name": "dask.array.core.Array.__array__",
+    "score": 0.29310344827586204,
+    "rank": 27
+  },
+  {
+    "api_name": "dask.array.random.RandomState.chisquare",
+    "score": 0.2926829268292683,
+    "rank": 28
+  },
+  {
+    "api_name": "dask.array.random.RandomState.geometric",
+    "score": 0.2926829268292683,
+    "rank": 28
+  },
+  {
+    "api_name": "dask.array.random.RandomState.logseries",
+    "score": 0.2926829268292683,
+    "rank": 28
+  },
+  {
+    "api_name": "dask.array.random.RandomState.pareto",
+    "score": 0.2926829268292683,
+    "rank": 28
+  },
+  {
+    "api_name": "dask.array.random.RandomState.power",
+    "score": 0.2926829268292683,
+    "rank": 28
+  },
+  {
+    "api_name": "dask.array.random.RandomState.weibull",
+    "score": 0.2926829268292683,
+    "rank": 28
+  },
+  {
+    "api_name": "dask.array.random.RandomState.zipf",
+    "score": 0.2926829268292683,
+    "rank": 28
+  },
+  {
+    "api_name": "dask.array.random.RandomState.negative_binomial",
+    "score": 0.28888888888888886,
+    "rank": 35
+  },
+  {
+    "api_name": "dask.array.random.RandomState.noncentral_chisquare",
+    "score": 0.28888888888888886,
+    "rank": 35
+  },
+  {
+    "api_name": "dask.array.core.Array.__add__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__and__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__div__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__eq__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__floordiv__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__ge__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__gt__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__le__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__lshift__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__lt__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__mod__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__mul__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__ne__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__or__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__pow__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__radd__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__rand__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__rdiv__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__rfloordiv__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__rlshift__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__rmod__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__rmul__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__ror__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__rpow__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__rrshift__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__rshift__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__rsub__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__rtruediv__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__rxor__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__sub__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__truediv__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.Array.__xor__",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.random.RandomState.exponential",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.random.RandomState.poisson",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.random.RandomState.rayleigh",
+    "score": 0.2857142857142857,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.ufunc.ufunc.__init__",
+    "score": 0.2830188679245283,
+    "rank": 72
+  },
+  {
+    "api_name": "dask.array.random.RandomState.random_integers",
+    "score": 0.2826086956521739,
+    "rank": 73
+  },
+  {
+    "api_name": "dask.array.core.Array.to_dask_dataframe",
+    "score": 0.28205128205128205,
+    "rank": 74
+  },
+  {
+    "api_name": "dask.array.random.RandomState.noncentral_f",
+    "score": 0.2765957446808511,
+    "rank": 75
+  },
+  {
+    "api_name": "dask.array.random.RandomState.tomaxint",
+    "score": 0.275,
+    "rank": 76
+  },
+  {
+    "api_name": "dask.array.core.Array.__rmatmul__",
+    "score": 0.27419354838709675,
+    "rank": 77
+  },
+  {
+    "api_name": "dask.array.random.RandomState.standard_gamma",
+    "score": 0.2727272727272727,
+    "rank": 78
+  },
+  {
+    "api_name": "dask.array.random.RandomState.standard_t",
+    "score": 0.2727272727272727,
+    "rank": 78
+  },
+  {
+    "api_name": "dask.array.core.Array.__abs__",
+    "score": 0.2647058823529412,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.array.core.Array.__bool__",
+    "score": 0.2647058823529412,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.array.core.Array.__complex__",
+    "score": 0.2647058823529412,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.array.core.Array.__float__",
+    "score": 0.2647058823529412,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.array.core.Array.__int__",
+    "score": 0.2647058823529412,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.array.core.Array.__invert__",
+    "score": 0.2647058823529412,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.array.core.Array.__neg__",
+    "score": 0.2647058823529412,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.array.core.Array.store",
+    "score": 0.2631578947368421,
+    "rank": 87
+  },
+  {
+    "api_name": "dask.array.core.Array.npartitions",
+    "score": 0.2571428571428571,
+    "rank": 88
+  },
+  {
+    "api_name": "dask.array.core.Array.size",
+    "score": 0.2571428571428571,
+    "rank": 88
+  },
+  {
+    "api_name": "dask.array.core.Array.cumprod",
+    "score": 0.2564102564102564,
+    "rank": 90
+  },
+  {
+    "api_name": "dask.array.core.Array.cumsum",
+    "score": 0.2564102564102564,
+    "rank": 90
+  },
+  {
+    "api_name": "dask.array.core.Array.rechunk",
+    "score": 0.2564102564102564,
+    "rank": 90
+  },
+  {
+    "api_name": "dask.array.core.Array.all",
+    "score": 0.2558139534883721,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.core.Array.any",
+    "score": 0.2558139534883721,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.core.Array.dot",
+    "score": 0.2558139534883721,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.core.Array.max",
+    "score": 0.2558139534883721,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.core.Array.min",
+    "score": 0.2558139534883721,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.random_sample",
+    "score": 0.2558139534883721,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.standard_cauchy",
+    "score": 0.2558139534883721,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.standard_exponential",
+    "score": 0.2558139534883721,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.standard_normal",
+    "score": 0.2558139534883721,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.random.RandomState.choice",
+    "score": 0.2553191489361702,
+    "rank": 102
+  },
+  {
+    "api_name": "dask.array.core.Array.__matmul__",
+    "score": 0.25,
+    "rank": 103
+  },
+  {
+    "api_name": "dask.array.core.Array.reshape",
+    "score": 0.25,
+    "rank": 103
+  },
+  {
+    "api_name": "dask.array.tests.test_array_core.NonthreadSafeStore.__setitem__",
+    "score": 0.25,
+    "rank": 103
+  },
+  {
+    "api_name": "dask.array.core.Array.map_overlap",
+    "score": 0.24444444444444444,
+    "rank": 106
+  },
+  {
+    "api_name": "dask.array.core.Array.vnorm",
+    "score": 0.24444444444444444,
+    "rank": 106
+  },
+  {
+    "api_name": "dask.array.tests.test_array_core.ThreadSafeStore.__setitem__",
+    "score": 0.24444444444444444,
+    "rank": 106
+  },
+  {
+    "api_name": "dask.array.core.Array.argmax",
+    "score": 0.24390243902439024,
+    "rank": 109
+  },
+  {
+    "api_name": "dask.array.core.Array.argmin",
+    "score": 0.24390243902439024,
+    "rank": 109
+  },
+  {
+    "api_name": "dask.array.core.Array.map_blocks",
+    "score": 0.24390243902439024,
+    "rank": 109
+  },
+  {
+    "api_name": "dask.array.core.Array.swapaxes",
+    "score": 0.24324324324324326,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.array.ufunc.ufunc.__repr__",
+    "score": 0.24242424242424243,
+    "rank": 113
+  },
+  {
+    "api_name": "dask.array.core.Array.mean",
+    "score": 0.2391304347826087,
+    "rank": 114
+  },
+  {
+    "api_name": "dask.array.core.Array.prod",
+    "score": 0.2391304347826087,
+    "rank": 114
+  },
+  {
+    "api_name": "dask.array.core.Array.sum",
+    "score": 0.2391304347826087,
+    "rank": 114
+  },
+  {
+    "api_name": "dask.array.core.Array.repeat",
+    "score": 0.23684210526315788,
+    "rank": 117
+  },
+  {
+    "api_name": "dask.array.core.Array.nbytes",
+    "score": 0.23529411764705882,
+    "rank": 118
+  },
+  {
+    "api_name": "dask.array.core.Array.ndim",
+    "score": 0.23529411764705882,
+    "rank": 118
+  },
+  {
+    "api_name": "dask.array.core.Array.vindex",
+    "score": 0.23529411764705882,
+    "rank": 118
+  },
+  {
+    "api_name": "dask.array.core.Array.clip",
+    "score": 0.23076923076923078,
+    "rank": 121
+  },
+  {
+    "api_name": "dask.array.core.Array.__len__",
+    "score": 0.22857142857142856,
+    "rank": 122
+  },
+  {
+    "api_name": "dask.array.random.RandomState.seed",
+    "score": 0.22857142857142856,
+    "rank": 122
+  },
+  {
+    "api_name": "dask.array.core.Array.transpose",
+    "score": 0.22807017543859648,
+    "rank": 124
+  },
+  {
+    "api_name": "dask.array.core.Array.__setitem__",
+    "score": 0.22666666666666666,
+    "rank": 125
+  },
+  {
+    "api_name": "dask.array.core.Array.std",
+    "score": 0.22448979591836735,
+    "rank": 126
+  },
+  {
+    "api_name": "dask.array.core.Array.var",
+    "score": 0.22448979591836735,
+    "rank": 126
+  },
+  {
+    "api_name": "dask.array.core.Array.__reduce__",
+    "score": 0.2222222222222222,
+    "rank": 128
+  },
+  {
+    "api_name": "dask.array.core.Array.topk",
+    "score": 0.2222222222222222,
+    "rank": 128
+  },
+  {
+    "api_name": "dask.array.core.Array.moment",
+    "score": 0.22,
+    "rank": 130
+  },
+  {
+    "api_name": "dask.array.core.Array._set_chunks",
+    "score": 0.21951219512195122,
+    "rank": 131
+  },
+  {
+    "api_name": "dask.array.core.Array.round",
+    "score": 0.21621621621621623,
+    "rank": 132
+  },
+  {
+    "api_name": "dask.array.core.Array.itemsize",
+    "score": 0.21212121212121213,
+    "rank": 133
+  },
+  {
+    "api_name": "dask.array.random.RandomState.__init__",
+    "score": 0.21052631578947367,
+    "rank": 134
+  },
+  {
+    "api_name": "dask.array.core.Array._keys",
+    "score": 0.20930232558139536,
+    "rank": 135
+  },
+  {
+    "api_name": "dask.array.core.Array.conj",
+    "score": 0.20588235294117646,
+    "rank": 136
+  },
+  {
+    "api_name": "dask.array.core.Array.T",
+    "score": 0.2,
+    "rank": 137
+  },
+  {
+    "api_name": "dask.array.core.Array.imag",
+    "score": 0.2,
+    "rank": 137
+  },
+  {
+    "api_name": "dask.array.core.Array.ravel",
+    "score": 0.2,
+    "rank": 137
+  },
+  {
+    "api_name": "dask.array.core.Array.real",
+    "score": 0.2,
+    "rank": 137
+  },
+  {
+    "api_name": "dask.array.core.Array.squeeze",
+    "score": 0.2,
+    "rank": 137
+  },
+  {
+    "api_name": "dask.array.core.Array._elemwise",
+    "score": 0.18181818181818182,
+    "rank": 142
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.ReturnItem.__getitem__",
+    "score": 0.18181818181818182,
+    "rank": 142
+  },
+  {
+    "api_name": "dask.array.core.Array._get_chunks",
+    "score": 0.17142857142857143,
+    "rank": 144
+  },
+  {
+    "api_name": "dask.array.core.Array.__pos__",
+    "score": 0.15151515151515152,
+    "rank": 145
+  },
+  {
+    "api_name": "dask.array.core.Array.astype",
+    "score": 0.14912280701754385,
+    "rank": 146
+  },
+  {
+    "api_name": "dask.array.core.Array.A",
+    "score": 0.14705882352941177,
+    "rank": 147
+  },
+  {
+    "api_name": "dask.array.rechunk._PrettyBlocks.__init__",
+    "score": 0.14285714285714285,
+    "rank": 148
+  },
+  {
+    "api_name": "dask.array.core.Array.view",
+    "score": 0.13934426229508196,
+    "rank": 149
+  },
+  {
+    "api_name": "dask.array.core.Array.__new__",
+    "score": 0.13821138211382114,
+    "rank": 150
+  },
+  {
+    "api_name": "dask.array.tests.test_array_core.ThreadSafeStore.__init__",
+    "score": 0.13513513513513514,
+    "rank": 151
+  },
+  {
+    "api_name": "dask.array.core.Array.__array_ufunc__",
+    "score": 0.12295081967213115,
+    "rank": 152
+  },
+  {
+    "api_name": "dask.array.tests.test_array_core.NonthreadSafeStore.__init__",
+    "score": 0.11428571428571428,
+    "rank": 153
+  },
+  {
+    "api_name": "dask.array.rechunk._PrettyBlocks.__str__",
+    "score": 0.10365853658536585,
+    "rank": 154
+  },
+  {
+    "api_name": "dask.array.ufunc.ufunc.outer",
+    "score": 0.1005586592178771,
+    "rank": 155
+  },
+  {
+    "api_name": "dask.array.core.Array._vindex",
+    "score": 0.08695652173913043,
+    "rank": 156
+  },
+  {
+    "api_name": "dask.array.core.Array.__getitem__",
+    "score": 0.08181818181818182,
+    "rank": 157
+  },
+  {
+    "api_name": "dask.array.random.RandomState._wrap",
+    "score": 0.030821917808219176,
+    "rank": 158
+  }
+]

@@ -1,0 +1,17 @@
+    @final
+    def _can_hold_identifiers_and_holds_name(self, name) -> bool:
+        """
+        Faster check for ``name in self`` when we know `name` is a Python
+        identifier (e.g. in NDFrame.__getattr__, which hits this to support
+        . key lookup). For indexes that can't hold identifiers (everything
+        but object & categorical) we just return False.
+
+        https://github.com/pandas-dev/pandas/issues/19764
+        """
+        if (
+            is_object_dtype(self.dtype)
+            or is_string_dtype(self.dtype)
+            or is_categorical_dtype(self.dtype)
+        ):
+            return name in self
+        return False

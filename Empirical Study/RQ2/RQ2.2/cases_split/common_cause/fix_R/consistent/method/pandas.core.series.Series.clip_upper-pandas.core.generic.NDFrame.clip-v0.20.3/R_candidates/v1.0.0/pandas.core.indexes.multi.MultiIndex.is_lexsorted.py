@@ -1,0 +1,9 @@
+    def is_lexsorted(self) -> bool:
+        """
+        Return True if the codes are lexicographically sorted.
+
+        Returns
+        -------
+        bool
+        """
+        return self.lexsort_depth == self.nlevels

@@ -1,0 +1,11 @@
+@@ -11,10 +8,2 @@
+         """
+-
+-        if style in self.dashd:
+-            offset, dashes = self.dashd[style]
+-        elif isinstance(style, tuple):
+-            offset, dashes = style
+-        else:
+-            raise ValueError('Unrecognized linestyle: %s' % str(style))
+-
+         self._linestyle = style

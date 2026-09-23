@@ -1,0 +1,4 @@
+@@ -54,2 +56,2 @@
+  
+-        return result
++        return result if not inplace else None

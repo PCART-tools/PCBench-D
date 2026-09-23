@@ -1,0 +1,29 @@
+    def chunk_fcTL(self, pos: int, length: int) -> bytes:
+        assert self.fp is not None
+        s = ImageFile._safe_read(self.fp, length)
+        if length < 26:
+            if ImageFile.LOAD_TRUNCATED_IMAGES:
+                return s
+            msg = "APNG contains truncated fcTL chunk"
+            raise ValueError(msg)
+        seq = i32(s)
+        if (self._seq_num is None and seq != 0) or (
+            self._seq_num is not None and self._seq_num != seq - 1
+        ):
+            msg = "APNG contains frame sequence errors"
+            raise SyntaxError(msg)
+        self._seq_num = seq
+        width, height = i32(s, 4), i32(s, 8)
+        px, py = i32(s, 12), i32(s, 16)
+        im_w, im_h = self.im_size
+        if px + width > im_w or py + height > im_h:
+            msg = "APNG contains invalid frames"
+            raise SyntaxError(msg)
+        self.im_info["bbox"] = (px, py, px + width, py + height)
+        delay_num, delay_den = i16(s, 20), i16(s, 22)
+        if delay_den == 0:
+            delay_den = 100
+        self.im_info["duration"] = float(delay_num) / float(delay_den) * 1000
+        self.im_info["disposal"] = s[24]
+        self.im_info["blend"] = s[25]
+        return s

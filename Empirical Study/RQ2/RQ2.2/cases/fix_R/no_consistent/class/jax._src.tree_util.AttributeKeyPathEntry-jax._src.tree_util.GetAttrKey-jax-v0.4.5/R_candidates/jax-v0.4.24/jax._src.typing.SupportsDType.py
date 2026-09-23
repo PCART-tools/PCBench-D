@@ -1,0 +1,3 @@
+class SupportsDType(Protocol):
+  @property
+  def dtype(self) -> DType: ...

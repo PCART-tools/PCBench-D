@@ -1,0 +1,10 @@
+    def _has_no_reference_block(self, blkno: int) -> bool:
+        """
+        Check for block `i` if it has references.
+        (whether it references another array or is itself being referenced)
+        Returns True if the block has no references.
+        """
+        # TODO(CoW) include `or self.refs[blkno]() is None` ?
+        return (
+            self.refs is None or self.refs[blkno] is None
+        ) and weakref.getweakrefcount(self.blocks[blkno]) == 0

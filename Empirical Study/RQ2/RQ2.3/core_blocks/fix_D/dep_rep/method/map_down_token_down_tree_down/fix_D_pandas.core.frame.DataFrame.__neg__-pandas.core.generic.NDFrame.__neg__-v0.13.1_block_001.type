@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation code block
+   Changed the implementation of `__neg__` from directly negating `_values_from_object(self)` and returning the result through `_wrap_array` to first extracting `values`, assigning `arr` through a branch based on `values.dtype`, and then returning through `__array_wrap__`.
+   The original implementation included:
+
+   * Assignment statement: assign `operator.neg(_values_from_object(self))` to `arr`;
+   * Return statement: call `self._wrap_array(arr, self.axes, copy=False)`.
+
+   The new implementation includes:
+
+   * Assignment statement: assign `_values_from_object(self)` to `values`;
+   * Conditional statement: test `values.dtype == np.bool_` and assign either `operator.inv(values)` or `operator.neg(values)` to `arr`;
+   * Return statement: call `self.__array_wrap__(arr)`.
+# /detail
+# mode：Modify method implementation (add conditional branch and modify return-call statement)

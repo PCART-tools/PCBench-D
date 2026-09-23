@@ -1,0 +1,5 @@
+@@ -3,3 +3,3 @@
+         self,
+-        periods: int = 1,
++        periods: int | Sequence[int] = 1,
+         freq: Frequency | None = None,

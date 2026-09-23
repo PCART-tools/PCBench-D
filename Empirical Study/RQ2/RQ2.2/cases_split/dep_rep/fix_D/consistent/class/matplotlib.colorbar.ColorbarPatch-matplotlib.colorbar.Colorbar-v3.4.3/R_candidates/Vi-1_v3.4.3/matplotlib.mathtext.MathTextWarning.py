@@ -1,0 +1,2 @@
+class MathTextWarning(Warning):
+    pass

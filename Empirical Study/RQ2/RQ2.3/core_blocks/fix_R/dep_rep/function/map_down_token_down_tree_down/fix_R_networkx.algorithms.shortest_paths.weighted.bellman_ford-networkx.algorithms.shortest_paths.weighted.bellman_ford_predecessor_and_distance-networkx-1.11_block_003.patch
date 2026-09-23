@@ -1,0 +1,14 @@
+@@ -65,12 +8,2 @@
+  
+-    for u, v, attr in G.selfloop_edges(data=True):
+-        if attr.get(weight, 1) < 0:
+-            raise nx.NetworkXUnbounded("Negative cost cycle detected.")
+-
+-    dist = {source: 0}
+-    pred = {source: None}
+-
+-    if len(G) == 1:
+-        return pred, dist
+-
+-    return _bellman_ford_relaxation(G, pred, dist, [source], weight)
++    return bellman_ford_predecessor_and_distance(G, source, weight=weight)

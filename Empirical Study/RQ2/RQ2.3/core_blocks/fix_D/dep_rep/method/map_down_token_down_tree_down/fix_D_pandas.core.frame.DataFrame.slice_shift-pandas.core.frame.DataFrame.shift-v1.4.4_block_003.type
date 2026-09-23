@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Added | Conditional branch
+   Added an `elif` branch that performs column-wise shift processing when `axis == 1`, `periods != 0`, `fill_value is not lib.no_default`, and `ncols > 0`.
+   This includes:
+
+   * Assignment statement: assign `self._mgr.arrays` to `arrays`;
+   * Conditional statement: test whether `len(arrays) > 1`, or whether a single array cannot hold `fill_value` and does not satisfy the integer or datetimelike special cases;
+   * Assignment statement: compute `nper = abs(periods)` and limit it to `min(nper, ncols)`;
+   * Conditional statement: construct different `indexer` values based on `periods > 0`;
+   * Method call: call `self._mgr.reindex_indexer(...)` and assign the result to `mgr`;
+   * Constructor call: call `self._constructor(mgr)` and assign the result to `res_df`;
+   * Return statement: return `res_df.__finalize__(self, method="shift")`.
+# /detail
+# mode：Add conditional branch

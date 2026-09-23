@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Return statement
+   Changed the returned object from `self.__values__` to `dict(self)`.
+# /detail
+# mode：Modify return statement (replace attribute return with return-call statement)

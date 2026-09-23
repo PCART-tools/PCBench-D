@@ -1,0 +1,7 @@
+@@ -61,5 +56,3 @@
+  
+-        if inplace:
+-            return self
+-        else:
++        if not inplace:
+             return result

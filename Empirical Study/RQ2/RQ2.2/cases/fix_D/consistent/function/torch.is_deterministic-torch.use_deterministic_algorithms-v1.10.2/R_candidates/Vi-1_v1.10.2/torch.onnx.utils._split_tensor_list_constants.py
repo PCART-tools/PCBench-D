@@ -1,0 +1,16 @@
+def _split_tensor_list_constants(g, block):
+    for node in block.nodes():
+        for subblock in node.blocks():
+            _split_tensor_list_constants(g, subblock)
+        if _is_constant_tensor_list(node):
+            inputs = []
+            for val in node.output().toIValue():
+                input = g.insertConstant(val)
+                input.node().moveBefore(node)
+                inputs.append(input)
+
+            lc = (g.create("prim::ListConstruct", inputs)
+                  .insertBefore(node)
+                  .output()
+                  .setType(ListType.ofTensors()))
+            node.output().replaceAllUsesWith(lc)

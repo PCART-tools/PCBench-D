@@ -1,0 +1,5 @@
+@@ -4,2 +4,3 @@
+         """
+-        self._rgb = (frac, frac, frac)
++        self._orig_color = frac
++        self._rgb = (frac, frac, frac, self._alpha)

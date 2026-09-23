@@ -1,0 +1,14 @@
+def _get_rng_state_offset(device: Union[int, str, torch.device] = "cuda") -> int:
+    r"""Return the random number generator state offset of the specified GPU.
+
+    Args:
+        device (torch.device or int, optional): The device to return the RNG state offset of.
+            Default: ``'cuda'`` (i.e., ``torch.device('cuda')``, the current CUDA device).
+
+    .. warning::
+        This function eagerly initializes CUDA.
+    """
+    _lazy_init()
+    final_device = _get_device(device)
+    default_generator = _get_generator(final_device)
+    return default_generator.get_offset()

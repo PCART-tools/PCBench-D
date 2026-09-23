@@ -1,0 +1,22 @@
+def is_available() -> bool:
+    r"""Check if the current accelerator is available at runtime: it was build, all the
+    required drivers are available and at least one device is visible.
+    See :ref:`accelerator<accelerators>` for details.
+
+    Returns:
+        bool: A boolean indicating if there is an available :ref:`accelerator<accelerators>`.
+
+    Example::
+
+        >>> assert torch.accelerator.is_available() "No available accelerators detected."
+    """
+    # Why not just check "device_count() > 0" like other is_available call?
+    # Because device like CUDA have a python implementation of is_available that is
+    # non-poisoning and some features like Dataloader rely on it.
+    # So we are careful to delegate to the Python version of the accelerator here
+    acc = current_accelerator()
+    if acc is None:
+        return False
+
+    mod = torch.get_device_module(acc)
+    return mod.is_available()

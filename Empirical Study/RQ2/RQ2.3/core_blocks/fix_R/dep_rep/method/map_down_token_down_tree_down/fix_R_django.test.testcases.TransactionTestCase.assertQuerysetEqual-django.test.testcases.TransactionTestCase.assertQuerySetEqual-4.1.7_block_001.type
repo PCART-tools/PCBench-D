@@ -1,0 +1,20 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation
+   Replaced the parameter list and method body of `assertQuerysetEqual` in their entirety.
+   The original implementation included:
+
+   * Assignment statements: convert `values` to a list and assign `qs` to `items`;
+   * Conditional statement: apply `map(transform, items)` to `items` when `transform` was provided;
+   * Conditional statement: when `ordered` was false, return `assertDictEqual(Counter(items), Counter(values), msg=msg)`;
+   * Conditional statement: raise `ValueError` when `values` contained more than one item and `qs` was unordered;
+   * Return statement: return `assertEqual(list(items), values, msg=msg)`.
+
+   The new implementation includes:
+
+   * Method signature: change the parameters to `*args, **kw`;
+   * Call statement: call `warnings.warn(...)`;
+   * Return statement: return `self.assertQuerySetEqual(*args, **kw)`.
+# /detail
+# mode：Convert parameter to variadic parameter; Modify method implementation (replace original implementation with warning call and return-call statement)

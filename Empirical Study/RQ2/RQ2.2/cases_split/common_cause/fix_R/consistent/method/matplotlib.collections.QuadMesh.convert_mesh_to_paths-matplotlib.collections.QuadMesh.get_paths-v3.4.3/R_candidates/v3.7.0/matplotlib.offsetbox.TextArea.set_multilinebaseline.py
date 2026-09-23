@@ -1,0 +1,11 @@
+    def set_multilinebaseline(self, t):
+        """
+        Set multilinebaseline.
+
+        If True, the baseline for multiline text is adjusted so that it is
+        (approximately) center-aligned with single-line text.  This is used
+        e.g. by the legend implementation so that single-line labels are
+        baseline-aligned, but multiline labels are "center"-aligned with them.
+        """
+        self._multilinebaseline = t
+        self.stale = True

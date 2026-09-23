@@ -1,0 +1,5 @@
+    def _is_comparable_dtype(self, dtype: DtypeObj) -> bool:
+        """
+        Can we compare values of the given dtype to our own?
+        """
+        return lib.is_np_dtype(dtype, "m")  # aka self._data._is_recognized_dtype

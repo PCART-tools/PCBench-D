@@ -1,0 +1,1032 @@
+[
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.quote_name",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.make_cursor",
+    "score": 0.9216589861751152,
+    "rank": 2
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.make_debug_cursor",
+    "score": 0.9216589861751152,
+    "rank": 2
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.column_name_converter",
+    "score": 0.9216589861751152,
+    "rank": 2
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.integer_field_range",
+    "score": 0.9055299539170507,
+    "rank": 5
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.savepoint_commit_sql",
+    "score": 0.9055299539170507,
+    "rank": 5
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.savepoint_create_sql",
+    "score": 0.9055299539170507,
+    "rank": 5
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.savepoint_rollback_sql",
+    "score": 0.9055299539170507,
+    "rank": 5
+  },
+  {
+    "api_name": "django.db.backends.base.validation.BaseDatabaseValidation.check",
+    "score": 0.8940217391304348,
+    "rank": 9
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.combine_duration_expression",
+    "score": 0.8888888888888888,
+    "rank": 10
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.window_frame_range_start_end",
+    "score": 0.8888888888888888,
+    "rank": 10
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.prep_for_like_query",
+    "score": 0.8803827751196172,
+    "rank": 12
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.table_name_converter",
+    "score": 0.8636363636363636,
+    "rank": 13
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.adapt_ipaddressfield_value",
+    "score": 0.8636363636363636,
+    "rank": 13
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.fetch_returned_insert_id",
+    "score": 0.8636363636363636,
+    "rank": 13
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.process_clob",
+    "score": 0.8636363636363636,
+    "rank": 13
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.validate_autopk_value",
+    "score": 0.8636363636363636,
+    "rank": 13
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.get_field_type",
+    "score": 0.8397435897435898,
+    "rank": 18
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper._savepoint_allowed",
+    "score": 0.8371428571428572,
+    "rank": 19
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.queries_logged",
+    "score": 0.8371428571428572,
+    "rank": 19
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.time_extract_sql",
+    "score": 0.8264462809917356,
+    "rank": 21
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.binary_placeholder_sql",
+    "score": 0.818407960199005,
+    "rank": 22
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.get_db_converters",
+    "score": 0.818407960199005,
+    "rank": 22
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.unification_cast_sql",
+    "score": 0.818407960199005,
+    "rank": 22
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.skip_default",
+    "score": 0.818407960199005,
+    "rank": 22
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation._get_database_display_str",
+    "score": 0.8119834710743802,
+    "rank": 26
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._field_should_be_indexed",
+    "score": 0.7870813397129186,
+    "rank": 27
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._delete_constraint_sql",
+    "score": 0.786,
+    "rank": 28
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.chunked_cursor",
+    "score": 0.78125,
+    "rank": 29
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.cursor",
+    "score": 0.78125,
+    "rank": 29
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.wrap_database_errors",
+    "score": 0.78125,
+    "rank": 29
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation._nodb_connection",
+    "score": 0.7630208333333334,
+    "rank": 32
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.autoinc_sql",
+    "score": 0.7545871559633027,
+    "rank": 33
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.field_cast_sql",
+    "score": 0.7545871559633027,
+    "rank": 33
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.lookup_cast",
+    "score": 0.7545871559633027,
+    "rank": 33
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.sequence_reset_by_name_sql",
+    "score": 0.7545871559633027,
+    "rank": 33
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.sequence_reset_sql",
+    "score": 0.7545871559633027,
+    "rank": 33
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.tablespace_sql",
+    "score": 0.7545871559633027,
+    "rank": 33
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.bulk_batch_size",
+    "score": 0.743362831858407,
+    "rank": 39
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.last_insert_id",
+    "score": 0.742798353909465,
+    "rank": 40
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._create_unique_sql",
+    "score": 0.736,
+    "rank": 41
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.modify_insert_params",
+    "score": 0.7278761061946902,
+    "rank": 42
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._rename_field_sql",
+    "score": 0.7145454545454546,
+    "rank": 43
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper._cursor",
+    "score": 0.7114624505928854,
+    "rank": 44
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.adapt_decimalfield_value",
+    "score": 0.7104247104247104,
+    "rank": 45
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.disable_constraint_checking",
+    "score": 0.7092391304347826,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.ensure_timezone",
+    "score": 0.7092391304347826,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation.sql_table_creation_suffix",
+    "score": 0.7092391304347826,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.cache_key_culling_sql",
+    "score": 0.7092391304347826,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.deferrable_sql",
+    "score": 0.7092391304347826,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.force_no_ordering",
+    "score": 0.7092391304347826,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.max_in_list_size",
+    "score": 0.7092391304347826,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.max_name_length",
+    "score": 0.7092391304347826,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.pk_default_value",
+    "score": 0.7092391304347826,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.random_function_sql",
+    "score": 0.7092391304347826,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.set_time_zone_sql",
+    "score": 0.7092391304347826,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.start_transaction_sql",
+    "score": 0.7092391304347826,
+    "rank": 46
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.for_update_sql",
+    "score": 0.696911196911197,
+    "rank": 58
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.schema_editor",
+    "score": 0.689655172413793,
+    "rank": 59
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.adapt_datefield_value",
+    "score": 0.6891385767790262,
+    "rank": 60
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.adapt_datetimefield_value",
+    "score": 0.6891385767790262,
+    "rank": 60
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.window_frame_rows_start_end",
+    "score": 0.6775862068965517,
+    "rank": 62
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.compiler",
+    "score": 0.6711409395973154,
+    "rank": 63
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.get_autocommit",
+    "score": 0.665909090909091,
+    "rank": 64
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._alter_column_type_sql",
+    "score": 0.6539855072463769,
+    "rank": 65
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation.test_db_signature",
+    "score": 0.6511111111111112,
+    "rank": 66
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.queries",
+    "score": 0.6493506493506493,
+    "rank": 67
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.combine_expression",
+    "score": 0.6486486486486487,
+    "rank": 68
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.get_rollback",
+    "score": 0.6104166666666666,
+    "rank": 69
+  },
+  {
+    "api_name": "django.db.backends.base.client.BaseDatabaseClient.__init__",
+    "score": 0.6033519553072626,
+    "rank": 70
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation.__init__",
+    "score": 0.6033519553072626,
+    "rank": 70
+  },
+  {
+    "api_name": "django.db.backends.base.features.BaseDatabaseFeatures.__init__",
+    "score": 0.6033519553072626,
+    "rank": 70
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.__init__",
+    "score": 0.6033519553072626,
+    "rank": 70
+  },
+  {
+    "api_name": "django.db.backends.base.validation.BaseDatabaseValidation.__init__",
+    "score": 0.6033519553072626,
+    "rank": 70
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.adapt_timefield_value",
+    "score": 0.5841269841269843,
+    "rank": 75
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.distinct_sql",
+    "score": 0.5803212851405624,
+    "rank": 76
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.check_constraints",
+    "score": 0.5744680851063829,
+    "rank": 77
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.check_expression_support",
+    "score": 0.5744680851063829,
+    "rank": 77
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper._close",
+    "score": 0.5701754385964912,
+    "rank": 79
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper._commit",
+    "score": 0.5701754385964912,
+    "rank": 79
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper._rollback",
+    "score": 0.5701754385964912,
+    "rank": 79
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper._set_autocommit",
+    "score": 0.5654450261780104,
+    "rank": 82
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.create_cursor",
+    "score": 0.5654450261780104,
+    "rank": 82
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.get_new_connection",
+    "score": 0.5654450261780104,
+    "rank": 82
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.get_table_list",
+    "score": 0.5654450261780104,
+    "rank": 82
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.date_interval_sql",
+    "score": 0.5654450261780104,
+    "rank": 82
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.quote_name",
+    "score": 0.5654450261780104,
+    "rank": 82
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.regex_lookup",
+    "score": 0.5654450261780104,
+    "rank": 82
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.prepare_default",
+    "score": 0.5654450261780104,
+    "rank": 82
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.quote_value",
+    "score": 0.5654450261780104,
+    "rank": 82
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.prepare_sql_script",
+    "score": 0.5611888111888113,
+    "rank": 91
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.end_transaction_sql",
+    "score": 0.557915057915058,
+    "rank": 92
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation.set_as_test_mirror",
+    "score": 0.5510204081632653,
+    "rank": 93
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.__init__",
+    "score": 0.5510204081632653,
+    "rank": 93
+  },
+  {
+    "api_name": "django.db.backends.base.features.BaseDatabaseFeatures.introspected_boolean_field_type",
+    "score": 0.5411985018726593,
+    "rank": 95
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.get_constraints",
+    "score": 0.5192307692307692,
+    "rank": 96
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.get_indexes",
+    "score": 0.5192307692307692,
+    "rank": 96
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.get_key_columns",
+    "score": 0.5192307692307692,
+    "rank": 96
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.date_extract_sql",
+    "score": 0.5192307692307692,
+    "rank": 96
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.date_trunc_sql",
+    "score": 0.5192307692307692,
+    "rank": 96
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.datetime_cast_date_sql",
+    "score": 0.5192307692307692,
+    "rank": 96
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.datetime_cast_time_sql",
+    "score": 0.5192307692307692,
+    "rank": 96
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.time_trunc_sql",
+    "score": 0.5192307692307692,
+    "rank": 96
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._digest",
+    "score": 0.5062893081761006,
+    "rank": 104
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.savepoint_commit",
+    "score": 0.4931740614334471,
+    "rank": 105
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation._get_test_db_name",
+    "score": 0.4903100775193798,
+    "rank": 106
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.__enter__",
+    "score": 0.4867109634551495,
+    "rank": 107
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._field_indexes_sql",
+    "score": 0.48525073746312675,
+    "rank": 108
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper._savepoint",
+    "score": 0.4843049327354261,
+    "rank": 109
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper._savepoint_commit",
+    "score": 0.4843049327354261,
+    "rank": 109
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper._savepoint_rollback",
+    "score": 0.4843049327354261,
+    "rank": 109
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation._execute_create_test_db",
+    "score": 0.4821428571428571,
+    "rank": 112
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._create_fk_sql",
+    "score": 0.48041775456919045,
+    "rank": 113
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation._clone_test_db",
+    "score": 0.48,
+    "rank": 114
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.get_sequences",
+    "score": 0.48,
+    "rank": 114
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.datetime_extract_sql",
+    "score": 0.48,
+    "rank": 114
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.datetime_trunc_sql",
+    "score": 0.48,
+    "rank": 114
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation.get_test_db_clone_settings",
+    "score": 0.4727011494252873,
+    "rank": 118
+  },
+  {
+    "api_name": "django.db.backends.base.client.BaseDatabaseClient.runshell",
+    "score": 0.4713375796178344,
+    "rank": 119
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.add_index",
+    "score": 0.4655172413793103,
+    "rank": 120
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.remove_index",
+    "score": 0.4655172413793103,
+    "rank": 120
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.convert_durationfield_value",
+    "score": 0.4569444444444444,
+    "rank": 122
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.installed_models",
+    "score": 0.4501246882793015,
+    "rank": 123
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.copy",
+    "score": 0.4498777506112468,
+    "rank": 124
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.sql_flush",
+    "score": 0.44628099173553726,
+    "rank": 125
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.savepoint_rollback",
+    "score": 0.4432515337423313,
+    "rank": 126
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.table_names",
+    "score": 0.44311377245508976,
+    "rank": 127
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.set_rollback",
+    "score": 0.44262295081967207,
+    "rank": 128
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.get_primary_key_column",
+    "score": 0.44054878048780477,
+    "rank": 129
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.remove_procedure",
+    "score": 0.43548387096774177,
+    "rank": 130
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.clean_savepoints",
+    "score": 0.432748538011696,
+    "rank": 131
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.enable_constraint_checking",
+    "score": 0.432748538011696,
+    "rank": 131
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.prepare_database",
+    "score": 0.432748538011696,
+    "rank": 131
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.return_insert_id",
+    "score": 0.432748538011696,
+    "rank": 131
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper._start_transaction_under_autocommit",
+    "score": 0.425287356321839,
+    "rank": 135
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.get_connection_params",
+    "score": 0.425287356321839,
+    "rank": 135
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.init_connection_state",
+    "score": 0.425287356321839,
+    "rank": 135
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.is_usable",
+    "score": 0.425287356321839,
+    "rank": 135
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.no_limit_value",
+    "score": 0.425287356321839,
+    "rank": 135
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper._prepare_cursor",
+    "score": 0.4250645994832041,
+    "rank": 140
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.window_frame_start",
+    "score": 0.42427884615384603,
+    "rank": 141
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation._destroy_test_db",
+    "score": 0.4202334630350194,
+    "rank": 142
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.alter_db_tablespace",
+    "score": 0.4202334630350194,
+    "rank": 142
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.subtract_temporals",
+    "score": 0.4058988764044942,
+    "rank": 144
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper._nodb_connection",
+    "score": 0.4040247678018575,
+    "rank": 145
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.validate_no_broken_transaction",
+    "score": 0.4,
+    "rank": 146
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.last_executed_query",
+    "score": 0.3926014319809068,
+    "rank": 147
+  },
+  {
+    "api_name": "django.db.backends.base.features.BaseDatabaseFeatures.supports_stddev",
+    "score": 0.39184397163120566,
+    "rank": 148
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.window_frame_end",
+    "score": 0.3858173076923075,
+    "rank": 149
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._get_index_tablespace_sql",
+    "score": 0.37676056338028163,
+    "rank": 150
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation.deserialize_db_from_string",
+    "score": 0.3749999999999999,
+    "rank": 151
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.execute_wrapper",
+    "score": 0.37370242214532867,
+    "rank": 152
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.year_lookup_bounds_for_date_field",
+    "score": 0.36966292134831447,
+    "rank": 153
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.timezone_name",
+    "score": 0.3683333333333333,
+    "rank": 154
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.on_commit",
+    "score": 0.36734693877551017,
+    "rank": 155
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.validate_no_atomic_block",
+    "score": 0.36633663366336633,
+    "rank": 156
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.timezone",
+    "score": 0.3631284916201116,
+    "rank": 157
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.adapt_unknown_value",
+    "score": 0.3564356435643563,
+    "rank": 158
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.validate_thread_sharing",
+    "score": 0.35238095238095235,
+    "rank": 159
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.execute_sql_flush",
+    "score": 0.34838709677419344,
+    "rank": 160
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.__init__",
+    "score": 0.3417721518987342,
+    "rank": 161
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.alter_db_table",
+    "score": 0.3416075650118202,
+    "rank": 162
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._alter_column_null_sql",
+    "score": 0.338407494145199,
+    "rank": 163
+  },
+  {
+    "api_name": "django.db.backends.base.validation.BaseDatabaseValidation.check_field",
+    "score": 0.33434959349593485,
+    "rank": 164
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._create_index_sql",
+    "score": 0.3279857397504454,
+    "rank": 165
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.ensure_connection",
+    "score": 0.3148936170212765,
+    "rank": 166
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.__exit__",
+    "score": 0.29999999999999993,
+    "rank": 167
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation.serialize_db_to_string",
+    "score": 0.2906724511930584,
+    "rank": 168
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._delete_primary_key",
+    "score": 0.2872340425531914,
+    "rank": 169
+  },
+  {
+    "api_name": "django.db.backends.base.features.BaseDatabaseFeatures.supports_transactions",
+    "score": 0.2800429184549357,
+    "rank": 170
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._alter_column_default_sql",
+    "score": 0.27854938271604945,
+    "rank": 171
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._alter_many_to_many",
+    "score": 0.2769230769230767,
+    "rank": 172
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.close",
+    "score": 0.27556109725685785,
+    "rank": 173
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.check_settings",
+    "score": 0.2750929368029741,
+    "rank": 174
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.commit",
+    "score": 0.2720588235294116,
+    "rank": 175
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.delete_model",
+    "score": 0.2706766917293233,
+    "rank": 176
+  },
+  {
+    "api_name": "django.db.backends.base.operations.BaseDatabaseOperations.year_lookup_bounds_for_datetime_field",
+    "score": 0.26028481012658233,
+    "rank": 177
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.rollback",
+    "score": 0.25605536332179923,
+    "rank": 178
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._model_indexes_sql",
+    "score": 0.2557522123893803,
+    "rank": 179
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.django_table_names",
+    "score": 0.24886535552193645,
+    "rank": 180
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._delete_composed_index",
+    "score": 0.24601366742596786,
+    "rank": 181
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation.clone_test_db",
+    "score": 0.2448979591836733,
+    "rank": 182
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.alter_index_together",
+    "score": 0.24107142857142838,
+    "rank": 183
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.alter_unique_together",
+    "score": 0.24107142857142838,
+    "rank": 183
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.savepoint",
+    "score": 0.23510638297872333,
+    "rank": 185
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.run_and_clear_commit_hooks",
+    "score": 0.23417721518987333,
+    "rank": 186
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.constraint_checks_disabled",
+    "score": 0.2334384858044164,
+    "rank": 187
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.close_if_unusable_or_obsolete",
+    "score": 0.22783505154639172,
+    "rank": 188
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.set_autocommit",
+    "score": 0.22360248447204945,
+    "rank": 189
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.remove_field",
+    "score": 0.22222222222222243,
+    "rank": 190
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation.create_test_db",
+    "score": 0.21225806451612916,
+    "rank": 191
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.alter_field",
+    "score": 0.2117647058823533,
+    "rank": 192
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._create_index_name",
+    "score": 0.20238095238095255,
+    "rank": 193
+  },
+  {
+    "api_name": "django.db.backends.base.introspection.BaseDatabaseIntrospection.sequence_list",
+    "score": 0.19683257918552066,
+    "rank": 194
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.temporary_connection",
+    "score": 0.1957671957671957,
+    "rank": 195
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.execute",
+    "score": 0.18914185639229408,
+    "rank": 196
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.effective_default",
+    "score": 0.18693181818181837,
+    "rank": 197
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._constraint_names",
+    "score": 0.1791938997821355,
+    "rank": 198
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation.destroy_test_db",
+    "score": 0.1719745222929936,
+    "rank": 199
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.add_field",
+    "score": 0.16977225672877894,
+    "rank": 200
+  },
+  {
+    "api_name": "django.db.backends.base.creation.BaseDatabaseCreation._create_test_db",
+    "score": 0.15554359526372474,
+    "rank": 201
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.connect",
+    "score": 0.13909774436090228,
+    "rank": 202
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.column_sql",
+    "score": 0.13775023832221223,
+    "rank": 203
+  },
+  {
+    "api_name": "django.db.backends.base.base.BaseDatabaseWrapper.__init__",
+    "score": 0.11777535441657605,
+    "rank": 204
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor.create_model",
+    "score": 0.07147584381204586,
+    "rank": 205
+  },
+  {
+    "api_name": "django.db.backends.base.schema.BaseDatabaseSchemaEditor._alter_field",
+    "score": 0.02449535041959272,
+    "rank": 206
+  }
+]

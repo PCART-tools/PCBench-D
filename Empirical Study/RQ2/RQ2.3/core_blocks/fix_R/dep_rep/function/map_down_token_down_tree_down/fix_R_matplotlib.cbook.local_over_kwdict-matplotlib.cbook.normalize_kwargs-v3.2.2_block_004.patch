@@ -1,0 +1,13 @@
+@@ -36,11 +36,2 @@
+     """
+-    out = local_var
+-    for key in keys:
+-        kwarg_val = kwargs.pop(key, None)
+-        if kwarg_val is not None:
+-            if out is None:
+-                out = kwarg_val
+-            else:
+-                _warn_external('"%s" keyword argument will be ignored' % key,
+-                               IgnoredKeywordWarning)
+-    return out
++    return _local_over_kwdict(local_var, kwargs, *keys, IgnoredKeywordWarning)

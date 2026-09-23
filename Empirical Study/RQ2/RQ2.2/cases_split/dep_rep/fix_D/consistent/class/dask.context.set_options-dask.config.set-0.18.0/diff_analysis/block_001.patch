@@ -1,0 +1,14 @@
+@@ -19,12 +19,3 @@
+             self.config = config
+-            self.old = copy.deepcopy(config)
+-
+-            def assign(keys, value, d):
+-                key = keys[0]
+-                if len(keys) == 1:
+-                    d[keys[0]] = value
+-                else:
+-                    if key not in d:
+-                        d[key] = {}
+-                    assign(keys[1:], value, d[key])
++            self.old = {}
+  

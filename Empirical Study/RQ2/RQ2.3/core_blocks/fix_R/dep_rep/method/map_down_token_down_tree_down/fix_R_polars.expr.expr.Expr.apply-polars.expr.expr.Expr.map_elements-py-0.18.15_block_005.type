@@ -1,0 +1,20 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original function-application and strategy-branch implementation with a direct return call to `self.map_elements(...)`.
+   The original implementation included:
+
+   * Import statement: import `warn_on_inefficient_apply` from `polars.utils.udfs`;
+   * Assignment and conditional statements: obtain `self.meta.root_names()` and call `warn_on_inefficient_apply(...)` when root names were present;
+   * Conditional statement: define different `wrap_f(x: Series)` wrapper functions according to `pass_name`;
+   * Conditional statements: handle `"thread_local"`, `"threading"`, and other values according to `strategy`;
+   * Function definition: in the `"threading"` branch, define `wrap_threading(x: Series)`, including DataFrame conversion, thread chunking, LazyFrame promise creation, partition collection, and concatenation;
+   * Return statements: call `self.map(...)` to return results under different strategies;
+   * Expression statement: construct `ValueError(...)` in the unsupported-strategy branch.
+
+   The new implementation includes:
+
+   * Return statement: call `self.map_elements(function, return_dtype=return_dtype, skip_nulls=skip_nulls, pass_name=pass_name, strategy=strategy)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

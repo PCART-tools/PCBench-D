@@ -1,0 +1,11 @@
+@@ -52,2 +50,10 @@
+         """
++        if radix is None:
++            issue_deprecation_warning(
++                "The default value for the `radix` parameter of `parse_int` will be removed in a future version."
++                " Call `parse_int(radix=2)` to keep current behavior and silence this warning.",
++                version="0.19.8",
++            )
++            radix = 2
++
+         return wrap_expr(self._pyexpr.str_parse_int(radix, strict))

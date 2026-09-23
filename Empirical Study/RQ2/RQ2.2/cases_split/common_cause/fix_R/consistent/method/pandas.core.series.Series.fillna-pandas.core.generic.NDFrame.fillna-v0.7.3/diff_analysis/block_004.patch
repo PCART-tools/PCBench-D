@@ -1,0 +1,4 @@
+@@ -29,2 +31,3 @@
+             result = self.copy() if not inplace else self
++            mask = isnull(self.values)
+             np.putmask(result, mask, value)

@@ -1,0 +1,335 @@
+class DatetimeTimedeltaMixin(DatetimeIndexOpsMixin):
+    """
+    Mixin class for methods shared by DatetimeIndex and TimedeltaIndex,
+    but not PeriodIndex
+    """
+
+    _data: DatetimeArray | TimedeltaArray
+    _comparables = ["name", "freq"]
+    _attributes = ["name", "freq"]
+
+    # Compat for frequency inference, see GH#23789
+    _is_monotonic_increasing = Index.is_monotonic_increasing
+    _is_monotonic_decreasing = Index.is_monotonic_decreasing
+    _is_unique = Index.is_unique
+
+    _join_precedence = 10
+
+    def _with_freq(self, freq):
+        arr = self._data._with_freq(freq)
+        return type(self)._simple_new(arr, name=self._name)
+
+    def is_type_compatible(self, kind: str) -> bool:
+        warnings.warn(
+            f"{type(self).__name__}.is_type_compatible is deprecated and will be "
+            "removed in a future version.",
+            FutureWarning,
+            stacklevel=find_stack_level(),
+        )
+        return kind in self._data._infer_matches
+
+    @property
+    def values(self) -> np.ndarray:
+        # NB: For Datetime64TZ this is lossy
+        return self._data._ndarray
+
+    # --------------------------------------------------------------------
+    # Set Operation Methods
+
+    @cache_readonly
+    def _as_range_index(self) -> RangeIndex:
+        # Convert our i8 representations to RangeIndex
+        # Caller is responsible for checking isinstance(self.freq, Tick)
+        freq = cast(Tick, self.freq)
+        tick = freq.delta.value
+        rng = range(self[0].value, self[-1].value + tick, tick)
+        return RangeIndex(rng)
+
+    def _can_range_setop(self, other):
+        return isinstance(self.freq, Tick) and isinstance(other.freq, Tick)
+
+    def _wrap_range_setop(self, other, res_i8):
+        new_freq = None
+        if not len(res_i8):
+            # RangeIndex defaults to step=1, which we don't want.
+            new_freq = self.freq
+        elif isinstance(res_i8, RangeIndex):
+            new_freq = to_offset(Timedelta(res_i8.step))
+            res_i8 = res_i8
+
+        # TODO: we cannot just do
+        #  type(self._data)(res_i8.values, dtype=self.dtype, freq=new_freq)
+        # because test_setops_preserve_freq fails with _validate_frequency raising.
+        # This raising is incorrect, as 'on_freq' is incorrect. This will
+        # be fixed by GH#41493
+        res_values = res_i8.values.view(self._data._ndarray.dtype)
+        result = type(self._data)._simple_new(
+            res_values, dtype=self.dtype, freq=new_freq
+        )
+        return self._wrap_setop_result(other, result)
+
+    def _range_intersect(self, other, sort):
+        # Dispatch to RangeIndex intersection logic.
+        left = self._as_range_index
+        right = other._as_range_index
+        res_i8 = left.intersection(right, sort=sort)
+        return self._wrap_range_setop(other, res_i8)
+
+    def _range_union(self, other, sort):
+        # Dispatch to RangeIndex union logic.
+        left = self._as_range_index
+        right = other._as_range_index
+        res_i8 = left.union(right, sort=sort)
+        return self._wrap_range_setop(other, res_i8)
+
+    def _intersection(self, other: Index, sort=False) -> Index:
+        """
+        intersection specialized to the case with matching dtypes and both non-empty.
+        """
+        other = cast("DatetimeTimedeltaMixin", other)
+
+        if self._can_range_setop(other):
+            return self._range_intersect(other, sort=sort)
+
+        if not self._can_fast_intersect(other):
+            result = Index._intersection(self, other, sort=sort)
+            # We need to invalidate the freq because Index._intersection
+            #  uses _shallow_copy on a view of self._data, which will preserve
+            #  self.freq if we're not careful.
+            # At this point we should have result.dtype == self.dtype
+            #  and type(result) is type(self._data)
+            result = self._wrap_setop_result(other, result)
+            return result._with_freq(None)._with_freq("infer")
+
+        else:
+            return self._fast_intersect(other, sort)
+
+    def _fast_intersect(self, other, sort):
+        # to make our life easier, "sort" the two ranges
+        if self[0] <= other[0]:
+            left, right = self, other
+        else:
+            left, right = other, self
+
+        # after sorting, the intersection always starts with the right index
+        # and ends with the index of which the last elements is smallest
+        end = min(left[-1], right[-1])
+        start = right[0]
+
+        if end < start:
+            result = self[:0]
+        else:
+            lslice = slice(*left.slice_locs(start, end))
+            result = left._values[lslice]
+
+        return result
+
+    def _can_fast_intersect(self: _T, other: _T) -> bool:
+        # Note: we only get here with len(self) > 0 and len(other) > 0
+        if self.freq is None:
+            return False
+
+        elif other.freq != self.freq:
+            return False
+
+        elif not self.is_monotonic_increasing:
+            # Because freq is not None, we must then be monotonic decreasing
+            return False
+
+        # this along with matching freqs ensure that we "line up",
+        #  so intersection will preserve freq
+        # Note we are assuming away Ticks, as those go through _range_intersect
+        # GH#42104
+        return self.freq.n == 1
+
+    def _can_fast_union(self: _T, other: _T) -> bool:
+        # Assumes that type(self) == type(other), as per the annotation
+        # The ability to fast_union also implies that `freq` should be
+        #  retained on union.
+        freq = self.freq
+
+        if freq is None or freq != other.freq:
+            return False
+
+        if not self.is_monotonic_increasing:
+            # Because freq is not None, we must then be monotonic decreasing
+            # TODO: do union on the reversed indexes?
+            return False
+
+        if len(self) == 0 or len(other) == 0:
+            # only reached via union_many
+            return True
+
+        # to make our life easier, "sort" the two ranges
+        if self[0] <= other[0]:
+            left, right = self, other
+        else:
+            left, right = other, self
+
+        right_start = right[0]
+        left_end = left[-1]
+
+        # Only need to "adjoin", not overlap
+        return (right_start == left_end + freq) or right_start in left
+
+    def _fast_union(self: _TDT, other: _TDT, sort=None) -> _TDT:
+        # Caller is responsible for ensuring self and other are non-empty
+
+        # to make our life easier, "sort" the two ranges
+        if self[0] <= other[0]:
+            left, right = self, other
+        elif sort is False:
+            # TDIs are not in the "correct" order and we don't want
+            #  to sort but want to remove overlaps
+            left, right = self, other
+            left_start = left[0]
+            loc = right.searchsorted(left_start, side="left")
+            right_chunk = right._values[:loc]
+            dates = concat_compat((left._values, right_chunk))
+            result = type(self)._simple_new(dates, name=self.name)
+            return result
+        else:
+            left, right = other, self
+
+        left_end = left[-1]
+        right_end = right[-1]
+
+        # concatenate
+        if left_end < right_end:
+            loc = right.searchsorted(left_end, side="right")
+            right_chunk = right._values[loc:]
+            dates = concat_compat([left._values, right_chunk])
+            # The can_fast_union check ensures that the result.freq
+            #  should match self.freq
+            dates = type(self._data)(dates, freq=self.freq)
+            result = type(self)._simple_new(dates)
+            return result
+        else:
+            return left
+
+    def _union(self, other, sort):
+        # We are called by `union`, which is responsible for this validation
+        assert isinstance(other, type(self))
+        assert self.dtype == other.dtype
+
+        if self._can_range_setop(other):
+            return self._range_union(other, sort=sort)
+
+        if self._can_fast_union(other):
+            result = self._fast_union(other, sort=sort)
+            # in the case with sort=None, the _can_fast_union check ensures
+            #  that result.freq == self.freq
+            return result
+        else:
+            return super()._union(other, sort)._with_freq("infer")
+
+    # --------------------------------------------------------------------
+    # Join Methods
+
+    def _get_join_freq(self, other):
+        """
+        Get the freq to attach to the result of a join operation.
+        """
+        freq = None
+        if self._can_fast_union(other):
+            freq = self.freq
+        return freq
+
+    def _wrap_joined_index(self, joined, other):
+        assert other.dtype == self.dtype, (other.dtype, self.dtype)
+        result = super()._wrap_joined_index(joined, other)
+        result._data._freq = self._get_join_freq(other)
+        return result
+
+    def _get_engine_target(self) -> np.ndarray:
+        # engine methods and libjoin methods need dt64/td64 values cast to i8
+        return self._data._ndarray.view("i8")
+
+    def _from_join_target(self, result: np.ndarray):
+        # view e.g. i8 back to M8[ns]
+        result = result.view(self._data._ndarray.dtype)
+        return self._data._from_backing_data(result)
+
+    # --------------------------------------------------------------------
+    # List-like Methods
+
+    def _get_delete_freq(self, loc: int | slice | Sequence[int]):
+        """
+        Find the `freq` for self.delete(loc).
+        """
+        freq = None
+        if self.freq is not None:
+            if is_integer(loc):
+                if loc in (0, -len(self), -1, len(self) - 1):
+                    freq = self.freq
+            else:
+                if is_list_like(loc):
+                    # error: Incompatible types in assignment (expression has
+                    # type "Union[slice, ndarray]", variable has type
+                    # "Union[int, slice, Sequence[int]]")
+                    loc = lib.maybe_indices_to_slice(  # type: ignore[assignment]
+                        np.asarray(loc, dtype=np.intp), len(self)
+                    )
+                if isinstance(loc, slice) and loc.step in (1, None):
+                    if loc.start in (0, None) or loc.stop in (len(self), None):
+                        freq = self.freq
+        return freq
+
+    def _get_insert_freq(self, loc: int, item):
+        """
+        Find the `freq` for self.insert(loc, item).
+        """
+        value = self._data._validate_scalar(item)
+        item = self._data._box_func(value)
+
+        freq = None
+        if self.freq is not None:
+            # freq can be preserved on edge cases
+            if self.size:
+                if item is NaT:
+                    pass
+                elif (loc == 0 or loc == -len(self)) and item + self.freq == self[0]:
+                    freq = self.freq
+                elif (loc == len(self)) and item - self.freq == self[-1]:
+                    freq = self.freq
+            else:
+                # Adding a single item to an empty index may preserve freq
+                if isinstance(self.freq, Tick):
+                    # all TimedeltaIndex cases go through here; is_on_offset
+                    #  would raise TypeError
+                    freq = self.freq
+                elif self.freq.is_on_offset(item):
+                    freq = self.freq
+        return freq
+
+    @doc(NDArrayBackedExtensionIndex.delete)
+    def delete(self, loc) -> DatetimeTimedeltaMixin:
+        result = super().delete(loc)
+        result._data._freq = self._get_delete_freq(loc)
+        return result
+
+    @doc(NDArrayBackedExtensionIndex.insert)
+    def insert(self, loc: int, item):
+        result = super().insert(loc, item)
+        if isinstance(result, type(self)):
+            # i.e. parent class method did not cast
+            result._data._freq = self._get_insert_freq(loc, item)
+        return result
+
+    # --------------------------------------------------------------------
+    # NDArray-Like Methods
+
+    @Appender(_index_shared_docs["take"] % _index_doc_kwargs)
+    def take(self, indices, axis=0, allow_fill=True, fill_value=None, **kwargs):
+        nv.validate_take((), kwargs)
+        indices = np.asarray(indices, dtype=np.intp)
+
+        result = NDArrayBackedExtensionIndex.take(
+            self, indices, axis, allow_fill, fill_value, **kwargs
+        )
+
+        maybe_slice = lib.maybe_indices_to_slice(indices, len(self))
+        if isinstance(maybe_slice, slice):
+            freq = self._data._get_getitem_freq(maybe_slice)
+            result._data._freq = freq
+        return result

@@ -1,0 +1,4 @@
+@@ -10,2 +14,3 @@
+         """
++        deprecate("getoffset", 10, "getbbox")
+         return self.font.getsize(text)[1]

@@ -1,0 +1,16 @@
+    def _render_latex(self, sparse_index: bool, sparse_columns: bool, **kwargs) -> str:
+        """
+        Render a Styler in latex format
+        """
+        self._compute()
+
+        d = self._translate(sparse_index, sparse_columns, blank="")
+        self._translate_latex(d)
+
+        self.template_latex.globals["parse_wrap"] = _parse_latex_table_wrapping
+        self.template_latex.globals["parse_table"] = _parse_latex_table_styles
+        self.template_latex.globals["parse_cell"] = _parse_latex_cell_styles
+        self.template_latex.globals["parse_header"] = _parse_latex_header_span
+
+        d.update(kwargs)
+        return self.template_latex.render(**d)

@@ -1,0 +1,17 @@
+    def adapt_timefield_value(self, value):
+        if value is None:
+            return None
+
+        # Expression values are adapted by the database.
+        if hasattr(value, 'resolve_expression'):
+            return value
+
+        if isinstance(value, six.string_types):
+            return datetime.datetime.strptime(value, '%H:%M:%S')
+
+        # Oracle doesn't support tz-aware times
+        if timezone.is_aware(value):
+            raise ValueError("Oracle backend does not support timezone-aware times.")
+
+        return Oracle_datetime(1900, 1, 1, value.hour, value.minute,
+                               value.second, value.microsecond)

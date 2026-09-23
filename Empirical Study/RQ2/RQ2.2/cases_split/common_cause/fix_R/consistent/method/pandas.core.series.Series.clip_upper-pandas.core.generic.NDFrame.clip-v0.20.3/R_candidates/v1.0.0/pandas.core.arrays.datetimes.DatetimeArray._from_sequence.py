@@ -1,0 +1,40 @@
+    @classmethod
+    def _from_sequence(
+        cls,
+        data,
+        dtype=None,
+        copy=False,
+        tz=None,
+        freq=None,
+        dayfirst=False,
+        yearfirst=False,
+        ambiguous="raise",
+    ):
+
+        freq, freq_infer = dtl.maybe_infer_freq(freq)
+
+        subarr, tz, inferred_freq = sequence_to_dt64ns(
+            data,
+            dtype=dtype,
+            copy=copy,
+            tz=tz,
+            dayfirst=dayfirst,
+            yearfirst=yearfirst,
+            ambiguous=ambiguous,
+        )
+
+        freq, freq_infer = dtl.validate_inferred_freq(freq, inferred_freq, freq_infer)
+
+        dtype = tz_to_dtype(tz)
+        result = cls._simple_new(subarr, freq=freq, dtype=dtype)
+
+        if inferred_freq is None and freq is not None:
+            # this condition precludes `freq_infer`
+            cls._validate_frequency(result, freq, ambiguous=ambiguous)
+
+        elif freq_infer:
+            # Set _freq directly to bypass duplicative _validate_frequency
+            # check.
+            result._freq = to_offset(result.inferred_freq)
+
+        return result

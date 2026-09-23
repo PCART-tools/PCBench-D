@@ -1,0 +1,11 @@
+# detail
+Number of changes: 1
+
+1. Added | Constructor
+   Added an `__init__` method.
+   This includes:
+
+   * API call: call `warnings.warn` to issue a deprecation warning;
+   * Parent-class method call: call `super().__init__(*args, **kwargs)`.
+# /detail
+# mode：Add method

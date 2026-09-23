@@ -1,0 +1,7 @@
+    def __init__(self, config):
+        super().__init__()
+        self.use_bottleneck = config.use_bottleneck
+        self.dense = nn.Linear(config.true_hidden_size, config.true_hidden_size)
+        self.LayerNorm = NORM2FN[config.normalization_type](config.true_hidden_size, eps=config.layer_norm_eps)
+        if not self.use_bottleneck:
+            self.dropout = nn.Dropout(config.hidden_dropout_prob)

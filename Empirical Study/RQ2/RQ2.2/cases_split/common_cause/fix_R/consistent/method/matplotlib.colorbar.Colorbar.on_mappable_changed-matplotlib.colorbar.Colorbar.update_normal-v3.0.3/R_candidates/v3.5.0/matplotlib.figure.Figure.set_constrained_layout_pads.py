@@ -1,0 +1,37 @@
+    def set_constrained_layout_pads(self, *, w_pad=None, h_pad=None,
+                                    wspace=None, hspace=None):
+        """
+        Set padding for ``constrained_layout``.
+
+        Tip: The parameters can be passed from a dictionary by using
+        ``fig.set_constrained_layout(**pad_dict)``.
+
+        See :doc:`/tutorials/intermediate/constrainedlayout_guide`.
+
+        Parameters
+        ----------
+        w_pad : float, default: :rc:`figure.constrained_layout.w_pad`
+            Width padding in inches.  This is the pad around Axes
+            and is meant to make sure there is enough room for fonts to
+            look good.  Defaults to 3 pts = 0.04167 inches
+
+        h_pad : float, default: :rc:`figure.constrained_layout.h_pad`
+            Height padding in inches. Defaults to 3 pts.
+
+        wspace : float, default: :rc:`figure.constrained_layout.wspace`
+            Width padding between subplots, expressed as a fraction of the
+            subplot width.  The total padding ends up being w_pad + wspace.
+
+        hspace : float, default: :rc:`figure.constrained_layout.hspace`
+            Height padding between subplots, expressed as a fraction of the
+            subplot width. The total padding ends up being h_pad + hspace.
+
+        """
+
+        for name, size in zip(['w_pad', 'h_pad', 'wspace', 'hspace'],
+                              [w_pad, h_pad, wspace, hspace]):
+            if size is not None:
+                self._constrained_layout_pads[name] = size
+            else:
+                self._constrained_layout_pads[name] = (
+                    mpl.rcParams[f'figure.constrained_layout.{name}'])

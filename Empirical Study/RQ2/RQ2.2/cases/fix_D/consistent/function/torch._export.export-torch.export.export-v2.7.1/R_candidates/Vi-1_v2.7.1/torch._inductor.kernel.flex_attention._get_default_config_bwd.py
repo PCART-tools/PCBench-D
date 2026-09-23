@@ -1,0 +1,5 @@
+def _get_default_config_bwd(query) -> tuple[int, int, int, int]:
+    if torch.version.hip is None:
+        return _get_nv_config(query, mode=Mode.bwd)
+    else:
+        return _get_rocm_config(query, mode=Mode.bwd)

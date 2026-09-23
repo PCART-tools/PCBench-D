@@ -1,0 +1,25 @@
+    def __init__(self, ax,
+                 cmap=None,
+                 norm=None,
+                 interpolation=None,
+                 origin=None,
+                 filternorm=True,
+                 filterrad=4.0,
+                 resample=False,
+                 **kwargs
+                 ):
+        martist.Artist.__init__(self)
+        cm.ScalarMappable.__init__(self, norm, cmap)
+        if origin is None:
+            origin = mpl.rcParams['image.origin']
+        cbook._check_in_list(["upper", "lower"], origin=origin)
+        self.origin = origin
+        self.set_filternorm(filternorm)
+        self.set_filterrad(filterrad)
+        self.set_interpolation(interpolation)
+        self.set_resample(resample)
+        self.axes = ax
+
+        self._imcache = None
+
+        self.update(kwargs)

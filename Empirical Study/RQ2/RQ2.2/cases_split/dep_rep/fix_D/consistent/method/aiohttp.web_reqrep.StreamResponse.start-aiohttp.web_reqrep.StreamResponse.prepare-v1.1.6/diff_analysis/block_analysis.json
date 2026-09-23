@@ -1,0 +1,98 @@
+{
+  "case": "aiohttp.web_reqrep.StreamResponse.start-aiohttp.web_reqrep.StreamResponse.prepare-v1.1.6",
+  "fix_type": "fix_D",
+  "candidate_api": "aiohttp.web_reqrep.StreamResponse.prepare",
+  "error": null,
+  "threshold_10pct": 76.5,
+  "algorithms_meeting_threshold": [
+    "tokenBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 27,
+      "vi_rank": 40,
+      "delta": -13,
+      "exceeds_10pct": false
+    },
+    "tokenBased": {
+      "vi1_rank": 140,
+      "vi_rank": 223,
+      "delta": -83,
+      "exceeds_10pct": true
+    },
+    "treeBased": {
+      "vi1_rank": 102,
+      "vi_rank": 137,
+      "delta": -35,
+      "exceeds_10pct": false
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.4257,
+      "baseline_rank": 28,
+      "delta_baseline_to_vi": -12
+    },
+    "tokenBased": {
+      "baseline_score": 0.301,
+      "baseline_rank": 140,
+      "delta_baseline_to_vi": -83
+    },
+    "treeBased": {
+      "baseline_score": 0.4103,
+      "baseline_rank": 103,
+      "delta_baseline_to_vi": -34
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 40,
+          "vi_score": 0.402,
+          "restored_score": 0.4257,
+          "restored_rank": 28,
+          "delta_vi_to_restored": 12
+        },
+        "tokenBased": {
+          "vi_rank": 223,
+          "vi_score": 0.233,
+          "restored_score": 0.301,
+          "restored_rank": 140,
+          "delta_vi_to_restored": 83,
+          "distance_to_baseline": 0
+        },
+        "treeBased": {
+          "vi_rank": 137,
+          "vi_score": 0.3851,
+          "restored_score": 0.4103,
+          "restored_rank": 103,
+          "delta_vi_to_restored": 34
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "tokenBased": [
+      "block_001"
+    ],
+    "mapBased": [
+      "block_001"
+    ],
+    "treeBased": [
+      "block_001"
+    ]
+  },
+  "block_sign_labels": {
+    "map_down_token_down_tree_down": [
+      "block_001"
+    ]
+  }
+}

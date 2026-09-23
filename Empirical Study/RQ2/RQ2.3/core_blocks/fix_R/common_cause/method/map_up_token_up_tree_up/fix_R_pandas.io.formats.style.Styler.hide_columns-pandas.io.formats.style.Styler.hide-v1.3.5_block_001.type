@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method signature
+   Changed the parameter list of `hide_columns`: added `level: Level | list[Level] | None = None` and `names: bool = False` to the existing `self` and `subset: Subset | None = None` parameters; the return type remains `Styler`.
+# /detail
+# mode：Add parameter

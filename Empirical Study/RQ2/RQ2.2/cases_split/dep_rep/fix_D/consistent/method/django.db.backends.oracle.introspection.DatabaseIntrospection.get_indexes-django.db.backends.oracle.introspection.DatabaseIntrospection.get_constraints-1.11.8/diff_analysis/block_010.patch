@@ -1,0 +1,25 @@
+@@ -72,15 +59,11 @@
+         """, [table_name])
+-        for constraint, column, other_table, other_column in cursor.fetchall():
+-            # If we're the first column, make the record
+-            if constraint not in constraints:
+-                constraints[constraint] = {
+-                    "columns": [],
+-                    "primary_key": False,
+-                    "unique": False,
+-                    "foreign_key": (other_table, other_column),
+-                    "check": False,
+-                    "index": False,
+-                }
+-            # Record the details
+-            constraints[constraint]['columns'].append(column)
++        for constraint, columns, other_table, other_column in cursor.fetchall():
++            constraints[constraint] = {
++                'primary_key': False,
++                'unique': False,
++                'foreign_key': (other_table, other_column),
++                'check': False,
++                'index': False,
++                'columns': columns.split(','),
++            }
+         # Now get indexes

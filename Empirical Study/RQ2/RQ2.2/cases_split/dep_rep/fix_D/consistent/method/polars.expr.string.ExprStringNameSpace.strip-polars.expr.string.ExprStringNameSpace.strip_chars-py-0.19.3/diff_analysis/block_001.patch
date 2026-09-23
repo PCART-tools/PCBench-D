@@ -1,0 +1,4 @@
+@@ -1,2 +1,2 @@
+-    def strip_chars(self, characters: str | None = None) -> Expr:
++    def strip_chars(self, characters: IntoExprColumn | None = None) -> Expr:
+         r"""

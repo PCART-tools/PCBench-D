@@ -1,0 +1,15 @@
+@@ -137,3 +143,13 @@
+     if not dasks:
+-        return DelayedLeaf(obj, pure=pure, name=name)
++        if not (nout is None or (type(nout) is int and nout >= 0)):
++            raise ValueError("nout must be None or a positive integer,"
++                             " got %s" % nout)
++        if not name:
++            try:
++                prefix = obj.__name__
++            except AttributeError:
++                prefix = type(obj).__name__
++            token = tokenize(obj, nout, pure=pure)
++            name = '%s-%s' % (prefix, token)
++        return DelayedLeaf(obj, name, pure=pure, nout=nout)
+     else:

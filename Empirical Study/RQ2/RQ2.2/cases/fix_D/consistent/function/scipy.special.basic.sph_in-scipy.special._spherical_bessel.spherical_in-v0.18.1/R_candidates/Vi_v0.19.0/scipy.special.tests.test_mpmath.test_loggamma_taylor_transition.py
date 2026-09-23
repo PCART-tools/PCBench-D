@@ -1,0 +1,17 @@
+@check_version(mpmath, '0.19')
+def test_loggamma_taylor_transition():
+    # Make sure there isn't a big jump in accuracy when we move from
+    # using the Taylor series to using the recurrence relation.
+
+    r = LOGGAMMA_TAYLOR_RADIUS + np.array([-0.1, -0.01, 0, 0.01, 0.1])
+    theta = np.linspace(0, 2*np.pi, 20)
+    r, theta = np.meshgrid(r, theta)
+    dz = r*np.exp(1j*theta)
+    z = np.r_[1 + dz, 2 + dz].flatten()
+
+    dataset = []
+    for z0 in z:
+        dataset.append((z0, complex(mpmath.loggamma(z0))))
+    dataset = np.array(dataset)
+
+    FuncData(sc.loggamma, dataset, 0, 1, rtol=5e-14).check()

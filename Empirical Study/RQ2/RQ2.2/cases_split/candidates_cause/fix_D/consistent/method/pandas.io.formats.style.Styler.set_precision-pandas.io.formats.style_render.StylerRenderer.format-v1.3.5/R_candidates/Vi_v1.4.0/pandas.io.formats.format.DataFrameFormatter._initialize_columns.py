@@ -1,0 +1,7 @@
+    def _initialize_columns(self, columns: Sequence[str] | None) -> Index:
+        if columns is not None:
+            cols = ensure_index(columns)
+            self.frame = self.frame[cols]
+            return cols
+        else:
+            return self.frame.columns

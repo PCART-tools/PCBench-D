@@ -1,0 +1,9 @@
+    def option_image_nocomposite(self):
+        """
+        Return whether image composition by Matplotlib should be skipped.
+
+        Raster backends should usually return False (letting the C-level
+        rasterizer take care of image composition); vector backends should
+        usually return ``not rcParams["image.composite_image"]``.
+        """
+        return False

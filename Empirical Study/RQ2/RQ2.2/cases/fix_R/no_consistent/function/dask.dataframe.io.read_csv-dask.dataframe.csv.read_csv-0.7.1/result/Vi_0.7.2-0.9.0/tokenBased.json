@@ -1,0 +1,497 @@
+[
+  {
+    "api_name": "dask.dataframe.multi.hash_join",
+    "score": 0.6205673758865248,
+    "rank": 1
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.shuffle",
+    "score": 0.5923344947735192,
+    "rank": 2
+  },
+  {
+    "api_name": "dask.dataframe.multi.concat",
+    "score": 0.5794392523364486,
+    "rank": 3
+  },
+  {
+    "api_name": "dask.dataframe.csv.read_csv",
+    "score": 0.532258064516129,
+    "rank": 4
+  },
+  {
+    "api_name": "dask.dataframe.multi.merge",
+    "score": 0.5135135135135135,
+    "rank": 5
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_scalar_arithmetics_with_dask_instances",
+    "score": 0.48264984227129337,
+    "rank": 6
+  },
+  {
+    "api_name": "dask.dataframe.tseries.resample._resample_bin_and_out_divs",
+    "score": 0.4751552795031056,
+    "rank": 7
+  },
+  {
+    "api_name": "dask.dataframe.multi.join_indexed_dataframes",
+    "score": 0.44814814814814813,
+    "rank": 8
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.set_partition",
+    "score": 0.4441860465116279,
+    "rank": 9
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.groupby_internal_repr",
+    "score": 0.444141689373297,
+    "rank": 10
+  },
+  {
+    "api_name": "dask.dataframe.multi.align_partitions",
+    "score": 0.42805755395683454,
+    "rank": 11
+  },
+  {
+    "api_name": "dask.dataframe.rolling.wrap_rolling",
+    "score": 0.3948339483394834,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_reductions_non_numeric_dtypes",
+    "score": 0.3859223300970874,
+    "rank": 13
+  },
+  {
+    "api_name": "dask.dataframe.multi._concat_dfs",
+    "score": 0.35580524344569286,
+    "rank": 14
+  },
+  {
+    "api_name": "dask.dataframe.multi.concat_indexed_dataframes",
+    "score": 0.352059925093633,
+    "rank": 15
+  },
+  {
+    "api_name": "dask.dataframe.tseries.tests.test_resample.test_series_resample",
+    "score": 0.3467153284671533,
+    "rank": 16
+  },
+  {
+    "api_name": "dask.dataframe.demo.make_timeseries",
+    "score": 0.3371212121212121,
+    "rank": 17
+  },
+  {
+    "api_name": "dask.dataframe.multi._pdconcat",
+    "score": 0.3296296296296296,
+    "rank": 18
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_reductions_frame_dtypes",
+    "score": 0.31547619047619047,
+    "rank": 19
+  },
+  {
+    "api_name": "dask.dataframe.multi._append",
+    "score": 0.31007751937984496,
+    "rank": 20
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_multilevel_getitem",
+    "score": 0.3064516129032258,
+    "rank": 21
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_series_groupby_errors",
+    "score": 0.3051948051948052,
+    "rank": 22
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_on_index",
+    "score": 0.30446194225721784,
+    "rank": 23
+  },
+  {
+    "api_name": "dask.dataframe.categorical._categorize",
+    "score": 0.3018867924528302,
+    "rank": 24
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.partitioning_index",
+    "score": 0.29699248120300753,
+    "rank": 25
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_reduction_series_invalid_axis",
+    "score": 0.296969696969697,
+    "rank": 26
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_demo.test_make_timeseries",
+    "score": 0.29245283018867924,
+    "rank": 27
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_series_groupby",
+    "score": 0.28368794326241137,
+    "rank": 28
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_reductions",
+    "score": 0.2836767036450079,
+    "rank": 29
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.partition",
+    "score": 0.28185328185328185,
+    "rank": 30
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_reductions_frame",
+    "score": 0.28146853146853146,
+    "rank": 31
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_get_group",
+    "score": 0.2807017543859649,
+    "rank": 32
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_optimize_dataframe.test_column_optimizations_with_bcolz_and_rewrite",
+    "score": 0.27666666666666667,
+    "rank": 33
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_optimize_dataframe.test_castra_column_store",
+    "score": 0.27598566308243727,
+    "rank": 34
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.groupby_internal_head",
+    "score": 0.27364864864864863,
+    "rank": 35
+  },
+  {
+    "api_name": "dask.dataframe.categorical.categorize",
+    "score": 0.265625,
+    "rank": 36
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_apply_shuffle",
+    "score": 0.26147704590818366,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_full_groupby",
+    "score": 0.2599388379204893,
+    "rank": 38
+  },
+  {
+    "api_name": "dask.dataframe.optimize.optimize",
+    "score": 0.2558139534883721,
+    "rank": 39
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_scalar_arithmetics",
+    "score": 0.250814332247557,
+    "rank": 40
+  },
+  {
+    "api_name": "dask.dataframe.csv.bytes_read_csv",
+    "score": 0.25,
+    "rank": 41
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.set_index",
+    "score": 0.24812030075187969,
+    "rank": 42
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.groupby_error",
+    "score": 0.24632352941176472,
+    "rank": 43
+  },
+  {
+    "api_name": "dask.dataframe.demo.make_timeseries_part",
+    "score": 0.24521072796934865,
+    "rank": 44
+  },
+  {
+    "api_name": "dask.dataframe.multi._maybe_align_partitions",
+    "score": 0.23574144486692014,
+    "rank": 45
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.check_frame_arithmetics",
+    "score": 0.23214285714285715,
+    "rank": 46
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.check_series_arithmetics",
+    "score": 0.23214285714285715,
+    "rank": 46
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.hash_series",
+    "score": 0.22545454545454546,
+    "rank": 48
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_arithmetics_different_index",
+    "score": 0.2234567901234568,
+    "rank": 49
+  },
+  {
+    "api_name": "dask.dataframe.csv.coerce_dtypes",
+    "score": 0.2159090909090909,
+    "rank": 50
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_reductions_frame_nan",
+    "score": 0.2158273381294964,
+    "rank": 51
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_dataframe_groupby_nunique",
+    "score": 0.21455938697318008,
+    "rank": 52
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_dataframe_groupby_nunique_across_group_same_value",
+    "score": 0.210727969348659,
+    "rank": 53
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_arithmetics",
+    "score": 0.20685714285714285,
+    "rank": 54
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_series_groupby_propagates_names",
+    "score": 0.20676691729323307,
+    "rank": 55
+  },
+  {
+    "api_name": "dask.dataframe.multi.require",
+    "score": 0.19767441860465115,
+    "rank": 56
+  },
+  {
+    "api_name": "dask.dataframe.rolling.rolling_chunk",
+    "score": 0.1969111969111969,
+    "rank": 57
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_get_numeric_data_unknown_part",
+    "score": 0.19540229885057472,
+    "rank": 58
+  },
+  {
+    "api_name": "dask.dataframe.csv.read_csv_from_bytes",
+    "score": 0.19066147859922178,
+    "rank": 59
+  },
+  {
+    "api_name": "dask.dataframe.groupby._groupby_get_group",
+    "score": 0.18532818532818532,
+    "rank": 60
+  },
+  {
+    "api_name": "dask.dataframe.groupby._nunique_series_chunk",
+    "score": 0.16538461538461538,
+    "rank": 61
+  },
+  {
+    "api_name": "dask.dataframe.categorical.strip_categories",
+    "score": 0.1607843137254902,
+    "rank": 62
+  },
+  {
+    "api_name": "dask.dataframe.shuffle._set_partition",
+    "score": 0.15891472868217055,
+    "rank": 63
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_demo.test_no_overlaps",
+    "score": 0.15849056603773584,
+    "rank": 64
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_frame_series_arithmetic_methods",
+    "score": 0.1577490774907749,
+    "rank": 65
+  },
+  {
+    "api_name": "dask.dataframe.multi._pdmerge",
+    "score": 0.1576923076923077,
+    "rank": 66
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_utils_dataframe.test_shard_df_on_index",
+    "score": 0.14736842105263157,
+    "rank": 67
+  },
+  {
+    "api_name": "dask.dataframe.tseries.tests.test_resample.test_series_resample_not_implemented",
+    "score": 0.14285714285714285,
+    "rank": 68
+  },
+  {
+    "api_name": "dask.dataframe.categorical.get_categories",
+    "score": 0.136,
+    "rank": 69
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_index_array",
+    "score": 0.12595419847328243,
+    "rank": 70
+  },
+  {
+    "api_name": "dask.dataframe.categorical._categorize_block",
+    "score": 0.11857707509881422,
+    "rank": 71
+  },
+  {
+    "api_name": "dask.dataframe.optimize.fuse_castra_index",
+    "score": 0.1062992125984252,
+    "rank": 72
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_split_apply_combine_on_series",
+    "score": 0.10382513661202186,
+    "rank": 73
+  },
+  {
+    "api_name": "dask.dataframe.groupby._apply_chunk",
+    "score": 0.10116731517509728,
+    "rank": 74
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.new_categories",
+    "score": 0.1,
+    "rank": 75
+  },
+  {
+    "api_name": "dask.dataframe.groupby._nunique_df_chunk",
+    "score": 0.09765625,
+    "rank": 76
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_set_index",
+    "score": 0.09727626459143969,
+    "rank": 77
+  },
+  {
+    "api_name": "dask.dataframe.tseries.resample._resample_series",
+    "score": 0.09266409266409266,
+    "rank": 78
+  },
+  {
+    "api_name": "dask.dataframe.multi.melt",
+    "score": 0.0873015873015873,
+    "rank": 79
+  },
+  {
+    "api_name": "dask.dataframe.groupby._maybe_slice",
+    "score": 0.08333333333333333,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.dataframe.groupby._groupby_apply_level0",
+    "score": 0.08171206225680934,
+    "rank": 81
+  },
+  {
+    "api_name": "dask.dataframe.groupby._groupby_apply_index",
+    "score": 0.08139534883720931,
+    "rank": 82
+  },
+  {
+    "api_name": "dask.dataframe.tseries.resample._resample",
+    "score": 0.07569721115537849,
+    "rank": 83
+  },
+  {
+    "api_name": "dask.dataframe.shuffle._set_collect",
+    "score": 0.07421875,
+    "rank": 84
+  },
+  {
+    "api_name": "dask.dataframe.demo.make_categorical",
+    "score": 0.07114624505928854,
+    "rank": 85
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.collect",
+    "score": 0.06746031746031746,
+    "rank": 86
+  },
+  {
+    "api_name": "dask.dataframe.multi.bound",
+    "score": 0.06,
+    "rank": 87
+  },
+  {
+    "api_name": "dask.dataframe.tseries.resample.getnanos",
+    "score": 0.05220883534136546,
+    "rank": 88
+  },
+  {
+    "api_name": "dask.dataframe.tseries.tests.test_resample.resample",
+    "score": 0.05220883534136546,
+    "rank": 88
+  },
+  {
+    "api_name": "dask.dataframe.categorical.iscategorical",
+    "score": 0.048582995951417005,
+    "rank": 90
+  },
+  {
+    "api_name": "dask.dataframe.demo.make_float",
+    "score": 0.047619047619047616,
+    "rank": 91
+  },
+  {
+    "api_name": "dask.dataframe.tseries.resample._resample_apply",
+    "score": 0.043478260869565216,
+    "rank": 92
+  },
+  {
+    "api_name": "dask.dataframe.demo.make_int",
+    "score": 0.0398406374501992,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.dataframe.demo.make_string",
+    "score": 0.0398406374501992,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.barrier",
+    "score": 0.03643724696356275,
+    "rank": 95
+  },
+  {
+    "api_name": "dask.dataframe.groupby._count",
+    "score": 0.032388663967611336,
+    "rank": 96
+  },
+  {
+    "api_name": "dask.dataframe.groupby._max",
+    "score": 0.032388663967611336,
+    "rank": 96
+  },
+  {
+    "api_name": "dask.dataframe.groupby._min",
+    "score": 0.032388663967611336,
+    "rank": 96
+  },
+  {
+    "api_name": "dask.dataframe.groupby._sum",
+    "score": 0.032388663967611336,
+    "rank": 96
+  }
+]

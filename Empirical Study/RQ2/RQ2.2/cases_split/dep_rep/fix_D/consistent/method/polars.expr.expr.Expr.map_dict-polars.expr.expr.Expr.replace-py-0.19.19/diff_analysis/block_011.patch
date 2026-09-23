@@ -1,0 +1,16 @@
+@@ -50,14 +61,3 @@
+  
+-        >>> df = pl.DataFrame({"country_code": ["FR", "ES", "DE", None]})
+-        >>> country_code_map = {
+-        ...     "CA": "Canada",
+-        ...     "DE": "Germany",
+-        ...     "FR": "France",
+-        ...     None: "unspecified",
+-        ... }
+-        >>> df.with_columns(
+-        ...     pl.col("country_code")
+-        ...     .replace(country_code_map, default=None)
+-        ...     .alias("replaced")
+-        ... )
++        >>> df.with_columns(replaced=pl.col("a").replace([2, 3], [100, 200]))
+         shape: (4, 2)

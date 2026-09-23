@@ -1,0 +1,9 @@
+@@ -46,2 +46,7 @@
+     dtype = getattr(arr_or_dtype, "dtype", arr_or_dtype)
+-    return isinstance(dtype, ExtensionDtype) or registry.find(dtype) is not None
++    if isinstance(dtype, ExtensionDtype):
++        return True
++    elif isinstance(dtype, np.dtype):
++        return False
++    else:
++        return registry.find(dtype) is not None

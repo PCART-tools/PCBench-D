@@ -1,0 +1,43 @@
+    def _write_hatches(self):
+        if not len(self._hatchd):
+            return
+        HATCH_SIZE = 72
+        writer = self.writer
+        writer.start('defs')
+        for (path, face, stroke, lw), oid in self._hatchd.values():
+            writer.start(
+                'pattern',
+                id=oid,
+                patternUnits="userSpaceOnUse",
+                x="0", y="0", width=str(HATCH_SIZE),
+                height=str(HATCH_SIZE))
+            path_data = self._convert_path(
+                path,
+                Affine2D()
+                .scale(HATCH_SIZE).scale(1.0, -1.0).translate(0, HATCH_SIZE),
+                simplify=False)
+            if face is None:
+                fill = 'none'
+            else:
+                fill = rgb2hex(face)
+            writer.element(
+                'rect',
+                x="0", y="0", width=str(HATCH_SIZE+1),
+                height=str(HATCH_SIZE+1),
+                fill=fill)
+            hatch_style = {
+                    'fill': rgb2hex(stroke),
+                    'stroke': rgb2hex(stroke),
+                    'stroke-width': str(lw),
+                    'stroke-linecap': 'butt',
+                    'stroke-linejoin': 'miter'
+                    }
+            if stroke[3] < 1:
+                hatch_style['stroke-opacity'] = str(stroke[3])
+            writer.element(
+                'path',
+                d=path_data,
+                style=_generate_css(hatch_style)
+                )
+            writer.end('pattern')
+        writer.end('defs')

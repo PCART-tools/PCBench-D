@@ -1,0 +1,7 @@
+    def __init__(self, axes, pad, mode):
+        mtransforms.ScaledTranslation.__init__(self, pad, pad,
+                                               axes.figure.dpi_scale_trans)
+        self.set_children(axes._realViewLim)
+        self.axes = axes
+        self.mode = mode
+        self.pad = pad

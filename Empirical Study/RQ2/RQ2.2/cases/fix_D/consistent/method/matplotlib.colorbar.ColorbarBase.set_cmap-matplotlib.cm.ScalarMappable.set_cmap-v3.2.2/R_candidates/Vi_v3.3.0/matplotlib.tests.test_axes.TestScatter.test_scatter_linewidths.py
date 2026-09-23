@@ -1,0 +1,13 @@
+    def test_scatter_linewidths(self):
+        x = np.arange(5)
+
+        fig, ax = plt.subplots()
+        for i in range(3):
+            pc = ax.scatter(x, np.full(5, i), c=f'C{i}', marker='x', s=100,
+                            linewidths=i + 1)
+            assert pc.get_linewidths() == i + 1
+
+        pc = ax.scatter(x, np.full(5, 3), c='C3', marker='x', s=100,
+                        linewidths=[*range(1, 5), None])
+        assert_array_equal(pc.get_linewidths(),
+                           [*range(1, 5), mpl.rcParams['lines.linewidth']])

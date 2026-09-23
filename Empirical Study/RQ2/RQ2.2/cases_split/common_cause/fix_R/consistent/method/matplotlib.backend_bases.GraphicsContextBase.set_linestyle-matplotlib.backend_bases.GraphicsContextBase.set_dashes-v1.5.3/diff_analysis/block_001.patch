@@ -1,0 +1,14 @@
+@@ -3,9 +3,6 @@
+         Set the linestyle to be one of ('solid', 'dashed', 'dashdot',
+-        'dotted'). One may specify customized dash styles by providing
+-        a tuple of (offset, dash pairs). For example, the predefiend
+-        linestyles have following values.:
+-
+-         'dashed'  : (0, (6.0, 6.0)),
+-         'dashdot' : (0, (3.0, 5.0, 1.0, 5.0)),
+-         'dotted'  : (0, (1.0, 3.0)),
++        'dotted'). These are defined in the rcParams
++        `lines.dashed_pattern`, `lines.dashdot_pattern` and
++        `lines.dotted_pattern`.  One may also specify customized dash
++        styles by providing a tuple of (offset, dash pairs).
+         """

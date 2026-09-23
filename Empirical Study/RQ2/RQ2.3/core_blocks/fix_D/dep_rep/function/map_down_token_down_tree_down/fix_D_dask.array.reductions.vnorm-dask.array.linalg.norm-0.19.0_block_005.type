@@ -1,0 +1,10 @@
+# detail
+Number of changes: 2
+
+1. Modified | Assignment statement
+   Modified the expression assigned to `r`: changed the `keepdims` argument of the `sum` call from `keepdims` to `True`; added `axis=axis[0]` to the `min` call and changed its `keepdims` argument from `keepdims` to `True`.
+
+2. Added | Conditional statement
+   Added an `if keepdims is False:` check that executes `r = r.squeeze(axis=axis)` when the condition is satisfied.
+# /detail
+# mode：Modify call-assignment statement (modify call arguments); Add conditional statement

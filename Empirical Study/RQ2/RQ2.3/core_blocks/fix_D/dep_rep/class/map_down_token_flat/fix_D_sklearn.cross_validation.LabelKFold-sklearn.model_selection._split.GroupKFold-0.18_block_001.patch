@@ -1,0 +1,8 @@
+@@ -51,6 +51,7 @@
+     def _iter_test_indices(self, X, y, groups):
+         if groups is None:
+             raise ValueError("The groups parameter should not be None")
++        groups = check_array(groups, ensure_2d=False, dtype=None)
+ 
+         unique_groups, groups = np.unique(groups, return_inverse=True)
+         n_groups = len(unique_groups)

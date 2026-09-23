@@ -1,0 +1,6 @@
+def make_C_from_F(F):
+    C = defaultdict(lambda: [])
+    for node, color in F.items():
+        C[color].append(node)
+
+    return C

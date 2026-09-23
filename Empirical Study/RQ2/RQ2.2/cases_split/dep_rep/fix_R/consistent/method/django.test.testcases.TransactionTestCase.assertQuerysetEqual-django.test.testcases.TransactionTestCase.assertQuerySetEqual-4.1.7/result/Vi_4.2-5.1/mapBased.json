@@ -1,0 +1,1632 @@
+[
+  {
+    "api_name": "django.test.testcases.CheckCondition.add_condition",
+    "score": 0.9259259259259259,
+    "rank": 1
+  },
+  {
+    "api_name": "django.test.html.Element.count",
+    "score": 0.8163265306122449,
+    "rank": 2
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.setup_databases",
+    "score": 0.8163265306122449,
+    "rank": 2
+  },
+  {
+    "api_name": "django.test.testcases.LiveServerThread._create_server",
+    "score": 0.8163265306122449,
+    "rank": 2
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult._exc_info_to_string",
+    "score": 0.806910569105691,
+    "rank": 5
+  },
+  {
+    "api_name": "django.test.html.Element.__contains__",
+    "score": 0.8020408163265307,
+    "rank": 6
+  },
+  {
+    "api_name": "django.test.html.Element.__getitem__",
+    "score": 0.8020408163265307,
+    "rank": 6
+  },
+  {
+    "api_name": "django.test.testcases.LiveServerTestCase._create_server_thread",
+    "score": 0.8020408163265307,
+    "rank": 6
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.enterClassContext",
+    "score": 0.8020408163265307,
+    "rank": 6
+  },
+  {
+    "api_name": "django.test.utils.Approximate.__eq__",
+    "score": 0.8020408163265307,
+    "rank": 6
+  },
+  {
+    "api_name": "django.test.utils.CaptureQueriesContext.__getitem__",
+    "score": 0.8020408163265307,
+    "rank": 6
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.suite_result",
+    "score": 0.7915129151291512,
+    "rank": 12
+  },
+  {
+    "api_name": "django.test.testcases.TransactionTestCase._databases_names",
+    "score": 0.7877551020408163,
+    "rank": 13
+  },
+  {
+    "api_name": "django.test.runner.Shuffler._hash_item",
+    "score": 0.7715256797583081,
+    "rank": 14
+  },
+  {
+    "api_name": "django.test.client.RequestFactory.request",
+    "score": 0.7633587786259542,
+    "rank": 15
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCaseBase.import_options",
+    "score": 0.7616033755274262,
+    "rank": 16
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCaseBase.import_webdriver",
+    "score": 0.7616033755274262,
+    "rank": 16
+  },
+  {
+    "api_name": "django.test.testcases.TestCase._should_check_constraints",
+    "score": 0.7616033755274262,
+    "rank": 16
+  },
+  {
+    "api_name": "django.test.client.RequestFactory._base_environ",
+    "score": 0.75,
+    "rank": 19
+  },
+  {
+    "api_name": "django.test.testcases.FSFilesHandler._should_handle",
+    "score": 0.75,
+    "rank": 19
+  },
+  {
+    "api_name": "django.test.testcases._AssertTemplateUsedContext.__enter__",
+    "score": 0.744959677419355,
+    "rank": 21
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertRaisesMessage",
+    "score": 0.741839762611276,
+    "rank": 22
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertWarnsMessage",
+    "score": 0.741839762611276,
+    "rank": 22
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.modify_settings",
+    "score": 0.7244094488188977,
+    "rank": 24
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.settings",
+    "score": 0.7244094488188977,
+    "rank": 24
+  },
+  {
+    "api_name": "django.test.client.RequestFactory._encode_json",
+    "score": 0.7203125,
+    "rank": 26
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCaseBase.get_capability",
+    "score": 0.7106299212598426,
+    "rank": 27
+  },
+  {
+    "api_name": "django.test.client.RequestFactory.trace",
+    "score": 0.69060773480663,
+    "rank": 28
+  },
+  {
+    "api_name": "django.test.utils.TestContextDecorator.__exit__",
+    "score": 0.6872605363984674,
+    "rank": 29
+  },
+  {
+    "api_name": "django.test.selenium.ChangeWindowSize.__exit__",
+    "score": 0.6839080459770115,
+    "rank": 30
+  },
+  {
+    "api_name": "django.test.html.Element.__hash__",
+    "score": 0.6818181818181819,
+    "rank": 31
+  },
+  {
+    "api_name": "django.test.html.Element.__repr__",
+    "score": 0.6818181818181819,
+    "rank": 31
+  },
+  {
+    "api_name": "django.test.html.RootElement.__str__",
+    "score": 0.6818181818181819,
+    "rank": 31
+  },
+  {
+    "api_name": "django.test.runner.ParallelTestSuite.__iter__",
+    "score": 0.6818181818181819,
+    "rank": 31
+  },
+  {
+    "api_name": "django.test.utils.Approximate.__repr__",
+    "score": 0.6818181818181819,
+    "rank": 31
+  },
+  {
+    "api_name": "django.test.utils.CaptureQueriesContext.__iter__",
+    "score": 0.6818181818181819,
+    "rank": 31
+  },
+  {
+    "api_name": "django.test.utils.CaptureQueriesContext.__len__",
+    "score": 0.6818181818181819,
+    "rank": 31
+  },
+  {
+    "api_name": "django.test.utils.TestContextDecorator.__enter__",
+    "score": 0.6818181818181819,
+    "rank": 31
+  },
+  {
+    "api_name": "django.test.testcases.TestCase._databases_support_savepoints",
+    "score": 0.6738636363636364,
+    "rank": 39
+  },
+  {
+    "api_name": "django.test.testcases.TestCase._databases_support_transactions",
+    "score": 0.6738636363636364,
+    "rank": 39
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.teardown_databases",
+    "score": 0.66682156133829,
+    "rank": 41
+  },
+  {
+    "api_name": "django.test.utils.isolate_apps.__init__",
+    "score": 0.66682156133829,
+    "rank": 41
+  },
+  {
+    "api_name": "django.test.client.FakePayload.__len__",
+    "score": 0.665909090909091,
+    "rank": 43
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.test_index",
+    "score": 0.665909090909091,
+    "rank": 43
+  },
+  {
+    "api_name": "django.test.runner.Shuffler.seed_display",
+    "score": 0.665909090909091,
+    "rank": 43
+  },
+  {
+    "api_name": "django.test.testcases.TestData.__repr__",
+    "score": 0.665909090909091,
+    "rank": 43
+  },
+  {
+    "api_name": "django.test.utils.CaptureQueriesContext.captured_queries",
+    "score": 0.665909090909091,
+    "rank": 43
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.allowed_host",
+    "score": 0.6579545454545455,
+    "rank": 48
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.live_server_url",
+    "score": 0.6579545454545455,
+    "rank": 48
+  },
+  {
+    "api_name": "django.test.testcases.LiveServerTestCase.allowed_host",
+    "score": 0.6579545454545455,
+    "rank": 48
+  },
+  {
+    "api_name": "django.test.testcases.LiveServerTestCase.live_server_url",
+    "score": 0.6579545454545455,
+    "rank": 48
+  },
+  {
+    "api_name": "django.test.testcases.FSFilesHandler.file_path",
+    "score": 0.6547619047619047,
+    "rank": 52
+  },
+  {
+    "api_name": "django.test.testcases.FSFilesHandler.__call__",
+    "score": 0.6534090909090909,
+    "rank": 53
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult._print_unpicklable_subtest",
+    "score": 0.6475631768953068,
+    "rank": 54
+  },
+  {
+    "api_name": "django.test.utils.override_settings.decorate_class",
+    "score": 0.6446005917159763,
+    "rank": 55
+  },
+  {
+    "api_name": "django.test.utils.ContextList.keys",
+    "score": 0.6329113924050633,
+    "rank": 56
+  },
+  {
+    "api_name": "django.test.utils.ContextList.get",
+    "score": 0.6294117647058823,
+    "rank": 57
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertNotInHTML",
+    "score": 0.6293859649122806,
+    "rank": 58
+  },
+  {
+    "api_name": "django.test.client.AsyncRequestFactory._base_scope",
+    "score": 0.625,
+    "rank": 59
+  },
+  {
+    "api_name": "django.test.testcases._AssertTemplateUsedContext.__exit__",
+    "score": 0.6246397694524496,
+    "rank": 60
+  },
+  {
+    "api_name": "django.test.runner.PDBDebugResult.addError",
+    "score": 0.6228298611111112,
+    "rank": 61
+  },
+  {
+    "api_name": "django.test.runner.PDBDebugResult.addFailure",
+    "score": 0.6228298611111112,
+    "rank": 61
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.addDuration",
+    "score": 0.6228298611111112,
+    "rank": 61
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.addSkip",
+    "score": 0.6228298611111112,
+    "rank": 61
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.run_checks",
+    "score": 0.6223404255319149,
+    "rank": 65
+  },
+  {
+    "api_name": "django.test.runner.Shuffler._hash_text",
+    "score": 0.6219325153374233,
+    "rank": 66
+  },
+  {
+    "api_name": "django.test.testcases.TransactionTestCase._should_reload_connections",
+    "score": 0.6155660377358492,
+    "rank": 67
+  },
+  {
+    "api_name": "django.test.testcases._MediaFilesHandler.get_base_dir",
+    "score": 0.6155660377358492,
+    "rank": 67
+  },
+  {
+    "api_name": "django.test.testcases._MediaFilesHandler.get_base_url",
+    "score": 0.6155660377358492,
+    "rank": 67
+  },
+  {
+    "api_name": "django.test.testcases._StaticFilesHandler.get_base_dir",
+    "score": 0.6155660377358492,
+    "rank": 67
+  },
+  {
+    "api_name": "django.test.testcases._StaticFilesHandler.get_base_url",
+    "score": 0.6155660377358492,
+    "rank": 67
+  },
+  {
+    "api_name": "django.test.html.Parser.handle_data",
+    "score": 0.6148936170212767,
+    "rank": 72
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.teardown_test_environment",
+    "score": 0.6119246861924686,
+    "rank": 73
+  },
+  {
+    "api_name": "django.test.client.AsyncClientHandler.__init__",
+    "score": 0.6101190476190476,
+    "rank": 74
+  },
+  {
+    "api_name": "django.test.client.ClientHandler.__init__",
+    "score": 0.6101190476190476,
+    "rank": 74
+  },
+  {
+    "api_name": "django.test.client.RedirectCycleError.__init__",
+    "score": 0.6101190476190476,
+    "rank": 74
+  },
+  {
+    "api_name": "django.test.selenium.ChangeWindowSize.__enter__",
+    "score": 0.6079734219269103,
+    "rank": 77
+  },
+  {
+    "api_name": "django.test.client.RequestFactory.options",
+    "score": 0.6067961165048543,
+    "rank": 78
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult._confirm_picklable",
+    "score": 0.5993852459016394,
+    "rank": 79
+  },
+  {
+    "api_name": "django.test.utils.override_script_prefix.__init__",
+    "score": 0.5957991803278689,
+    "rank": 80
+  },
+  {
+    "api_name": "django.test.utils.override_settings.__init__",
+    "score": 0.5957991803278689,
+    "rank": 80
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.setup_test_environment",
+    "score": 0.5921052631578947,
+    "rank": 82
+  },
+  {
+    "api_name": "django.test.runner.DebugSQLTextTestResult.addFailure",
+    "score": 0.5881147540983606,
+    "rank": 83
+  },
+  {
+    "api_name": "django.test.client.ClientMixin._parse_json",
+    "score": 0.5833333333333333,
+    "rank": 84
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.__call__",
+    "score": 0.5768849206349207,
+    "rank": 85
+  },
+  {
+    "api_name": "django.test.html.Element.__init__",
+    "score": 0.5767684887459807,
+    "rank": 86
+  },
+  {
+    "api_name": "django.test.testcases._AssertNumQueriesContext.__init__",
+    "score": 0.5767684887459807,
+    "rank": 86
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.wasSuccessful",
+    "score": 0.5725190839694657,
+    "rank": 88
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.addSuccess",
+    "score": 0.5700980392156862,
+    "rank": 89
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.addUnexpectedSuccess",
+    "score": 0.5700980392156862,
+    "rank": 89
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.startTest",
+    "score": 0.5700980392156862,
+    "rank": 89
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.stopTest",
+    "score": 0.5700980392156862,
+    "rank": 89
+  },
+  {
+    "api_name": "django.test.testcases.FSFilesHandler.serve",
+    "score": 0.5672619047619047,
+    "rank": 93
+  },
+  {
+    "api_name": "django.test.utils.TestContextDecorator.decorate_callable",
+    "score": 0.5652920962199313,
+    "rank": 94
+  },
+  {
+    "api_name": "django.test.client.RequestFactory.delete",
+    "score": 0.564189189189189,
+    "rank": 95
+  },
+  {
+    "api_name": "django.test.client.RequestFactory.patch",
+    "score": 0.564189189189189,
+    "rank": 95
+  },
+  {
+    "api_name": "django.test.client.RequestFactory.put",
+    "score": 0.564189189189189,
+    "rank": 95
+  },
+  {
+    "api_name": "django.test.utils.override_system_checks.__init__",
+    "score": 0.560546875,
+    "rank": 98
+  },
+  {
+    "api_name": "django.test.client.ClientMixin.store_exc_info",
+    "score": 0.5603448275862069,
+    "rank": 99
+  },
+  {
+    "api_name": "django.test.client.RequestFactory._get_path",
+    "score": 0.5580842391304346,
+    "rank": 100
+  },
+  {
+    "api_name": "django.test.utils.CaptureQueriesContext.__exit__",
+    "score": 0.55719794344473,
+    "rank": 101
+  },
+  {
+    "api_name": "django.test.html.Parser.handle_startendtag",
+    "score": 0.5536265432098766,
+    "rank": 102
+  },
+  {
+    "api_name": "django.test.html.RootElement.__init__",
+    "score": 0.551361386138614,
+    "rank": 103
+  },
+  {
+    "api_name": "django.test.client.AsyncRequestFactory.request",
+    "score": 0.5511363636363635,
+    "rank": 104
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.addError",
+    "score": 0.5402861445783131,
+    "rank": 105
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.addFailure",
+    "score": 0.5402861445783131,
+    "rank": 105
+  },
+  {
+    "api_name": "django.test.utils.isolate_apps.disable",
+    "score": 0.5345238095238096,
+    "rank": 107
+  },
+  {
+    "api_name": "django.test.testcases.TestData.__init__",
+    "score": 0.5338345864661654,
+    "rank": 108
+  },
+  {
+    "api_name": "django.test.testcases._DatabaseFailure.__init__",
+    "score": 0.5338345864661654,
+    "rank": 108
+  },
+  {
+    "api_name": "django.test.utils.Approximate.__init__",
+    "score": 0.5338345864661654,
+    "rank": 108
+  },
+  {
+    "api_name": "django.test.utils.TestContextDecorator.__init__",
+    "score": 0.5338345864661654,
+    "rank": 108
+  },
+  {
+    "api_name": "django.test.utils.isolate_apps.enable",
+    "score": 0.5306603773584906,
+    "rank": 112
+  },
+  {
+    "api_name": "django.test.utils.override_script_prefix.disable",
+    "score": 0.530357142857143,
+    "rank": 113
+  },
+  {
+    "api_name": "django.test.runner.PDBDebugResult.addSubTest",
+    "score": 0.5285923753665688,
+    "rank": 114
+  },
+  {
+    "api_name": "django.test.testcases._AssertTemplateUsedContext.on_template_render",
+    "score": 0.5265486725663715,
+    "rank": 115
+  },
+  {
+    "api_name": "django.test.testcases._AssertTemplateUsedContext.test",
+    "score": 0.5261904761904763,
+    "rank": 116
+  },
+  {
+    "api_name": "django.test.utils.ignore_warnings.disable",
+    "score": 0.5261904761904763,
+    "rank": 116
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCaseBase.create_options",
+    "score": 0.5251572327044025,
+    "rank": 118
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.ensure_connection_patch_method",
+    "score": 0.5233739837398375,
+    "rank": 119
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.get_databases",
+    "score": 0.521640826873385,
+    "rank": 120
+  },
+  {
+    "api_name": "django.test.testcases._AssertNumQueriesContext.__exit__",
+    "score": 0.5112028301886792,
+    "rank": 121
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertTemplateNotUsed",
+    "score": 0.510574837310195,
+    "rank": 122
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestRunner.run",
+    "score": 0.5018564356435642,
+    "rank": 123
+  },
+  {
+    "api_name": "django.test.testcases.SerializeMixin.__init_subclass__",
+    "score": 0.5013250883392225,
+    "rank": 124
+  },
+  {
+    "api_name": "django.test.runner.DummyList.append",
+    "score": 0.5,
+    "rank": 125
+  },
+  {
+    "api_name": "django.test.utils.NullTimeKeeper.timed",
+    "score": 0.5,
+    "rank": 125
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._assert_raises_or_warns_cm",
+    "score": 0.49826388888888873,
+    "rank": 127
+  },
+  {
+    "api_name": "django.test.testcases.TestCase._should_reload_connections",
+    "score": 0.49629629629629635,
+    "rank": 128
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertURLEqual",
+    "score": 0.4951923076923076,
+    "rank": 129
+  },
+  {
+    "api_name": "django.test.utils.TimeKeeper.__init__",
+    "score": 0.4944933920704846,
+    "rank": 130
+  },
+  {
+    "api_name": "django.test.client.RequestFactory.post",
+    "score": 0.4934090909090908,
+    "rank": 131
+  },
+  {
+    "api_name": "django.test.runner.DebugSQLTextTestResult.__init__",
+    "score": 0.4911444141689373,
+    "rank": 132
+  },
+  {
+    "api_name": "django.test.testcases.FSFilesHandler.__init__",
+    "score": 0.4894781144781144,
+    "rank": 133
+  },
+  {
+    "api_name": "django.test.selenium.ChangeWindowSize.__init__",
+    "score": 0.4879725085910652,
+    "rank": 134
+  },
+  {
+    "api_name": "django.test.utils.CaptureQueriesContext.__enter__",
+    "score": 0.4861842105263158,
+    "rank": 135
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.startTestRun",
+    "score": 0.4842391304347827,
+    "rank": 136
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.stopTestRun",
+    "score": 0.4842391304347827,
+    "rank": 136
+  },
+  {
+    "api_name": "django.test.testcases.CheckCondition.__init__",
+    "score": 0.4821428571428572,
+    "rank": 138
+  },
+  {
+    "api_name": "django.test.utils.CaptureQueriesContext.__init__",
+    "score": 0.4821428571428572,
+    "rank": 138
+  },
+  {
+    "api_name": "django.test.client.ClientMixin._set_login_cookies",
+    "score": 0.48137417218543044,
+    "rank": 140
+  },
+  {
+    "api_name": "django.test.utils.TestContextDecorator.__call__",
+    "score": 0.47999999999999987,
+    "rank": 141
+  },
+  {
+    "api_name": "django.test.client.RequestFactory._encode_data",
+    "score": 0.4794900221729489,
+    "rank": 142
+  },
+  {
+    "api_name": "django.test.testcases.TestData.__get__",
+    "score": 0.47890946502057596,
+    "rank": 143
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertTemplateUsed",
+    "score": 0.4764676113360322,
+    "rank": 144
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.addExpectedFailure",
+    "score": 0.4757957559681697,
+    "rank": 145
+  },
+  {
+    "api_name": "django.test.utils.ignore_warnings.__init__",
+    "score": 0.4750816993464052,
+    "rank": 146
+  },
+  {
+    "api_name": "django.test.client.RequestFactory.get",
+    "score": 0.4746450304259633,
+    "rank": 147
+  },
+  {
+    "api_name": "django.test.client.RequestFactory.head",
+    "score": 0.4746450304259633,
+    "rank": 147
+  },
+  {
+    "api_name": "django.test.html.Parser.format_position",
+    "score": 0.47237417943107207,
+    "rank": 149
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.run_suite",
+    "score": 0.46887450199203184,
+    "rank": 150
+  },
+  {
+    "api_name": "django.test.utils.TestContextDecorator.decorate_class",
+    "score": 0.4665697674418604,
+    "rank": 151
+  },
+  {
+    "api_name": "django.test.html.Parser.error",
+    "score": 0.4595744680851064,
+    "rank": 152
+  },
+  {
+    "api_name": "django.test.testcases.TestData.get_memo",
+    "score": 0.4580200501253132,
+    "rank": 153
+  },
+  {
+    "api_name": "django.test.testcases.FSFilesHandler.get_response",
+    "score": 0.4580152671755725,
+    "rank": 154
+  },
+  {
+    "api_name": "django.test.testcases._AssertTemplateNotUsedContext.test",
+    "score": 0.4547325102880658,
+    "rank": 155
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._check_test_client_response",
+    "score": 0.4522292993630572,
+    "rank": 156
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.check_subtest_picklable",
+    "score": 0.4501404494382022,
+    "rank": 157
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.get_test_runner_kwargs",
+    "score": 0.44999999999999996,
+    "rank": 158
+  },
+  {
+    "api_name": "django.test.runner.PDBDebugResult.debug",
+    "score": 0.44999999999999996,
+    "rank": 158
+  },
+  {
+    "api_name": "django.test.client.ClientMixin.login",
+    "score": 0.44359756097560965,
+    "rank": 160
+  },
+  {
+    "api_name": "django.test.runner.DebugSQLTextTestResult.addSubTest",
+    "score": 0.44287469287469283,
+    "rank": 161
+  },
+  {
+    "api_name": "django.test.html.Parser.current",
+    "score": 0.4423076923076924,
+    "rank": 162
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.log",
+    "score": 0.44115990990990983,
+    "rank": 163
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.__getstate__",
+    "score": 0.4383116883116883,
+    "rank": 164
+  },
+  {
+    "api_name": "django.test.testcases.TransactionTestCase.assertNumQueries",
+    "score": 0.4369959677419353,
+    "rank": 165
+  },
+  {
+    "api_name": "django.test.utils.override_script_prefix.enable",
+    "score": 0.43676470588235294,
+    "rank": 166
+  },
+  {
+    "api_name": "django.test.runner.DebugSQLTextTestResult.addError",
+    "score": 0.4364355231143551,
+    "rank": 167
+  },
+  {
+    "api_name": "django.test.client.ClientMixin.force_login",
+    "score": 0.43545081967213106,
+    "rank": 168
+  },
+  {
+    "api_name": "django.test.testcases._AssertTemplateUsedContext.__init__",
+    "score": 0.4353762135922329,
+    "rank": 169
+  },
+  {
+    "api_name": "django.test.utils.ContextList.__contains__",
+    "score": 0.43524096385542177,
+    "rank": 170
+  },
+  {
+    "api_name": "django.test.client.ClientMixin.aforce_login",
+    "score": 0.4294077134986224,
+    "rank": 171
+  },
+  {
+    "api_name": "django.test.testcases.LiveServerTestCase.setUpClass",
+    "score": 0.42829457364341095,
+    "rank": 172
+  },
+  {
+    "api_name": "django.test.client.FakePayload.__init__",
+    "score": 0.42507309941520466,
+    "rank": 173
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestRunner.__init__",
+    "score": 0.42261904761904745,
+    "rank": 174
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertFormError",
+    "score": 0.4220588235294117,
+    "rank": 175
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.take_screenshot",
+    "score": 0.4210069444444443,
+    "rank": 176
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.setup_shuffler",
+    "score": 0.417725988700565,
+    "rank": 177
+  },
+  {
+    "api_name": "django.test.testcases.LiveServerThread.__init__",
+    "score": 0.41724537037037024,
+    "rank": 178
+  },
+  {
+    "api_name": "django.test.testcases.LiveServerTestCase._make_connections_override",
+    "score": 0.41532258064516125,
+    "rank": 179
+  },
+  {
+    "api_name": "django.test.runner.DebugSQLTextTestResult.startTest",
+    "score": 0.4143059490084984,
+    "rank": 180
+  },
+  {
+    "api_name": "django.test.testcases.CheckCondition.__get__",
+    "score": 0.4131944444444444,
+    "rank": 181
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.addSubTest",
+    "score": 0.4124713958810067,
+    "rank": 182
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertNotContains",
+    "score": 0.4124713958810067,
+    "rank": 182
+  },
+  {
+    "api_name": "django.test.client.AsyncClient.__init__",
+    "score": 0.4096590909090908,
+    "rank": 184
+  },
+  {
+    "api_name": "django.test.client.Client.__init__",
+    "score": 0.4096590909090908,
+    "rank": 184
+  },
+  {
+    "api_name": "django.test.utils.ContextList.__getitem__",
+    "score": 0.4069478908188585,
+    "rank": 186
+  },
+  {
+    "api_name": "django.test.testcases.TestCase._rollback_atomics",
+    "score": 0.398538961038961,
+    "rank": 187
+  },
+  {
+    "api_name": "django.test.utils.modify_settings.__init__",
+    "score": 0.3984374999999999,
+    "rank": 188
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.debug",
+    "score": 0.3977678571428571,
+    "rank": 189
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.shuffle_seed",
+    "score": 0.3974820143884893,
+    "rank": 190
+  },
+  {
+    "api_name": "django.test.utils.ignore_warnings.enable",
+    "score": 0.39664310954063586,
+    "rank": 191
+  },
+  {
+    "api_name": "django.test.html.Parser.__init__",
+    "score": 0.39635231316725983,
+    "rank": 192
+  },
+  {
+    "api_name": "django.test.runner.DebugSQLTextTestResult.stopTest",
+    "score": 0.3961171662125341,
+    "rank": 193
+  },
+  {
+    "api_name": "django.test.client.FakePayload.write",
+    "score": 0.3939701897018969,
+    "rank": 194
+  },
+  {
+    "api_name": "django.test.runner.Shuffler.shuffle",
+    "score": 0.3933756805807621,
+    "rank": 195
+  },
+  {
+    "api_name": "django.test.client.AsyncClient._ahandle_redirects",
+    "score": 0.3911141804788212,
+    "rank": 196
+  },
+  {
+    "api_name": "django.test.runner.ParallelTestSuite.__init__",
+    "score": 0.38741900647948146,
+    "rank": 197
+  },
+  {
+    "api_name": "django.test.html.Element.__eq__",
+    "score": 0.383289124668435,
+    "rank": 198
+  },
+  {
+    "api_name": "django.test.client.Client.get",
+    "score": 0.3804435483870966,
+    "rank": 199
+  },
+  {
+    "api_name": "django.test.client.Client.head",
+    "score": 0.3804435483870966,
+    "rank": 199
+  },
+  {
+    "api_name": "django.test.client.Client.trace",
+    "score": 0.3804435483870966,
+    "rank": 199
+  },
+  {
+    "api_name": "django.test.utils.modify_settings.save_options",
+    "score": 0.3789473684210525,
+    "rank": 202
+  },
+  {
+    "api_name": "django.test.utils.override_settings.save_options",
+    "score": 0.3789473684210525,
+    "rank": 202
+  },
+  {
+    "api_name": "django.test.testcases.LiveServerThread.terminate",
+    "score": 0.3788265306122448,
+    "rank": 204
+  },
+  {
+    "api_name": "django.test.client.ClientMixin._get_backend",
+    "score": 0.3783284023668637,
+    "rank": 205
+  },
+  {
+    "api_name": "django.test.client.Client._handle_redirects",
+    "score": 0.3780647985989489,
+    "rank": 206
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase._quit_selenium",
+    "score": 0.37657563025210095,
+    "rank": 207
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._assertFooMessage",
+    "score": 0.3760888501742158,
+    "rank": 208
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.__init__",
+    "score": 0.37447807933194144,
+    "rank": 209
+  },
+  {
+    "api_name": "django.test.client.ClientMixin.alogin",
+    "score": 0.3720316622691292,
+    "rank": 210
+  },
+  {
+    "api_name": "django.test.utils.NullTimeKeeper.print_results",
+    "score": 0.3718592964824121,
+    "rank": 211
+  },
+  {
+    "api_name": "django.test.html.Parser.handle_starttag",
+    "score": 0.37137681159420277,
+    "rank": 212
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.get_resultclass",
+    "score": 0.3708053691275168,
+    "rank": 213
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.set_emulated_media",
+    "score": 0.36977958236658914,
+    "rank": 214
+  },
+  {
+    "api_name": "django.test.client.FakePayload.read",
+    "score": 0.3693877551020407,
+    "rank": 215
+  },
+  {
+    "api_name": "django.test.client.FakePayload.readline",
+    "score": 0.3693877551020407,
+    "rank": 215
+  },
+  {
+    "api_name": "django.test.testcases.TransactionTestCase.assertQuerySetEqual",
+    "score": 0.36662772585669756,
+    "rank": 217
+  },
+  {
+    "api_name": "django.test.utils.TestContextDecorator.disable",
+    "score": 0.36633663366336644,
+    "rank": 218
+  },
+  {
+    "api_name": "django.test.utils.TestContextDecorator.enable",
+    "score": 0.36633663366336644,
+    "rank": 218
+  },
+  {
+    "api_name": "django.test.utils.TimeKeeper.timed",
+    "score": 0.36562499999999987,
+    "rank": 220
+  },
+  {
+    "api_name": "django.test.testcases.QuietWSGIRequestHandler.log_message",
+    "score": 0.3630653266331658,
+    "rank": 221
+  },
+  {
+    "api_name": "django.test.testcases.TestCase._enter_atomics",
+    "score": 0.3629629629629628,
+    "rank": 222
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner._get_databases",
+    "score": 0.36188118811881176,
+    "rank": 223
+  },
+  {
+    "api_name": "django.test.client.Client.delete",
+    "score": 0.3612174578866767,
+    "rank": 224
+  },
+  {
+    "api_name": "django.test.client.Client.options",
+    "score": 0.3612174578866767,
+    "rank": 224
+  },
+  {
+    "api_name": "django.test.client.Client.patch",
+    "score": 0.3612174578866767,
+    "rank": 224
+  },
+  {
+    "api_name": "django.test.client.Client.post",
+    "score": 0.3612174578866767,
+    "rank": 224
+  },
+  {
+    "api_name": "django.test.client.Client.put",
+    "score": 0.3612174578866767,
+    "rank": 224
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertHTMLNotEqual",
+    "score": 0.3580339321357284,
+    "rank": 229
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.disable_implicit_wait",
+    "score": 0.3576051779935274,
+    "rank": 230
+  },
+  {
+    "api_name": "django.test.utils.LoggingCaptureMixin.tearDown",
+    "score": 0.35748792270531404,
+    "rank": 231
+  },
+  {
+    "api_name": "django.test.runner.DebugSQLTextTestResult.printErrorList",
+    "score": 0.35698198198198194,
+    "rank": 232
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.setUpClass",
+    "score": 0.355305466237942,
+    "rank": 233
+  },
+  {
+    "api_name": "django.test.testcases.SerializeMixin.setUpClass",
+    "score": 0.355305466237942,
+    "rank": 233
+  },
+  {
+    "api_name": "django.test.runner.Shuffler.__init__",
+    "score": 0.354634831460674,
+    "rank": 235
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._assert_template_used",
+    "score": 0.35297356828193827,
+    "rank": 236
+  },
+  {
+    "api_name": "django.test.testcases._DatabaseFailure.__call__",
+    "score": 0.35238095238095246,
+    "rank": 237
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.high_contrast",
+    "score": 0.3513406940063091,
+    "rank": 238
+  },
+  {
+    "api_name": "django.test.utils.LoggingCaptureMixin.setUp",
+    "score": 0.34860248447204967,
+    "rank": 239
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._pre_setup",
+    "score": 0.3458850931677019,
+    "rank": 240
+  },
+  {
+    "api_name": "django.test.client.AsyncClient.get",
+    "score": 0.3457446808510637,
+    "rank": 241
+  },
+  {
+    "api_name": "django.test.client.AsyncClient.head",
+    "score": 0.3457446808510637,
+    "rank": 241
+  },
+  {
+    "api_name": "django.test.client.AsyncClient.trace",
+    "score": 0.3457446808510637,
+    "rank": 241
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._post_teardown",
+    "score": 0.34259259259259267,
+    "rank": 244
+  },
+  {
+    "api_name": "django.test.testcases.LiveServerTestCase._terminate_thread",
+    "score": 0.34022556390977443,
+    "rank": 245
+  },
+  {
+    "api_name": "django.test.client.RequestFactory.__init__",
+    "score": 0.33528037383177556,
+    "rank": 246
+  },
+  {
+    "api_name": "django.test.testcases.TestCase.setUpTestData",
+    "score": 0.3344907407407408,
+    "rank": 247
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCaseBase.create_webdriver",
+    "score": 0.33389639639639634,
+    "rank": 248
+  },
+  {
+    "api_name": "django.test.testcases.TestCase._fixture_teardown",
+    "score": 0.3309193954659949,
+    "rank": 249
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.desktop_size",
+    "score": 0.3303571428571429,
+    "rank": 250
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.mobile_size",
+    "score": 0.3303571428571429,
+    "rank": 250
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.small_screen_size",
+    "score": 0.3303571428571429,
+    "rank": 250
+  },
+  {
+    "api_name": "django.test.client.AsyncClient.delete",
+    "score": 0.3266331658291456,
+    "rank": 253
+  },
+  {
+    "api_name": "django.test.client.AsyncClient.options",
+    "score": 0.3266331658291456,
+    "rank": 253
+  },
+  {
+    "api_name": "django.test.client.AsyncClient.patch",
+    "score": 0.3266331658291456,
+    "rank": 253
+  },
+  {
+    "api_name": "django.test.client.AsyncClient.post",
+    "score": 0.3266331658291456,
+    "rank": 253
+  },
+  {
+    "api_name": "django.test.client.AsyncClient.put",
+    "score": 0.3266331658291456,
+    "rank": 253
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.dark",
+    "score": 0.32028985507246366,
+    "rank": 258
+  },
+  {
+    "api_name": "django.test.utils.override_system_checks.disable",
+    "score": 0.31896551724137934,
+    "rank": 259
+  },
+  {
+    "api_name": "django.test.testcases.TransactionTestCase._fixture_teardown",
+    "score": 0.3183797909407664,
+    "rank": 260
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertXMLNotEqual",
+    "score": 0.3082688588007737,
+    "rank": 261
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.rtl",
+    "score": 0.3070539419087137,
+    "rank": 262
+  },
+  {
+    "api_name": "django.test.client.ClientMixin._ensure_redirects_not_cyclic",
+    "score": 0.3059490084985834,
+    "rank": 263
+  },
+  {
+    "api_name": "django.test.utils.TimeKeeper.print_results",
+    "score": 0.3056020066889631,
+    "rank": 264
+  },
+  {
+    "api_name": "django.test.runner.ParallelTestSuite.initialize_suite",
+    "score": 0.3032786885245903,
+    "rank": 265
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._get_template_used",
+    "score": 0.3008409785932721,
+    "rank": 266
+  },
+  {
+    "api_name": "django.test.client.ClientMixin.asession",
+    "score": 0.3005050505050504,
+    "rank": 267
+  },
+  {
+    "api_name": "django.test.client.ClientMixin._login",
+    "score": 0.29841713221601474,
+    "rank": 268
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertHTMLEqual",
+    "score": 0.29747097844112746,
+    "rank": 269
+  },
+  {
+    "api_name": "django.test.testcases.TestCase.tearDownClass",
+    "score": 0.29575163398692816,
+    "rank": 270
+  },
+  {
+    "api_name": "django.test.client.ClientMixin.session",
+    "score": 0.2956310679611649,
+    "rank": 271
+  },
+  {
+    "api_name": "django.test.client.ClientMixin.check_exception",
+    "score": 0.29427792915531337,
+    "rank": 272
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertContains",
+    "score": 0.29136363636363616,
+    "rank": 273
+  },
+  {
+    "api_name": "django.test.html.Element.append",
+    "score": 0.28299825174825166,
+    "rank": 274
+  },
+  {
+    "api_name": "django.test.testcases.TransactionTestCase._reset_sequences",
+    "score": 0.2824384787472034,
+    "rank": 275
+  },
+  {
+    "api_name": "django.test.client.ClientMixin._alogin",
+    "score": 0.28192446043165453,
+    "rank": 276
+  },
+  {
+    "api_name": "django.test.html.Element.__str__",
+    "score": 0.27707006369426745,
+    "rank": 277
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCase.__init_subclass__",
+    "score": 0.27695652173913043,
+    "rank": 278
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertJSONEqual",
+    "score": 0.27253401360544205,
+    "rank": 279
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertJSONNotEqual",
+    "score": 0.27253401360544205,
+    "rank": 279
+  },
+  {
+    "api_name": "django.test.html.Parser.handle_endtag",
+    "score": 0.267324093816631,
+    "rank": 281
+  },
+  {
+    "api_name": "django.test.selenium.SeleniumTestCaseBase.__new__",
+    "score": 0.2647783251231528,
+    "rank": 282
+  },
+  {
+    "api_name": "django.test.client.RequestFactory.generic",
+    "score": 0.2639664804469277,
+    "rank": 283
+  },
+  {
+    "api_name": "django.test.runner.RemoteTestResult.check_picklable",
+    "score": 0.2601461038961037,
+    "rank": 284
+  },
+  {
+    "api_name": "django.test.client.AsyncRequestFactory.generic",
+    "score": 0.25990099009901024,
+    "rank": 285
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._validate_databases",
+    "score": 0.2587325349301396,
+    "rank": 286
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertXMLEqual",
+    "score": 0.2574717285945073,
+    "rank": 287
+  },
+  {
+    "api_name": "django.test.testcases.TestCase._fixture_setup",
+    "score": 0.2558027079303674,
+    "rank": 288
+  },
+  {
+    "api_name": "django.test.client.ClientHandler.__call__",
+    "score": 0.25375469336670853,
+    "rank": 289
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.__getstate__",
+    "score": 0.24501108647450087,
+    "rank": 290
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.setUpClass",
+    "score": 0.24459459459459454,
+    "rank": 291
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.run_tests",
+    "score": 0.24321428571428594,
+    "rank": 292
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.load_with_patterns",
+    "score": 0.23794212218649513,
+    "rank": 293
+  },
+  {
+    "api_name": "django.test.html.Element.finalize",
+    "score": 0.23533163265306112,
+    "rank": 294
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._assert_form_error",
+    "score": 0.23326055312954908,
+    "rank": 295
+  },
+  {
+    "api_name": "django.test.utils.override_system_checks.enable",
+    "score": 0.23300209205020894,
+    "rank": 296
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertInHTML",
+    "score": 0.22845373891001308,
+    "rank": 297
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._setup_and_call",
+    "score": 0.2238339021615473,
+    "rank": 298
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._remove_databases_failures",
+    "score": 0.21912832929782056,
+    "rank": 299
+  },
+  {
+    "api_name": "django.test.testcases.LiveServerTestCase._start_server_thread",
+    "score": 0.21709233791748506,
+    "rank": 300
+  },
+  {
+    "api_name": "django.test.testcases.TransactionTestCase._post_teardown",
+    "score": 0.21553738317756999,
+    "rank": 301
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.add_arguments",
+    "score": 0.2066546762589928,
+    "rank": 302
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.load_tests_for_label",
+    "score": 0.20623215984776444,
+    "rank": 303
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._add_databases_failures",
+    "score": 0.20349907918968657,
+    "rank": 304
+  },
+  {
+    "api_name": "django.test.testcases.TestCase.captureOnCommitCallbacks",
+    "score": 0.20296223958333337,
+    "rank": 305
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase._assert_contains",
+    "score": 0.20069444444444495,
+    "rank": 306
+  },
+  {
+    "api_name": "django.test.client.ClientMixin._follow_redirect",
+    "score": 0.19970906068162986,
+    "rank": 307
+  },
+  {
+    "api_name": "django.test.runner.ParallelTestSuite.run",
+    "score": 0.1996590909090914,
+    "rank": 308
+  },
+  {
+    "api_name": "django.test.client.AsyncClientHandler.__call__",
+    "score": 0.1993882091212461,
+    "rank": 309
+  },
+  {
+    "api_name": "django.test.testcases.TestCase.setUpClass",
+    "score": 0.18894601542416478,
+    "rank": 310
+  },
+  {
+    "api_name": "django.test.html.Element._count",
+    "score": 0.18848996832101395,
+    "rank": 311
+  },
+  {
+    "api_name": "django.test.testcases.TransactionTestCase._fixture_setup",
+    "score": 0.18231225296442666,
+    "rank": 312
+  },
+  {
+    "api_name": "django.test.client.AsyncClient.request",
+    "score": 0.17837958818263255,
+    "rank": 313
+  },
+  {
+    "api_name": "django.test.client.Client.request",
+    "score": 0.17707423580786064,
+    "rank": 314
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertFormSetError",
+    "score": 0.17687637969094983,
+    "rank": 315
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.build_suite",
+    "score": 0.17536407766990347,
+    "rank": 316
+  },
+  {
+    "api_name": "django.test.client.ClientMixin.logout",
+    "score": 0.17146840148698872,
+    "rank": 317
+  },
+  {
+    "api_name": "django.test.client.ClientMixin.alogout",
+    "score": 0.1668233082706766,
+    "rank": 318
+  },
+  {
+    "api_name": "django.test.testcases.TransactionTestCase._pre_setup",
+    "score": 0.1615586690017512,
+    "rank": 319
+  },
+  {
+    "api_name": "django.test.utils.override_settings.enable",
+    "score": 0.14736421725239623,
+    "rank": 320
+  },
+  {
+    "api_name": "django.test.utils.override_settings.disable",
+    "score": 0.14214175654853634,
+    "rank": 321
+  },
+  {
+    "api_name": "django.test.testcases.LiveServerThread.run",
+    "score": 0.14127105666156192,
+    "rank": 322
+  },
+  {
+    "api_name": "django.test.utils.modify_settings.enable",
+    "score": 0.1324275362318842,
+    "rank": 323
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertFieldOutput",
+    "score": 0.13167625308134845,
+    "rank": 324
+  },
+  {
+    "api_name": "django.test.testcases.SimpleTestCase.assertRedirects",
+    "score": 0.12975708502024363,
+    "rank": 325
+  },
+  {
+    "api_name": "django.test.runner.DiscoverRunner.__init__",
+    "score": 0.12364969135802495,
+    "rank": 326
+  }
+]

@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Conditional statement
+   Replaced the direct call to `to_task_dasks(obj)` assigned to `task, dasks` with branch-specific assignments based on `isinstance(obj, base.Base) or traverse`: when true, call `to_task_dask(obj)` and assign the result to `task, dsk`; otherwise, call `quote(obj)` and assign it to `task`, and assign an empty dictionary to `dsk`.
+# /detail
+# mode：Modify control-flow structure (replace direct call assignment with branch-based call assignment)

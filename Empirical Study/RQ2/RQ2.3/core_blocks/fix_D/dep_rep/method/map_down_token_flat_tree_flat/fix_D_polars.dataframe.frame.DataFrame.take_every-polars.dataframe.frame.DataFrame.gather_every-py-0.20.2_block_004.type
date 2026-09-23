@@ -1,0 +1,8 @@
+# detail
+Change count: 1
+
+1. Modify | Return statement
+
+   Changed `self.select(F.col("*").gather_every(n))` to `self.select(F.col("*").gather_every(n, offset))`, adding the `offset` argument to the `gather_every` call.
+# /detail
+# mode: Modify return-call statement（modify call arguments）

@@ -1,0 +1,6 @@
+@@ -17,3 +107,4 @@
+         self.mappable = mappable
+-        _add_disjoint_kwargs(kwargs, cmap=mappable.cmap, norm=mappable.norm)
++        cmap = mappable.cmap
++        norm = mappable.norm
+  

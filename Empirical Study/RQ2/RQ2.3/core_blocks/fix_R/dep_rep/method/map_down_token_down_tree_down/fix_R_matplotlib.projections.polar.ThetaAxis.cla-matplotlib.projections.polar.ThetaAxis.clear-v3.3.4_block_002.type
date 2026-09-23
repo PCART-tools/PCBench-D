@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation code block
+   Changed the implementation of `cla` from three consecutive method calls to a call to `self.clear()`.
+   The original implementation included:
+
+   * Method call: call `super().cla()`;
+   * Method call: call `self.set_ticks_position('none')`;
+   * Method call: call `self._wrap_locator_formatter()`.
+
+   The new implementation includes:
+
+   * Method call: call `self.clear()`.
+# /detail
+# mode：Modify method implementation (replace original implementation with call statement)

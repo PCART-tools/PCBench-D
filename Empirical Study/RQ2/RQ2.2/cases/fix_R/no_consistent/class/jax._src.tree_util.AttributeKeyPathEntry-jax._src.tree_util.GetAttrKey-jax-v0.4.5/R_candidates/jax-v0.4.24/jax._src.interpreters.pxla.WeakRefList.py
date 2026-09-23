@@ -1,0 +1,2 @@
+class WeakRefList(list):
+  pass

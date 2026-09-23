@@ -1,0 +1,74 @@
+def get_empty_dtype_and_na(join_units):
+    """
+    Return dtype and N/A values to use when concatenating specified units.
+
+    Returned N/A value may be None which means there was no casting involved.
+
+    Returns
+    -------
+    dtype
+    na
+    """
+
+    if len(join_units) == 1:
+        blk = join_units[0].block
+        if blk is None:
+            return np.float64, np.nan
+
+    has_none_blocks = False
+    dtypes = [None] * len(join_units)
+    for i, unit in enumerate(join_units):
+        if unit.block is None:
+            has_none_blocks = True
+        else:
+            dtypes[i] = unit.dtype
+
+    # dtypes = set()
+    upcast_classes = set()
+    null_upcast_classes = set()
+    for dtype, unit in zip(dtypes, join_units):
+        if dtype is None:
+            continue
+
+        if com.is_categorical_dtype(dtype):
+            upcast_cls = 'category'
+        elif issubclass(dtype.type, np.bool_):
+            upcast_cls = 'bool'
+        elif issubclass(dtype.type, np.object_):
+            upcast_cls = 'object'
+        elif is_datetime64_dtype(dtype):
+            upcast_cls = 'datetime'
+        elif is_timedelta64_dtype(dtype):
+            upcast_cls = 'timedelta'
+        else:
+            upcast_cls = 'float'
+
+        # Null blocks should not influence upcast class selection, unless there
+        # are only null blocks, when same upcasting rules must be applied to
+        # null upcast classes.
+        if unit.is_null:
+            null_upcast_classes.add(upcast_cls)
+        else:
+            upcast_classes.add(upcast_cls)
+
+    if not upcast_classes:
+        upcast_classes = null_upcast_classes
+
+    # create the result
+    if 'object' in upcast_classes:
+        return np.dtype(np.object_), np.nan
+    elif 'bool' in upcast_classes:
+        if has_none_blocks:
+            return np.dtype(np.object_), np.nan
+        else:
+            return np.dtype(np.bool_), None
+    elif 'category' in upcast_classes:
+        return com.CategoricalDtype(), np.nan
+    elif 'float' in upcast_classes:
+        return np.dtype(np.float64), np.nan
+    elif 'datetime' in upcast_classes:
+        return np.dtype('M8[ns]'), tslib.iNaT
+    elif 'timedelta' in upcast_classes:
+        return np.dtype('m8[ns]'), tslib.iNaT
+    else:  # pragma
+        raise AssertionError("invalid dtype determination in get_concat_dtype")

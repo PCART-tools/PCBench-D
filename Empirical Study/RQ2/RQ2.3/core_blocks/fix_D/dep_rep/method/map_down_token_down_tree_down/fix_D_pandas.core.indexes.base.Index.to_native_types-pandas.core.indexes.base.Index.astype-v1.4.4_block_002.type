@@ -1,0 +1,10 @@
+# detail
+Number of changes: 1
+
+1. Added | Conditional statement
+   Added a `dtype` check inside the `isinstance(values, ExtensionArray)` branch: when `dtype` is an `np.dtype`, `dtype.kind == "M"`, and `is_unitless(dtype)` is true, raise `TypeError`.
+   This includes:
+
+   * Exception-raising statement: raise `TypeError(f"Cannot cast {type(self).__name__} to dtype")`.
+# /detail
+# mode：Add conditional statement (perform type checking and raise exception)

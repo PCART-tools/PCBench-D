@@ -1,0 +1,11 @@
+# detail
+Number of changes: 1
+
+1. Added | Warning-call code block
+   After the conditional branch that raises `ValueError` and before `return self.reindex(index=labels, **kwargs)`, added a deprecation-message assignment and a call to `warnings.warn(msg, FutureWarning, stacklevel=2)`.
+   This includes:
+
+   * Assignment statement: assign a deprecation-message string to `msg`;
+   * Function call: call `warnings.warn` to issue a `FutureWarning`.
+# /detail
+# mode：Add assignment statement; Add warning call

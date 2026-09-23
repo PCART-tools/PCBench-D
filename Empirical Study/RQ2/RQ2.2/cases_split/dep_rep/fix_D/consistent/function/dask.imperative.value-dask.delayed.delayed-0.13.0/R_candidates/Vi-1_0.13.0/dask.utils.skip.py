@@ -1,0 +1,2 @@
+def skip(func):
+    pass

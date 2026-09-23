@@ -1,0 +1,31 @@
+@@ -13,9 +14,23 @@
+  
+-    def __init__(self, data, label=None, weight=None,  # pylint: disable=W0231
+-                 base_margin=None,
+-                 missing=None,
+-                 silent=False,
+-                 feature_names=None,
+-                 feature_types=None,
+-                 nthread=None, max_bin=256):
++    @_deprecate_positional_args
++    def __init__(  # pylint: disable=super-init-not-called
++        self,
++        data,
++        label=None,
++        *,
++        weight=None,
++        base_margin=None,
++        missing=None,
++        silent=False,
++        feature_names=None,
++        feature_types=None,
++        nthread: Optional[int] = None,
++        max_bin: int = 256,
++        group=None,
++        qid=None,
++        label_lower_bound=None,
++        label_upper_bound=None,
++        feature_weights=None,
++        enable_categorical: bool = False,
++    ):
+         self.max_bin = max_bin

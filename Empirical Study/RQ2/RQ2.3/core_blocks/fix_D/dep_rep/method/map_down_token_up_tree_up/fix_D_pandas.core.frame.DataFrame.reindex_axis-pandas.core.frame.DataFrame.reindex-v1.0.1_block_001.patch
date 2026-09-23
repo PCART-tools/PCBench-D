@@ -1,0 +1,4 @@
+@@ -19,2 +19,2 @@
+         kwargs.pop("labels", None)
+-        return self._ensure_type(super().reindex(**kwargs))
++        return super().reindex(**kwargs)

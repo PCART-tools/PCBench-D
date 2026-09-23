@@ -1,0 +1,17 @@
+@substitute_in_graph(itertools.tee)
+def tee(iterable: Iterable[_T], n: int = 2, /) -> tuple[Iterator[_T], ...]:
+    iterator = iter(iterable)
+    shared_link = [None, None]
+
+    def _tee(link) -> Iterator[_T]:  # type: ignore[no-untyped-def]
+        try:
+            while True:
+                if link[1] is None:
+                    link[0] = next(iterator)
+                    link[1] = [None, None]
+                value, link = link
+                yield value
+        except StopIteration:
+            return
+
+    return tuple(_tee(shared_link) for _ in range(n))

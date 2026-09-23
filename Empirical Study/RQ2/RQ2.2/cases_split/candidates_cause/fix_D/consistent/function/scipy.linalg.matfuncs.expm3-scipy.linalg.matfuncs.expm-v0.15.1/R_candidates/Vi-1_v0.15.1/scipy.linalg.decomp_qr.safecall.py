@@ -1,0 +1,13 @@
+def safecall(f, name, *args, **kwargs):
+    """Call a LAPACK routine, determining lwork automatically and handling
+    error return values"""
+    lwork = kwargs.pop("lwork", None)
+    if lwork is None:
+        kwargs['lwork'] = -1
+        ret = f(*args, **kwargs)
+        kwargs['lwork'] = ret[-2][0].real.astype(numpy.int)
+    ret = f(*args, **kwargs)
+    if ret[-1] < 0:
+        raise ValueError("illegal value in %d-th argument of internal %s"
+                         % (-ret[-1], name))
+    return ret[:-2]

@@ -1,0 +1,13 @@
+@@ -19,2 +27,12 @@
+             the function.
++        level : int, str, list
++            The level(s) to hide in a MultiIndex if hiding the entire index. Cannot be
++            used simultaneously with ``subset``.
++
++            .. versionadded:: 1.4.0
++        names : bool
++            Whether to hide the index name(s), in the case the index or part of it
++            remains visible.
++
++            .. versionadded:: 1.4.0
+  

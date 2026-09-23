@@ -1,0 +1,10 @@
+def _mpl_to_gtk_cursor(mpl_cursor):
+    return _api.check_getitem({
+        Cursors.MOVE: "move",
+        Cursors.HAND: "pointer",
+        Cursors.POINTER: "default",
+        Cursors.SELECT_REGION: "crosshair",
+        Cursors.WAIT: "wait",
+        Cursors.RESIZE_HORIZONTAL: "ew-resize",
+        Cursors.RESIZE_VERTICAL: "ns-resize",
+    }, cursor=mpl_cursor)

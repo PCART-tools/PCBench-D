@@ -1,0 +1,141 @@
+{
+  "case": "django.db.models.fields.related.ManyRelatedObjectsDescriptor-django.db.models.fields.related_descriptors.ManyToManyDescriptor-1.7.5",
+  "fix_type": "fix_R",
+  "candidate_api": "django.db.models.fields.related_descriptors.ManyToManyDescriptor",
+  "error": null,
+  "threshold_10pct": 6.1,
+  "algorithms_meeting_threshold": [
+    "tokenBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 10,
+      "vi_rank": 9,
+      "delta": 1,
+      "exceeds_10pct": false
+    },
+    "tokenBased": {
+      "vi1_rank": 6,
+      "vi_rank": 14,
+      "delta": -8,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.2993,
+      "baseline_rank": 10,
+      "delta_baseline_to_vi": 1
+    },
+    "tokenBased": {
+      "baseline_score": 0.3869,
+      "baseline_rank": 6,
+      "delta_baseline_to_vi": -8
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 9,
+          "vi_score": 0.2993,
+          "restored_score": 0.2993,
+          "restored_rank": 9,
+          "delta_vi_to_restored": 0
+        },
+        "tokenBased": {
+          "vi_rank": 14,
+          "vi_score": 0.3403,
+          "restored_score": 0.3403,
+          "restored_rank": 14,
+          "delta_vi_to_restored": 0,
+          "distance_to_baseline": 8
+        }
+      }
+    },
+    {
+      "block": "block_002",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 9,
+          "vi_score": 0.2993,
+          "restored_score": 0.2993,
+          "restored_rank": 9,
+          "delta_vi_to_restored": 0
+        },
+        "tokenBased": {
+          "vi_rank": 14,
+          "vi_score": 0.3403,
+          "restored_score": 0.3403,
+          "restored_rank": 14,
+          "delta_vi_to_restored": 0,
+          "distance_to_baseline": 8
+        }
+      }
+    },
+    {
+      "block": "block_003",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 9,
+          "vi_score": 0.2993,
+          "restored_score": 0.2993,
+          "restored_rank": 10,
+          "delta_vi_to_restored": -1
+        },
+        "tokenBased": {
+          "vi_rank": 14,
+          "vi_score": 0.3403,
+          "restored_score": 0.3514,
+          "restored_rank": 10,
+          "delta_vi_to_restored": 4,
+          "distance_to_baseline": 4
+        }
+      }
+    },
+    {
+      "block": "block_004",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 9,
+          "vi_score": 0.2993,
+          "restored_score": 0.2993,
+          "restored_rank": 10,
+          "delta_vi_to_restored": -1
+        },
+        "tokenBased": {
+          "vi_rank": 14,
+          "vi_score": 0.3403,
+          "restored_score": 0.3736,
+          "restored_rank": 7,
+          "delta_vi_to_restored": 7,
+          "distance_to_baseline": 1
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "tokenBased": [
+      "block_004"
+    ],
+    "mapBased": [
+      "block_003",
+      "block_004"
+    ]
+  },
+  "block_sign_labels": {
+    "map_up_token_down": [
+      "block_004",
+      "block_003"
+    ]
+  }
+}

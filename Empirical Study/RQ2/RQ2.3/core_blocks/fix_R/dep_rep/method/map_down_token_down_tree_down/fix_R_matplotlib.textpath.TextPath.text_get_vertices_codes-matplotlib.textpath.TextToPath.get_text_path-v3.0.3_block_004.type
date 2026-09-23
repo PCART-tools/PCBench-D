@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | `if` branch
+   Changed the statement executed when `usetex` is true from `verts, codes = text_to_path.get_text_path(prop, s, usetex=True)` to directly returning `text_to_path.get_text_path(prop, s, usetex=True)`.
+# /detail
+# mode：Modify conditional branch (replace call-assignment statement with return-call statement)

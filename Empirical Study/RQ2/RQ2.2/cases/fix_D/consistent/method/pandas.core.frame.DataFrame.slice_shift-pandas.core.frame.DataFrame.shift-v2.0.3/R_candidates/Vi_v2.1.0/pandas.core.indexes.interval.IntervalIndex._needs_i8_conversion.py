@@ -1,0 +1,24 @@
+    def _needs_i8_conversion(self, key) -> bool:
+        """
+        Check if a given key needs i8 conversion. Conversion is necessary for
+        Timestamp, Timedelta, DatetimeIndex, and TimedeltaIndex keys. An
+        Interval-like requires conversion if its endpoints are one of the
+        aforementioned types.
+
+        Assumes that any list-like data has already been cast to an Index.
+
+        Parameters
+        ----------
+        key : scalar or Index-like
+            The key that should be checked for i8 conversion
+
+        Returns
+        -------
+        bool
+        """
+        key_dtype = getattr(key, "dtype", None)
+        if isinstance(key_dtype, IntervalDtype) or isinstance(key, Interval):
+            return self._needs_i8_conversion(key.left)
+
+        i8_types = (Timestamp, Timedelta, DatetimeIndex, TimedeltaIndex)
+        return isinstance(key, i8_types)

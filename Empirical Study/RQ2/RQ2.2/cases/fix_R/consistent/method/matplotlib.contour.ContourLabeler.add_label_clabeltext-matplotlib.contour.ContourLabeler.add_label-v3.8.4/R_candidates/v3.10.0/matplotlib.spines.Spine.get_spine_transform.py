@@ -1,0 +1,58 @@
+    def get_spine_transform(self):
+        """Return the spine transform."""
+        self._ensure_position_is_set()
+
+        position = self._position
+        if isinstance(position, str):
+            if position == 'center':
+                position = ('axes', 0.5)
+            elif position == 'zero':
+                position = ('data', 0)
+        assert len(position) == 2, 'position should be 2-tuple'
+        position_type, amount = position
+        _api.check_in_list(['axes', 'outward', 'data'],
+                           position_type=position_type)
+        if self.spine_type in ['left', 'right']:
+            base_transform = self.axes.get_yaxis_transform(which='grid')
+        elif self.spine_type in ['top', 'bottom']:
+            base_transform = self.axes.get_xaxis_transform(which='grid')
+        else:
+            raise ValueError(f'unknown spine spine_type: {self.spine_type!r}')
+
+        if position_type == 'outward':
+            if amount == 0:  # short circuit commonest case
+                return base_transform
+            else:
+                offset_vec = {'left': (-1, 0), 'right': (1, 0),
+                              'bottom': (0, -1), 'top': (0, 1),
+                              }[self.spine_type]
+                # calculate x and y offset in dots
+                offset_dots = amount * np.array(offset_vec) / 72
+                return (base_transform
+                        + mtransforms.ScaledTranslation(
+                            *offset_dots, self.get_figure(root=False).dpi_scale_trans))
+        elif position_type == 'axes':
+            if self.spine_type in ['left', 'right']:
+                # keep y unchanged, fix x at amount
+                return (mtransforms.Affine2D.from_values(0, 0, 0, 1, amount, 0)
+                        + base_transform)
+            elif self.spine_type in ['bottom', 'top']:
+                # keep x unchanged, fix y at amount
+                return (mtransforms.Affine2D.from_values(1, 0, 0, 0, 0, amount)
+                        + base_transform)
+        elif position_type == 'data':
+            if self.spine_type in ('right', 'top'):
+                # The right and top spines have a default position of 1 in
+                # axes coordinates.  When specifying the position in data
+                # coordinates, we need to calculate the position relative to 0.
+                amount -= 1
+            if self.spine_type in ('left', 'right'):
+                return mtransforms.blended_transform_factory(
+                    mtransforms.Affine2D().translate(amount, 0)
+                    + self.axes.transData,
+                    self.axes.transData)
+            elif self.spine_type in ('bottom', 'top'):
+                return mtransforms.blended_transform_factory(
+                    self.axes.transData,
+                    mtransforms.Affine2D().translate(0, amount)
+                    + self.axes.transData)

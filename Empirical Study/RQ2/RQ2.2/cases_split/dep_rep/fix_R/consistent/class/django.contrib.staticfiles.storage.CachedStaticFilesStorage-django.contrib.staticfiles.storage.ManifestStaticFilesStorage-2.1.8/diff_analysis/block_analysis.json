@@ -1,0 +1,78 @@
+{
+  "case": "django.contrib.staticfiles.storage.CachedStaticFilesStorage-django.contrib.staticfiles.storage.ManifestStaticFilesStorage-2.1.8",
+  "fix_type": "fix_R",
+  "candidate_api": "django.contrib.staticfiles.storage.ManifestStaticFilesStorage",
+  "error": null,
+  "threshold_10pct": 1.8,
+  "algorithms_meeting_threshold": [
+    "mapBased",
+    "tokenBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 1,
+      "vi_rank": 5,
+      "delta": -4,
+      "exceeds_10pct": true
+    },
+    "tokenBased": {
+      "vi1_rank": 1,
+      "vi_rank": 6,
+      "delta": -5,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.85,
+      "baseline_rank": 1,
+      "delta_baseline_to_vi": -4
+    },
+    "tokenBased": {
+      "baseline_score": 0.619,
+      "baseline_rank": 1,
+      "delta_baseline_to_vi": -5
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 5,
+          "vi_score": 0.25,
+          "restored_score": 0.85,
+          "restored_rank": 1,
+          "delta_vi_to_restored": 4,
+          "distance_to_baseline": 0
+        },
+        "tokenBased": {
+          "vi_rank": 6,
+          "vi_score": 0.2889,
+          "restored_score": 0.619,
+          "restored_rank": 1,
+          "delta_vi_to_restored": 5,
+          "distance_to_baseline": 0
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "mapBased": [
+      "block_001"
+    ],
+    "tokenBased": [
+      "block_001"
+    ]
+  },
+  "block_sign_labels": {
+    "map_down_token_down": [
+      "block_001"
+    ]
+  }
+}

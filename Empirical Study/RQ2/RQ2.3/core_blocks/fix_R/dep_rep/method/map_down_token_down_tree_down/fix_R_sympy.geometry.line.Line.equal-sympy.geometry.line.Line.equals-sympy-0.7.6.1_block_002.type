@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation code block
+   Changed the implementation of `equal` from a type check and collinearity test to directly returning the result of `self.equals(other)`.
+   The original implementation included:
+
+   * Conditional statement: return `False` when `other` was not a `Line`;
+   * Return statement: return `Point.is_collinear(self.p1, other.p1, self.p2, other.p2)`.
+
+   The new implementation includes:
+
+   * Return statement: return `self.equals(other)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

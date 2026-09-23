@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original mean and variance computation and normalization return logic with a deprecation warning followed by a call to `standardize`, returning its result.
+   The original implementation included:
+
+   * Conditional statement: when `mean is None`, assign `jnp.mean(x, axis, keepdims=True, where=where)` to `mean`;
+   * Conditional statement: when `variance is None`, assign `jnp.mean(jnp.square(x), axis, keepdims=True, where=where) - jnp.square(mean)` to `variance`;
+   * Return statement: return `(x - mean) * lax.rsqrt(variance + epsilon)`.
+
+   The new implementation includes:
+
+   * Call statement: call `warnings.warn(...)` to issue a `DeprecationWarning`;
+   * Return statement: return `standardize(x, axis, mean, variance, epsilon, where)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with warning call and return-call statement)

@@ -1,0 +1,8 @@
+@@ -7,3 +8,6 @@
+         """
+-        Start a groupby operation.
++        Start a group by operation.
++
++        .. deprecated:: 0.19.0
++            This method has been renamed to :func:`LazyFrame.group_by`.
+  

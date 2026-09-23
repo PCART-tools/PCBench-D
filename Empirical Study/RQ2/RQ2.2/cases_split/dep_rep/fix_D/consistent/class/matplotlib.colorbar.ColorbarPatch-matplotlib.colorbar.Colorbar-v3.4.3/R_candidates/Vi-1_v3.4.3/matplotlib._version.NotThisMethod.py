@@ -1,0 +1,2 @@
+class NotThisMethod(Exception):
+    pass

@@ -1,0 +1,14 @@
+# detail
+Number of changes: 1
+
+1. Removed | Implementation code block
+   Removed the keyword-validation logic before `return ret`.
+   This included:
+
+   * Assignment statement: compute `fail_keys` as keys in `required` that are absent from `ret`;
+   * Conditional statement: raise `TypeError` when `fail_keys` is nonempty;
+   * Assignment statement: compute `fail_keys` as keys in `forbidden` that are present in `ret`;
+   * Conditional statement: raise `TypeError` when `fail_keys` is nonempty;
+   * Conditional statement: when `allowed is not None`, construct `allowed_set`, compute `fail_keys` not in the allowed set, and raise `TypeError` when any exist.
+# /detail
+# mode：Remove implementation block (remove keyword-validation logic)

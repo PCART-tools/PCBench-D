@@ -1,0 +1,7 @@
+@@ -11,4 +11,4 @@
+             backfill / bfill: use NEXT valid observation to fill gap
+-        value : scalar, dict, or Series
+-            Value to use to fill holes (e.g. 0), alternately a dict/Series of
++        value : scalar, dict, Series, or DataFrame
++            Value to use to fill holes (e.g. 0), alternately a dict/Series/DataFrame of
+             values specifying which value to use for each index (for a Series) or

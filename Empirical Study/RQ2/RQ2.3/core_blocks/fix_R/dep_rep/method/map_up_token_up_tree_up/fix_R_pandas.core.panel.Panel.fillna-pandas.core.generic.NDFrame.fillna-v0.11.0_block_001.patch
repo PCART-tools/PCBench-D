@@ -1,0 +1,6 @@
+@@ -25,2 +25,5 @@
+         """
++        if isinstance(value, (list, tuple)):
++            raise TypeError('"value" parameter must be a scalar or dict, but '
++                            'you passed a "{0}"'.format(type(value).__name__))
+         if value is None:

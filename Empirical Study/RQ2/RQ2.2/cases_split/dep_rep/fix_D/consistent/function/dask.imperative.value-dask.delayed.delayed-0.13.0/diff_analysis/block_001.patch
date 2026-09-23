@@ -1,0 +1,5 @@
+@@ -1,3 +1,3 @@
+ @curry
+-def delayed(obj, name=None, pure=False, nout=None):
++def delayed(obj, name=None, pure=False, nout=None, traverse=True):
+     """Wraps a function or object to produce a ``Delayed``.

@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Conditional statement
+   Changed the original direct computation and assignment of `self.hidden_columns` from `subset` to first checking `subset is None` and performing different assignments in the two branches.
+   The original implementation included:
+   * Assignment statement: call `non_reducing_slice(subset)` and reassign the result to `subset`;
+   * Assignment statement: obtain the result through `self.data.loc[subset]` and assign it to `hidden_df`;
+   * Assignment statement: call `self.columns.get_indexer_for(hidden_df.columns)` and assign the result to `self.hidden_columns`.
+
+   The new implementation includes:
+   * Conditional branch: when `subset is None`, assign `True` to `self.hide_columns_`;
+   * Conditional branch: otherwise, create `subset_`, call `non_reducing_slice(subset_)` to update `subset`, obtain `hide` through `self.data.loc[subset]`, obtain `hcols` through `self.columns.get_indexer_for(hide.columns)`, and assign `hcols` to `self.hidden_columns`.
+# /detail
+# mode：Modify control-flow structure (add conditional branch)

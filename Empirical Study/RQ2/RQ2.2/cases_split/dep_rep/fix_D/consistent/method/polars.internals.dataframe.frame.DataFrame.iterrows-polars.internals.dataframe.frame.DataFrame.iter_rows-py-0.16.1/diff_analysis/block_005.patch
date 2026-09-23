@@ -1,0 +1,5 @@
+@@ -59,3 +66,3 @@
+                 zerocopy_slice = self.slice(offset, buffer_size)
+-                if named and _PYARROW_AVAILABLE:
++                if load_pyarrow_dicts:
+                     yield from zerocopy_slice.to_arrow().to_batches()[0].to_pylist()

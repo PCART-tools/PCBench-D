@@ -1,0 +1,10 @@
+@@ -5,2 +5,8 @@
+     """
+-    pass
++    def __init__(self, *args, **kwargs):
++        warnings.warn(
++            'CachedStaticFilesStorage is deprecated in favor of '
++            'ManifestStaticFilesStorage.',
++            RemovedInDjango31Warning, stacklevel=2,
++        )
++        super().__init__(*args, **kwargs)

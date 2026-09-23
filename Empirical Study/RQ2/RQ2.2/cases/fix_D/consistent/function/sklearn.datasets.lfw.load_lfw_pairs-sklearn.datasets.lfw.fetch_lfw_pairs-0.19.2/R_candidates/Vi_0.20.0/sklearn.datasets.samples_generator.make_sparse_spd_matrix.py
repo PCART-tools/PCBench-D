@@ -1,0 +1,72 @@
+def make_sparse_spd_matrix(dim=1, alpha=0.95, norm_diag=False,
+                           smallest_coef=.1, largest_coef=.9,
+                           random_state=None):
+    """Generate a sparse symmetric definite positive matrix.
+
+    Read more in the :ref:`User Guide <sample_generators>`.
+
+    Parameters
+    ----------
+    dim : integer, optional (default=1)
+        The size of the random matrix to generate.
+
+    alpha : float between 0 and 1, optional (default=0.95)
+        The probability that a coefficient is zero (see notes). Larger values
+        enforce more sparsity.
+
+    norm_diag : boolean, optional (default=False)
+        Whether to normalize the output matrix to make the leading diagonal
+        elements all 1
+
+    smallest_coef : float between 0 and 1, optional (default=0.1)
+        The value of the smallest coefficient.
+
+    largest_coef : float between 0 and 1, optional (default=0.9)
+        The value of the largest coefficient.
+
+    random_state : int, RandomState instance or None (default)
+        Determines random number generation for dataset creation. Pass an int
+        for reproducible output across multiple function calls.
+        See :term:`Glossary <random_state>`.
+
+    Returns
+    -------
+    prec : sparse matrix of shape (dim, dim)
+        The generated matrix.
+
+    Notes
+    -----
+    The sparsity is actually imposed on the cholesky factor of the matrix.
+    Thus alpha does not translate directly into the filling fraction of
+    the matrix itself.
+
+    See also
+    --------
+    make_spd_matrix
+    """
+    random_state = check_random_state(random_state)
+
+    chol = -np.eye(dim)
+    aux = random_state.rand(dim, dim)
+    aux[aux < alpha] = 0
+    aux[aux > alpha] = (smallest_coef
+                        + (largest_coef - smallest_coef)
+                        * random_state.rand(np.sum(aux > alpha)))
+    aux = np.tril(aux, k=-1)
+
+    # Permute the lines: we don't want to have asymmetries in the final
+    # SPD matrix
+    permutation = random_state.permutation(dim)
+    aux = aux[permutation].T[permutation]
+    chol += aux
+    prec = np.dot(chol.T, chol)
+
+    if norm_diag:
+        # Form the diagonal vector into a row matrix
+        d = np.diag(prec).reshape(1, prec.shape[0])
+        d = 1. / np.sqrt(d)
+
+        prec *= d
+        prec *= d.T
+
+    return prec

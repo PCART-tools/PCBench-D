@@ -1,0 +1,13 @@
+    def set_solid_joinstyle(self, s):
+        """
+        Set the join style for solid lines.
+
+        Parameters
+        ----------
+        s : {'miter', 'round', 'bevel'}
+            For examples see :doc:`/gallery/lines_bars_and_markers/joinstyle`.
+        """
+        mpl.rcsetup.validate_joinstyle(s)
+        if self._solidjoinstyle != s:
+            self.stale = True
+        self._solidjoinstyle = s

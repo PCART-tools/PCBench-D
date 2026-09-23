@@ -1,0 +1,31 @@
+def maxwell(key: KeyArrayLike,
+            shape: Shape = (),
+            dtype: DTypeLikeFloat = float) -> Array:
+  r"""Sample from a one sided Maxwell distribution.
+
+  The values are distributed according to the probability density function:
+
+  .. math::
+     f(x) \propto x^2 e^{-x^2 / 2}
+
+  on the domain :math:`0 \le x < \infty`.
+
+  Args:
+    key: a PRNG key.
+    shape: The shape of the returned samples.
+    dtype: The type used for samples.
+
+  Returns:
+    A jnp.array of samples, of shape `shape`.
+
+  """
+  # Generate samples using:
+  # sqrt(X^2 + Y^2 + Z^2), X,Y,Z ~N(0,1)
+  key, _ = _check_prng_key("maxwell", key)
+  dtypes.check_user_dtype_supported(dtype)
+  if not dtypes.issubdtype(dtype, np.floating):
+    raise ValueError(f"dtype argument to `maxwell` must be a float "
+                     f"dtype, got {dtype}")
+  dtype = dtypes.canonicalize_dtype(dtype)
+  shape = core.canonicalize_shape(shape)
+  return _maxwell(key, shape, dtype)

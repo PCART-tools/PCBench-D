@@ -1,0 +1,20 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original inline implementation with a call to `self._draw_gouraud_triangle(gc, points, colors, trans)`.
+   The original implementation included:
+
+   * Assignment statement: assign `self.writer` to `writer`;
+   * Conditional statement: check and initialize `self._has_gouraud`, and write `filter`, `feComposite`, and `feColorMatrix` elements;
+   * Assignment statements: compute `avg_color`, perform an opacity check, and compute transformed coordinates;
+   * Loop statement: iterate over three points and write `linearGradient` and `stop` elements;
+   * Assignment statement: construct the `dpath` path string;
+   * API calls: write the triangular `path`, a `g` group, and multiple gradient-filled `path` elements;
+   * Assignment statement: increment `self._n_gradients`.
+
+   The new implementation includes:
+
+   * Method call: call `self._draw_gouraud_triangle(gc, points, colors, trans)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with call statement)

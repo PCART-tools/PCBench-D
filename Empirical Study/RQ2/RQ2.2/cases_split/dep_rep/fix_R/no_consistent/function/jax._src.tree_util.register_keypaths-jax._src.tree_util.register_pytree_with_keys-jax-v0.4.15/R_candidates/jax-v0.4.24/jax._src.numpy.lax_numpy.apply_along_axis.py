@@ -1,0 +1,14 @@
+@util.implements(np.apply_along_axis)
+def apply_along_axis(
+    func1d: Callable, axis: int, arr: ArrayLike, *args, **kwargs
+) -> Array:
+  # TODO(jakevdp): Non-array input deprecated 2023-09-22; change to error.
+  util.check_arraylike("apply_along_axis", arr, emit_warning=True)
+  num_dims = ndim(arr)
+  axis = _canonicalize_axis(axis, num_dims)
+  func = lambda arr: func1d(arr, *args, **kwargs)
+  for i in range(1, num_dims - axis):
+    func = jax.vmap(func, in_axes=i, out_axes=-1)
+  for i in range(axis):
+    func = jax.vmap(func, in_axes=0, out_axes=0)
+  return func(arr)

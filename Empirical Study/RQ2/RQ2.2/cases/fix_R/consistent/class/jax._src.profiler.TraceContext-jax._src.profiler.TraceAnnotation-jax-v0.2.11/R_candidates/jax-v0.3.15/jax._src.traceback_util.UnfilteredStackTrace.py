@@ -1,0 +1,1 @@
+class UnfilteredStackTrace(Exception): pass

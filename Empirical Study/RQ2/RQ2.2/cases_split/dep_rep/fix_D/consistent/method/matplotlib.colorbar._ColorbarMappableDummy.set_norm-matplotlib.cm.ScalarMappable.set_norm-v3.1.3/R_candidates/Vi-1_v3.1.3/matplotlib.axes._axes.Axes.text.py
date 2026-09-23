@@ -1,0 +1,86 @@
+    @cbook._delete_parameter("3.1", "withdash")
+    def text(self, x, y, s, fontdict=None, withdash=False, **kwargs):
+        """
+        Add text to the axes.
+
+        Add the text *s* to the axes at location *x*, *y* in data coordinates.
+
+        Parameters
+        ----------
+        x, y : scalars
+            The position to place the text. By default, this is in data
+            coordinates. The coordinate system can be changed using the
+            *transform* parameter.
+
+        s : str
+            The text.
+
+        fontdict : dictionary, optional, default: None
+            A dictionary to override the default text properties. If fontdict
+            is None, the defaults are determined by your rc parameters.
+
+        withdash : boolean, optional, default: False
+            Creates a `~matplotlib.text.TextWithDash` instance instead of a
+            `~matplotlib.text.Text` instance.
+
+        Returns
+        -------
+        text : `.Text`
+            The created `.Text` instance.
+
+        Other Parameters
+        ----------------
+        **kwargs : `~matplotlib.text.Text` properties.
+            Other miscellaneous text parameters.
+
+        Examples
+        --------
+        Individual keyword arguments can be used to override any given
+        parameter::
+
+            >>> text(x, y, s, fontsize=12)
+
+        The default transform specifies that text is in data coords,
+        alternatively, you can specify text in axis coords (0,0 is
+        lower-left and 1,1 is upper-right).  The example below places
+        text in the center of the axes::
+
+            >>> text(0.5, 0.5, 'matplotlib', horizontalalignment='center',
+            ...      verticalalignment='center', transform=ax.transAxes)
+
+        You can put a rectangular box around the text instance (e.g., to
+        set a background color) by using the keyword `bbox`.  `bbox` is
+        a dictionary of `~matplotlib.patches.Rectangle`
+        properties.  For example::
+
+            >>> text(x, y, s, bbox=dict(facecolor='red', alpha=0.5))
+        """
+        if fontdict is None:
+            fontdict = {}
+
+        effective_kwargs = {
+            'verticalalignment': 'baseline',
+            'horizontalalignment': 'left',
+            'transform': self.transData,
+            'clip_on': False,
+            **fontdict,
+            **kwargs,
+        }
+
+        # At some point if we feel confident that TextWithDash
+        # is robust as a drop-in replacement for Text and that
+        # the performance impact of the heavier-weight class
+        # isn't too significant, it may make sense to eliminate
+        # the withdash kwarg and simply delegate whether there's
+        # a dash to TextWithDash and dashlength.
+
+        if (withdash
+                and withdash is not cbook.deprecation._deprecated_parameter):
+            t = mtext.TextWithDash(x, y, text=s)
+        else:
+            t = mtext.Text(x, y, text=s)
+        t.update(effective_kwargs)
+
+        t.set_clip_path(self.patch)
+        self._add_text(t)
+        return t

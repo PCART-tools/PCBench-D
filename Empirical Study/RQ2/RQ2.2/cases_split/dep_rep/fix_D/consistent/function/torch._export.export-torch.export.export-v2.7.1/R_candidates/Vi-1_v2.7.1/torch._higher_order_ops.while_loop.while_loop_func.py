@@ -1,0 +1,33 @@
+@while_loop_op.py_functionalize_impl
+def while_loop_func(ctx, cond_fn, body_fn, carried_inputs, additional_inputs):
+    unwrapped_carried_inputs = ctx.unwrap_tensors(carried_inputs)
+    unwrapped_additional_inputs = ctx.unwrap_tensors(additional_inputs)
+    unwrapped_inputs = unwrapped_carried_inputs + unwrapped_additional_inputs
+    with ctx.redispatch_to_next():
+        functional_cond_fn = ctx.functionalize(_maybe_run_with_interpreter(cond_fn))
+        functional_body_fn = ctx.functionalize(_maybe_run_with_interpreter(body_fn))
+        pre_dispatch = hasattr(ctx, "mode") and ctx.mode.pre_dispatch
+        for fn, fn_name in [
+            (cond_fn, "cond_fn"),
+            (body_fn, "body_fn"),
+        ]:
+            if _has_potential_branch_input_mutation(
+                fn, unwrapped_inputs, pre_dispatch=pre_dispatch
+            ):
+                raise UnsupportedAliasMutationException(
+                    f"torch.while_loop's {fn_name} might be modifying the input!"
+                )
+
+            if _has_potential_branch_input_alias(
+                fn, unwrapped_inputs, pre_dispatch=pre_dispatch
+            ):
+                raise UnsupportedAliasMutationException(
+                    f"torch.while_loop's {fn_name} might be aliasing the input!"
+                )
+        ret = while_loop_op(
+            functional_cond_fn,
+            functional_body_fn,
+            unwrapped_carried_inputs,
+            unwrapped_additional_inputs,
+        )
+        return ctx.wrap_tensors(ret)

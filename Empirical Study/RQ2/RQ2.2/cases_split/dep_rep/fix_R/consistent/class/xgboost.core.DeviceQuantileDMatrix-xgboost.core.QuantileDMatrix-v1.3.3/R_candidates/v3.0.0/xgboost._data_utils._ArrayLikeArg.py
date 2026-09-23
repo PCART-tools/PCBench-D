@@ -1,0 +1,3 @@
+class _ArrayLikeArg(Protocol):
+    @property
+    def __array_interface__(self) -> "ArrayInf": ...

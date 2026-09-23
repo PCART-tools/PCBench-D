@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original multi-part internal implementation with a single return statement that returns `self.replace(mapping, default=default, return_dtype=return_dtype)`.
+   The original implementation included:
+
+   * Function definition: define `_remap_key_or_value_series` to construct and validate a `Series` of remapping keys or values;
+   * Function definition: define `inner_func` to construct a DataFrame, create remapping key/value Series objects, perform a join, handle `default`, and return the result Series;
+   * Assignment statement: assign `partial(inner_func, default_value=default)` to `remapping_func`;
+   * Return statement: call `self.map_batches(function=remapping_func, return_dtype=return_dtype)`.
+
+   The new implementation includes:
+
+   * Return statement: call `self.replace(mapping, default=default, return_dtype=return_dtype)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

@@ -1,0 +1,13 @@
+@@ -100,2 +102,12 @@
+  
++  def _warn_if_event_writer_is_closed(self):
++    if self._closed:
++      warnings.warn("Attempting to use a closed FileWriter. "
++                    "The operation will be a noop unless the FileWriter "
++                    "is explicitly reopened.")
++
++  def _add_event(self, event, step):
++    self._warn_if_event_writer_is_closed()
++    super(FileWriter, self)._add_event(event, step)
++
+   def add_event(self, event):

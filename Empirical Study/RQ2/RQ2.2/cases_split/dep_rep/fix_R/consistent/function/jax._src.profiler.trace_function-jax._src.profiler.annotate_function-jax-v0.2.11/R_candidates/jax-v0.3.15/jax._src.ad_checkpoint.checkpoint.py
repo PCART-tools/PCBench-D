@@ -1,0 +1,121 @@
+def checkpoint(fun: Callable, prevent_cse: bool = True,
+               policy: Optional[Callable[..., bool]] = None
+               ) -> Callable:
+  """Make ``fun`` recompute internal linearization points when differentiated.
+
+  The :func:`jax.checkpoint` decorator, aliased to ``jax.remat``, provides a
+  way to trade off computation time and memory cost in the context of automatic
+  differentiation, especially with reverse-mode autodiff like :func:`jax.grad`
+  and :func:`jax.vjp` but also with :func:`jax.linearize`.
+
+  When differentiating a function in reverse-mode, by default all the
+  linearization points (e.g. inputs to elementwise nonlinear primitive
+  operations) are stored when evaluating the forward pass so that they can be
+  reused on the backward pass. This evaluation strategy can lead to a high
+  memory cost, or even to poor performance on hardware accelerators where memory
+  access is much more expensive than FLOPs.
+
+  An alternative evaluation strategy is for some of the linearization points to
+  be recomputed (i.e. rematerialized) rather than stored. This approach can
+  reduce memory usage at the cost of increased computation.
+
+  This function decorator produces a new version of ``fun`` which follows
+  the rematerialization strategy rather than the default store-everything
+  strategy. That is, it returns a new version of ``fun`` which, when
+  differentiated, doesn't store any of its intermediate linearization points.
+  Instead, these linearization points are recomputed from the function's saved
+  inputs.
+
+  See the examples below.
+
+  Args:
+    fun: Function for which the autodiff evaluation strategy is to be changed
+      from the default of storing all intermediate linearization points to
+      recomputing them. Its arguments and return value should be arrays,
+      scalars, or (nested) standard Python containers (tuple/list/dict) thereof.
+    concrete: Optional, boolean indicating whether ``fun`` may involve
+      value-dependent Python control flow (default False). Support for such
+      control flow is optional, and disabled by default, because in some
+      edge-case compositions with :func:`jax.jit` it can lead to some extra
+      computation.
+    prevent_cse: Optional, boolean indicating whether to prevent common
+      subexpression elimination (CSE) optimizations in the HLO generated from
+      differentiation. This CSE prevention has costs because it can foil other
+      optimizations, and because it can incur high overheads on some backends,
+      especially GPU. The default is True because otherwise, under a ``jit`` or
+      ``pmap``, CSE can defeat the purpose of this decorator. But in some
+      settings, like when used inside a ``scan``, this CSE prevention mechanism
+      is unnecessary, in which case ``prevent_cse`` can be set to False.
+    policy: This is an experimental feature and the API is likely to change.
+      Optional callable, one of the attributes of ``jax.checkpoint_policies``,
+      which takes as input a type-level specification of a first-order primitive
+      application and returns a boolean indicating whether the corresponding
+      output value(s) can be saved as a residual (or, if not, instead must be
+      recomputed in the (co)tangent computation).
+
+  Returns:
+    A function (callable) with the same input/output behavior as ``fun`` but
+    which, when differentiated using e.g. :func:`jax.grad`, :func:`jax.vjp`, or
+    :func:`jax.linearize`, recomputes rather than stores intermediate
+    linearization points, thus potentially saving memory at the cost of extra
+    computation.
+
+  Here is a simple example:
+
+  >>> import jax
+  >>> import jax.numpy as jnp
+
+  >>> @jax.checkpoint
+  ... def g(x):
+  ...   y = jnp.sin(x)
+  ...   z = jnp.sin(y)
+  ...   return z
+  ...
+  >>> jax.value_and_grad(g)(2.0)
+  (DeviceArray(0.78907233, dtype=float32, weak_type=True), DeviceArray(-0.2556391, dtype=float32, weak_type=True))
+
+  Here, the same value is produced whether or not the :func:`jax.checkpoint`
+  decorator is present. When the decorator is not present, the values
+  ``jnp.cos(2.0)`` and ``jnp.cos(jnp.sin(2.0))`` are computed on the forward
+  pass and are stored for use in the backward pass, because they are needed
+  on the backward pass and depend only on the primal inputs. When using
+  :func:`jax.checkpoint`, the forward pass will compute only the primal outputs
+  and only the primal inputs (``2.0``) will be stored for the backward pass.
+  At that time, the value ``jnp.sin(2.0)`` is recomputed, along with the values
+  ``jnp.cos(2.0)`` and ``jnp.cos(jnp.sin(2.0))``.
+
+  While ``jax.checkpoint`` controls what values are stored from the forward-pass
+  to be used on the backward pass, the total amount of memory required to
+  evaluate a function or its VJP depends on many additional internal details of
+  that function. Those details include which numerical primitives are used,
+  how they're composed, where jit and control flow primitives like scan
+  are used, and other factors.
+
+  The :func:`jax.checkpoint` decorator can be applied recursively to express
+  sophisticated autodiff rematerialization strategies. For example:
+
+  >>> def recursive_checkpoint(funs):
+  ...   if len(funs) == 1:
+  ...     return funs[0]
+  ...   elif len(funs) == 2:
+  ...     f1, f2 = funs
+  ...     return lambda x: f1(f2(x))
+  ...   else:
+  ...     f1 = recursive_checkpoint(funs[:len(funs)//2])
+  ...     f2 = recursive_checkpoint(funs[len(funs)//2:])
+  ...     return lambda x: f1(jax.checkpoint(f2)(x))
+  ...
+  """
+  @wraps(fun)
+  @api_boundary
+  def fun_remat(*args, **kwargs):
+    args_flat, in_tree = tree_flatten((args, kwargs))
+    flat_fun, out_tree = flatten_fun(lu.wrap_init(fun), in_tree)
+    in_avals = [core.raise_to_shaped(core.get_aval(x)) for x in args_flat]
+    debug = pe.debug_info(fun, in_tree, False, "checkpoint")
+    jaxpr, _, consts = pe.trace_to_jaxpr_dynamic(flat_fun, in_avals, debug)
+    out_flat = remat_p.bind(
+        *consts, *args_flat, jaxpr=pe.convert_constvars_jaxpr(jaxpr),
+        prevent_cse=prevent_cse, differentiated=False, policy=policy)
+    return tree_unflatten(out_tree(), out_flat)
+  return fun_remat

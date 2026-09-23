@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original index-expression construction and `_pyexpr.take` call with directly returning `self.gather(indices)`.
+   The original implementation included:
+
+   * Conditional statement: according to whether `indices` was a `list` or `np.ndarray`, generate `indices_lit` through `F.lit(pl.Series(...))._pyexpr` or `parse_as_expression(indices)`;
+   * Return statement: call `self._from_pyexpr(self._pyexpr.take(indices_lit))`.
+
+   The new implementation includes:
+
+   * Return statement: call `self.gather(indices)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

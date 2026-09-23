@@ -1,0 +1,5 @@
+@@ -43,3 +49,3 @@
+  
+-        r = (r != 0).astype(r.dtype).sum(axis=0, keepdims=keepdims)
++        r = (r != 0).astype(r.dtype).sum(axis=axis, keepdims=keepdims)
+     elif ord == 1:

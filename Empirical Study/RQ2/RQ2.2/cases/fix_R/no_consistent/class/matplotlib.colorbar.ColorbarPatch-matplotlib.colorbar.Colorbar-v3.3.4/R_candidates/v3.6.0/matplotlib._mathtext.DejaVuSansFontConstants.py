@@ -1,0 +1,2 @@
+class DejaVuSansFontConstants(FontConstantsBase):
+    pass

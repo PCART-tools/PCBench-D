@@ -1,0 +1,5 @@
+@@ -1,1 +1,4 @@
++    @deprecate_renamed_function("scatter", version="0.19.14")
++    @deprecate_renamed_parameter("idx", "indices", version="0.19.14")
++    @deprecate_renamed_parameter("value", "values", version="0.19.14")
+     def set_at_idx(

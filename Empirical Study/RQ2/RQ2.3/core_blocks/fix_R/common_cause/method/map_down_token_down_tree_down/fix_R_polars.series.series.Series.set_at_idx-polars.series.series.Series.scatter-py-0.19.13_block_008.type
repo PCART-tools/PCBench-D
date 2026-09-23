@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original implementation that converted and expanded indices and values and called `self._s.set_at_idx(idx._s, value._s)` with directly returning `self.scatter(indices, values)`.
+   The original implementation included:
+
+   * Conditional statements: convert an integer `idx` to a list and return `self` for an empty `idx`;
+   * Assignment statement: convert `idx` to a `Series`;
+   * Conditional statements: convert `value` to a `Series` according to its type and expand constant values when necessary;
+   * API call: call `self._s.set_at_idx(idx._s, value._s)`;
+   * Return statement: return `self`.
+
+   The new implementation includes:
+
+   * Return statement: return `self.scatter(indices, values)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

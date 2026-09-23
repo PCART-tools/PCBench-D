@@ -1,0 +1,15 @@
+@@ -9,13 +15,2 @@
+         """
+-        new_data = {}
+-        convert_f = lambda x: lib.maybe_convert_objects(
+-            x, convert_datetime=convert_dates)
+-
+-        # TODO: could be more efficient taking advantage of the block
+-        for col, s in self.iteritems():
+-            if s.dtype == np.object_:
+-                new_data[col] = convert_f(s)
+-            else:
+-                new_data[col] = s
+-
+-        return DataFrame(new_data, index=self.index, columns=self.columns)
++        return self._constructor(self._data.convert(convert_dates=convert_dates, convert_numeric=convert_numeric))

@@ -1,0 +1,2 @@
+def zeros_like_jaxval(val):
+  return zeros_like_p.bind(val)

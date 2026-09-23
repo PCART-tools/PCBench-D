@@ -1,0 +1,159 @@
+@partial(jit, static_argnames=('ord', 'axis', 'keepdims'))
+def norm(x: ArrayLike, ord: int | str | None = None,
+         axis: None | tuple[int, ...] | int = None,
+         keepdims: bool = False) -> Array:
+  """Compute the norm of a matrix or vector.
+
+  JAX implementation of :func:`numpy.linalg.norm`.
+
+  Args:
+    x: N-dimensional array for which the norm will be computed.
+    ord: specify the kind of norm to take. Default is Frobenius norm for matrices,
+      and the 2-norm for vectors. For other options, see Notes below.
+    axis: integer or sequence of integers specifying the axes over which the norm
+      will be computed. Defaults to all axes of ``x``.
+    keepdims: if True, the output array will have the same number of dimensions as
+      the input, with the size of reduced axes replaced by ``1`` (default: False).
+
+  Returns:
+    array containing the specified norm of x.
+
+  Notes:
+    The flavor of norm computed depends on the value of ``ord`` and the number of
+    axes being reduced.
+
+    For **vector norms** (i.e. a single axis reduction):
+
+    - ``ord=None`` (default) computes the 2-norm
+    - ``ord=inf`` computes ``max(abs(x))``
+    - ``ord=-inf`` computes min(abs(x))``
+    - ``ord=0`` computes ``sum(x!=0)``
+    - for other numerical values, computes ``sum(abs(x) ** ord)**(1/ord)``
+
+    For **matrix norms** (i.e. two axes reductions):
+
+    - ``ord='fro'`` or ``ord=None`` (default) computes the Frobenius norm
+    - ``ord='nuc'`` computes the nuclear norm, or the sum of the singular values
+    - ``ord=1`` computes ``max(abs(x).sum(0))``
+    - ``ord=-1`` computes ``min(abs(x).sum(0))``
+    - ``ord=2`` computes the 2-norm, i.e. the largest singular value
+    - ``ord=-2`` computes the smallest singular value
+
+  Examples:
+    Vector norms:
+
+    >>> x = jnp.array([3., 4., 12.])
+    >>> jnp.linalg.norm(x)
+    Array(13., dtype=float32)
+    >>> jnp.linalg.norm(x, ord=1)
+    Array(19., dtype=float32)
+    >>> jnp.linalg.norm(x, ord=0)
+    Array(3., dtype=float32)
+
+    Matrix norms:
+
+    >>> x = jnp.array([[1., 2., 3.],
+    ...                [4., 5., 7.]])
+    >>> jnp.linalg.norm(x)  # Frobenius norm
+    Array(10.198039, dtype=float32)
+    >>> jnp.linalg.norm(x, ord='nuc')  # nuclear norm
+    Array(10.762535, dtype=float32)
+    >>> jnp.linalg.norm(x, ord=1)  # 1-norm
+    Array(10., dtype=float32)
+
+    Batched vector norm:
+
+    >>> jnp.linalg.norm(x, axis=1)
+    Array([3.7416575, 9.486833 ], dtype=float32)
+  """
+  check_arraylike("jnp.linalg.norm", x)
+  x, = promote_dtypes_inexact(jnp.asarray(x))
+  x_shape = jnp.shape(x)
+  ndim = len(x_shape)
+
+  if axis is None:
+    # NumPy has an undocumented behavior that admits arbitrary rank inputs if
+    # `ord` is None: https://github.com/numpy/numpy/issues/14215
+    if ord is None:
+      return ufuncs.sqrt(reductions.sum(ufuncs.real(x * ufuncs.conj(x)), keepdims=keepdims))
+    axis = tuple(range(ndim))
+  elif isinstance(axis, tuple):
+    axis = tuple(canonicalize_axis(x, ndim) for x in axis)
+  else:
+    axis = (canonicalize_axis(axis, ndim),)
+
+  num_axes = len(axis)
+  if num_axes == 1:
+    if ord is None or ord == 2:
+      return ufuncs.sqrt(reductions.sum(ufuncs.real(x * ufuncs.conj(x)), axis=axis,
+                                        keepdims=keepdims))
+    elif ord == jnp.inf:
+      return reductions.amax(ufuncs.abs(x), axis=axis, keepdims=keepdims)
+    elif ord == -jnp.inf:
+      return reductions.amin(ufuncs.abs(x), axis=axis, keepdims=keepdims)
+    elif ord == 0:
+      return reductions.sum(x != 0, dtype=jnp.finfo(lax.dtype(x)).dtype,
+                            axis=axis, keepdims=keepdims)
+    elif ord == 1:
+      # Numpy has a special case for ord == 1 as an optimization. We don't
+      # really need the optimization (XLA could do it for us), but the Numpy
+      # code has slightly different type promotion semantics, so we need a
+      # special case too.
+      return reductions.sum(ufuncs.abs(x), axis=axis, keepdims=keepdims)
+    elif isinstance(ord, str):
+      msg = f"Invalid order '{ord}' for vector norm."
+      if ord == "inf":
+        msg += "Use 'jax.numpy.inf' instead."
+      if ord == "-inf":
+        msg += "Use '-jax.numpy.inf' instead."
+      raise ValueError(msg)
+    else:
+      abs_x = ufuncs.abs(x)
+      ord_arr = lax_internal._const(abs_x, ord)
+      ord_inv = lax_internal._const(abs_x, 1. / ord_arr)
+      out = reductions.sum(abs_x ** ord_arr, axis=axis, keepdims=keepdims)
+      return ufuncs.power(out, ord_inv)
+
+  elif num_axes == 2:
+    row_axis, col_axis = axis  # pytype: disable=bad-unpacking
+    if ord is None or ord in ('f', 'fro'):
+      return ufuncs.sqrt(reductions.sum(ufuncs.real(x * ufuncs.conj(x)), axis=axis,
+                                        keepdims=keepdims))
+    elif ord == 1:
+      if not keepdims and col_axis > row_axis:
+        col_axis -= 1
+      return reductions.amax(reductions.sum(ufuncs.abs(x), axis=row_axis, keepdims=keepdims),
+                             axis=col_axis, keepdims=keepdims)
+    elif ord == -1:
+      if not keepdims and col_axis > row_axis:
+        col_axis -= 1
+      return reductions.amin(reductions.sum(ufuncs.abs(x), axis=row_axis, keepdims=keepdims),
+                             axis=col_axis, keepdims=keepdims)
+    elif ord == jnp.inf:
+      if not keepdims and row_axis > col_axis:
+        row_axis -= 1
+      return reductions.amax(reductions.sum(ufuncs.abs(x), axis=col_axis, keepdims=keepdims),
+                     axis=row_axis, keepdims=keepdims)
+    elif ord == -jnp.inf:
+      if not keepdims and row_axis > col_axis:
+        row_axis -= 1
+      return reductions.amin(reductions.sum(ufuncs.abs(x), axis=col_axis, keepdims=keepdims),
+                     axis=row_axis, keepdims=keepdims)
+    elif ord in ('nuc', 2, -2):
+      x = jnp.moveaxis(x, axis, (-2, -1))
+      if ord == 2:
+        reducer = reductions.amax
+      elif ord == -2:
+        reducer = reductions.amin
+      else:
+        # `sum` takes an extra dtype= argument, unlike `amax` and `amin`.
+        reducer = reductions.sum  # type: ignore[assignment]
+      y = reducer(svd(x, compute_uv=False), axis=-1)
+      if keepdims:
+        y = jnp.expand_dims(y, axis)
+      return y
+    else:
+      raise ValueError(f"Invalid order '{ord}' for matrix norm.")
+  else:
+    raise ValueError(
+        f"Invalid axis values ({axis}) for jnp.linalg.norm.")

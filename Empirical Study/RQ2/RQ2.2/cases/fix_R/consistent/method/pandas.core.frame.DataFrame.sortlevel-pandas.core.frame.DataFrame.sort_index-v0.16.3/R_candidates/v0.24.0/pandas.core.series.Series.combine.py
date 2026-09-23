@@ -1,0 +1,104 @@
+    def combine(self, other, func, fill_value=None):
+        """
+        Combine the Series with a Series or scalar according to `func`.
+
+        Combine the Series and `other` using `func` to perform elementwise
+        selection for combined Series.
+        `fill_value` is assumed when value is missing at some index
+        from one of the two objects being combined.
+
+        Parameters
+        ----------
+        other : Series or scalar
+            The value(s) to be combined with the `Series`.
+        func : function
+            Function that takes two scalars as inputs and returns an element.
+        fill_value : scalar, optional
+            The value to assume when an index is missing from
+            one Series or the other. The default specifies to use the
+            appropriate NaN value for the underlying dtype of the Series.
+
+        Returns
+        -------
+        Series
+            The result of combining the Series with the other object.
+
+        See Also
+        --------
+        Series.combine_first : Combine Series values, choosing the calling
+            Series' values first.
+
+        Examples
+        --------
+        Consider 2 Datasets ``s1`` and ``s2`` containing
+        highest clocked speeds of different birds.
+
+        >>> s1 = pd.Series({'falcon': 330.0, 'eagle': 160.0})
+        >>> s1
+        falcon    330.0
+        eagle     160.0
+        dtype: float64
+        >>> s2 = pd.Series({'falcon': 345.0, 'eagle': 200.0, 'duck': 30.0})
+        >>> s2
+        falcon    345.0
+        eagle     200.0
+        duck       30.0
+        dtype: float64
+
+        Now, to combine the two datasets and view the highest speeds
+        of the birds across the two datasets
+
+        >>> s1.combine(s2, max)
+        duck        NaN
+        eagle     200.0
+        falcon    345.0
+        dtype: float64
+
+        In the previous example, the resulting value for duck is missing,
+        because the maximum of a NaN and a float is a NaN.
+        So, in the example, we set ``fill_value=0``,
+        so the maximum value returned will be the value from some dataset.
+
+        >>> s1.combine(s2, max, fill_value=0)
+        duck       30.0
+        eagle     200.0
+        falcon    345.0
+        dtype: float64
+        """
+        if fill_value is None:
+            fill_value = na_value_for_dtype(self.dtype, compat=False)
+
+        if isinstance(other, Series):
+            # If other is a Series, result is based on union of Series,
+            # so do this element by element
+            new_index = self.index.union(other.index)
+            new_name = ops.get_op_result_name(self, other)
+            new_values = []
+            for idx in new_index:
+                lv = self.get(idx, fill_value)
+                rv = other.get(idx, fill_value)
+                with np.errstate(all='ignore'):
+                    new_values.append(func(lv, rv))
+        else:
+            # Assume that other is a scalar, so apply the function for
+            # each element in the Series
+            new_index = self.index
+            with np.errstate(all='ignore'):
+                new_values = [func(lv, other) for lv in self._values]
+            new_name = self.name
+
+        if is_categorical_dtype(self.values):
+            pass
+        elif is_extension_array_dtype(self.values):
+            # The function can return something of any type, so check
+            # if the type is compatible with the calling EA.
+            try:
+                new_values = self._values._from_sequence(new_values)
+            except Exception:
+                # https://github.com/pandas-dev/pandas/issues/22850
+                # pandas has no control over what 3rd-party ExtensionArrays
+                # do in _values_from_sequence. We still want ops to work
+                # though, so we catch any regular Exception.
+                pass
+
+        return self._constructor(new_values, index=new_index, name=new_name)

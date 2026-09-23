@@ -1,0 +1,22 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the fixed-iteration implementation over `dist.items()` and node-adjacency edges with a queue-based loop using `q`, the enqueued-node set `in_q`, the counter `count`, and the graph successor/adjacency structure `G_succ`.
+   The original implementation included:
+
+   * Loop statement: use `for i in range(numb_nodes)` for a fixed number of iterations;
+   * Assignment statement: set `no_changes=True`;
+   * Nested loops: iterate over nodes and distances in `dist.items()`, and then over edges in `G[u].items()`;
+   * Conditional statement: when `v not in dist or dist[v] > dist_v`, update `dist[v]`.
+
+   The new implementation includes:
+
+   * Conditional statement: set `G_succ` to `G.succ` or `G.adj` according to `G.is_directed()`;
+   * Assignment statements: set `inf`, `n`, `count`, `q`, and `in_q`;
+   * Loop statement: use `while q` to remove nodes from the queue and maintain `in_q`;
+   * Conditional statement: after testing `pred[u] not in in_q`, iterate over `G_succ[u].items()`;
+   * Conditional statement: when `dist_v < dist.get(v, inf)`, enqueue the node, update the counter, detect `count_v == n`, and update `dist[v]`;
+   * Exception statement: raise `nx.NetworkXUnbounded` when `count_v == n`.
+# /detail
+# mode：Modify control-flow structure (replace for-loop implementation with while loop and queue processing)

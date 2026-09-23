@@ -1,0 +1,6 @@
+    @Substitution(klass="Series")
+    @Appender(_transform_template)
+    def transform(self, func, *args, engine=None, engine_kwargs=None, **kwargs):
+        return self._transform(
+            func, *args, engine=engine, engine_kwargs=engine_kwargs, **kwargs
+        )

@@ -1,0 +1,19 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method
+   Changed `assertFormsetError` from a fully implemented formset-error assertion method with a signature-patching decorator and explicit parameters to a wrapper method accepting `*args, **kw` that issues a deprecation warning, calls `self.assertFormSetError(*args, **kw)`, and returns the result.
+   The original implementation included:
+
+   * Decorator: use `_AssertFormErrorDeprecationHelper.patch_signature`;
+   * Method definition: accept `formset, form_index, field, errors, msg_prefix=""`;
+   * Conditional statements: handle `errors is None`, combinations of `form_index` and `field`, `msg_prefix`, unbound formsets, out-of-range form indices, specific form errors, and non-form errors;
+   * Call statements: call `warnings.warn()`, `self.fail()`, `self._assert_form_error()`, `self.assertEqual()`, and other methods.
+
+   The new implementation includes:
+
+   * Method definition: accept `*args, **kw`;
+   * Call statement: call `warnings.warn()` to issue a deprecation warning for `assertFormsetError()`;
+   * Return statement: return `self.assertFormSetError(*args, **kw)`.
+# /detail
+# mode：Remove decorator; Convert parameter to variadic parameter; Modify method implementation (replace original implementation with warning call and return-call statement)

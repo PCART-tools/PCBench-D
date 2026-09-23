@@ -1,0 +1,92 @@
+def linregress(x, y=None):
+    """
+    Calculate a linear least-squares regression for two sets of measurements.
+
+    Parameters
+    ----------
+    x, y : array_like
+        Two sets of measurements.  Both arrays should have the same length.
+        If only x is given (and y=None), then it must be a two-dimensional
+        array where one dimension has length 2.  The two sets of measurements
+        are then found by splitting the array along the length-2 dimension.
+
+    Returns
+    -------
+    slope : float
+        slope of the regression line
+    intercept : float
+        intercept of the regression line
+    rvalue : float
+        correlation coefficient
+    pvalue : float
+        two-sided p-value for a hypothesis test whose null hypothesis is
+        that the slope is zero.
+    stderr : float
+        Standard error of the estimate
+
+    See also
+    --------
+    optimize.curve_fit : Use non-linear least squares to fit a function to data.
+    optimize.leastsq : Minimize the sum of squares of a set of equations.
+
+    Examples
+    --------
+    >>> from scipy import stats
+    >>> np.random.seed(12345678)
+    >>> x = np.random.random(10)
+    >>> y = np.random.random(10)
+    >>> slope, intercept, r_value, p_value, std_err = stats.linregress(x,y)
+
+    # To get coefficient of determination (r_squared)
+
+    >>> print("r-squared:", r_value**2)
+    ('r-squared:', 0.080402268539028335)
+
+    """
+    TINY = 1.0e-20
+    if y is None:  # x is a (2, N) or (N, 2) shaped array_like
+        x = np.asarray(x)
+        if x.shape[0] == 2:
+            x, y = x
+        elif x.shape[1] == 2:
+            x, y = x.T
+        else:
+            msg = ("If only `x` is given as input, it has to be of shape "
+                   "(2, N) or (N, 2), provided shape was %s" % str(x.shape))
+            raise ValueError(msg)
+    else:
+        x = np.asarray(x)
+        y = np.asarray(y)
+
+    if x.size == 0 or y.size == 0:
+        raise ValueError("Inputs must not be empty.")
+
+    n = len(x)
+    xmean = np.mean(x, None)
+    ymean = np.mean(y, None)
+
+    # average sum of squares:
+    ssxm, ssxym, ssyxm, ssym = np.cov(x, y, bias=1).flat
+    r_num = ssxym
+    r_den = np.sqrt(ssxm * ssym)
+    if r_den == 0.0:
+        r = 0.0
+    else:
+        r = r_num / r_den
+        # test for numerical error propagation
+        if r > 1.0:
+            r = 1.0
+        elif r < -1.0:
+            r = -1.0
+
+    df = n - 2
+    t = r * np.sqrt(df / ((1.0 - r + TINY)*(1.0 + r + TINY)))
+    prob = 2 * distributions.t.sf(np.abs(t), df)
+    slope = r_num / ssxm
+    intercept = ymean - slope*xmean
+    sterrest = np.sqrt((1 - r**2) * ssym / ssxm / df)
+
+    LinregressResult = namedtuple('LinregressResult', ('slope', 'intercept',
+                                                       'rvalue', 'pvalue',
+                                                       'stderr'))
+    return LinregressResult(slope, intercept, r, prob, sterrest)

@@ -1,0 +1,5 @@
+@@ -15,3 +15,3 @@
+     """
+-    def _callback(env):
++    def _callback(env: CallbackEnv) -> None:
+         if period > 0 and env.evaluation_result_list and (env.iteration + 1) % period == 0:

@@ -1,0 +1,5 @@
+@@ -39,3 +30,3 @@
+                 AND user_constraints.table_name = UPPER(%s)
+-            ORDER BY cols.position
++            GROUP BY user_constraints.constraint_name, user_constraints.constraint_type
+         """, [table_name])

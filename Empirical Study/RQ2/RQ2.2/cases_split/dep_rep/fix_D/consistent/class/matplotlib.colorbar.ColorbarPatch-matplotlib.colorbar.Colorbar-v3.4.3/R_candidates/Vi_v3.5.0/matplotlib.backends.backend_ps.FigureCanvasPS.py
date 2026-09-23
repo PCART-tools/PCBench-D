@@ -1,0 +1,294 @@
+class FigureCanvasPS(FigureCanvasBase):
+    fixed_dpi = 72
+    filetypes = {'ps': 'Postscript',
+                 'eps': 'Encapsulated Postscript'}
+
+    def get_default_filetype(self):
+        return 'ps'
+
+    @_api.delete_parameter("3.5", "args")
+    def print_ps(self, outfile, *args, **kwargs):
+        return self._print_ps(outfile, 'ps', **kwargs)
+
+    @_api.delete_parameter("3.5", "args")
+    def print_eps(self, outfile, *args, **kwargs):
+        return self._print_ps(outfile, 'eps', **kwargs)
+
+    @_api.delete_parameter("3.4", "dpi")
+    def _print_ps(
+            self, outfile, format, *,
+            dpi=None, metadata=None, papertype=None, orientation='portrait',
+            **kwargs):
+
+        if dpi is None:  # always use this branch after deprecation elapses.
+            dpi = self.figure.get_dpi()
+        self.figure.set_dpi(72)  # Override the dpi kwarg
+
+        dsc_comments = {}
+        if isinstance(outfile, (str, os.PathLike)):
+            filename = pathlib.Path(outfile).name
+            dsc_comments["Title"] = \
+                filename.encode("ascii", "replace").decode("ascii")
+        dsc_comments["Creator"] = (metadata or {}).get(
+            "Creator",
+            f"Matplotlib v{mpl.__version__}, https://matplotlib.org/")
+        # See https://reproducible-builds.org/specs/source-date-epoch/
+        source_date_epoch = os.getenv("SOURCE_DATE_EPOCH")
+        dsc_comments["CreationDate"] = (
+            datetime.datetime.utcfromtimestamp(
+                int(source_date_epoch)).strftime("%a %b %d %H:%M:%S %Y")
+            if source_date_epoch
+            else time.ctime())
+        dsc_comments = "\n".join(
+            f"%%{k}: {v}" for k, v in dsc_comments.items())
+
+        if papertype is None:
+            papertype = mpl.rcParams['ps.papersize']
+        papertype = papertype.lower()
+        _api.check_in_list(['auto', *papersize], papertype=papertype)
+
+        orientation = _api.check_getitem(
+            _Orientation, orientation=orientation.lower())
+
+        printer = (self._print_figure_tex
+                   if mpl.rcParams['text.usetex'] else
+                   self._print_figure)
+        printer(outfile, format, dpi=dpi, dsc_comments=dsc_comments,
+                orientation=orientation, papertype=papertype, **kwargs)
+
+    @_check_savefig_extra_args
+    def _print_figure(
+            self, outfile, format, *,
+            dpi, dsc_comments, orientation, papertype,
+            bbox_inches_restore=None):
+        """
+        Render the figure to a filesystem path or a file-like object.
+
+        Parameters are as for `.print_figure`, except that *dsc_comments* is a
+        all string containing Document Structuring Convention comments,
+        generated from the *metadata* parameter to `.print_figure`.
+        """
+        is_eps = format == 'eps'
+        if not (isinstance(outfile, (str, os.PathLike))
+                or is_writable_file_like(outfile)):
+            raise ValueError("outfile must be a path or a file-like object")
+
+        # find the appropriate papertype
+        width, height = self.figure.get_size_inches()
+        if papertype == 'auto':
+            papertype = _get_papertype(
+                *orientation.swap_if_landscape((width, height)))
+        paper_width, paper_height = orientation.swap_if_landscape(
+            papersize[papertype])
+
+        if mpl.rcParams['ps.usedistiller']:
+            # distillers improperly clip eps files if pagesize is too small
+            if width > paper_width or height > paper_height:
+                papertype = _get_papertype(
+                    *orientation.swap_if_landscape((width, height)))
+                paper_width, paper_height = orientation.swap_if_landscape(
+                    papersize[papertype])
+
+        # center the figure on the paper
+        xo = 72 * 0.5 * (paper_width - width)
+        yo = 72 * 0.5 * (paper_height - height)
+
+        llx = xo
+        lly = yo
+        urx = llx + self.figure.bbox.width
+        ury = lly + self.figure.bbox.height
+        rotation = 0
+        if orientation is _Orientation.landscape:
+            llx, lly, urx, ury = lly, llx, ury, urx
+            xo, yo = 72 * paper_height - yo, xo
+            rotation = 90
+        bbox = (llx, lly, urx, ury)
+
+        self._pswriter = StringIO()
+
+        # mixed mode rendering
+        ps_renderer = RendererPS(width, height, self._pswriter, imagedpi=dpi)
+        renderer = MixedModeRenderer(
+            self.figure, width, height, dpi, ps_renderer,
+            bbox_inches_restore=bbox_inches_restore)
+
+        self.figure.draw(renderer)
+
+        def print_figure_impl(fh):
+            # write the PostScript headers
+            if is_eps:
+                print("%!PS-Adobe-3.0 EPSF-3.0", file=fh)
+            else:
+                print(f"%!PS-Adobe-3.0\n"
+                      f"%%DocumentPaperSizes: {papertype}\n"
+                      f"%%Pages: 1\n",
+                      end="", file=fh)
+            print(f"{dsc_comments}\n"
+                  f"%%Orientation: {orientation.name}\n"
+                  f"{get_bbox_header(bbox)[0]}\n"
+                  f"%%EndComments\n",
+                  end="", file=fh)
+
+            Ndict = len(psDefs)
+            print("%%BeginProlog", file=fh)
+            if not mpl.rcParams['ps.useafm']:
+                Ndict += len(ps_renderer._character_tracker.used)
+            print("/mpldict %d dict def" % Ndict, file=fh)
+            print("mpldict begin", file=fh)
+            print("\n".join(psDefs), file=fh)
+            if not mpl.rcParams['ps.useafm']:
+                for font_path, chars \
+                        in ps_renderer._character_tracker.used.items():
+                    if not chars:
+                        continue
+                    fonttype = mpl.rcParams['ps.fonttype']
+                    # Can't use more than 255 chars from a single Type 3 font.
+                    if len(chars) > 255:
+                        fonttype = 42
+                    fh.flush()
+                    if fonttype == 3:
+                        fh.write(_font_to_ps_type3(font_path, chars))
+                    else:  # Type 42 only.
+                        _font_to_ps_type42(font_path, chars, fh)
+            print("end", file=fh)
+            print("%%EndProlog", file=fh)
+
+            if not is_eps:
+                print("%%Page: 1 1", file=fh)
+            print("mpldict begin", file=fh)
+
+            print("%s translate" % _nums_to_str(xo, yo), file=fh)
+            if rotation:
+                print("%d rotate" % rotation, file=fh)
+            print("%s clipbox" % _nums_to_str(width*72, height*72, 0, 0),
+                  file=fh)
+
+            # write the figure
+            print(self._pswriter.getvalue(), file=fh)
+
+            # write the trailer
+            print("end", file=fh)
+            print("showpage", file=fh)
+            if not is_eps:
+                print("%%EOF", file=fh)
+            fh.flush()
+
+        if mpl.rcParams['ps.usedistiller']:
+            # We are going to use an external program to process the output.
+            # Write to a temporary file.
+            with TemporaryDirectory() as tmpdir:
+                tmpfile = os.path.join(tmpdir, "tmp.ps")
+                with open(tmpfile, 'w', encoding='latin-1') as fh:
+                    print_figure_impl(fh)
+                if mpl.rcParams['ps.usedistiller'] == 'ghostscript':
+                    _try_distill(gs_distill,
+                                 tmpfile, is_eps, ptype=papertype, bbox=bbox)
+                elif mpl.rcParams['ps.usedistiller'] == 'xpdf':
+                    _try_distill(xpdf_distill,
+                                 tmpfile, is_eps, ptype=papertype, bbox=bbox)
+                _move_path_to_path_or_stream(tmpfile, outfile)
+
+        else:  # Write directly to outfile.
+            with cbook.open_file_cm(outfile, "w", encoding="latin-1") as file:
+                if not file_requires_unicode(file):
+                    file = codecs.getwriter("latin-1")(file)
+                print_figure_impl(file)
+
+    @_check_savefig_extra_args
+    def _print_figure_tex(
+            self, outfile, format, *,
+            dpi, dsc_comments, orientation, papertype,
+            bbox_inches_restore=None):
+        """
+        If :rc:`text.usetex` is True, a temporary pair of tex/eps files
+        are created to allow tex to manage the text layout via the PSFrags
+        package. These files are processed to yield the final ps or eps file.
+
+        The rest of the behavior is as for `._print_figure`.
+        """
+        is_eps = format == 'eps'
+
+        width, height = self.figure.get_size_inches()
+        xo = 0
+        yo = 0
+
+        llx = xo
+        lly = yo
+        urx = llx + self.figure.bbox.width
+        ury = lly + self.figure.bbox.height
+        bbox = (llx, lly, urx, ury)
+
+        self._pswriter = StringIO()
+
+        # mixed mode rendering
+        ps_renderer = RendererPS(width, height, self._pswriter, imagedpi=dpi)
+        renderer = MixedModeRenderer(self.figure,
+                                     width, height, dpi, ps_renderer,
+                                     bbox_inches_restore=bbox_inches_restore)
+
+        self.figure.draw(renderer)
+
+        # write to a temp file, we'll move it to outfile when done
+        with TemporaryDirectory() as tmpdir:
+            tmpfile = os.path.join(tmpdir, "tmp.ps")
+            pathlib.Path(tmpfile).write_text(
+                f"""\
+%!PS-Adobe-3.0 EPSF-3.0
+{dsc_comments}
+{get_bbox_header(bbox)[0]}
+%%EndComments
+%%BeginProlog
+/mpldict {len(psDefs)} dict def
+mpldict begin
+{"".join(psDefs)}
+end
+%%EndProlog
+mpldict begin
+{_nums_to_str(xo, yo)} translate
+{_nums_to_str(width*72, height*72)} 0 0 clipbox
+{self._pswriter.getvalue()}
+end
+showpage
+""",
+                encoding="latin-1")
+
+            if orientation is _Orientation.landscape:  # now, ready to rotate
+                width, height = height, width
+                bbox = (lly, llx, ury, urx)
+
+            # set the paper size to the figure size if is_eps. The
+            # resulting ps file has the given size with correct bounding
+            # box so that there is no need to call 'pstoeps'
+            if is_eps:
+                paper_width, paper_height = orientation.swap_if_landscape(
+                    self.figure.get_size_inches())
+            else:
+                if papertype == 'auto':
+                    papertype = _get_papertype(width, height)
+                paper_width, paper_height = papersize[papertype]
+
+            texmanager = ps_renderer.get_texmanager()
+            font_preamble = texmanager.get_font_preamble()
+            custom_preamble = texmanager.get_custom_preamble()
+
+            psfrag_rotated = convert_psfrags(tmpfile, ps_renderer.psfrag,
+                                             font_preamble,
+                                             custom_preamble, paper_width,
+                                             paper_height,
+                                             orientation.name)
+
+            if (mpl.rcParams['ps.usedistiller'] == 'ghostscript'
+                    or mpl.rcParams['text.usetex']):
+                _try_distill(gs_distill,
+                             tmpfile, is_eps, ptype=papertype, bbox=bbox,
+                             rotated=psfrag_rotated)
+            elif mpl.rcParams['ps.usedistiller'] == 'xpdf':
+                _try_distill(xpdf_distill,
+                             tmpfile, is_eps, ptype=papertype, bbox=bbox,
+                             rotated=psfrag_rotated)
+
+            _move_path_to_path_or_stream(tmpfile, outfile)
+
+    def draw(self):
+        self.figure.draw_without_rendering()
+        return super().draw()

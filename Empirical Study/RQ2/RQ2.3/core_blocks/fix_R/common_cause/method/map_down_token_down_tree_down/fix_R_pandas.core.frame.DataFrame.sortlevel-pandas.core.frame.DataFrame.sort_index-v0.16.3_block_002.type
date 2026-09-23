@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the method-body implementation with directly returning the result of `self.sort_index(...)`.
+   The original implementation included:
+
+   * Assignment statements: obtain `axis`, `the_axis`, `new_axis`, `indexer`, `bm_axis`, and `new_data`;
+   * Conditional statement: verify that `the_axis` was a `MultiIndex`, otherwise raise `TypeError`;
+   * Conditional statement: when `_is_mixed_type and not inplace`, return `reindex` or `take` according to `new_axis.is_unique`;
+   * Conditional statement: according to `inplace`, return `_update_inplace(new_data)` or `_constructor(new_data).__finalize__(self)`.
+
+   The new implementation includes:
+
+   * Return statement: return `self.sort_index(level=level, axis=axis, ascending=ascending, inplace=inplace, sort_remaining=sort_remaining)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original method-body implementation with directly returning the result of `self.clear()`.
+   The original implementation included:
+
+   * Expression statement: set the text of `self.label` to an empty string;
+   * Method call: call `self._set_scale('linear')`;
+   * Assignment statements: reset `self.callbacks`, `self._major_tick_kw['gridOn']`, `self._minor_tick_kw['gridOn']`, `self.converter`, `self.units`, and `self.stale`;
+   * Method calls: call `self.reset_ticks()` and `self.set_units(None)`.
+
+   The new implementation includes:
+
+   * Return statement: return the result of `self.clear()`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

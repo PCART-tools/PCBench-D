@@ -1,0 +1,6 @@
+@@ -95,4 +91,3 @@
+             break
+-
+-    if i + 1 == G.number_of_nodes():
++    else:
+         raise nx.NetworkXUnbounded("Negative cost cycle detected.")

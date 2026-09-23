@@ -1,0 +1,65 @@
+    @_preprocess_data(replace_names=["x", "y"], label_namer=None)
+    @docstring.dedent_interpd
+    def cohere(self, x, y, NFFT=256, Fs=2, Fc=0, detrend=mlab.detrend_none,
+               window=mlab.window_hanning, noverlap=0, pad_to=None,
+               sides='default', scale_by_freq=None, **kwargs):
+        """
+        Plot the coherence between *x* and *y*.
+
+        Plot the coherence between *x* and *y*.  Coherence is the
+        normalized cross spectral density:
+
+        .. math::
+
+          C_{xy} = \\frac{|P_{xy}|^2}{P_{xx}P_{yy}}
+
+        Parameters
+        ----------
+        %(Spectral)s
+
+        %(PSD)s
+
+        noverlap : integer
+            The number of points of overlap between blocks.  The
+            default value is 0 (no overlap).
+
+        Fc : integer
+            The center frequency of *x* (defaults to 0), which offsets
+            the x extents of the plot to reflect the frequency range used
+            when a signal is acquired and then filtered and downsampled to
+            baseband.
+
+
+        Returns
+        -------
+        The return value is a tuple (*Cxy*, *f*), where *f* are the
+        frequencies of the coherence vector.
+
+        kwargs are applied to the lines.
+
+        Other Parameters
+        ----------------
+        **kwargs :
+            Keyword arguments control the :class:`~matplotlib.lines.Line2D`
+            properties:
+
+            %(Line2D)s
+
+        References
+        ----------
+        Bendat & Piersol -- Random Data: Analysis and Measurement Procedures,
+        John Wiley & Sons (1986)
+        """
+        if not self._hold:
+            self.cla()
+        cxy, freqs = mlab.cohere(x=x, y=y, NFFT=NFFT, Fs=Fs, detrend=detrend,
+                                 window=window, noverlap=noverlap,
+                                 scale_by_freq=scale_by_freq)
+        freqs += Fc
+
+        self.plot(freqs, cxy, **kwargs)
+        self.set_xlabel('Frequency')
+        self.set_ylabel('Coherence')
+        self.grid(True)
+
+        return cxy, freqs

@@ -1,0 +1,11 @@
+@@ -119,2 +158,10 @@
+         """
++        if new is no_default and isinstance(old, Mapping):
++            new = pl.Series(old.values())
++            old = pl.Series(old.keys())
++        else:
++            if isinstance(old, Sequence) and not isinstance(old, (str, pl.Series)):
++                old = pl.Series(old)
++            if isinstance(new, Sequence) and not isinstance(new, (str, pl.Series)):
++                new = pl.Series(new)
+  

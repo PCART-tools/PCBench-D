@@ -1,0 +1,6 @@
+    @property
+    def shape(self):
+        """
+        Return a tuple of the shape of the underlying data.
+        """
+        return self._values.shape

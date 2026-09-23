@@ -1,0 +1,30 @@
+    def __init__(self, unit="ns", tz=None):
+        if isinstance(unit, DatetimeTZDtype):
+            unit, tz = unit.unit, unit.tz
+
+        if unit != "ns":
+            if isinstance(unit, str) and tz is None:
+                # maybe a string like datetime64[ns, tz], which we support for
+                # now.
+                result = type(self).construct_from_string(unit)
+                unit = result.unit
+                tz = result.tz
+                msg = (
+                    f"Passing a dtype alias like 'datetime64[ns, {tz}]' "
+                    "to DatetimeTZDtype is no longer supported. Use "
+                    "'DatetimeTZDtype.construct_from_string()' instead."
+                )
+                raise ValueError(msg)
+            else:
+                raise ValueError("DatetimeTZDtype only supports ns units")
+
+        if tz:
+            tz = timezones.maybe_get_tz(tz)
+            tz = timezones.tz_standardize(tz)
+        elif tz is not None:
+            raise pytz.UnknownTimeZoneError(tz)
+        if tz is None:
+            raise TypeError("A 'tz' is required.")
+
+        self._unit = unit
+        self._tz = tz

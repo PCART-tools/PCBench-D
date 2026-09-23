@@ -1,0 +1,9 @@
+@@ -88,4 +71,6 @@
+             SELECT
+-                cols.index_name, LOWER(cols.column_name), cols.descend,
+-                LOWER(ind.index_type)
++                ind.index_name,
++                LOWER(ind.index_type),
++                LISTAGG(LOWER(cols.column_name), ',') WITHIN GROUP (ORDER BY cols.column_position),
++                LISTAGG(cols.descend, ',') WITHIN GROUP (ORDER BY cols.column_position)
+             FROM

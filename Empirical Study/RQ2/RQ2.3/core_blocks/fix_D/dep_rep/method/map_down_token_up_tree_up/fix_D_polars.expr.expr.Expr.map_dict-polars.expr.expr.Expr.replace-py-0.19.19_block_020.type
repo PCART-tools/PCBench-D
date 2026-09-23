@@ -1,0 +1,13 @@
+# detail
+Number of changes: 1
+
+1. Added | Conditional statement
+   Added branch-handling logic for `new` and `old`.
+   This includes:
+
+   * Conditional statement: test `new is no_default and isinstance(old, Mapping)`;
+   * Assignment statements: convert `old.values()` and `old.keys()` to `pl.Series` and assign them to `new` and `old`, respectively;
+   * Conditional statements: in the `else` branch, separately test whether `old` and `new` are non-string, non-`pl.Series` instances of `Sequence`;
+   * Assignment statements: convert qualifying `old` and `new` values to `pl.Series`.
+# /detail
+# mode：Add conditional statement

@@ -1,0 +1,19 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Changed the method body from directly sorting and returning or assigning values to issuing a deprecation warning and calling `self.sort_values(...)` to return the result.
+   The original implementation included:
+
+   * Conditional statement: verify that `na_position` was `'last'` or `'first'`, otherwise raise `ValueError`;
+   * Assignment statement: sort `self._codes` and assign the result to `codes`;
+   * Conditional statement: reverse `codes` when `ascending` was false;
+   * Conditional statements: adjust the position of the `-1` code according to `na_mask`, `na_position`, and `ascending`;
+   * Conditional statement: when `inplace` was true, update `self._codes` and return; otherwise, return a new `Categorical(...)`.
+
+   The new implementation includes:
+
+   * Function call: call `warn(...)` to issue a `FutureWarning`;
+   * Return statement: return `self.sort_values(inplace=inplace, ascending=ascending, na_position=na_position)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with warning call and return-call statement)

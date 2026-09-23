@@ -1,0 +1,19 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original implementation code block with a warning-call code block.
+   The original implementation included:
+
+   * Conditional statement: check whether the graph was empty and raise `nx.NetworkXError`;
+   * Conditional statements: initialize the node list according to whether `nodelist` was `None`, compute its length, validate an empty list, missing nodes, and duplicate nodes, and generate a subgraph when the node list was shorter;
+   * Assignment statement: create the `index` dictionary;
+   * Assignment statement: generate `coefficients` through `G.edges(...)`.
+
+   The new implementation includes:
+
+   * API call: call `warnings.warn`;
+   * String literal: pass warning text concerning `scipy.sparse` array containers and `to_scipy_sparse_array`;
+   * Arguments: pass `DeprecationWarning` and `stacklevel=2`.
+# /detail
+# mode：Modify implementation block (replace original implementation with warning call)

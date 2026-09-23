@@ -1,0 +1,68 @@
+    def get_loc(
+        self, key: Any, method: Optional[str] = None
+    ) -> Union[int, slice, np.ndarray]:
+        """
+        Get integer location, slice or boolean mask for requested label.
+
+        Parameters
+        ----------
+        key : label
+        method : {None}, optional
+            * default: matches where the label is within an interval only.
+
+        Returns
+        -------
+        loc : int if unique index, slice if monotonic index, else mask
+
+        Examples
+        --------
+        >>> i1, i2 = pd.Interval(0, 1), pd.Interval(1, 2)
+        >>> index = pd.IntervalIndex([i1, i2])
+        >>> index.get_loc(1)
+        0
+
+        You can also supply a point inside an interval.
+
+        >>> index.get_loc(1.5)
+        1
+
+        If a label is in several intervals, you get the locations of all the
+        relevant intervals.
+
+        >>> i3 = pd.Interval(0, 2)
+        >>> overlapping_index = pd.IntervalIndex([i1, i2, i3])
+        >>> overlapping_index.get_loc(0.5)
+        array([ True, False,  True])
+
+        Only exact matches will be returned if an interval is provided.
+
+        >>> index.get_loc(pd.Interval(0, 1))
+        0
+        """
+        self._check_method(method)
+
+        # list-like are invalid labels for II but in some cases may work, e.g
+        # single element array of comparable type, so guard against them early
+        if is_list_like(key):
+            raise KeyError(key)
+
+        if isinstance(key, Interval):
+            if self.closed != key.closed:
+                raise KeyError(key)
+            mask = (self.left == key.left) & (self.right == key.right)
+        else:
+            # assume scalar
+            op_left = le if self.closed_left else lt
+            op_right = le if self.closed_right else lt
+            try:
+                mask = op_left(self.left, key) & op_right(key, self.right)
+            except TypeError:
+                # scalar is not comparable to II subtype --> invalid label
+                raise KeyError(key)
+
+        matches = mask.sum()
+        if matches == 0:
+            raise KeyError(key)
+        elif matches == 1:
+            return mask.argmax()
+        return lib.maybe_booleans_to_slice(mask.view("u1"))

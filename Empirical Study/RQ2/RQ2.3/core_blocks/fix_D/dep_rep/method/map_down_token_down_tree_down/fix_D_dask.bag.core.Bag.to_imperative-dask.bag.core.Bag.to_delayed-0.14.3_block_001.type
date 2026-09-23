@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Return statement
+   Changed the graph object used to construct the `Delayed` object from `self.dask` to `dsk`, obtained through `_optimize(self.dask, self._keys())`, and added a local assignment before the return statement to store this result.
+# /detail
+# mode：Add call-assignment statement; Modify return-call statement (modify call arguments)

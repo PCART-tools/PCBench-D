@@ -1,0 +1,6 @@
+@@ -3,3 +3,4 @@
+  
+-    def __init__(self, *, loop=None):
++    def __init__(self, stream, *, loop=None):
++        self._stream = stream
+         self._loop = loop

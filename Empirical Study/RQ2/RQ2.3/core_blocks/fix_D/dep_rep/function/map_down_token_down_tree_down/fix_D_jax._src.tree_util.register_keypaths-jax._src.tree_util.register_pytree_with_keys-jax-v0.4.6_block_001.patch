@@ -1,0 +1,13 @@
+@@ -2,4 +2,10 @@
+     nodetype: Type[T],
+-    flatten_with_keys: Callable[[T], Tuple[Iterable[Tuple[KeyPath, _Children]], _AuxData]],
+-    unflatten_func: Callable[[_AuxData, _Children], T]):
++    flatten_with_keys: Callable[
++        [T], Tuple[Iterable[Tuple[KeyEntry, Any]], _AuxData]
++    ],
++    unflatten_func: Callable[[_AuxData, Iterable[Any]], T],
++    flatten_func: Optional[
++        Callable[[T], Tuple[Iterable[Any], _AuxData]]
++    ] = None,
++):
+   """Extends the set of types that are considered internal nodes in pytrees.

@@ -1,0 +1,9 @@
+@@ -27,7 +22,3 @@
+                     ELSE 0
+-                END AS is_check_constraint,
+-                CASE
+-                    WHEN user_constraints.constraint_type IN ('P', 'U') THEN 1
+-                    ELSE 0
+-                END AS has_index
++                END AS is_check_constraint
+             FROM

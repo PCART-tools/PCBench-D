@@ -1,0 +1,13 @@
+# detail
+Number of changes: 3
+
+1. Modified | Parameter type annotation
+   Changed the type annotation of `flatten_with_keys` from `Callable[[T], Tuple[Iterable[Tuple[KeyPath, _Children]], _AuxData]]` to `Callable[[T], Tuple[Iterable[Tuple[KeyEntry, Any]], _AuxData]]`.
+
+2. Modified | Parameter type annotation
+   Changed the type annotation of `unflatten_func` from `Callable[[_AuxData, _Children], T]` to `Callable[[_AuxData, Iterable[Any]], T]`.
+
+3. Added | Parameter
+   Added the optional parameter `flatten_func`, typed as `Optional[Callable[[T], Tuple[Iterable[Any], _AuxData]]]`, with a default value of `None`.
+# /detail
+# mode：Modify parameter type annotations; Add parameter

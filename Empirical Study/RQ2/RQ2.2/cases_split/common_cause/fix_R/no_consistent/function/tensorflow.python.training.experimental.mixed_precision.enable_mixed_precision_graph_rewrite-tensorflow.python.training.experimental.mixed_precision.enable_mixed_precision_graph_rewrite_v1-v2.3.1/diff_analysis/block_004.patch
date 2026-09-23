@@ -1,0 +1,5 @@
+@@ -66,3 +72,3 @@
+   * `GrayList`: Ops that are considered numerically safe for execution in
+-  float16 unless downstream from a BlackList Op. E.g. `Add` and `AvgPool`.
++  float16 unless downstream from a DenyList Op. E.g. `Add` and `AvgPool`.
+  

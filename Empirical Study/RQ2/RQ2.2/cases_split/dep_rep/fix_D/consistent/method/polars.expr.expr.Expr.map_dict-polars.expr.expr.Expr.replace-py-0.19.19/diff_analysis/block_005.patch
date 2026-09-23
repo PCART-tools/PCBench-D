@@ -1,0 +1,9 @@
+@@ -18,5 +25,5 @@
+         default
+-            Value to use when the mapping does not contain the lookup value.
+-            Defaults to keeping the original value. Accepts expression input.
+-            Non-expression inputs are parsed as literals.
++            Set values that were not replaced to this value.
++            Defaults to keeping the original value.
++            Accepts expression input. Non-expression inputs are parsed as literals.
+         return_dtype

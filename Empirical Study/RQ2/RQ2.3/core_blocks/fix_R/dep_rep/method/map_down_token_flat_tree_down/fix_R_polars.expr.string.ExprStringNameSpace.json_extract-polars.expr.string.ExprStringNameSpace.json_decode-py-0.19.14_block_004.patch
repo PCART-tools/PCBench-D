@@ -1,0 +1,6 @@
+@@ -41,4 +19,2 @@
+         """
+-        if dtype is not None:
+-            dtype = py_type_to_dtype(dtype)
+-        return wrap_expr(self._pyexpr.str_json_extract(dtype, infer_schema_length))
++        return self.json_decode(dtype, infer_schema_length)

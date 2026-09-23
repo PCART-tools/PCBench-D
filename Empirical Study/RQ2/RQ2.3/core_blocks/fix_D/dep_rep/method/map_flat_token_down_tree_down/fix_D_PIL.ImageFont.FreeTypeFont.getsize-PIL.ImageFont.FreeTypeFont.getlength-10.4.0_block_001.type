@@ -1,0 +1,8 @@
+# detail
+Change count: 1
+
+1. Modify | Method definition
+
+   Added type annotations to the existing parameters of `getlength`: changed `mode` to `mode: str = ""`, `direction` to `direction: str | None = None`, `features` to `features: list[str] | None = None`, and `language` to `language: str | None = None`.
+# /detail
+# mode: Modify parameter type annotations

@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the computation and return of the mean difference, t statistic, and probability value with directly returning `Ttest_indResult(*res)`.
+   The original implementation included:
+
+   * Assignment statement: compute `d = np.mean(a, axis) - np.mean(b, axis)`;
+   * Assignment statement: compute `t = np.divide(d, denom)`;
+   * Assignment statement: obtain `t, prob` through `_ttest_finish(df, t)`;
+   * Return statement: return `t, prob`.
+
+   The new implementation includes:
+
+   * Return statement: return `Ttest_indResult(*res)`.
+# /detail
+# mode：Modify implementation block (replace computation and return logic with return-call statement)

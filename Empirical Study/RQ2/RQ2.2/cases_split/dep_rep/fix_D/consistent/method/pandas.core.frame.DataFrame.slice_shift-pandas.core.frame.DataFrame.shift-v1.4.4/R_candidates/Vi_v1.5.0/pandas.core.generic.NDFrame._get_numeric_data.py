@@ -1,0 +1,3 @@
+    @final
+    def _get_numeric_data(self: NDFrameT) -> NDFrameT:
+        return self._constructor(self._mgr.get_numeric_data()).__finalize__(self)

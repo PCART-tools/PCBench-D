@@ -1,0 +1,10 @@
+# detail
+Number of changes: 2
+
+1. Added | Decorator
+   Added the decorator `@Appender(_shared_docs['where'] % dict(_shared_doc_kwargs, cond="False"))` to the `mask` method.
+
+2. Modified | Method definition
+   Changed the parameter list of `mask` from `cond` to `cond, other=np.nan, inplace=False, axis=None, level=None, try_cast=False, raise_on_error=True`, and changed the arguments of the `self.where` call in the return statement from `~cond, np.nan` to the keyword arguments `other`, `inplace`, `axis`, `level`, `try_cast`, and `raise_on_error`.
+# /detail
+# mode：Add decorator; Add parameter; Modify return-call statement (modify call arguments)

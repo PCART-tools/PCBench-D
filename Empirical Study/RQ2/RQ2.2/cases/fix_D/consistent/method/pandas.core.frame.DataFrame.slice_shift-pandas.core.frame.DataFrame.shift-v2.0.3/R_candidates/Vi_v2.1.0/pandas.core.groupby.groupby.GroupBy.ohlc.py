@@ -1,0 +1,89 @@
+    @final
+    def ohlc(self) -> DataFrame:
+        """
+        Compute open, high, low and close values of a group, excluding missing values.
+
+        For multiple groupings, the result index will be a MultiIndex
+
+        Returns
+        -------
+        DataFrame
+            Open, high, low and close values within each group.
+
+        Examples
+        --------
+
+        For SeriesGroupBy:
+
+        >>> lst = ['SPX', 'CAC', 'SPX', 'CAC', 'SPX', 'CAC', 'SPX', 'CAC',]
+        >>> ser = pd.Series([3.4, 9.0, 7.2, 5.2, 8.8, 9.4, 0.1, 0.5], index=lst)
+        >>> ser
+        SPX     3.4
+        CAC     9.0
+        SPX     7.2
+        CAC     5.2
+        SPX     8.8
+        CAC     9.4
+        SPX     0.1
+        CAC     0.5
+        dtype: float64
+        >>> ser.groupby(level=0).ohlc()
+             open  high  low  close
+        CAC   9.0   9.4  0.5    0.5
+        SPX   3.4   8.8  0.1    0.1
+
+        For DataFrameGroupBy:
+
+        >>> data = {2022: [1.2, 2.3, 8.9, 4.5, 4.4, 3, 2 , 1],
+        ...         2023: [3.4, 9.0, 7.2, 5.2, 8.8, 9.4, 8.2, 1.0]}
+        >>> df = pd.DataFrame(data, index=['SPX', 'CAC', 'SPX', 'CAC',
+        ...                   'SPX', 'CAC', 'SPX', 'CAC'])
+        >>> df
+             2022  2023
+        SPX   1.2   3.4
+        CAC   2.3   9.0
+        SPX   8.9   7.2
+        CAC   4.5   5.2
+        SPX   4.4   8.8
+        CAC   3.0   9.4
+        SPX   2.0   8.2
+        CAC   1.0   1.0
+        >>> df.groupby(level=0).ohlc()
+            2022                 2023
+            open high  low close open high  low close
+        CAC  2.3  4.5  1.0   1.0  9.0  9.4  1.0   1.0
+        SPX  1.2  8.9  1.2   2.0  3.4  8.8  3.4   8.2
+
+        For Resampler:
+
+        >>> ser = pd.Series([1, 3, 2, 4, 3, 5],
+        ...                 index=pd.DatetimeIndex(['2023-01-01',
+        ...                                         '2023-01-10',
+        ...                                         '2023-01-15',
+        ...                                         '2023-02-01',
+        ...                                         '2023-02-10',
+        ...                                         '2023-02-15']))
+        >>> ser.resample('MS').ohlc()
+                    open  high  low  close
+        2023-01-01     1     3    1      2
+        2023-02-01     4     5    3      5
+        """
+        if self.obj.ndim == 1:
+            obj = self._selected_obj
+
+            is_numeric = is_numeric_dtype(obj.dtype)
+            if not is_numeric:
+                raise DataError("No numeric types to aggregate")
+
+            res_values = self.grouper._cython_operation(
+                "aggregate", obj._values, "ohlc", axis=0, min_count=-1
+            )
+
+            agg_names = ["open", "high", "low", "close"]
+            result = self.obj._constructor_expanddim(
+                res_values, index=self.grouper.result_index, columns=agg_names
+            )
+            return self._reindex_output(result)
+
+        result = self._apply_to_column_groupbys(lambda sgb: sgb.ohlc())
+        return result

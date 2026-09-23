@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original index conversion and `_pyexpr.list_take` call with directly returning `self.gather(indices)`.
+   The original implementation included:
+
+   * Conditional statement: when `index` was a `list`, convert it to `pl.Series(index)`;
+   * Assignment statement: pass `index` to `parse_as_expression(index)` and reassign the result;
+   * Return statement: return `wrap_expr(self._pyexpr.list_take(index, null_on_oob))`.
+
+   The new implementation includes:
+
+   * Return statement: return `self.gather(indices)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

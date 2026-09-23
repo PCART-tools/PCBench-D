@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Conditional statement
+   Changed the unconditional assignment `self.hidden_index = True` to branch-specific behavior based on whether `subset` is `None`.
+   The original implementation included:
+
+   * Assignment statement: set `self.hidden_index` to `True`.
+
+   The new implementation includes:
+
+   * Conditional branch: when `subset is None`, set `self.hide_index_` to `True`;
+   * `else` branch: construct `subset_` from `subset`, update `subset`, obtain `hide` through `self.data.loc[subset]`, obtain `hrows` through `self.index.get_indexer_for(hide.index)`, and assign `hrows` to `self.hidden_rows`.
+# /detail
+# mode：Modify control-flow structure (add conditional branch)

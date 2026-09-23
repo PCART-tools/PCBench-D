@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Changed the method body from manually checking the index type, sorting the index, and reconstructing the object to directly returning the result of `self.sort_index(...)`.
+   The original implementation included:
+
+   * Conditional statement: check whether `self.index` was not a `MultiIndex`, and raise `TypeError`;
+   * Assignment statement: call `self.index.sortlevel(...)` to generate `new_index` and `indexer`;
+   * Assignment statement: generate `new_values` through `self.values.take(indexer)`;
+   * Return statement: construct a new object using `new_values` and `new_index` and call `__finalize__(self)`.
+
+   The new implementation includes:
+
+   * Return statement: call `self.sort_index(level=level, ascending=ascending, sort_remaining=sort_remaining)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

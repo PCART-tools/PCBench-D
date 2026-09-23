@@ -1,0 +1,6 @@
+@@ -1,4 +1,4 @@
+-    def dict(self, *, include: Set[str]=None, exclude: Set[str]=set()) -> Dict[str, Any]:
++    def dict(self, *, include: Set[str]=None, exclude: Set[str]=set(), by_alias: bool = False) -> Dict[str, Any]:
+         """
+         Generate a dictionary representation of the model, optionally specifying which fields to include or exclude.
+         """

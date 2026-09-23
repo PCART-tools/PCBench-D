@@ -1,0 +1,16 @@
+    @cbook.deprecated("3.2")
+    def configure_subplots(self):
+        frame = wx.Frame(None, -1, "Configure subplots")
+        _set_frame_icon(frame)
+
+        toolfig = Figure((6, 3))
+        canvas = self.get_canvas(frame, toolfig)
+
+        # Now put all into a sizer
+        sizer = wx.BoxSizer(wx.VERTICAL)
+        # This way of adding to sizer allows resizing
+        sizer.Add(canvas, 1, wx.LEFT | wx.TOP | wx.GROW)
+        frame.SetSizer(sizer)
+        frame.Fit()
+        SubplotTool(self.canvas.figure, toolfig)
+        frame.Show()

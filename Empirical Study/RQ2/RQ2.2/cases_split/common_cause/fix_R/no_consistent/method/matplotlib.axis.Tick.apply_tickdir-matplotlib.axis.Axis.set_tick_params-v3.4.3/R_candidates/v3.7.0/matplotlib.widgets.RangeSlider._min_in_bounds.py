@@ -1,0 +1,10 @@
+    def _min_in_bounds(self, min):
+        """Ensure the new min value is between valmin and self.val[1]."""
+        if min <= self.valmin:
+            if not self.closedmin:
+                return self.val[0]
+            min = self.valmin
+
+        if min > self.val[1]:
+            min = self.val[1]
+        return self._stepped_value(min)

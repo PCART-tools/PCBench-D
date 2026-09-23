@@ -1,0 +1,11 @@
+@@ -15,9 +16,3 @@
+                 CASE
+-                    WHEN EXISTS (
+-                        SELECT 1
+-                        FROM user_indexes
+-                        WHERE user_indexes.index_name = user_constraints.index_name
+-                        AND user_indexes.uniqueness = 'UNIQUE'
+-                    )
+-                    THEN 1
++                    WHEN user_constraints.constraint_type IN ('P', 'U') THEN 1
+                     ELSE 0

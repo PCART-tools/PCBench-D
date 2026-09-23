@@ -1,0 +1,5 @@
+@@ -9,2 +10,5 @@
+         self._exception = None
++
++    def at_eof(self):
++        return self._eof

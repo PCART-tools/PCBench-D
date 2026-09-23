@@ -1,0 +1,11 @@
+# detail
+Number of changes: 1
+
+1. Added | Conditional statement
+   Added an `if not flatten_func` conditional statement that defines `flatten_func_impl` and assigns it to `flatten_func`.
+   This includes:
+
+   * Function definition: define `flatten_func_impl(tree)`, which calls `flatten_with_keys(tree)` and returns the child-node list and `treedef`;
+   * Assignment statement: assign `flatten_func_impl` to `flatten_func`.
+# /detail
+# mode：Add conditional statement (including nested function and assignment statement)

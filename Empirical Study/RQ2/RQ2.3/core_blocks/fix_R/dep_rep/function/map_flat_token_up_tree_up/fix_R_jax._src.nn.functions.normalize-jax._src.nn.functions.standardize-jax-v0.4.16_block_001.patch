@@ -1,0 +1,14 @@
+@@ -1,7 +1,7 @@
+-def normalize(x: Array,
+-              axis: Optional[Union[int, tuple[int, ...]]] = -1,
+-              mean: Optional[Array] = None,
+-              variance: Optional[Array] = None,
+-              epsilon: Array = 1e-5,
+-              where: Optional[Array] = None) -> Array:
++def normalize(x: ArrayLike,
++            axis: Optional[Union[int, tuple[int, ...]]] = -1,
++            mean: Optional[ArrayLike] = None,
++            variance: Optional[ArrayLike] = None,
++            epsilon: ArrayLike = 1e-5,
++            where: Optional[ArrayLike] = None) -> Array:
+   r"""Normalizes an array by subtracting ``mean`` and dividing by :math:`\sqrt{\mathrm{variance}}`."""

@@ -1,0 +1,6 @@
+@@ -48,4 +49,3 @@
+             else:
+-                new_values = self.values.take(indexer)
+-                result = Series(new_values, index=self.index, name=self.name)
++                result = Series(values, index=self.index, name=self.name)
+  

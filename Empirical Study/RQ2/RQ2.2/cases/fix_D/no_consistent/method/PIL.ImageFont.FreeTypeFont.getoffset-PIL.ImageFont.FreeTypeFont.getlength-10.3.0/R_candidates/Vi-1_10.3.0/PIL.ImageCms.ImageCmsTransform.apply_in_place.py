@@ -1,0 +1,8 @@
+    def apply_in_place(self, im: Image.Image) -> Image.Image:
+        im.load()
+        if im.mode != self.output_mode:
+            msg = "mode mismatch"
+            raise ValueError(msg)  # wrong output mode
+        self.transform.apply(im.im.id, im.im.id)
+        im.info["icc_profile"] = self.output_profile.tobytes()
+        return im

@@ -1,0 +1,23 @@
+    @deprecate_renamed_parameter("predicate", "condition", version="0.18.9")
+    def when(
+        self,
+        *predicates: IntoExpr | Iterable[IntoExpr],
+        **constraints: Any,
+    ) -> ChainedWhen:
+        """
+        Add a condition to the `when-then-otherwise` expression.
+
+        Parameters
+        ----------
+        predicates
+            Condition(s) that must be met in order to apply the subsequent statement.
+            Accepts one or more boolean expressions, which are implicitly combined with
+            `&`. String input is parsed as a column name.
+        constraints
+            Apply conditions as `colname = value` keyword arguments that are treated as
+            equality matches, such as `x = 123`. As with the predicates parameter,
+            multiple conditions are implicitly combined using `&`.
+
+        """
+        condition_pyexpr = parse_when_constraint_expressions(*predicates, **constraints)
+        return ChainedWhen(self._then.when(condition_pyexpr))

@@ -1,0 +1,8 @@
+# detail
+Change count: 1
+
+1. Modify | Implementation block
+
+   Changed the direct return of `Delayed(self.key, self.dask)` to first call `self._optimize(self.dask, [self.key])` and assign the result to `dsk`, then return `Delayed(self.key, dsk)`.
+# /detail
+# mode: Modify implementation block

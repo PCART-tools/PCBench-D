@@ -1,0 +1,5 @@
+@@ -59,3 +59,3 @@
+             raise ValueError("The groups parameter should not be None")
+-        groups = np.array(groups, copy=True)
++        groups = check_array(groups, copy=True, ensure_2d=False, dtype=None)
+         unique_groups = np.unique(groups)

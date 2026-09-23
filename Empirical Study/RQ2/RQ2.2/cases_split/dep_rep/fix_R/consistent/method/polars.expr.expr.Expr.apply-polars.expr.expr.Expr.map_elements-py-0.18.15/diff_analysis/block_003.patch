@@ -1,0 +1,17 @@
+@@ -12,14 +13,4 @@
+  
+-        .. warning::
+-            This method is much slower than the native expressions API.
+-            Only use it if you cannot implement your logic otherwise.
+-
+-        Depending on the context it has the following behavior:
+-
+-        * Selection
+-            Expects `f` to be of type Callable[[Any], Any].
+-            Applies a python function over each individual value in the column.
+-        * GroupBy
+-            Expects `f` to be of type Callable[[Series], Series].
+-            Applies a python function over each group.
++        .. deprecated:: 0.19.0
++            This method has been renamed to :func:`Expr.map_elements`.
+  

@@ -1,0 +1,6 @@
+@@ -25,2 +11,5 @@
+         """
++        warn("sort is deprecated, use sort_values(...)", FutureWarning,
++             stacklevel=2)
++        nv.validate_sort(tuple(), kwargs)
+         return self.sort_values(inplace=inplace, ascending=ascending,

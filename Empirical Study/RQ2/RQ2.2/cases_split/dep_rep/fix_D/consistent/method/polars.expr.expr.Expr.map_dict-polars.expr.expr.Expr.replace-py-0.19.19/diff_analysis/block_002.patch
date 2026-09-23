@@ -1,0 +1,5 @@
+@@ -4,3 +5,3 @@
+         *,
+-        default: Any = no_default,
++        default: IntoExpr | NoDefault = no_default,
+         return_dtype: PolarsDataType | None = None,

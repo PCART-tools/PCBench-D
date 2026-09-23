@@ -1,0 +1,33 @@
+    def _read(self, fp: IO[bytes], limit: bool = True) -> None:
+        if not fp.readline().startswith(b"GIMP Palette"):
+            msg = "not a GIMP palette file"
+            raise SyntaxError(msg)
+
+        palette: list[int] = []
+        i = 0
+        while True:
+            if limit and i == 256 + 3:
+                break
+
+            i += 1
+            s = fp.readline()
+            if not s:
+                break
+
+            # skip fields and comment lines
+            if re.match(rb"\w+:|#", s):
+                continue
+            if limit and len(s) > 100:
+                msg = "bad palette file"
+                raise SyntaxError(msg)
+
+            v = s.split(maxsplit=3)
+            if len(v) < 3:
+                msg = "bad palette entry"
+                raise ValueError(msg)
+
+            palette += (int(v[i]) for i in range(3))
+            if limit and len(palette) == 768:
+                break
+
+        self.palette = bytes(palette)

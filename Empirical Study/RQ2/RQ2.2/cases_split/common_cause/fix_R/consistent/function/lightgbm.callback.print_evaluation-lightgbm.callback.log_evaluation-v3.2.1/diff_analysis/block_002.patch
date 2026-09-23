@@ -1,0 +1,15 @@
+@@ -3,13 +3,3 @@
+  
+-    Parameters
+-    ----------
+-    period : int, optional (default=1)
+-        The period to print the evaluation results.
+-    show_stdv : bool, optional (default=True)
+-        Whether to show stdv (if provided).
+-
+-    Returns
+-    -------
+-    callback : function
+-        The callback that prints the evaluation results every ``period`` iteration(s).
++    Deprecated, use ``log_evaluation()`` instead.
+     """

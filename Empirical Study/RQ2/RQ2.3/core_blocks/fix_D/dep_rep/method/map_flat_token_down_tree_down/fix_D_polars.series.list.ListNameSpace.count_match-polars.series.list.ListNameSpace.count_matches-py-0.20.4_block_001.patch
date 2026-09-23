@@ -1,0 +1,8 @@
+@@ -1,6 +1,4 @@
+-    def count_matches(
+-        self, element: float | str | bool | int | date | datetime | time | Expr
+-    ) -> Expr:
++    def count_matches(self, element: IntoExpr) -> Series:
+         """
+         Count how often the value produced by `element` occurs.
+ 

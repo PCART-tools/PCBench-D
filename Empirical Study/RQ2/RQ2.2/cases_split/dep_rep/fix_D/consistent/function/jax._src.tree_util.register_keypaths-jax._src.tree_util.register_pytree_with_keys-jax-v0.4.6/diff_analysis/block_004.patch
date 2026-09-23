@@ -1,0 +1,12 @@
+@@ -20,5 +31,8 @@
+   """
+-  def flatten_func(tree):
+-    key_children, treedef = flatten_with_keys(tree)
+-    return [c for _, c in key_children], treedef
++  if not flatten_func:
++    def flatten_func_impl(tree):
++      key_children, treedef = flatten_with_keys(tree)
++      return [c for _, c in key_children], treedef
++    flatten_func = flatten_func_impl
++
+   register_pytree_node(nodetype, flatten_func, unflatten_func)

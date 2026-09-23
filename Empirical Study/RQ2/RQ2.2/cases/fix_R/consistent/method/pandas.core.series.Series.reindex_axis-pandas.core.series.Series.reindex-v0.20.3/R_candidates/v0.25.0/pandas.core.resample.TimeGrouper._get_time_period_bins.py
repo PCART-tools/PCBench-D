@@ -1,0 +1,23 @@
+    def _get_time_period_bins(self, ax):
+        if not isinstance(ax, DatetimeIndex):
+            raise TypeError(
+                "axis must be a DatetimeIndex, but got "
+                "an instance of %r" % type(ax).__name__
+            )
+
+        freq = self.freq
+
+        if not len(ax):
+            binner = labels = PeriodIndex(data=[], freq=freq, name=ax.name)
+            return binner, [], labels
+
+        labels = binner = pd.period_range(
+            start=ax[0], end=ax[-1], freq=freq, name=ax.name
+        )
+
+        end_stamps = (labels + freq).asfreq(freq, "s").to_timestamp()
+        if ax.tzinfo:
+            end_stamps = end_stamps.tz_localize(ax.tzinfo)
+        bins = ax.searchsorted(end_stamps, side="left")
+
+        return binner, bins, labels

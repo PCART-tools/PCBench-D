@@ -1,0 +1,8 @@
+# detail
+Change count: 1
+
+1. Modify | Method definition
+
+   Changed the type annotation of the `element` parameter in `count_matches` from `float | str | bool | int | date | datetime | time | Expr` to `IntoExpr`, and changed the return type annotation from `Expr` to `Series`.
+# /detail
+# mode: Modify parameter type annotations

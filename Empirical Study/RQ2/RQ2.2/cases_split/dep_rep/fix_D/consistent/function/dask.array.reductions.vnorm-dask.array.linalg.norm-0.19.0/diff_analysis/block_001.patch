@@ -1,0 +1,6 @@
+@@ -2,5 +2,2 @@
+ def norm(x, ord=None, axis=None, keepdims=False):
+-    if x.ndim > 2:
+-        raise ValueError("Improper number of dimensions to norm.")
+-
+     if axis is None:

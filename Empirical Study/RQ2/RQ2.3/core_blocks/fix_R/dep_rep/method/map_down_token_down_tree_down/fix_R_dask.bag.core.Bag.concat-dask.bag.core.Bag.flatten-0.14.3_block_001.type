@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation
+   Changed the implementation of `concat` from constructing and returning a new collection object to issuing a deprecation warning and returning `self.flatten()`.
+   The original implementation included:
+
+   * Assignment statement: assign a value to `name`;
+   * Assignment statement: assign a value to `dsk`;
+   * Return statement: return `type(self)(merge(self.dask, dsk), name, self.npartitions)`.
+
+   The new implementation includes:
+
+   * Call statement: call `warn("Deprecated.  Use the .flatten method instead")`;
+   * Return statement: return `self.flatten()`.
+# /detail
+# mode：Modify method implementation (replace original implementation with warning call and return-call statement)

@@ -1,0 +1,2017 @@
+[
+  {
+    "api_name": "dask.array.core.from_delayed",
+    "score": 1.0,
+    "rank": 1
+  },
+  {
+    "api_name": "dask.array.ghost.constant",
+    "score": 0.7574769938650305,
+    "rank": 2
+  },
+  {
+    "api_name": "dask.array.core.slices_from_chunks",
+    "score": 0.7285528596187175,
+    "rank": 3
+  },
+  {
+    "api_name": "dask.array.core.from_func",
+    "score": 0.7009864364981504,
+    "rank": 4
+  },
+  {
+    "api_name": "dask.array.random._apply_random",
+    "score": 0.6878881987577639,
+    "rank": 5
+  },
+  {
+    "api_name": "dask.array.numpy_compat.nancumprod",
+    "score": 0.6848498233215546,
+    "rank": 6
+  },
+  {
+    "api_name": "dask.array.numpy_compat.nancumsum",
+    "score": 0.6848498233215546,
+    "rank": 6
+  },
+  {
+    "api_name": "dask.array.core.swapaxes",
+    "score": 0.6794642857142856,
+    "rank": 8
+  },
+  {
+    "api_name": "dask.array.core.wrap_elemwise",
+    "score": 0.6724823321554769,
+    "rank": 9
+  },
+  {
+    "api_name": "dask.array.fft._hfft_out_chunks",
+    "score": 0.6683501683501682,
+    "rank": 10
+  },
+  {
+    "api_name": "dask.array.fft._irfft_out_chunks",
+    "score": 0.6683501683501682,
+    "rank": 10
+  },
+  {
+    "api_name": "dask.array.fft._rfft_out_chunks",
+    "score": 0.6683501683501682,
+    "rank": 10
+  },
+  {
+    "api_name": "dask.array.core.digitize",
+    "score": 0.6635996409335727,
+    "rank": 13
+  },
+  {
+    "api_name": "dask.array.ghost.periodic",
+    "score": 0.66002080443828,
+    "rank": 14
+  },
+  {
+    "api_name": "dask.array.numpy_compat.nanprod",
+    "score": 0.6558798646362097,
+    "rank": 15
+  },
+  {
+    "api_name": "dask.array.chunk.topk",
+    "score": 0.6557450628366247,
+    "rank": 16
+  },
+  {
+    "api_name": "dask.array.core.unique",
+    "score": 0.6551496478873239,
+    "rank": 17
+  },
+  {
+    "api_name": "dask.array.reductions.arg_combine",
+    "score": 0.6543348281016441,
+    "rank": 18
+  },
+  {
+    "api_name": "dask.array.ghost.nearest",
+    "score": 0.6382408575031524,
+    "rank": 19
+  },
+  {
+    "api_name": "dask.array.core.split_at_breaks",
+    "score": 0.6225649350649349,
+    "rank": 20
+  },
+  {
+    "api_name": "dask.array.numpy_compat.divide",
+    "score": 0.6174652241112828,
+    "rank": 21
+  },
+  {
+    "api_name": "dask.array.reductions.mean_combine",
+    "score": 0.6172086720867207,
+    "rank": 22
+  },
+  {
+    "api_name": "dask.array.learn._partial_fit",
+    "score": 0.6133879781420765,
+    "rank": 23
+  },
+  {
+    "api_name": "dask.array.core.partial_by_order",
+    "score": 0.6079059829059827,
+    "rank": 24
+  },
+  {
+    "api_name": "dask.array.wrap.dims_from_size",
+    "score": 0.5999999999999999,
+    "rank": 25
+  },
+  {
+    "api_name": "dask.array.core._get_axis",
+    "score": 0.599252491694352,
+    "rank": 26
+  },
+  {
+    "api_name": "dask.array.reductions.mean_chunk",
+    "score": 0.58289124668435,
+    "rank": 27
+  },
+  {
+    "api_name": "dask.array.numpy_compat._broadcast_to",
+    "score": 0.5828182941903584,
+    "rank": 28
+  },
+  {
+    "api_name": "dask.array.core.getem",
+    "score": 0.5800736961451246,
+    "rank": 29
+  },
+  {
+    "api_name": "dask.array.core.unify_chunks",
+    "score": 0.578800298062593,
+    "rank": 30
+  },
+  {
+    "api_name": "dask.array.core.topk",
+    "score": 0.5787581699346405,
+    "rank": 31
+  },
+  {
+    "api_name": "dask.array.learn.fit",
+    "score": 0.5771588486140724,
+    "rank": 32
+  },
+  {
+    "api_name": "dask.array.core.insert_to_ooc",
+    "score": 0.5748214285714284,
+    "rank": 33
+  },
+  {
+    "api_name": "dask.array.slicing.insert_many",
+    "score": 0.5721574344023321,
+    "rank": 34
+  },
+  {
+    "api_name": "dask.array.core._vindex_transpose",
+    "score": 0.5690524193548385,
+    "rank": 35
+  },
+  {
+    "api_name": "dask.array.slicing.partition_by_size",
+    "score": 0.567405523255814,
+    "rank": 36
+  },
+  {
+    "api_name": "dask.array.fft._ihfft_out_chunks",
+    "score": 0.5669642857142856,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.fft._fft_out_chunks",
+    "score": 0.5665584415584415,
+    "rank": 38
+  },
+  {
+    "api_name": "dask.array.rechunk.blockdims_dict_to_tuple",
+    "score": 0.5646167557932263,
+    "rank": 39
+  },
+  {
+    "api_name": "dask.array.ghost._remove_ghost_boundaries",
+    "score": 0.5633245382585751,
+    "rank": 40
+  },
+  {
+    "api_name": "dask.array.core.dotmany",
+    "score": 0.5630357142857142,
+    "rank": 41
+  },
+  {
+    "api_name": "dask.array.fft._fft_wrap",
+    "score": 0.5621739130434782,
+    "rank": 42
+  },
+  {
+    "api_name": "dask.array.core.isclose",
+    "score": 0.5603222996515678,
+    "rank": 43
+  },
+  {
+    "api_name": "dask.array.core.interleave_none",
+    "score": 0.5592105263157894,
+    "rank": 44
+  },
+  {
+    "api_name": "dask.array.linalg.compression_level",
+    "score": 0.5575048732943468,
+    "rank": 45
+  },
+  {
+    "api_name": "dask.array.reductions.make_arg_reduction",
+    "score": 0.5559428950863212,
+    "rank": 46
+  },
+  {
+    "api_name": "dask.array.ghost.trim_internal",
+    "score": 0.554665242165242,
+    "rank": 47
+  },
+  {
+    "api_name": "dask.array.core.broadcast_dimensions",
+    "score": 0.5543793503480278,
+    "rank": 48
+  },
+  {
+    "api_name": "dask.array.wrap.wrap",
+    "score": 0.5496411483253587,
+    "rank": 49
+  },
+  {
+    "api_name": "dask.array.core.zero_broadcast_dimensions",
+    "score": 0.5455942622950818,
+    "rank": 50
+  },
+  {
+    "api_name": "dask.array.rechunk.blockshape_dict_to_tuple",
+    "score": 0.5451193820224718,
+    "rank": 51
+  },
+  {
+    "api_name": "dask.array.slicing.new_blockdim",
+    "score": 0.5440459610027855,
+    "rank": 52
+  },
+  {
+    "api_name": "dask.array.linalg.compression_matrix",
+    "score": 0.5410242290748898,
+    "rank": 53
+  },
+  {
+    "api_name": "dask.array.learn.predict",
+    "score": 0.5399919614147908,
+    "rank": 54
+  },
+  {
+    "api_name": "dask.array.core._vindex_slice",
+    "score": 0.5384221311475409,
+    "rank": 55
+  },
+  {
+    "api_name": "dask.array.core.blockdims_from_blockshape",
+    "score": 0.5371222076215505,
+    "rank": 56
+  },
+  {
+    "api_name": "dask.array.ghost.reflect",
+    "score": 0.5369245524296673,
+    "rank": 57
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg._get_symmat",
+    "score": 0.5335923217550274,
+    "rank": 58
+  },
+  {
+    "api_name": "dask.array.chunk.coarsen",
+    "score": 0.5334394904458597,
+    "rank": 59
+  },
+  {
+    "api_name": "dask.array.reductions.nanstd",
+    "score": 0.5276580459770113,
+    "rank": 60
+  },
+  {
+    "api_name": "dask.array.reductions.std",
+    "score": 0.5276580459770113,
+    "rank": 60
+  },
+  {
+    "api_name": "dask.array.reductions.nanarg_agg",
+    "score": 0.5249587458745874,
+    "rank": 62
+  },
+  {
+    "api_name": "dask.array.linalg.svd_compressed",
+    "score": 0.5235927152317881,
+    "rank": 63
+  },
+  {
+    "api_name": "dask.array.core.transpose",
+    "score": 0.521920668058455,
+    "rank": 64
+  },
+  {
+    "api_name": "dask.array.reductions._moment_helper",
+    "score": 0.5198581560283686,
+    "rank": 65
+  },
+  {
+    "api_name": "dask.array.slicing.slice_with_newaxes",
+    "score": 0.5198296122209165,
+    "rank": 66
+  },
+  {
+    "api_name": "dask.array.core.broadcast_to",
+    "score": 0.5182655654383734,
+    "rank": 67
+  },
+  {
+    "api_name": "dask.array.chunk.trim",
+    "score": 0.5179487179487179,
+    "rank": 68
+  },
+  {
+    "api_name": "dask.array.numpy_compat.full",
+    "score": 0.5171790235081374,
+    "rank": 69
+  },
+  {
+    "api_name": "dask.array.core.getarray_nofancy",
+    "score": 0.5163934426229506,
+    "rank": 70
+  },
+  {
+    "api_name": "dask.array.numpy_compat.broadcast_to",
+    "score": 0.5163934426229506,
+    "rank": 70
+  },
+  {
+    "api_name": "dask.array.ghost.expand_key",
+    "score": 0.5136122177954846,
+    "rank": 72
+  },
+  {
+    "api_name": "dask.array.core.corrcoef",
+    "score": 0.511558784676354,
+    "rank": 73
+  },
+  {
+    "api_name": "dask.array.core.from_array",
+    "score": 0.5115515564202335,
+    "rank": 74
+  },
+  {
+    "api_name": "dask.array.core.keyname",
+    "score": 0.5092213114754098,
+    "rank": 75
+  },
+  {
+    "api_name": "dask.array.core.fromfunction",
+    "score": 0.5084859913793105,
+    "rank": 76
+  },
+  {
+    "api_name": "dask.array.reductions.all",
+    "score": 0.508064516129032,
+    "rank": 77
+  },
+  {
+    "api_name": "dask.array.reductions.any",
+    "score": 0.508064516129032,
+    "rank": 77
+  },
+  {
+    "api_name": "dask.array.reductions.max",
+    "score": 0.508064516129032,
+    "rank": 77
+  },
+  {
+    "api_name": "dask.array.reductions.min",
+    "score": 0.508064516129032,
+    "rank": 77
+  },
+  {
+    "api_name": "dask.array.reductions.nanmax",
+    "score": 0.508064516129032,
+    "rank": 77
+  },
+  {
+    "api_name": "dask.array.reductions.nanmin",
+    "score": 0.508064516129032,
+    "rank": 77
+  },
+  {
+    "api_name": "dask.array.percentile.percentile",
+    "score": 0.5068855932203391,
+    "rank": 83
+  },
+  {
+    "api_name": "dask.array.core.dstack",
+    "score": 0.49894514767932474,
+    "rank": 84
+  },
+  {
+    "api_name": "dask.array.core.vstack",
+    "score": 0.49894514767932474,
+    "rank": 84
+  },
+  {
+    "api_name": "dask.array.core.offset_func",
+    "score": 0.4985659655831739,
+    "rank": 86
+  },
+  {
+    "api_name": "dask.array.reductions.mean",
+    "score": 0.49805900621118016,
+    "rank": 87
+  },
+  {
+    "api_name": "dask.array.reductions.nanmean",
+    "score": 0.49805900621118016,
+    "rank": 87
+  },
+  {
+    "api_name": "dask.array.reductions.nanprod",
+    "score": 0.49805900621118016,
+    "rank": 87
+  },
+  {
+    "api_name": "dask.array.reductions.nansum",
+    "score": 0.49805900621118016,
+    "rank": 87
+  },
+  {
+    "api_name": "dask.array.reductions.prod",
+    "score": 0.49805900621118016,
+    "rank": 87
+  },
+  {
+    "api_name": "dask.array.reductions.sum",
+    "score": 0.49805900621118016,
+    "rank": 87
+  },
+  {
+    "api_name": "dask.array.reductions.arg_agg",
+    "score": 0.49207920792079196,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.array.linalg.cholesky",
+    "score": 0.489547038327526,
+    "rank": 94
+  },
+  {
+    "api_name": "dask.array.optimization.optimize",
+    "score": 0.4873210023866348,
+    "rank": 95
+  },
+  {
+    "api_name": "dask.array.core.to_npy_stack",
+    "score": 0.48250598086124397,
+    "rank": 96
+  },
+  {
+    "api_name": "dask.array.core.asarray",
+    "score": 0.48084518167456547,
+    "rank": 97
+  },
+  {
+    "api_name": "dask.array.reductions.nanvar",
+    "score": 0.47944693572496266,
+    "rank": 98
+  },
+  {
+    "api_name": "dask.array.reductions.var",
+    "score": 0.47944693572496266,
+    "rank": 98
+  },
+  {
+    "api_name": "dask.array.ghost.coerce_boundary",
+    "score": 0.47590837282780407,
+    "rank": 100
+  },
+  {
+    "api_name": "dask.array.core.chunks_from_arrays",
+    "score": 0.47182299546142203,
+    "rank": 101
+  },
+  {
+    "api_name": "dask.array.linalg.solve",
+    "score": 0.4672214673913043,
+    "rank": 102
+  },
+  {
+    "api_name": "dask.array.core.from_npy_stack",
+    "score": 0.46708937198067635,
+    "rank": 103
+  },
+  {
+    "api_name": "dask.array.core._astype",
+    "score": 0.46284501061571115,
+    "rank": 104
+  },
+  {
+    "api_name": "dask.array.reductions.cumprod",
+    "score": 0.46284501061571115,
+    "rank": 104
+  },
+  {
+    "api_name": "dask.array.reductions.cumsum",
+    "score": 0.46284501061571115,
+    "rank": 104
+  },
+  {
+    "api_name": "dask.array.reductions.mean_agg",
+    "score": 0.46284501061571115,
+    "rank": 104
+  },
+  {
+    "api_name": "dask.array.reductions.nancumprod",
+    "score": 0.46284501061571115,
+    "rank": 104
+  },
+  {
+    "api_name": "dask.array.reductions.nancumsum",
+    "score": 0.46284501061571115,
+    "rank": 104
+  },
+  {
+    "api_name": "dask.array.ghost.coerce_depth",
+    "score": 0.4613095238095237,
+    "rank": 110
+  },
+  {
+    "api_name": "dask.array.core._concatenate2",
+    "score": 0.4601341281669149,
+    "rank": 111
+  },
+  {
+    "api_name": "dask.array.reductions.moment_agg",
+    "score": 0.4571713147410361,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.array.optimization.normalize_slice",
+    "score": 0.45616113744075804,
+    "rank": 113
+  },
+  {
+    "api_name": "dask.array.reductions.moment",
+    "score": 0.45384097035040427,
+    "rank": 114
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_cholesky",
+    "score": 0.45221843003412954,
+    "rank": 115
+  },
+  {
+    "api_name": "dask.array.core.concatenate_axes",
+    "score": 0.452155172413793,
+    "rank": 116
+  },
+  {
+    "api_name": "dask.array.creation.linspace",
+    "score": 0.4507504690431522,
+    "rank": 117
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_inv",
+    "score": 0.4482758620689654,
+    "rank": 118
+  },
+  {
+    "api_name": "dask.array.ghost.map_overlap",
+    "score": 0.44774477447744776,
+    "rank": 119
+  },
+  {
+    "api_name": "dask.array.core.array",
+    "score": 0.44718597063621524,
+    "rank": 120
+  },
+  {
+    "api_name": "dask.array.ghost.ghost",
+    "score": 0.44528875379939215,
+    "rank": 121
+  },
+  {
+    "api_name": "dask.array.core.coarsen",
+    "score": 0.44429778247096097,
+    "rank": 122
+  },
+  {
+    "api_name": "dask.array.image.imread",
+    "score": 0.44301823416506736,
+    "rank": 123
+  },
+  {
+    "api_name": "dask.array.core.to_hdf5",
+    "score": 0.4388513513513512,
+    "rank": 124
+  },
+  {
+    "api_name": "dask.array.slicing.slice_slices_and_integers",
+    "score": 0.4375618199802178,
+    "rank": 125
+  },
+  {
+    "api_name": "dask.array.linalg.qr",
+    "score": 0.4362850971922245,
+    "rank": 126
+  },
+  {
+    "api_name": "dask.array.linalg.svd",
+    "score": 0.4362850971922245,
+    "rank": 126
+  },
+  {
+    "api_name": "dask.array.rechunk._breakpoints",
+    "score": 0.4362850971922245,
+    "rank": 126
+  },
+  {
+    "api_name": "dask.array.reductions.nannumel",
+    "score": 0.4362850971922245,
+    "rank": 126
+  },
+  {
+    "api_name": "dask.array.reductions.numel",
+    "score": 0.4362850971922245,
+    "rank": 126
+  },
+  {
+    "api_name": "dask.array.slicing.replace_ellipsis",
+    "score": 0.434412265758092,
+    "rank": 131
+  },
+  {
+    "api_name": "dask.array.slicing.slice_array",
+    "score": 0.4343988549618323,
+    "rank": 132
+  },
+  {
+    "api_name": "dask.array.core.ensure_int",
+    "score": 0.43308550185873584,
+    "rank": 133
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_method",
+    "score": 0.43230769230769206,
+    "rank": 134
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_lu_2",
+    "score": 0.4315960912052116,
+    "rank": 135
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_lu_3",
+    "score": 0.4315960912052116,
+    "rank": 135
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_intersect_1",
+    "score": 0.4311079545454545,
+    "rank": 137
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_intersect_2",
+    "score": 0.4311079545454545,
+    "rank": 137
+  },
+  {
+    "api_name": "dask.array.reductions.partial_reduce",
+    "score": 0.4306126644736845,
+    "rank": 139
+  },
+  {
+    "api_name": "dask.array.rechunk.cumdims_label",
+    "score": 0.4287257019438445,
+    "rank": 140
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_dont_fuse_different_slices",
+    "score": 0.4278136531365312,
+    "rank": 141
+  },
+  {
+    "api_name": "dask.array.core.broadcast_chunks",
+    "score": 0.42571599045346065,
+    "rank": 142
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_empty_slice",
+    "score": 0.4245689655172412,
+    "rank": 143
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_list_then_None",
+    "score": 0.4245689655172412,
+    "rank": 143
+  },
+  {
+    "api_name": "dask.array.core.store",
+    "score": 0.42318507157464225,
+    "rank": 145
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.test_arange_working_float_step",
+    "score": 0.42239685658153237,
+    "rank": 146
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_serializability",
+    "score": 0.4215909090909089,
+    "rank": 147
+  },
+  {
+    "api_name": "dask.array.numpy_compat._replace_nan",
+    "score": 0.4211254612546126,
+    "rank": 148
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_constant_boundaries",
+    "score": 0.4199999999999998,
+    "rank": 149
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_one_chunk_along_axis",
+    "score": 0.4199999999999998,
+    "rank": 149
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_expand",
+    "score": 0.4199999999999998,
+    "rank": 149
+  },
+  {
+    "api_name": "dask.array.slicing.take",
+    "score": 0.41970198675496717,
+    "rank": 152
+  },
+  {
+    "api_name": "dask.array.core._take_dask_array_from_numpy",
+    "score": 0.41842610364683297,
+    "rank": 153
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_bad_depth_raises",
+    "score": 0.41755319148936154,
+    "rank": 154
+  },
+  {
+    "api_name": "dask.array.rechunk.intersect_chunks",
+    "score": 0.4171763506625893,
+    "rank": 155
+  },
+  {
+    "api_name": "dask.array.core._vindex_merge",
+    "score": 0.415339702760085,
+    "rank": 156
+  },
+  {
+    "api_name": "dask.array.core.where",
+    "score": 0.413662239089184,
+    "rank": 157
+  },
+  {
+    "api_name": "dask.array.reductions.moment_chunk",
+    "score": 0.41236611489776065,
+    "rank": 158
+  },
+  {
+    "api_name": "dask.array.numpy_compat._maybe_view_as_subclass",
+    "score": 0.4108931552587646,
+    "rank": 159
+  },
+  {
+    "api_name": "dask.array.linalg._sort_decreasing",
+    "score": 0.4095211581291758,
+    "rank": 160
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.assert_max_deps",
+    "score": 0.4051418439716311,
+    "rank": 161
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_0d",
+    "score": 0.4032608695652171,
+    "rank": 162
+  },
+  {
+    "api_name": "dask.array.reductions._arg_combine",
+    "score": 0.40316742081448,
+    "rank": 163
+  },
+  {
+    "api_name": "dask.array.core.common_blockdim",
+    "score": 0.40293637846655783,
+    "rank": 164
+  },
+  {
+    "api_name": "dask.array.core.broadcast_shapes",
+    "score": 0.4027777777777777,
+    "rank": 165
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_1d",
+    "score": 0.4011999999999998,
+    "rank": 166
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_2d",
+    "score": 0.4011999999999998,
+    "rank": 166
+  },
+  {
+    "api_name": "dask.array.core.compress",
+    "score": 0.399286498353458,
+    "rank": 168
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_none_boundaries",
+    "score": 0.39610091743119247,
+    "rank": 169
+  },
+  {
+    "api_name": "dask.array.core.lol_tuples",
+    "score": 0.3929098966026586,
+    "rank": 170
+  },
+  {
+    "api_name": "dask.array.core.eye",
+    "score": 0.39034184514003356,
+    "rank": 171
+  },
+  {
+    "api_name": "dask.array.reductions.arg_chunk",
+    "score": 0.3888081395348839,
+    "rank": 172
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_array_2d",
+    "score": 0.3882643884892084,
+    "rank": 173
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_optimizations",
+    "score": 0.3882643884892084,
+    "rank": 173
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_concurrency",
+    "score": 0.3882352941176468,
+    "rank": 175
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_stop_0",
+    "score": 0.38820043103448254,
+    "rank": 176
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_boundaries",
+    "score": 0.38775083612040107,
+    "rank": 177
+  },
+  {
+    "api_name": "dask.array.linalg.inv",
+    "score": 0.3835616438356162,
+    "rank": 178
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_4d",
+    "score": 0.383076923076923,
+    "rank": 179
+  },
+  {
+    "api_name": "dask.array.ghost.reshape",
+    "score": 0.38210702341137104,
+    "rank": 180
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_nearest_ghost",
+    "score": 0.38118811881188086,
+    "rank": 181
+  },
+  {
+    "api_name": "dask.array.core.unpack_singleton",
+    "score": 0.3809306569343065,
+    "rank": 182
+  },
+  {
+    "api_name": "dask.array.core.getarray",
+    "score": 0.38037056928034385,
+    "rank": 183
+  },
+  {
+    "api_name": "dask.array.core.squeeze",
+    "score": 0.3778176229508199,
+    "rank": 184
+  },
+  {
+    "api_name": "dask.array.core.around",
+    "score": 0.37668161434977565,
+    "rank": 185
+  },
+  {
+    "api_name": "dask.array.core.choose",
+    "score": 0.37668161434977565,
+    "rank": 185
+  },
+  {
+    "api_name": "dask.array.core.dot",
+    "score": 0.37668161434977565,
+    "rank": 185
+  },
+  {
+    "api_name": "dask.array.core.variadic_choose",
+    "score": 0.37668161434977565,
+    "rank": 185
+  },
+  {
+    "api_name": "dask.array.core.is_scalar_for_elemwise",
+    "score": 0.37557077625570756,
+    "rank": 189
+  },
+  {
+    "api_name": "dask.array.core.notnull",
+    "score": 0.37557077625570756,
+    "rank": 189
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_blockshape",
+    "score": 0.37517580872011247,
+    "rank": 191
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_svd_compressed_deterministic",
+    "score": 0.37418699186991855,
+    "rank": 192
+  },
+  {
+    "api_name": "dask.array.tests.test_percentiles.test_percentile_with_categoricals",
+    "score": 0.37401960784313726,
+    "rank": 193
+  },
+  {
+    "api_name": "dask.array.reductions.reduction",
+    "score": 0.3739669421487608,
+    "rank": 194
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_RandomState",
+    "score": 0.3725806451612901,
+    "rank": 195
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_kwargs",
+    "score": 0.3719325153374232,
+    "rank": 196
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_ones",
+    "score": 0.3719325153374232,
+    "rank": 196
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_singleton_size",
+    "score": 0.3719325153374232,
+    "rank": 196
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_size_as_list",
+    "score": 0.3719325153374232,
+    "rank": 196
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_chunks",
+    "score": 0.3717447916666664,
+    "rank": 200
+  },
+  {
+    "api_name": "dask.array.slicing.take_sorted",
+    "score": 0.37066182405165504,
+    "rank": 201
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_trim_internal",
+    "score": 0.3701431492842534,
+    "rank": 202
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_intermediates",
+    "score": 0.3701431492842534,
+    "rank": 202
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.assert_eq",
+    "score": 0.3701261467889907,
+    "rank": 204
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_optimize_slicing",
+    "score": 0.3694821731748723,
+    "rank": 205
+  },
+  {
+    "api_name": "dask.array.core.isnull",
+    "score": 0.36923076923076903,
+    "rank": 206
+  },
+  {
+    "api_name": "dask.array.tests.test_learn.test_fit",
+    "score": 0.3692277070063692,
+    "rank": 207
+  },
+  {
+    "api_name": "dask.array.learn._predict",
+    "score": 0.3688340807174886,
+    "rank": 208
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_unique_names",
+    "score": 0.3683537832310837,
+    "rank": 209
+  },
+  {
+    "api_name": "dask.array.random.doc_wraps",
+    "score": 0.3680089485458612,
+    "rank": 210
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.test_arange_cast_float_int_step",
+    "score": 0.3678861788617884,
+    "rank": 211
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_take_sorted",
+    "score": 0.3657334384858043,
+    "rank": 212
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_optimize_with_getitem_fusion",
+    "score": 0.3654835390946499,
+    "rank": 213
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_determinisim_through_dask_values",
+    "score": 0.3647750511247443,
+    "rank": 214
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_same",
+    "score": 0.36418511066398374,
+    "rank": 215
+  },
+  {
+    "api_name": "dask.array.linalg._solve_triangular_lower",
+    "score": 0.36285097192224613,
+    "rank": 216
+  },
+  {
+    "api_name": "dask.array.ghost.fractional_slice",
+    "score": 0.36256476683937844,
+    "rank": 217
+  },
+  {
+    "api_name": "dask.array.linalg.lstsq",
+    "score": 0.36213860544217735,
+    "rank": 218
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_multiple_list_slicing",
+    "score": 0.36199999999999977,
+    "rank": 219
+  },
+  {
+    "api_name": "dask.array.core.normalize_chunks",
+    "score": 0.35875000000000024,
+    "rank": 220
+  },
+  {
+    "api_name": "dask.array.core.bincount",
+    "score": 0.35722477064220226,
+    "rank": 221
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.same_keys",
+    "score": 0.355291576673866,
+    "rank": 222
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.same_keys",
+    "score": 0.355291576673866,
+    "rank": 222
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.same_keys",
+    "score": 0.355291576673866,
+    "rank": 222
+  },
+  {
+    "api_name": "dask.array.tests.test_percentiles.same_keys",
+    "score": 0.355291576673866,
+    "rank": 222
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.same_keys",
+    "score": 0.355291576673866,
+    "rank": 222
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.same_keys",
+    "score": 0.355291576673866,
+    "rank": 222
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_kwargs",
+    "score": 0.3538424124513616,
+    "rank": 228
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_with_dict",
+    "score": 0.3527369281045749,
+    "rank": 229
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_0d_array",
+    "score": 0.3527369281045749,
+    "rank": 229
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_constant",
+    "score": 0.3526717557251906,
+    "rank": 231
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_periodic",
+    "score": 0.3526717557251906,
+    "rank": 231
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_nanarg_reductions",
+    "score": 0.35259433962264175,
+    "rank": 233
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_with_numpy_arrays",
+    "score": 0.3523936170212767,
+    "rank": 234
+  },
+  {
+    "api_name": "dask.array.core.tril",
+    "score": 0.3518403639371387,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.array.core.triu",
+    "score": 0.3518403639371387,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.array.reductions._nanargmax",
+    "score": 0.35044247787610605,
+    "rank": 237
+  },
+  {
+    "api_name": "dask.array.reductions._nanargmin",
+    "score": 0.35044247787610605,
+    "rank": 237
+  },
+  {
+    "api_name": "dask.array.core.elemwise",
+    "score": 0.3498683055311681,
+    "rank": 239
+  },
+  {
+    "api_name": "dask.array.reductions.moment_combine",
+    "score": 0.3498557295960434,
+    "rank": 240
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_parametrized_random_function",
+    "score": 0.348950524737631,
+    "rank": 241
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.test_arange_float_step",
+    "score": 0.34789644012944965,
+    "rank": 242
+  },
+  {
+    "api_name": "dask.array.core.atop",
+    "score": 0.34780907668231675,
+    "rank": 243
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_randomstate_consistent_names",
+    "score": 0.3467432950191569,
+    "rank": 244
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_with_integer",
+    "score": 0.3467432950191569,
+    "rank": 244
+  },
+  {
+    "api_name": "dask.array.tests.test_chunk.test_coarsen",
+    "score": 0.34506704980842884,
+    "rank": 246
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_and_chunks",
+    "score": 0.34436008676789576,
+    "rank": 247
+  },
+  {
+    "api_name": "dask.array.core.concatenate3",
+    "score": 0.3400698602794414,
+    "rank": 248
+  },
+  {
+    "api_name": "dask.array.tests.test_percentiles.test_percentiles_with_empty_arrays",
+    "score": 0.3388382687927105,
+    "rank": 249
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_consistent_names",
+    "score": 0.3341836734693876,
+    "rank": 250
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_internals_1",
+    "score": 0.33036890645586314,
+    "rank": 251
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg._check_lu_result",
+    "score": 0.33020637898686656,
+    "rank": 252
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_random_seed",
+    "score": 0.3297546012269936,
+    "rank": 253
+  },
+  {
+    "api_name": "dask.array.core.take",
+    "score": 0.32964601769911495,
+    "rank": 254
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_uneven_blockdims",
+    "score": 0.3284348441926346,
+    "rank": 255
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_ghost_internal",
+    "score": 0.32704513399153734,
+    "rank": 256
+  },
+  {
+    "api_name": "dask.array.core.stack",
+    "score": 0.32686721991701295,
+    "rank": 257
+  },
+  {
+    "api_name": "dask.array.slicing.issorted",
+    "score": 0.3243670886075949,
+    "rank": 258
+  },
+  {
+    "api_name": "dask.array.wrap.wrap_func_shape_as_first_arg",
+    "score": 0.3208015267175579,
+    "rank": 259
+  },
+  {
+    "api_name": "dask.array.ghost.add_dummy_padding",
+    "score": 0.32024977698483537,
+    "rank": 260
+  },
+  {
+    "api_name": "dask.array.core.ravel",
+    "score": 0.3182897862232775,
+    "rank": 261
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_with_negative_step_flops_keys",
+    "score": 0.31723027375201285,
+    "rank": 262
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_nearest",
+    "score": 0.31676912568306015,
+    "rank": 263
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_reflect",
+    "score": 0.31676912568306015,
+    "rank": 263
+  },
+  {
+    "api_name": "dask.array.slicing.slice_wrap_lists",
+    "score": 0.3156582446808517,
+    "rank": 265
+  },
+  {
+    "api_name": "dask.array.conftest.pytest_ignore_collect",
+    "score": 0.31550218340611336,
+    "rank": 266
+  },
+  {
+    "api_name": "dask.array.reductions.cumreduction",
+    "score": 0.31163911845730097,
+    "rank": 267
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_with_singleton_indices",
+    "score": 0.31155097613882843,
+    "rank": 268
+  },
+  {
+    "api_name": "dask.array.core.frexp",
+    "score": 0.3111598440545812,
+    "rank": 269
+  },
+  {
+    "api_name": "dask.array.core.modf",
+    "score": 0.3111598440545812,
+    "rank": 269
+  },
+  {
+    "api_name": "dask.array.image.add_leading_dimension",
+    "score": 0.30997624703087856,
+    "rank": 271
+  },
+  {
+    "api_name": "dask.array.rechunk._intersect_1d",
+    "score": 0.30792682926829307,
+    "rank": 272
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_random",
+    "score": 0.3073005093378606,
+    "rank": 273
+  },
+  {
+    "api_name": "dask.array.linalg._cholesky_lower",
+    "score": 0.30593607305936044,
+    "rank": 274
+  },
+  {
+    "api_name": "dask.array.percentile._percentile",
+    "score": 0.30341246290801216,
+    "rank": 275
+  },
+  {
+    "api_name": "dask.array.reductions.arg_reduction",
+    "score": 0.3029146426092998,
+    "rank": 276
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_tsqr_irregular_blocks",
+    "score": 0.302665799739922,
+    "rank": 277
+  },
+  {
+    "api_name": "dask.array.linalg._cumsum_blocks",
+    "score": 0.3023483365949119,
+    "rank": 278
+  },
+  {
+    "api_name": "dask.array.core.finalize",
+    "score": 0.30190174326465913,
+    "rank": 279
+  },
+  {
+    "api_name": "dask.array.slicing.check_index",
+    "score": 0.30180608365019046,
+    "rank": 280
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_reductions_with_negative_axes",
+    "score": 0.29769736842105243,
+    "rank": 281
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_with_newaxis",
+    "score": 0.2955246913580244,
+    "rank": 282
+  },
+  {
+    "api_name": "dask.array.core.deepfirst",
+    "score": 0.2936507936507935,
+    "rank": 283
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_lu_errors",
+    "score": 0.2913265306122449,
+    "rank": 284
+  },
+  {
+    "api_name": "dask.array.ghost.ghost_internal",
+    "score": 0.2902852737085587,
+    "rank": 285
+  },
+  {
+    "api_name": "dask.array.tests.test_image.random_images",
+    "score": 0.289516129032258,
+    "rank": 286
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_array_1d",
+    "score": 0.2893766756032171,
+    "rank": 287
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_fft",
+    "score": 0.2847906403940884,
+    "rank": 288
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_hfft",
+    "score": 0.2847906403940884,
+    "rank": 288
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_ifft",
+    "score": 0.2847906403940884,
+    "rank": 288
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_ihfft",
+    "score": 0.2847906403940884,
+    "rank": 288
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_irfft",
+    "score": 0.2847906403940884,
+    "rank": 288
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_rfft",
+    "score": 0.2847906403940884,
+    "rank": 288
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_can_make_really_big_array_of_ones",
+    "score": 0.2847906403940884,
+    "rank": 288
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_ghost",
+    "score": 0.2845092024539879,
+    "rank": 295
+  },
+  {
+    "api_name": "dask.array.core.concatenate",
+    "score": 0.2817445365486063,
+    "rank": 296
+  },
+  {
+    "api_name": "dask.array.chunk.keepdims_wrapper",
+    "score": 0.2816764132553605,
+    "rank": 297
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_tsqr_regular_blocks",
+    "score": 0.2807642487046633,
+    "rank": 298
+  },
+  {
+    "api_name": "dask.array.reductions.vnorm",
+    "score": 0.2804939516129038,
+    "rank": 299
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_take",
+    "score": 0.27829283887468037,
+    "rank": 300
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_map_overlap",
+    "score": 0.27423469387755117,
+    "rank": 301
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.reduction_1d_test",
+    "score": 0.2736456483126115,
+    "rank": 302
+  },
+  {
+    "api_name": "dask.array.reductions._tree_reduce",
+    "score": 0.2729213066072762,
+    "rank": 303
+  },
+  {
+    "api_name": "dask.array.core.top",
+    "score": 0.27165354330708735,
+    "rank": 304
+  },
+  {
+    "api_name": "dask.array.tests.test_percentiles.test_percentile",
+    "score": 0.2665123456790124,
+    "rank": 305
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_sanitize_index",
+    "score": 0.26632653061224465,
+    "rank": 306
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_tree_reduce_set_options",
+    "score": 0.2660123966942147,
+    "rank": 307
+  },
+  {
+    "api_name": "dask.array.ghost.boundaries",
+    "score": 0.26304095826893414,
+    "rank": 308
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_linalg_consistent_names",
+    "score": 0.2628968253968257,
+    "rank": 309
+  },
+  {
+    "api_name": "dask.array.creation.arange",
+    "score": 0.2628586424072784,
+    "rank": 310
+  },
+  {
+    "api_name": "dask.array.core._vindex",
+    "score": 0.26021594684385463,
+    "rank": 311
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_solve_triangular_errors",
+    "score": 0.25986043689320415,
+    "rank": 312
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_fft_n_kwarg",
+    "score": 0.2592488789237667,
+    "rank": 313
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_ifft_n_kwarg",
+    "score": 0.2592488789237667,
+    "rank": 313
+  },
+  {
+    "api_name": "dask.array.numpy_compat.isclose",
+    "score": 0.257142857142857,
+    "rank": 315
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_moment",
+    "score": 0.25625744934445804,
+    "rank": 316
+  },
+  {
+    "api_name": "dask.array.core.cov",
+    "score": 0.25460790884718554,
+    "rank": 317
+  },
+  {
+    "api_name": "dask.array.optimization.optimize_slices",
+    "score": 0.25431965442764626,
+    "rank": 318
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_dtype",
+    "score": 0.25344036697247685,
+    "rank": 319
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_with_null_dimensions",
+    "score": 0.25344036697247685,
+    "rank": 319
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_reduction_on_scalar",
+    "score": 0.25344036697247685,
+    "rank": 319
+  },
+  {
+    "api_name": "dask.array.tests.test_chunk.test_keepdims_wrapper_no_axis",
+    "score": 0.2512188515709646,
+    "rank": 322
+  },
+  {
+    "api_name": "dask.array.tests.test_chunk.test_keepdims_wrapper_one_axis",
+    "score": 0.25027085590465914,
+    "rank": 323
+  },
+  {
+    "api_name": "dask.array.tests.test_chunk.test_keepdims_wrapper_two_axes",
+    "score": 0.25027085590465914,
+    "rank": 323
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_hfft_nkwarg",
+    "score": 0.24812231759656633,
+    "rank": 325
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_ihfft_n_kwarg",
+    "score": 0.24812231759656633,
+    "rank": 325
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_irfft_n_kwarg",
+    "score": 0.24812231759656633,
+    "rank": 325
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_rfft_n_kwarg",
+    "score": 0.24812231759656633,
+    "rank": 325
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_lstsq",
+    "score": 0.24630924630924678,
+    "rank": 329
+  },
+  {
+    "api_name": "dask.array.slicing.posify_index",
+    "score": 0.24495289367429351,
+    "rank": 330
+  },
+  {
+    "api_name": "dask.array.tests.test_linearoperator.test_LinearOperator",
+    "score": 0.24371727748691152,
+    "rank": 331
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_tsqr_svd_irregular_blocks",
+    "score": 0.24356617647058865,
+    "rank": 332
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_solve_triangular_matrix",
+    "score": 0.24180153321976217,
+    "rank": 333
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_solve_triangular_matrix2",
+    "score": 0.24180153321976217,
+    "rank": 333
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_solve_triangular_vector",
+    "score": 0.24180153321976217,
+    "rank": 333
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_cant_fft_chunked_axis",
+    "score": 0.2396963123644249,
+    "rank": 336
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_with_empty_input",
+    "score": 0.2396963123644249,
+    "rank": 336
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_full",
+    "score": 0.2396963123644249,
+    "rank": 336
+  },
+  {
+    "api_name": "dask.array.slicing.sanitize_index",
+    "score": 0.23831444759206832,
+    "rank": 339
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.test_linspace",
+    "score": 0.23783185840708,
+    "rank": 340
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_lists",
+    "score": 0.2377982646420822,
+    "rank": 341
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_dont_fuse_fancy_indexing_in_getarray_nofancy",
+    "score": 0.23611111111111094,
+    "rank": 342
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_exhaustively",
+    "score": 0.23452012383900978,
+    "rank": 343
+  },
+  {
+    "api_name": "dask.array.core.hstack",
+    "score": 0.23408624229979436,
+    "rank": 344
+  },
+  {
+    "api_name": "dask.array.linalg.solve_triangular",
+    "score": 0.23354092526690462,
+    "rank": 345
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_reductions_2D",
+    "score": 0.23261154855643107,
+    "rank": 346
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_tsqr_svd_regular_blocks",
+    "score": 0.22604712041884856,
+    "rank": 347
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_arg_reductions",
+    "score": 0.2258353221957049,
+    "rank": 348
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_expand2",
+    "score": 0.22553380782918186,
+    "rank": 349
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_oob_check",
+    "score": 0.22532588454376157,
+    "rank": 350
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_fractional_slice",
+    "score": 0.2251026694045174,
+    "rank": 351
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_nan",
+    "score": 0.22072208737864107,
+    "rank": 352
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_reductions_1D",
+    "score": 0.2169014084507047,
+    "rank": 353
+  },
+  {
+    "api_name": "dask.array.core.diag",
+    "score": 0.2149267399267406,
+    "rank": 354
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_solve_sym_pos",
+    "score": 0.21456916099773315,
+    "rank": 355
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_solve",
+    "score": 0.21390778533635757,
+    "rank": 356
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_fuse_getitem",
+    "score": 0.20674044265593539,
+    "rank": 357
+  },
+  {
+    "api_name": "dask.array.core.atleast_2d",
+    "score": 0.20654205607476617,
+    "rank": 358
+  },
+  {
+    "api_name": "dask.array.core.ndimlist",
+    "score": 0.20577281191806318,
+    "rank": 359
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.reduction_2d_test",
+    "score": 0.20419151756129983,
+    "rank": 360
+  },
+  {
+    "api_name": "dask.array.core.histogram",
+    "score": 0.20155775075987925,
+    "rank": 361
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_can_make_really_big_random_array",
+    "score": 0.2004533678756475,
+    "rank": 362
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_reduction_names",
+    "score": 0.1969696969696969,
+    "rank": 363
+  },
+  {
+    "api_name": "dask.array.linalg._cholesky",
+    "score": 0.19694591984548604,
+    "rank": 364
+  },
+  {
+    "api_name": "dask.array.core.insert",
+    "score": 0.1968609234234242,
+    "rank": 365
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_0_depth",
+    "score": 0.19474393530997358,
+    "rank": 366
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_depth_equals_boundary_length",
+    "score": 0.19474393530997358,
+    "rank": 366
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_depth_greater_than_boundary_length",
+    "score": 0.19474393530997358,
+    "rank": 366
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_some_0_depth",
+    "score": 0.19474393530997358,
+    "rank": 366
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.test_arange",
+    "score": 0.18674307958477554,
+    "rank": 370
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_multinomial",
+    "score": 0.18621013133208264,
+    "rank": 371
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_array_broadcasting",
+    "score": 0.18400473933649342,
+    "rank": 372
+  },
+  {
+    "api_name": "dask.array.core.atleast_3d",
+    "score": 0.18386023294509124,
+    "rank": 373
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_svd_compressed",
+    "score": 0.18279000846740112,
+    "rank": 374
+  },
+  {
+    "api_name": "dask.array.core.map_blocks",
+    "score": 0.17984068627450966,
+    "rank": 375
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_tree_reduce_depth",
+    "score": 0.17854200988467928,
+    "rank": 376
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_hard_fuse_slice_cases",
+    "score": 0.17708333333333326,
+    "rank": 377
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_lu_1",
+    "score": 0.17630513051305186,
+    "rank": 378
+  },
+  {
+    "api_name": "dask.array.slicing._slice_1d",
+    "score": 0.17402085452695926,
+    "rank": 379
+  },
+  {
+    "api_name": "dask.array.core.tensordot",
+    "score": 0.16884428879310442,
+    "rank": 380
+  },
+  {
+    "api_name": "dask.array.rechunk.rechunk",
+    "score": 0.15610328638497695,
+    "rank": 381
+  },
+  {
+    "api_name": "dask.array.core.reshape",
+    "score": 0.15155075187969969,
+    "rank": 382
+  },
+  {
+    "api_name": "dask.array.percentile.merge_percentiles",
+    "score": 0.14788732394366122,
+    "rank": 383
+  },
+  {
+    "api_name": "dask.array.tests.test_image.test_imread_with_custom_function",
+    "score": 0.14565899581589936,
+    "rank": 384
+  },
+  {
+    "api_name": "dask.array.tests.test_image.test_preprocess",
+    "score": 0.14565899581589936,
+    "rank": 384
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_reductions_2D_nans",
+    "score": 0.13918439716312137,
+    "rank": 386
+  },
+  {
+    "api_name": "dask.array.linalg.tsqr",
+    "score": 0.1381233595800505,
+    "rank": 387
+  },
+  {
+    "api_name": "dask.array.linalg.lu",
+    "score": 0.1293609261021227,
+    "rank": 388
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_1d",
+    "score": 0.1278880331753558,
+    "rank": 389
+  },
+  {
+    "api_name": "dask.array.optimization.fuse_slice",
+    "score": 0.12732160312805552,
+    "rank": 390
+  },
+  {
+    "api_name": "dask.array.tests.test_image.test_imread",
+    "score": 0.12566844919786102,
+    "rank": 391
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_random_all",
+    "score": 0.10886711281070738,
+    "rank": 392
+  },
+  {
+    "api_name": "dask.array.tests.test_chunk.test_integer_input",
+    "score": 0.10443864229764976,
+    "rank": 393
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.test_arange_has_dtype",
+    "score": 0.10443864229764976,
+    "rank": 393
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_doc_randomstate",
+    "score": 0.10443864229764976,
+    "rank": 393
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_new_blockdim",
+    "score": 0.10443864229764976,
+    "rank": 393
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_uneven_chunks",
+    "score": 0.10443864229764976,
+    "rank": 393
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_docs",
+    "score": 0.09999999999999987,
+    "rank": 398
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_singleton_value_on_boundary",
+    "score": 0.09999999999999987,
+    "rank": 398
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_fft_consistent_names",
+    "score": 0.09592326139088725,
+    "rank": 400
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_wrap_consistent_names",
+    "score": 0.09216589861751134,
+    "rank": 401
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_fuse_slice_with_lists",
+    "score": 0.088691796008869,
+    "rank": 402
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_fuse_slice",
+    "score": 0.08547008547008528,
+    "rank": 403
+  }
+]

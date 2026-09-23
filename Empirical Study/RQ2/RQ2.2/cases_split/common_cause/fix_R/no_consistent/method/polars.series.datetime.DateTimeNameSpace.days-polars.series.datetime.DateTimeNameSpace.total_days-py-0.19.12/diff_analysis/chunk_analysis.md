@@ -1,0 +1,25 @@
+# Diff 分块分析：py-polars.polars.series.datetime.DateTimeNameSpace.days-py-polars.polars.series.datetime.DateTimeNameSpace.total_days-py-0.19.12
+## 文件定位
+
+- 旧文件：/media/he/Rbench/similarity/RQ2/split2.0/common_cause/fix_R/consistent/method/py-polars.polars.series.datetime.DateTimeNameSpace.days-py-polars.polars.series.datetime.DateTimeNameSpace.total_days-py-0.19.12/py-polars.polars.series.datetime.DateTimeNameSpace.days/Vi-1_py-0.19.12.py
+- 新文件：/media/he/Rbench/similarity/RQ2/split2.0/common_cause/fix_R/consistent/method/py-polars.polars.series.datetime.DateTimeNameSpace.days-py-polars.polars.series.datetime.DateTimeNameSpace.total_days-py-0.19.12/py-polars.polars.series.datetime.DateTimeNameSpace.days/Vi_py-0.19.13.py
+- 目标文件（Target）：/media/he/Rbench/similarity/RQ2/split2.0/common_cause/fix_R/consistent/method/py-polars.polars.series.datetime.DateTimeNameSpace.days-py-polars.polars.series.datetime.DateTimeNameSpace.total_days-py-0.19.12/R_candidates/py-1.0.0/py-polars.polars.series.datetime.DateTimeNameSpace.total_days.py
+- 实验组：fix_R
+- 总变更：+5 / -28 行
+- 分块数：4
+
+## Block 1 — block_001.patch
+定位：@@ -1,1 +1,2 @@
+说明：@deprecate_renamed_function("total_days", version="0.19.13")
+
+## Block 2 — block_002.patch
+定位：@@ -2,3 +3,3 @@
+说明：Extract the days from a Duration type.、Extract the total days from a Duration type.
+
+## Block 3 — block_003.patch
+定位：@@ -4,29 +5,4 @@
+说明：Returns、-------、Series...
+
+## Block 4 — block_004.patch
+定位：@@ -33,1 +9,2 @@
+说明：return self.total_days()

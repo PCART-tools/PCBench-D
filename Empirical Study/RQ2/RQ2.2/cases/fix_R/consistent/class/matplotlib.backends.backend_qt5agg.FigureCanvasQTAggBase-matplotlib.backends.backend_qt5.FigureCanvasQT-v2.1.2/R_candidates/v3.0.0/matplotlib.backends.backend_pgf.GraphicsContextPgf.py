@@ -1,0 +1,2 @@
+class GraphicsContextPgf(GraphicsContextBase):
+    pass

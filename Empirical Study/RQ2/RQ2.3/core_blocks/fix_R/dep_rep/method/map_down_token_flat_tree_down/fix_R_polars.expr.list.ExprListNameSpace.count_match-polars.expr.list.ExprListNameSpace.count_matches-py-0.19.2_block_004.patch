@@ -1,0 +1,5 @@
+@@ -27,3 +14,2 @@
+         """
+-        element = parse_as_expression(element, str_as_lit=True)
+-        return wrap_expr(self._pyexpr.list_count_match(element))
++        return self.count_matches(element)

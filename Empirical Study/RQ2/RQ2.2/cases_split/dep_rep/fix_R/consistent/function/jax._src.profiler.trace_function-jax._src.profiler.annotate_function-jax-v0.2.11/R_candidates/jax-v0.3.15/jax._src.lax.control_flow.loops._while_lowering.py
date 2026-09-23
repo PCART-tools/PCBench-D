@@ -1,0 +1,131 @@
+def _while_lowering(ctx, *args, cond_jaxpr, body_jaxpr, cond_nconsts,
+                    body_nconsts):
+  pred_aval = cond_jaxpr.out_avals[0]
+  batched = bool(pred_aval.shape)
+  cond_ordered_effects = [eff for eff in cond_jaxpr.effects if eff in
+                          core.ordered_effects]
+  if cond_ordered_effects:
+    # For a while loop with ordered effects in the cond, we need a special
+    # lowering. Fundamentally, we'd like to rewrite a while loop that looks like
+    # this:
+    # ```
+    # while cond(x):
+    #   x = body(x)
+    # ```
+    # into something that looks like this:
+    # ```
+    # while True:
+    #   token, pred = cond(token, x)
+    #   if not pred:
+    #     break
+    #   token, x = body(token, x)
+    # ```
+    # Unfortunately, with an MHLO while we can't (1) return multiple values
+    # from a `cond` and (2) can't break a while loop. We thus adopt the
+    # following rewrite strategy:
+    # ```
+    # def new_cond(pred, token, x):
+    #   return pred
+    # token, pred = cond(token, x)
+    # while new_cond(pred, token, x):
+    #   token, x = body(token, x)
+    #   token, pred = cond(token, x)
+    # ```
+    def cond(args):
+      return core.eval_jaxpr(cond_jaxpr.jaxpr, cond_jaxpr.consts, *args)[0]
+    def body(args):
+      return tuple(core.eval_jaxpr(body_jaxpr.jaxpr, body_jaxpr.consts, *args))
+    def new_cond(pred_args):
+      pred, _ = pred_args
+      return pred
+    def new_body(pred_args):
+      _, args  = pred_args
+      args = body(args)
+      pred = cond(args)
+      return pred, args
+    def fun(*args):
+      pred = cond(args)
+      _, out = while_loop(new_cond, new_body, (pred, args))
+      return out
+    return mlir.lower_fun(fun)(ctx, *args)
+
+  loop_carry_types = _map(mlir.aval_to_ir_types, ctx.avals_in)
+  body_effects = [eff for eff in body_jaxpr.effects
+                  if eff in core.ordered_effects]
+  num_tokens = len(body_effects)
+  tokens = [ctx.tokens_in.get(eff) for eff in body_effects]
+  token_types = [mlir.token_type() for _ in tokens]
+  loop_carry_types = [*token_types, *loop_carry_types]
+  flat_loop_carry_types = util.flatten(loop_carry_types)
+  args = [*tokens, *args]
+
+  flat_args = mlir.flatten_lowering_ir_args(args)
+  while_op = mhlo.WhileOp(flat_loop_carry_types, flat_args)
+
+  # Loop condition
+  cond_block = while_op.regions[0].blocks.append(*flat_loop_carry_types)
+  name_stack = extend_name_stack(ctx.module_context.name_stack, 'while')
+  with ir.InsertionPoint(cond_block):
+    flat_cond_args = [
+        cond_block.arguments[i] for i in range(len(flat_loop_carry_types))
+    ]
+    cond_args = util.unflatten(flat_cond_args, _map(len, loop_carry_types))
+    # Remove tokens from cond args
+    cond_args = cond_args[num_tokens:]
+    x, _, z = util.split_list(cond_args, [cond_nconsts, body_nconsts])
+    cond_ctx = ctx.module_context.replace(
+        name_stack=xla.extend_name_stack(name_stack, 'cond'))
+    ((pred,),), _ = mlir.jaxpr_subcomp(cond_ctx, cond_jaxpr.jaxpr, mlir.TokenSet(),
+                                    _map(mlir.ir_constants, cond_jaxpr.consts),
+                                    *(x + z))
+    if batched:
+      pred_ctx = mlir.LoweringRuleContext(
+          module_context=ctx.module_context,
+          primitive=None,
+          avals_in=[pred_aval],
+          avals_out=[pred_aval.update(shape=())],
+          tokens_in=mlir.TokenSet(),
+          tokens_out=None)
+      pred, = lax._unary_reduce_lower(
+          mhlo.OrOp,
+          lambda dtype: np.array(False, dtype),
+          pred_ctx,
+          pred,
+          axes=tuple(range(len(pred_aval.shape))))
+    mhlo.ReturnOp([pred])
+
+  # Loop body
+  body_block = while_op.regions[1].blocks.append(*flat_loop_carry_types)
+  with ir.InsertionPoint(body_block):
+    flat_body_args = [
+        body_block.arguments[i] for i in range(len(flat_loop_carry_types))
+    ]
+    body_args = util.unflatten(flat_body_args, _map(len, loop_carry_types))
+    # Tokens are at the front of the args list to the while loop
+    token_args, body_args = util.split_list(body_args, [num_tokens])
+    tokens_in = mlir.TokenSet(zip(body_effects, token_args))
+    x, y, z = util.split_list(body_args, [cond_nconsts, body_nconsts])
+    body_ctx = ctx.module_context.replace(
+        name_stack=xla.extend_name_stack(name_stack, 'body'))
+    new_z, tokens_out = mlir.jaxpr_subcomp(body_ctx, body_jaxpr.jaxpr,
+        tokens_in, _map(mlir.ir_constants, body_jaxpr.consts), *(y + z))
+    out_tokens = [tokens_out.get(eff) for eff in body_effects]
+    if batched:
+      body_pred_ctx = ctx.module_context.replace(
+          name_stack=xla.extend_name_stack(name_stack,
+                                           'body_pred'))
+      ((body_pred,),), _ = mlir.jaxpr_subcomp(
+          body_pred_ctx, cond_jaxpr.jaxpr, mlir.TokenSet(),
+          _map(mlir.ir_constants, cond_jaxpr.consts), *(x + z))
+      new_z = _map(
+          partial(_pred_bcast_select_mhlo, pred_aval, body_pred), new_z, z,
+          body_jaxpr.out_avals)
+
+    mhlo.ReturnOp([*util.flatten(out_tokens), *util.flatten(x),
+                   *util.flatten(y), *util.flatten(new_z)])
+
+  outputs = util.unflatten(while_op.results, _map(len, loop_carry_types))
+  tokens, _, _, z = util.split_list(outputs, [num_tokens, cond_nconsts, body_nconsts])
+  if tokens:
+    ctx.set_tokens_out(mlir.TokenSet(zip(body_effects, tokens)))
+  return z

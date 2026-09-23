@@ -1,0 +1,129 @@
+{
+  "case": "matplotlib.axis.Tick.apply_tickdir-matplotlib.axis.Axis.set_tick_params-v3.4.3",
+  "fix_type": "fix_R",
+  "candidate_api": "matplotlib.axis.Axis.set_tick_params",
+  "error": null,
+  "threshold_10pct": 480.3,
+  "algorithms_meeting_threshold": [
+    "tokenBased",
+    "treeBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 4484,
+      "vi_rank": 4369,
+      "delta": 115,
+      "exceeds_10pct": false
+    },
+    "tokenBased": {
+      "vi1_rank": 2823,
+      "vi_rank": 4326,
+      "delta": -1503,
+      "exceeds_10pct": true
+    },
+    "treeBased": {
+      "vi1_rank": 3588,
+      "vi_rank": 4406,
+      "delta": -818,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.251,
+      "baseline_rank": 4484,
+      "delta_baseline_to_vi": 115
+    },
+    "tokenBased": {
+      "baseline_score": 0.2065,
+      "baseline_rank": 2823,
+      "delta_baseline_to_vi": -1503
+    },
+    "treeBased": {
+      "baseline_score": 0.3091,
+      "baseline_rank": 3588,
+      "delta_baseline_to_vi": -818
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 4369,
+          "vi_score": 0.2111,
+          "restored_score": 0.2111,
+          "restored_rank": 4369,
+          "delta_vi_to_restored": 0
+        },
+        "tokenBased": {
+          "vi_rank": 4326,
+          "vi_score": 0.0728,
+          "restored_score": 0.0733,
+          "restored_rank": 4327,
+          "delta_vi_to_restored": -1,
+          "distance_to_baseline": 1504
+        },
+        "treeBased": {
+          "vi_rank": 4406,
+          "vi_score": 0.1823,
+          "restored_score": 0.1559,
+          "restored_rank": 4415,
+          "delta_vi_to_restored": -9,
+          "distance_to_baseline": 827
+        }
+      }
+    },
+    {
+      "block": "block_002",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 4369,
+          "vi_score": 0.2111,
+          "restored_score": 0.251,
+          "restored_rank": 4484,
+          "delta_vi_to_restored": -115
+        },
+        "tokenBased": {
+          "vi_rank": 4326,
+          "vi_score": 0.0728,
+          "restored_score": 0.2051,
+          "restored_rank": 2781,
+          "delta_vi_to_restored": 1545,
+          "distance_to_baseline": 42
+        },
+        "treeBased": {
+          "vi_rank": 4406,
+          "vi_score": 0.1823,
+          "restored_score": 0.3274,
+          "restored_rank": 3047,
+          "delta_vi_to_restored": 1359,
+          "distance_to_baseline": 541
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "tokenBased": [
+      "block_002"
+    ],
+    "treeBased": [
+      "block_002"
+    ],
+    "mapBased": [
+      "block_002"
+    ]
+  },
+  "block_sign_labels": {
+    "map_up_token_down_tree_down": [
+      "block_002"
+    ]
+  }
+}

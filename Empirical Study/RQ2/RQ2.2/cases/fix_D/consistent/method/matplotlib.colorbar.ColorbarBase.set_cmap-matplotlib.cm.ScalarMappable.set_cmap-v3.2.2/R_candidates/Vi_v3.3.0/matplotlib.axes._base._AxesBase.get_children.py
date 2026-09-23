@@ -1,0 +1,17 @@
+    def get_children(self):
+        # docstring inherited.
+        return [
+            *self.collections,
+            *self.patches,
+            *self.lines,
+            *self.texts,
+            *self.artists,
+            *self.spines.values(),
+            *self._get_axis_list(),
+            self.title, self._left_title, self._right_title,
+            *self.tables,
+            *self.images,
+            *self.child_axes,
+            *([self.legend_] if self.legend_ is not None else []),
+            self.patch,
+        ]

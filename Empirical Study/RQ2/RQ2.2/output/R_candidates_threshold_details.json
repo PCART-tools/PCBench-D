@@ -1,0 +1,1241 @@
+{
+  "candidates_cause/fix_D/consistent": {
+    "total": 43,
+    "exceed": 40,
+    "pct": 93.0,
+    "details": [
+      {
+        "case": "aiohttp.connector.SocketConnector-aiohttp.connector.UnixConnector-v0.7.3",
+        "granularity": "class",
+        "vi1_py": 41,
+        "vi_py": 48,
+        "change": 7,
+        "change_rate": 0.1707,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "pandas.core.indexes.numeric.Float64Index-pandas.core.indexes.base.Index-v1.5.3",
+        "granularity": "class",
+        "vi1_py": 25,
+        "vi_py": 21,
+        "change": -4,
+        "change_rate": -0.16,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "pandas.core.indexes.numeric.Int64Index-pandas.core.indexes.base.Index-v1.5.3",
+        "granularity": "class",
+        "vi1_py": 25,
+        "vi_py": 21,
+        "change": -4,
+        "change_rate": -0.16,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "pandas.core.indexes.numeric.UInt64Index-pandas.core.indexes.base.Index-v1.5.3",
+        "granularity": "class",
+        "vi1_py": 25,
+        "vi_py": 21,
+        "change": -4,
+        "change_rate": -0.16,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "sklearn.mixture.dpgmm.VBGMM-sklearn.mixture.bayesian_mixture.BayesianGaussianMixture-0.19.2",
+        "granularity": "class",
+        "vi1_py": 24,
+        "vi_py": 4,
+        "change": -20,
+        "change_rate": -0.8333,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "networkx.algorithms.community.quality.coverage-networkx.algorithms.community.quality.partition_quality-networkx-2.6.2",
+        "granularity": "function",
+        "vi1_py": 68,
+        "vi_py": 78,
+        "change": 10,
+        "change_rate": 0.1471,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "networkx.algorithms.community.quality.coverage-networkx.algorithms.community.quality.partition_quality-networkx-2.6.3",
+        "granularity": "function",
+        "vi1_py": 78,
+        "vi_py": 92,
+        "change": 14,
+        "change_rate": 0.1795,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "networkx.algorithms.community.quality.coverage-networkx.algorithms.community.quality.partition_quality-networkx-3.4.2",
+        "granularity": "function",
+        "vi1_py": 107,
+        "vi_py": 129,
+        "change": 22,
+        "change_rate": 0.2056,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "networkx.algorithms.community.quality.performance-networkx.algorithms.community.quality.partition_quality-networkx-2.6.3",
+        "granularity": "function",
+        "vi1_py": 78,
+        "vi_py": 92,
+        "change": 14,
+        "change_rate": 0.1795,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "networkx.algorithms.community.quality.performance-networkx.algorithms.community.quality.partition_quality-networkx-3.4.2",
+        "granularity": "function",
+        "vi1_py": 107,
+        "vi_py": 129,
+        "change": 22,
+        "change_rate": 0.2056,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "networkx.utils.misc.dict_to_numpy_array1-networkx.utils.misc.dict_to_numpy_array-networkx-2.8.8",
+        "granularity": "function",
+        "vi1_py": 89,
+        "vi_py": 66,
+        "change": -23,
+        "change_rate": -0.2584,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "networkx.utils.misc.dict_to_numpy_array2-networkx.utils.misc.dict_to_numpy_array-networkx-2.8.8",
+        "granularity": "function",
+        "vi1_py": 89,
+        "vi_py": 66,
+        "change": -23,
+        "change_rate": -0.2584,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "networkx.utils.misc.dict_to_numpy_array2-networkx.utils.misc.dict_to_numpy_array-networkx-3.5",
+        "granularity": "function",
+        "vi1_py": 96,
+        "vi_py": 107,
+        "change": 11,
+        "change_rate": 0.1146,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "networkx.utils.misc.is_list_of_ints-networkx.utils.misc.make_list_of_ints-networkx-2.8.8",
+        "granularity": "function",
+        "vi1_py": 89,
+        "vi_py": 66,
+        "change": -23,
+        "change_rate": -0.2584,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "numpy.lib.npyio.mafromtxt-numpy.lib.npyio.genfromtxt-v1.22.4",
+        "granularity": "function",
+        "vi1_py": 580,
+        "vi_py": 652,
+        "change": 72,
+        "change_rate": 0.1241,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "pandas.core.reshape.convert_dummies-pandas.core.reshape.get_dummies-v0.18.1",
+        "granularity": "function",
+        "vi1_py": 401,
+        "vi_py": 330,
+        "change": -71,
+        "change_rate": -0.1771,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.constants.constants.C2F-scipy.constants.constants.convert_temperature-v0.19.1",
+        "granularity": "function",
+        "vi1_py": 32,
+        "vi_py": 20,
+        "change": -12,
+        "change_rate": -0.375,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.constants.constants.C2K-scipy.constants.constants.convert_temperature-v0.19.1",
+        "granularity": "function",
+        "vi1_py": 32,
+        "vi_py": 20,
+        "change": -12,
+        "change_rate": -0.375,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.constants.constants.F2C-scipy.constants.constants.convert_temperature-v0.19.1",
+        "granularity": "function",
+        "vi1_py": 32,
+        "vi_py": 20,
+        "change": -12,
+        "change_rate": -0.375,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.constants.constants.F2K-scipy.constants.constants.convert_temperature-v0.19.1",
+        "granularity": "function",
+        "vi1_py": 32,
+        "vi_py": 20,
+        "change": -12,
+        "change_rate": -0.375,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.constants.constants.K2C-scipy.constants.constants.convert_temperature-v0.19.1",
+        "granularity": "function",
+        "vi1_py": 32,
+        "vi_py": 20,
+        "change": -12,
+        "change_rate": -0.375,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.constants.constants.K2F-scipy.constants.constants.convert_temperature-v0.19.1",
+        "granularity": "function",
+        "vi1_py": 32,
+        "vi_py": 20,
+        "change": -12,
+        "change_rate": -0.375,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.integrate._quadrature.quadrature-scipy.integrate._quadpack_py.quad-v1.14.1",
+        "granularity": "function",
+        "vi1_py": 248,
+        "vi_py": 278,
+        "change": 30,
+        "change_rate": 0.121,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.integrate._quadrature.simps-scipy.integrate._quadrature.simpson-v1.14.1",
+        "granularity": "function",
+        "vi1_py": 248,
+        "vi_py": 278,
+        "change": 30,
+        "change_rate": 0.121,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.linalg.matfuncs.expm2-scipy.linalg.matfuncs.expm-v0.15.1",
+        "granularity": "function",
+        "vi1_py": 244,
+        "vi_py": 284,
+        "change": 40,
+        "change_rate": 0.1639,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.linalg.matfuncs.expm3-scipy.linalg.matfuncs.expm-v0.15.1",
+        "granularity": "function",
+        "vi1_py": 244,
+        "vi_py": 284,
+        "change": 40,
+        "change_rate": 0.1639,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.optimize.anneal.anneal-scipy.optimize._basinhopping.basinhopping-v0.16.1",
+        "granularity": "function",
+        "vi1_py": 215,
+        "vi_py": 306,
+        "change": 91,
+        "change_rate": 0.4233,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.optimize.anneal.anneal-scipy.optimize._basinhopping.basinhopping-v0.19.1",
+        "granularity": "function",
+        "vi1_py": 308,
+        "vi_py": 341,
+        "change": 33,
+        "change_rate": 0.1071,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.special.basic.sph_in-scipy.special._spherical_bessel.spherical_in-v0.18.1",
+        "granularity": "function",
+        "vi1_py": 303,
+        "vi_py": 364,
+        "change": 61,
+        "change_rate": 0.2013,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.special.basic.sph_jn-scipy.special._spherical_bessel.spherical_jn-v0.18.1",
+        "granularity": "function",
+        "vi1_py": 303,
+        "vi_py": 364,
+        "change": 61,
+        "change_rate": 0.2013,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.special.basic.sph_kn-scipy.special._spherical_bessel.spherical_kn-v0.18.1",
+        "granularity": "function",
+        "vi1_py": 303,
+        "vi_py": 364,
+        "change": 61,
+        "change_rate": 0.2013,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "scipy.special.basic.sph_yn-scipy.special._spherical_bessel.spherical_yn-v0.18.1",
+        "granularity": "function",
+        "vi1_py": 303,
+        "vi_py": 364,
+        "change": 61,
+        "change_rate": 0.2013,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "sklearn.datasets.lfw.load_lfw_pairs-sklearn.datasets.lfw.fetch_lfw_pairs-0.19.2",
+        "granularity": "function",
+        "vi1_py": 166,
+        "vi_py": 213,
+        "change": 47,
+        "change_rate": 0.2831,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "django.db.backends.postgresql.operations.DatabaseOperations.ignore_conflicts_suffix_sql-django.db.backends.postgresql.operations.DatabaseOperations.on_conflict_suffix_sql-4.1.7",
+        "granularity": "method",
+        "vi1_py": 83,
+        "vi_py": 96,
+        "change": 13,
+        "change_rate": 0.1566,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "httpx._models.Response.stream-httpx._models.Response.aiter_bytes-0.14.3",
+        "granularity": "method",
+        "vi1_py": 330,
+        "vi_py": 304,
+        "change": -26,
+        "change_rate": -0.0788,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.categorical.Categorical.sort-pandas.core.categorical.Categorical.sort_values-v0.19.2",
+        "granularity": "method",
+        "vi1_py": 1332,
+        "vi_py": 2456,
+        "change": 1124,
+        "change_rate": 0.8438,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "pandas.core.frame.DataFrame.sortlevel-pandas.core.frame.DataFrame.sort_index-v0.23.4",
+        "granularity": "method",
+        "vi1_py": 2609,
+        "vi_py": 2901,
+        "change": 292,
+        "change_rate": 0.1119,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "pandas.core.indexes.base.Index.to_native_types-pandas.core.indexes.base.Index.astype-v1.2.5",
+        "granularity": "method",
+        "vi1_py": 624,
+        "vi_py": 590,
+        "change": -34,
+        "change_rate": -0.0545,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.panel.Panel.reindex_axis-pandas.core.generic.NDFrame.reindex-v0.23.4",
+        "granularity": "method",
+        "vi1_py": 2609,
+        "vi_py": 2901,
+        "change": 292,
+        "change_rate": 0.1119,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "pandas.core.series.Series.sortlevel-pandas.core.series.Series.sort_index-v0.23.4",
+        "granularity": "method",
+        "vi1_py": 2609,
+        "vi_py": 2901,
+        "change": 292,
+        "change_rate": 0.1119,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "pandas.io.formats.style.Styler.set_na_rep-pandas.io.formats.style_render.StylerRenderer.format-v2.0.3",
+        "granularity": "method",
+        "vi1_py": 417,
+        "vi_py": 364,
+        "change": -53,
+        "change_rate": -0.1271,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "pandas.io.formats.style.Styler.set_precision-pandas.io.formats.style_render.StylerRenderer.format-v1.3.5",
+        "granularity": "method",
+        "vi1_py": 384,
+        "vi_py": 415,
+        "change": 31,
+        "change_rate": 0.0807,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.io.formats.style.Styler.set_precision-pandas.io.formats.style_render.StylerRenderer.format-v2.0.3",
+        "granularity": "method",
+        "vi1_py": 417,
+        "vi_py": 364,
+        "change": -53,
+        "change_rate": -0.1271,
+        "exceeds_10pct": true
+      }
+    ]
+  },
+  "candidates_cause/fix_D/no_consistent": {
+    "total": 2,
+    "exceed": 2,
+    "pct": 100.0,
+    "details": [
+      {
+        "case": "polars.io.read_sql-polars.io.database.read_database-py-0.16.14",
+        "granularity": "function",
+        "vi1_py": 25,
+        "vi_py": 52,
+        "change": 27,
+        "change_rate": 1.08,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "transformers.trainer_tf.TFTrainer._setup_wandb-transformers.trainer_tf.TFTrainer.setup_wandb-v3.3.1",
+        "granularity": "method",
+        "vi1_py": 2849,
+        "vi_py": 4023,
+        "change": 1174,
+        "change_rate": 0.4121,
+        "exceeds_10pct": true
+      }
+    ]
+  },
+  "common_cause/fix_D/consistent": {
+    "total": 11,
+    "exceed": 0,
+    "pct": 0.0,
+    "details": [
+      {
+        "case": "sklearn.cluster.hierarchical.WardAgglomeration-sklearn.cluster.hierarchical.AgglomerativeClustering-0.17.1-1",
+        "granularity": "class",
+        "vi1_py": 16,
+        "vi_py": 16,
+        "change": 0,
+        "change_rate": 0.0,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "sklearn.cluster.hierarchical.WardAgglomeration-sklearn.cluster.hierarchical.AgglomerativeClustering-0.18.2",
+        "granularity": "class",
+        "vi1_py": 16,
+        "vi_py": 17,
+        "change": 1,
+        "change_rate": 0.0625,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "jax._src.dispatch.device_put-jax._src.api.device_put-jax-v0.4.14",
+        "granularity": "function",
+        "vi1_py": 3357,
+        "vi_py": 3600,
+        "change": 243,
+        "change_rate": 0.0724,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "jax._src.numpy.lax_numpy.msort-jax._src.numpy.lax_numpy.sort-jax-v0.4.14",
+        "granularity": "function",
+        "vi1_py": 467,
+        "vi_py": 471,
+        "change": 4,
+        "change_rate": 0.0086,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "lightgbm.callback.print_evaluation-lightgbm.callback.log_evaluation-v3.3.5",
+        "granularity": "function",
+        "vi1_py": 70,
+        "vi_py": 74,
+        "change": 4,
+        "change_rate": 0.0571,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "polars.string_cache.toggle_string_cache-polars.string_cache.enable_string_cache-py-0.19.3",
+        "granularity": "function",
+        "vi1_py": 369,
+        "vi_py": 380,
+        "change": 11,
+        "change_rate": 0.0298,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "django.db.models.fields.files.FileField.get_directory_name-django.db.models.fields.files.FileField.generate_filename-1.11.8",
+        "granularity": "method",
+        "vi1_py": 408,
+        "vi_py": 413,
+        "change": 5,
+        "change_rate": 0.0123,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.arrays.base.ExtensionArray._formatting_values-pandas.core.arrays.base.ExtensionArray._formatter-v0.24.2",
+        "granularity": "method",
+        "vi1_py": 512,
+        "vi_py": 526,
+        "change": 14,
+        "change_rate": 0.0273,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.indexes.base.Index.to_native_types-pandas.core.indexes.base.Index.astype-v1.3.5",
+        "granularity": "method",
+        "vi1_py": 590,
+        "vi_py": 585,
+        "change": -5,
+        "change_rate": -0.0085,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.indexes.base.Index.to_native_types-pandas.core.indexes.base.Index.astype-v1.5.3",
+        "granularity": "method",
+        "vi1_py": 590,
+        "vi_py": 566,
+        "change": -24,
+        "change_rate": -0.0407,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.panel.Panel.fillna-pandas.core.generic.NDFrame.fillna-v0.16.0",
+        "granularity": "method",
+        "vi1_py": 1421,
+        "vi_py": 1491,
+        "change": 70,
+        "change_rate": 0.0493,
+        "exceeds_10pct": false
+      }
+    ]
+  },
+  "common_cause/fix_D/no_consistent": {
+    "total": 10,
+    "exceed": 0,
+    "pct": 0.0,
+    "details": [
+      {
+        "case": "jax._src.numpy.setops.in1d-jax._src.numpy.setops.isin-jax-v0.4.31",
+        "granularity": "function",
+        "vi1_py": 567,
+        "vi_py": 616,
+        "change": 49,
+        "change_rate": 0.0864,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.dtypes.common.is_datetimetz-pandas.core.dtypes.common.is_datetime64tz_dtype-v1.0.5",
+        "granularity": "function",
+        "vi1_py": 112,
+        "vi_py": 113,
+        "change": 1,
+        "change_rate": 0.0089,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "scipy.stats.stats.glm-scipy.stats.stats.ttest_ind-v0.16.1",
+        "granularity": "function",
+        "vi1_py": 371,
+        "vi_py": 380,
+        "change": 9,
+        "change_rate": 0.0243,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "dask.array.core.Array.to_imperative-dask.array.core.Array.to_delayed-0.14.3",
+        "granularity": "method",
+        "vi1_py": 146,
+        "vi_py": 158,
+        "change": 12,
+        "change_rate": 0.0822,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.frame.DataFrame.reindex_axis-pandas.core.frame.DataFrame.reindex-v0.25.3",
+        "granularity": "method",
+        "vi1_py": 2853,
+        "vi_py": 2699,
+        "change": -154,
+        "change_rate": -0.054,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "PIL.ImageFont.FreeTypeFont.getoffset-PIL.ImageFont.FreeTypeFont.getlength-10.3.0",
+        "granularity": "method",
+        "vi1_py": 815,
+        "vi_py": 822,
+        "change": 7,
+        "change_rate": 0.0086,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "PIL.ImageFont.FreeTypeFont.getoffset-PIL.ImageFont.FreeTypeFont.getlength-10.4.0",
+        "granularity": "method",
+        "vi1_py": 822,
+        "vi_py": 800,
+        "change": -22,
+        "change_rate": -0.0268,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "polars.expr.expr.Expr.shift_and_fill-polars.expr.expr.Expr.shift-py-0.20.31",
+        "granularity": "method",
+        "vi1_py": 496,
+        "vi_py": 457,
+        "change": -39,
+        "change_rate": -0.0786,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "polars.series.series.Series.shift_and_fill-polars.series.series.Series.shift-py-0.20.31",
+        "granularity": "method",
+        "vi1_py": 474,
+        "vi_py": 430,
+        "change": -44,
+        "change_rate": -0.0928,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "transformers.trainer_tf.TFTrainer._setup_wandb-transformers.trainer_tf.TFTrainer.setup_wandb-v3.5.1",
+        "granularity": "method",
+        "vi1_py": 4188,
+        "vi_py": 4257,
+        "change": 69,
+        "change_rate": 0.0165,
+        "exceeds_10pct": false
+      }
+    ]
+  },
+  "dep_rep/fix_D/consistent": {
+    "total": 50,
+    "exceed": 3,
+    "pct": 6.0,
+    "details": [
+      {
+        "case": "aiohttp.connector.SocketConnector-aiohttp.connector.UnixConnector-v0.8.1",
+        "granularity": "class",
+        "vi1_py": 52,
+        "vi_py": 52,
+        "change": 0,
+        "change_rate": 0.0,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "dask.context.set_options-dask.config.set-0.18.0",
+        "granularity": "class",
+        "vi1_py": 112,
+        "vi_py": 112,
+        "change": 0,
+        "change_rate": 0.0,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "matplotlib.colorbar.ColorbarPatch-matplotlib.colorbar.Colorbar-v3.4.3",
+        "granularity": "class",
+        "vi1_py": 829,
+        "vi_py": 833,
+        "change": 4,
+        "change_rate": 0.0048,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "sklearn.cross_validation.LeavePLabelOut-sklearn.model_selection._split.LeavePGroupsOut-0.18",
+        "granularity": "class",
+        "vi1_py": 33,
+        "vi_py": 35,
+        "change": 2,
+        "change_rate": 0.0606,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "tensorflow.python.summary.summary_iterator.SummaryWriter-tensorflow.python.summary.writer.writer.FileWriter-v1.12.0",
+        "granularity": "class",
+        "vi1_py": 10,
+        "vi_py": 10,
+        "change": 0,
+        "change_rate": 0.0,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "dask.array.reductions.vnorm-dask.array.linalg.norm-0.19.0",
+        "granularity": "function",
+        "vi1_py": 1087,
+        "vi_py": 1092,
+        "change": 5,
+        "change_rate": 0.0046,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "dask.bag.core.from_s3-dask.bag.text.read_text-0.12.0",
+        "granularity": "function",
+        "vi1_py": 37,
+        "vi_py": 38,
+        "change": 1,
+        "change_rate": 0.027,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "dask.imperative.value-dask.delayed.delayed-0.11.0",
+        "granularity": "function",
+        "vi1_py": 972,
+        "vi_py": 1005,
+        "change": 33,
+        "change_rate": 0.034,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "dask.imperative.value-dask.delayed.delayed-0.13.0",
+        "granularity": "function",
+        "vi1_py": 1086,
+        "vi_py": 1113,
+        "change": 27,
+        "change_rate": 0.0249,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "jax._src.tree_util.register_keypaths-jax._src.tree_util.register_pytree_with_keys-jax-v0.4.6",
+        "granularity": "function",
+        "vi1_py": 3152,
+        "vi_py": 3151,
+        "change": -1,
+        "change_rate": -0.0003,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "matplotlib.cbook.local_over_kwdict-matplotlib.cbook.normalize_kwargs-v3.4.3",
+        "granularity": "function",
+        "vi1_py": 2392,
+        "vi_py": 2535,
+        "change": 143,
+        "change_rate": 0.0598,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.dtypes.common.is_extension_type-pandas.core.dtypes.common.is_extension_array_dtype-v1.2.5",
+        "granularity": "function",
+        "vi1_py": 115,
+        "vi_py": 126,
+        "change": 11,
+        "change_rate": 0.0957,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "scipy.linalg.matfuncs.expm2-scipy.linalg.matfuncs.expm-v0.19.1",
+        "granularity": "function",
+        "vi1_py": 300,
+        "vi_py": 312,
+        "change": 12,
+        "change_rate": 0.04,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "scipy.linalg.matfuncs.expm3-scipy.linalg.matfuncs.expm-v0.19.1",
+        "granularity": "function",
+        "vi1_py": 300,
+        "vi_py": 312,
+        "change": 12,
+        "change_rate": 0.04,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "scipy.stats.stats.glm-scipy.stats.stats.ttest_ind-v0.16.0",
+        "granularity": "function",
+        "vi1_py": 371,
+        "vi_py": 371,
+        "change": 0,
+        "change_rate": 0.0,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "torch._export.export-torch.export.export-v2.7.1",
+        "granularity": "function",
+        "vi1_py": 13392,
+        "vi_py": 13813,
+        "change": 421,
+        "change_rate": 0.0314,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "torch.is_deterministic-torch.use_deterministic_algorithms-v1.10.2",
+        "granularity": "function",
+        "vi1_py": 6795,
+        "vi_py": 7518,
+        "change": 723,
+        "change_rate": 0.1064,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "aiohttp.web_reqrep.StreamResponse.start-aiohttp.web_reqrep.StreamResponse.prepare-v1.1.6",
+        "granularity": "method",
+        "vi1_py": 765,
+        "vi_py": 790,
+        "change": 25,
+        "change_rate": 0.0327,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "dask.bag.core.Bag.to_imperative-dask.bag.core.Bag.to_delayed-0.14.3",
+        "granularity": "method",
+        "vi1_py": 52,
+        "vi_py": 60,
+        "change": 8,
+        "change_rate": 0.1538,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_indexes-django.db.backends.oracle.introspection.DatabaseIntrospection.get_constraints-1.11.8",
+        "granularity": "method",
+        "vi1_py": 140,
+        "vi_py": 145,
+        "change": 5,
+        "change_rate": 0.0357,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "django.db.backends.oracle.introspection.DatabaseIntrospection.get_indexes-django.db.backends.oracle.introspection.DatabaseIntrospection.get_constraints-2.1.8",
+        "granularity": "method",
+        "vi1_py": 150,
+        "vi_py": 149,
+        "change": -1,
+        "change_rate": -0.0067,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_indexes-django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_constraints-1.11.8",
+        "granularity": "method",
+        "vi1_py": 78,
+        "vi_py": 81,
+        "change": 3,
+        "change_rate": 0.0385,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle-matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles-v3.8.4",
+        "granularity": "method",
+        "vi1_py": 804,
+        "vi_py": 812,
+        "change": 8,
+        "change_rate": 0.01,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "matplotlib.colorbar._ColorbarMappableDummy.set_norm-matplotlib.cm.ScalarMappable.set_norm-v3.1.3",
+        "granularity": "method",
+        "vi1_py": 4918,
+        "vi_py": 4902,
+        "change": -16,
+        "change_rate": -0.0033,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "matplotlib.colorbar._ColorbarMappableDummy.set_norm-matplotlib.cm.ScalarMappable.set_norm-v3.2.2",
+        "granularity": "method",
+        "vi1_py": 4908,
+        "vi_py": 4801,
+        "change": -107,
+        "change_rate": -0.0218,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "matplotlib.colorbar._ColorbarMappableDummy.set_norm-matplotlib.cm.ScalarMappable.set_norm-v3.4.3",
+        "granularity": "method",
+        "vi1_py": 4786,
+        "vi_py": 4823,
+        "change": 37,
+        "change_rate": 0.0077,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "matplotlib.colorbar.ColorbarBase.set_cmap-matplotlib.cm.ScalarMappable.set_cmap-v3.2.2",
+        "granularity": "method",
+        "vi1_py": 4908,
+        "vi_py": 4801,
+        "change": -107,
+        "change_rate": -0.0218,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.arrays.categorical.Categorical.take_nd-pandas.core.arrays.categorical.Categorical.take-v1.0.5",
+        "granularity": "method",
+        "vi1_py": 584,
+        "vi_py": 602,
+        "change": 18,
+        "change_rate": 0.0308,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.frame.DataFrame.__invert__-pandas.core.generic.NDFrame.__invert__-v0.13.1",
+        "granularity": "method",
+        "vi1_py": 1250,
+        "vi_py": 1264,
+        "change": 14,
+        "change_rate": 0.0112,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.frame.DataFrame.__neg__-pandas.core.generic.NDFrame.__neg__-v0.13.1",
+        "granularity": "method",
+        "vi1_py": 1250,
+        "vi_py": 1264,
+        "change": 14,
+        "change_rate": 0.0112,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.frame.DataFrame.mask-pandas.core.generic.NDFrame.mask-v0.16.0",
+        "granularity": "method",
+        "vi1_py": 1421,
+        "vi_py": 1491,
+        "change": 70,
+        "change_rate": 0.0493,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.frame.DataFrame.slice_shift-pandas.core.frame.DataFrame.shift-v1.4.4",
+        "granularity": "method",
+        "vi1_py": 3180,
+        "vi_py": 3319,
+        "change": 139,
+        "change_rate": 0.0437,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.frame.DataFrame.slice_shift-pandas.core.frame.DataFrame.shift-v2.0.3",
+        "granularity": "method",
+        "vi1_py": 3392,
+        "vi_py": 3524,
+        "change": 132,
+        "change_rate": 0.0389,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.frame.DataFrame.take-pandas.core.generic.NDFrame.take-v0.13.1",
+        "granularity": "method",
+        "vi1_py": 1250,
+        "vi_py": 1264,
+        "change": 14,
+        "change_rate": 0.0112,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.indexes.base.Index.to_native_types-pandas.core.indexes.base.Index.astype-v1.4.4",
+        "granularity": "method",
+        "vi1_py": 586,
+        "vi_py": 590,
+        "change": 4,
+        "change_rate": 0.0068,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.panel.Panel.__invert__-pandas.core.generic.NDFrame.__invert__-v0.13.1",
+        "granularity": "method",
+        "vi1_py": 1250,
+        "vi_py": 1264,
+        "change": 14,
+        "change_rate": 0.0112,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.panel.Panel.__neg__-pandas.core.generic.NDFrame.__neg__-v0.13.1",
+        "granularity": "method",
+        "vi1_py": 1250,
+        "vi_py": 1264,
+        "change": 14,
+        "change_rate": 0.0112,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.panel.Panel.fillna-pandas.core.generic.NDFrame.fillna-v0.14.1",
+        "granularity": "method",
+        "vi1_py": 1280,
+        "vi_py": 1385,
+        "change": 105,
+        "change_rate": 0.082,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.series.Series.mask-pandas.core.generic.NDFrame.mask-v0.16.0",
+        "granularity": "method",
+        "vi1_py": 1421,
+        "vi_py": 1491,
+        "change": 70,
+        "change_rate": 0.0493,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "PIL.ImageDraw.ImageDraw.multiline_textsize-PIL.ImageDraw.ImageDraw.multiline_textbbox-10.0.1",
+        "granularity": "method",
+        "vi1_py": 800,
+        "vi_py": 803,
+        "change": 3,
+        "change_rate": 0.0037,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "PIL.ImageDraw.ImageDraw.multiline_textsize-PIL.ImageDraw.ImageDraw.multiline_textbbox-11.1.0",
+        "granularity": "method",
+        "vi1_py": 803,
+        "vi_py": 817,
+        "change": 14,
+        "change_rate": 0.0174,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "PIL.ImageFont.FreeTypeFont.getsize_multiline-PIL.ImageDraw.ImageDraw.multiline_textbbox-10.0.1",
+        "granularity": "method",
+        "vi1_py": 800,
+        "vi_py": 803,
+        "change": 3,
+        "change_rate": 0.0037,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "PIL.ImageFont.FreeTypeFont.getsize_multiline-PIL.ImageDraw.ImageDraw.multiline_textbbox-11.1.0",
+        "granularity": "method",
+        "vi1_py": 803,
+        "vi_py": 817,
+        "change": 14,
+        "change_rate": 0.0174,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "polars.dataframe.frame.DataFrame.groupby-polars.dataframe.frame.DataFrame.group_by-py-1.1.0",
+        "granularity": "method",
+        "vi1_py": 212,
+        "vi_py": 211,
+        "change": -1,
+        "change_rate": -0.0047,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "polars.expr.expr.Expr.map_dict-polars.expr.expr.Expr.replace-py-0.19.19",
+        "granularity": "method",
+        "vi1_py": 443,
+        "vi_py": 443,
+        "change": 0,
+        "change_rate": 0.0,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "polars.expr.expr.Expr.take_every-polars.expr.expr.Expr.gather_every-py-0.20.2",
+        "granularity": "method",
+        "vi1_py": 443,
+        "vi_py": 446,
+        "change": 3,
+        "change_rate": 0.0068,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "polars.expr.string.ExprStringNameSpace.strip-polars.expr.string.ExprStringNameSpace.strip_chars-py-0.19.3",
+        "granularity": "method",
+        "vi1_py": 401,
+        "vi_py": 402,
+        "change": 1,
+        "change_rate": 0.0025,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "polars.internals.dataframe.frame.DataFrame.iterrows-polars.internals.dataframe.frame.DataFrame.iter_rows-py-0.16.1",
+        "granularity": "method",
+        "vi1_py": 176,
+        "vi_py": 177,
+        "change": 1,
+        "change_rate": 0.0057,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "polars.lazyframe.frame.LazyFrame.groupby-polars.lazyframe.frame.LazyFrame.group_by-py-1.1.0",
+        "granularity": "method",
+        "vi1_py": 120,
+        "vi_py": 120,
+        "change": 0,
+        "change_rate": 0.0,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "sympy.stats.frv.FinitePSpace.integrate-sympy.stats.frv.FinitePSpace.compute_expectation-sympy-1.4",
+        "granularity": "method",
+        "vi1_py": 441,
+        "vi_py": 619,
+        "change": 178,
+        "change_rate": 0.4036,
+        "exceeds_10pct": true
+      }
+    ]
+  },
+  "dep_rep/fix_D/no_consistent": {
+    "total": 17,
+    "exceed": 2,
+    "pct": 11.8,
+    "details": [
+      {
+        "case": "sklearn.cross_validation.LabelKFold-sklearn.model_selection._split.GroupKFold-0.18",
+        "granularity": "class",
+        "vi1_py": 33,
+        "vi_py": 35,
+        "change": 2,
+        "change_rate": 0.0606,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "sklearn.cross_validation.LabelKFold-sklearn.model_selection._split.GroupKFold-0.20.0",
+        "granularity": "class",
+        "vi1_py": 40,
+        "vi_py": 42,
+        "change": 2,
+        "change_rate": 0.05,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "sklearn.cross_validation.LabelShuffleSplit-sklearn.model_selection._split.GroupShuffleSplit-0.20.0",
+        "granularity": "class",
+        "vi1_py": 40,
+        "vi_py": 42,
+        "change": 2,
+        "change_rate": 0.05,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "sklearn.cross_validation.LeaveOneLabelOut-sklearn.model_selection._split.LeaveOneGroupOut-0.20.0",
+        "granularity": "class",
+        "vi1_py": 40,
+        "vi_py": 42,
+        "change": 2,
+        "change_rate": 0.05,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "sklearn.cross_validation.LeavePLabelOut-sklearn.model_selection._split.LeavePGroupsOut-0.20.0",
+        "granularity": "class",
+        "vi1_py": 40,
+        "vi_py": 42,
+        "change": 2,
+        "change_rate": 0.05,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pandas.core.dtypes.common.is_categorical-pandas.core.dtypes.common.is_categorical_dtype-v2.0.3",
+        "granularity": "function",
+        "vi1_py": 125,
+        "vi_py": 122,
+        "change": -3,
+        "change_rate": -0.024,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "scipy.stats.stats.glm-scipy.stats.stats.ttest_ind-v0.13.3",
+        "granularity": "function",
+        "vi1_py": 353,
+        "vi_py": 355,
+        "change": 2,
+        "change_rate": 0.0057,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "scipy.stats.stats.glm-scipy.stats.stats.ttest_ind-v0.15.1",
+        "granularity": "function",
+        "vi1_py": 382,
+        "vi_py": 371,
+        "change": -11,
+        "change_rate": -0.0288,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "aiohttp.web_urldispatcher.DynamicResource.url-aiohttp.web_urldispatcher.DynamicResource.url_for-v2.3.10",
+        "granularity": "method",
+        "vi1_py": 963,
+        "vi_py": 971,
+        "change": 8,
+        "change_rate": 0.0083,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "dask.bag.core.Item.from_imperative-dask.bag.core.Item.from_delayed-0.13.0",
+        "granularity": "method",
+        "vi1_py": 52,
+        "vi_py": 52,
+        "change": 0,
+        "change_rate": 0.0,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "dask.bag.core.Item.to_imperative-dask.bag.core.Item.to_delayed-0.14.3",
+        "granularity": "method",
+        "vi1_py": 52,
+        "vi_py": 60,
+        "change": 8,
+        "change_rate": 0.1538,
+        "exceeds_10pct": true
+      },
+      {
+        "case": "pandas.core.frame.DataFrame.reindex_axis-pandas.core.frame.DataFrame.reindex-v1.0.1",
+        "granularity": "method",
+        "vi1_py": 2702,
+        "vi_py": 2703,
+        "change": 1,
+        "change_rate": 0.0004,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "PIL.ImageFont.FreeTypeFont.getsize-PIL.ImageFont.FreeTypeFont.getlength-10.4.0",
+        "granularity": "method",
+        "vi1_py": 822,
+        "vi_py": 800,
+        "change": -22,
+        "change_rate": -0.0268,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "polars.dataframe.frame.DataFrame.take_every-polars.dataframe.frame.DataFrame.gather_every-py-0.20.2",
+        "granularity": "method",
+        "vi1_py": 225,
+        "vi_py": 227,
+        "change": 2,
+        "change_rate": 0.0089,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "polars.series.list.ListNameSpace.count_match-polars.series.list.ListNameSpace.count_matches-py-0.20.4",
+        "granularity": "method",
+        "vi1_py": 456,
+        "vi_py": 457,
+        "change": 1,
+        "change_rate": 0.0022,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "polars.series.series.Series.take_every-polars.series.series.Series.gather_every-py-0.20.2",
+        "granularity": "method",
+        "vi1_py": 439,
+        "vi_py": 445,
+        "change": 6,
+        "change_rate": 0.0137,
+        "exceeds_10pct": false
+      },
+      {
+        "case": "pydantic.main.BaseModel.values-pydantic.main.BaseModel.dict-v0.11.2",
+        "granularity": "method",
+        "vi1_py": 93,
+        "vi_py": 105,
+        "change": 12,
+        "change_rate": 0.129,
+        "exceeds_10pct": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+@@ -88,7 +113,3 @@
+                     pred[v] = u
+-                    no_changes = False
+-        if no_changes:
+-            break
+-    else:
+-        raise nx.NetworkXUnbounded("Negative cost cycle detected.")
++
+     return pred, dist

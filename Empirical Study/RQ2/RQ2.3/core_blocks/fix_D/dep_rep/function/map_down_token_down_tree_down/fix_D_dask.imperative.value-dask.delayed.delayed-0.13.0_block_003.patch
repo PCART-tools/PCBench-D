@@ -1,0 +1,8 @@
+@@ -140,3 +147,7 @@
+  
+-    task, dasks = to_task_dasks(obj)
++    if isinstance(obj, base.Base) or traverse:
++        task, dsk = to_task_dask(obj)
++    else:
++        task = quote(obj)
++        dsk = {}

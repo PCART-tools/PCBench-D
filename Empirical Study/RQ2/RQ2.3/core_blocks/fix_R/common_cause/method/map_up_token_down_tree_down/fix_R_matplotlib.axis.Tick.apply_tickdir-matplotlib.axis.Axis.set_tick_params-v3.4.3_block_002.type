@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation code block
+   Replaced the body of `apply_tickdir`.
+   The original implementation included:
+
+   * Conditional statement: when `tickdir` was `None`, read the direction value from `mpl.rcParams` and assign it to `tickdir`;
+   * API call: call `_api.check_in_list` to validate that `tickdir` was `'in'`, `'out'`, or `'inout'`;
+   * Assignment statement: assign `tickdir` to `self._tickdir`;
+   * Assignment statement: update `self._pad` based on `self._base_pad` and `self.get_tick_padding()`.
+
+   The new implementation includes:
+
+   * Method call: call `self._apply_tickdir(tickdir)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with call statement)

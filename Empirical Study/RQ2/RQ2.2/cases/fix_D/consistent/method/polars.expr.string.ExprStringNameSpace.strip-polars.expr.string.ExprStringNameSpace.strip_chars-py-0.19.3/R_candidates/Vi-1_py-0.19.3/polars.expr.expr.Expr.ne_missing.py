@@ -1,0 +1,39 @@
+    def ne_missing(self, other: Any) -> Self:
+        """
+        Method equivalent of equality operator ``expr != other`` where `None` == None`.
+
+        This differs from default ``ne`` where null values are propagated.
+
+        Parameters
+        ----------
+        other
+            A literal or expression value to compare with.
+
+        Examples
+        --------
+        >>> df = pl.DataFrame(
+        ...     data={
+        ...         "x": [1.0, 2.0, float("nan"), 4.0, None, None],
+        ...         "y": [2.0, 2.0, float("nan"), 4.0, 5.0, None],
+        ...     }
+        ... )
+        >>> df.with_columns(
+        ...     pl.col("x").ne(pl.col("y")).alias("x ne y"),
+        ...     pl.col("x").ne_missing(pl.col("y")).alias("x ne_missing y"),
+        ... )
+        shape: (6, 4)
+        ┌──────┬──────┬────────┬────────────────┐
+        │ x    ┆ y    ┆ x ne y ┆ x ne_missing y │
+        │ ---  ┆ ---  ┆ ---    ┆ ---            │
+        │ f64  ┆ f64  ┆ bool   ┆ bool           │
+        ╞══════╪══════╪════════╪════════════════╡
+        │ 1.0  ┆ 2.0  ┆ true   ┆ true           │
+        │ 2.0  ┆ 2.0  ┆ false  ┆ false          │
+        │ NaN  ┆ NaN  ┆ true   ┆ true           │
+        │ 4.0  ┆ 4.0  ┆ false  ┆ false          │
+        │ null ┆ 5.0  ┆ null   ┆ true           │
+        │ null ┆ null ┆ null   ┆ false          │
+        └──────┴──────┴────────┴────────────────┘
+
+        """
+        return self._from_pyexpr(self._pyexpr.neq_missing(self._to_expr(other)._pyexpr))

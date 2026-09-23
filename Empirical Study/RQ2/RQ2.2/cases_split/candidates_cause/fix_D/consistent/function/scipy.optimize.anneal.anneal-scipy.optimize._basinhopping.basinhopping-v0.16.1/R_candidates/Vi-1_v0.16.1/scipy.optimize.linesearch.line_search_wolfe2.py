@@ -1,0 +1,100 @@
+def line_search_wolfe2(f, myfprime, xk, pk, gfk=None, old_fval=None,
+                       old_old_fval=None, args=(), c1=1e-4, c2=0.9, amax=50):
+    """Find alpha that satisfies strong Wolfe conditions.
+
+    Parameters
+    ----------
+    f : callable f(x,*args)
+        Objective function.
+    myfprime : callable f'(x,*args)
+        Objective function gradient.
+    xk : ndarray
+        Starting point.
+    pk : ndarray
+        Search direction.
+    gfk : ndarray, optional
+        Gradient value for x=xk (xk being the current parameter
+        estimate). Will be recomputed if omitted.
+    old_fval : float, optional
+        Function value for x=xk. Will be recomputed if omitted.
+    old_old_fval : float, optional
+        Function value for the point preceding x=xk
+    args : tuple, optional
+        Additional arguments passed to objective function.
+    c1 : float, optional
+        Parameter for Armijo condition rule.
+    c2 : float, optional
+        Parameter for curvature condition rule.
+    amax : float, optional
+        Maximum step size
+
+    Returns
+    -------
+    alpha : float or None
+        Alpha for which ``x_new = x0 + alpha * pk``,
+        or None if the line search algorithm did not converge.
+    fc : int
+        Number of function evaluations made.
+    gc : int
+        Number of gradient evaluations made.
+    new_fval : float or None
+        New function value ``f(x_new)=f(x0+alpha*pk)``,
+        or None if the line search algorithm did not converge.
+    old_fval : float
+        Old function value ``f(x0)``.
+    new_slope : float or None
+        The local slope along the search direction at the
+        new value ``<myfprime(x_new), pk>``,
+        or None if the line search algorithm did not converge.
+
+
+    Notes
+    -----
+    Uses the line search algorithm to enforce strong Wolfe
+    conditions.  See Wright and Nocedal, 'Numerical Optimization',
+    1999, pg. 59-60.
+
+    For the zoom phase it uses an algorithm by [...].
+
+    """
+    fc = [0]
+    gc = [0]
+    gval = [None]
+
+    def phi(alpha):
+        fc[0] += 1
+        return f(xk + alpha * pk, *args)
+
+    if isinstance(myfprime, tuple):
+        def derphi(alpha):
+            fc[0] += len(xk) + 1
+            eps = myfprime[1]
+            fprime = myfprime[0]
+            newargs = (f, eps) + args
+            gval[0] = fprime(xk + alpha * pk, *newargs)  # store for later use
+            return np.dot(gval[0], pk)
+    else:
+        fprime = myfprime
+
+        def derphi(alpha):
+            gc[0] += 1
+            gval[0] = fprime(xk + alpha * pk, *args)  # store for later use
+            return np.dot(gval[0], pk)
+
+    if gfk is None:
+        gfk = fprime(xk, *args)
+    derphi0 = np.dot(gfk, pk)
+
+    alpha_star, phi_star, old_fval, derphi_star = scalar_search_wolfe2(
+            phi, derphi, old_fval, old_old_fval, derphi0, c1, c2, amax)
+
+    if derphi_star is None:
+        warn('The line search algorithm did not converge', LineSearchWarning)
+    else:
+        # derphi_star is a number (derphi) -- so use the most recently
+        # calculated gradient used in computing it derphi = gfk*pk
+        # this is the gradient at the next step no need to compute it
+        # again in the outer loop.
+        derphi_star = gval[0]
+
+    return alpha_star, fc[0], gc[0], phi_star, old_fval, derphi_star

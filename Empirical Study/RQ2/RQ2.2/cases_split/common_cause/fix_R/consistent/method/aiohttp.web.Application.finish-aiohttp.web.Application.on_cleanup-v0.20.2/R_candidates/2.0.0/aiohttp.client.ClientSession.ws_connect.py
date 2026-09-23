@@ -1,0 +1,26 @@
+    def ws_connect(self, url, *,
+                   protocols=(),
+                   timeout=10.0,
+                   receive_timeout=None,
+                   autoclose=True,
+                   autoping=True,
+                   heartbeat=None,
+                   auth=None,
+                   origin=None,
+                   headers=None,
+                   proxy=None,
+                   proxy_auth=None):
+        """Initiate websocket connection."""
+        return _WSRequestContextManager(
+            self._ws_connect(url,
+                             protocols=protocols,
+                             timeout=timeout,
+                             receive_timeout=receive_timeout,
+                             autoclose=autoclose,
+                             autoping=autoping,
+                             heartbeat=heartbeat,
+                             auth=auth,
+                             origin=origin,
+                             headers=headers,
+                             proxy=proxy,
+                             proxy_auth=proxy_auth))

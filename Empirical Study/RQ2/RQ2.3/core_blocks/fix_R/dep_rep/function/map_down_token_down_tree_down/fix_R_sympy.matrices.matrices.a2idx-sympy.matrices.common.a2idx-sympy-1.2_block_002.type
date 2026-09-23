@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Function implementation
+   Replaced the original index validation and conversion logic of `a2idx(j, n=None)` with importing and directly calling `sympy.matrices.common.a2idx`.
+   The original implementation included:
+   * Type checking and retrieval through `__index__()`;
+   * Negative-index adjustment and range checking when `n` was not null;
+   * Return of `int(j)`.
+
+   The new implementation includes:
+   * Import `a2idx` from `sympy.matrices.common` under the name `a2idx_`;
+   * Directly `return a2idx_(j, n)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with import statement and return-call statement)

@@ -1,0 +1,417 @@
+[
+  {
+    "api_name": "polars.functions.lazy.map_batches",
+    "score": 0.9367088607594937,
+    "rank": 1
+  },
+  {
+    "api_name": "polars.functions.lazy.map_groups",
+    "score": 0.7956989247311828,
+    "rank": 2
+  },
+  {
+    "api_name": "polars.functions.lazy.reduce",
+    "score": 0.5111111111111111,
+    "rank": 3
+  },
+  {
+    "api_name": "polars.functions.lazy.cum_reduce",
+    "score": 0.4742268041237113,
+    "rank": 4
+  },
+  {
+    "api_name": "polars.functions.lazy.fold",
+    "score": 0.45714285714285713,
+    "rank": 5
+  },
+  {
+    "api_name": "polars.functions.lazy.cum_fold",
+    "score": 0.4152542372881356,
+    "rank": 6
+  },
+  {
+    "api_name": "polars.functions.repeat.ones",
+    "score": 0.41509433962264153,
+    "rank": 7
+  },
+  {
+    "api_name": "polars.functions.repeat.zeros",
+    "score": 0.41509433962264153,
+    "rank": 7
+  },
+  {
+    "api_name": "polars.functions.repeat.repeat",
+    "score": 0.373134328358209,
+    "rank": 9
+  },
+  {
+    "api_name": "polars.functions.lazy.exclude",
+    "score": 0.3592233009708738,
+    "rank": 10
+  },
+  {
+    "api_name": "polars.functions.lazy.arctan2",
+    "score": 0.3486238532110092,
+    "rank": 11
+  },
+  {
+    "api_name": "polars.functions.as_datatype.concat_str",
+    "score": 0.33962264150943394,
+    "rank": 12
+  },
+  {
+    "api_name": "polars.functions.lazy.field",
+    "score": 0.3372093023255814,
+    "rank": 13
+  },
+  {
+    "api_name": "polars.functions.lazy.arctan2d",
+    "score": 0.33707865168539325,
+    "rank": 14
+  },
+  {
+    "api_name": "polars.functions.lazy.sql_expr",
+    "score": 0.32989690721649484,
+    "rank": 15
+  },
+  {
+    "api_name": "polars.functions.range.int_range.arange",
+    "score": 0.30708661417322836,
+    "rank": 16
+  },
+  {
+    "api_name": "polars.functions.as_datatype.date_",
+    "score": 0.2956521739130435,
+    "rank": 17
+  },
+  {
+    "api_name": "polars.functions.lazy.arg_sort_by",
+    "score": 0.2922077922077922,
+    "rank": 18
+  },
+  {
+    "api_name": "polars.functions.lazy.coalesce",
+    "score": 0.28865979381443296,
+    "rank": 19
+  },
+  {
+    "api_name": "polars.functions.lazy.nth",
+    "score": 0.28865979381443296,
+    "rank": 19
+  },
+  {
+    "api_name": "polars.functions.lazy.quantile",
+    "score": 0.2857142857142857,
+    "rank": 21
+  },
+  {
+    "api_name": "polars.functions.aggregation.horizontal.all_horizontal",
+    "score": 0.2826086956521739,
+    "rank": 22
+  },
+  {
+    "api_name": "polars.functions.aggregation.horizontal.any_horizontal",
+    "score": 0.2826086956521739,
+    "rank": 22
+  },
+  {
+    "api_name": "polars.functions.aggregation.horizontal.max_horizontal",
+    "score": 0.2826086956521739,
+    "rank": 22
+  },
+  {
+    "api_name": "polars.functions.aggregation.horizontal.mean_horizontal",
+    "score": 0.2826086956521739,
+    "rank": 22
+  },
+  {
+    "api_name": "polars.functions.aggregation.horizontal.min_horizontal",
+    "score": 0.2826086956521739,
+    "rank": 22
+  },
+  {
+    "api_name": "polars.functions.aggregation.horizontal.sum_horizontal",
+    "score": 0.2826086956521739,
+    "rank": 22
+  },
+  {
+    "api_name": "polars.functions.lazy.rolling_corr",
+    "score": 0.28169014084507044,
+    "rank": 28
+  },
+  {
+    "api_name": "polars.functions.lazy.rolling_cov",
+    "score": 0.28169014084507044,
+    "rank": 28
+  },
+  {
+    "api_name": "polars.functions.as_datatype.time_",
+    "score": 0.2805755395683453,
+    "rank": 30
+  },
+  {
+    "api_name": "polars.functions.as_datatype.concat_list",
+    "score": 0.28,
+    "rank": 31
+  },
+  {
+    "api_name": "polars.functions.lazy.arg_where",
+    "score": 0.26515151515151514,
+    "rank": 32
+  },
+  {
+    "api_name": "polars.functions.lazy.cov",
+    "score": 0.2621359223300971,
+    "rank": 33
+  },
+  {
+    "api_name": "polars.functions.range._utils.parse_interval_argument",
+    "score": 0.25,
+    "rank": 34
+  },
+  {
+    "api_name": "polars.functions.aggregation.horizontal.cum_sum_horizontal",
+    "score": 0.24347826086956523,
+    "rank": 35
+  },
+  {
+    "api_name": "polars.functions.range.int_range.int_ranges",
+    "score": 0.24324324324324326,
+    "rank": 36
+  },
+  {
+    "api_name": "polars.functions.lazy.from_epoch",
+    "score": 0.2411764705882353,
+    "rank": 37
+  },
+  {
+    "api_name": "polars.functions.range.int_range.int_range",
+    "score": 0.2393617021276596,
+    "rank": 38
+  },
+  {
+    "api_name": "polars.functions.business.business_day_count",
+    "score": 0.23417721518987342,
+    "rank": 39
+  },
+  {
+    "api_name": "polars.functions.range.date_range.date_range",
+    "score": 0.22988505747126436,
+    "rank": 40
+  },
+  {
+    "api_name": "polars.functions.range.date_range.date_ranges",
+    "score": 0.22988505747126436,
+    "rank": 40
+  },
+  {
+    "api_name": "polars.functions.as_datatype.struct",
+    "score": 0.22981366459627328,
+    "rank": 42
+  },
+  {
+    "api_name": "polars.functions.aggregation.vertical.all",
+    "score": 0.22826086956521738,
+    "rank": 43
+  },
+  {
+    "api_name": "polars.functions.lazy.first",
+    "score": 0.22727272727272727,
+    "rank": 44
+  },
+  {
+    "api_name": "polars.functions.lazy.last",
+    "score": 0.22727272727272727,
+    "rank": 44
+  },
+  {
+    "api_name": "polars.functions.whenthen.when",
+    "score": 0.22641509433962265,
+    "rank": 46
+  },
+  {
+    "api_name": "polars.functions.as_datatype.format",
+    "score": 0.2185430463576159,
+    "rank": 47
+  },
+  {
+    "api_name": "polars.functions.repeat._one_or_zero_by_dtype",
+    "score": 0.21621621621621623,
+    "rank": 48
+  },
+  {
+    "api_name": "polars.functions.lazy.head",
+    "score": 0.20930232558139536,
+    "rank": 49
+  },
+  {
+    "api_name": "polars.functions.lazy.std",
+    "score": 0.20930232558139536,
+    "rank": 49
+  },
+  {
+    "api_name": "polars.functions.lazy.tail",
+    "score": 0.20930232558139536,
+    "rank": 49
+  },
+  {
+    "api_name": "polars.functions.lazy.var",
+    "score": 0.20930232558139536,
+    "rank": 49
+  },
+  {
+    "api_name": "polars.functions.lazy.cum_count",
+    "score": 0.20224719101123595,
+    "rank": 53
+  },
+  {
+    "api_name": "polars.functions.aggregation.vertical.any",
+    "score": 0.2,
+    "rank": 54
+  },
+  {
+    "api_name": "polars.functions.lazy.count",
+    "score": 0.2,
+    "rank": 54
+  },
+  {
+    "api_name": "polars.functions.lazy.groups",
+    "score": 0.19753086419753085,
+    "rank": 56
+  },
+  {
+    "api_name": "polars.functions.range.datetime_range.datetime_range",
+    "score": 0.19523809523809524,
+    "rank": 57
+  },
+  {
+    "api_name": "polars.functions.range.datetime_range.datetime_ranges",
+    "score": 0.19523809523809524,
+    "rank": 57
+  },
+  {
+    "api_name": "polars.functions.range.time_range.time_range",
+    "score": 0.19339622641509435,
+    "rank": 59
+  },
+  {
+    "api_name": "polars.functions.range.time_range.time_ranges",
+    "score": 0.19339622641509435,
+    "rank": 59
+  },
+  {
+    "api_name": "polars.functions.lazy.corr",
+    "score": 0.19047619047619047,
+    "rank": 61
+  },
+  {
+    "api_name": "polars.functions.eager._alignment_join",
+    "score": 0.18994413407821228,
+    "rank": 62
+  },
+  {
+    "api_name": "polars.functions.aggregation.vertical.max",
+    "score": 0.18292682926829268,
+    "rank": 63
+  },
+  {
+    "api_name": "polars.functions.aggregation.vertical.min",
+    "score": 0.18292682926829268,
+    "rank": 63
+  },
+  {
+    "api_name": "polars.functions.aggregation.vertical.sum",
+    "score": 0.18292682926829268,
+    "rank": 63
+  },
+  {
+    "api_name": "polars.functions.lazy.implode",
+    "score": 0.18292682926829268,
+    "rank": 63
+  },
+  {
+    "api_name": "polars.functions.lazy.mean",
+    "score": 0.18292682926829268,
+    "rank": 63
+  },
+  {
+    "api_name": "polars.functions.lazy.median",
+    "score": 0.18292682926829268,
+    "rank": 63
+  },
+  {
+    "api_name": "polars.functions.eager.align_frames",
+    "score": 0.18115942028985507,
+    "rank": 69
+  },
+  {
+    "api_name": "polars.functions.aggregation.vertical.cum_sum",
+    "score": 0.17647058823529413,
+    "rank": 70
+  },
+  {
+    "api_name": "polars.functions.lazy.n_unique",
+    "score": 0.17647058823529413,
+    "rank": 70
+  },
+  {
+    "api_name": "polars.functions.lazy.select",
+    "score": 0.17475728155339806,
+    "rank": 72
+  },
+  {
+    "api_name": "polars.functions.lazy.approx_n_unique",
+    "score": 0.17045454545454544,
+    "rank": 73
+  },
+  {
+    "api_name": "polars.functions.col._create_col",
+    "score": 0.16917293233082706,
+    "rank": 74
+  },
+  {
+    "api_name": "polars.functions.len.len",
+    "score": 0.1518987341772152,
+    "rank": 75
+  },
+  {
+    "api_name": "polars.functions.as_datatype.datetime_",
+    "score": 0.1453900709219858,
+    "rank": 76
+  },
+  {
+    "api_name": "polars.functions.as_datatype.duration",
+    "score": 0.1282051282051282,
+    "rank": 77
+  },
+  {
+    "api_name": "polars.functions.lazy.element",
+    "score": 0.1125,
+    "rank": 78
+  },
+  {
+    "api_name": "polars.functions.lazy.collect_all",
+    "score": 0.10185185185185185,
+    "rank": 79
+  },
+  {
+    "api_name": "polars.functions.lazy.collect_all_async",
+    "score": 0.0944206008583691,
+    "rank": 80
+  },
+  {
+    "api_name": "polars.functions.random.set_random_seed",
+    "score": 0.0898876404494382,
+    "rank": 81
+  },
+  {
+    "api_name": "polars.functions.lit.lit",
+    "score": 0.08167330677290836,
+    "rank": 82
+  },
+  {
+    "api_name": "polars.functions.eager.concat",
+    "score": 0.05227655986509275,
+    "rank": 83
+  }
+]

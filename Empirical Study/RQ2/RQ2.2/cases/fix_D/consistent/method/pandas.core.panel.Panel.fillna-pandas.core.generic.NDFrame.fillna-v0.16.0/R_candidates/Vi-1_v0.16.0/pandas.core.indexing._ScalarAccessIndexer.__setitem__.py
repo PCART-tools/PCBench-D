@@ -1,0 +1,9 @@
+    def __setitem__(self, key, value):
+        if not isinstance(key, tuple):
+            key = self._tuplify(key)
+        if len(key) != self.obj.ndim:
+            raise ValueError('Not enough indexers for scalar access '
+                             '(setting)!')
+        key = list(self._convert_key(key, is_setter=True))
+        key.append(value)
+        self.obj.set_value(*key, takeable=self._takeable)

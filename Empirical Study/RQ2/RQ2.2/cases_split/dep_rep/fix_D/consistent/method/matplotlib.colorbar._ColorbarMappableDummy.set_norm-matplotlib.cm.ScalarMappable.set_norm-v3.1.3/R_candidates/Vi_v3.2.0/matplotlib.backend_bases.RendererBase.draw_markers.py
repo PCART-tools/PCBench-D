@@ -1,0 +1,33 @@
+    def draw_markers(self, gc, marker_path, marker_trans, path,
+                     trans, rgbFace=None):
+        """
+        Draw a marker at each of the vertices in path.
+
+        This includes all vertices, including control points on curves.
+        To avoid that behavior, those vertices should be removed before
+        calling this function.
+
+        This provides a fallback implementation of draw_markers that
+        makes multiple calls to :meth:`draw_path`.  Some backends may
+        want to override this method in order to draw the marker only
+        once and reuse it multiple times.
+
+        Parameters
+        ----------
+        gc : `GraphicsContextBase`
+            The graphics context.
+
+        marker_trans : `matplotlib.transforms.Transform`
+            An affine transform applied to the marker.
+
+        trans : `matplotlib.transforms.Transform`
+            An affine transform applied to the path.
+
+        """
+        for vertices, codes in path.iter_segments(trans, simplify=False):
+            if len(vertices):
+                x, y = vertices[-2:]
+                self.draw_path(gc, marker_path,
+                               marker_trans +
+                               transforms.Affine2D().translate(x, y),
+                               rgbFace)

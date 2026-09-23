@@ -1,0 +1,10 @@
+@@ -6,5 +15,6 @@
+         ----------
+-        subset : IndexSlice
+-            An argument to ``DataFrame.loc`` that identifies which columns
+-            are hidden.
++        subset : label, array-like, IndexSlice, optional
++            A valid 1d input or single key along the columns axis within
++            `DataFrame.loc[:, <subset>]`, to limit ``data`` to *before* applying
++            the function.
+  

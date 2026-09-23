@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Function implementation code block
+   Changed the body of `convert_mesh_to_paths` from directly processing `coordinates`, concatenating and reshaping point arrays, and constructing a list of `mpath.Path` objects to directly returning the result of `QuadMesh._convert_mesh_to_paths(coordinates)`.
+   The original implementation included:
+
+   * Conditional statement: select `coordinates.data` or `coordinates` depending on whether `coordinates` was an `np.ma.MaskedArray`;
+   * Assignment statement: concatenate the four corner coordinates of the grid using `np.concatenate` and assign the result to `points`;
+   * Assignment statement: reshape `points` through `points.reshape((meshWidth * meshHeight, 5, 2))`;
+   * Return statement: return a list constructed with `mpath.Path(x)`.
+
+   The new implementation includes:
+
+   * Return statement: return the result of `QuadMesh._convert_mesh_to_paths(coordinates)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with return-call statement)

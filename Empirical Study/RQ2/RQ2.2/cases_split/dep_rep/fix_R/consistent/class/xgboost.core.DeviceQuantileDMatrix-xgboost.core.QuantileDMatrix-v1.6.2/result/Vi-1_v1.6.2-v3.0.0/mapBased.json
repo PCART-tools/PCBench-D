@@ -1,0 +1,427 @@
+[
+  {
+    "api_name": "xgboost.core.QuantileDMatrix",
+    "score": 0.7327401239262841,
+    "rank": 1
+  },
+  {
+    "api_name": "xgboost.core.ExtMemQuantileDMatrix",
+    "score": 0.5494627111787616,
+    "rank": 2
+  },
+  {
+    "api_name": "xgboost.dask.DaskQuantileDMatrix",
+    "score": 0.37569584225643854,
+    "rank": 3
+  },
+  {
+    "api_name": "xgboost.testing.data.PBM",
+    "score": 0.26779548021265326,
+    "rank": 4
+  },
+  {
+    "api_name": "xgboost.spark.core.SparkXGBModelReader",
+    "score": 0.26305657710016733,
+    "rank": 5
+  },
+  {
+    "api_name": "xgboost.callback.LearningRateScheduler",
+    "score": 0.24389628683736345,
+    "rank": 6
+  },
+  {
+    "api_name": "xgboost.spark.core.SparkXGBModelWriter",
+    "score": 0.24001809552704592,
+    "rank": 7
+  },
+  {
+    "api_name": "xgboost.federated.FederatedTracker",
+    "score": 0.22236413043478265,
+    "rank": 8
+  },
+  {
+    "api_name": "xgboost.dask.DaskXGBRegressor",
+    "score": 0.21627007032908718,
+    "rank": 9
+  },
+  {
+    "api_name": "xgboost.spark.core.SparkXGBReader",
+    "score": 0.21159528811294098,
+    "rank": 10
+  },
+  {
+    "api_name": "xgboost.spark.core.SparkXGBWriter",
+    "score": 0.20654025115683558,
+    "rank": 11
+  },
+  {
+    "api_name": "xgboost.callback.TrainingCheckPoint",
+    "score": 0.18886561291039114,
+    "rank": 12
+  },
+  {
+    "api_name": "xgboost._data_utils.Array",
+    "score": 0.18497139064846463,
+    "rank": 13
+  },
+  {
+    "api_name": "xgboost.testing.DirectoryExcursion",
+    "score": 0.16589577800579436,
+    "rank": 14
+  },
+  {
+    "api_name": "xgboost.testing.data_iter._InvalidCatIter",
+    "score": 0.1541412340913994,
+    "rank": 15
+  },
+  {
+    "api_name": "xgboost.collective.CommunicatorContext",
+    "score": 0.153749322743615,
+    "rank": 16
+  },
+  {
+    "api_name": "xgboost.spark.estimator.SparkXGBClassifier",
+    "score": 0.15135318657859764,
+    "rank": 17
+  },
+  {
+    "api_name": "xgboost.spark.estimator.SparkXGBRegressor",
+    "score": 0.15095479962721342,
+    "rank": 18
+  },
+  {
+    "api_name": "xgboost.spark.core._SparkXGBSharedReadWrite",
+    "score": 0.15045001323568366,
+    "rank": 19
+  },
+  {
+    "api_name": "xgboost.spark.estimator.SparkXGBRanker",
+    "score": 0.14927884527124194,
+    "rank": 20
+  },
+  {
+    "api_name": "xgboost.testing.IteratorForTest",
+    "score": 0.14689042522129336,
+    "rank": 21
+  },
+  {
+    "api_name": "xgboost.sklearn.XGBRegressor",
+    "score": 0.14517630848016672,
+    "rank": 22
+  },
+  {
+    "api_name": "xgboost.data.SingleBatchInternalIter",
+    "score": 0.14475387379649796,
+    "rank": 23
+  },
+  {
+    "api_name": "xgboost.spark.core._ClassificationModel",
+    "score": 0.1428289959682353,
+    "rank": 24
+  },
+  {
+    "api_name": "xgboost.data.ArrowTransformed",
+    "score": 0.1381522600908713,
+    "rank": 25
+  },
+  {
+    "api_name": "xgboost.callback.EvaluationMonitor",
+    "score": 0.13742613796491157,
+    "rank": 26
+  },
+  {
+    "api_name": "xgboost.spark.utils.CommunicatorContext",
+    "score": 0.13715488470873793,
+    "rank": 27
+  },
+  {
+    "api_name": "xgboost.tracker.RabitTracker",
+    "score": 0.13533887831745556,
+    "rank": 28
+  },
+  {
+    "api_name": "xgboost.testing.data_iter.CatIter",
+    "score": 0.13508474490298247,
+    "rank": 29
+  },
+  {
+    "api_name": "xgboost.dask.CommunicatorContext",
+    "score": 0.13186523437500006,
+    "rank": 30
+  },
+  {
+    "api_name": "xgboost.dask.DaskXGBRanker",
+    "score": 0.1314264382309207,
+    "rank": 31
+  },
+  {
+    "api_name": "xgboost.dask.DaskXGBRFClassifier",
+    "score": 0.12971953297263075,
+    "rank": 32
+  },
+  {
+    "api_name": "xgboost.dask.DaskXGBRFRegressor",
+    "score": 0.12971953297263075,
+    "rank": 32
+  },
+  {
+    "api_name": "xgboost.data.PandasTransformed",
+    "score": 0.12962746492858757,
+    "rank": 34
+  },
+  {
+    "api_name": "xgboost.dask.DaskDMatrix",
+    "score": 0.12932409650606042,
+    "rank": 35
+  },
+  {
+    "api_name": "xgboost.training.CVPack",
+    "score": 0.1259849604499233,
+    "rank": 36
+  },
+  {
+    "api_name": "xgboost.sklearn.XGBRFClassifier",
+    "score": 0.12521764582698752,
+    "rank": 37
+  },
+  {
+    "api_name": "xgboost.sklearn.XGBRFRegressor",
+    "score": 0.12521764582698752,
+    "rank": 37
+  },
+  {
+    "api_name": "xgboost.spark.data.PartIter",
+    "score": 0.12361675400372395,
+    "rank": 39
+  },
+  {
+    "api_name": "xgboost.core.DMatrix",
+    "score": 0.12021399922701334,
+    "rank": 40
+  },
+  {
+    "api_name": "xgboost.callback.EarlyStopping",
+    "score": 0.11988313794492382,
+    "rank": 41
+  },
+  {
+    "api_name": "xgboost.core._ProxyDMatrix",
+    "score": 0.1196005061418411,
+    "rank": 42
+  },
+  {
+    "api_name": "xgboost.spark.params.HasEnableSparseDataOptim",
+    "score": 0.11311922060766189,
+    "rank": 43
+  },
+  {
+    "api_name": "xgboost.spark.params.HasFeaturesCols",
+    "score": 0.11311922060766189,
+    "rank": 43
+  },
+  {
+    "api_name": "xgboost.testing.updater.ResetStrategy",
+    "score": 0.10777144160583946,
+    "rank": 45
+  },
+  {
+    "api_name": "xgboost._data_utils.TransformedDf",
+    "score": 0.10763714839247632,
+    "rank": 46
+  },
+  {
+    "api_name": "xgboost.callback.CallbackContainer",
+    "score": 0.09996853569526286,
+    "rank": 47
+  },
+  {
+    "api_name": "xgboost.dask.data.DaskPartitionIter",
+    "score": 0.09839250569018614,
+    "rank": 48
+  },
+  {
+    "api_name": "xgboost.collective.Config",
+    "score": 0.09615269461077848,
+    "rank": 49
+  },
+  {
+    "api_name": "xgboost.dask.DaskXGBClassifier",
+    "score": 0.09147842347831636,
+    "rank": 50
+  },
+  {
+    "api_name": "xgboost.sklearn.XGBRanker",
+    "score": 0.09065737781954891,
+    "rank": 51
+  },
+  {
+    "api_name": "xgboost.testing.TestDataset",
+    "score": 0.09015335605380147,
+    "rank": 52
+  },
+  {
+    "api_name": "xgboost.sklearn._SklObjWProto",
+    "score": 0.0846206896551724,
+    "rank": 53
+  },
+  {
+    "api_name": "xgboost.core._RefMixIn",
+    "score": 0.0725432756324901,
+    "rank": 54
+  },
+  {
+    "api_name": "xgboost.callback.TrainingCallback",
+    "score": 0.07215368616933943,
+    "rank": 55
+  },
+  {
+    "api_name": "xgboost.sklearn.XGBClassifier",
+    "score": 0.07052049706574894,
+    "rank": 56
+  },
+  {
+    "api_name": "xgboost.testing.data.RelDataCV",
+    "score": 0.06254253926701578,
+    "rank": 57
+  },
+  {
+    "api_name": "xgboost.spark.summary.XGBoostTrainingSummary",
+    "score": 0.05807588268792721,
+    "rank": 58
+  },
+  {
+    "api_name": "xgboost._data_utils._ArrayLikeArg",
+    "score": 0.054703264094955545,
+    "rank": 59
+  },
+  {
+    "api_name": "xgboost._data_utils._CudaArrayLikeArg",
+    "score": 0.054703264094955545,
+    "rank": 59
+  },
+  {
+    "api_name": "xgboost.dask.DaskScikitLearnBase",
+    "score": 0.05300244085725434,
+    "rank": 61
+  },
+  {
+    "api_name": "xgboost.core.DataIter",
+    "score": 0.05018918104694882,
+    "rank": 62
+  },
+  {
+    "api_name": "xgboost.core.Booster",
+    "score": 0.048099192496638424,
+    "rank": 63
+  },
+  {
+    "api_name": "xgboost.training._PackedBooster",
+    "score": 0.044379143353470714,
+    "rank": 64
+  },
+  {
+    "api_name": "xgboost.spark.core._SparkXGBModel",
+    "score": 0.042600377419781614,
+    "rank": 65
+  },
+  {
+    "api_name": "xgboost.spark.estimator.SparkXGBClassifierModel",
+    "score": 0.03311062246278767,
+    "rank": 66
+  },
+  {
+    "api_name": "xgboost.spark.estimator.SparkXGBRankerModel",
+    "score": 0.03311062246278767,
+    "rank": 66
+  },
+  {
+    "api_name": "xgboost.spark.estimator.SparkXGBRegressorModel",
+    "score": 0.03311062246278767,
+    "rank": 66
+  },
+  {
+    "api_name": "xgboost.sklearn.XGBModel",
+    "score": 0.029597491067617325,
+    "rank": 69
+  },
+  {
+    "api_name": "xgboost.spark.core._SparkXGBEstimator",
+    "score": 0.0288345664156215,
+    "rank": 70
+  },
+  {
+    "api_name": "xgboost.spark.core._SparkXGBParams",
+    "score": 0.02838414211730428,
+    "rank": 71
+  },
+  {
+    "api_name": "xgboost.collective.Op",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.compat.XGBClassifierBase",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.compat.XGBModelBase",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.compat.XGBRegressorBase",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.core.DataSplitMode",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.core.XGBoostError",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.libpath.XGBoostLibraryNotFound",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.sklearn.XGBRankerMixIn",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.spark.params.HasArbitraryParamsDict",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.spark.params.HasBaseMarginCol",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.spark.params.HasContribPredictionCol",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.spark.params.HasQueryIdCol",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.testing.data.ClickFold",
+    "score": 0.0,
+    "rank": 72
+  },
+  {
+    "api_name": "xgboost.tracker.RabitTracker._SortBy",
+    "score": 0.0,
+    "rank": 72
+  }
+]

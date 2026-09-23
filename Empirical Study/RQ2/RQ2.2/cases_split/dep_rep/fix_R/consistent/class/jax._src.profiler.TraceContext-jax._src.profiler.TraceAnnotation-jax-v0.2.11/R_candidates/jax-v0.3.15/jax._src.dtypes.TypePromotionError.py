@@ -1,0 +1,2 @@
+class TypePromotionError(ValueError):
+  pass

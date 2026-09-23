@@ -1,0 +1,17 @@
+    def set_offset(self, xy):
+        """
+        Set the offset.
+
+        Parameters
+        ----------
+        xy : (float, float) or callable
+            The (x, y) coordinates of the offset in display units. These can
+            either be given explicitly as a tuple (x, y), or by providing a
+            function that converts the extent into the offset. This function
+            must have the signature::
+
+                def offset(width, height, xdescent, ydescent, renderer) \
+-> (float, float)
+        """
+        self._offset = xy
+        self.stale = True

@@ -1,0 +1,3 @@
+@util.implements(np.result_type)
+def result_type(*args: Any) -> DType:
+  return dtypes.result_type(*args)

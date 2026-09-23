@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Assignment statement
+   Changed the source of the assignment to `dummies` from a call to `get_dummies(data[variable], prefix=variable, prefix_sep=prefix_sep)` to a call to `_get_dummies_1d(data[variable], prefix=variable, prefix_sep=prefix_sep)`.
+# /detail
+# mode：Modify call-assignment statement (change called function)

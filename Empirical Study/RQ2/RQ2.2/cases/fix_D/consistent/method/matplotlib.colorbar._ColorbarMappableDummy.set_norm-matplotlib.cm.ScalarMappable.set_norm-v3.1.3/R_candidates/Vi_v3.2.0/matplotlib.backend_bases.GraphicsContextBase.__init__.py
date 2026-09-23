@@ -1,0 +1,19 @@
+    def __init__(self):
+        self._alpha = 1.0
+        self._forced_alpha = False  # if True, _alpha overrides A from RGBA
+        self._antialiased = 1  # use 0, 1 not True, False for extension code
+        self._capstyle = 'butt'
+        self._cliprect = None
+        self._clippath = None
+        self._dashes = None, None
+        self._joinstyle = 'round'
+        self._linestyle = 'solid'
+        self._linewidth = 1
+        self._rgb = (0.0, 0.0, 0.0, 1.0)
+        self._hatch = None
+        self._hatch_color = colors.to_rgba(rcParams['hatch.color'])
+        self._hatch_linewidth = rcParams['hatch.linewidth']
+        self._url = None
+        self._gid = None
+        self._snap = None
+        self._sketch = None

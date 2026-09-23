@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Modified | Class implementation code block
+   Replaced the entire implementation of `ColorbarPatch` with `pass`.
+   The original implementation included:
+
+   * Class docstring: describe drawing a colorbar using a list of `Patch` objects;
+   * Method definition: `__init__` initialized `self.solids_patches` and called `Colorbar.__init__`;
+   * Method definition: `_add_solids` created and added patches, removed old patches and dividers, and conditionally added dividers.
+
+   The new implementation includes:
+
+   * `pass` statement: leave the class body empty.
+# /detail
+# mode：Remove class-body implementation

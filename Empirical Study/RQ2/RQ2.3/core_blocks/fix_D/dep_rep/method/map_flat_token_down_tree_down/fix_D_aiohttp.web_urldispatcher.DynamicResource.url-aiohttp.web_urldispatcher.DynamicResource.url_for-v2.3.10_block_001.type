@@ -1,0 +1,18 @@
+# detail
+Change count: 1
+
+1. Modify | Implementation block
+
+   Changed the construction and return of the URL string in `url_for` as a whole.
+
+   The original implementation contained:
+
+   * Assignment statement: directly using `self._formatter.format_map(parts)` to generate `url`;
+   * Return statement: returning `URL(url)`.
+
+   The new implementation contains:
+
+   * Assignment statement: first calling `URL.build(path=v).raw_path` on each value in `parts`, then passing the generated mapping to `self._formatter.format_map(...)`;
+   * Return statement: returning `URL.build(path=url)`.
+# /detail
+# mode: Modify implementation block

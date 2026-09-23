@@ -1,0 +1,4 @@
+@@ -1,2 +1,2 @@
+-    def take(self, indexer, allow_fill: bool = False, fill_value=None):
++    def take(self: _T, indexer, allow_fill: bool = False, fill_value=None) -> _T:
+         """

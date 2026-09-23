@@ -1,0 +1,33 @@
+    @final
+    def is_interval(self) -> bool:
+        """
+        Check if the Index holds Interval objects.
+
+        Returns
+        -------
+        bool
+            Whether or not the Index holds Interval objects.
+
+        See Also
+        --------
+        IntervalIndex : Index for Interval objects.
+        is_boolean : Check if the Index only consists of booleans.
+        is_integer : Check if the Index only consists of integers.
+        is_floating : Check if the Index is a floating type.
+        is_numeric : Check if the Index only consists of numeric data.
+        is_object : Check if the Index is of the object dtype.
+        is_categorical : Check if the Index holds categorical data.
+        is_mixed : Check if the Index holds data with mixed data types.
+
+        Examples
+        --------
+        >>> idx = pd.Index([pd.Interval(left=0, right=5),
+        ...                 pd.Interval(left=5, right=10)])
+        >>> idx.is_interval()
+        True
+
+        >>> idx = pd.Index([1, 3, 5, 7])
+        >>> idx.is_interval()
+        False
+        """
+        return self.inferred_type in ["interval"]

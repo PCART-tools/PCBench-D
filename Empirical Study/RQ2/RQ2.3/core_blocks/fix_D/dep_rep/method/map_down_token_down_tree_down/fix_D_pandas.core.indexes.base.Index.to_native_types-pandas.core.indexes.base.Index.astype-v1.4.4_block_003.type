@@ -1,0 +1,10 @@
+# detail
+Number of changes: 1
+
+1. Added | Conditional branch
+   Added an `elif is_float_dtype(self.dtype) and needs_i8_conversion(dtype)` branch that raises `TypeError`.
+   This includes:
+
+   * Exception statement: raise a `TypeError` containing the target `dtype`.
+# /detail
+# mode：Add conditional branch

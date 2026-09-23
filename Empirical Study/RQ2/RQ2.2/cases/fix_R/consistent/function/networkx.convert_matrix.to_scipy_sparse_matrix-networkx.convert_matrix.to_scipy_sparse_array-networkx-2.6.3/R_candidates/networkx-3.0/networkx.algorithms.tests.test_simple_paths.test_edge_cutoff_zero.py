@@ -1,0 +1,6 @@
+def test_edge_cutoff_zero():
+    G = nx.complete_graph(4)
+    paths = nx.all_simple_edge_paths(G, 0, 3, cutoff=0)
+    assert list(list(p) for p in paths) == []
+    paths = nx.all_simple_edge_paths(nx.MultiGraph(G), 0, 3, cutoff=0)
+    assert list(list(p) for p in paths) == []

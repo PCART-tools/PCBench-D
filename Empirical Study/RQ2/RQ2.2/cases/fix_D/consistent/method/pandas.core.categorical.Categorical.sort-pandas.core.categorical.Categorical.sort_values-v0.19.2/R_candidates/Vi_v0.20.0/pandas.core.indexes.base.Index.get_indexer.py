@@ -1,0 +1,37 @@
+    @Appender(_index_shared_docs['get_indexer'] % _index_doc_kwargs)
+    def get_indexer(self, target, method=None, limit=None, tolerance=None):
+        method = missing.clean_reindex_fill_method(method)
+        target = _ensure_index(target)
+        if tolerance is not None:
+            tolerance = self._convert_tolerance(tolerance)
+
+        pself, ptarget = self._maybe_promote(target)
+        if pself is not self or ptarget is not target:
+            return pself.get_indexer(ptarget, method=method, limit=limit,
+                                     tolerance=tolerance)
+
+        if not is_dtype_equal(self.dtype, target.dtype):
+            this = self.astype(object)
+            target = target.astype(object)
+            return this.get_indexer(target, method=method, limit=limit,
+                                    tolerance=tolerance)
+
+        if not self.is_unique:
+            raise InvalidIndexError('Reindexing only valid with uniquely'
+                                    ' valued Index objects')
+
+        if method == 'pad' or method == 'backfill':
+            indexer = self._get_fill_indexer(target, method, limit, tolerance)
+        elif method == 'nearest':
+            indexer = self._get_nearest_indexer(target, limit, tolerance)
+        else:
+            if tolerance is not None:
+                raise ValueError('tolerance argument only valid if doing pad, '
+                                 'backfill or nearest reindexing')
+            if limit is not None:
+                raise ValueError('limit argument only valid if doing pad, '
+                                 'backfill or nearest reindexing')
+
+            indexer = self._engine.get_indexer(target._values)
+
+        return _ensure_platform_int(indexer)

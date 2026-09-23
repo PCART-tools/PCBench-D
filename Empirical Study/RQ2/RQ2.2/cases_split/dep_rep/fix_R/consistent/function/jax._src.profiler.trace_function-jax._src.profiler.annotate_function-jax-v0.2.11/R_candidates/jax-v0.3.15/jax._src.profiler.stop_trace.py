@@ -1,0 +1,15 @@
+def stop_trace():
+  """Stops the currently-running profiler trace.
+
+  The trace will be saved to the ``log_dir`` passed to the corresponding
+  ``start_trace()`` call. Raises a RuntimeError if a trace hasn't been started.
+  """
+  with _profile_state.lock:
+    if _profile_state.profile_session is None:
+      raise RuntimeError("No profile started")
+    _profile_state.profile_session.stop_and_export(_profile_state.log_dir)
+    if _profile_state.create_perfetto_link:
+      _host_perfetto_trace_file(_profile_state.log_dir)
+    _profile_state.profile_session = None
+    _profile_state.create_perfetto_link = False
+    _profile_state.log_dir = None

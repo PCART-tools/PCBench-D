@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Added | Context-manager statement
+   Wrapped `self.add_label(x, y, rotation, lev, cvalue)` in `with cbook._setattr_cm(self, _use_clabeltext=True)`.
+# /detail
+# mode：Add context-manager statement

@@ -1,0 +1,2 @@
+    def get_layout_engine(self):
+        return self._layout_engine

@@ -1,0 +1,5 @@
+@@ -58,3 +45,3 @@
+                 cons.constraint_name,
+-                LOWER(cols.column_name) AS column_name,
++                LISTAGG(LOWER(cols.column_name), ',') WITHIN GROUP (ORDER BY cols.position),
+                 LOWER(rcols.table_name),

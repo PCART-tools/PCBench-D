@@ -1,0 +1,7 @@
+@@ -51,3 +59,5 @@
+     elif len(axis) == 2 and ord == -1:
+-        r = abs(r).sum(axis=axis[0], keepdims=keepdims).min(keepdims=keepdims)
++        r = abs(r).sum(axis=axis[0], keepdims=True).min(axis=axis[1], keepdims=True)
++        if keepdims is False:
++            r = r.squeeze(axis=axis)
+     elif len(axis) == 2 and ord == 2:

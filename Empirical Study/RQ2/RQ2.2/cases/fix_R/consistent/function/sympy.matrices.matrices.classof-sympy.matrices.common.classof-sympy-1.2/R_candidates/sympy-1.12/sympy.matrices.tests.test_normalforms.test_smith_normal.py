@@ -1,0 +1,16 @@
+def test_smith_normal():
+    m = Matrix([[12,6,4,8],[3,9,6,12],[2,16,14,28],[20,10,10,20]])
+    smf = Matrix([[1, 0, 0, 0], [0, 10, 0, 0], [0, 0, -30, 0], [0, 0, 0, 0]])
+    assert smith_normal_form(m) == smf
+
+    x = Symbol('x')
+    with warns_deprecated_sympy():
+        m = Matrix([[Poly(x-1), Poly(1, x),Poly(-1,x)],
+                    [0, Poly(x), Poly(-1,x)],
+                    [Poly(0,x),Poly(-1,x),Poly(x)]])
+    invs = 1, x - 1, x**2 - 1
+    assert invariant_factors(m, domain=QQ[x]) == invs
+
+    m = Matrix([[2, 4]])
+    smf = Matrix([[2, 0]])
+    assert smith_normal_form(m) == smf

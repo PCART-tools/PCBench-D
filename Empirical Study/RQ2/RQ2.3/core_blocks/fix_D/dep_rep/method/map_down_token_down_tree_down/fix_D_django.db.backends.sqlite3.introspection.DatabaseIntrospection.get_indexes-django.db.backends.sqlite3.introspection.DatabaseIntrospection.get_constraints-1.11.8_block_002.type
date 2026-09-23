@@ -1,0 +1,13 @@
+# detail
+Number of changes: 1
+
+1. Added | Implementation code block
+   Added code before `constraints` is returned to retrieve foreign-key information and write it into `constraints`.
+   This includes:
+
+   * API call: execute `PRAGMA foreign_key_list(...)` to query the foreign-key list for the specified table;
+   * Loop statement: iterate over the results of `cursor.fetchall()`;
+   * Assignment statement: extract `id_`, `seq`, `table`, `from_`, and `to` from each row;
+   * Dictionary assignment: add foreign-key constraint information to `constraints` under an `fk_%d` key, including `columns`, `primary_key`, `unique`, `foreign_key`, `check`, and `index`.
+# /detail
+# mode：Add implementation block (including call statement, for loop, and assignment statement)

@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the Bellman-Ford relaxation implementation in the function with a return call to `_bellman_ford_relaxation(G, pred, dist, [source], weight)`.
+   The original implementation included:
+
+   * Conditional statement: define different `get_weight(edge_dict)` implementations according to `G.is_multigraph()`;
+   * Conditional statement: set `G_succ` according to `G.is_directed()`;
+   * Assignment statements: initialize `inf`, `n`, `count`, `q`, and `in_q`;
+   * Loop statement: iterate over queue `q`, update `dist`, `pred`, and `count`, and raise `nx.NetworkXUnbounded` when a negative-weight cycle was detected;
+   * Return statement: return `pred, dist`.
+
+   The new implementation includes:
+
+   * Return statement: return the result of `_bellman_ford_relaxation(G, pred, dist, [source], weight)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with return-call statement)

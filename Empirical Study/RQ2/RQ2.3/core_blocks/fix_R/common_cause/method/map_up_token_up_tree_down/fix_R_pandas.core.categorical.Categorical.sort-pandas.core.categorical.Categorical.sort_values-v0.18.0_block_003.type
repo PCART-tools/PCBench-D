@@ -1,0 +1,11 @@
+# detail
+Number of changes: 1
+
+1. Added | Statement block
+   Added a warning call and a parameter-validation call before the method's return statement.
+   This includes:
+
+   * Function call: call `warn` to issue a `FutureWarning`;
+   * Function call: call `nv.validate_sort(tuple(), kwargs)`.
+# /detail
+# mode：Add warning call; Add call statement

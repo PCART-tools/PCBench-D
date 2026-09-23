@@ -1,0 +1,11 @@
+def test_graph2():
+    G = nx.Graph()
+    G.add_edge("x", "a")
+    G.add_edge("x", "b")
+    G.add_edge("a", "c")
+    G.add_edge("b", "c")
+    G.add_edge("b", "d")
+    G.add_edge("d", "e")
+    G.add_edge("c", "y")
+    G.add_edge("e", "y")
+    _test_stoer_wagner(G, 2)

@@ -1,0 +1,26 @@
+# detail
+Number of changes: 4
+
+1. Removed | Conditional statement
+   Removed the conditional branch that created a single-partition `dsk` and constructed a `DataFrame` when `nrows` was present in `kwargs`.
+
+2. Modified | Implementation code block
+   Changed the CSV chunk-reading graph construction logic formerly located in the `else` branch to execute unconditionally, and adjusted the arguments passed to `_read_csv`.
+   The original implementation included:
+   * Assignment statements: compute `total_bytes`, `nchunks`, and `divisions`, and construct `first_kwargs` and `rest_kwargs`;
+   * Assignment statement: create `dsk` with a dictionary comprehension; the `_read_csv` arguments included `fn`, the chunk index, `chunkbytes`, `compression`, and `rest_kwargs`;
+   * Assignment statement: set the first-chunk task; the `_read_csv` arguments included `first_kwargs`;
+   * Assignment statement: construct a `DataFrame` using `dsk`, `name`, `columns`, and `divisions`.
+   The new implementation includes:
+   * Assignment statements: compute `total_bytes`, `nchunks`, and `divisions`, and construct `first_kwargs` and `rest_kwargs`;
+   * Assignment statement: create `dsk` with a dictionary comprehension, adding `bom` to the `_read_csv` arguments;
+   * Assignment statement: set the first-chunk task, adding `b''` to the `_read_csv` arguments;
+   * Assignment statement: construct a `DataFrame` using `dsk`, `name`, `columns`, and `divisions`.
+
+3. Removed | Conditional statement
+   Removed the `if categorize or index` conditional and its calls to `categories_and_quantiles(...)` and assignments to `categories` and `quantiles`.
+
+4. Removed | Conditional statement
+   Removed the `if categorize` conditional and its statements that created `partial(categorize_block, categories=categories)` and updated `result` through `result.map_partitions(...)`.
+# /detail
+# mode：Remove conditional branch; Modify implementation block (make branch-internal logic unconditional); Remove conditional statement

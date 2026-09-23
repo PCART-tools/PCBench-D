@@ -1,0 +1,4 @@
+@@ -1,2 +1,2 @@
+-    def count_match(self, pattern: str) -> Expr:
++    def count_match(self, pattern: str | Expr) -> Expr:
+         r"""

@@ -1,0 +1,13 @@
+def _pad_eval_names(lgbm_model: LGBMModel, required_names: List[str]) -> LGBMModel:
+    """Append missing (key, value) pairs to a LightGBM model's evals_result_ and best_score_ OrderedDict attrs based on a set of required eval_set names.
+
+    Allows users to rely on expected eval_set names being present when fitting DaskLGBM estimators with ``eval_set``.
+    """
+    not_evaluated = 'not evaluated'
+    for eval_name in required_names:
+        if eval_name not in lgbm_model.evals_result_:
+            lgbm_model.evals_result_[eval_name] = not_evaluated
+        if eval_name not in lgbm_model.best_score_:
+            lgbm_model.best_score_[eval_name] = not_evaluated
+
+    return lgbm_model

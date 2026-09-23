@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Changed the method body from index-hiding logic based on `subset` to issuing a deprecation warning and then forwarding to `hide(...)`.
+   The original implementation included:
+
+   * Conditional branch: when `subset is None`, set `self.hide_index_` to `True`;
+   * Otherwise: construct `IndexSlice[subset, :]`, call `non_reducing_slice(...)`, obtain `hide` from `self.data.loc[...]`, compute `self.index.get_indexer_for(hide.index)`, and assign the result to `self.hidden_rows`;
+   * Finally: `return self`.
+
+   The new implementation includes:
+
+   * `warnings.warn(...)`: output a deprecation-message string, specify `FutureWarning`, and use `stacklevel=find_stack_level()`;
+   * `return self.hide(axis=0, level=level, subset=subset, names=names)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with warning call and return-call statement)

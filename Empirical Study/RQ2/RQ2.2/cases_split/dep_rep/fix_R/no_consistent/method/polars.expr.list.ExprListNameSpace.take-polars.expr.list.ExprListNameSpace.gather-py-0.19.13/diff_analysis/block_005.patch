@@ -1,0 +1,7 @@
+@@ -23,5 +24,2 @@
+         """
+-        if isinstance(index, list):
+-            index = pl.Series(index)
+-        index = parse_as_expression(index)
+-        return wrap_expr(self._pyexpr.list_take(index, null_on_oob))
++        return self.gather(indices)

@@ -1,0 +1,12 @@
+# detail
+Change count: 2
+
+1. Modify | Import statement
+
+   Changed the objects imported from `dask.delayed` from only `Delayed` to `Delayed` and `delayed`.
+
+2. Add | Conditional statement
+
+   Added a conditional check: when `value` is not a `Delayed` instance and has a `key` attribute, `value` is changed to `delayed(value)`.
+# /detail
+# mode: Add conditional statement

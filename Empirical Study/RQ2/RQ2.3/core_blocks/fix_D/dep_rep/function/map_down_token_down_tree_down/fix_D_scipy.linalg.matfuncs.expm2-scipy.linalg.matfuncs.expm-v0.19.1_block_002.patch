@@ -1,0 +1,6 @@
+@@ -43,5 +43,2 @@
+     """
+-    if q is not None:
+-        msg = "argument q=... in scipy.linalg.expm is deprecated." 
+-        warnings.warn(msg, DeprecationWarning)
+     # Input checking and conversion is provided by sparse.linalg.expm().

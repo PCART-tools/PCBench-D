@@ -1,0 +1,17 @@
+    @cbook.deprecated("3.3")
+    def set_offset_position(self, offset_position):
+        """
+        Set how offsets are applied.  If *offset_position* is 'screen'
+        (default) the offset is applied after the master transform has
+        been applied, that is, the offsets are in screen coordinates.
+        If offset_position is 'data', the offset is applied before the
+        master transform, i.e., the offsets are in data coordinates.
+
+        Parameters
+        ----------
+        offset_position : {'screen', 'data'}
+        """
+        cbook._check_in_list(['screen', 'data'],
+                             offset_position=offset_position)
+        self._offset_position = offset_position
+        self.stale = True

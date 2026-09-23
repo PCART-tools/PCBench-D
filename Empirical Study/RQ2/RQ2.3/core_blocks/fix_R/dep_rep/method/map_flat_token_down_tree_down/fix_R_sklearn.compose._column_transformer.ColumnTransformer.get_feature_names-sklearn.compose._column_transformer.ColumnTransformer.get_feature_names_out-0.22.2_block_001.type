@@ -1,0 +1,10 @@
+# detail
+Number of changes: 2
+
+1. Modified | `for` loop
+   Changed the loop-unpacking variables from `name, trans, _, _` to `name, trans, column, _`.
+
+2. Modified | Conditional statement
+   Changed the condition `if trans == 'drop'` to `trans == 'drop' or (hasattr(column, '__len__') and not len(column))`.
+# /detail
+# mode：Modify for loop (change loop variable); Modify conditional statement

@@ -1,0 +1,6 @@
+@@ -89,2 +89,5 @@
+     a, b, axis = _chk2_asarray(a, b, axis)
++    if a.size == 0 or b.size == 0:
++        return (np.nan, np.nan)
++
+     v1 = np.var(a, axis, ddof=1)

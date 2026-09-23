@@ -1,0 +1,17 @@
+@@ -70,10 +72,8 @@
+      
+-    def process_edge(u, v, weight):
+-        # Just a helper function for the main algorithm below.
+-        if dist.get(u) is not None:
+-            if dist.get(v) is None or dist[v] > dist[u] + weight:
+-                dist[v] = dist[u] + weight
+-                pred[v] = u
+-                return False
+-        return True
++    if G.is_multigraph():
++        def get_weight(edge_dict):
++            return min([eattr.get(weight,1) for eattr in edge_dict.values()])
++    else:
++        def get_weight(edge_dict):
++            return edge_dict.get(weight,1)
+  

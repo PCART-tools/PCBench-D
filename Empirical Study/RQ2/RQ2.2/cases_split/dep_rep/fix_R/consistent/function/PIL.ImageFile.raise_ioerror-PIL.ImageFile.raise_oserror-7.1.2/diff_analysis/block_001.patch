@@ -1,0 +1,15 @@
+@@ -1,8 +1,7 @@
+ def raise_ioerror(error):
+-    try:
+-        message = Image.core.getcodecstatus(error)
+-    except AttributeError:
+-        message = ERRORS.get(error)
+-    if not message:
+-        message = "decoder error %d" % error
+-    raise OSError(message + " when reading image file")
++    warnings.warn(
++        "raise_ioerror is deprecated and will be removed in a future release. "
++        "Use raise_oserror instead.",
++        DeprecationWarning,
++    )
++    return raise_oserror(error)

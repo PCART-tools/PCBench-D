@@ -1,0 +1,26 @@
+# detail
+Number of changes: 1
+
+1. Modified | Loop code block
+   Replaced the original loop implementation that iterated according to the number of nodes and called `process_edge` for each edge to test feasibility with a loop that iterates according to `numb_nodes` and updates distances and predecessors based on `dist`.
+   The original implementation included:
+
+   * Loop statement: iterate over `range(G.number_of_nodes())`;
+   * Assignment statement: set `feasible = True`;
+   * Loop statement: iterate over `G.edges()`;
+   * Conditional statement: obtain the edge weight `edata` according to `G.is_multigraph()`;
+   * Conditional statement: call `process_edge(u, v, edata)` and update `feasible`;
+   * Conditional statement: for an undirected graph, when the reverse edge did not exist, call `process_edge(v, u, edata)` and update `feasible`;
+   * Conditional statement: execute `break` when `feasible` was true.
+
+   The new implementation includes:
+
+   * Loop statement: iterate over `range(numb_nodes)`;
+   * Assignment statement: set `no_changes = True`;
+   * Loop statement: iterate over `list(dist.items())`;
+   * Loop statement: iterate over `G[u].items()`;
+   * Assignment statement: compute `dist_v = dist_u + get_weight(edict)`;
+   * Conditional statement: when `v` was not in `dist` or `dist[v] > dist_v`, update `dist[v]`, `pred[v]`, and `no_changes`;
+   * Conditional statement: execute `break` when `no_changes` was true.
+# /detail
+# mode：Modify for loop (change iterable and loop logic)

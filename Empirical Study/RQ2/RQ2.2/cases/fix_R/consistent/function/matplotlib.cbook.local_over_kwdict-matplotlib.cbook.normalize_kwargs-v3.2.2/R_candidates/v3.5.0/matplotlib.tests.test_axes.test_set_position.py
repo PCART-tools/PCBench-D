@@ -1,0 +1,11 @@
+def test_set_position():
+    fig, ax = plt.subplots()
+    ax.set_aspect(3.)
+    ax.set_position([0.1, 0.1, 0.4, 0.4], which='both')
+    assert np.allclose(ax.get_position().width, 0.1)
+    ax.set_aspect(2.)
+    ax.set_position([0.1, 0.1, 0.4, 0.4], which='original')
+    assert np.allclose(ax.get_position().width, 0.15)
+    ax.set_aspect(3.)
+    ax.set_position([0.1, 0.1, 0.4, 0.4], which='active')
+    assert np.allclose(ax.get_position().width, 0.1)

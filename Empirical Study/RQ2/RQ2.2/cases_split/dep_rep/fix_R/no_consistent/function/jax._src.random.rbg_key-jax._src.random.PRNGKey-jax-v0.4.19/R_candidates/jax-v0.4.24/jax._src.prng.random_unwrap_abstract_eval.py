@@ -1,0 +1,3 @@
+@random_unwrap_p.def_abstract_eval
+def random_unwrap_abstract_eval(keys_aval):
+  return core.physical_aval(keys_aval)

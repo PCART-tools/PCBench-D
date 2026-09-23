@@ -1,0 +1,8 @@
+class HCentered(Hlist):
+    """
+    A convenience class to create an `Hlist` whose contents are
+    centered within its enclosing box.
+    """
+
+    def __init__(self, elements):
+        super().__init__([Glue('ss'), *elements, Glue('ss')], do_kern=False)

@@ -1,0 +1,10 @@
+@@ -58,7 +62,5 @@
+     """
+-
+-    if not G.is_directed():
+-        directed = False
+-    else:
+-        directed = True
++    if source not in G:
++        raise KeyError("Node %s is not found in the graph"%source)
++    numb_nodes = len(G)

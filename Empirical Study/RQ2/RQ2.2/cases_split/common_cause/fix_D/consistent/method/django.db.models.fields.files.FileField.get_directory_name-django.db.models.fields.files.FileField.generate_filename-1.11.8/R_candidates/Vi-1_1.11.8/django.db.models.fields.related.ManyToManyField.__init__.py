@@ -1,0 +1,40 @@
+    def __init__(self, to, related_name=None, related_query_name=None,
+                 limit_choices_to=None, symmetrical=None, through=None,
+                 through_fields=None, db_constraint=True, db_table=None,
+                 swappable=True, **kwargs):
+        try:
+            to._meta
+        except AttributeError:
+            assert isinstance(to, six.string_types), (
+                "%s(%r) is invalid. First parameter to ManyToManyField must be "
+                "either a model, a model name, or the string %r" %
+                (self.__class__.__name__, to, RECURSIVE_RELATIONSHIP_CONSTANT)
+            )
+            # Class names must be ASCII in Python 2.x, so we forcibly coerce it
+            # here to break early if there's a problem.
+            to = str(to)
+
+        if symmetrical is None:
+            symmetrical = (to == RECURSIVE_RELATIONSHIP_CONSTANT)
+
+        if through is not None:
+            assert db_table is None, (
+                "Cannot specify a db_table if an intermediary model is used."
+            )
+
+        kwargs['rel'] = self.rel_class(
+            self, to,
+            related_name=related_name,
+            related_query_name=related_query_name,
+            limit_choices_to=limit_choices_to,
+            symmetrical=symmetrical,
+            through=through,
+            through_fields=through_fields,
+            db_constraint=db_constraint,
+        )
+        self.has_null_arg = 'null' in kwargs
+
+        super(ManyToManyField, self).__init__(**kwargs)
+
+        self.db_table = db_table
+        self.swappable = swappable

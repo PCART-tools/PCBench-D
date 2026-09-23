@@ -1,0 +1,9 @@
+@@ -1,2 +1,7 @@
+-    def hide_columns(self, subset: Subset | None = None) -> Styler:
++    def hide_columns(
++        self,
++        subset: Subset | None = None,
++        level: Level | list[Level] | None = None,
++        names: bool = False,
++    ) -> Styler:
+         """

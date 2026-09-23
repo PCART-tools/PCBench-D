@@ -1,0 +1,4862 @@
+[
+  {
+    "api_name": "dask.dataframe.partitionquantiles.percentiles_to_weights",
+    "score": 0.7664858096828047,
+    "rank": 1
+  },
+  {
+    "api_name": "dask.dataframe.indexing._partition_of_index_value",
+    "score": 0.733141447368421,
+    "rank": 2
+  },
+  {
+    "api_name": "dask.array.linalg.cholesky",
+    "score": 0.7215391621129326,
+    "rank": 3
+  },
+  {
+    "api_name": "dask.diagnostics.progress.format_time",
+    "score": 0.6975925925925925,
+    "rank": 4
+  },
+  {
+    "api_name": "dask.delayed.delayed",
+    "score": 0.6921326397919376,
+    "rank": 5
+  },
+  {
+    "api_name": "dask.array.fft._fft_out_chunks",
+    "score": 0.6909898477157359,
+    "rank": 6
+  },
+  {
+    "api_name": "dask.bag.core.merge_frequencies",
+    "score": 0.6909774436090226,
+    "rank": 7
+  },
+  {
+    "api_name": "dask.array.slicing.new_blockdim",
+    "score": 0.6688311688311688,
+    "rank": 8
+  },
+  {
+    "api_name": "dask.array.slicing.replace_ellipsis",
+    "score": 0.6610320284697508,
+    "rank": 9
+  },
+  {
+    "api_name": "dask.bag.core.empty_safe_apply",
+    "score": 0.65718984962406,
+    "rank": 10
+  },
+  {
+    "api_name": "dask.delayed.unzip",
+    "score": 0.6564832089552239,
+    "rank": 11
+  },
+  {
+    "api_name": "dask.array.core._concatenate2",
+    "score": 0.6553792569659442,
+    "rank": 12
+  },
+  {
+    "api_name": "dask.core.get_deps",
+    "score": 0.652988614800759,
+    "rank": 13
+  },
+  {
+    "api_name": "dask.array.chunk.topk",
+    "score": 0.650610902255639,
+    "rank": 14
+  },
+  {
+    "api_name": "dask.dataframe.categorical.get_categories",
+    "score": 0.6500481695568401,
+    "rank": 15
+  },
+  {
+    "api_name": "dask.array.ghost.reshape",
+    "score": 0.643324607329843,
+    "rank": 16
+  },
+  {
+    "api_name": "dask.utils.eq_strict",
+    "score": 0.6418650793650793,
+    "rank": 17
+  },
+  {
+    "api_name": "dask.array.core.slices_from_chunks",
+    "score": 0.6379076086956521,
+    "rank": 18
+  },
+  {
+    "api_name": "dask.bag.core.safe_take",
+    "score": 0.6371336996336996,
+    "rank": 19
+  },
+  {
+    "api_name": "dask.bag.core.bag_range",
+    "score": 0.636469414893617,
+    "rank": 20
+  },
+  {
+    "api_name": "dask.dataframe.multi.require",
+    "score": 0.6336025280898876,
+    "rank": 21
+  },
+  {
+    "api_name": "dask.array.ghost.constant",
+    "score": 0.6285885167464114,
+    "rank": 22
+  },
+  {
+    "api_name": "dask.array.core._get_axis",
+    "score": 0.6256499133448873,
+    "rank": 23
+  },
+  {
+    "api_name": "dask.array.core.wrap_elemwise",
+    "score": 0.6182994454713493,
+    "rank": 24
+  },
+  {
+    "api_name": "dask.bag.core.lazify_task",
+    "score": 0.6162420382165604,
+    "rank": 25
+  },
+  {
+    "api_name": "dask.array.core.chunks_from_arrays",
+    "score": 0.6159591194968552,
+    "rank": 26
+  },
+  {
+    "api_name": "dask.array.wrap.dims_from_size",
+    "score": 0.6055555555555554,
+    "rank": 27
+  },
+  {
+    "api_name": "dask.utils.insert",
+    "score": 0.6016666666666666,
+    "rank": 28
+  },
+  {
+    "api_name": "dask.array.core.unique",
+    "score": 0.600598526703499,
+    "rank": 29
+  },
+  {
+    "api_name": "dask.array.chunk.keepdims_wrapper",
+    "score": 0.6004098360655737,
+    "rank": 30
+  },
+  {
+    "api_name": "dask.async.nested_get",
+    "score": 0.599609375,
+    "rank": 31
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.shuffle_group_3",
+    "score": 0.59439736346516,
+    "rank": 32
+  },
+  {
+    "api_name": "dask.bytes.local.open_text_files",
+    "score": 0.5942442882249559,
+    "rank": 33
+  },
+  {
+    "api_name": "dask.delayed.tokenize",
+    "score": 0.5937499999999999,
+    "rank": 34
+  },
+  {
+    "api_name": "dask.bag.core.concat",
+    "score": 0.5933098591549295,
+    "rank": 35
+  },
+  {
+    "api_name": "dask.array.core.corrcoef",
+    "score": 0.5928961748633879,
+    "rank": 36
+  },
+  {
+    "api_name": "dask.compatibility.gzip_decompress",
+    "score": 0.5900943396226415,
+    "rank": 37
+  },
+  {
+    "api_name": "dask.array.core.broadcast_shapes",
+    "score": 0.5877031019202363,
+    "rank": 38
+  },
+  {
+    "api_name": "dask.dataframe.categorical._categorize_block",
+    "score": 0.5859913793103448,
+    "rank": 39
+  },
+  {
+    "api_name": "dask.bytes.local.open_files",
+    "score": 0.5859826589595375,
+    "rank": 40
+  },
+  {
+    "api_name": "dask.array.core.broadcast_to",
+    "score": 0.5834973753280839,
+    "rank": 41
+  },
+  {
+    "api_name": "dask.array.random._apply_random",
+    "score": 0.5821890145395799,
+    "rank": 42
+  },
+  {
+    "api_name": "dask.utils.get_bom",
+    "score": 0.5790629575402635,
+    "rank": 43
+  },
+  {
+    "api_name": "dask.utils.get_bin_linesep",
+    "score": 0.5773809523809523,
+    "rank": 44
+  },
+  {
+    "api_name": "dask.array.core.deepfirst",
+    "score": 0.5772442588726513,
+    "rank": 45
+  },
+  {
+    "api_name": "dask.utils.deepmap",
+    "score": 0.5751953124999999,
+    "rank": 46
+  },
+  {
+    "api_name": "dask.dataframe.groupby._maybe_slice",
+    "score": 0.572262118491921,
+    "rank": 47
+  },
+  {
+    "api_name": "dask.async.get_sync",
+    "score": 0.5721925133689838,
+    "rank": 48
+  },
+  {
+    "api_name": "dask.callbacks.unpack_callbacks",
+    "score": 0.5721868365180467,
+    "rank": 49
+  },
+  {
+    "api_name": "dask.tests.test_dot.get_label",
+    "score": 0.5686582809224319,
+    "rank": 50
+  },
+  {
+    "api_name": "dask.array.tests.test_chunk.eq",
+    "score": 0.5685483870967741,
+    "rank": 51
+  },
+  {
+    "api_name": "dask.dataframe.partitionquantiles.tree_width",
+    "score": 0.566679626749611,
+    "rank": 52
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.shuffle_group",
+    "score": 0.5654761904761905,
+    "rank": 53
+  },
+  {
+    "api_name": "dask.dataframe.csv.auto_blocksize",
+    "score": 0.564879759519038,
+    "rank": 54
+  },
+  {
+    "api_name": "dask.utils.concrete",
+    "score": 0.5628260869565218,
+    "rank": 55
+  },
+  {
+    "api_name": "dask.async.remote_exception",
+    "score": 0.5627644569816643,
+    "rank": 56
+  },
+  {
+    "api_name": "dask.utils.repr_long_list",
+    "score": 0.5626304801670146,
+    "rank": 57
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.eq",
+    "score": 0.5623857404021937,
+    "rank": 58
+  },
+  {
+    "api_name": "dask.optimize._possible_matches",
+    "score": 0.5591534008683067,
+    "rank": 59
+  },
+  {
+    "api_name": "dask.array.core.from_delayed",
+    "score": 0.5588455772113943,
+    "rank": 60
+  },
+  {
+    "api_name": "dask.array.fft._hfft_out_chunks",
+    "score": 0.5586555360281193,
+    "rank": 61
+  },
+  {
+    "api_name": "dask.array.fft._irfft_out_chunks",
+    "score": 0.5586555360281193,
+    "rank": 61
+  },
+  {
+    "api_name": "dask.array.fft._rfft_out_chunks",
+    "score": 0.5586555360281193,
+    "rank": 61
+  },
+  {
+    "api_name": "dask.array.core.digitize",
+    "score": 0.5582706766917294,
+    "rank": 64
+  },
+  {
+    "api_name": "dask.dataframe.multi._maybe_align_partitions",
+    "score": 0.5577936746987951,
+    "rank": 65
+  },
+  {
+    "api_name": "dask.array.learn.predict",
+    "score": 0.5575795644891122,
+    "rank": 66
+  },
+  {
+    "api_name": "dask.array.core.unify_chunks",
+    "score": 0.557469040247678,
+    "rank": 67
+  },
+  {
+    "api_name": "dask.array.slicing.insert_many",
+    "score": 0.5572995461422086,
+    "rank": 68
+  },
+  {
+    "api_name": "dask.bytes.s3.s3_open_file",
+    "score": 0.5564049586776858,
+    "rank": 69
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.shuffle_group_get",
+    "score": 0.5562499999999999,
+    "rank": 70
+  },
+  {
+    "api_name": "dask.dataframe.groupby._nunique_series_chunk",
+    "score": 0.5555555555555554,
+    "rank": 71
+  },
+  {
+    "api_name": "dask.array.core.common_blockdim",
+    "score": 0.5546343537414966,
+    "rank": 72
+  },
+  {
+    "api_name": "dask.core.reverse_dict",
+    "score": 0.5543570219966159,
+    "rank": 73
+  },
+  {
+    "api_name": "dask.array.rechunk.blockdims_dict_to_tuple",
+    "score": 0.5520055970149252,
+    "rank": 74
+  },
+  {
+    "api_name": "dask.dataframe.groupby._nunique_df_chunk",
+    "score": 0.5517077798861478,
+    "rank": 75
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.shuffle_group_2",
+    "score": 0.5492738589211618,
+    "rank": 76
+  },
+  {
+    "api_name": "dask.array.core.asarray",
+    "score": 0.5491365131578947,
+    "rank": 77
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_cholesky",
+    "score": 0.5483511586452763,
+    "rank": 78
+  },
+  {
+    "api_name": "dask.core.get",
+    "score": 0.5475239616613417,
+    "rank": 79
+  },
+  {
+    "api_name": "dask.dataframe.groupby._groupby_slice_apply",
+    "score": 0.5433275563258232,
+    "rank": 80
+  },
+  {
+    "api_name": "dask.utils.build_name_function",
+    "score": 0.5419207317073171,
+    "rank": 81
+  },
+  {
+    "api_name": "dask.utils.different_seeds",
+    "score": 0.5410662824207492,
+    "rank": 82
+  },
+  {
+    "api_name": "dask.optimize.dependency_dict",
+    "score": 0.5408525754884547,
+    "rank": 83
+  },
+  {
+    "api_name": "dask.array.core.split_at_breaks",
+    "score": 0.5403976311336717,
+    "rank": 84
+  },
+  {
+    "api_name": "dask.array.reductions.make_arg_reduction",
+    "score": 0.5389766483516483,
+    "rank": 85
+  },
+  {
+    "api_name": "dask.array.core.interleave_none",
+    "score": 0.5387569832402234,
+    "rank": 86
+  },
+  {
+    "api_name": "dask.bag.core.inline_singleton_lists",
+    "score": 0.537873399715505,
+    "rank": 87
+  },
+  {
+    "api_name": "dask.array.numpy_compat._replace_nan",
+    "score": 0.5369606598984771,
+    "rank": 88
+  },
+  {
+    "api_name": "dask.array.numpy_compat._maybe_view_as_subclass",
+    "score": 0.5363675958188153,
+    "rank": 89
+  },
+  {
+    "api_name": "dask.core.quote",
+    "score": 0.5354906054279749,
+    "rank": 90
+  },
+  {
+    "api_name": "dask.array.wrap.wrap",
+    "score": 0.5332225913621262,
+    "rank": 91
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg._get_symmat",
+    "score": 0.5328065134099617,
+    "rank": 92
+  },
+  {
+    "api_name": "dask.tests.test_rewrite.repl_list",
+    "score": 0.5313141683778233,
+    "rank": 93
+  },
+  {
+    "api_name": "dask.bag.core.collect",
+    "score": 0.5304878048780487,
+    "rank": 94
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.collect",
+    "score": 0.5304878048780487,
+    "rank": 94
+  },
+  {
+    "api_name": "dask.array.core.ensure_int",
+    "score": 0.5294834307992202,
+    "rank": 96
+  },
+  {
+    "api_name": "dask.array.core.broadcast_chunks",
+    "score": 0.5287515375153751,
+    "rank": 97
+  },
+  {
+    "api_name": "dask.array.core.blockdims_from_blockshape",
+    "score": 0.5283627717391304,
+    "rank": 98
+  },
+  {
+    "api_name": "dask.array.ghost.coerce_depth",
+    "score": 0.5281971580817051,
+    "rank": 99
+  },
+  {
+    "api_name": "dask.dataframe.groupby._apply_chunk",
+    "score": 0.5272491349480968,
+    "rank": 100
+  },
+  {
+    "api_name": "dask.array.core.topk",
+    "score": 0.5266891891891889,
+    "rank": 101
+  },
+  {
+    "api_name": "dask.dataframe.indexing._loc",
+    "score": 0.5265151515151514,
+    "rank": 102
+  },
+  {
+    "api_name": "dask.base.normalize_object",
+    "score": 0.526431718061674,
+    "rank": 103
+  },
+  {
+    "api_name": "dask.array.reductions.arg_combine",
+    "score": 0.5260093167701863,
+    "rank": 104
+  },
+  {
+    "api_name": "dask.array.core.hstack",
+    "score": 0.5248917748917747,
+    "rank": 105
+  },
+  {
+    "api_name": "dask.dataframe.multi.concat_unindexed_dataframes",
+    "score": 0.5237758945386064,
+    "rank": 106
+  },
+  {
+    "api_name": "dask.bag.core.bag_zip",
+    "score": 0.5235591900311526,
+    "rank": 107
+  },
+  {
+    "api_name": "dask.utils.ensure_bytes",
+    "score": 0.5233644859813082,
+    "rank": 108
+  },
+  {
+    "api_name": "dask.array.numpy_compat.nancumprod",
+    "score": 0.5226432532347504,
+    "rank": 109
+  },
+  {
+    "api_name": "dask.array.numpy_compat.nancumsum",
+    "score": 0.5226432532347504,
+    "rank": 109
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.set_index_post_series",
+    "score": 0.521970989761092,
+    "rank": 111
+  },
+  {
+    "api_name": "dask.array.ghost.nearest",
+    "score": 0.5213216145833333,
+    "rank": 112
+  },
+  {
+    "api_name": "dask.order.order",
+    "score": 0.5210361613351877,
+    "rank": 113
+  },
+  {
+    "api_name": "dask.bag.text.decode",
+    "score": 0.5203804347826086,
+    "rank": 114
+  },
+  {
+    "api_name": "dask.array.chunk.trim",
+    "score": 0.5196428571428571,
+    "rank": 115
+  },
+  {
+    "api_name": "dask.bag.core.reify",
+    "score": 0.5190412186379929,
+    "rank": 116
+  },
+  {
+    "api_name": "dask.bytes.s3.open_file_write_direct",
+    "score": 0.5183189655172413,
+    "rank": 117
+  },
+  {
+    "api_name": "dask.bytes.s3.open_file_write",
+    "score": 0.517885852090032,
+    "rank": 118
+  },
+  {
+    "api_name": "dask.utils._skip_doctest",
+    "score": 0.5173160173160172,
+    "rank": 119
+  },
+  {
+    "api_name": "dask.array.numpy_compat.divide",
+    "score": 0.5164790996784565,
+    "rank": 120
+  },
+  {
+    "api_name": "dask.array.core.insert_to_ooc",
+    "score": 0.5157407407407406,
+    "rank": 121
+  },
+  {
+    "api_name": "dask.array.rechunk.blockshape_dict_to_tuple",
+    "score": 0.5154657933042212,
+    "rank": 122
+  },
+  {
+    "api_name": "dask.bag.core.finalize",
+    "score": 0.5148936170212766,
+    "rank": 123
+  },
+  {
+    "api_name": "dask.bag.core.accumulate_part",
+    "score": 0.5141752577319587,
+    "rank": 124
+  },
+  {
+    "api_name": "dask.array.reductions.nanstd",
+    "score": 0.5141579731743666,
+    "rank": 125
+  },
+  {
+    "api_name": "dask.array.reductions.std",
+    "score": 0.5141579731743666,
+    "rank": 125
+  },
+  {
+    "api_name": "dask.array.core.getem",
+    "score": 0.5136363636363634,
+    "rank": 127
+  },
+  {
+    "api_name": "dask.dot.task_label",
+    "score": 0.5108309659090908,
+    "rank": 128
+  },
+  {
+    "api_name": "dask.dataframe.tseries.resample._resample",
+    "score": 0.5081967213114753,
+    "rank": 129
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_progress.check_bar_completed",
+    "score": 0.5080724070450097,
+    "rank": 130
+  },
+  {
+    "api_name": "dask.compatibility.getargspec",
+    "score": 0.5073394495412843,
+    "rank": 131
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.rearrange_by_divisions",
+    "score": 0.5062859195402296,
+    "rank": 132
+  },
+  {
+    "api_name": "dask.diagnostics.profile_visualize._get_figure_keywords",
+    "score": 0.5061881188118811,
+    "rank": 133
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.set_index",
+    "score": 0.5061797752808989,
+    "rank": 134
+  },
+  {
+    "api_name": "dask.rewrite._process_match",
+    "score": 0.5060331825037705,
+    "rank": 135
+  },
+  {
+    "api_name": "dask.array.ghost.expand_key",
+    "score": 0.5060096153846153,
+    "rank": 136
+  },
+  {
+    "api_name": "dask.bag.core.from_delayed",
+    "score": 0.505859375,
+    "rank": 137
+  },
+  {
+    "api_name": "dask.bytes.core.open_files_by",
+    "score": 0.5045180722891566,
+    "rank": 138
+  },
+  {
+    "api_name": "dask.dataframe.categorical._categorize",
+    "score": 0.5043888166449935,
+    "rank": 139
+  },
+  {
+    "api_name": "dask.array.fft._fft_wrap",
+    "score": 0.5036363636363635,
+    "rank": 140
+  },
+  {
+    "api_name": "dask.bytes.core.open_files",
+    "score": 0.503280839895013,
+    "rank": 141
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.set_index_post_scalar",
+    "score": 0.5023830155979201,
+    "rank": 142
+  },
+  {
+    "api_name": "dask.array.conftest.pytest_ignore_collect",
+    "score": 0.5011547344110854,
+    "rank": 143
+  },
+  {
+    "api_name": "dask.array.core.partial_by_order",
+    "score": 0.5007385524372229,
+    "rank": 144
+  },
+  {
+    "api_name": "dask.array.numpy_compat.nanprod",
+    "score": 0.4995583038869258,
+    "rank": 145
+  },
+  {
+    "api_name": "dask.array.ghost.periodic",
+    "score": 0.4985632183908044,
+    "rank": 146
+  },
+  {
+    "api_name": "dask.array.reductions.mean_chunk",
+    "score": 0.49759945130315497,
+    "rank": 147
+  },
+  {
+    "api_name": "dask.array.core.squeeze",
+    "score": 0.4964511041009464,
+    "rank": 148
+  },
+  {
+    "api_name": "dask.array.ghost.trim_internal",
+    "score": 0.49612259970457884,
+    "rank": 149
+  },
+  {
+    "api_name": "dask.bag.core.to_textfiles",
+    "score": 0.4954819277108433,
+    "rank": 150
+  },
+  {
+    "api_name": "dask.bag.core._reduce",
+    "score": 0.49423076923076914,
+    "rank": 151
+  },
+  {
+    "api_name": "dask.compatibility.apply",
+    "score": 0.49423076923076914,
+    "rank": 151
+  },
+  {
+    "api_name": "dask.array.core.finalize",
+    "score": 0.4942244224422442,
+    "rank": 153
+  },
+  {
+    "api_name": "dask.dot.has_sub_tasks",
+    "score": 0.49243856332703206,
+    "rank": 154
+  },
+  {
+    "api_name": "dask.array.ghost.map_overlap",
+    "score": 0.4923642533936651,
+    "rank": 155
+  },
+  {
+    "api_name": "dask.array.fft._ihfft_out_chunks",
+    "score": 0.49130602782071087,
+    "rank": 156
+  },
+  {
+    "api_name": "dask.array.slicing.issorted",
+    "score": 0.4909390444810543,
+    "rank": 157
+  },
+  {
+    "api_name": "dask.dataframe.groupby._groupby_get_group",
+    "score": 0.4908707865168539,
+    "rank": 158
+  },
+  {
+    "api_name": "dask.array.core._vindex_slice",
+    "score": 0.48974082073434133,
+    "rank": 159
+  },
+  {
+    "api_name": "dask.array.core.zero_broadcast_dimensions",
+    "score": 0.48974082073434133,
+    "rank": 159
+  },
+  {
+    "api_name": "dask.array.percentile.percentile",
+    "score": 0.4891956782713086,
+    "rank": 161
+  },
+  {
+    "api_name": "dask.callbacks.normalize_callback",
+    "score": 0.48671726755218214,
+    "rank": 162
+  },
+  {
+    "api_name": "dask.array.reductions.mean_combine",
+    "score": 0.48632538569424955,
+    "rank": 163
+  },
+  {
+    "api_name": "dask.bytes.s3.getsize",
+    "score": 0.48620933521923604,
+    "rank": 164
+  },
+  {
+    "api_name": "dask.array.core.broadcast_dimensions",
+    "score": 0.4858124253285543,
+    "rank": 165
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.shuffle",
+    "score": 0.48532934131736516,
+    "rank": 166
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.set_partitions_pre",
+    "score": 0.4851380042462845,
+    "rank": 167
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_open_files_write",
+    "score": 0.48258377425044086,
+    "rank": 168
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_kwargs",
+    "score": 0.48195043103448276,
+    "rank": 169
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_ones",
+    "score": 0.48195043103448276,
+    "rank": 169
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_singleton_size",
+    "score": 0.48195043103448276,
+    "rank": 169
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_size_as_list",
+    "score": 0.48195043103448276,
+    "rank": 169
+  },
+  {
+    "api_name": "dask.dataframe.indexing._coerce_loc_index",
+    "score": 0.481578947368421,
+    "rank": 173
+  },
+  {
+    "api_name": "dask.array.core._vindex_transpose",
+    "score": 0.4814225053078556,
+    "rank": 174
+  },
+  {
+    "api_name": "dask.base.visualize",
+    "score": 0.4812176165803107,
+    "rank": 175
+  },
+  {
+    "api_name": "dask.array.core.dstack",
+    "score": 0.4802338530066814,
+    "rank": 176
+  },
+  {
+    "api_name": "dask.array.core.vstack",
+    "score": 0.4802338530066814,
+    "rank": 176
+  },
+  {
+    "api_name": "dask.array.ghost.reflect",
+    "score": 0.4801849405548215,
+    "rank": 178
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.test_rolling_functions_names",
+    "score": 0.4800646551724138,
+    "rank": 179
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.test_rolling_names",
+    "score": 0.4800646551724138,
+    "rank": 179
+  },
+  {
+    "api_name": "dask.dataframe.partitionquantiles.dtype_info",
+    "score": 0.47995991983967934,
+    "rank": 181
+  },
+  {
+    "api_name": "dask.dataframe.rolling.call_pandas_rolling_method_with_neighbors",
+    "score": 0.47877358490566035,
+    "rank": 182
+  },
+  {
+    "api_name": "dask.rewrite.args",
+    "score": 0.4776536312849161,
+    "rank": 183
+  },
+  {
+    "api_name": "dask.async._execute_task",
+    "score": 0.4775280898876403,
+    "rank": 184
+  },
+  {
+    "api_name": "dask.optimize.inline_functions",
+    "score": 0.4773073022312373,
+    "rank": 185
+  },
+  {
+    "api_name": "dask.array.learn._partial_fit",
+    "score": 0.47638358778625944,
+    "rank": 186
+  },
+  {
+    "api_name": "dask.utils.infer_compression",
+    "score": 0.4763363028953228,
+    "rank": 187
+  },
+  {
+    "api_name": "dask.dataframe.categorical.categorize",
+    "score": 0.4762345679012344,
+    "rank": 188
+  },
+  {
+    "api_name": "dask.array.reductions.nanarg_agg",
+    "score": 0.4754733218588638,
+    "rank": 189
+  },
+  {
+    "api_name": "dask.utils.open",
+    "score": 0.4748641304347826,
+    "rank": 190
+  },
+  {
+    "api_name": "dask.rewrite._bottom_up",
+    "score": 0.4732965009208102,
+    "rank": 191
+  },
+  {
+    "api_name": "dask.array.ghost._remove_ghost_boundaries",
+    "score": 0.47066848567530684,
+    "rank": 192
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_multiple_list_slicing",
+    "score": 0.47007415254237284,
+    "rank": 193
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_set_index",
+    "score": 0.47007415254237284,
+    "rank": 193
+  },
+  {
+    "api_name": "dask.bag.core.optimize",
+    "score": 0.46997105643994197,
+    "rank": 195
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.test_rolling_functions_series",
+    "score": 0.46894736842105256,
+    "rank": 196
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.test_rolling_funtions_dataframe",
+    "score": 0.46894736842105256,
+    "rank": 196
+  },
+  {
+    "api_name": "dask.bytes.local.getsize",
+    "score": 0.467847317744154,
+    "rank": 198
+  },
+  {
+    "api_name": "dask.array.core.to_npy_stack",
+    "score": 0.46732429099876693,
+    "rank": 199
+  },
+  {
+    "api_name": "dask.store.tests.test_store.test_update",
+    "score": 0.4661964980544747,
+    "rank": 200
+  },
+  {
+    "api_name": "dask.bytes.s3.open_files",
+    "score": 0.4650250941028857,
+    "rank": 201
+  },
+  {
+    "api_name": "dask.utils.pseudorandom",
+    "score": 0.4642857142857143,
+    "rank": 202
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.assert_max_deps",
+    "score": 0.4631261595547309,
+    "rank": 203
+  },
+  {
+    "api_name": "dask.base.tokenize",
+    "score": 0.46283095723014256,
+    "rank": 204
+  },
+  {
+    "api_name": "dask.utils.put_lines",
+    "score": 0.46228448275862066,
+    "rank": 205
+  },
+  {
+    "api_name": "dask.optimize.functions_of",
+    "score": 0.45979299363057324,
+    "rank": 206
+  },
+  {
+    "api_name": "dask.array.ghost.fractional_slice",
+    "score": 0.45944148936170226,
+    "rank": 207
+  },
+  {
+    "api_name": "dask.dataframe.partitionquantiles.merge_and_compress_summaries",
+    "score": 0.4589608433734942,
+    "rank": 208
+  },
+  {
+    "api_name": "dask.array.core.dotmany",
+    "score": 0.45759259259259244,
+    "rank": 209
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_kwargs",
+    "score": 0.4573108384458078,
+    "rank": 210
+  },
+  {
+    "api_name": "dask.array.slicing.take",
+    "score": 0.4560319767441863,
+    "rank": 211
+  },
+  {
+    "api_name": "dask.delayed.compute",
+    "score": 0.45518358531317493,
+    "rank": 212
+  },
+  {
+    "api_name": "dask.tests.test_order.test_base_of_reduce_preferred",
+    "score": 0.45510563380281677,
+    "rank": 213
+  },
+  {
+    "api_name": "dask.utils.tmpfile",
+    "score": 0.4549788135593219,
+    "rank": 214
+  },
+  {
+    "api_name": "dask.bytes.utils.seek_delimiter",
+    "score": 0.453458942632171,
+    "rank": 215
+  },
+  {
+    "api_name": "dask.compatibility.gzip_compress",
+    "score": 0.4532472613458528,
+    "rank": 216
+  },
+  {
+    "api_name": "dask.array.core.isclose",
+    "score": 0.4530965391621128,
+    "rank": 217
+  },
+  {
+    "api_name": "dask.dataframe.rolling.call_pandas_rolling_method_single",
+    "score": 0.4530965391621128,
+    "rank": 217
+  },
+  {
+    "api_name": "dask.array.core.from_imperative",
+    "score": 0.4526643990929705,
+    "rank": 219
+  },
+  {
+    "api_name": "dask.delayed.value",
+    "score": 0.4526643990929705,
+    "rank": 219
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_progress.test_with_alias",
+    "score": 0.4525669642857143,
+    "rank": 221
+  },
+  {
+    "api_name": "dask.utils.funcname",
+    "score": 0.45175438596491224,
+    "rank": 222
+  },
+  {
+    "api_name": "dask.array.core.lol_tuples",
+    "score": 0.45168711656441696,
+    "rank": 223
+  },
+  {
+    "api_name": "dask.dataframe.partitionquantiles.tree_groups",
+    "score": 0.45079260237780716,
+    "rank": 224
+  },
+  {
+    "api_name": "dask.utils.infer_storage_options",
+    "score": 0.45038910505836594,
+    "rank": 225
+  },
+  {
+    "api_name": "dask.tests.test_dot.test_aliases",
+    "score": 0.4499496981891348,
+    "rank": 226
+  },
+  {
+    "api_name": "dask.rewrite.head",
+    "score": 0.44785847299813775,
+    "rank": 227
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.test_arange_working_float_step",
+    "score": 0.4478305785123967,
+    "rank": 228
+  },
+  {
+    "api_name": "dask.array.core.from_func",
+    "score": 0.44720101781170485,
+    "rank": 229
+  },
+  {
+    "api_name": "dask.utils.dependency_depth",
+    "score": 0.4464285714285714,
+    "rank": 230
+  },
+  {
+    "api_name": "dask.compatibility.bind_method",
+    "score": 0.4451160541586072,
+    "rank": 231
+  },
+  {
+    "api_name": "dask.bytes.core.read_bytes",
+    "score": 0.44489559164733183,
+    "rank": 232
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_delayed_picklable",
+    "score": 0.4445544554455445,
+    "rank": 233
+  },
+  {
+    "api_name": "dask.optimize.fuse_selections",
+    "score": 0.44435160427807474,
+    "rank": 234
+  },
+  {
+    "api_name": "dask.array.linalg.qr",
+    "score": 0.44406392694063923,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.array.linalg.svd",
+    "score": 0.44406392694063923,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.array.rechunk._breakpoints",
+    "score": 0.44406392694063923,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.array.rechunk.cumdims_label",
+    "score": 0.44406392694063923,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.array.reductions.nannumel",
+    "score": 0.44406392694063923,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.array.reductions.numel",
+    "score": 0.44406392694063923,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.core.getcycle",
+    "score": 0.44406392694063923,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.core.isdag",
+    "score": 0.44406392694063923,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.core.toposort",
+    "score": 0.44406392694063923,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.optimize.sync_keys",
+    "score": 0.44406392694063923,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.tests.test_core.contains",
+    "score": 0.44406392694063923,
+    "rank": 235
+  },
+  {
+    "api_name": "dask.array.core.array",
+    "score": 0.44387755102040793,
+    "rank": 246
+  },
+  {
+    "api_name": "dask.array.numpy_compat._broadcast_to",
+    "score": 0.44228316326530603,
+    "rank": 247
+  },
+  {
+    "api_name": "dask.dataframe.multi.concat_indexed_dataframes",
+    "score": 0.4403889515219843,
+    "rank": 248
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_fuse_getitem",
+    "score": 0.43848814229249,
+    "rank": 249
+  },
+  {
+    "api_name": "dask.dataframe.csv.bytes_read_csv",
+    "score": 0.4379812981298131,
+    "rank": 250
+  },
+  {
+    "api_name": "dask.array.numpy_compat.full",
+    "score": 0.4374999999999999,
+    "rank": 251
+  },
+  {
+    "api_name": "dask.core.get_dependencies",
+    "score": 0.4370165745856355,
+    "rank": 252
+  },
+  {
+    "api_name": "dask.array.linalg.solve",
+    "score": 0.43688466947960614,
+    "rank": 253
+  },
+  {
+    "api_name": "dask.array.ghost.coerce_boundary",
+    "score": 0.43647203947368407,
+    "rank": 254
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_numeric_column_names",
+    "score": 0.4359099804305283,
+    "rank": 255
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.eq",
+    "score": 0.4348693759071117,
+    "rank": 256
+  },
+  {
+    "api_name": "dask.array.tests.test_percentiles.eq",
+    "score": 0.4348693759071117,
+    "rank": 256
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.eq",
+    "score": 0.4348693759071117,
+    "rank": 256
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_attr_optimize",
+    "score": 0.43423597678916814,
+    "rank": 259
+  },
+  {
+    "api_name": "dask.array.image.imread",
+    "score": 0.43405130687318516,
+    "rank": 260
+  },
+  {
+    "api_name": "dask.bag.core.empty_safe_aggregate",
+    "score": 0.43217488789237657,
+    "rank": 261
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_consistent_names",
+    "score": 0.43166342412451353,
+    "rank": 262
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_delayed_callable",
+    "score": 0.43166342412451353,
+    "rank": 262
+  },
+  {
+    "api_name": "dask.tests.test_order.test_prefer_deep",
+    "score": 0.4312913907284768,
+    "rank": 264
+  },
+  {
+    "api_name": "dask.dataframe.groupby._var_chunk",
+    "score": 0.4308035714285714,
+    "rank": 265
+  },
+  {
+    "api_name": "dask.bag.core.from_url",
+    "score": 0.430579964850615,
+    "rank": 266
+  },
+  {
+    "api_name": "dask.array.linalg._sort_decreasing",
+    "score": 0.4304245283018866,
+    "rank": 267
+  },
+  {
+    "api_name": "dask.async.release_data",
+    "score": 0.43033854166666663,
+    "rank": 268
+  },
+  {
+    "api_name": "dask.bytes.core.ensure_protocol",
+    "score": 0.42980607082630673,
+    "rank": 269
+  },
+  {
+    "api_name": "dask.core.ishashable",
+    "score": 0.42967196819085474,
+    "rank": 270
+  },
+  {
+    "api_name": "dask.array.core.atleast_2d",
+    "score": 0.42941176470588227,
+    "rank": 271
+  },
+  {
+    "api_name": "dask.array.linalg.svd_compressed",
+    "score": 0.42919977298524425,
+    "rank": 272
+  },
+  {
+    "api_name": "dask.dataframe.tseries.tests.test_resample.test_series_resample_not_implemented",
+    "score": 0.4291586073500967,
+    "rank": 273
+  },
+  {
+    "api_name": "dask.array.slicing.slice_array",
+    "score": 0.42876344086021523,
+    "rank": 274
+  },
+  {
+    "api_name": "dask.array.slicing.slice_with_newaxes",
+    "score": 0.4287227602905569,
+    "rank": 275
+  },
+  {
+    "api_name": "dask.array.core.ndimlist",
+    "score": 0.4287109374999998,
+    "rank": 276
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_registered",
+    "score": 0.4283596837944663,
+    "rank": 277
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_inv",
+    "score": 0.4279595015576323,
+    "rank": 278
+  },
+  {
+    "api_name": "dask.array.slicing.partition_by_size",
+    "score": 0.42699764982373667,
+    "rank": 279
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_unique_names",
+    "score": 0.4264547413793103,
+    "rank": 280
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.hash_series",
+    "score": 0.4250936329588014,
+    "rank": 281
+  },
+  {
+    "api_name": "dask.utils.is_integer",
+    "score": 0.4248366013071895,
+    "rank": 282
+  },
+  {
+    "api_name": "dask.bag.core.from_filenames",
+    "score": 0.4247727272727271,
+    "rank": 283
+  },
+  {
+    "api_name": "dask.array.core.transpose",
+    "score": 0.42455947136563865,
+    "rank": 284
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_determinisim_through_dask_values",
+    "score": 0.4226831896551724,
+    "rank": 285
+  },
+  {
+    "api_name": "dask.dataframe.demo.make_timeseries_part",
+    "score": 0.42229729729729726,
+    "rank": 286
+  },
+  {
+    "api_name": "dask.base.normalize_dataframe",
+    "score": 0.4220852017937219,
+    "rank": 287
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_files",
+    "score": 0.421692607003891,
+    "rank": 288
+  },
+  {
+    "api_name": "dask.bag.core.unpack_kwargs",
+    "score": 0.42150297619047616,
+    "rank": 289
+  },
+  {
+    "api_name": "dask.array.core.take",
+    "score": 0.4211332312404287,
+    "rank": 290
+  },
+  {
+    "api_name": "dask.array.optimization.optimize",
+    "score": 0.4202029520295204,
+    "rank": 291
+  },
+  {
+    "api_name": "dask.array.core.keyname",
+    "score": 0.4200863930885529,
+    "rank": 292
+  },
+  {
+    "api_name": "dask.array.numpy_compat.broadcast_to",
+    "score": 0.4200863930885529,
+    "rank": 292
+  },
+  {
+    "api_name": "dask.async.apply_sync",
+    "score": 0.4200863930885529,
+    "rank": 292
+  },
+  {
+    "api_name": "dask.dataframe.multi.bound",
+    "score": 0.4200863930885529,
+    "rank": 292
+  },
+  {
+    "api_name": "dask.optimize.fuse_getitem",
+    "score": 0.4200863930885529,
+    "rank": 292
+  },
+  {
+    "api_name": "dask.utils.digit",
+    "score": 0.4200863930885529,
+    "rank": 292
+  },
+  {
+    "api_name": "dask.optimize.dealias",
+    "score": 0.41931960049937567,
+    "rank": 298
+  },
+  {
+    "api_name": "dask.bag.core.from_sequence",
+    "score": 0.419043624161074,
+    "rank": 299
+  },
+  {
+    "api_name": "dask.utils.tmpdir",
+    "score": 0.4183970099667774,
+    "rank": 300
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_fuse_selections",
+    "score": 0.41784369114877573,
+    "rank": 301
+  },
+  {
+    "api_name": "dask.array.core.normalize_chunks",
+    "score": 0.4176758938869666,
+    "rank": 302
+  },
+  {
+    "api_name": "dask.array.core.concatenate3",
+    "score": 0.41722108495394084,
+    "rank": 303
+  },
+  {
+    "api_name": "dask.dataframe.multi._pdconcat",
+    "score": 0.41696428571428557,
+    "rank": 304
+  },
+  {
+    "api_name": "dask.optimize._flat_set",
+    "score": 0.4157940663176264,
+    "rank": 305
+  },
+  {
+    "api_name": "dask.array.core.to_hdf5",
+    "score": 0.41573426573426564,
+    "rank": 306
+  },
+  {
+    "api_name": "dask.utils.file_size",
+    "score": 0.4153703703703703,
+    "rank": 307
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_callable_obj",
+    "score": 0.41488868274582547,
+    "rank": 308
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_methods",
+    "score": 0.41488868274582547,
+    "rank": 308
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.groupby_internal_head",
+    "score": 0.4140334572490706,
+    "rank": 310
+  },
+  {
+    "api_name": "dask.array.core.store",
+    "score": 0.41356243441762874,
+    "rank": 311
+  },
+  {
+    "api_name": "dask.utils.takes_multiple_arguments",
+    "score": 0.413407029478458,
+    "rank": 312
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.test_rolling_functions_raises",
+    "score": 0.41326530612244883,
+    "rank": 313
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_getitem_slice",
+    "score": 0.4124070631970259,
+    "rank": 314
+  },
+  {
+    "api_name": "dask.tests.test_core.test_GetFunctionTestMixin_class",
+    "score": 0.4121880998080615,
+    "rank": 315
+  },
+  {
+    "api_name": "dask.dataframe.tseries.tests.test_resample.test_unknown_divisions_error",
+    "score": 0.4117375231053605,
+    "rank": 316
+  },
+  {
+    "api_name": "dask.bytes.local.open_file_write",
+    "score": 0.4115296803652967,
+    "rank": 317
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_read_bytes_blocksize_on_large_data",
+    "score": 0.4113825363825363,
+    "rank": 318
+  },
+  {
+    "api_name": "dask.dot.label",
+    "score": 0.4102233676975946,
+    "rank": 319
+  },
+  {
+    "api_name": "dask.bytes.utils.read_block",
+    "score": 0.40939680957128655,
+    "rank": 320
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_compression",
+    "score": 0.40926791277258556,
+    "rank": 321
+  },
+  {
+    "api_name": "dask.dataframe.rolling.rolling_chunk",
+    "score": 0.4092205323193918,
+    "rank": 322
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_read_bytes_blocksize_none",
+    "score": 0.40883027522935766,
+    "rank": 323
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_lu_2",
+    "score": 0.40874363327674024,
+    "rank": 324
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_lu_3",
+    "score": 0.40874363327674024,
+    "rank": 324
+  },
+  {
+    "api_name": "dask.tests.test_order.test_deep_bases_win_over_dependents",
+    "score": 0.4087343096234308,
+    "rank": 326
+  },
+  {
+    "api_name": "dask.array.chunk.coarsen",
+    "score": 0.40871710526315796,
+    "rank": 327
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_lists_are_concrete",
+    "score": 0.40823108384458073,
+    "rank": 328
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_registered_open_files",
+    "score": 0.4081920903954801,
+    "rank": 329
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_registered_open_text_files",
+    "score": 0.4081920903954801,
+    "rank": 329
+  },
+  {
+    "api_name": "dask.diagnostics.profile_visualize.unquote",
+    "score": 0.4064748201438847,
+    "rank": 331
+  },
+  {
+    "api_name": "dask.core._get_recursive",
+    "score": 0.405848787446505,
+    "rank": 332
+  },
+  {
+    "api_name": "dask.array.core.getarray",
+    "score": 0.4056291390728478,
+    "rank": 333
+  },
+  {
+    "api_name": "dask.bytes.core.open_text_files",
+    "score": 0.4038461538461541,
+    "rank": 334
+  },
+  {
+    "api_name": "dask.dataframe.partitionquantiles.sample_percentiles",
+    "score": 0.40326941986234044,
+    "rank": 335
+  },
+  {
+    "api_name": "dask.dataframe.multi.single_partition_join",
+    "score": 0.4031708595387844,
+    "rank": 336
+  },
+  {
+    "api_name": "dask.dataframe.multi.concat_and_check",
+    "score": 0.40315315315315303,
+    "rank": 337
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_empty_slice",
+    "score": 0.4028096330275228,
+    "rank": 338
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_list_then_None",
+    "score": 0.4028096330275228,
+    "rank": 338
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_and_chunks",
+    "score": 0.4028096330275228,
+    "rank": 338
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_bad_depth_raises",
+    "score": 0.4021849593495933,
+    "rank": 341
+  },
+  {
+    "api_name": "dask.dot.dot_graph",
+    "score": 0.40208522212148723,
+    "rank": 342
+  },
+  {
+    "api_name": "dask.utils.memory_repr",
+    "score": 0.4019189765458421,
+    "rank": 343
+  },
+  {
+    "api_name": "dask.dataframe.indexing._try_loc",
+    "score": 0.40180360721442876,
+    "rank": 344
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_1d",
+    "score": 0.4012499999999999,
+    "rank": 345
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_randomstate_consistent_names",
+    "score": 0.39989939637826954,
+    "rank": 346
+  },
+  {
+    "api_name": "dask.dataframe.multi._append",
+    "score": 0.39923900789177014,
+    "rank": 347
+  },
+  {
+    "api_name": "dask.utils.derived_from",
+    "score": 0.39912280701754377,
+    "rank": 348
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.partitioning_index",
+    "score": 0.3989975698663428,
+    "rank": 349
+  },
+  {
+    "api_name": "dask.dataframe.groupby._var_agg",
+    "score": 0.3985877403846154,
+    "rank": 350
+  },
+  {
+    "api_name": "dask.array.linalg.compression_level",
+    "score": 0.3985655737704916,
+    "rank": 351
+  },
+  {
+    "api_name": "dask.bag.core.from_imperative",
+    "score": 0.39813701923076905,
+    "rank": 352
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.barrier",
+    "score": 0.39813701923076905,
+    "rank": 352
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_dir",
+    "score": 0.39783210332103314,
+    "rank": 354
+  },
+  {
+    "api_name": "dask.bytes.compression.noop_file",
+    "score": 0.3970944309927359,
+    "rank": 355
+  },
+  {
+    "api_name": "dask.utils.raises",
+    "score": 0.39612326043737556,
+    "rank": 356
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.rearrange_by_column",
+    "score": 0.3951502732240436,
+    "rank": 357
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.assert_eq",
+    "score": 0.39476885644768844,
+    "rank": 358
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_read_bytes_block",
+    "score": 0.39472713864306774,
+    "rank": 359
+  },
+  {
+    "api_name": "dask.dataframe.partitionquantiles.percentiles_summary",
+    "score": 0.39445244956772363,
+    "rank": 360
+  },
+  {
+    "api_name": "dask.base.compute",
+    "score": 0.3942497532082926,
+    "rank": 361
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_trim_internal",
+    "score": 0.3938577586206896,
+    "rank": 362
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_constant_boundaries",
+    "score": 0.3938095238095237,
+    "rank": 363
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_one_chunk_along_axis",
+    "score": 0.3938095238095237,
+    "rank": 363
+  },
+  {
+    "api_name": "dask.tests.test_utils.test_filesize",
+    "score": 0.39372469635627516,
+    "rank": 365
+  },
+  {
+    "api_name": "dask.dataframe.demo.make_timeseries",
+    "score": 0.39347222222222245,
+    "rank": 366
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_full_groupby",
+    "score": 0.39339539007092184,
+    "rank": 367
+  },
+  {
+    "api_name": "dask.array.core.where",
+    "score": 0.392430278884462,
+    "rank": 368
+  },
+  {
+    "api_name": "dask.bytes.tests.test_compression.test_files",
+    "score": 0.3924116424116425,
+    "rank": 369
+  },
+  {
+    "api_name": "dask.dataframe.tseries.resample._resample_series",
+    "score": 0.39220727848101256,
+    "rank": 370
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_0d",
+    "score": 0.39204545454545436,
+    "rank": 371
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_intermediates",
+    "score": 0.39197198275862066,
+    "rank": 372
+  },
+  {
+    "api_name": "dask.array.creation.linspace",
+    "score": 0.3914862204724413,
+    "rank": 373
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.test_arange_cast_float_int_step",
+    "score": 0.3913276231263382,
+    "rank": 374
+  },
+  {
+    "api_name": "dask.tests.test_order.test_stacklimit",
+    "score": 0.3909527972027972,
+    "rank": 375
+  },
+  {
+    "api_name": "dask.array.core.elemwise",
+    "score": 0.39084022038567534,
+    "rank": 376
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_concurrency",
+    "score": 0.39078947368421035,
+    "rank": 377
+  },
+  {
+    "api_name": "dask.utils.import_required",
+    "score": 0.3905622489959839,
+    "rank": 378
+  },
+  {
+    "api_name": "dask.array.core.offset_func",
+    "score": 0.3900602409638553,
+    "rank": 379
+  },
+  {
+    "api_name": "dask.array.core._vindex_merge",
+    "score": 0.3899945474372958,
+    "rank": 380
+  },
+  {
+    "api_name": "dask.tests.test_dot.test_to_graphviz",
+    "score": 0.38891304347826083,
+    "rank": 381
+  },
+  {
+    "api_name": "dask.bag.core.load_castra_partition",
+    "score": 0.3888206388206389,
+    "rank": 382
+  },
+  {
+    "api_name": "dask.array.core.is_scalar_for_elemwise",
+    "score": 0.3886198547215495,
+    "rank": 383
+  },
+  {
+    "api_name": "dask.array.core.notnull",
+    "score": 0.3886198547215495,
+    "rank": 383
+  },
+  {
+    "api_name": "dask.array.linalg.inv",
+    "score": 0.3886198547215495,
+    "rank": 383
+  },
+  {
+    "api_name": "dask.async.sortkey",
+    "score": 0.3886198547215495,
+    "rank": 383
+  },
+  {
+    "api_name": "dask.bag.core.dictitems",
+    "score": 0.3886198547215495,
+    "rank": 383
+  },
+  {
+    "api_name": "dask.bag.core.lazify",
+    "score": 0.3886198547215495,
+    "rank": 383
+  },
+  {
+    "api_name": "dask.core.istask",
+    "score": 0.3886198547215495,
+    "rank": 383
+  },
+  {
+    "api_name": "dask.dataframe.categorical.strip_categories",
+    "score": 0.3886198547215495,
+    "rank": 383
+  },
+  {
+    "api_name": "dask.delayed.flat_unique",
+    "score": 0.3886198547215495,
+    "rank": 383
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.test_rolling_function_partition_size",
+    "score": 0.387391304347826,
+    "rank": 392
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.test_rolling_partition_size",
+    "score": 0.387391304347826,
+    "rank": 392
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_same",
+    "score": 0.38718220338983034,
+    "rank": 394
+  },
+  {
+    "api_name": "dask.dot._get_display_cls",
+    "score": 0.3868794326241134,
+    "rank": 395
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_intersect_1",
+    "score": 0.38667992047713695,
+    "rank": 396
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_intersect_2",
+    "score": 0.38667992047713695,
+    "rank": 396
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_lists",
+    "score": 0.38612185686653755,
+    "rank": 398
+  },
+  {
+    "api_name": "dask.bag.core.from_castra",
+    "score": 0.3859163591635919,
+    "rank": 399
+  },
+  {
+    "api_name": "dask.tests.test_core.test_subs_no_key_data_eq",
+    "score": 0.38541666666666663,
+    "rank": 400
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_index_array",
+    "score": 0.38473684210526293,
+    "rank": 401
+  },
+  {
+    "api_name": "dask.array.linalg.compression_matrix",
+    "score": 0.3839184597961497,
+    "rank": 402
+  },
+  {
+    "api_name": "dask.array.reductions.mean",
+    "score": 0.3836833602584814,
+    "rank": 403
+  },
+  {
+    "api_name": "dask.array.reductions.nanmean",
+    "score": 0.3836833602584814,
+    "rank": 403
+  },
+  {
+    "api_name": "dask.array.reductions.nanprod",
+    "score": 0.3836833602584814,
+    "rank": 403
+  },
+  {
+    "api_name": "dask.array.reductions.nansum",
+    "score": 0.3836833602584814,
+    "rank": 403
+  },
+  {
+    "api_name": "dask.array.reductions.prod",
+    "score": 0.3836833602584814,
+    "rank": 403
+  },
+  {
+    "api_name": "dask.array.reductions.sum",
+    "score": 0.3836833602584814,
+    "rank": 403
+  },
+  {
+    "api_name": "dask.base.normalize_array",
+    "score": 0.38273948598130847,
+    "rank": 409
+  },
+  {
+    "api_name": "dask.order.ndependents",
+    "score": 0.382701421800948,
+    "rank": 410
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_optimize_slicing",
+    "score": 0.38231382978723394,
+    "rank": 411
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_reductions_with_negative_axes",
+    "score": 0.38207547169811307,
+    "rank": 412
+  },
+  {
+    "api_name": "dask.array.core.around",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.array.core.choose",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.array.core.dot",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.array.core.variadic_choose",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.array.learn._predict",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.dataframe.demo.make_categorical",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.dataframe.demo.make_float",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.dataframe.demo.make_int",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.dataframe.demo.make_string",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.dataframe.rolling.head",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.dataframe.rolling.tail",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.check_title",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.rewrite._top_level",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.tests.test_order.issorted",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.utils_test.add",
+    "score": 0.3812351543942992,
+    "rank": 413
+  },
+  {
+    "api_name": "dask.optimize.equivalent",
+    "score": 0.38118073316283063,
+    "rank": 428
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_dataframe_groupby_nunique_across_group_same_value",
+    "score": 0.3811410459587954,
+    "rank": 429
+  },
+  {
+    "api_name": "dask.tests.test_order.test_prefer_broker_nodes",
+    "score": 0.38111745513866213,
+    "rank": 430
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_progress.test_minimum_time",
+    "score": 0.38092885375494057,
+    "rank": 431
+  },
+  {
+    "api_name": "dask.array.core.atleast_3d",
+    "score": 0.38020833333333326,
+    "rank": 432
+  },
+  {
+    "api_name": "dask.core.has_tasks",
+    "score": 0.37931034482758597,
+    "rank": 433
+  },
+  {
+    "api_name": "dask.array.rechunk.intersect_chunks",
+    "score": 0.3787918410041843,
+    "rank": 434
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_write_bytes",
+    "score": 0.37681451612903205,
+    "rank": 435
+  },
+  {
+    "api_name": "dask.dataframe.csv.coerce_dtypes",
+    "score": 0.37656006240249595,
+    "rank": 436
+  },
+  {
+    "api_name": "dask.array.core.from_array",
+    "score": 0.3763931104356638,
+    "rank": 437
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_dataframe_groupby_nunique",
+    "score": 0.3763693270735523,
+    "rank": 438
+  },
+  {
+    "api_name": "dask.array.core.coarsen",
+    "score": 0.37527870680044617,
+    "rank": 439
+  },
+  {
+    "api_name": "dask.core._deps",
+    "score": 0.3745724059293044,
+    "rank": 440
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_RandomState",
+    "score": 0.37436974789915956,
+    "rank": 441
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_read_csv_passes_through_options",
+    "score": 0.37372188139059304,
+    "rank": 442
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_read_text_passes_through_options",
+    "score": 0.37372188139059304,
+    "rank": 442
+  },
+  {
+    "api_name": "dask.optimize._sync_keys",
+    "score": 0.37370092378752906,
+    "rank": 444
+  },
+  {
+    "api_name": "dask.array.core.isnull",
+    "score": 0.3732558139534883,
+    "rank": 445
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_array_2d",
+    "score": 0.37264595103578135,
+    "rank": 446
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_optimizations",
+    "score": 0.37264595103578135,
+    "rank": 446
+  },
+  {
+    "api_name": "dask.array.core.from_npy_stack",
+    "score": 0.372353673723537,
+    "rank": 448
+  },
+  {
+    "api_name": "dask.tests.test_order.test_break_ties_by_str",
+    "score": 0.3723051409618572,
+    "rank": 449
+  },
+  {
+    "api_name": "dask.array.reductions._nanargmax",
+    "score": 0.3712962962962961,
+    "rank": 450
+  },
+  {
+    "api_name": "dask.array.reductions._nanargmin",
+    "score": 0.3712962962962961,
+    "rank": 450
+  },
+  {
+    "api_name": "dask.array.optimization.normalize_slice",
+    "score": 0.3708881578947367,
+    "rank": 452
+  },
+  {
+    "api_name": "dask.array.core.fromfunction",
+    "score": 0.3695115257958289,
+    "rank": 453
+  },
+  {
+    "api_name": "dask.array.reductions.nanvar",
+    "score": 0.3687888198757764,
+    "rank": 454
+  },
+  {
+    "api_name": "dask.array.reductions.var",
+    "score": 0.3687888198757764,
+    "rank": 454
+  },
+  {
+    "api_name": "dask.dataframe.indexing._maybe_partial_time_string",
+    "score": 0.36870247148289004,
+    "rank": 456
+  },
+  {
+    "api_name": "dask.array.slicing.check_index",
+    "score": 0.3684402332361516,
+    "rank": 457
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_utils_dataframe.test_meta_nonempty_scalar",
+    "score": 0.36831180811808095,
+    "rank": 458
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_with_singleton_indices",
+    "score": 0.36811926605504575,
+    "rank": 459
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_with_integer",
+    "score": 0.3677062374245471,
+    "rank": 460
+  },
+  {
+    "api_name": "dask.array.slicing.slice_slices_and_integers",
+    "score": 0.36726673427991907,
+    "rank": 461
+  },
+  {
+    "api_name": "dask.array.linalg._solve_triangular_lower",
+    "score": 0.36643835616438347,
+    "rank": 462
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.same_keys",
+    "score": 0.36643835616438347,
+    "rank": 462
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.same_keys",
+    "score": 0.36643835616438347,
+    "rank": 462
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.same_keys",
+    "score": 0.36643835616438347,
+    "rank": 462
+  },
+  {
+    "api_name": "dask.array.tests.test_percentiles.same_keys",
+    "score": 0.36643835616438347,
+    "rank": 462
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.same_keys",
+    "score": 0.36643835616438347,
+    "rank": 462
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.same_keys",
+    "score": 0.36643835616438347,
+    "rank": 462
+  },
+  {
+    "api_name": "dask.bytes.s3.read_block_from_s3",
+    "score": 0.3661194833153931,
+    "rank": 469
+  },
+  {
+    "api_name": "dask.array.tests.test_chunk.test_coarsen",
+    "score": 0.3659456740442655,
+    "rank": 470
+  },
+  {
+    "api_name": "dask.array.slicing.posify_index",
+    "score": 0.36490250696378823,
+    "rank": 471
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_stop_0",
+    "score": 0.36410550458715585,
+    "rank": 472
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.test_rolling_raises",
+    "score": 0.36278501628664483,
+    "rank": 473
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_inline_doesnt_shrink_fast_functions_at_top",
+    "score": 0.3614864864864864,
+    "rank": 474
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_2d",
+    "score": 0.36124999999999996,
+    "rank": 475
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.eq",
+    "score": 0.3604510184287102,
+    "rank": 476
+  },
+  {
+    "api_name": "dask.tests.test_flake8.test_flake8",
+    "score": 0.3603515624999999,
+    "rank": 477
+  },
+  {
+    "api_name": "dask.array.core._astype",
+    "score": 0.3598654708520178,
+    "rank": 478
+  },
+  {
+    "api_name": "dask.array.reductions.cumprod",
+    "score": 0.3598654708520178,
+    "rank": 478
+  },
+  {
+    "api_name": "dask.array.reductions.cumsum",
+    "score": 0.3598654708520178,
+    "rank": 478
+  },
+  {
+    "api_name": "dask.array.reductions.mean_agg",
+    "score": 0.3598654708520178,
+    "rank": 478
+  },
+  {
+    "api_name": "dask.array.reductions.nancumprod",
+    "score": 0.3598654708520178,
+    "rank": 478
+  },
+  {
+    "api_name": "dask.array.reductions.nancumsum",
+    "score": 0.3598654708520178,
+    "rank": 478
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.mismatch_err",
+    "score": 0.3598654708520178,
+    "rank": 478
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_chunks",
+    "score": 0.35911978221415586,
+    "rank": 485
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_literates_keys",
+    "score": 0.35905870445344124,
+    "rank": 486
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_utils_dataframe.test_shard_df_on_index",
+    "score": 0.3572470817120622,
+    "rank": 487
+  },
+  {
+    "api_name": "dask.dataframe.multi._concat_dfs",
+    "score": 0.3563432835820899,
+    "rank": 488
+  },
+  {
+    "api_name": "dask.optimize.merge_sync",
+    "score": 0.35604919678714886,
+    "rank": 489
+  },
+  {
+    "api_name": "dask.core.subs",
+    "score": 0.3560460652591174,
+    "rank": 490
+  },
+  {
+    "api_name": "dask.array.ghost.ghost",
+    "score": 0.35563929313929343,
+    "rank": 491
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.s3_context",
+    "score": 0.3555625790139064,
+    "rank": 492
+  },
+  {
+    "api_name": "dask.bag.core.partition",
+    "score": 0.3552097428958053,
+    "rank": 493
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_none_boundaries",
+    "score": 0.35517408123791094,
+    "rank": 494
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_loc_on_numpy_datetimes",
+    "score": 0.35517408123791094,
+    "rank": 494
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_loc_on_pandas_datetimes",
+    "score": 0.35517408123791094,
+    "rank": 494
+  },
+  {
+    "api_name": "dask.diagnostics.profile_visualize.get_colors",
+    "score": 0.35402270483711773,
+    "rank": 497
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_common_subexpressions",
+    "score": 0.35333665338645415,
+    "rank": 498
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_nanarg_reductions",
+    "score": 0.3532806804374242,
+    "rank": 499
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_dont_fuse_different_slices",
+    "score": 0.3517891682785298,
+    "rank": 500
+  },
+  {
+    "api_name": "dask.dot.name",
+    "score": 0.35126582278481,
+    "rank": 501
+  },
+  {
+    "api_name": "dask.array.random.doc_wraps",
+    "score": 0.3507109004739336,
+    "rank": 502
+  },
+  {
+    "api_name": "dask.bag.core.make_group",
+    "score": 0.3507109004739336,
+    "rank": 502
+  },
+  {
+    "api_name": "dask.bag.core.robust_wraps",
+    "score": 0.3507109004739336,
+    "rank": 502
+  },
+  {
+    "api_name": "dask.dataframe.rolling.wrap_rolling",
+    "score": 0.3507109004739336,
+    "rank": 502
+  },
+  {
+    "api_name": "dask.delayed.right",
+    "score": 0.3507109004739336,
+    "rank": 502
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_series_groupby_propagates_names",
+    "score": 0.35023584905660377,
+    "rank": 507
+  },
+  {
+    "api_name": "dask.array.learn.fit",
+    "score": 0.34994523548740475,
+    "rank": 508
+  },
+  {
+    "api_name": "dask.dataframe.tseries.resample.getnanos",
+    "score": 0.34978540772532174,
+    "rank": 509
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_serializability",
+    "score": 0.3497619047619046,
+    "rank": 510
+  },
+  {
+    "api_name": "dask.tests.test_rewrite.test_rewrite",
+    "score": 0.34941406249999996,
+    "rank": 511
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_svd_compressed_deterministic",
+    "score": 0.3489406779661015,
+    "rank": 512
+  },
+  {
+    "api_name": "dask.order.child_max",
+    "score": 0.34876543209876576,
+    "rank": 513
+  },
+  {
+    "api_name": "dask.dataframe.partitionquantiles.create_merge_tree",
+    "score": 0.34864864864864886,
+    "rank": 514
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_optimize_with_getitem_fusion",
+    "score": 0.3481561822125814,
+    "rank": 515
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_with_newaxis",
+    "score": 0.3481561822125814,
+    "rank": 515
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_expand",
+    "score": 0.348095238095238,
+    "rank": 517
+  },
+  {
+    "api_name": "dask.array.tests.test_learn.test_fit",
+    "score": 0.347782258064516,
+    "rank": 518
+  },
+  {
+    "api_name": "dask.array.core.stack",
+    "score": 0.3475635593220343,
+    "rank": 519
+  },
+  {
+    "api_name": "dask.diagnostics.profile_visualize.plot_resources",
+    "score": 0.34755555555555584,
+    "rank": 520
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_4d",
+    "score": 0.3468,
+    "rank": 521
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_method",
+    "score": 0.3468,
+    "rank": 521
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_progress.test_no_tasks",
+    "score": 0.34633569739952696,
+    "rank": 523
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_sync_uncomparable",
+    "score": 0.3459353146853146,
+    "rank": 524
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_compressed_write",
+    "score": 0.3426966292134832,
+    "rank": 525
+  },
+  {
+    "api_name": "dask.dataframe.csv.read_csv_from_bytes",
+    "score": 0.34263182674199666,
+    "rank": 526
+  },
+  {
+    "api_name": "dask.base.normalize_function",
+    "score": 0.3424971363115692,
+    "rank": 527
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_inline_ignores_curries_and_partials",
+    "score": 0.3422174840085287,
+    "rank": 528
+  },
+  {
+    "api_name": "dask.dataframe.multi._pdmerge",
+    "score": 0.34161585365853686,
+    "rank": 529
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_equivalence_uncomparable",
+    "score": 0.34116379310344813,
+    "rank": 530
+  },
+  {
+    "api_name": "dask.optimize.cull",
+    "score": 0.34095528455284596,
+    "rank": 531
+  },
+  {
+    "api_name": "dask.array.core.tril",
+    "score": 0.3407939189189195,
+    "rank": 532
+  },
+  {
+    "api_name": "dask.array.core.triu",
+    "score": 0.3407939189189195,
+    "rank": 532
+  },
+  {
+    "api_name": "dask.array.reductions.all",
+    "score": 0.340764331210191,
+    "rank": 534
+  },
+  {
+    "api_name": "dask.array.reductions.any",
+    "score": 0.340764331210191,
+    "rank": 534
+  },
+  {
+    "api_name": "dask.array.reductions.max",
+    "score": 0.340764331210191,
+    "rank": 534
+  },
+  {
+    "api_name": "dask.array.reductions.min",
+    "score": 0.340764331210191,
+    "rank": 534
+  },
+  {
+    "api_name": "dask.array.reductions.nanmax",
+    "score": 0.340764331210191,
+    "rank": 534
+  },
+  {
+    "api_name": "dask.array.reductions.nanmin",
+    "score": 0.340764331210191,
+    "rank": 534
+  },
+  {
+    "api_name": "dask.dataframe.tseries.tests.test_resample.resample",
+    "score": 0.340764331210191,
+    "rank": 534
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_pure",
+    "score": 0.3405898876404494,
+    "rank": 541
+  },
+  {
+    "api_name": "dask.array.core.eye",
+    "score": 0.33936080740117813,
+    "rank": 542
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_simple_write",
+    "score": 0.33930778739184186,
+    "rank": 543
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_blockshape",
+    "score": 0.3392857142857142,
+    "rank": 544
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_read_bytes",
+    "score": 0.33920187793427226,
+    "rank": 545
+  },
+  {
+    "api_name": "dask.array.reductions.moment_chunk",
+    "score": 0.33807385229540965,
+    "rank": 546
+  },
+  {
+    "api_name": "dask.tests.test_utils.test_textblock",
+    "score": 0.33804675716440413,
+    "rank": 547
+  },
+  {
+    "api_name": "dask.dataframe.multi.join_indexed_dataframes",
+    "score": 0.33767123287671297,
+    "rank": 548
+  },
+  {
+    "api_name": "dask.tests.test_multiprocessing.test_unpicklable_args_generate_errors",
+    "score": 0.3368780096308186,
+    "rank": 549
+  },
+  {
+    "api_name": "dask.bytes.local.read_block_from_file",
+    "score": 0.33651358344113846,
+    "rank": 550
+  },
+  {
+    "api_name": "dask.tests.test_dot.test_dot_graph",
+    "score": 0.33637267904509294,
+    "rank": 551
+  },
+  {
+    "api_name": "dask.bag.core.groupby_disk",
+    "score": 0.33633667883211726,
+    "rank": 552
+  },
+  {
+    "api_name": "dask.array.reductions._arg_combine",
+    "score": 0.33495370370370403,
+    "rank": 553
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_delayed",
+    "score": 0.33270833333333316,
+    "rank": 554
+  },
+  {
+    "api_name": "dask.array.reductions.moment",
+    "score": 0.3312412831241285,
+    "rank": 555
+  },
+  {
+    "api_name": "dask.bag.tests.test_text.test_read_text",
+    "score": 0.3307716436637391,
+    "rank": 556
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.test_rolling_dataframe",
+    "score": 0.32999419279907105,
+    "rank": 557
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_loc_non_informative_index",
+    "score": 0.3296805349182763,
+    "rank": 558
+  },
+  {
+    "api_name": "dask.tests.test_utils.test_dispatch",
+    "score": 0.3295118343195266,
+    "rank": 559
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_operators",
+    "score": 0.32941419141914163,
+    "rank": 560
+  },
+  {
+    "api_name": "dask.array.linalg.lstsq",
+    "score": 0.3292788879235453,
+    "rank": 561
+  },
+  {
+    "api_name": "dask.utils.ensure_not_exists",
+    "score": 0.3286749482401655,
+    "rank": 562
+  },
+  {
+    "api_name": "dask.array.slicing.sanitize_index",
+    "score": 0.32845744680851086,
+    "rank": 563
+  },
+  {
+    "api_name": "dask.utils.filetexts",
+    "score": 0.3277813712807247,
+    "rank": 564
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_get_s3",
+    "score": 0.32706611570247923,
+    "rank": 565
+  },
+  {
+    "api_name": "dask.array.percentile._percentile",
+    "score": 0.32555780933062917,
+    "rank": 566
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_take_sorted",
+    "score": 0.32491789819376016,
+    "rank": 567
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_literates",
+    "score": 0.3248094027954258,
+    "rank": 568
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_parametrized_random_function",
+    "score": 0.3247663551401868,
+    "rank": 569
+  },
+  {
+    "api_name": "dask.array.reductions.partial_reduce",
+    "score": 0.3246221662468518,
+    "rank": 570
+  },
+  {
+    "api_name": "dask.order.dfs",
+    "score": 0.32418504314477503,
+    "rank": 571
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_random",
+    "score": 0.3240248226950352,
+    "rank": 572
+  },
+  {
+    "api_name": "dask.bytes.s3._get_s3",
+    "score": 0.3238276299112802,
+    "rank": 573
+  },
+  {
+    "api_name": "dask.array.core._take_dask_array_from_numpy",
+    "score": 0.32358870967741915,
+    "rank": 574
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_boundaries",
+    "score": 0.32214912280701735,
+    "rank": 575
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_iterators",
+    "score": 0.3219758064516127,
+    "rank": 576
+  },
+  {
+    "api_name": "dask.array.core.diag",
+    "score": 0.32164179104477664,
+    "rank": 577
+  },
+  {
+    "api_name": "dask.rewrite._match",
+    "score": 0.3212147134302825,
+    "rank": 578
+  },
+  {
+    "api_name": "dask.array.core.concatenate",
+    "score": 0.3211628817541117,
+    "rank": 579
+  },
+  {
+    "api_name": "dask.array.slicing.slice_wrap_lists",
+    "score": 0.320484203296704,
+    "rank": 580
+  },
+  {
+    "api_name": "dask.tests.test_rewrite.test_traverser",
+    "score": 0.3203796561604584,
+    "rank": 581
+  },
+  {
+    "api_name": "dask.array.core.compress",
+    "score": 0.32025959367945855,
+    "rank": 582
+  },
+  {
+    "api_name": "dask.tests.test_dot.test_dot_graph_defaults",
+    "score": 0.3199118589743588,
+    "rank": 583
+  },
+  {
+    "api_name": "dask.array.core.ravel",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.array.image.add_leading_dimension",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.bag.core.finalize_item",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.base.normalize_base",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.base.normalize_categorical",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.base.normalize_dict",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.base.normalize_index",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.base.normalize_ordered_dict",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.base.normalize_seq",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.base.normalize_series",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.bytes.local.open_file_write_direct",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.compatibility._getargspec",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.core.list2",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.dataframe.categorical.iscategorical",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.dataframe.groupby._count",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.dataframe.groupby._max",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.dataframe.groupby._min",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.dataframe.groupby._sum",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.mad",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.tests.test_optimize.double",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.tests.test_rewrite.double",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.utils_test.inc",
+    "score": 0.3194444444444443,
+    "rank": 584
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_progress.test_store_time",
+    "score": 0.31935307017543846,
+    "rank": 606
+  },
+  {
+    "api_name": "dask.array.tests.test_percentiles.test_percentile_with_categoricals",
+    "score": 0.3190878378378379,
+    "rank": 607
+  },
+  {
+    "api_name": "dask.delayed.to_task_dasks",
+    "score": 0.31861463778939547,
+    "rank": 608
+  },
+  {
+    "api_name": "dask.array.core.bincount",
+    "score": 0.3169014084507046,
+    "rank": 609
+  },
+  {
+    "api_name": "dask.bytes.core._expand_paths",
+    "score": 0.31654575892857173,
+    "rank": 610
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.test_rolling_axis",
+    "score": 0.31595744680851057,
+    "rank": 611
+  },
+  {
+    "api_name": "dask.diagnostics.profile_visualize.visualize",
+    "score": 0.3156897926634773,
+    "rank": 612
+  },
+  {
+    "api_name": "dask.tests.test_order.test_ordering_keeps_groups_together",
+    "score": 0.3145569620253166,
+    "rank": 613
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_nearest_ghost",
+    "score": 0.3145438898450946,
+    "rank": 614
+  },
+  {
+    "api_name": "dask.tests.test_utils.test_infer_storage_options_c",
+    "score": 0.31417274939172735,
+    "rank": 615
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_with_dict",
+    "score": 0.31281942078364555,
+    "rank": 616
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_0d_array",
+    "score": 0.31281942078364555,
+    "rank": 616
+  },
+  {
+    "api_name": "dask.array.core.atop",
+    "score": 0.31266346992153504,
+    "rank": 618
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_with_numpy_arrays",
+    "score": 0.31259873617693523,
+    "rank": 619
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_lu_errors",
+    "score": 0.3125,
+    "rank": 620
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_loc_with_text_dates",
+    "score": 0.31237769080234823,
+    "rank": 621
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_delayed_name_on_call",
+    "score": 0.3120437956204378,
+    "rank": 622
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_compression_text",
+    "score": 0.3117283950617281,
+    "rank": 623
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_multilevel_getitem",
+    "score": 0.31153846153846165,
+    "rank": 624
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_multilevel_agg",
+    "score": 0.3106694560669456,
+    "rank": 625
+  },
+  {
+    "api_name": "dask.array.tests.test_percentiles.test_percentiles_with_empty_arrays",
+    "score": 0.3099148418491483,
+    "rank": 626
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_dtype",
+    "score": 0.3099148418491483,
+    "rank": 626
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_with_null_dimensions",
+    "score": 0.3099148418491483,
+    "rank": 626
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_reduction_on_scalar",
+    "score": 0.3099148418491483,
+    "rank": 626
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_demo.test_no_overlaps",
+    "score": 0.3099148418491483,
+    "rank": 626
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.test_rolling_repr",
+    "score": 0.3099148418491483,
+    "rank": 626
+  },
+  {
+    "api_name": "dask.array.reductions.moment_agg",
+    "score": 0.309754851889684,
+    "rank": 632
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_demo.test_make_timeseries",
+    "score": 0.3090181058495822,
+    "rank": 633
+  },
+  {
+    "api_name": "dask.array.reductions.reduction",
+    "score": 0.30896624472573897,
+    "rank": 634
+  },
+  {
+    "api_name": "dask.tests.test_core.test_subs_with_unfriendly_eq",
+    "score": 0.308362369337979,
+    "rank": 635
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.test_arange_float_step",
+    "score": 0.3081787521079258,
+    "rank": 636
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_two_gets",
+    "score": 0.3080632716049382,
+    "rank": 637
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_progress.test_progressbar",
+    "score": 0.3068383658969803,
+    "rank": 638
+  },
+  {
+    "api_name": "dask.array.core.unpack_singleton",
+    "score": 0.3064053537284894,
+    "rank": 639
+  },
+  {
+    "api_name": "dask.array.linalg._cholesky_lower",
+    "score": 0.30629539951573836,
+    "rank": 640
+  },
+  {
+    "api_name": "dask.utils.filetext",
+    "score": 0.3059402332361515,
+    "rank": 641
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_getitem_period_str",
+    "score": 0.3051925722145806,
+    "rank": 642
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_getitem_timestamp_str",
+    "score": 0.3051925722145806,
+    "rank": 642
+  },
+  {
+    "api_name": "dask.array.tests.test_image.random_images",
+    "score": 0.3046218487394958,
+    "rank": 644
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_name_consitent_across_instances",
+    "score": 0.3035439137134053,
+    "rank": 645
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_can_make_really_big_array_of_ones",
+    "score": 0.30347769028871385,
+    "rank": 646
+  },
+  {
+    "api_name": "dask.bytes.tests.test_bytes_utils.test_ensure_protocol",
+    "score": 0.3033185840707966,
+    "rank": 647
+  },
+  {
+    "api_name": "dask.array.core.frexp",
+    "score": 0.30319680319680364,
+    "rank": 648
+  },
+  {
+    "api_name": "dask.array.core.modf",
+    "score": 0.30319680319680364,
+    "rank": 648
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_compression_binary",
+    "score": 0.30265410958904093,
+    "rank": 650
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_apply_shuffle",
+    "score": 0.30264945652173925,
+    "rank": 651
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_progress.test_with_cache",
+    "score": 0.30137931034482757,
+    "rank": 652
+  },
+  {
+    "api_name": "dask.array.reductions.arg_agg",
+    "score": 0.30104166666666643,
+    "rank": 653
+  },
+  {
+    "api_name": "dask.tests.test_utils.test_textblock_multibyte_linesep",
+    "score": 0.3009761388286334,
+    "rank": 654
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_constant",
+    "score": 0.3005756578947367,
+    "rank": 655
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_inline_functions",
+    "score": 0.3005617977528089,
+    "rank": 656
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_inline_traverses_lists",
+    "score": 0.3005617977528089,
+    "rank": 656
+  },
+  {
+    "api_name": "dask.array.linalg._cumsum_blocks",
+    "score": 0.2983539094650204,
+    "rank": 658
+  },
+  {
+    "api_name": "dask.dataframe.multi.melt",
+    "score": 0.2983271375464682,
+    "rank": 659
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_reduction_series_invalid_axis",
+    "score": 0.29695273631840824,
+    "rank": 660
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_with_negative_step_flops_keys",
+    "score": 0.2961635750421584,
+    "rank": 661
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_attributes",
+    "score": 0.29615825688073383,
+    "rank": 662
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_value",
+    "score": 0.29615825688073383,
+    "rank": 662
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_map_overlap",
+    "score": 0.2958333333333334,
+    "rank": 664
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_internals_1",
+    "score": 0.2952997275204361,
+    "rank": 665
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.groupby_error",
+    "score": 0.2948855507868384,
+    "rank": 666
+  },
+  {
+    "api_name": "dask.dataframe.optimize.fuse_castra_index",
+    "score": 0.29418604651162783,
+    "rank": 667
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_lists",
+    "score": 0.2941513761467889,
+    "rank": 668
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_oob_check",
+    "score": 0.29335106382978715,
+    "rank": 669
+  },
+  {
+    "api_name": "dask.array.reductions.vnorm",
+    "score": 0.29291623578076575,
+    "rank": 670
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_periodic",
+    "score": 0.29286858974358976,
+    "rank": 671
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_cant_fft_chunked_axis",
+    "score": 0.29214449541284393,
+    "rank": 672
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_with_empty_input",
+    "score": 0.29214449541284393,
+    "rank": 672
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_full",
+    "score": 0.29214449541284393,
+    "rank": 672
+  },
+  {
+    "api_name": "dask.core.flatten",
+    "score": 0.2918149466192169,
+    "rank": 675
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_random_seed",
+    "score": 0.2914673046251992,
+    "rank": 676
+  },
+  {
+    "api_name": "dask.bag.core.write",
+    "score": 0.29131534569983175,
+    "rank": 677
+  },
+  {
+    "api_name": "dask.tests.test_utils.test_different_seeds",
+    "score": 0.2909985422740524,
+    "rank": 678
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_uneven_blockdims",
+    "score": 0.2905653450807635,
+    "rank": 679
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_compression",
+    "score": 0.2898981324278438,
+    "rank": 680
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_profiler_works_under_error",
+    "score": 0.2896659707724425,
+    "rank": 681
+  },
+  {
+    "api_name": "dask.array.ghost.ghost_internal",
+    "score": 0.28960298742138424,
+    "rank": 682
+  },
+  {
+    "api_name": "dask.dataframe.multi.align_partitions",
+    "score": 0.28893626570915665,
+    "rank": 683
+  },
+  {
+    "api_name": "dask.optimize.inline",
+    "score": 0.2888719512195127,
+    "rank": 684
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_registered_read_bytes",
+    "score": 0.28840361445783114,
+    "rank": 685
+  },
+  {
+    "api_name": "dask.tests.test_threaded.test_reuse_pool",
+    "score": 0.2882022471910113,
+    "rank": 686
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_delayed_compute_forward_kwargs",
+    "score": 0.28626943005181327,
+    "rank": 687
+  },
+  {
+    "api_name": "dask.tests.test_multiprocessing.test_reuse_pool",
+    "score": 0.2862359550561798,
+    "rank": 688
+  },
+  {
+    "api_name": "dask.array.reductions.arg_chunk",
+    "score": 0.2861221449851046,
+    "rank": 689
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_cull",
+    "score": 0.2860962566844919,
+    "rank": 690
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_on_index",
+    "score": 0.2855914718019259,
+    "rank": 691
+  },
+  {
+    "api_name": "dask.async.default_get_id",
+    "score": 0.28479381443298946,
+    "rank": 692
+  },
+  {
+    "api_name": "dask.compatibility.skip",
+    "score": 0.28479381443298946,
+    "rank": 692
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_nearest",
+    "score": 0.28477175463623394,
+    "rank": 694
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_reflect",
+    "score": 0.28477175463623394,
+    "rank": 694
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_sanitize_index",
+    "score": 0.2844086021505374,
+    "rank": 696
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_tree_reduce_set_options",
+    "score": 0.28431372549019585,
+    "rank": 697
+  },
+  {
+    "api_name": "dask.dataframe.optimize.optimize",
+    "score": 0.2842970521541952,
+    "rank": 698
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_open_files",
+    "score": 0.2838438735177865,
+    "rank": 699
+  },
+  {
+    "api_name": "dask.array.ghost.add_dummy_padding",
+    "score": 0.28375912408759174,
+    "rank": 700
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_kwargs",
+    "score": 0.2837579617834397,
+    "rank": 701
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_fuse_keys",
+    "score": 0.2831125827814568,
+    "rank": 702
+  },
+  {
+    "api_name": "dask.array.reductions._moment_helper",
+    "score": 0.28308823529411786,
+    "rank": 703
+  },
+  {
+    "api_name": "dask.optimize.unwrap_partial",
+    "score": 0.2811804008908685,
+    "rank": 704
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.rearrange_by_column_disk",
+    "score": 0.28069838833461325,
+    "rank": 705
+  },
+  {
+    "api_name": "dask.bytes.tests.test_bytes_utils.test_read_block",
+    "score": 0.2795312500000001,
+    "rank": 706
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_nan",
+    "score": 0.2787859824780978,
+    "rank": 707
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_solve_triangular_errors",
+    "score": 0.2776908635794745,
+    "rank": 708
+  },
+  {
+    "api_name": "dask.tests.test_core.test_istask",
+    "score": 0.2775974025974026,
+    "rank": 709
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_progress.test_register",
+    "score": 0.2765468227424749,
+    "rank": 710
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.s3",
+    "score": 0.2753906249999999,
+    "rank": 711
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_registered_open_files",
+    "score": 0.2746175908221795,
+    "rank": 712
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_array_1d",
+    "score": 0.2744452149791955,
+    "rank": 713
+  },
+  {
+    "api_name": "dask.array.rechunk._intersect_1d",
+    "score": 0.27411366006256555,
+    "rank": 714
+  },
+  {
+    "api_name": "dask.dataframe.partitionquantiles.partition_quantiles",
+    "score": 0.2737817089452612,
+    "rank": 715
+  },
+  {
+    "api_name": "dask.array.numpy_compat.isclose",
+    "score": 0.27341772151898713,
+    "rank": 716
+  },
+  {
+    "api_name": "dask.bytes.tests.test_compression.test_compression",
+    "score": 0.27250378214826043,
+    "rank": 717
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_reductions_frame_dtypes",
+    "score": 0.27197802197802234,
+    "rank": 718
+  },
+  {
+    "api_name": "dask.tests.test_context.test_with_get",
+    "score": 0.2719335604770017,
+    "rank": 719
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.set_partition",
+    "score": 0.2714611872146123,
+    "rank": 720
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_ghost_internal",
+    "score": 0.2696402349486051,
+    "rank": 721
+  },
+  {
+    "api_name": "dask.bag.text.read_text",
+    "score": 0.26909330323551617,
+    "rank": 722
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_read_bytes_non_existing_glob",
+    "score": 0.2686104218362281,
+    "rank": 723
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_apply_tasks",
+    "score": 0.2684819413092554,
+    "rank": 724
+  },
+  {
+    "api_name": "dask.dataframe.tseries.tests.test_resample.test_series_resample",
+    "score": 0.26818181818181863,
+    "rank": 725
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_series_groupby",
+    "score": 0.2678143712574853,
+    "rank": 726
+  },
+  {
+    "api_name": "dask.array.tests.test_rechunk.test_rechunk_expand2",
+    "score": 0.26696210268948695,
+    "rank": 727
+  },
+  {
+    "api_name": "dask.array.slicing.take_sorted",
+    "score": 0.26534184514003356,
+    "rank": 728
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_plot_multiple",
+    "score": 0.26528532608695665,
+    "rank": 729
+  },
+  {
+    "api_name": "dask.bytes.local.read_bytes",
+    "score": 0.2629547014413183,
+    "rank": 730
+  },
+  {
+    "api_name": "dask.array.wrap.wrap_func_shape_as_first_arg",
+    "score": 0.262451361867705,
+    "rank": 731
+  },
+  {
+    "api_name": "dask.array.core._vindex",
+    "score": 0.2624155405405413,
+    "rank": 732
+  },
+  {
+    "api_name": "dask.dataframe.tseries.resample._resample_bin_and_out_divs",
+    "score": 0.26169064748201487,
+    "rank": 733
+  },
+  {
+    "api_name": "dask.tests.test_multiprocessing.test_optimize_graph_false",
+    "score": 0.2611702127659573,
+    "rank": 734
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_linalg_consistent_names",
+    "score": 0.26093932322053703,
+    "rank": 735
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_profiler",
+    "score": 0.26024590163934425,
+    "rank": 736
+  },
+  {
+    "api_name": "dask.array.reductions._tree_reduce",
+    "score": 0.2601172465960673,
+    "rank": 737
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_optimize_dataframe.test_castra_column_store",
+    "score": 0.2600495594713659,
+    "rank": 738
+  },
+  {
+    "api_name": "dask.array.tests.test_percentiles.test_percentile",
+    "score": 0.2597241867043848,
+    "rank": 739
+  },
+  {
+    "api_name": "dask.array.reductions.cumreduction",
+    "score": 0.2597231955150674,
+    "rank": 740
+  },
+  {
+    "api_name": "dask.array.reductions.moment_combine",
+    "score": 0.2582070707070715,
+    "rank": 741
+  },
+  {
+    "api_name": "dask.tests.test_dot.test_label",
+    "score": 0.2579915560916771,
+    "rank": 742
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_fuse_getitem",
+    "score": 0.25715042372881347,
+    "rank": 743
+  },
+  {
+    "api_name": "dask.array.core.cov",
+    "score": 0.2564858490566043,
+    "rank": 744
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_modification_time_open_files",
+    "score": 0.2562311178247735,
+    "rank": 745
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_fuse",
+    "score": 0.25620039682539675,
+    "rank": 746
+  },
+  {
+    "api_name": "dask.array.creation.arange",
+    "score": 0.25258190883190956,
+    "rank": 747
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_optimize_dataframe.test_column_optimizations_with_bcolz_and_rewrite",
+    "score": 0.24962063732928685,
+    "rank": 748
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_merge_sync",
+    "score": 0.2495271122320304,
+    "rank": 749
+  },
+  {
+    "api_name": "dask.tests.test_core.test_subs_with_surprisingly_friendly_eq",
+    "score": 0.2487449799196787,
+    "rank": 750
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_tsqr_irregular_blocks",
+    "score": 0.2479838709677421,
+    "rank": 751
+  },
+  {
+    "api_name": "dask.array.core.top",
+    "score": 0.2479060451565921,
+    "rank": 752
+  },
+  {
+    "api_name": "dask.array.ghost.boundaries",
+    "score": 0.2475374310480699,
+    "rank": 753
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_tsqr_regular_blocks",
+    "score": 0.246987951807229,
+    "rank": 754
+  },
+  {
+    "api_name": "dask.tests.test_dot.test_dot_graph_no_filename",
+    "score": 0.2464622641509434,
+    "rank": 755
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_registered_open_text_files",
+    "score": 0.2459532374100719,
+    "rank": 756
+  },
+  {
+    "api_name": "dask.bytes.tests.test_bytes_utils.test_seek_delimiter_endline",
+    "score": 0.24592391304347838,
+    "rank": 757
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_getsize",
+    "score": 0.24538106235565804,
+    "rank": 758
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_utils_dataframe.test_meta_nonempty",
+    "score": 0.24463848039215708,
+    "rank": 759
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_moment",
+    "score": 0.2441646191646195,
+    "rank": 760
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_take",
+    "score": 0.24256935270805824,
+    "rank": 761
+  },
+  {
+    "api_name": "dask.array.tests.test_chunk.test_keepdims_wrapper_no_axis",
+    "score": 0.24011692650334115,
+    "rank": 762
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_get_colors",
+    "score": 0.239940987124464,
+    "rank": 763
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_solve_triangular_matrix",
+    "score": 0.23988250652741572,
+    "rank": 764
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_solve_triangular_matrix2",
+    "score": 0.23988250652741572,
+    "rank": 764
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_solve_triangular_vector",
+    "score": 0.23988250652741572,
+    "rank": 764
+  },
+  {
+    "api_name": "dask.tests.test_order.test_ndependents",
+    "score": 0.23942719486081432,
+    "rank": 767
+  },
+  {
+    "api_name": "dask.async.finish_task",
+    "score": 0.23870292887029365,
+    "rank": 768
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.reduction_1d_test",
+    "score": 0.23830608537693054,
+    "rank": 769
+  },
+  {
+    "api_name": "dask.store.tests.test_store.test_basic",
+    "score": 0.23806330472103054,
+    "rank": 770
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_compute",
+    "score": 0.23767258382642975,
+    "rank": 771
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_reduction_names",
+    "score": 0.23763992537313428,
+    "rank": 772
+  },
+  {
+    "api_name": "dask.bytes.core.write_block_to_file",
+    "score": 0.23697916666666707,
+    "rank": 773
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_cache_profiler",
+    "score": 0.23503649635036505,
+    "rank": 774
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_ghost",
+    "score": 0.23421556122449005,
+    "rank": 775
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_read_bytes_delimited",
+    "score": 0.2321263837638381,
+    "rank": 776
+  },
+  {
+    "api_name": "dask.diagnostics.profile_visualize.plot_cache",
+    "score": 0.23161290322580708,
+    "rank": 777
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_multinomial",
+    "score": 0.23031496062992118,
+    "rank": 778
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_value_errors",
+    "score": 0.23016934046345805,
+    "rank": 779
+  },
+  {
+    "api_name": "dask.bytes.core.write_bytes",
+    "score": 0.2295918367346944,
+    "rank": 780
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_read_bytes",
+    "score": 0.2276148969889067,
+    "rank": 781
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_to_task_dasks",
+    "score": 0.22585513078470865,
+    "rank": 782
+  },
+  {
+    "api_name": "dask.diagnostics.profile_visualize.pprint_task",
+    "score": 0.22537373198078026,
+    "rank": 783
+  },
+  {
+    "api_name": "dask.bytes.s3.read_bytes",
+    "score": 0.22517975663716905,
+    "rank": 784
+  },
+  {
+    "api_name": "dask.array.optimization.optimize_slices",
+    "score": 0.22406396255850292,
+    "rank": 785
+  },
+  {
+    "api_name": "dask.tests.test_core.test_preorder_traversal",
+    "score": 0.22376873661670216,
+    "rank": 786
+  },
+  {
+    "api_name": "dask.core._get_nonrecursive",
+    "score": 0.22347298355520817,
+    "rank": 787
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_resource_profiler_multiple_gets",
+    "score": 0.22206896551724153,
+    "rank": 788
+  },
+  {
+    "api_name": "dask.diagnostics.profile_visualize.plot_tasks",
+    "score": 0.2220248667850806,
+    "rank": 789
+  },
+  {
+    "api_name": "dask.bag.core.groupby_tasks",
+    "score": 0.2220137075718024,
+    "rank": 790
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_profiler_plot",
+    "score": 0.2219387755102038,
+    "rank": 791
+  },
+  {
+    "api_name": "dask.array.reductions.arg_reduction",
+    "score": 0.22183968926553743,
+    "rank": 792
+  },
+  {
+    "api_name": "dask.array.tests.test_chunk.test_keepdims_wrapper_one_axis",
+    "score": 0.2213251670378623,
+    "rank": 793
+  },
+  {
+    "api_name": "dask.array.tests.test_chunk.test_keepdims_wrapper_two_axes",
+    "score": 0.2213251670378623,
+    "rank": 793
+  },
+  {
+    "api_name": "dask.async.start_state_from_dask",
+    "score": 0.22083058668424593,
+    "rank": 795
+  },
+  {
+    "api_name": "dask.dataframe.multi.concat",
+    "score": 0.2199331848552346,
+    "rank": 796
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_array_bag_delayed",
+    "score": 0.21985132158590348,
+    "rank": 797
+  },
+  {
+    "api_name": "dask.dataframe.multi.hash_join",
+    "score": 0.21973346178548592,
+    "rank": 798
+  },
+  {
+    "api_name": "dask.tests.test_order.test_order_doesnt_fail_on_mixed_type_keys",
+    "score": 0.21918282548476442,
+    "rank": 799
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_solve_sym_pos",
+    "score": 0.21850924499229651,
+    "rank": 800
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_lstsq",
+    "score": 0.21770998415214016,
+    "rank": 801
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_arg_reductions",
+    "score": 0.21722808441558528,
+    "rank": 802
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_can_make_really_big_random_array",
+    "score": 0.21675900277008298,
+    "rank": 803
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_do_method_descriptor",
+    "score": 0.21675900277008298,
+    "rank": 803
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_pprint_task",
+    "score": 0.21661073825503374,
+    "rank": 805
+  },
+  {
+    "api_name": "dask.async.execute_task",
+    "score": 0.21647727272727313,
+    "rank": 806
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_resource_profiler",
+    "score": 0.21602348993288578,
+    "rank": 807
+  },
+  {
+    "api_name": "dask.array.tests.test_linearoperator.test_LinearOperator",
+    "score": 0.21370967741935532,
+    "rank": 808
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_resource_profiler_plot",
+    "score": 0.21323529411764697,
+    "rank": 809
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg._check_lu_result",
+    "score": 0.21259842519685024,
+    "rank": 810
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_solve",
+    "score": 0.2116718027734985,
+    "rank": 811
+  },
+  {
+    "api_name": "dask.core.preorder_traversal",
+    "score": 0.2108731466227347,
+    "rank": 812
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_not_found",
+    "score": 0.20957568807339444,
+    "rank": 813
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_reductions_1D",
+    "score": 0.20841346153846219,
+    "rank": 814
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_loc_timestamp_str",
+    "score": 0.20833333333333404,
+    "rank": 815
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.test_linspace",
+    "score": 0.207906712172924,
+    "rank": 816
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_series_groupby_errors",
+    "score": 0.20693597560975652,
+    "rank": 817
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.rolling_functions_tests",
+    "score": 0.20622417355371947,
+    "rank": 818
+  },
+  {
+    "api_name": "dask.tests.test_multiprocessing.make_bad_result",
+    "score": 0.20619946091644203,
+    "rank": 819
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_read_bytes_blocksize_none",
+    "score": 0.20619158878504662,
+    "rank": 820
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_cache_profiler_plot",
+    "score": 0.20486656200941922,
+    "rank": 821
+  },
+  {
+    "api_name": "dask.tests.test_multiprocessing.test_unpicklable_results_generate_errors",
+    "score": 0.2042889390519187,
+    "rank": 822
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slicing_exhaustively",
+    "score": 0.20190429687500078,
+    "rank": 823
+  },
+  {
+    "api_name": "dask.tests.test_rewrite.test_matches",
+    "score": 0.20143794147325966,
+    "rank": 824
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.test_rolling_series",
+    "score": 0.2011111111111109,
+    "rank": 825
+  },
+  {
+    "api_name": "dask.dataframe.partitionquantiles.process_val_weights",
+    "score": 0.1981998992950662,
+    "rank": 826
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_tsqr_svd_irregular_blocks",
+    "score": 0.19808522114347404,
+    "rank": 827
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_tsqr_svd_regular_blocks",
+    "score": 0.19744623655914018,
+    "rank": 828
+  },
+  {
+    "api_name": "dask.tests.test_order.f",
+    "score": 0.19733333333333325,
+    "rank": 829
+  },
+  {
+    "api_name": "dask.utils.skip",
+    "score": 0.19733333333333325,
+    "rank": 829
+  },
+  {
+    "api_name": "dask.tests.test_utils.test_gh606",
+    "score": 0.19706317867719703,
+    "rank": 831
+  },
+  {
+    "api_name": "dask.array.core.histogram",
+    "score": 0.19702411493073457,
+    "rank": 832
+  },
+  {
+    "api_name": "dask.tests.test_multiprocessing.test_errors_propagate",
+    "score": 0.19673913043478253,
+    "rank": 833
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_modification_time_open_files",
+    "score": 0.1964583333333334,
+    "rank": 834
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_modification_time_read_bytes",
+    "score": 0.1964583333333334,
+    "rank": 834
+  },
+  {
+    "api_name": "dask.dataframe.csv.read_csv",
+    "score": 0.19616495507060405,
+    "rank": 836
+  },
+  {
+    "api_name": "dask.array.optimization.fuse_slice",
+    "score": 0.1958807521029201,
+    "rank": 837
+  },
+  {
+    "api_name": "dask.tests.test_threaded.bad",
+    "score": 0.1957671957671956,
+    "rank": 838
+  },
+  {
+    "api_name": "dask.utils.ignoring",
+    "score": 0.19560185185185186,
+    "rank": 839
+  },
+  {
+    "api_name": "dask.array.tests.test_image.test_imread_with_custom_function",
+    "score": 0.19481236203090502,
+    "rank": 840
+  },
+  {
+    "api_name": "dask.array.tests.test_image.test_preprocess",
+    "score": 0.19481236203090502,
+    "rank": 840
+  },
+  {
+    "api_name": "dask.tests.test_dot.test_filenames_and_formats",
+    "score": 0.1939178515007901,
+    "rank": 842
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_reductions_2D",
+    "score": 0.19387298747763926,
+    "rank": 843
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_getitem",
+    "score": 0.19359110169491578,
+    "rank": 844
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_sync_keys",
+    "score": 0.1931608133086875,
+    "rank": 845
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_unquote",
+    "score": 0.19280442804428033,
+    "rank": 846
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_dealias",
+    "score": 0.19280442804428033,
+    "rank": 846
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_array_broadcasting",
+    "score": 0.1921116504854372,
+    "rank": 848
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_0_depth",
+    "score": 0.19002757352941235,
+    "rank": 849
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_depth_equals_boundary_length",
+    "score": 0.19002757352941235,
+    "rank": 849
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_depth_greater_than_boundary_length",
+    "score": 0.19002757352941235,
+    "rank": 849
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_some_0_depth",
+    "score": 0.19002757352941235,
+    "rank": 849
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_bad_compression",
+    "score": 0.18978494623655917,
+    "rank": 853
+  },
+  {
+    "api_name": "dask.array.linalg.solve_triangular",
+    "score": 0.18968846549948581,
+    "rank": 854
+  },
+  {
+    "api_name": "dask.array.rechunk.rechunk",
+    "score": 0.18889548693586777,
+    "rank": 855
+  },
+  {
+    "api_name": "dask.tests.test_multiprocessing.test_pickle_globals",
+    "score": 0.18877551020408156,
+    "rank": 856
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_hard_fuse_slice_cases",
+    "score": 0.1886422976501304,
+    "rank": 857
+  },
+  {
+    "api_name": "dask.tests.test_core.test__deps",
+    "score": 0.1886422976501304,
+    "rank": 857
+  },
+  {
+    "api_name": "dask.tests.test_core.test_get_dependencies_empty",
+    "score": 0.1886422976501304,
+    "rank": 857
+  },
+  {
+    "api_name": "dask.tests.test_core.test_get_dependencies_list",
+    "score": 0.1886422976501304,
+    "rank": 857
+  },
+  {
+    "api_name": "dask.tests.test_core.test_get_dependencies_nested",
+    "score": 0.1886422976501304,
+    "rank": 857
+  },
+  {
+    "api_name": "dask.tests.test_multiprocessing.test_fuse_doesnt_clobber_intermediates",
+    "score": 0.1886422976501304,
+    "rank": 857
+  },
+  {
+    "api_name": "dask.tests.test_threaded.test_exceptions_rise_to_top",
+    "score": 0.1886422976501304,
+    "rank": 857
+  },
+  {
+    "api_name": "dask.tests.test_threaded.test_get_without_computation",
+    "score": 0.1886422976501304,
+    "rank": 857
+  },
+  {
+    "api_name": "dask.tests.test_threaded.test_nested_get",
+    "score": 0.1886422976501304,
+    "rank": 857
+  },
+  {
+    "api_name": "dask.utils.textblock",
+    "score": 0.18831168831168899,
+    "rank": 866
+  },
+  {
+    "api_name": "dask.core._toposort",
+    "score": 0.18798611111111174,
+    "rank": 867
+  },
+  {
+    "api_name": "dask.dataframe.shuffle.rearrange_by_column_tasks",
+    "score": 0.1875648340248972,
+    "rank": 868
+  },
+  {
+    "api_name": "dask.array.slicing._slice_1d",
+    "score": 0.18540700669757948,
+    "rank": 869
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_functions_of",
+    "score": 0.18462897526501754,
+    "rank": 870
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_inline",
+    "score": 0.1843033509700177,
+    "rank": 871
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_lu_1",
+    "score": 0.18381675874769854,
+    "rank": 872
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_groupby_get_group",
+    "score": 0.18249682337992412,
+    "rank": 873
+  },
+  {
+    "api_name": "dask.array.linalg._cholesky",
+    "score": 0.18102394916911146,
+    "rank": 874
+  },
+  {
+    "api_name": "dask.tests.test_rewrite.test_RuleSet",
+    "score": 0.1806249999999998,
+    "rank": 875
+  },
+  {
+    "api_name": "dask.array.tests.test_linalg.test_svd_compressed",
+    "score": 0.17960640138408368,
+    "rank": 876
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_rolling.basic_rolling_tests",
+    "score": 0.1795188848920869,
+    "rank": 877
+  },
+  {
+    "api_name": "dask.dot.to_graphviz",
+    "score": 0.17927631578947456,
+    "rank": 878
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_array_delayed",
+    "score": 0.17807396733909764,
+    "rank": 879
+  },
+  {
+    "api_name": "dask.bytes.tests.test_s3.test_getsize",
+    "score": 0.1778846153846153,
+    "rank": 880
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_read_bytes_block",
+    "score": 0.17774888558692448,
+    "rank": 881
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_progress.test_clean_exit",
+    "score": 0.1774509803921568,
+    "rank": 882
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_inline_functions_protects_output_keys",
+    "score": 0.17708333333333337,
+    "rank": 883
+  },
+  {
+    "api_name": "dask.tests.test_threaded.test_get",
+    "score": 0.17708333333333337,
+    "rank": 883
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.reduction_2d_test",
+    "score": 0.17680256064690125,
+    "rank": 885
+  },
+  {
+    "api_name": "dask.tests.test_core.test_quote",
+    "score": 0.17579075425790736,
+    "rank": 886
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.groupby_internal_repr",
+    "score": 0.17402723735408632,
+    "rank": 887
+  },
+  {
+    "api_name": "dask.array.core.map_blocks",
+    "score": 0.17175771476230206,
+    "rank": 888
+  },
+  {
+    "api_name": "dask.array.core.reshape",
+    "score": 0.16934141702330074,
+    "rank": 889
+  },
+  {
+    "api_name": "dask.tests.test_utils.test_infer_storage_options",
+    "score": 0.1690304826418294,
+    "rank": 890
+  },
+  {
+    "api_name": "dask.array.tests.test_image.test_imread",
+    "score": 0.16627798507462677,
+    "rank": 891
+  },
+  {
+    "api_name": "dask.array.core.insert",
+    "score": 0.16276413478012663,
+    "rank": 892
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.test_arange",
+    "score": 0.16158267020336015,
+    "rank": 893
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_tree_reduce_depth",
+    "score": 0.1537005887300258,
+    "rank": 894
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_profiler.test_saves_file",
+    "score": 0.1536144578313251,
+    "rank": 895
+  },
+  {
+    "api_name": "dask.array.percentile.merge_percentiles",
+    "score": 0.1519504227517291,
+    "rank": 896
+  },
+  {
+    "api_name": "dask.array.core.tensordot",
+    "score": 0.14915074309978837,
+    "rank": 897
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_reductions_non_numeric_dtypes",
+    "score": 0.14886278896346095,
+    "rank": 898
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_names",
+    "score": 0.14858199753390888,
+    "rank": 899
+  },
+  {
+    "api_name": "dask.tests.test_core.test_has_tasks",
+    "score": 0.14222440944881876,
+    "rank": 900
+  },
+  {
+    "api_name": "dask.dataframe.multi.merge",
+    "score": 0.14139926888708287,
+    "rank": 901
+  },
+  {
+    "api_name": "dask.tests.test_optimize.test_equivalent",
+    "score": 0.1410256410256413,
+    "rank": 902
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_reductions_frame",
+    "score": 0.14011150234741865,
+    "rank": 903
+  },
+  {
+    "api_name": "dask.async.get_async",
+    "score": 0.13209288767975103,
+    "rank": 904
+  },
+  {
+    "api_name": "dask.optimize.fuse",
+    "score": 0.13202662721893477,
+    "rank": 905
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_scalar_arithmetics_with_dask_instances",
+    "score": 0.13200934579439338,
+    "rank": 906
+  },
+  {
+    "api_name": "dask.array.linalg.tsqr",
+    "score": 0.1309488836662731,
+    "rank": 907
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_reductions_frame_nan",
+    "score": 0.12430245535714401,
+    "rank": 908
+  },
+  {
+    "api_name": "dask.tests.test_context.test_set_options_context_manger",
+    "score": 0.12241200828157339,
+    "rank": 909
+  },
+  {
+    "api_name": "dask.array.tests.test_reductions.test_reductions_2D_nans",
+    "score": 0.1197575360419405,
+    "rank": 910
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_1d",
+    "score": 0.11898677089597165,
+    "rank": 911
+  },
+  {
+    "api_name": "dask.array.linalg.lu",
+    "score": 0.11840632992327138,
+    "rank": 912
+  },
+  {
+    "api_name": "dask.array.tests.test_chunk.test_integer_input",
+    "score": 0.11173184357541877,
+    "rank": 913
+  },
+  {
+    "api_name": "dask.array.tests.test_creation.test_arange_has_dtype",
+    "score": 0.11173184357541877,
+    "rank": 913
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_doc_randomstate",
+    "score": 0.11173184357541877,
+    "rank": 913
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_new_blockdim",
+    "score": 0.11173184357541877,
+    "rank": 913
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_uneven_chunks",
+    "score": 0.11173184357541877,
+    "rank": 913
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_loc_period_str",
+    "score": 0.11173184357541877,
+    "rank": 913
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_key_names_include_type_names",
+    "score": 0.11173184357541877,
+    "rank": 913
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_named_value",
+    "score": 0.11173184357541877,
+    "rank": 913
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_sensitive_to_partials",
+    "score": 0.11173184357541877,
+    "rank": 913
+  },
+  {
+    "api_name": "dask.tests.test_distributed.test_can_import_executor",
+    "score": 0.11173184357541877,
+    "rank": 913
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_random_all",
+    "score": 0.11153281096963752,
+    "rank": 923
+  },
+  {
+    "api_name": "dask.tests.test_multiprocessing.bad",
+    "score": 0.11080332409972282,
+    "rank": 924
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_fft",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_hfft",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_ifft",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_ihfft",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_irfft",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_rfft",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.array.tests.test_random.test_docs",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.array.tests.test_slicing.test_slice_singleton_value_on_boundary",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.tests.test_core.test_flatten",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.tests.test_core.test_subs",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_key_names_include_function_names",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.tests.test_delayed.test_value_name",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.tests.test_dot.test_to_graphviz_attributes",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.tests.test_multiprocessing.test_dumps_loads",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.tests.test_rewrite.test_RewriteRuleSubs",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.tests.test_utils.test_eq_strict",
+    "score": 0.10666666666666669,
+    "rank": 925
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_arithmetics",
+    "score": 0.1056216931216939,
+    "rank": 941
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_coerce_loc_index",
+    "score": 0.10362694300518105,
+    "rank": 942
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_fft_consistent_names",
+    "score": 0.10204081632653061,
+    "rank": 943
+  },
+  {
+    "api_name": "dask.array.tests.test_ghost.test_fractional_slice",
+    "score": 0.10204081632653061,
+    "rank": 943
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_loc_with_series",
+    "score": 0.10204081632653061,
+    "rank": 943
+  },
+  {
+    "api_name": "dask.tests.test_dot.test_task_label",
+    "score": 0.10204081632653061,
+    "rank": 943
+  },
+  {
+    "api_name": "dask.tests.test_utils.test_memory_repr",
+    "score": 0.10152284263959377,
+    "rank": 947
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_reductions",
+    "score": 0.09795142296369053,
+    "rank": 948
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_fft_n_kwarg",
+    "score": 0.097799511002445,
+    "rank": 949
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_ifft_n_kwarg",
+    "score": 0.097799511002445,
+    "rank": 949
+  },
+  {
+    "api_name": "dask.array.tests.test_wrap.test_wrap_consistent_names",
+    "score": 0.097799511002445,
+    "rank": 949
+  },
+  {
+    "api_name": "dask.tests.test_rewrite.test_args",
+    "score": 0.097799511002445,
+    "rank": 949
+  },
+  {
+    "api_name": "dask.tests.test_rewrite.test_head",
+    "score": 0.097799511002445,
+    "rank": 949
+  },
+  {
+    "api_name": "dask.bytes.tests.test_local.test_read_bytes_delimited",
+    "score": 0.0974835371589845,
+    "rank": 954
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_utils_dataframe.test_meta_nonempty_index",
+    "score": 0.09593782654127547,
+    "rank": 955
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_hfft_nkwarg",
+    "score": 0.0938967136150235,
+    "rank": 956
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_ihfft_n_kwarg",
+    "score": 0.0938967136150235,
+    "rank": 956
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_irfft_n_kwarg",
+    "score": 0.0938967136150235,
+    "rank": 956
+  },
+  {
+    "api_name": "dask.array.tests.test_fft.test_rfft_n_kwarg",
+    "score": 0.0938967136150235,
+    "rank": 956
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_fuse_slice_with_lists",
+    "score": 0.0938967136150235,
+    "rank": 956
+  },
+  {
+    "api_name": "dask.diagnostics.tests.test_progress.test_format_time",
+    "score": 0.0938967136150235,
+    "rank": 956
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_utils_dataframe.test_make_meta",
+    "score": 0.0917207792207797,
+    "rank": 962
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_arithmetics_different_index",
+    "score": 0.09148397976391309,
+    "rank": 963
+  },
+  {
+    "api_name": "dask.array.tests.test_optimization.test_fuse_slice",
+    "score": 0.09029345372460496,
+    "rank": 964
+  },
+  {
+    "api_name": "dask.tests.test_utils.test_takes_multiple_arguments",
+    "score": 0.0838574423480084,
+    "rank": 965
+  },
+  {
+    "api_name": "dask.tests.test_rewrite.test_RewriteRule",
+    "score": 0.07827788649706469,
+    "rank": 966
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_scalar_arithmetics",
+    "score": 0.07654332822085752,
+    "rank": 967
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_indexing.test_loc",
+    "score": 0.06525285481239806,
+    "rank": 968
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.check_frame_arithmetics",
+    "score": 0.055512869765653394,
+    "rank": 969
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.check_series_arithmetics",
+    "score": 0.055512869765653394,
+    "rank": 969
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_arithmetics_reduction.test_frame_series_arithmetic_methods",
+    "score": 0.05458620689654736,
+    "rank": 971
+  },
+  {
+    "api_name": "dask.dataframe.tests.test_groupby.test_split_apply_combine_on_series",
+    "score": 0.04706412567602014,
+    "rank": 972
+  }
+]

@@ -1,0 +1,98 @@
+{
+  "case": "matplotlib.axes._subplots.SubplotBase.get_geometry-matplotlib.axes._subplots.SubplotBase.get_subplotspec-v3.3.4",
+  "fix_type": "fix_R",
+  "candidate_api": "matplotlib.axes._subplots.SubplotBase.get_subplotspec",
+  "error": null,
+  "threshold_10pct": 27.2,
+  "algorithms_meeting_threshold": [
+    "treeBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 25,
+      "vi_rank": 25,
+      "delta": 0,
+      "exceeds_10pct": false
+    },
+    "tokenBased": {
+      "vi1_rank": 66,
+      "vi_rank": 69,
+      "delta": -3,
+      "exceeds_10pct": false
+    },
+    "treeBased": {
+      "vi1_rank": 84,
+      "vi_rank": 138,
+      "delta": -54,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.6502,
+      "baseline_rank": 25,
+      "delta_baseline_to_vi": 0
+    },
+    "tokenBased": {
+      "baseline_score": 0.2812,
+      "baseline_rank": 66,
+      "delta_baseline_to_vi": -3
+    },
+    "treeBased": {
+      "baseline_score": 0.4545,
+      "baseline_rank": 84,
+      "delta_baseline_to_vi": -54
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 25,
+          "vi_score": 0.6502,
+          "restored_score": 0.6502,
+          "restored_rank": 25,
+          "delta_vi_to_restored": 0
+        },
+        "tokenBased": {
+          "vi_rank": 69,
+          "vi_score": 0.2727,
+          "restored_score": 0.2812,
+          "restored_rank": 66,
+          "delta_vi_to_restored": 3
+        },
+        "treeBased": {
+          "vi_rank": 138,
+          "vi_score": 0.3659,
+          "restored_score": 0.4545,
+          "restored_rank": 84,
+          "delta_vi_to_restored": 54,
+          "distance_to_baseline": 0
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "treeBased": [
+      "block_001"
+    ],
+    "tokenBased": [
+      "block_001"
+    ],
+    "mapBased": [
+      "block_001"
+    ]
+  },
+  "block_sign_labels": {
+    "map_flat_token_down_tree_down": [
+      "block_001"
+    ]
+  }
+}

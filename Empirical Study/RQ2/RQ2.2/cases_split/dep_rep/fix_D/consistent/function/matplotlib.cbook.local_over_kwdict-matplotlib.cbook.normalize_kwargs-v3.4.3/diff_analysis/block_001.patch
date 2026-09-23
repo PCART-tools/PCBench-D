@@ -1,0 +1,8 @@
+@@ -1,6 +1,2 @@
+-@_api.delete_parameter("3.3", "required")
+-@_api.delete_parameter("3.3", "forbidden")
+-@_api.delete_parameter("3.3", "allowed")
+-def normalize_kwargs(kw, alias_mapping=None, required=(), forbidden=(),
+-                     allowed=None):
++def normalize_kwargs(kw, alias_mapping=None):
+     """

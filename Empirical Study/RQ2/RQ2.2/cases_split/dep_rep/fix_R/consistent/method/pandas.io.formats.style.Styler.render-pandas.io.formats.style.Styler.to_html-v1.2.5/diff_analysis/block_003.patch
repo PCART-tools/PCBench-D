@@ -1,0 +1,11 @@
+@@ -6,2 +11,10 @@
+         ----------
++        sparse_index : bool, optional
++            Whether to sparsify the display of a hierarchical index. Setting to False
++            will display each explicit level element in a hierarchical key for each row.
++            Defaults to ``pandas.options.styler.sparse.index`` value.
++        sparse_columns : bool, optional
++            Whether to sparsify the display of a hierarchical index. Setting to False
++            will display each explicit level element in a hierarchical key for each row.
++            Defaults to ``pandas.options.styler.sparse.columns`` value.
+         **kwargs

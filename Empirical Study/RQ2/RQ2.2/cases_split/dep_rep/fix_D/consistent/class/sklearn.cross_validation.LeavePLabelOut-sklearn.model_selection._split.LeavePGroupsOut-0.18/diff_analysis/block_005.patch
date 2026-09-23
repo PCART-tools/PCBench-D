@@ -1,0 +1,9 @@
+@@ -61,2 +61,8 @@
+         unique_groups = np.unique(groups)
++        if self.n_groups >= len(unique_groups):
++            raise ValueError(
++                "The groups parameter contains fewer than (or equal to) "
++                "n_groups (%d) numbers of unique groups (%s). LeavePGroupsOut "
++                "expects that at least n_groups + 1 (%d) unique groups be "
++                "present" % (self.n_groups, unique_groups, self.n_groups + 1))
+         combi = combinations(range(len(unique_groups)), self.n_groups)

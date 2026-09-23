@@ -1,0 +1,12 @@
+@@ -1,5 +1,10 @@
+     def getlength(
+-        self, text: str | bytes, mode="", direction=None, features=None, language=None
++        self,
++        text: str | bytes,
++        mode: str = "",
++        direction: str | None = None,
++        features: list[str] | None = None,
++        language: str | None = None,
+     ) -> float:
+         """
+         Returns length (in pixels with 1/64 precision) of given text when rendered

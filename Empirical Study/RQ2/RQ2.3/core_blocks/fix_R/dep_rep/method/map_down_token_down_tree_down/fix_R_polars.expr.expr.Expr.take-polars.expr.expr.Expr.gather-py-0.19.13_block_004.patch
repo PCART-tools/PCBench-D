@@ -1,0 +1,10 @@
+@@ -47,8 +15,2 @@
+         """
+-        if isinstance(indices, list) or (
+-            _check_for_numpy(indices) and isinstance(indices, np.ndarray)
+-        ):
+-            indices_lit = F.lit(pl.Series("", indices, dtype=UInt32))._pyexpr
+-        else:
+-            indices_lit = parse_as_expression(indices)  # type: ignore[arg-type]
+-        return self._from_pyexpr(self._pyexpr.take(indices_lit))
++        return self.gather(indices)

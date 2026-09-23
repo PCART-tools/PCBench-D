@@ -1,0 +1,6 @@
+@@ -1,4 +2,2 @@
+     def cla(self):
+-        super().cla()
+-        self.set_ticks_position('none')
+-        self._wrap_locator_formatter()
++        self.clear()

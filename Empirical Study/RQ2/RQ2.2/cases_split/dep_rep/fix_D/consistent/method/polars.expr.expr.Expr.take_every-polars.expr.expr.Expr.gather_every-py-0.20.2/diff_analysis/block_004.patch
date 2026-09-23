@@ -1,0 +1,4 @@
+@@ -25,2 +39,2 @@
+         """
+-        return self._from_pyexpr(self._pyexpr.gather_every(n))
++        return self._from_pyexpr(self._pyexpr.gather_every(n, offset))

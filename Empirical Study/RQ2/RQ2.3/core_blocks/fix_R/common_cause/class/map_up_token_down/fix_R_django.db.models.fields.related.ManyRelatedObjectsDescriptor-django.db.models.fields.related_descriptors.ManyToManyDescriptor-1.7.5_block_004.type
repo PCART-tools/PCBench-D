@@ -1,0 +1,10 @@
+# detail
+Number of changes: 1
+
+1. Added | Transaction-handling structure
+   Added database-write routing and a transaction wrapper around `manager.clear()` and `manager.add(*value)`.
+   This includes:
+   * Assignment statement: assign `router.db_for_write(manager.through, instance=manager.instance)` to `db`;
+   * `with` statement: wrap the original `manager.clear()` and `manager.add(*value)` calls in `transaction.atomic(using=db, savepoint=False)`.
+# /detail
+# mode：Add context-manager statement (transaction handling)

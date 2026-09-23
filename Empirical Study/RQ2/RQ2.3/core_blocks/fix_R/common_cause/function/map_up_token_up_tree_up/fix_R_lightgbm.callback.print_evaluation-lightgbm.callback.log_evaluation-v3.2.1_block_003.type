@@ -1,0 +1,20 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the implementation that returned an internal callback function with an implementation that outputs a deprecation warning and returns `log_evaluation(period=period, show_stdv=show_stdv)`.
+   The original implementation included:
+
+   * Function definition: define `_callback(env: CallbackEnv) -> None`;
+   * Conditional statements: test `period`, `env.evaluation_result_list`, and the iteration interval;
+   * Assignment statement: generate the formatted `result`;
+   * Function call: call `_log_info(...)`;
+   * Attribute assignment: set `_callback.order = 10`;
+   * Return statement: return `_callback`.
+
+   The new implementation includes:
+
+   * Function call: call `_log_warning(...)`;
+   * Return statement: return `log_evaluation(period=period, show_stdv=show_stdv)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with warning call and return-call statement)

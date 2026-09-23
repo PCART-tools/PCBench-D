@@ -1,0 +1,15 @@
+@@ -4,12 +5,4 @@
+  
+-        Examples
+-        --------
+-        >>> s = pl.Series("a", [1, 2, 3, 4])
+-        >>> s.take_every(2)
+-        shape: (2,)
+-        Series: 'a' [i64]
+-        [
+-            1
+-            3
+-        ]
++        .. deprecated:: 0.19.14
++            This method has been renamed to :meth:`gather_every`.
+  

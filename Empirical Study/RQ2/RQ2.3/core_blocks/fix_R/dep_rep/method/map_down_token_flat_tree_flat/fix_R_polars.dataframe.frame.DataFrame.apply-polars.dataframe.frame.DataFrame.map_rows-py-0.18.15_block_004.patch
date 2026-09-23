@@ -1,0 +1,12 @@
+@@ -93,10 +25,2 @@
+         """
+-        # TODO:
+-        # from polars.utils.udfs import warn_on_inefficient_apply
+-        # warn_on_inefficient_apply(function, columns=self.columns, apply_target="frame)
+-
+-        out, is_df = self._df.apply(function, return_dtype, inference_size)
+-        if is_df:
+-            return self._from_pydf(out)
+-        else:
+-            return wrap_s(out).to_frame()
++        return self.map_rows(function, return_dtype, inference_size=inference_size)

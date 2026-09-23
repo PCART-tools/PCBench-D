@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Modified | Method implementation code block
+   Changed the implementation of `url` from formatting `parts` and appending `query` to calling the parent-class `url` method and then constructing the returned string through `url_for(**parts).with_query(query)`.
+   The original implementation included:
+
+   * Assignment statement: assign the result of `self._formatter.format_map(parts)` to `url`;
+   * Return statement: return `self._append_query(url, query)`.
+
+   The new implementation includes:
+
+   * Expression statement: call `super().url(**parts)`;
+   * Return statement: return `str(self.url_for(**parts).with_query(query))`.
+# /detail
+# mode：Modify method implementation (add superclass call and modify return-call statement)

@@ -1,0 +1,22 @@
+    def __getitem__(self, key):
+        """
+        Conserve RangeIndex type for scalar and slice keys.
+        """
+        if isinstance(key, slice):
+            return self._getitem_slice(key)
+        elif is_integer(key):
+            new_key = int(key)
+            try:
+                return self._range[new_key]
+            except IndexError as err:
+                raise IndexError(
+                    f"index {key} is out of bounds for axis 0 with size {len(self)}"
+                ) from err
+        elif is_scalar(key):
+            raise IndexError(
+                "only integers, slices (`:`), "
+                "ellipsis (`...`), numpy.newaxis (`None`) "
+                "and integer or boolean "
+                "arrays are valid indices"
+            )
+        return super().__getitem__(key)

@@ -1,0 +1,86 @@
+    def get_tightbbox(self, renderer=None, call_axes_locator=True,
+                      bbox_extra_artists=None, *, for_layout_only=False):
+        """
+        Return the tight bounding box of the Axes, including axis and their
+        decorators (xlabel, title, etc).
+
+        Artists that have ``artist.set_in_layout(False)`` are not included
+        in the bbox.
+
+        Parameters
+        ----------
+        renderer : `.RendererBase` subclass
+            renderer that will be used to draw the figures (i.e.
+            ``fig.canvas.get_renderer()``)
+
+        bbox_extra_artists : list of `.Artist` or ``None``
+            List of artists to include in the tight bounding box.  If
+            ``None`` (default), then all artist children of the Axes are
+            included in the tight bounding box.
+
+        call_axes_locator : bool, default: True
+            If *call_axes_locator* is ``False``, it does not call the
+            ``_axes_locator`` attribute, which is necessary to get the correct
+            bounding box. ``call_axes_locator=False`` can be used if the
+            caller is only interested in the relative size of the tightbbox
+            compared to the Axes bbox.
+
+        for_layout_only : default: False
+            The bounding box will *not* include the x-extent of the title and
+            the xlabel, or the y-extent of the ylabel.
+
+        Returns
+        -------
+        `.BboxBase`
+            Bounding box in figure pixel coordinates.
+
+        See Also
+        --------
+        matplotlib.axes.Axes.get_window_extent
+        matplotlib.axis.Axis.get_tightbbox
+        matplotlib.spines.Spine.get_window_extent
+        """
+
+        bb = []
+        if renderer is None:
+            renderer = self.figure._get_renderer()
+
+        if not self.get_visible():
+            return None
+
+        locator = self.get_axes_locator()
+        self.apply_aspect(
+            locator(self, renderer) if locator and call_axes_locator else None)
+
+        for axis in self._axis_map.values():
+            if self.axison and axis.get_visible():
+                ba = martist._get_tightbbox_for_layout_only(axis, renderer)
+                if ba:
+                    bb.append(ba)
+        self._update_title_position(renderer)
+        axbbox = self.get_window_extent(renderer)
+        bb.append(axbbox)
+
+        for title in [self.title, self._left_title, self._right_title]:
+            if title.get_visible():
+                bt = title.get_window_extent(renderer)
+                if for_layout_only and bt.width > 0:
+                    # make the title bbox 1 pixel wide so its width
+                    # is not accounted for in bbox calculations in
+                    # tight/constrained_layout
+                    bt.x0 = (bt.x0 + bt.x1) / 2 - 0.5
+                    bt.x1 = bt.x0 + 1.0
+                bb.append(bt)
+
+        bbox_artists = bbox_extra_artists
+        if bbox_artists is None:
+            bbox_artists = self.get_default_bbox_extra_artists()
+
+        for a in bbox_artists:
+            bbox = a.get_tightbbox(renderer)
+            if (bbox is not None
+                    and 0 < bbox.width < np.inf
+                    and 0 < bbox.height < np.inf):
+                bb.append(bbox)
+        return mtransforms.Bbox.union(
+            [b for b in bb if b.width != 0 or b.height != 0])

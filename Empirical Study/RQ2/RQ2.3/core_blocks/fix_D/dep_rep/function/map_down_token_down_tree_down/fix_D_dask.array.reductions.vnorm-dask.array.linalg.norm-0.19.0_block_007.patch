@@ -1,0 +1,7 @@
+@@ -49,3 +55,5 @@
+         else:
+-            r = r.sum(axis=axis[0], keepdims=keepdims).max(keepdims=keepdims)
++            r = r.sum(axis=axis[0], keepdims=True).max(axis=axis[1], keepdims=True)
++            if keepdims is False:
++                r = r.squeeze(axis=axis)
+     elif len(axis) == 2 and ord == -1:

@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Changed the body of `__invert__` from directly computing and wrapping an array to performing the computation and return in a `try-except` structure with additional exception-branch handling.
+   The original implementation included:
+
+   * Assignment statement: assign the result of `operator.inv(_values_from_object(self))` to `arr`;
+   * Return statement: call and return `self._wrap_array(arr, self.axes, copy=False)`.
+
+   The new implementation includes:
+
+   * Try-except statement: in the `try` block, execute `operator.inv(_values_from_object(self))`, assign the result to `arr`, and then return `self.__array_wrap__(arr)`;
+   * Conditional statement: in the `except` block, return `self` when `not np.prod(self.shape)` is true;
+   * Raise statement: re-raise the exception at the end of the exception branch.
+# /detail
+# mode：Modify method implementation (add exception-handling structure and modify return-call statement)

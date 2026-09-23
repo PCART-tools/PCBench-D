@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original expression parsing, time-parameter conversion, and `self._ldf.group_by_rolling(...)` call with directly returning a call to `self.rolling(...)`.
+   The original implementation included:
+
+   * Assignment statements: parse `index_column`, set `offset` when `offset is None`, parse `by`, and convert `period` and `offset`;
+   * Call statement: call `self._ldf.group_by_rolling(...)` and assign the result to `lgb`.
+
+   The new implementation includes:
+
+   * Return statement: call `self.rolling(...)`, passing `index_column`, `period`, `offset`, `closed`, `by`, and `check_sorted`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

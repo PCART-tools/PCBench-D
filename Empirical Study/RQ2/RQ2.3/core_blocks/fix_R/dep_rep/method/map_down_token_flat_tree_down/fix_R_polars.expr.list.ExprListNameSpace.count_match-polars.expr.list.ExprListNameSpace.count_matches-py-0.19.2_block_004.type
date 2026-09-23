@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Changed the method body from parsing `element`, calling `_pyexpr.list_count_match(element)`, and wrapping the result to directly returning `self.count_matches(element)`.
+   The original implementation included:
+
+   * Assignment statement: assign the result of `parse_as_expression(element, str_as_lit=True)` to `element`;
+   * Return statement: return `wrap_expr(self._pyexpr.list_count_match(element))`.
+
+   The new implementation includes:
+
+   * Return statement: return `self.count_matches(element)`.
+# /detail
+# mode：Modify method implementation (replace original implementation with return-call statement)

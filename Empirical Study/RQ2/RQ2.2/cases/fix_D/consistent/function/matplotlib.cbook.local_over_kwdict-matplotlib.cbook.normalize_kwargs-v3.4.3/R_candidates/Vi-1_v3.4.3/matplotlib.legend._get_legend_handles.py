@@ -1,0 +1,28 @@
+def _get_legend_handles(axs, legend_handler_map=None):
+    """
+    Return a generator of artists that can be used as handles in
+    a legend.
+
+    """
+    handles_original = []
+    for ax in axs:
+        handles_original += (ax.lines + ax.patches +
+                             ax.collections + ax.containers)
+        # support parasite axes:
+        if hasattr(ax, 'parasites'):
+            for axx in ax.parasites:
+                handles_original += (axx.lines + axx.patches +
+                                     axx.collections + axx.containers)
+
+    handler_map = Legend.get_default_handler_map()
+
+    if legend_handler_map is not None:
+        handler_map = handler_map.copy()
+        handler_map.update(legend_handler_map)
+
+    has_handler = Legend.get_legend_handler
+
+    for handle in handles_original:
+        label = handle.get_label()
+        if label != '_nolegend_' and has_handler(handler_map, handle):
+            yield handle

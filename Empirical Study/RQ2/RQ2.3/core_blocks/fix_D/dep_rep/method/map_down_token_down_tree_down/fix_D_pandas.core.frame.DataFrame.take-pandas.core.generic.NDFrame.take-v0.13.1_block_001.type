@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the implementation that converted `axis` and `indices` according to `convert` and called either `_data.reindex_axis` or `_data.take` based on `baxis` with a direct call to `_data.take`, passing `indices`, `axis=self._get_block_manager_axis(axis)`, `convert=True`, and `verify=True`.
+   The original implementation included:
+
+   * Conditional statement: when `convert` was true, call `_get_axis_number(axis)` and `_maybe_convert_indices(...)` to update `axis` and `indices`;
+   * Assignment statement: assign the result of `_get_block_manager_axis(axis)` to `baxis`;
+   * Conditional statement: generate `new_data` through `_data.reindex_axis(...)` or `_data.take(...)` according to whether `baxis == 0`.
+
+   The new implementation includes:
+
+   * Assignment statement: generate `new_data` through `_data.take(indices, axis=self._get_block_manager_axis(axis), convert=True, verify=True)`.
+# /detail
+# mode：Modify implementation block (replace branch-based implementation with call-assignment statement)

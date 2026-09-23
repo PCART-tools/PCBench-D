@@ -1,0 +1,8 @@
+    def send(self, message, binary=False, compress=None):
+        """Send a frame over the websocket with message as its payload."""
+        if isinstance(message, str):
+            message = message.encode('utf-8')
+        if binary:
+            return self._send_frame(message, WSMsgType.BINARY, compress)
+        else:
+            return self._send_frame(message, WSMsgType.TEXT, compress)

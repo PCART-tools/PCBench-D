@@ -1,0 +1,14 @@
+    def pprint_getters(self):
+        """Return the getters and actual values as list of strings."""
+        lines = []
+        for name, val in sorted(self.properties().items()):
+            if getattr(val, 'shape', ()) != () and len(val) > 6:
+                s = str(val[:6]) + '...'
+            else:
+                s = str(val)
+            s = s.replace('\n', ' ')
+            if len(s) > 50:
+                s = s[:50] + '...'
+            name = self.aliased_name(name)
+            lines.append(f'    {name} = {s}')
+        return lines

@@ -1,0 +1,67 @@
+    def to_html5_video(self, embed_limit=None):
+        '''Returns animation as an HTML5 video tag.
+
+        This saves the animation as an h264 video, encoded in base64
+        directly into the HTML5 video tag. This respects the rc parameters
+        for the writer as well as the bitrate. This also makes use of the
+        ``interval`` to control the speed, and uses the ``repeat``
+        parameter to decide whether to loop.
+        '''
+        VIDEO_TAG = r'''<video {size} {options}>
+  <source type="video/mp4" src="data:video/mp4;base64,{video}">
+  Your browser does not support the video tag.
+</video>'''
+        # Cache the rendering of the video as HTML
+        if not hasattr(self, '_base64_video'):
+            # Save embed limit, which is given in MB
+            if embed_limit is None:
+                embed_limit = rcParams['animation.embed_limit']
+
+            # Convert from MB to bytes
+            embed_limit *= 1024 * 1024
+
+            # First write the video to a tempfile. Set delete to False
+            # so we can re-open to read binary data.
+            with tempfile.NamedTemporaryFile(suffix='.m4v',
+                                             delete=False) as f:
+                # We create a writer manually so that we can get the
+                # appropriate size for the tag
+                Writer = writers[rcParams['animation.writer']]
+                writer = Writer(codec='h264',
+                                bitrate=rcParams['animation.bitrate'],
+                                fps=1000. / self._interval)
+                self.save(f.name, writer=writer)
+
+            # Now open and base64 encode
+            with open(f.name, 'rb') as video:
+                vid64 = encodebytes(video.read())
+                vid_len = len(vid64)
+                if vid_len >= embed_limit:
+                    warnings.warn("Animation movie is {} bytes, exceeding "
+                                  "the limit of {}. If you're sure you want a "
+                                  "large animation embedded, set the "
+                                  "animation.embed_limit rc parameter to a "
+                                  "larger value (in MB).".format(vid_len,
+                                                                 embed_limit))
+                else:
+                    self._base64_video = vid64.decode('ascii')
+                    self._video_size = 'width="{}" height="{}"'.format(
+                            *writer.frame_size)
+
+            # Now we can remove
+            os.remove(f.name)
+
+        # If we exceeded the size, this attribute won't exist
+        if hasattr(self, '_base64_video'):
+            # Default HTML5 options are to autoplay and display video controls
+            options = ['controls', 'autoplay']
+
+            # If we're set to repeat, make it loop
+            if hasattr(self, 'repeat') and self.repeat:
+                options.append('loop')
+
+            return VIDEO_TAG.format(video=self._base64_video,
+                                    size=self._video_size,
+                                    options=' '.join(options))
+        else:
+            return 'Video too large to embed.'

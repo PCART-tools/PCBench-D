@@ -1,0 +1,6 @@
+@@ -1,1 +1,5 @@
++@deprecated(
++    issue=15109,
++    useinstead="from sympy.matrices.common import classof",
++    deprecated_since_version="1.3")
+ def classof(A, B):

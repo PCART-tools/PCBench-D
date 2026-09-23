@@ -1,0 +1,5 @@
+@@ -2,3 +2,3 @@
+ def enable_mixed_precision_graph_rewrite(opt, loss_scale='dynamic'):
+-  """Enable mixed precision via a graph rewrite.
++  """Enable mixed precision in `tf.function`s via a graph rewrite.
+  

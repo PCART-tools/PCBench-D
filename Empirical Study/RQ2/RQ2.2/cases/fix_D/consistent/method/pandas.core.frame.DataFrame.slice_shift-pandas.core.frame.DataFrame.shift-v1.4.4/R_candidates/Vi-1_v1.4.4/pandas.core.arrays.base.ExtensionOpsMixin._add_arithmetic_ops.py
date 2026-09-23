@@ -1,0 +1,20 @@
+    @classmethod
+    def _add_arithmetic_ops(cls):
+        setattr(cls, "__add__", cls._create_arithmetic_method(operator.add))
+        setattr(cls, "__radd__", cls._create_arithmetic_method(roperator.radd))
+        setattr(cls, "__sub__", cls._create_arithmetic_method(operator.sub))
+        setattr(cls, "__rsub__", cls._create_arithmetic_method(roperator.rsub))
+        setattr(cls, "__mul__", cls._create_arithmetic_method(operator.mul))
+        setattr(cls, "__rmul__", cls._create_arithmetic_method(roperator.rmul))
+        setattr(cls, "__pow__", cls._create_arithmetic_method(operator.pow))
+        setattr(cls, "__rpow__", cls._create_arithmetic_method(roperator.rpow))
+        setattr(cls, "__mod__", cls._create_arithmetic_method(operator.mod))
+        setattr(cls, "__rmod__", cls._create_arithmetic_method(roperator.rmod))
+        setattr(cls, "__floordiv__", cls._create_arithmetic_method(operator.floordiv))
+        setattr(
+            cls, "__rfloordiv__", cls._create_arithmetic_method(roperator.rfloordiv)
+        )
+        setattr(cls, "__truediv__", cls._create_arithmetic_method(operator.truediv))
+        setattr(cls, "__rtruediv__", cls._create_arithmetic_method(roperator.rtruediv))
+        setattr(cls, "__divmod__", cls._create_arithmetic_method(divmod))
+        setattr(cls, "__rdivmod__", cls._create_arithmetic_method(roperator.rdivmod))

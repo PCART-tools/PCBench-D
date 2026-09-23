@@ -1,0 +1,9 @@
+@@ -55,7 +27,2 @@
+     """
+-    exprs = parse_as_list_of_expressions(exprs)
+-    return wrap_expr(
+-        plr.map_mul(
+-            exprs, function, return_dtype, apply_groups=False, returns_scalar=False
+-        )
+-    )
++    return map_batches(exprs, function, return_dtype)

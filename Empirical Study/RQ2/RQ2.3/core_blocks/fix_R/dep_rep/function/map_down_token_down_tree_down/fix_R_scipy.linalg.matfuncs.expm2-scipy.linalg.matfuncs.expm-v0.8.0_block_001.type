@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Return statement
+   Changed the direct return of `dot(dot(vr, diag(exp(s))), vri).astype(t)` to first assigning the computed result to `r`, and then returning either `r.real.astype(t)` or `r.astype(t)` according to the value of `t`.
+# /detail
+# mode：Modify control-flow structure (replace direct return with conditional-branch returns)

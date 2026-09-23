@@ -1,0 +1,18 @@
+    def __init__(self, bitmap, renderer):
+        super().__init__()
+        # assert self.Ok(), "wxMemoryDC not OK to use"
+        _log.debug("%s - __init__(): %s", type(self), bitmap)
+
+        dc, gfx_ctx = self._cache.get(bitmap, (None, None))
+        if dc is None:
+            dc = wx.MemoryDC(bitmap)
+            gfx_ctx = wx.GraphicsContext.Create(dc)
+            gfx_ctx._lastcliprect = None
+            self._cache[bitmap] = dc, gfx_ctx
+
+        self.bitmap = bitmap
+        self.dc = dc
+        self.gfx_ctx = gfx_ctx
+        self._pen = wx.Pen('BLACK', 1, wx.SOLID)
+        gfx_ctx.SetPen(self._pen)
+        self.renderer = renderer

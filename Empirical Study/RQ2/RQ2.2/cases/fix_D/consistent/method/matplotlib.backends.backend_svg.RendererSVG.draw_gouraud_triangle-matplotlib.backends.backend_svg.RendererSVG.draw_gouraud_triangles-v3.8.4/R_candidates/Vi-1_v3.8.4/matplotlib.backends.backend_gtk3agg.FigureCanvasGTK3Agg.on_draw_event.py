@@ -1,0 +1,38 @@
+    def on_draw_event(self, widget, ctx):
+        if self._idle_draw_id:
+            GLib.source_remove(self._idle_draw_id)
+            self._idle_draw_id = 0
+            self.draw()
+
+        scale = self.device_pixel_ratio
+        allocation = self.get_allocation()
+        w = allocation.width * scale
+        h = allocation.height * scale
+
+        if not len(self._bbox_queue):
+            Gtk.render_background(
+                self.get_style_context(), ctx,
+                allocation.x, allocation.y,
+                allocation.width, allocation.height)
+            bbox_queue = [transforms.Bbox([[0, 0], [w, h]])]
+        else:
+            bbox_queue = self._bbox_queue
+
+        for bbox in bbox_queue:
+            x = int(bbox.x0)
+            y = h - int(bbox.y1)
+            width = int(bbox.x1) - int(bbox.x0)
+            height = int(bbox.y1) - int(bbox.y0)
+
+            buf = cbook._unmultiplied_rgba8888_to_premultiplied_argb32(
+                np.asarray(self.copy_from_bbox(bbox)))
+            image = cairo.ImageSurface.create_for_data(
+                buf.ravel().data, cairo.FORMAT_ARGB32, width, height)
+            image.set_device_scale(scale, scale)
+            ctx.set_source_surface(image, x / scale, y / scale)
+            ctx.paint()
+
+        if len(self._bbox_queue):
+            self._bbox_queue = []
+
+        return False

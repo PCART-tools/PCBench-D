@@ -1,0 +1,10 @@
+@@ -21,6 +22,5 @@
+     -------
+-    pred,dist : dictionaries
+-       Returns two dictionaries representing a list of predecessors 
+-       of a node and the distance from the source to each node. The
+-       dictionaries are keyed by target node label.
++    pred, dist : dictionaries
++       Returns two dictionaries keyed by node to predecessor in the 
++       path and to the distance from the source respectively.
+  

@@ -1,0 +1,5 @@
+@@ -88,3 +89,3 @@
+  
+-            if self.ndim == 1 and value is not None:
++            if self.ndim == 1:
+                 if isinstance(value, (dict, com.ABCSeries)):

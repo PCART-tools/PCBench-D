@@ -1,0 +1,5 @@
+@compatibility(is_backward_compatible=False)
+def erase_nodes(gm: GraphModule, nodes: NodeList):
+    # erase original nodes in inversed topological order
+    for node in reversed(nodes):
+        gm.graph.erase_node(node)

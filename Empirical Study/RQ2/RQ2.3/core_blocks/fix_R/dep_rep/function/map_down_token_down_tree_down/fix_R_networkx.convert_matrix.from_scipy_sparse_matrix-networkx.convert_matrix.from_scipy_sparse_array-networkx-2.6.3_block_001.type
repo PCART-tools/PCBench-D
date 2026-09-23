@@ -1,0 +1,22 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original graph-construction implementation with a warning call and a function return call.
+   The original implementation included:
+
+   * Assignment statements: create an empty graph `G` and obtain `n, m` from `A.shape`;
+   * Conditional statement: verify that the matrix was square and raise `nx.NetworkXError` otherwise;
+   * Method call: add nodes to `G`;
+   * Assignment statement: generate `triples` through `_generate_weighted_edges(A)`;
+   * Conditional statement: rewrite `triples` for an integer matrix, a multigraph, and `parallel_edges` set to true;
+   * Conditional statement: filter `triples` for an undirected multigraph;
+   * Method call: call `G.add_weighted_edges_from(...)` to add weighted edges;
+   * Return statement: return `G`.
+
+   The new implementation includes:
+
+   * Function call: call `warnings.warn(...)` to issue a `DeprecationWarning`;
+   * Return statement: return the result of `from_scipy_sparse_array(...)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with warning call and return-call statement)

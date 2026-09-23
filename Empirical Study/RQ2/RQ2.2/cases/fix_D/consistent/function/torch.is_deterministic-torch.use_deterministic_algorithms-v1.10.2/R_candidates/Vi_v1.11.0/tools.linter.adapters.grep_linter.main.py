@@ -1,0 +1,86 @@
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="grep wrapper linter.", fromfile_prefix_chars="@",
+    )
+    parser.add_argument(
+        "--pattern", required=True, help="pattern to grep for",
+    )
+    parser.add_argument(
+        "--linter-name", required=True, help="name of the linter",
+    )
+    parser.add_argument(
+        "--error-name",
+        required=True,
+        help="human-readable description of what the error is",
+    )
+    parser.add_argument(
+        "--error-description",
+        required=True,
+        help="message to display when the pattern is found",
+    )
+    parser.add_argument(
+        "--replace-pattern",
+        help=(
+            "the form of a pattern passed to `sed -r`. "
+            "If specified, this will become proposed replacement text."
+        ),
+    )
+    parser.add_argument(
+        "--verbose", action="store_true", help="verbose logging",
+    )
+    parser.add_argument(
+        "filenames", nargs="+", help="paths to lint",
+    )
+    args = parser.parse_args()
+
+    logging.basicConfig(
+        format="<%(threadName)s:%(levelname)s> %(message)s",
+        level=logging.NOTSET
+        if args.verbose
+        else logging.DEBUG
+        if len(args.filenames) < 1000
+        else logging.INFO,
+        stream=sys.stderr,
+    )
+
+    try:
+        proc = run_command(["grep", "-nPH", args.pattern, *args.filenames])
+    except Exception as err:
+        err_msg = LintMessage(
+            path=None,
+            line=None,
+            char=None,
+            code=args.linter_name,
+            severity=LintSeverity.ERROR,
+            name="command-failed",
+            original=None,
+            replacement=None,
+            description=(
+                f"Failed due to {err.__class__.__name__}:\n{err}"
+                if not isinstance(err, subprocess.CalledProcessError)
+                else (
+                    "COMMAND (exit code {returncode})\n"
+                    "{command}\n\n"
+                    "STDERR\n{stderr}\n\n"
+                    "STDOUT\n{stdout}"
+                ).format(
+                    returncode=err.returncode,
+                    command=" ".join(as_posix(x) for x in err.cmd),
+                    stderr=err.stderr.decode("utf-8").strip() or "(empty)",
+                    stdout=err.stdout.decode("utf-8").strip() or "(empty)",
+                )
+            ),
+        )
+        print(json.dumps(err_msg._asdict()), flush=True)
+        exit(0)
+
+    lines = proc.stdout.decode().splitlines()
+    for line in lines:
+        lint_message = lint_file(
+            line,
+            args.replace_pattern,
+            args.linter_name,
+            args.error_name,
+            args.error_description,
+        )
+        print(json.dumps(lint_message._asdict()), flush=True)

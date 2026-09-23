@@ -1,0 +1,12 @@
+@@ -42,3 +42,10 @@
+             opts = self.related.field.rel.through._meta
+-            raise AttributeError("Cannot set values on a ManyToManyField which specifies an intermediary model. Use %s.%s's Manager instead." % (opts.app_label, opts.object_name))
++            raise AttributeError(
++                "Cannot set values on a ManyToManyField which specifies an "
++                "intermediary model. Use %s.%s's Manager instead." % (opts.app_label, opts.object_name)
++            )
++
++        # Force evaluation of `value` in case it's a queryset whose
++        # value could be affected by `manager.clear()`. Refs #19816.
++        value = tuple(value)
+  

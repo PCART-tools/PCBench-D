@@ -1,0 +1,102 @@
+{
+  "case": "matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle-matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles-v3.6.3",
+  "fix_type": "fix_R",
+  "candidate_api": "matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles",
+  "error": null,
+  "threshold_10pct": 81.2,
+  "algorithms_meeting_threshold": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 1,
+      "vi_rank": 528,
+      "delta": -527,
+      "exceeds_10pct": true
+    },
+    "tokenBased": {
+      "vi1_rank": 76,
+      "vi_rank": 398,
+      "delta": -322,
+      "exceeds_10pct": true
+    },
+    "treeBased": {
+      "vi1_rank": 52,
+      "vi_rank": 671,
+      "delta": -619,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.4323,
+      "baseline_rank": 1,
+      "delta_baseline_to_vi": -527
+    },
+    "tokenBased": {
+      "baseline_score": 0.2506,
+      "baseline_rank": 76,
+      "delta_baseline_to_vi": -322
+    },
+    "treeBased": {
+      "baseline_score": 0.319,
+      "baseline_rank": 52,
+      "delta_baseline_to_vi": -619
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 528,
+          "vi_score": 0.3135,
+          "restored_score": 0.4323,
+          "restored_rank": 1,
+          "delta_vi_to_restored": 527,
+          "distance_to_baseline": 0
+        },
+        "tokenBased": {
+          "vi_rank": 398,
+          "vi_score": 0.181,
+          "restored_score": 0.2506,
+          "restored_rank": 76,
+          "delta_vi_to_restored": 322,
+          "distance_to_baseline": 0
+        },
+        "treeBased": {
+          "vi_rank": 671,
+          "vi_score": 0.2158,
+          "restored_score": 0.319,
+          "restored_rank": 52,
+          "delta_vi_to_restored": 619,
+          "distance_to_baseline": 0
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "mapBased": [
+      "block_001"
+    ],
+    "tokenBased": [
+      "block_001"
+    ],
+    "treeBased": [
+      "block_001"
+    ]
+  },
+  "block_sign_labels": {
+    "map_down_token_down_tree_down": [
+      "block_001"
+    ]
+  }
+}

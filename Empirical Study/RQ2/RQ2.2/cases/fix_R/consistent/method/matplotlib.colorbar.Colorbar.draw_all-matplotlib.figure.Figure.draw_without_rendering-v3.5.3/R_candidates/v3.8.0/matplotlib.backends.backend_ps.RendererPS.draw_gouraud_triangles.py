@@ -1,0 +1,47 @@
+    @_log_if_debug_on
+    def draw_gouraud_triangles(self, gc, points, colors, trans):
+        assert len(points) == len(colors)
+        if len(points) == 0:
+            return
+        assert points.ndim == 3
+        assert points.shape[1] == 3
+        assert points.shape[2] == 2
+        assert colors.ndim == 3
+        assert colors.shape[1] == 3
+        assert colors.shape[2] == 4
+
+        shape = points.shape
+        flat_points = points.reshape((shape[0] * shape[1], 2))
+        flat_points = trans.transform(flat_points)
+        flat_colors = colors.reshape((shape[0] * shape[1], 4))
+        points_min = np.min(flat_points, axis=0) - (1 << 12)
+        points_max = np.max(flat_points, axis=0) + (1 << 12)
+        factor = np.ceil((2 ** 32 - 1) / (points_max - points_min))
+
+        xmin, ymin = points_min
+        xmax, ymax = points_max
+
+        data = np.empty(
+            shape[0] * shape[1],
+            dtype=[('flags', 'u1'), ('points', '2>u4'), ('colors', '3u1')])
+        data['flags'] = 0
+        data['points'] = (flat_points - points_min) * factor
+        data['colors'] = flat_colors[:, :3] * 255.0
+        hexdata = data.tobytes().hex("\n", -64)  # Linewrap to 128 chars.
+
+        self._pswriter.write(f"""\
+gsave
+<< /ShadingType 4
+   /ColorSpace [/DeviceRGB]
+   /BitsPerCoordinate 32
+   /BitsPerComponent 8
+   /BitsPerFlag 8
+   /AntiAlias true
+   /Decode [ {xmin:g} {xmax:g} {ymin:g} {ymax:g} 0 1 0 1 0 1 ]
+   /DataSource <
+{hexdata}
+>
+>>
+shfill
+grestore
+""")

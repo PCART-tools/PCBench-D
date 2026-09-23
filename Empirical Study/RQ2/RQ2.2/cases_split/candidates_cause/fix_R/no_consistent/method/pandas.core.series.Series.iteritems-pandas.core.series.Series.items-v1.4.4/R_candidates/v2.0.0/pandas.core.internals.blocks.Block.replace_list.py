@@ -1,0 +1,104 @@
+    @final
+    def replace_list(
+        self,
+        src_list: Iterable[Any],
+        dest_list: Sequence[Any],
+        inplace: bool = False,
+        regex: bool = False,
+        using_cow: bool = False,
+    ) -> list[Block]:
+        """
+        See BlockManager.replace_list docstring.
+        """
+        values = self.values
+
+        if isinstance(values, Categorical):
+            # TODO: avoid special-casing
+            # GH49404
+            if using_cow and inplace:
+                blk = self.copy(deep=self.refs.has_reference())
+            else:
+                blk = self if inplace else self.copy()
+            values = cast(Categorical, blk.values)
+            values._replace(to_replace=src_list, value=dest_list, inplace=True)
+            return [blk]
+
+        # Exclude anything that we know we won't contain
+        pairs = [
+            (x, y) for x, y in zip(src_list, dest_list) if self._can_hold_element(x)
+        ]
+        if not len(pairs):
+            if using_cow:
+                return [self.copy(deep=False)]
+            # shortcut, nothing to replace
+            return [self] if inplace else [self.copy()]
+
+        src_len = len(pairs) - 1
+
+        if is_string_dtype(values.dtype):
+            # Calculate the mask once, prior to the call of comp
+            # in order to avoid repeating the same computations
+            na_mask = ~isna(values)
+            masks: Iterable[npt.NDArray[np.bool_]] = (
+                extract_bool_array(
+                    cast(
+                        ArrayLike,
+                        compare_or_regex_search(
+                            values, s[0], regex=regex, mask=na_mask
+                        ),
+                    )
+                )
+                for s in pairs
+            )
+        else:
+            # GH#38086 faster if we know we dont need to check for regex
+            masks = (missing.mask_missing(values, s[0]) for s in pairs)
+        # Materialize if inplace = True, since the masks can change
+        # as we replace
+        if inplace:
+            masks = list(masks)
+
+        if using_cow and inplace:
+            # Don't set up refs here, otherwise we will think that we have
+            # references when we check again later
+            rb = [self]
+        else:
+            rb = [self if inplace else self.copy()]
+
+        for i, ((src, dest), mask) in enumerate(zip(pairs, masks)):
+            convert = i == src_len  # only convert once at the end
+            new_rb: list[Block] = []
+
+            # GH-39338: _replace_coerce can split a block into
+            # single-column blocks, so track the index so we know
+            # where to index into the mask
+            for blk_num, blk in enumerate(rb):
+                if len(rb) == 1:
+                    m = mask
+                else:
+                    mib = mask
+                    assert not isinstance(mib, bool)
+                    m = mib[blk_num : blk_num + 1]
+
+                # error: Argument "mask" to "_replace_coerce" of "Block" has
+                # incompatible type "Union[ExtensionArray, ndarray[Any, Any], bool]";
+                # expected "ndarray[Any, dtype[bool_]]"
+                result = blk._replace_coerce(
+                    to_replace=src,
+                    value=dest,
+                    mask=m,
+                    inplace=inplace,
+                    regex=regex,
+                    using_cow=using_cow,
+                )
+                if convert and blk.is_object and not all(x is None for x in dest_list):
+                    # GH#44498 avoid unwanted cast-back
+                    result = extend_blocks(
+                        [
+                            b.convert(copy=True and not using_cow, using_cow=using_cow)
+                            for b in result
+                        ]
+                    )
+                new_rb.extend(result)
+            rb = new_rb
+        return rb

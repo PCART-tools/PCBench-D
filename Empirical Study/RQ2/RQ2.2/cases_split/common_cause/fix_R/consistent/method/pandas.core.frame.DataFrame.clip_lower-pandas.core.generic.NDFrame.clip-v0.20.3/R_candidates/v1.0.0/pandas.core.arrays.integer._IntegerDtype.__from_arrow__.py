@@ -1,0 +1,18 @@
+    def __from_arrow__(self, array):
+        """Construct IntegerArray from passed pyarrow Array/ChunkedArray"""
+        import pyarrow
+        from pandas.core.arrays._arrow_utils import pyarrow_array_to_numpy_and_mask
+
+        if isinstance(array, pyarrow.Array):
+            chunks = [array]
+        else:
+            # pyarrow.ChunkedArray
+            chunks = array.chunks
+
+        results = []
+        for arr in chunks:
+            data, mask = pyarrow_array_to_numpy_and_mask(arr, dtype=self.type)
+            int_arr = IntegerArray(data.copy(), ~mask, copy=False)
+            results.append(int_arr)
+
+        return IntegerArray._concat_same_type(results)

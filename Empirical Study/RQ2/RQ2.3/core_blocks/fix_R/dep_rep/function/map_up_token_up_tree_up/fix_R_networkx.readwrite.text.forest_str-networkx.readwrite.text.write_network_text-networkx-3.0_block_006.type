@@ -1,0 +1,19 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the entire graph-text output implementation with a call to `write_network_text(...)`.
+   The original implementation included:
+
+   * Conditional statements: set multiple glyph strings according to `ascii_only`;
+   * Conditional statement: call `_write(glyph_empty)` when `graph.nodes` was empty;
+   * Conditional statement: verify that `graph` was a forest and raise `nx.NetworkXNotImplemented` otherwise;
+   * Assignment statements: set variables including `is_directed`, `succ`, `sources`, `stack`, and `seen`;
+   * Loop statement: iterate over nodes in the stack, generate prefixes, obtain labels, and call `_write(...)`;
+   * Loop statement: collect child nodes and append them to `stack`.
+
+   The new implementation includes:
+
+   * Function call: call `write_network_text(graph, _write, with_labels=with_labels, sources=sources, ascii_only=ascii_only, end="")`.
+# /detail
+# mode：Modify function implementation (replace original implementation with call statement)

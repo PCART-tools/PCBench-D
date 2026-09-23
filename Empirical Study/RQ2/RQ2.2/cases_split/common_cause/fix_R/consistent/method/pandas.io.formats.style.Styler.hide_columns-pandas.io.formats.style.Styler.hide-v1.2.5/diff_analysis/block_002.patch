@@ -1,0 +1,14 @@
+@@ -2,3 +2,12 @@
+         """
+-        Hide columns from rendering.
++        Hide the column headers or specific keys in the columns from rendering.
++
++        This method has dual functionality:
++
++          - if ``subset`` is ``None`` then the entire column headers row will be hidden
++            whilst the data-values remain visible.
++          - if a ``subset`` is given then those specific columns, including the
++            data-values will be hidden, whilst the column headers row remains visible.
++
++        .. versionchanged:: 1.3.0
+  

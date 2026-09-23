@@ -1,0 +1,9 @@
+def _rbg_split(key: typing.Array, shape: Shape) -> typing.Array:
+  if config.jax_threefry_partitionable:
+    _threefry_split = _threefry_split_foldlike
+  else:
+    _threefry_split = _threefry_split_original
+  halfkeys = key.reshape(2, 2)
+  return vmap(
+      _threefry_split, (0, None), len(shape))(halfkeys, shape).reshape(
+          *shape, 4)

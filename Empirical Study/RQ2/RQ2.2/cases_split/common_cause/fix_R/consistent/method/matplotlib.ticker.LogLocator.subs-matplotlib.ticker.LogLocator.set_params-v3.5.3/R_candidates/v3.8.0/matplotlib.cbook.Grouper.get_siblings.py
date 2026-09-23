@@ -1,0 +1,4 @@
+    def get_siblings(self, a):
+        """Return all of the items joined with *a*, including itself."""
+        siblings = self._mapping.get(a, [a])
+        return [x for x in siblings]

@@ -1,0 +1,100 @@
+{
+  "case": "jax._src.tree_util.register_keypaths-jax._src.tree_util.register_pytree_with_keys-jax-v0.4.15",
+  "fix_type": "fix_R",
+  "candidate_api": "jax._src.tree_util.register_pytree_with_keys",
+  "error": null,
+  "threshold_10pct": 383.8,
+  "algorithms_meeting_threshold": [
+    "mapBased",
+    "treeBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 92,
+      "vi_rank": 731,
+      "delta": -639,
+      "exceeds_10pct": true
+    },
+    "tokenBased": {
+      "vi1_rank": 4,
+      "vi_rank": 4,
+      "delta": 0,
+      "exceeds_10pct": false
+    },
+    "treeBased": {
+      "vi1_rank": 767,
+      "vi_rank": 1213,
+      "delta": -446,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.5899,
+      "baseline_rank": 92,
+      "delta_baseline_to_vi": -639
+    },
+    "tokenBased": {
+      "baseline_score": 0.3071,
+      "baseline_rank": 4,
+      "delta_baseline_to_vi": 0
+    },
+    "treeBased": {
+      "baseline_score": 0.4091,
+      "baseline_rank": 767,
+      "delta_baseline_to_vi": -446
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 731,
+          "vi_score": 0.5201,
+          "restored_score": 0.5899,
+          "restored_rank": 92,
+          "delta_vi_to_restored": 639,
+          "distance_to_baseline": 0
+        },
+        "tokenBased": {
+          "vi_rank": 4,
+          "vi_score": 0.2941,
+          "restored_score": 0.3071,
+          "restored_rank": 4,
+          "delta_vi_to_restored": 0
+        },
+        "treeBased": {
+          "vi_rank": 1213,
+          "vi_score": 0.3659,
+          "restored_score": 0.4091,
+          "restored_rank": 767,
+          "delta_vi_to_restored": 446,
+          "distance_to_baseline": 0
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "mapBased": [
+      "block_001"
+    ],
+    "treeBased": [
+      "block_001"
+    ],
+    "tokenBased": [
+      "block_001"
+    ]
+  },
+  "block_sign_labels": {
+    "map_down_token_flat_tree_down": [
+      "block_001"
+    ]
+  }
+}

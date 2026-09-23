@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original multi-step implementation with a single return statement.
+   The original implementation included:
+
+   * Variable assignments: create `R`, set `label_attribute`, and construct `relabel`, `lengths`, `first_labels`, `trees`, `roots`, `nodes`, and `edges`;
+   * Conditional statement: when `label_attribute is None`, assign `"_old"` to it;
+   * Loop statements: iterate over `trees` to remove the `"_old"` node attribute and iterate over `trees` to update `R.graph`;
+   * API calls: add nodes, edges, and graph attributes to `R`;
+   * Return statement: return `R`.
+
+   The new implementation includes:
+
+   * Return statement: return `join_trees(rooted_trees, label_attribute=label_attribute)`.
+# /detail
+# mode：Modify implementation block (replace original implementation with return-call statement)

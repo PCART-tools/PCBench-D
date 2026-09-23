@@ -1,0 +1,28 @@
+@@ -100,6 +123,23 @@
+         >>> df.with_columns(
+-        ...     pl.struct("country_code", "row_nr")
+-        ...     .replace(
+-        ...         mapping=country_code_map,
+-        ...         default=pl.col("row_nr").cast(pl.Utf8),
++        ...     replaced=pl.col("a").replace(mapping, return_dtype=pl.UInt8)
++        ... )
++        shape: (3, 2)
++        ┌─────┬──────────┐
++        │ a   ┆ replaced │
++        │ --- ┆ ---      │
++        │ str ┆ u8       │
++        ╞═════╪══════════╡
++        │ x   ┆ 1        │
++        │ y   ┆ 2        │
++        │ z   ┆ 3        │
++        └─────┴──────────┘
++
++        Expression input is supported for all parameters.
++
++        >>> df = pl.DataFrame({"a": [1, 2, 2, 3], "b": [1.5, 2.5, 5.0, 1.0]})
++        >>> df.with_columns(
++        ...     replaced=pl.col("a").replace(
++        ...         old=pl.col("a").max(),
++        ...         new=pl.col("b").sum(),
++        ...         default=pl.col("b"),
+         ...     )

@@ -1,0 +1,2 @@
+class DeviceAssignmentMismatchError(Exception):
+  pass

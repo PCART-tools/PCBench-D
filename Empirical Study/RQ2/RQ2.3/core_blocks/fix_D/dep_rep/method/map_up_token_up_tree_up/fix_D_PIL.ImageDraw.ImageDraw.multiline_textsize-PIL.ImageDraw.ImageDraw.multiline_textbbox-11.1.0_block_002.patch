@@ -1,0 +1,25 @@
+@@ -61,23 +38,3 @@
+  
+-        for idx, line in enumerate(lines):
+-            left = xy[0]
+-            width_difference = max_width - widths[idx]
+-
+-            # first align left by anchor
+-            if anchor[0] == "m":
+-                left -= width_difference / 2.0
+-            elif anchor[0] == "r":
+-                left -= width_difference
+-
+-            # then align by align parameter
+-            if align == "left":
+-                pass
+-            elif align == "center":
+-                left += width_difference / 2.0
+-            elif align == "right":
+-                left += width_difference
+-            else:
+-                msg = 'align must be "left", "center" or "right"'
+-                raise ValueError(msg)
+-
++        for xy, line in lines:
+             bbox_line = self.textbbox(

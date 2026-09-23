@@ -1,0 +1,4 @@
+@@ -1,2 +1,2 @@
+-    def parse_int(self, radix: int = 2, *, strict: bool = True) -> Expr:
++    def parse_int(self, radix: int | None = None, *, strict: bool = True) -> Expr:
+         """

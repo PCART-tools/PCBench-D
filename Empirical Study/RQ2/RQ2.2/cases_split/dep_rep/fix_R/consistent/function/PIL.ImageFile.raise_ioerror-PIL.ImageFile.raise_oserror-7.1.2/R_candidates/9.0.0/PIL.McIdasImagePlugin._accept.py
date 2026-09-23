@@ -1,0 +1,2 @@
+def _accept(s):
+    return s[:8] == b"\x00\x00\x00\x00\x00\x00\x00\x04"

@@ -1,0 +1,10 @@
+@@ -1,4 +1,7 @@
+ def forest_str(graph, with_labels=True, sources=None, write=None, ascii_only=False):
+-    """
+-    Creates a nice utf8 representation of a directed forest
++    """Creates a nice utf8 representation of a forest
++
++    This function has been superseded by
++    :func:`nx.readwrite.text.generate_network_text`, which should be used
++    instead.
+  

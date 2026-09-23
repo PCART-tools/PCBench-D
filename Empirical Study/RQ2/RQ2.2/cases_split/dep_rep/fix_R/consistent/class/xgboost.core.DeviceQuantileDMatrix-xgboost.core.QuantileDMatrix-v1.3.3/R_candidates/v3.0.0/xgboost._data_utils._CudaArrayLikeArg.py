@@ -1,0 +1,3 @@
+class _CudaArrayLikeArg(Protocol):
+    @property
+    def __cuda_array_interface__(self) -> "ArrayInf": ...

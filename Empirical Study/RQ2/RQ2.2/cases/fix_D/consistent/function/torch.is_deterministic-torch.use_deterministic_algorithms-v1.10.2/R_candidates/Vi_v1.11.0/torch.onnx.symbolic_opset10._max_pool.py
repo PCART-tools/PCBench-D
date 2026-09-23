@@ -1,0 +1,42 @@
+def _max_pool(name, tuple_fn, ndims, return_indices):
+    @parse_args("v", "is", "is", "is", "is", "i")
+    def symbolic_fn(g, input, kernel_size, stride, padding, dilation, ceil_mode):
+        if not stride:
+            stride = kernel_size
+        kwargs = {
+            "kernel_shape_i": tuple_fn(kernel_size),
+            "pads_i": tuple_fn(padding) * 2,
+            "strides_i": tuple_fn(stride),
+            "ceil_mode_i": ceil_mode,
+        }
+        if set(tuple_fn(dilation)) != {1}:
+            kwargs["dilations_i"] = tuple_fn(dilation)
+        # easy but hacky way to get flattened indices values
+        # to be used to convert the indices values to non-flattened.
+        # In ONNX the indices are computed as a flatten 1-D tensor,
+        # so the values in indices are in [0, N x C x D1 x ... x Dn).
+        # To convert the indices to the same format used by Pytorch,
+        # we first execute a maxpool with a kernel and stride of 1 on the same input.
+        # This will result in a tensor of indices in which each index will have it's own value.
+        # Using this tensor as a reference, we extract the first index of each axis and subtract
+        # it from each index of this axis in the indices to convert.
+        # This step will result in a tensor were each dimension has values of indices within
+        # the dimension it is in.
+        # For more information :
+        # https://github.com/pytorch/pytorch/pull/16455#issuecomment-460776407
+        if return_indices:
+            r, indices = g.op("MaxPool", input, outputs=2, **kwargs)
+            _, flattened_indices = g.op("MaxPool", input, outputs=2,
+                                        kernel_shape_i=[1 for _ in range(ndims)],
+                                        strides_i=[1 for _ in range(ndims)])
+            # convert indices to have non-flattened indices values
+            from torch.onnx.symbolic_opset9 import sub
+            s = sym_help._slice_helper(g, flattened_indices, axes=[2 + i for i in range(ndims)],
+                                       starts=tuple_fn(0), ends=tuple_fn(1))
+            indices = sub(g, indices, s)
+            return r, indices
+        else:
+            r = g.op("MaxPool", input, outputs=1, **kwargs)
+            return r
+
+    return symbolic_fn

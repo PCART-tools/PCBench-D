@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced multiple direct calls to `tick` attributes and methods with a single call to `_tick_update_position(tick, tickxs, tickys, labelpos)`.
+   The original implementation included:
+   * Method calls: set the positions of `label1` and `label2`;
+   * Method calls: set the visibility of `tick1line` and `tick2line`;
+   * Method calls: set the line style, marker, and data of `tick1line`;
+   * Method call: set the data of `gridline`.
+
+   The new implementation includes:
+   * Function call: call `_tick_update_position` with `tick`, `tickxs`, `tickys`, and `labelpos`.
+# /detail
+# mode：Modify implementation block (replace inline call with helper-method call)

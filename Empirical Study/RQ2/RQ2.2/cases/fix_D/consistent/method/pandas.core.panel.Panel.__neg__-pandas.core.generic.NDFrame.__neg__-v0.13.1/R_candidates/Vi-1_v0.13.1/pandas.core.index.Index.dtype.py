@@ -1,0 +1,3 @@
+    @cache_readonly
+    def dtype(self):
+        return self.values.dtype

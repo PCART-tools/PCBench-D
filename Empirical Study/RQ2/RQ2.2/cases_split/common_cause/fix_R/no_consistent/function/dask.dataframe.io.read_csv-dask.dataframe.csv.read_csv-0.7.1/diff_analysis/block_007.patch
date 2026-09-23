@@ -1,0 +1,5 @@
+@@ -56,3 +46,3 @@
+     if index:
+-        result = set_partition(result, index, quantiles)
++        result = result.set_index(index)
+  

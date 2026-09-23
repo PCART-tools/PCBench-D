@@ -1,0 +1,6 @@
+@@ -49,4 +22,2 @@
+         """
+-        if not isinstance(fill_value, pl.Expr):
+-            fill_value = F.lit(fill_value)
+-        return self._from_pyldf(self._ldf.shift_and_fill(n, fill_value._pyexpr))
++        return self.shift(n, fill_value=fill_value)

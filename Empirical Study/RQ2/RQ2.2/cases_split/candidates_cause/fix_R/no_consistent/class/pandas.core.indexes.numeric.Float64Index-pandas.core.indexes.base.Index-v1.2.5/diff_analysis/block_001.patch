@@ -1,0 +1,11 @@
+@@ -1,3 +1,9 @@
+ class Float64Index(NumericIndex):
+-    __doc__ = _num_index_shared_docs["class_descr"] % _float64_descr_args
++    _index_descr_args = {
++        "klass": "Float64Index",
++        "dtype": "float64",
++        "ltype": "float",
++        "extra": "",
++    }
++    __doc__ = _num_index_shared_docs["class_descr"] % _index_descr_args
+  

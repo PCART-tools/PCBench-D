@@ -1,0 +1,16 @@
+@@ -14,5 +73,12 @@
+         """
+-        subset = non_reducing_slice(subset)
+-        hidden_df = self.data.loc[subset]
+-        self.hidden_columns = self.columns.get_indexer_for(hidden_df.columns)
++        if subset is None:
++            self.hide_columns_ = True
++        else:
++            subset_ = IndexSlice[:, subset]  # new var so mypy reads not Optional
++            subset = non_reducing_slice(subset_)
++            hide = self.data.loc[subset]
++            hcols = self.columns.get_indexer_for(hide.columns)
++            # error: Incompatible types in assignment (expression has type
++            # "ndarray", variable has type "Sequence[int]")
++            self.hidden_columns = hcols  # type: ignore[assignment]
+         return self

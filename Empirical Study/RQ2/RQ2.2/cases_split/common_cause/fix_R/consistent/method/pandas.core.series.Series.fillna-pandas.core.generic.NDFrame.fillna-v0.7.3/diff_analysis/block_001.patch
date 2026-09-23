@@ -1,0 +1,6 @@
+@@ -1,2 +1,4 @@
+-    def fillna(self, value=None, method='pad', inplace=False):
++
++    def fillna(self, value=None, method='pad', inplace=False,
++               limit=None):
+         """

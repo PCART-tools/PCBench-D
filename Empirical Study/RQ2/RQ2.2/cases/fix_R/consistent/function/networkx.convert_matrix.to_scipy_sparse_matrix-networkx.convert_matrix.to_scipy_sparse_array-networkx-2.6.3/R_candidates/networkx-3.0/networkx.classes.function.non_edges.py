@@ -1,0 +1,23 @@
+def non_edges(graph):
+    """Returns the non-existent edges in the graph.
+
+    Parameters
+    ----------
+    graph : NetworkX graph.
+        Graph to find non-existent edges.
+
+    Returns
+    -------
+    non_edges : iterator
+        Iterator of edges that are not in the graph.
+    """
+    if graph.is_directed():
+        for u in graph:
+            for v in non_neighbors(graph, u):
+                yield (u, v)
+    else:
+        nodes = set(graph)
+        while nodes:
+            u = nodes.pop()
+            for v in nodes - set(graph[u]):
+                yield (u, v)

@@ -1,0 +1,22 @@
+@pytest.mark.parametrize('dtype', ['f4', 'i4'])
+def test_reductions_1D(dtype):
+    x = np.arange(5).astype(dtype)
+    a = da.from_array(x, chunks=(2,))
+
+    reduction_1d_test(da.sum, a, np.sum, x)
+    reduction_1d_test(da.prod, a, np.prod, x)
+    reduction_1d_test(da.mean, a, np.mean, x)
+    reduction_1d_test(da.var, a, np.var, x)
+    reduction_1d_test(da.std, a, np.std, x)
+    reduction_1d_test(da.min, a, np.min, x, False)
+    reduction_1d_test(da.max, a, np.max, x, False)
+    reduction_1d_test(da.any, a, np.any, x, False)
+    reduction_1d_test(da.all, a, np.all, x, False)
+
+    reduction_1d_test(da.nansum, a, np.nansum, x)
+    reduction_1d_test(da.nanprod, a, nanprod, x)
+    reduction_1d_test(da.nanmean, a, np.mean, x)
+    reduction_1d_test(da.nanvar, a, np.var, x)
+    reduction_1d_test(da.nanstd, a, np.std, x)
+    reduction_1d_test(da.nanmin, a, np.nanmin, x, False)
+    reduction_1d_test(da.nanmax, a, np.nanmax, x, False)

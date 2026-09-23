@@ -1,0 +1,21 @@
+@@ -2,3 +2,19 @@
+         """
+-        Hide any indices from rendering.
++        Hide the entire index, or specific keys in the index from rendering.
++
++        This method has dual functionality:
++
++          - if ``subset`` is ``None`` then the entire index will be hidden whilst
++            displaying all data-rows.
++          - if a ``subset`` is given then those specific rows will be hidden whilst the
++            index itself remains visible.
++
++        .. versionchanged:: 1.3.0
++
++        Parameters
++        ----------
++        subset : label, array-like, IndexSlice, optional
++            A valid 1d input or single key along the index axis within
++            `DataFrame.loc[<subset>, :]`, to limit ``data`` to *before* applying
++            the function.
+  

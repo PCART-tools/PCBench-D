@@ -1,0 +1,41 @@
+    def add_field(self, model, field):
+        """
+        Create a field on a model. Usually involves adding a column, but may
+        involve adding a table instead (for M2M fields).
+        """
+        # Special-case implicit M2M tables
+        if field.many_to_many and field.remote_field.through._meta.auto_created:
+            return self.create_model(field.remote_field.through)
+        # Get the column's definition
+        definition, params = self.column_sql(model, field, include_default=True)
+        # It might not actually have a column behind it
+        if definition is None:
+            return
+        # Check constraints can go on the column SQL here
+        db_params = field.db_parameters(connection=self.connection)
+        if db_params['check']:
+            definition += " CHECK (%s)" % db_params['check']
+        # Build the SQL and run it
+        sql = self.sql_create_column % {
+            "table": self.quote_name(model._meta.db_table),
+            "column": self.quote_name(field.column),
+            "definition": definition,
+        }
+        self.execute(sql, params)
+        # Drop the default if we need to
+        # (Django usually does not use in-database defaults)
+        if not self.skip_default(field) and self.effective_default(field) is not None:
+            changes_sql, params = self._alter_column_default_sql(model, None, field, drop=True)
+            sql = self.sql_alter_column % {
+                "table": self.quote_name(model._meta.db_table),
+                "changes": changes_sql,
+            }
+            self.execute(sql, params)
+        # Add an index, if required
+        self.deferred_sql.extend(self._field_indexes_sql(model, field))
+        # Add any FK constraints later
+        if field.remote_field and self.connection.features.supports_foreign_keys and field.db_constraint:
+            self.deferred_sql.append(self._create_fk_sql(model, field, "_fk_%(to_table)s_%(to_column)s"))
+        # Reset connection if required
+        if self.connection.features.connection_persists_old_columns:
+            self.connection.close()

@@ -1,0 +1,25 @@
+@@ -41,15 +32,11 @@
+         """, [table_name])
+-        for constraint, column, pk, unique, check, index in cursor.fetchall():
+-            # If we're the first column, make the record
+-            if constraint not in constraints:
+-                constraints[constraint] = {
+-                    "columns": [],
+-                    "primary_key": pk,
+-                    "unique": unique,
+-                    "foreign_key": None,
+-                    "check": check,
+-                    "index": index,  # All P and U come with index
+-                }
+-            # Record the details
+-            constraints[constraint]['columns'].append(column)
++        for constraint, columns, pk, unique, check in cursor.fetchall():
++            constraints[constraint] = {
++                'columns': columns.split(','),
++                'primary_key': pk,
++                'unique': unique,
++                'foreign_key': None,
++                'check': check,
++                'index': unique,  # All uniques come with an index
++            }
+         # Foreign key constraints

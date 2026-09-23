@@ -1,0 +1,14 @@
+@@ -8,3 +68,12 @@
+         """
+-        self.hidden_index = True
++        if subset is None:
++            self.hide_index_ = True
++        else:
++            subset_ = IndexSlice[subset, :]  # new var so mypy reads not Optional
++            subset = non_reducing_slice(subset_)
++            hide = self.data.loc[subset]
++            hrows = self.index.get_indexer_for(hide.index)
++            # error: Incompatible types in assignment (expression has type
++            # "ndarray", variable has type "Sequence[int]")
++            self.hidden_rows = hrows  # type: ignore[assignment]
+         return self

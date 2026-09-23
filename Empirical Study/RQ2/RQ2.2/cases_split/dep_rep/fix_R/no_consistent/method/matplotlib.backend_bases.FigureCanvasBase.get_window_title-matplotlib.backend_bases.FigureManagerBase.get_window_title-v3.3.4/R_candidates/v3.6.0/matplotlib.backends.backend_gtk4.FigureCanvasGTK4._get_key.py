@@ -1,0 +1,16 @@
+    def _get_key(self, keyval, keycode, state):
+        unikey = chr(Gdk.keyval_to_unicode(keyval))
+        key = cbook._unikey_or_keysym_to_mplkey(
+            unikey,
+            Gdk.keyval_name(keyval))
+        modifiers = [
+            (Gdk.ModifierType.CONTROL_MASK, 'ctrl'),
+            (Gdk.ModifierType.ALT_MASK, 'alt'),
+            (Gdk.ModifierType.SHIFT_MASK, 'shift'),
+            (Gdk.ModifierType.SUPER_MASK, 'super'),
+        ]
+        for key_mask, prefix in modifiers:
+            if state & key_mask:
+                if not (prefix == 'shift' and unikey.isprintable()):
+                    key = f'{prefix}+{key}'
+        return key

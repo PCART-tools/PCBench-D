@@ -1,0 +1,8 @@
+    def __bytes__(self) -> bytes:
+        result = bytearray(b"/")
+        for b in self.name:
+            if b in self.allowed_chars:
+                result.append(b)
+            else:
+                result.extend(b"#%02X" % b)
+        return bytes(result)

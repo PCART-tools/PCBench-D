@@ -1,0 +1,5 @@
+@@ -6,3 +6,3 @@
+         axis: Axis = 0,
+-        fill_value=lib.no_default,
++        fill_value: Hashable = lib.no_default,
+     ) -> DataFrame:

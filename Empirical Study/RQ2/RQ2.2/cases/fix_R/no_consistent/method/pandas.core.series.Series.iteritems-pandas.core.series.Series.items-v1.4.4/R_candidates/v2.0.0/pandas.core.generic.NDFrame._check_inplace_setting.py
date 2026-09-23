@@ -1,0 +1,14 @@
+    @final
+    def _check_inplace_setting(self, value) -> bool_t:
+        """check whether we allow in-place setting with this type of value"""
+        if self._is_mixed_type and not self._mgr.is_numeric_mixed_type:
+            # allow an actual np.nan through
+            if is_float(value) and np.isnan(value) or value is lib.no_default:
+                return True
+
+            raise TypeError(
+                "Cannot do inplace boolean setting on "
+                "mixed-types with a non np.nan value"
+            )
+
+        return True

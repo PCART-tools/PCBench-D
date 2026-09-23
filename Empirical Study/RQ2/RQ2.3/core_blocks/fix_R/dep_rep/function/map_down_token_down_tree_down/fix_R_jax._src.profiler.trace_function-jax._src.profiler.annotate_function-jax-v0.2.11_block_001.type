@@ -1,0 +1,20 @@
+# detail
+Number of changes: 1
+
+1. Modified | Function definition
+   Replaced the function signature and implementation code block of `trace_function`.
+   The original implementation included:
+
+   * Function signature: accept `func: Callable`, `name: str = None`, and `**kwargs`;
+   * Assignment statement: set `name` based on `func.__qualname__` or `func.__name__`;
+   * Nested function definition: define `wrapper(*args, **kwargs)`;
+   * Context-manager statement: call `func(*args, **kwargs)` within `TraceContext(name, **kwargs)`;
+   * Return statement: return `wrapper`.
+
+   The new implementation includes:
+
+   * Function signature: accept `*args` and `**kwargs`;
+   * API call: call `warnings.warn(...)`;
+   * Return statement: return `annotate_function(*args, **kwargs)`.
+# /detail
+# mode：Convert parameter to variadic parameter; Modify function implementation (replace original implementation with warning call and return-call statement)

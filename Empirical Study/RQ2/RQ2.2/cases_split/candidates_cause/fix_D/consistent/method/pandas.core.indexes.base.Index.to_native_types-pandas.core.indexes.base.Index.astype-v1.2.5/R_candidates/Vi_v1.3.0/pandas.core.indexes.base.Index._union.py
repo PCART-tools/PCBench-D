@@ -1,0 +1,65 @@
+    def _union(self, other: Index, sort):
+        """
+        Specific union logic should go here. In subclasses, union behavior
+        should be overwritten here rather than in `self.union`.
+
+        Parameters
+        ----------
+        other : Index or array-like
+        sort : False or None, default False
+            Whether to sort the resulting index.
+
+            * False : do not sort the result.
+            * None : sort the result, except when `self` and `other` are equal
+              or when the values cannot be compared.
+
+        Returns
+        -------
+        Index
+        """
+        # TODO(EA): setops-refactor, clean all this up
+        lvals = self._values
+        rvals = other._values
+
+        if (
+            sort is None
+            and self.is_monotonic
+            and other.is_monotonic
+            and not (self.has_duplicates and other.has_duplicates)
+        ):
+            # Both are unique and monotonic, so can use outer join
+            try:
+                return self._outer_indexer(other)[0]
+            except (TypeError, IncompatibleFrequency):
+                # incomparable objects
+                value_list = list(lvals)
+
+                # worth making this faster? a very unusual case
+                value_set = set(lvals)
+                value_list.extend([x for x in rvals if x not in value_set])
+                # If objects are unorderable, we must have object dtype.
+                return np.array(value_list, dtype=object)
+
+        elif not other.is_unique:
+            # other has duplicates
+            result = algos.union_with_duplicates(lvals, rvals)
+            return _maybe_try_sort(result, sort)
+
+        # Self may have duplicates
+        # find indexes of things in "other" that are not in "self"
+        if self._index_as_unique:
+            indexer = self.get_indexer(other)
+            missing = (indexer == -1).nonzero()[0]
+        else:
+            missing = algos.unique1d(self.get_indexer_non_unique(other)[1])
+
+        if len(missing) > 0:
+            other_diff = rvals.take(missing)
+            result = concat_compat((lvals, other_diff))
+        else:
+            result = lvals
+
+        if not self.is_monotonic or not other.is_monotonic:
+            result = _maybe_try_sort(result, sort)
+
+        return result

@@ -1,0 +1,4464 @@
+{
+  "fix_D-aiohttp.connector.SocketConnector-aiohttp.connector.UnixConnector-v0.7.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-aiohttp.connector.SocketConnector-aiohttp.connector.UnixConnector-v0.8.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-dask.context.set_options-dask.config.set-0.18.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-matplotlib.colorbar.ColorbarPatch-matplotlib.colorbar.Colorbar-v3.4.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.indexes.numeric.Float64Index-pandas.core.indexes.base.Index-v1.5.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-pandas.core.indexes.numeric.Int64Index-pandas.core.indexes.base.Index-v1.5.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-pandas.core.indexes.numeric.UInt64Index-pandas.core.indexes.base.Index-v1.5.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-sklearn.cluster.hierarchical.WardAgglomeration-sklearn.cluster.hierarchical.AgglomerativeClustering-0.17.1-1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-sklearn.cluster.hierarchical.WardAgglomeration-sklearn.cluster.hierarchical.AgglomerativeClustering-0.18.2": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-sklearn.cross_validation.LeavePLabelOut-sklearn.model_selection._split.LeavePGroupsOut-0.18": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-sklearn.mixture.dpgmm.VBGMM-sklearn.mixture.bayesian_mixture.BayesianGaussianMixture-0.19.2": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-tensorflow.python.summary.summary_iterator.SummaryWriter-tensorflow.python.summary.writer.writer.FileWriter-v1.12.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-dask.array.reductions.vnorm-dask.array.linalg.norm-0.19.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-dask.bag.core.from_s3-dask.bag.text.read_text-0.12.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-dask.imperative.value-dask.delayed.delayed-0.11.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-dask.imperative.value-dask.delayed.delayed-0.13.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-jax._src.dispatch.device_put-jax._src.api.device_put-jax-v0.4.14": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-jax._src.numpy.lax_numpy.msort-jax._src.numpy.lax_numpy.sort-jax-v0.4.14": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-jax._src.tree_util.register_keypaths-jax._src.tree_util.register_pytree_with_keys-jax-v0.4.6": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-lightgbm.callback.print_evaluation-lightgbm.callback.log_evaluation-v3.3.5": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-matplotlib.cbook.local_over_kwdict-matplotlib.cbook.normalize_kwargs-v3.4.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-networkx.algorithms.community.quality.coverage-networkx.algorithms.community.quality.partition_quality-networkx-2.6.2": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-networkx.algorithms.community.quality.coverage-networkx.algorithms.community.quality.partition_quality-networkx-2.6.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-networkx.algorithms.community.quality.coverage-networkx.algorithms.community.quality.partition_quality-networkx-3.4.2": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-networkx.algorithms.community.quality.performance-networkx.algorithms.community.quality.partition_quality-networkx-2.6.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-networkx.algorithms.community.quality.performance-networkx.algorithms.community.quality.partition_quality-networkx-3.4.2": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-networkx.utils.misc.dict_to_numpy_array1-networkx.utils.misc.dict_to_numpy_array-networkx-2.8.8": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-networkx.utils.misc.dict_to_numpy_array2-networkx.utils.misc.dict_to_numpy_array-networkx-2.8.8": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-networkx.utils.misc.dict_to_numpy_array2-networkx.utils.misc.dict_to_numpy_array-networkx-3.5": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-networkx.utils.misc.is_list_of_ints-networkx.utils.misc.make_list_of_ints-networkx-2.8.8": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-numpy.lib.npyio.mafromtxt-numpy.lib.npyio.genfromtxt-v1.22.4": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-pandas.core.dtypes.common.is_extension_type-pandas.core.dtypes.common.is_extension_array_dtype-v1.2.5": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.reshape.convert_dummies-pandas.core.reshape.get_dummies-v0.18.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-polars.string_cache.toggle_string_cache-polars.string_cache.enable_string_cache-py-0.19.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-scipy.constants.constants.C2F-scipy.constants.constants.convert_temperature-v0.19.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.constants.constants.C2K-scipy.constants.constants.convert_temperature-v0.19.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.constants.constants.F2C-scipy.constants.constants.convert_temperature-v0.19.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.constants.constants.F2K-scipy.constants.constants.convert_temperature-v0.19.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.constants.constants.K2C-scipy.constants.constants.convert_temperature-v0.19.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.constants.constants.K2F-scipy.constants.constants.convert_temperature-v0.19.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.integrate._quadrature.quadrature-scipy.integrate._quadpack_py.quad-v1.14.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.integrate._quadrature.simps-scipy.integrate._quadrature.simpson-v1.14.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.linalg.matfuncs.expm2-scipy.linalg.matfuncs.expm-v0.15.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.linalg.matfuncs.expm2-scipy.linalg.matfuncs.expm-v0.19.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-scipy.linalg.matfuncs.expm3-scipy.linalg.matfuncs.expm-v0.15.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.linalg.matfuncs.expm3-scipy.linalg.matfuncs.expm-v0.19.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-scipy.optimize.anneal.anneal-scipy.optimize._basinhopping.basinhopping-v0.16.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.optimize.anneal.anneal-scipy.optimize._basinhopping.basinhopping-v0.19.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.special.basic.sph_in-scipy.special._spherical_bessel.spherical_in-v0.18.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.special.basic.sph_jn-scipy.special._spherical_bessel.spherical_jn-v0.18.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.special.basic.sph_kn-scipy.special._spherical_bessel.spherical_kn-v0.18.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.special.basic.sph_yn-scipy.special._spherical_bessel.spherical_yn-v0.18.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.stats.stats.glm-scipy.stats.stats.ttest_ind-v0.16.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-sklearn.datasets.lfw.load_lfw_pairs-sklearn.datasets.lfw.fetch_lfw_pairs-0.19.2": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-torch._export.export-torch.export.export-v2.7.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-torch.is_deterministic-torch.use_deterministic_algorithms-v1.10.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-aiohttp.web_reqrep.StreamResponse.start-aiohttp.web_reqrep.StreamResponse.prepare-v1.1.6": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-dask.bag.core.Bag.to_imperative-dask.bag.core.Bag.to_delayed-0.14.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-django.db.backends.oracle.introspection.DatabaseIntrospection.get_indexes-django.db.backends.oracle.introspection.DatabaseIntrospection.get_constraints-1.11.8": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-django.db.backends.oracle.introspection.DatabaseIntrospection.get_indexes-django.db.backends.oracle.introspection.DatabaseIntrospection.get_constraints-2.1.8": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-django.db.backends.postgresql.operations.DatabaseOperations.ignore_conflicts_suffix_sql-django.db.backends.postgresql.operations.DatabaseOperations.on_conflict_suffix_sql-4.1.7": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_indexes-django.db.backends.sqlite3.introspection.DatabaseIntrospection.get_constraints-1.11.8": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-django.db.models.fields.files.FileField.get_directory_name-django.db.models.fields.files.FileField.generate_filename-1.11.8": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-httpx._models.Response.stream-httpx._models.Response.aiter_bytes-0.14.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle-matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles-v3.8.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-matplotlib.colorbar._ColorbarMappableDummy.set_norm-matplotlib.cm.ScalarMappable.set_norm-v3.1.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-matplotlib.colorbar._ColorbarMappableDummy.set_norm-matplotlib.cm.ScalarMappable.set_norm-v3.2.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-matplotlib.colorbar._ColorbarMappableDummy.set_norm-matplotlib.cm.ScalarMappable.set_norm-v3.4.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-matplotlib.colorbar.ColorbarBase.set_cmap-matplotlib.cm.ScalarMappable.set_cmap-v3.2.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.arrays.base.ExtensionArray._formatting_values-pandas.core.arrays.base.ExtensionArray._formatter-v0.24.2": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-pandas.core.arrays.categorical.Categorical.take_nd-pandas.core.arrays.categorical.Categorical.take-v1.0.5": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.categorical.Categorical.sort-pandas.core.categorical.Categorical.sort_values-v0.19.2": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-pandas.core.frame.DataFrame.__invert__-pandas.core.generic.NDFrame.__invert__-v0.13.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.frame.DataFrame.__neg__-pandas.core.generic.NDFrame.__neg__-v0.13.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.frame.DataFrame.mask-pandas.core.generic.NDFrame.mask-v0.16.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.frame.DataFrame.slice_shift-pandas.core.frame.DataFrame.shift-v1.4.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.frame.DataFrame.slice_shift-pandas.core.frame.DataFrame.shift-v2.0.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.frame.DataFrame.sortlevel-pandas.core.frame.DataFrame.sort_index-v0.23.4": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-pandas.core.frame.DataFrame.take-pandas.core.generic.NDFrame.take-v0.13.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.indexes.base.Index.to_native_types-pandas.core.indexes.base.Index.astype-v1.2.5": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-pandas.core.indexes.base.Index.to_native_types-pandas.core.indexes.base.Index.astype-v1.3.5": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-pandas.core.indexes.base.Index.to_native_types-pandas.core.indexes.base.Index.astype-v1.4.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.indexes.base.Index.to_native_types-pandas.core.indexes.base.Index.astype-v1.5.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-pandas.core.panel.Panel.__invert__-pandas.core.generic.NDFrame.__invert__-v0.13.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.panel.Panel.__neg__-pandas.core.generic.NDFrame.__neg__-v0.13.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.panel.Panel.fillna-pandas.core.generic.NDFrame.fillna-v0.14.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.panel.Panel.fillna-pandas.core.generic.NDFrame.fillna-v0.16.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-pandas.core.panel.Panel.reindex_axis-pandas.core.generic.NDFrame.reindex-v0.23.4": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-pandas.core.series.Series.mask-pandas.core.generic.NDFrame.mask-v0.16.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.series.Series.sortlevel-pandas.core.series.Series.sort_index-v0.23.4": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-pandas.io.formats.style.Styler.set_na_rep-pandas.io.formats.style_render.StylerRenderer.format-v2.0.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-pandas.io.formats.style.Styler.set_precision-pandas.io.formats.style_render.StylerRenderer.format-v1.3.5": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-pandas.io.formats.style.Styler.set_precision-pandas.io.formats.style_render.StylerRenderer.format-v2.0.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-PIL.ImageDraw.ImageDraw.multiline_textsize-PIL.ImageDraw.ImageDraw.multiline_textbbox-10.0.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-PIL.ImageDraw.ImageDraw.multiline_textsize-PIL.ImageDraw.ImageDraw.multiline_textbbox-11.1.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-PIL.ImageFont.FreeTypeFont.getsize_multiline-PIL.ImageDraw.ImageDraw.multiline_textbbox-10.0.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-PIL.ImageFont.FreeTypeFont.getsize_multiline-PIL.ImageDraw.ImageDraw.multiline_textbbox-11.1.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-polars.dataframe.frame.DataFrame.groupby-polars.dataframe.frame.DataFrame.group_by-py-1.1.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-polars.expr.expr.Expr.map_dict-polars.expr.expr.Expr.replace-py-0.19.19": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-polars.expr.expr.Expr.take_every-polars.expr.expr.Expr.gather_every-py-0.20.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-polars.expr.string.ExprStringNameSpace.strip-polars.expr.string.ExprStringNameSpace.strip_chars-py-0.19.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-polars.internals.dataframe.frame.DataFrame.iterrows-polars.internals.dataframe.frame.DataFrame.iter_rows-py-0.16.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-polars.lazyframe.frame.LazyFrame.groupby-polars.lazyframe.frame.LazyFrame.group_by-py-1.1.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-sympy.stats.frv.FinitePSpace.integrate-sympy.stats.frv.FinitePSpace.compute_expectation-sympy-1.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-sklearn.cross_validation.LabelKFold-sklearn.model_selection._split.GroupKFold-0.18": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-sklearn.cross_validation.LabelKFold-sklearn.model_selection._split.GroupKFold-0.20.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-sklearn.cross_validation.LabelShuffleSplit-sklearn.model_selection._split.GroupShuffleSplit-0.20.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-sklearn.cross_validation.LeaveOneLabelOut-sklearn.model_selection._split.LeaveOneGroupOut-0.20.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-sklearn.cross_validation.LeavePLabelOut-sklearn.model_selection._split.LeavePGroupsOut-0.20.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-jax._src.numpy.setops.in1d-jax._src.numpy.setops.isin-jax-v0.4.31": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-pandas.core.dtypes.common.is_categorical-pandas.core.dtypes.common.is_categorical_dtype-v2.0.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.dtypes.common.is_datetimetz-pandas.core.dtypes.common.is_datetime64tz_dtype-v1.0.5": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-polars.io.read_sql-polars.io.database.read_database-py-0.16.14": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-scipy.stats.stats.glm-scipy.stats.stats.ttest_ind-v0.13.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-scipy.stats.stats.glm-scipy.stats.stats.ttest_ind-v0.15.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-scipy.stats.stats.glm-scipy.stats.stats.ttest_ind-v0.16.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-aiohttp.web_urldispatcher.DynamicResource.url-aiohttp.web_urldispatcher.DynamicResource.url_for-v2.3.10": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-dask.array.core.Array.to_imperative-dask.array.core.Array.to_delayed-0.14.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-dask.bag.core.Item.from_imperative-dask.bag.core.Item.from_delayed-0.13.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-dask.bag.core.Item.to_imperative-dask.bag.core.Item.to_delayed-0.14.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pandas.core.frame.DataFrame.reindex_axis-pandas.core.frame.DataFrame.reindex-v0.25.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-pandas.core.frame.DataFrame.reindex_axis-pandas.core.frame.DataFrame.reindex-v1.0.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-PIL.ImageFont.FreeTypeFont.getoffset-PIL.ImageFont.FreeTypeFont.getlength-10.3.0": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-PIL.ImageFont.FreeTypeFont.getoffset-PIL.ImageFont.FreeTypeFont.getlength-10.4.0": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-PIL.ImageFont.FreeTypeFont.getsize-PIL.ImageFont.FreeTypeFont.getlength-10.4.0": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-polars.dataframe.frame.DataFrame.take_every-polars.dataframe.frame.DataFrame.gather_every-py-0.20.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-polars.expr.expr.Expr.shift_and_fill-polars.expr.expr.Expr.shift-py-0.20.31": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-polars.series.list.ListNameSpace.count_match-polars.series.list.ListNameSpace.count_matches-py-0.20.4": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-polars.series.series.Series.shift_and_fill-polars.series.series.Series.shift-py-0.20.31": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_D-polars.series.series.Series.take_every-polars.series.series.Series.gather_every-py-0.20.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-pydantic.main.BaseModel.values-pydantic.main.BaseModel.dict-v0.11.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_D-transformers.trainer_tf.TFTrainer._setup_wandb-transformers.trainer_tf.TFTrainer.setup_wandb-v3.3.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_D-transformers.trainer_tf.TFTrainer._setup_wandb-transformers.trainer_tf.TFTrainer.setup_wandb-v3.5.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-django.contrib.gis.db.models.functions.ForceRHR-django.contrib.gis.db.models.functions.ForcePolygonCW-2.0.8": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-django.contrib.staticfiles.storage.CachedStaticFilesStorage-django.contrib.staticfiles.storage.ManifestStaticFilesStorage-2.1.8": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-httpx._config.PoolLimits-httpx._config.Limits-0.13.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-jax._src.profiler.TraceContext-jax._src.profiler.TraceAnnotation-jax-v0.2.11": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.backends.backend_qt5agg.FigureCanvasQTAggBase-matplotlib.backends.backend_qt5.FigureCanvasQT-v2.1.2": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-sklearn.cross_validation.LeaveOneLabelOut-sklearn.model_selection._split.LeaveOneGroupOut-0.13.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-xgboost.core.DeviceQuantileDMatrix-xgboost.core.QuantileDMatrix-v1.3.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-xgboost.core.DeviceQuantileDMatrix-xgboost.core.QuantileDMatrix-v1.6.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-dask.array.core.from_imperative-dask.array.core.from_delayed-0.8.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-dask.array.reductions.vnorm-dask.array.linalg.norm-0.15.2": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-django.utils.functional.allow_lazy-django.utils.functional.keep_lazy-1.9.9": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-django.utils.http.is_safe_url-django.utils.http.url_has_allowed_host_and_scheme-2.2.8": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-jax._src.nn.functions.normalize-jax._src.nn.functions.standardize-jax-v0.3.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-jax._src.profiler.trace_function-jax._src.profiler.annotate_function-jax-v0.2.11": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-jax._src.tree_util.register_keypaths-jax._src.tree_util.register_pytree_with_keys-jax-v0.4.5": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-lightgbm.callback.print_evaluation-lightgbm.callback.log_evaluation-v3.2.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-matplotlib.cbook.local_over_kwdict-matplotlib.cbook.normalize_kwargs-v3.2.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-mpl_toolkits.mplot3d.axis3d.tick_update_position-mpl_toolkits.mplot3d.axis3d._tick_update_position-v3.5.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-networkx.algorithms.shortest_paths.weighted.bellman_ford-networkx.algorithms.shortest_paths.weighted.bellman_ford_predecessor_and_distance-networkx-1.11": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-networkx.algorithms.shortest_paths.weighted.bellman_ford-networkx.algorithms.shortest_paths.weighted.bellman_ford_predecessor_and_distance-networkx-1.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-networkx.algorithms.shortest_paths.weighted.bellman_ford-networkx.algorithms.shortest_paths.weighted.bellman_ford_predecessor_and_distance-networkx-1.8.1": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-networkx.algorithms.tree.operations.join-networkx.algorithms.tree.operations.join_trees-networkx-3.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-networkx.convert_matrix.from_scipy_sparse_matrix-networkx.convert_matrix.from_scipy_sparse_array-networkx-2.6.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-networkx.convert_matrix.to_scipy_sparse_matrix-networkx.convert_matrix.to_scipy_sparse_array-networkx-2.6.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-networkx.readwrite.text.forest_str-networkx.readwrite.text.write_network_text-networkx-3.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-networkx.utils.misc.dict_to_numpy_array1-networkx.utils.misc.dict_to_numpy_array-networkx-2.7.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-networkx.utils.misc.dict_to_numpy_array2-networkx.utils.misc.dict_to_numpy_array-networkx-2.7.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pandas.core.dtypes.common.is_datetimetz-pandas.core.dtypes.common.is_datetime64tz_dtype-v0.23.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pandas.core.reshape.convert_dummies-pandas.core.reshape.get_dummies-v0.14.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-PIL.ImageFile.raise_ioerror-PIL.ImageFile.raise_oserror-7.1.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-scipy.integrate._quadrature.cumtrapz-scipy.integrate._quadrature.cumulative_trapezoid-v1.5.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-scipy.linalg.matfuncs.expm2-scipy.linalg.matfuncs.expm-v0.8.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-scipy.optimize.anneal.anneal-scipy.optimize._basinhopping.basinhopping-v0.10.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-scipy.signal.windows.slepian-scipy.signal.windows.windows.dpss-v0.18.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-sympy.matrices.matrices.a2idx-sympy.matrices.common.a2idx-sympy-1.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-sympy.matrices.matrices.classof-sympy.matrices.common.classof-sympy-1.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-tensorflow.python.training.experimental.mixed_precision.enable_mixed_precision_graph_rewrite-tensorflow.python.training.experimental.mixed_precision.enable_mixed_precision_graph_rewrite_v1-v1.14.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-aiohttp.web.Application.finish-aiohttp.web.Application.on_cleanup-v0.20.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-aiohttp.web.Application.register_on_finish-aiohttp.web.Application.on_cleanup-v0.20.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-aiohttp.web_urldispatcher.AbstractRoute.url-aiohttp.web_urldispatcher.AbstractRoute.url_for-v1.0.5": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-aiohttp.web_urldispatcher.PlainResource.url-aiohttp.web_urldispatcher.PlainResource.url_for-v1.0.5": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-dask.bag.core.Bag.concat-dask.bag.core.Bag.flatten-0.14.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-django.contrib.gis.geos.point.Point.get_coords-django.contrib.gis.geos.point.Point.tuple-1.9.9": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-django.db.backends.oracle.introspection.DatabaseIntrospection.get_indexes-django.db.backends.oracle.introspection.DatabaseIntrospection.get_constraints-1.10.7": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-django.db.backends.postgresql.introspection.DatabaseIntrospection.get_indexes-django.db.backends.postgresql.introspection.DatabaseIntrospection.get_constraints-1.10.7": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-django.test.testcases.SimpleTestCase.assertFormsetError-django.test.testcases.SimpleTestCase.assertFormSetError-4.1.7": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-django.test.testcases.TransactionTestCase.assertQuerysetEqual-django.test.testcases.TransactionTestCase.assertQuerySetEqual-4.1.7": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-jax._src.array.ArrayImpl.device-jax._src.array.ArrayImpl.devices-jax-v0.4.20": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-jax._src.array.ArrayImpl.device-jax._src.array.ArrayImpl.devices-jax-v0.4.24": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.axis.Axis.cla-matplotlib.axis.Axis.clear-v3.3.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.backend_bases.FigureCanvasBase.resize-matplotlib.backend_bases.FigureManagerBase.resize-v3.5.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.backend_bases.GraphicsContextBase.set_graylevel-matplotlib.backend_bases.GraphicsContextBase.set_foreground-v1.2.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.backend_bases.GraphicsContextBase.set_linestyle-matplotlib.backend_bases.GraphicsContextBase.set_dashes-v1.5.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-matplotlib.backend_bases.NavigationToolbar2.set_cursor-matplotlib.backend_bases.FigureCanvasBase.set_cursor-v3.4.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangle-matplotlib.backends.backend_svg.RendererSVG.draw_gouraud_triangles-v3.6.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-matplotlib.collections.QuadMesh.convert_mesh_to_paths-matplotlib.collections.QuadMesh.get_paths-v3.4.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-matplotlib.colorbar.Colorbar.draw_all-matplotlib.figure.Figure.draw_without_rendering-v3.5.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.colorbar.Colorbar.on_mappable_changed-matplotlib.colorbar.Colorbar.update_normal-v3.0.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-matplotlib.contour.ContourLabeler.add_label_clabeltext-matplotlib.contour.ContourLabeler.add_label-v3.8.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.projections.polar.RadialAxis.cla-matplotlib.projections.polar.RadialAxis.clear-v3.3.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.projections.polar.ThetaAxis.cla-matplotlib.projections.polar.ThetaAxis.clear-v3.3.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.spines.Spine.cla-matplotlib.spines.Spine.clear-v3.3.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.textpath.TextPath.text_get_vertices_codes-matplotlib.textpath.TextToPath.get_text_path-v3.0.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.ticker.LogLocator.subs-matplotlib.ticker.LogLocator.set_params-v3.5.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.categorical.Categorical.order-pandas.core.categorical.Categorical.sort_values-v0.16.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pandas.core.frame.DataFrame.clip_lower-pandas.core.generic.NDFrame.clip-v0.20.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.frame.DataFrame.clip_upper-pandas.core.generic.NDFrame.clip-v0.20.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.frame.DataFrame.convert_objects-pandas.core.generic.NDFrame.convert_objects-v0.10.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pandas.core.frame.DataFrame.convert_objects-pandas.core.generic.NDFrame.convert_objects-v0.9.0": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.frame.DataFrame.convert_objects-pandas.core.generic.NDFrame.convert_objects-v0.9.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pandas.core.frame.DataFrame.sortlevel-pandas.core.frame.DataFrame.sort_index-v0.16.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.indexes.multi.MultiIndex.set_labels-pandas.core.indexes.multi.MultiIndex.set_codes-v0.23.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pandas.core.panel.Panel.fillna-pandas.core.generic.NDFrame.fillna-v0.11.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pandas.core.panel.Panel.fillna-pandas.core.generic.NDFrame.fillna-v0.9.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.series.Series.clip_lower-pandas.core.generic.NDFrame.clip-v0.20.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.series.Series.clip_upper-pandas.core.generic.NDFrame.clip-v0.20.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.series.Series.fillna-pandas.core.generic.NDFrame.fillna-v0.10.0": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.series.Series.fillna-pandas.core.generic.NDFrame.fillna-v0.10.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.series.Series.fillna-pandas.core.generic.NDFrame.fillna-v0.11.0": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.series.Series.fillna-pandas.core.generic.NDFrame.fillna-v0.7.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.series.Series.fillna-pandas.core.generic.NDFrame.fillna-v0.8.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-pandas.core.series.Series.fillna-pandas.core.generic.NDFrame.fillna-v0.9.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.series.Series.reindex_axis-pandas.core.series.Series.reindex-v0.20.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.io.formats.style.Styler.hide_columns-pandas.io.formats.style.Styler.hide-v1.2.5": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.io.formats.style.Styler.hide_index-pandas.io.formats.style.Styler.hide-v1.2.5": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.io.formats.style.Styler.render-pandas.io.formats.style.Styler.to_html-v1.2.5": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pandas.io.formats.style.Styler.render-pandas.io.formats.style.Styler.to_html-v1.3.5": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-PIL.ImageDraw.ImageDraw.multiline_textsize-PIL.ImageDraw.ImageDraw.multiline_textbbox-9.1.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-PIL.ImageFont.FreeTypeFont.getoffset-PIL.ImageFont.FreeTypeFont.getlength-9.1.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-PIL.ImageFont.FreeTypeFont.getsize_multiline-PIL.ImageDraw.ImageDraw.multiline_textbbox-9.1.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.dataframe.frame.DataFrame.take_every-polars.dataframe.frame.DataFrame.gather_every-py-0.20.2": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.expr.expr.Expr.apply-polars.expr.expr.Expr.map_elements-py-0.18.15": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.expr.expr.Expr.map-polars.expr.expr.Expr.map_batches-py-0.18.15": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.expr.expr.Expr.take-polars.expr.expr.Expr.gather-py-0.19.13": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.expr.expr.Expr.take_every-polars.expr.expr.Expr.gather_every-py-0.20.2": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.expr.string.ExprStringNameSpace.count_match-polars.expr.string.ExprStringNameSpace.count_matches-py-0.19.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.expr.string.ExprStringNameSpace.count_match-polars.expr.string.ExprStringNameSpace.count_matches-py-0.19.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.expr.string.ExprStringNameSpace.parse_int-polars.expr.string.ExprStringNameSpace.to_integer-py-0.19.7": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-polars.lazyframe.frame.LazyFrame.take_every-polars.lazyframe.frame.LazyFrame.gather_every-py-0.20.2": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.series.series.Series.set_at_idx-polars.series.series.Series.scatter-py-0.19.13": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.series.series.Series.take_every-polars.series.series.Series.gather_every-py-0.20.2": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pydantic.main.BaseModel.values-pydantic.main.BaseModel.dict-v0.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pydantic.main.BaseModel.values-pydantic.main.BaseModel.dict-v0.5": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-sympy.geometry.line.Line.equal-sympy.geometry.line.Line.equals-sympy-0.7.6.1": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-transformers.trainer.Trainer.is_world_master-transformers.trainer.Trainer.is_world_process_zero-v3.0.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-aiohttp.parsers.DataQueue-aiohttp.streams.StreamReader-v.0.6.5": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-django.db.models.fields.related.ManyRelatedObjectsDescriptor-django.db.models.fields.related_descriptors.ManyToManyDescriptor-1.7.5": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-jax._src.tree_util.AttributeKeyPathEntry-jax._src.tree_util.GetAttrKey-jax-v0.4.5": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.colorbar.ColorbarPatch-matplotlib.colorbar.Colorbar-v3.3.4": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-pandas.core.indexes.numeric.Float64Index-pandas.core.indexes.base.Index-v1.2.5": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-pandas.core.indexes.numeric.Float64Index-pandas.core.indexes.base.Index-v1.4.4": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-pandas.core.indexes.numeric.Int64Index-pandas.core.indexes.base.Index-v1.4.4": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-dask.dataframe.io.read_csv-dask.dataframe.csv.read_csv-0.7.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-django.utils.http.cookie_date-django.utils.http.http_date-2.0.8": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-jax._src.nn.functions.normalize-jax._src.nn.functions.standardize-jax-v0.4.16": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-jax._src.random.rbg_key-jax._src.random.PRNGKey-jax-v0.4.19": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-jax._src.random.threefry2x32_key-jax._src.random.PRNGKey-jax-v0.4.19": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-jax._src.random.unsafe_rbg_key-jax._src.random.PRNGKey-jax-v0.4.19": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-jax._src.tree_util.register_keypaths-jax._src.tree_util.register_pytree_with_keys-jax-v0.4.15": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-lightgbm.callback.print_evaluation-lightgbm.callback.log_evaluation-v3.2.0": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-networkx.algorithms.shortest_paths.weighted.bellman_ford-networkx.algorithms.shortest_paths.weighted.bellman_ford_predecessor_and_distance-networkx-1.9.1": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.dtypes.common.is_categorical-pandas.core.dtypes.common.is_categorical_dtype-v1.4.4": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-pandas.core.dtypes.common.is_categorical-pandas.core.dtypes.common.is_categorical_dtype-v1.5.0": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-pandas.core.dtypes.common.is_period-pandas.core.dtypes.common.is_period_dtype-v0.23.4": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.functions.lazy.map-polars.functions.lazy.map_batches-py-0.18.15": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-tensorflow.python.training.experimental.mixed_precision.enable_mixed_precision_graph_rewrite-tensorflow.python.training.experimental.mixed_precision.enable_mixed_precision_graph_rewrite_v1-v2.3.1": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-aiohttp.web_urldispatcher.DynamicResource.url-aiohttp.web_urldispatcher.DynamicResource.url_for-v1.0.5": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-django.db.backends.base.operations.BaseDatabaseOperations.check_aggregate_support-django.db.backends.base.operations.BaseDatabaseOperations.check_expression_support-1.8.7": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-django.db.models.fields.files.FileField.get_directory_name-django.db.models.fields.files.FileField.generate_filename-1.9.9": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-django.db.models.fields.files.FileField.get_filename-django.db.models.fields.files.FileField.generate_filename-1.9.9": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-django.http.request.HttpRequest.is_ajax-django.http.request.HttpRequest.accepts-3.0.9": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-matplotlib.axes._subplots.SubplotBase.get_geometry-matplotlib.axes._subplots.SubplotBase.get_subplotspec-v3.3.4": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.axis.Tick.apply_tickdir-matplotlib.axis.Axis.set_tick_params-v3.3.4": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-matplotlib.axis.Tick.apply_tickdir-matplotlib.axis.Axis.set_tick_params-v3.4.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-matplotlib.backend_bases.FigureCanvasBase.get_window_title-matplotlib.backend_bases.FigureManagerBase.get_window_title-v3.3.4": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.backend_bases.FigureCanvasBase.set_window_title-matplotlib.backend_bases.FigureManagerBase.set_window_title-v3.3.4": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-matplotlib.backend_bases.GraphicsContextBase.set_graylevel-matplotlib.backend_bases.GraphicsContextBase.set_foreground-v1.4.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-mpl_toolkits.axes_grid1.axes_divider.SubplotDivider.get_geometry-mpl_toolkits.axes_grid1.axes_divider.SubplotDivider.get_subplotspec-v3.3.4": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pandas.core.categorical.Categorical.sort-pandas.core.categorical.Categorical.sort_values-v0.18.0": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.frame.DataFrame.take-pandas.core.generic.NDFrame.take-v0.7.3": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.core.indexes.multi.MultiIndex.is_lexsorted-pandas.core.indexes.multi.MultiIndex.is_monotonic_increasing-v1.4.4": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pandas.core.indexes.multi.MultiIndex.is_lexsorted-pandas.core.indexes.multi.MultiIndex.is_monotonic_increasing-v1.5.0": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pandas.core.series.Series.iteritems-pandas.core.series.Series.items-v1.4.4": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-pandas.core.series.Series.sortlevel-pandas.core.series.Series.sort_index-v0.16.3": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.io.formats.style.Styler.hide_columns-pandas.io.formats.style.Styler.hide-v1.3.5": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-pandas.io.formats.style.Styler.hide_index-pandas.io.formats.style.Styler.hide-v1.3.5": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.dataframe.frame.DataFrame.apply-polars.dataframe.frame.DataFrame.map_rows-py-0.18.15": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.dataframe.frame.DataFrame.take_every-polars.dataframe.frame.DataFrame.gather_every-py-0.19.13": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.expr.expr.Expr.map_dict-polars.expr.expr.Expr.replace-py-0.19.15": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-polars.expr.expr.Expr.shift_and_fill-polars.expr.expr.Expr.shift-py-0.19.11": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.expr.list.ExprListNameSpace.count_match-polars.expr.list.ExprListNameSpace.count_matches-py-0.19.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.expr.list.ExprListNameSpace.take-polars.expr.list.ExprListNameSpace.gather-py-0.19.13": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.expr.string.ExprStringNameSpace.json_extract-polars.expr.string.ExprStringNameSpace.json_decode-py-0.19.14": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.lazyframe.frame.LazyFrame.group_by_rolling-polars.lazyframe.frame.LazyFrame.rolling-py-0.19.8": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.lazyframe.frame.LazyFrame.groupby-polars.lazyframe.frame.LazyFrame.group_by-py-0.18.15": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.lazyframe.frame.LazyFrame.read_json-polars.lazyframe.frame.LazyFrame.deserialize-py-0.18.12": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.lazyframe.frame.LazyFrame.shift_and_fill-polars.lazyframe.frame.LazyFrame.shift-py-0.19.11": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.lazyframe.frame.LazyFrame.take_every-polars.lazyframe.frame.LazyFrame.gather_every-py-0.19.13": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.series.datetime.DateTimeNameSpace.days-polars.series.datetime.DateTimeNameSpace.total_days-py-0.19.12": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.series.datetime.DateTimeNameSpace.hours-polars.series.datetime.DateTimeNameSpace.total_hours-py-0.19.12": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.series.datetime.DateTimeNameSpace.microseconds-polars.series.datetime.DateTimeNameSpace.total_microseconds-py-0.19.12": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.series.datetime.DateTimeNameSpace.milliseconds-polars.series.datetime.DateTimeNameSpace.total_milliseconds-py-0.19.12": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.series.datetime.DateTimeNameSpace.minutes-polars.series.datetime.DateTimeNameSpace.total_minutes-py-0.19.12": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.series.datetime.DateTimeNameSpace.nanoseconds-polars.series.datetime.DateTimeNameSpace.total_nanoseconds-py-0.19.12": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.series.datetime.DateTimeNameSpace.seconds-polars.series.datetime.DateTimeNameSpace.total_seconds-py-0.19.12": {
+    "mapBased": {
+      "cause": "combined",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "combined"
+  },
+  "fix_R-polars.series.series.Series.apply-polars.series.series.Series.map_elements-py-0.18.15": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.series.series.Series.take-polars.series.series.Series.gather-py-0.19.13": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.series.series.Series.take_every-polars.series.series.Series.gather_every-py-0.19.13": {
+    "mapBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "candidates",
+      "special_reason": null
+    },
+    "final_cause": "candidates"
+  },
+  "fix_R-polars.series.string.StringNameSpace.count_match-polars.series.string.StringNameSpace.count_matches-py-0.19.1": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-polars.series.string.StringNameSpace.json_extract-polars.series.string.StringNameSpace.json_decode-py-0.19.14": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-pydantic.main.BaseModel.values-pydantic.main.BaseModel.dict-v0.0.6": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-sklearn.compose._column_transformer.ColumnTransformer.get_feature_names-sklearn.compose._column_transformer.ColumnTransformer.get_feature_names_out-0.22.2": {
+    "mapBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "tokenBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  },
+  "fix_R-transformers.trainer.Trainer.is_local_master-transformers.trainer.Trainer.is_local_process_zero-v3.0.2": {
+    "mapBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "tokenBased": {
+      "cause": "special",
+      "special_reason": "rangeSize == notDec"
+    },
+    "treeBased": {
+      "cause": "dep_rep",
+      "special_reason": null
+    },
+    "final_cause": "dep_rep"
+  }
+}

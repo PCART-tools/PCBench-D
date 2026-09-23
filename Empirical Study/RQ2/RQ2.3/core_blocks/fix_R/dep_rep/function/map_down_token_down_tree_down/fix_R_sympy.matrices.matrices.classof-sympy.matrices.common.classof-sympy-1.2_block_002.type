@@ -1,0 +1,16 @@
+# detail
+Number of changes: 1
+
+1. Modified | Function implementation code block
+   Replaced the body of `classof(A, B)` with importing and calling `sympy.matrices.common.classof`.
+
+   The original implementation included:
+   * `try` statement: compare `A._class_priority` and `B._class_priority` and return the class of the corresponding object;
+   * `try` statement: import `numpy` and, according to whether `A` or `B` was a `numpy.ndarray`, return the class of the other object;
+   * `raise` statement: raise `TypeError` indicating that the classes of `A` and `B` were incompatible.
+
+   The new implementation includes:
+   * Import statement: import `classof` from `sympy.matrices.common` under the name `classof_`;
+   * Return statement: return the result of `classof_(A, B)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with import statement and return-call statement)

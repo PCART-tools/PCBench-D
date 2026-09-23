@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Return statement
+   Changed the return expression from `self._ensure_type(super().reindex(**kwargs))` to `super().reindex(**kwargs)`.
+# /detail
+# mode：Modify return statement (remove outer call)

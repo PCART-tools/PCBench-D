@@ -1,0 +1,11 @@
+# detail
+Number of changes: 1
+
+1. Added | Exception-handling structure
+   Wrapped the existing `return _export(...)` call in a `try-except` structure; after catching `Exception as e`, append error information based on the exception type and then re-raise the exception.
+   This includes:
+
+   * `try` block: return `_export(mod, args, kwargs, dynamic_shapes, strict=strict, preserve_module_call_signature=preserve_module_call_signature, pre_dispatch=True)`;
+   * `except` block: define the `draft_export_msg` string; use `if/elif` checks on the exception type or error-message content, append a new message and assign it to `e.args`; execute `raise e`.
+# /detail
+# mode：Add exception-handling structure (wrap return-call statement and augment exception information)

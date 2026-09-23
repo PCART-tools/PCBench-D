@@ -1,0 +1,16 @@
+    @doc(NDFrame.asfreq, **_shared_doc_kwargs)  # type: ignore[has-type]
+    def asfreq(
+        self,
+        freq,
+        method=None,
+        how: str | None = None,
+        normalize: bool = False,
+        fill_value=None,
+    ) -> Series:
+        return super().asfreq(
+            freq=freq,
+            method=method,
+            how=how,
+            normalize=normalize,
+            fill_value=fill_value,
+        )

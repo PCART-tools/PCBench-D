@@ -1,0 +1,8 @@
+@util._wraps(np.reshape, lax_description=_ARRAY_VIEW_DOC)
+def reshape(a: ArrayLike, newshape: Union[DimSize, Shape], order: str = "C") -> Array:
+  util._stackable(a) or util._check_arraylike("reshape", a)
+  try:
+    # forward to method for ndarrays
+    return a.reshape(newshape, order=order)  # type: ignore[call-overload,union-attr]
+  except AttributeError:
+    return _reshape(asarray(a), newshape, order=order)

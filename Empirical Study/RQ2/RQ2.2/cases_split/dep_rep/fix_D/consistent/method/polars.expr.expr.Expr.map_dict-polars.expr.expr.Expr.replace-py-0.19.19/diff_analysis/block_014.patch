@@ -1,0 +1,12 @@
+@@ -76,9 +77,4 @@
+  
+-        >>> df = df.with_row_count()
+-        >>> df.select(
+-        ...     "row_nr",
+-        ...     pl.col("row_nr")
+-        ...     .replace({1: 10, 2: 20}, default=0, return_dtype=pl.UInt8)
+-        ...     .alias("replaced"),
+-        ... )
++        >>> mapping = {2: 100, 3: 200}
++        >>> df.with_columns(replaced=pl.col("a").replace(mapping, default=-1))
+         shape: (4, 2)

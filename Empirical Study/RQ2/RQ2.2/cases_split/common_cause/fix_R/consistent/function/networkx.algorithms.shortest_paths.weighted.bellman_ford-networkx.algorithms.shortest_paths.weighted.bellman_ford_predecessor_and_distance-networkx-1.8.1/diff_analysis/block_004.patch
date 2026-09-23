@@ -1,0 +1,7 @@
+@@ -69,4 +72,4 @@
+  
+-    if numb_nodes == 1:
+-       return pred, dist
++    if len(G) == 1:
++        return pred, dist
+  

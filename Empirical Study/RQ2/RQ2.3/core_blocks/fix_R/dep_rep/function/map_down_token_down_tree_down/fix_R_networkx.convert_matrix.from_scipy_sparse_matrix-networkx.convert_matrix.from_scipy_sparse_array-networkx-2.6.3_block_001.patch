@@ -1,0 +1,51 @@
+@@ -68,36 +68,15 @@
+     """
+-    G = nx.empty_graph(0, create_using)
+-    n, m = A.shape
+-    if n != m:
+-        raise nx.NetworkXError(f"Adjacency matrix not square: nx,ny={A.shape}")
+-    # Make sure we get even the isolated nodes of the graph.
+-    G.add_nodes_from(range(n))
+-    # Create an iterable over (u, v, w) triples and for each triple, add an
+-    # edge from u to v with weight w.
+-    triples = _generate_weighted_edges(A)
+-    # If the entries in the adjacency matrix are integers, the graph is a
+-    # multigraph, and parallel_edges is True, then create parallel edges, each
+-    # with weight 1, for each entry in the adjacency matrix. Otherwise, create
+-    # one edge for each positive entry in the adjacency matrix and set the
+-    # weight of that edge to be the entry in the matrix.
+-    if A.dtype.kind in ("i", "u") and G.is_multigraph() and parallel_edges:
+-        chain = itertools.chain.from_iterable
+-        # The following line is equivalent to:
+-        #
+-        #     for (u, v) in edges:
+-        #         for d in range(A[u, v]):
+-        #             G.add_edge(u, v, weight=1)
+-        #
+-        triples = chain(((u, v, 1) for d in range(w)) for (u, v, w) in triples)
+-    # If we are creating an undirected multigraph, only add the edges from the
+-    # upper triangle of the matrix. Otherwise, add all the edges. This relies
+-    # on the fact that the vertices created in the
+-    # `_generated_weighted_edges()` function are actually the row/column
+-    # indices for the matrix `A`.
+-    #
+-    # Without this check, we run into a problem where each edge is added twice
+-    # when `G.add_weighted_edges_from()` is invoked below.
+-    if G.is_multigraph() and not G.is_directed():
+-        triples = ((u, v, d) for u, v, d in triples if u <= v)
+-    G.add_weighted_edges_from(triples, weight=edge_attribute)
+-    return G
++    warnings.warn(
++        (
++            "\n\nThe scipy.sparse array containers will be used instead of matrices\n"
++            "in Networkx 3.0. Use `from_scipy_sparse_array` instead."
++        ),
++        DeprecationWarning,
++        stacklevel=2,
++    )
++    return from_scipy_sparse_array(
++        A,
++        parallel_edges=parallel_edges,
++        create_using=create_using,
++        edge_attribute=edge_attribute,
++    )

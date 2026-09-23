@@ -1,0 +1,6 @@
+@@ -22,4 +35,4 @@
+         └─────┴─────┘
+ 
+         """
+-        return self.select(F.col("*").gather_every(n))
++        return self.select(F.col("*").gather_every(n, offset))

@@ -1,0 +1,51 @@
+    def sort(
+        self,
+        *,
+        descending: bool = False,
+        nulls_last: bool = False,
+        multithreaded: bool = True,
+        in_place: bool = False,
+    ) -> Self:
+        """
+        Sort this Series.
+
+        Parameters
+        ----------
+        descending
+            Sort in descending order.
+        nulls_last
+            Place null values last instead of first.
+        multithreaded
+            Sort using multiple threads.
+        in_place
+            Sort in-place.
+
+        Examples
+        --------
+        >>> s = pl.Series("a", [1, 3, 4, 2])
+        >>> s.sort()
+        shape: (4,)
+        Series: 'a' [i64]
+        [
+                1
+                2
+                3
+                4
+        ]
+        >>> s.sort(descending=True)
+        shape: (4,)
+        Series: 'a' [i64]
+        [
+                4
+                3
+                2
+                1
+        ]
+        """
+        if in_place:
+            self._s = self._s.sort(descending, nulls_last, multithreaded)
+            return self
+        else:
+            return self._from_pyseries(
+                self._s.sort(descending, nulls_last, multithreaded)
+            )

@@ -1,0 +1,5 @@
+@@ -32,2 +34,4 @@
+         else:
++            if method is not None:
++                raise ValueError('cannot specify both a fill method and value')
+             new_data = self._data.fillna(value)

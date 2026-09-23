@@ -1,0 +1,6 @@
+@@ -55,4 +24,2 @@
+         """
+-        if return_dtype is not None:
+-            return_dtype = py_type_to_dtype(return_dtype)
+-        return self._from_pyexpr(self._pyexpr.map(function, return_dtype, agg_list))
++        return self.map_batches(function, return_dtype, agg_list=agg_list)

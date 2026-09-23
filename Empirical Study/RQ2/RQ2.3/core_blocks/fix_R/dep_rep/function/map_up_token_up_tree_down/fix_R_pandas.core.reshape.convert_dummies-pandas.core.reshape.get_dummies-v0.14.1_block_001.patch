@@ -1,0 +1,9 @@
+@@ -18,2 +18,8 @@
+     """
++    import warnings
++
++    warnings.warn("'convert_dummies' is deprecated and will be removed "
++                  "in a future release. Use 'get_dummies' instead.",
++                  FutureWarning)
++
+     result = data.drop(cat_variables, axis=1)

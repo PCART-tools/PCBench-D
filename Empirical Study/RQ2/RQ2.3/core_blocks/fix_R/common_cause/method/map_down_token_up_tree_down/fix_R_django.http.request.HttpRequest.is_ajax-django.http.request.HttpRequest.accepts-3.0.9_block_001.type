@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Added | Warning call statement
+   Added a `warnings.warn(...)` call to `is_ajax`, passing a deprecation-message string, `RemovedInDjango40Warning`, and `stacklevel=2`.
+# /detail
+# mode：Add warning call

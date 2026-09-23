@@ -1,0 +1,9 @@
+@@ -1,1 +1,8 @@
++    @deprecate_function(
++        "It has been renamed to `replace`."
++        " The default behavior has changed to keep any values not present in the mapping unchanged."
++        " Pass `default=None` to keep existing behavior.",
++        version="0.19.16",
++    )
++    @deprecate_renamed_parameter("remapping", "mapping", version="0.19.16")
+     def map_dict(

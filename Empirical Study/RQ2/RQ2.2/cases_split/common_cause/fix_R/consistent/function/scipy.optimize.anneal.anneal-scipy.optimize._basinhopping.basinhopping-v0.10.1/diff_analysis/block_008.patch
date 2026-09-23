@@ -1,0 +1,7 @@
+@@ -211,4 +163,4 @@
+     if full_output:
+-        return best_state.x, best_state.cost, schedule.T, \
+-               schedule.feval, iters, schedule.accepted, retval
++        return res['x'], res['fun'], res['T'], res['nfev'], res['nit'], \
++            res['accept'], res['status']
+     else:

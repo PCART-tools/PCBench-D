@@ -1,0 +1,4 @@
+@@ -33,2 +33,3 @@
+         for constraint, columns, pk, unique, check in cursor.fetchall():
++            constraint = self.identifier_converter(constraint)
+             constraints[constraint] = {

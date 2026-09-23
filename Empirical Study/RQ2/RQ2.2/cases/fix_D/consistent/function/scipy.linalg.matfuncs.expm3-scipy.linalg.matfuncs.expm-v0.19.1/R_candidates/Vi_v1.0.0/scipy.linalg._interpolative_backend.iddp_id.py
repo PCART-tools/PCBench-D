@@ -1,0 +1,26 @@
+def iddp_id(eps, A):
+    """
+    Compute ID of a real matrix to a specified relative precision.
+
+    :param eps:
+        Relative precision.
+    :type eps: float
+    :param A:
+        Matrix.
+    :type A: :class:`numpy.ndarray`
+
+    :return:
+        Rank of ID.
+    :rtype: int
+    :return:
+        Column index array.
+    :rtype: :class:`numpy.ndarray`
+    :return:
+        Interpolation coefficients.
+    :rtype: :class:`numpy.ndarray`
+    """
+    A = np.asfortranarray(A)
+    k, idx, rnorms = _id.iddp_id(eps, A)
+    n = A.shape[1]
+    proj = A.T.ravel()[:k*(n-k)].reshape((k, n-k), order='F')
+    return k, idx, proj

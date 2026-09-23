@@ -1,0 +1,4 @@
+@@ -1,2 +1,2 @@
+-def threefry2x32_key(seed: int) -> KeyArray:
++def threefry2x32_key(seed: int | ArrayLike) -> KeyArray:
+   """Creates a threefry2x32 PRNG key from an integer seed."""

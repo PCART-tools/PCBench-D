@@ -1,0 +1,13 @@
+    def __init__(self, ref_artist, use_blit=False):
+        self.ref_artist = ref_artist
+        if not ref_artist.pickable():
+            ref_artist.set_picker(True)
+        self.got_artist = False
+        self.canvas = self.ref_artist.figure.canvas
+        self._use_blit = use_blit and self.canvas.supports_blit
+        self.cids = [
+            self.canvas.callbacks._connect_picklable(
+                'pick_event', self.on_pick),
+            self.canvas.callbacks._connect_picklable(
+                'button_release_event', self.on_release),
+        ]

@@ -1,0 +1,10 @@
+# detail
+Number of changes: 2
+
+1. Removed | Conditional statement
+   Removed the type checks and assignment handling for `file`, including conversion from `StringIO` to `BytesIO` and processing of `str` and `Path` through `normalise_filepath(file)`.
+
+2. Modified | Return statement
+   Changed the returned value from `cls._from_pyldf(PyLazyFrame.read_json(file))` to `cls.deserialize(source)`.
+# /detail
+# mode：Remove conditional statement; Modify return-call statement (change called function)

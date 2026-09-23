@@ -1,0 +1,18 @@
+@@ -4,15 +5,4 @@
+  
+-        Examples
+-        --------
+-        >>> s = pl.DataFrame({"a": [1, 2, 3, 4], "b": [5, 6, 7, 8]})
+-        >>> s.take_every(2)
+-        shape: (2, 2)
+-        ┌─────┬─────┐
+-        │ a   ┆ b   │
+-        │ --- ┆ --- │
+-        │ i64 ┆ i64 │
+-        ╞═════╪═════╡
+-        │ 1   ┆ 5   │
+-        │ 3   ┆ 7   │
+-        └─────┴─────┘
++        .. deprecated:: 0.19.14
++            This method has been renamed to :func:`gather_every`.
+  

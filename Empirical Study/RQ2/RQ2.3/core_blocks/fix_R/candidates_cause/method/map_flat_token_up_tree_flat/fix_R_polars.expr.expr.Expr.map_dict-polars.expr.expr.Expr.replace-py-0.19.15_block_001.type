@@ -1,0 +1,10 @@
+# detail
+Number of changes: 2
+
+1. Added | Decorator
+   Added `@deprecate_function(...)` to `map_dict`, passing a deprecation-message string and `version="0.19.16"`.
+
+2. Added | Decorator
+   Added `@deprecate_renamed_parameter("remapping", "mapping", version="0.19.16")` to `map_dict`.
+# /detail
+# mode：Add decorator

@@ -1,0 +1,132 @@
+@partial(jax.jit, static_argnames=('termination_size',))
+def _eigh_work(H, n, termination_size=256):
+  """ The main work loop performing the symmetric eigendecomposition of H.
+  Each step recursively computes a projector into the space of eigenvalues
+  above jnp.mean(jnp.diag(H)). The result of the projections into and out of
+  that space, along with the isometries accomplishing these, are then computed.
+  This is performed recursively until the projections have size 1, and thus
+  store an eigenvalue of the original input; the corresponding isometry is
+  the related eigenvector. The results are then composed.
+
+  This function cannot be Jitted because the internal split_spectrum cannot
+  be.
+
+  Args:
+    H: The Hermitian input.
+    n: The true (dynamic) shape of H.
+
+  Returns:
+    H, V: The result of the projection.
+  """
+  # We turn what was originally a recursive algorithm into an iterative
+  # algorithm with an explicit stack.
+  N, _ = H.shape
+  n = jnp.asarray(n, jnp.int32)
+  agenda = Stack.create(
+    N + 1, _Subproblem(jnp.array(0, jnp.int32), jnp.array(0, jnp.int32)))
+  agenda = agenda.push(_Subproblem(offset=jnp.int32(0), size=n))
+
+  # eigenvectors is the array in which we build the output eigenvectors.
+  # We initialize it with the identity matrix so the initial matrix
+  # multiplications in_split_spectrum_jittable are the identity.
+  eigenvectors = jnp.eye(N, dtype=H.dtype)
+
+  # blocks is an array representing a stack of Hermitian matrix blocks that we
+  # need to recursively decompose. Subproblems are different sizes, so the stack
+  # of blocks is ragged. Subproblems are left-aligned (i.e. starting at the 0th
+  # column). Here is an ASCII art picture of three blocks A, B, C, embedded
+  # in the larger `blocks` workspace (represented with trailing dots).
+  #
+  # A A A . . .
+  # A A A . . .
+  # A A A . . .
+  # B B . . . .
+  # B B . . . .
+  # C C C C . .
+  # C C C C . .
+  # C C C C . .
+  # C C C C . .
+  #
+  # Each step of the algorithm subdivides a block into two subblocks whose
+  # sizes sum to the original block size. We overwrite the original block with
+  # those two subblocks so we don't need any additional scratch space.
+  #
+  # At termination, "blocks" will contain 1x1 blocks (i.e., the eigenvalues) in
+  # its first column.
+  blocks = H
+
+  def base_case(B, offset, b, agenda, blocks, eigenvectors):
+    # Base case: for blocks under a minimum size, we cutoff the recursion
+    # and call the TPU Jacobi eigendecomposition implementation. The Jacobi
+    # algorithm works well for small matrices but scales poorly, so the two
+    # complement each other well.
+    H = _slice(blocks, (offset, 0), (b, b), (B, B))
+    V = _slice(eigenvectors, (0, offset), (n, b), (N, B))
+
+    # We replace the masked-out part of the matrix with the identity matrix.
+    # We know that the TPU Jacobi eigh implementation will not alter the order
+    # of the eigenvalues, so we know the eigendecomposition of the original
+    # matrix is in the top-left corner of the eigendecomposition of the padded
+    # matrix.
+    # It is very important that the underlying eigh implementation does not sort
+    # the eigenvalues for this reason! This is currently not true of JAX's CPU
+    # and GPU eigendecompositions, and for those platforms this algorithm will
+    # only do the right thing if termination_size == 1.
+    H = _mask(H, (b, b), jnp.eye(B, dtype=H.dtype))
+    eig_vecs, eig_vals = lax.linalg.eigh(H, sort_eigenvalues=False)
+    eig_vecs = _mask(eig_vecs, (b, b))
+    eig_vals = _mask(eig_vals, (b,))
+    eig_vecs = jnp.dot(V, eig_vecs)
+
+    eig_vals = eig_vals.astype(eig_vecs.dtype)
+    blocks = _update_slice(blocks, eig_vals[:, None], (offset, 0), (b, b))
+    eigenvectors = _update_slice(eigenvectors, eig_vecs, (0, offset), (n, b))
+    return agenda, blocks, eigenvectors
+
+  def recursive_case(B, offset, b, agenda, blocks, eigenvectors):
+    # The recursive case of the algorithm, specialized to a static block size
+    # of B.
+    H = _slice(blocks, (offset, 0), (b, b), (B, B))
+    V = _slice(eigenvectors, (0, offset), (n, b), (N, B))
+
+    split_point = jnp.nanmedian(_mask(jnp.diag(jnp.real(H)), (b,), jnp.nan))  # TODO: Improve this?
+    H_minus, V_minus, H_plus, V_plus, rank = split_spectrum(H, b, split_point, V0=V)
+
+    blocks = _update_slice(blocks, H_minus, (offset, 0), (rank, rank))
+    blocks = _update_slice(blocks, H_plus, (offset + rank, 0), (b - rank, b - rank))
+    eigenvectors = _update_slice(eigenvectors, V_minus, (0, offset), (n, rank))
+    eigenvectors = _update_slice(eigenvectors, V_plus, (0, offset + rank),
+                                 (n, b - rank))
+
+    agenda = agenda.push(_Subproblem(offset + rank, (b - rank)))
+    agenda = agenda.push(_Subproblem(offset, rank))
+    return agenda, blocks, eigenvectors
+
+  def loop_cond(state):
+    agenda, _, _ = state
+    return ~agenda.empty()
+
+  # It would be wasteful to perform all computation padded up to the original
+  # matrix size. Instead, we form buckets of padded sizes e.g.,
+  # [256, 512, 1024, ..., N], aiming for a balance between compilation time
+  # and runtime.
+  cutoff = min(N, termination_size)
+  buckets = [cutoff]
+  branches = [partial(base_case, cutoff)]
+  i = cutoff
+  while i < N:
+    i = min(2 * i, N)
+    buckets.append(i)
+    branches.append(partial(recursive_case, i))
+  buckets = jnp.array(buckets, dtype='int32')
+
+  def loop_body(state):
+    agenda, blocks, eigenvectors = state
+    (offset, b), agenda = agenda.pop()
+    which = jnp.where(buckets < b, jnp.iinfo(jnp.int32).max, buckets)
+    choice = jnp.argmin(which)
+    return lax.switch(choice, branches, offset, b, agenda, blocks, eigenvectors)
+
+  _, blocks, eigenvectors = lax.while_loop(
+      loop_cond, loop_body, (agenda, blocks, eigenvectors))
+  return blocks[:, 0], eigenvectors

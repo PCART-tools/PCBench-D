@@ -1,0 +1,18 @@
+# detail
+Number of changes: 3
+
+1. Added | Conditional statement
+   Added validation of `nout` inside the `if not dasks:` branch; a `ValueError` is raised when `nout` is neither `None` nor a nonnegative integer.
+
+2. Added | Conditional statement
+   Added an `if not name:` block inside the `if not dasks:` branch to generate `name`.
+   This includes:
+
+   * Try-except statement: attempt to assign `obj.__name__` to `prefix`; after catching `AttributeError`, assign `type(obj).__name__` to `prefix`;
+   * Assignment statement: call `tokenize(obj, nout, pure=pure)` and assign the result to `token`;
+   * Assignment statement: generate `name` by formatting `prefix` and `token`.
+
+3. Modified | Return statement
+   Changed `return DelayedLeaf(obj, pure=pure, name=name)` to `return DelayedLeaf(obj, name, pure=pure, nout=nout)`, adjusting the arguments passed to `DelayedLeaf` and adding `nout=nout`.
+# /detail
+# mode：Add conditional statement; Modify return-call statement (modify call arguments)

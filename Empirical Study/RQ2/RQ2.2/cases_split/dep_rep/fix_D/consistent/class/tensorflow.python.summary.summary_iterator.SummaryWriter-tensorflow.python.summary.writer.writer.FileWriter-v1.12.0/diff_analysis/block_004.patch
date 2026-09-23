@@ -1,0 +1,6 @@
+@@ -114,2 +127,5 @@
+     """
++    # Flushing a closed EventFileWriterV2 raises an exception. It is,
++    # however, a noop for EventFileWriter.
++    self._warn_if_event_writer_is_closed()
+     self.event_writer.flush()

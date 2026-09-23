@@ -1,0 +1,98 @@
+{
+  "case": "scipy.stats.stats.glm-scipy.stats.stats.ttest_ind-v0.16.0",
+  "fix_type": "fix_D",
+  "candidate_api": "scipy.stats.stats.ttest_ind",
+  "error": null,
+  "threshold_10pct": 37.1,
+  "algorithms_meeting_threshold": [
+    "mapBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 18,
+      "vi_rank": 57,
+      "delta": -39,
+      "exceeds_10pct": true
+    },
+    "tokenBased": {
+      "vi1_rank": 68,
+      "vi_rank": 74,
+      "delta": -6,
+      "exceeds_10pct": false
+    },
+    "treeBased": {
+      "vi1_rank": 79,
+      "vi_rank": 107,
+      "delta": -28,
+      "exceeds_10pct": false
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.4931,
+      "baseline_rank": 20,
+      "delta_baseline_to_vi": -37
+    },
+    "tokenBased": {
+      "baseline_score": 0.4581,
+      "baseline_rank": 68,
+      "delta_baseline_to_vi": -6
+    },
+    "treeBased": {
+      "baseline_score": 0.4202,
+      "baseline_rank": 78,
+      "delta_baseline_to_vi": -29
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 57,
+          "vi_score": 0.4366,
+          "restored_score": 0.4931,
+          "restored_rank": 20,
+          "delta_vi_to_restored": 37,
+          "distance_to_baseline": 0
+        },
+        "tokenBased": {
+          "vi_rank": 74,
+          "vi_score": 0.4375,
+          "restored_score": 0.4581,
+          "restored_rank": 68,
+          "delta_vi_to_restored": 6
+        },
+        "treeBased": {
+          "vi_rank": 107,
+          "vi_score": 0.3946,
+          "restored_score": 0.4202,
+          "restored_rank": 78,
+          "delta_vi_to_restored": 29
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "mapBased": [
+      "block_001"
+    ],
+    "tokenBased": [
+      "block_001"
+    ],
+    "treeBased": [
+      "block_001"
+    ]
+  },
+  "block_sign_labels": {
+    "map_down_token_down_tree_down": [
+      "block_001"
+    ]
+  }
+}

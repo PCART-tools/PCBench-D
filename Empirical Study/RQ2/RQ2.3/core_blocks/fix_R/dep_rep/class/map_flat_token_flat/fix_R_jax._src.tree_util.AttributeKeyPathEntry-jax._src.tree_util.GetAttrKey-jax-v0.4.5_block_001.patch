@@ -1,0 +1,4 @@
+@@ -1,2 +1,2 @@
+-class AttributeKeyPathEntry(KeyPathEntry):
++class AttributeKeyPathEntry(_DeprecatedKeyPathEntry):
+   def pprint(self) -> str:

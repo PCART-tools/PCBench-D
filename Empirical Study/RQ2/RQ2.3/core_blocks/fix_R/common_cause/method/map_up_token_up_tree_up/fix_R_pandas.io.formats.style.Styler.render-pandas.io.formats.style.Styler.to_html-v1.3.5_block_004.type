@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Added | Warning call
+   Added a `warnings.warn(...)` call before `if sparse_index is None:`, passing a deprecation-message string, `FutureWarning`, and `stacklevel=find_stack_level()`.
+# /detail
+# mode：Add warning call

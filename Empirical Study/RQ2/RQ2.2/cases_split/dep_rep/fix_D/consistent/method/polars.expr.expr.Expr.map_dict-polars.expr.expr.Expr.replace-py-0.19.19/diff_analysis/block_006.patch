@@ -1,0 +1,6 @@
+@@ -22,3 +29,4 @@
+         return_dtype
+-            Set return dtype to override automatic return dtype determination.
++            The data type of the resulting expression. If set to `None` (default),
++            the data type is determined automatically based on the other inputs.
+  

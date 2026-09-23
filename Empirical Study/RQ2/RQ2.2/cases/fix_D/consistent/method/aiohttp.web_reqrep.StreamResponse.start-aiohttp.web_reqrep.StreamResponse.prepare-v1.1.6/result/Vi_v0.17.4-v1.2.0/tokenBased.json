@@ -1,0 +1,3952 @@
+[
+  {
+    "api_name": "aiohttp.wsgi.WsgiResponse.start_response",
+    "score": 0.5950413223140496,
+    "rank": 1
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector._release",
+    "score": 0.5777777777777777,
+    "rank": 2
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.write",
+    "score": 0.5691056910569106,
+    "rank": 3
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar._do_expiration",
+    "score": 0.5666666666666667,
+    "rank": 4
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector.__init__",
+    "score": 0.5620437956204379,
+    "rank": 5
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.clone",
+    "score": 0.552,
+    "rank": 6
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.send",
+    "score": 0.5384615384615384,
+    "rank": 7
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.start",
+    "score": 0.5369127516778524,
+    "rank": 8
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector._cleanup",
+    "score": 0.5352112676056338,
+    "rank": 9
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.receive",
+    "score": 0.5306122448979592,
+    "rank": 10
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.readline",
+    "score": 0.5289256198347108,
+    "rank": 11
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher._reg_resource",
+    "score": 0.5230769230769231,
+    "rank": 12
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.update_auto_headers",
+    "score": 0.5126050420168067,
+    "rank": 13
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector.close",
+    "score": 0.5126050420168067,
+    "rank": 13
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.readuntil",
+    "score": 0.5114503816793893,
+    "rank": 15
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.waituntil",
+    "score": 0.5075757575757576,
+    "rank": 16
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse._pre_start",
+    "score": 0.5040650406504065,
+    "rank": 17
+  },
+  {
+    "api_name": "aiohttp.web.Application.__init__",
+    "score": 0.5034965034965035,
+    "rank": 18
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.last_modified",
+    "score": 0.49166666666666664,
+    "rank": 19
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpPayloadParser.__call__",
+    "score": 0.49044585987261147,
+    "rank": 20
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.update_cookies",
+    "score": 0.4888888888888889,
+    "rank": 21
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession._prepare_headers",
+    "score": 0.4864864864864865,
+    "rank": 22
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.__init__",
+    "score": 0.48507462686567165,
+    "rank": 23
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.StaticResource._handle",
+    "score": 0.48507462686567165,
+    "rank": 23
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader._read_chunk_from_stream",
+    "score": 0.48427672955974843,
+    "rank": 25
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamParser.set_parser",
+    "score": 0.4824561403508772,
+    "rank": 26
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._serialize_obj",
+    "score": 0.4778761061946903,
+    "rank": 27
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.readline",
+    "score": 0.4765625,
+    "rank": 28
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker._run",
+    "score": 0.4713375796178344,
+    "rank": 29
+  },
+  {
+    "api_name": "aiohttp.test_utils.BaseTestServer.start_server",
+    "score": 0.4649122807017544,
+    "rank": 30
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.start",
+    "score": 0.46078431372549017,
+    "rank": 31
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar.filter_cookies",
+    "score": 0.4605263157894737,
+    "rank": 32
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamWriter.set_tcp_cork",
+    "score": 0.46017699115044247,
+    "rank": 33
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamWriter.set_tcp_nodelay",
+    "score": 0.46017699115044247,
+    "rank": 33
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker.close",
+    "score": 0.456,
+    "rank": 35
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.update_transfer_encoding",
+    "score": 0.45528455284552843,
+    "rank": 36
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractRoute.__init__",
+    "score": 0.45394736842105265,
+    "rank": 37
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector.connect",
+    "score": 0.449438202247191,
+    "rank": 38
+  },
+  {
+    "api_name": "aiohttp.web_server.RequestHandler.handle_request",
+    "score": 0.4491017964071856,
+    "rank": 39
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.handle_request",
+    "score": 0.448,
+    "rank": 40
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.receive",
+    "score": 0.44751381215469616,
+    "rank": 41
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse._start",
+    "score": 0.44559585492227977,
+    "rank": 42
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.close",
+    "score": 0.44516129032258067,
+    "rank": 43
+  },
+  {
+    "api_name": "aiohttp.web.Application._handle",
+    "score": 0.4444444444444444,
+    "rank": 44
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.Resource.resolve",
+    "score": 0.44144144144144143,
+    "rank": 45
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.json",
+    "score": 0.4396551724137931,
+    "rank": 46
+  },
+  {
+    "api_name": "aiohttp.file_sender.FileSender._sendfile_cb",
+    "score": 0.43410852713178294,
+    "rank": 47
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter.__init__",
+    "score": 0.4336283185840708,
+    "rank": 48
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector._get",
+    "score": 0.43333333333333335,
+    "rank": 49
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.StaticResource.__init__",
+    "score": 0.43312101910828027,
+    "rank": 50
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.StaticResource.resolve",
+    "score": 0.43103448275862066,
+    "rank": 51
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PrefixedSubAppResource.resolve",
+    "score": 0.42592592592592593,
+    "rank": 52
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.send_headers",
+    "score": 0.425531914893617,
+    "rank": 53
+  },
+  {
+    "api_name": "aiohttp.wsgi.WSGIServerHttpProtocol.handle_request",
+    "score": 0.42424242424242425,
+    "rank": 54
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.read",
+    "score": 0.41911764705882354,
+    "rank": 55
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.feed_data",
+    "score": 0.4188034188034188,
+    "rank": 56
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.resolve",
+    "score": 0.4166666666666667,
+    "rank": 57
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._apply_content_transfer_encoding",
+    "score": 0.4144736842105263,
+    "rank": 58
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.add_header",
+    "score": 0.41379310344827586,
+    "rank": 59
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.close",
+    "score": 0.41333333333333333,
+    "rank": 60
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.__init__",
+    "score": 0.4127906976744186,
+    "rank": 61
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpPayloadParser.parse_chunked_payload",
+    "score": 0.41134751773049644,
+    "rank": 62
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.feed_eof",
+    "score": 0.41025641025641024,
+    "rank": 63
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._fill_headers_with_defaults",
+    "score": 0.4083333333333333,
+    "rank": 64
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse._get_encoding",
+    "score": 0.40336134453781514,
+    "rank": 65
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.http_range",
+    "score": 0.4025974025974026,
+    "rank": 66
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.readexactly",
+    "score": 0.4017094017094017,
+    "rank": 67
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter.set_content_disposition",
+    "score": 0.4,
+    "rank": 68
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpPrefixParser.__call__",
+    "score": 0.4,
+    "rank": 68
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.update_headers",
+    "score": 0.39814814814814814,
+    "rank": 70
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader._read_nowait_chunk",
+    "score": 0.39344262295081966,
+    "rank": 71
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.release",
+    "score": 0.39316239316239315,
+    "rank": 72
+  },
+  {
+    "api_name": "aiohttp.streams.DataQueue.read",
+    "score": 0.391304347826087,
+    "rank": 73
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._apply_content_encoding",
+    "score": 0.3902439024390244,
+    "rank": 74
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector._create_direct_connection",
+    "score": 0.3894736842105263,
+    "rank": 75
+  },
+  {
+    "api_name": "aiohttp._ws_impl.WebSocketWriter._send_frame",
+    "score": 0.3855421686746988,
+    "rank": 76
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.prepare",
+    "score": 0.38461538461538464,
+    "rank": 77
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker.init_signals",
+    "score": 0.38461538461538464,
+    "rank": 77
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamParser.set_exception",
+    "score": 0.38317757009345793,
+    "rank": 79
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.update_content_encoding",
+    "score": 0.3826086956521739,
+    "rank": 80
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.__repr__",
+    "score": 0.3783783783783784,
+    "rank": 81
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.__init__",
+    "score": 0.37799043062200954,
+    "rank": 82
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.handle_error",
+    "score": 0.37735849056603776,
+    "rank": 83
+  },
+  {
+    "api_name": "aiohttp.file_sender.FileSender._sendfile_fallback",
+    "score": 0.3770491803278688,
+    "rank": 84
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader._wait",
+    "score": 0.375,
+    "rank": 85
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector.ssl_context",
+    "score": 0.37272727272727274,
+    "rank": 86
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector._resolve_host",
+    "score": 0.371900826446281,
+    "rank": 87
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector.__del__",
+    "score": 0.3706896551724138,
+    "rank": 88
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.skipuntil",
+    "score": 0.36283185840707965,
+    "rank": 89
+  },
+  {
+    "api_name": "aiohttp.connector.Connection.__init__",
+    "score": 0.36036036036036034,
+    "rank": 90
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.shutdown",
+    "score": 0.36036036036036034,
+    "rank": 90
+  },
+  {
+    "api_name": "aiohttp.signals.Signal.send",
+    "score": 0.3584905660377358,
+    "rank": 92
+  },
+  {
+    "api_name": "aiohttp.streams.FlowControlDataQueue.read",
+    "score": 0.35398230088495575,
+    "rank": 93
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.__init__",
+    "score": 0.35185185185185186,
+    "rank": 94
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartWriter.append",
+    "score": 0.35185185185185186,
+    "rank": 94
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.StaticResource._directory_as_html",
+    "score": 0.3508771929824561,
+    "rank": 96
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.post",
+    "score": 0.3504273504273504,
+    "rank": 97
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._guess_content_length",
+    "score": 0.34946236559139787,
+    "rank": 98
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.__init__",
+    "score": 0.3492063492063492,
+    "rank": 99
+  },
+  {
+    "api_name": "aiohttp.connector.Connection.__del__",
+    "score": 0.34782608695652173,
+    "rank": 100
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader._get_part_reader",
+    "score": 0.34782608695652173,
+    "rank": 100
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector.__init__",
+    "score": 0.34615384615384615,
+    "rank": 102
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.readsome",
+    "score": 0.34545454545454546,
+    "rank": 103
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.set_exception",
+    "score": 0.3425925925925926,
+    "rank": 104
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamParser.unset_parser",
+    "score": 0.34210526315789475,
+    "rank": 105
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamParser.feed_data",
+    "score": 0.3392857142857143,
+    "rank": 106
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamParser.feed_eof",
+    "score": 0.3391304347826087,
+    "rank": 107
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.add_chunking_filter",
+    "score": 0.33884297520661155,
+    "rank": 108
+  },
+  {
+    "api_name": "aiohttp.web.Application.make_handler",
+    "score": 0.336283185840708,
+    "rank": 109
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.set_cookie",
+    "score": 0.3352601156069364,
+    "rank": 110
+  },
+  {
+    "api_name": "aiohttp.resolver.AsyncResolver.__init__",
+    "score": 0.3333333333333333,
+    "rank": 111
+  },
+  {
+    "api_name": "aiohttp.resolver.ThreadedResolver.resolve",
+    "score": 0.3333333333333333,
+    "rank": 111
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.__repr__",
+    "score": 0.3333333333333333,
+    "rank": 111
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.add_subapp",
+    "score": 0.3333333333333333,
+    "rank": 111
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.add_compression_filter",
+    "score": 0.3305084745762712,
+    "rank": 115
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.read",
+    "score": 0.33035714285714285,
+    "rank": 116
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader._read_headers",
+    "score": 0.33035714285714285,
+    "rank": 116
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.__init__",
+    "score": 0.3277310924369748,
+    "rank": 118
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.__init__",
+    "score": 0.3274336283185841,
+    "rank": 119
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpRequestParser.__call__",
+    "score": 0.32682926829268294,
+    "rank": 120
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter.serialize",
+    "score": 0.325,
+    "rank": 121
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.__init__",
+    "score": 0.3247863247863248,
+    "rank": 122
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.read_chunk",
+    "score": 0.32456140350877194,
+    "rank": 123
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse._start_compression",
+    "score": 0.3238095238095238,
+    "rank": 124
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.add_resource",
+    "score": 0.3230088495575221,
+    "rank": 125
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage._write_length_payload",
+    "score": 0.3220338983050847,
+    "rank": 126
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.__init__",
+    "score": 0.3217391304347826,
+    "rank": 127
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage._add_default_headers",
+    "score": 0.32142857142857145,
+    "rank": 128
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.can_prepare",
+    "score": 0.32142857142857145,
+    "rank": 128
+  },
+  {
+    "api_name": "aiohttp.web_server.Server.__init__",
+    "score": 0.3181818181818182,
+    "rank": 130
+  },
+  {
+    "api_name": "aiohttp.resolver.AsyncResolver.resolve_with_query",
+    "score": 0.3170731707317073,
+    "rank": 131
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.__init__",
+    "score": 0.3162393162393162,
+    "rank": 132
+  },
+  {
+    "api_name": "aiohttp.streams.FlowControlDataQueue.feed_data",
+    "score": 0.3130434782608696,
+    "rank": 133
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker._create_ssl_context",
+    "score": 0.3130434782608696,
+    "rank": 133
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.Response.text",
+    "score": 0.3125,
+    "rank": 135
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader._decode_content",
+    "score": 0.31092436974789917,
+    "rank": 136
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.update_host",
+    "score": 0.30973451327433627,
+    "rank": 137
+  },
+  {
+    "api_name": "aiohttp.web.Application.freeze",
+    "score": 0.3055555555555556,
+    "rank": 138
+  },
+  {
+    "api_name": "aiohttp.streams.FlowControlStreamReader.feed_data",
+    "score": 0.3017241379310345,
+    "rank": 139
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.if_modified_since",
+    "score": 0.3008849557522124,
+    "rank": 140
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector._create_proxy_connection",
+    "score": 0.3008130081300813,
+    "rank": 141
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.update_version",
+    "score": 0.3,
+    "rank": 142
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.View.__iter__",
+    "score": 0.29906542056074764,
+    "rank": 143
+  },
+  {
+    "api_name": "aiohttp.file_sender.FileSender._sendfile_system",
+    "score": 0.2985781990521327,
+    "rank": 144
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.start",
+    "score": 0.29856115107913667,
+    "rank": 145
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.Resource.add_route",
+    "score": 0.2982456140350877,
+    "rank": 146
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.write",
+    "score": 0.2972972972972973,
+    "rank": 147
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartWriter.__init__",
+    "score": 0.2956521739130435,
+    "rank": 148
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.StaticResource.url_for",
+    "score": 0.2956521739130435,
+    "rank": 148
+  },
+  {
+    "api_name": "aiohttp.web_server.RequestHandler.__repr__",
+    "score": 0.29523809523809524,
+    "rank": 150
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.__del__",
+    "score": 0.29464285714285715,
+    "rank": 151
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpResponseParser.__call__",
+    "score": 0.29464285714285715,
+    "rank": 151
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage._write_chunked_payload",
+    "score": 0.29457364341085274,
+    "rank": 153
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.update_auth",
+    "score": 0.29357798165137616,
+    "rank": 154
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker.run",
+    "score": 0.29357798165137616,
+    "rank": 154
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.read",
+    "score": 0.29245283018867924,
+    "rank": 156
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.Response.body",
+    "score": 0.2909090909090909,
+    "rank": 157
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.__init__",
+    "score": 0.2903225806451613,
+    "rank": 158
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.enable_compression",
+    "score": 0.2897196261682243,
+    "rank": 159
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamParser.__init__",
+    "score": 0.2894736842105263,
+    "rank": 160
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar.update_cookies",
+    "score": 0.2883895131086142,
+    "rank": 161
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.Response.__init__",
+    "score": 0.288135593220339,
+    "rank": 162
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.add_static",
+    "score": 0.28688524590163933,
+    "rank": 163
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.send_bytes",
+    "score": 0.28448275862068967,
+    "rank": 164
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar.__init__",
+    "score": 0.28440366972477066,
+    "rank": 165
+  },
+  {
+    "api_name": "aiohttp.streams.DataQueue.feed_data",
+    "score": 0.28440366972477066,
+    "rank": 165
+  },
+  {
+    "api_name": "aiohttp.file_sender.FileSender.send",
+    "score": 0.2834008097165992,
+    "rank": 167
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.close",
+    "score": 0.2830188679245283,
+    "rank": 168
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.start",
+    "score": 0.2828282828282828,
+    "rank": 169
+  },
+  {
+    "api_name": "aiohttp.web_exceptions.HTTPMethodNotAllowed.__init__",
+    "score": 0.28205128205128205,
+    "rank": 170
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.form",
+    "score": 0.2777777777777778,
+    "rank": 171
+  },
+  {
+    "api_name": "aiohttp.streams.FlowControlStreamReader._check_buffer_size",
+    "score": 0.27586206896551724,
+    "rank": 172
+  },
+  {
+    "api_name": "aiohttp.web.Application._reg_subapp_signals",
+    "score": 0.27586206896551724,
+    "rank": 172
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader._decode_content_transfer",
+    "score": 0.275,
+    "rank": 174
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar._is_path_match",
+    "score": 0.27419354838709675,
+    "rank": 175
+  },
+  {
+    "api_name": "aiohttp.streams.FlowControlDataQueue.__init__",
+    "score": 0.2727272727272727,
+    "rank": 176
+  },
+  {
+    "api_name": "aiohttp.connector.ProxyConnector.__init__",
+    "score": 0.2719298245614035,
+    "rank": 177
+  },
+  {
+    "api_name": "aiohttp.resolver.AsyncResolver.resolve",
+    "score": 0.2719298245614035,
+    "rank": 177
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.DynamicResource._match",
+    "score": 0.27184466019417475,
+    "rank": 179
+  },
+  {
+    "api_name": "aiohttp.streams.FlowControlStreamReader.__init__",
+    "score": 0.2702702702702703,
+    "rank": 180
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.__del__",
+    "score": 0.26785714285714285,
+    "rank": 181
+  },
+  {
+    "api_name": "aiohttp.signals.Signal.__init__",
+    "score": 0.26666666666666666,
+    "rank": 182
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.DynamicResource.add_prefix",
+    "score": 0.26548672566371684,
+    "rank": 183
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar._parse_date",
+    "score": 0.2631578947368421,
+    "rank": 184
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.__init__",
+    "score": 0.2631578947368421,
+    "rank": 184
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.json",
+    "score": 0.2616822429906542,
+    "rank": 186
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader._read_nowait",
+    "score": 0.2608695652173913,
+    "rank": 187
+  },
+  {
+    "api_name": "aiohttp.web_exceptions.HTTPException.__init__",
+    "score": 0.2608695652173913,
+    "rank": 187
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader._get_boundary",
+    "score": 0.2601626016260163,
+    "rank": 189
+  },
+  {
+    "api_name": "aiohttp.streams.DataQueue.set_exception",
+    "score": 0.25961538461538464,
+    "rank": 190
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamProtocol.connection_lost",
+    "score": 0.25925925925925924,
+    "rank": 191
+  },
+  {
+    "api_name": "aiohttp.protocol.Response.__init__",
+    "score": 0.25925925925925924,
+    "rank": 191
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest._scheme",
+    "score": 0.25925925925925924,
+    "rank": 191
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.set_status",
+    "score": 0.25925925925925924,
+    "rank": 191
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker.make_handler",
+    "score": 0.25925925925925924,
+    "rank": 191
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.charset",
+    "score": 0.25892857142857145,
+    "rank": 196
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.send_str",
+    "score": 0.25862068965517243,
+    "rank": 197
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.json",
+    "score": 0.2571428571428571,
+    "rank": 198
+  },
+  {
+    "api_name": "aiohttp._ws_impl.WebSocketWriter.send",
+    "score": 0.25471698113207547,
+    "rank": 199
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse._generate_content_type_header",
+    "score": 0.2543859649122807,
+    "rank": 200
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse._post_start",
+    "score": 0.2524271844660194,
+    "rank": 201
+  },
+  {
+    "api_name": "aiohttp.test_utils.RawTestServer.__init__",
+    "score": 0.2523364485981308,
+    "rank": 202
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.content_length",
+    "score": 0.2523364485981308,
+    "rank": 202
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.update_expect_continue",
+    "score": 0.25217391304347825,
+    "rank": 204
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.write_bytes",
+    "score": 0.25077399380804954,
+    "rank": 205
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartWriter.append_form",
+    "score": 0.25,
+    "rank": 206
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._guess_content_type",
+    "score": 0.24786324786324787,
+    "rank": 207
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.cookies",
+    "score": 0.24761904761904763,
+    "rank": 208
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse._do_start_compression",
+    "score": 0.24761904761904763,
+    "rank": 208
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector._start_cleanup_task",
+    "score": 0.24528301886792453,
+    "rank": 210
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._guess_filename",
+    "score": 0.24528301886792453,
+    "rank": 210
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.close",
+    "score": 0.24528301886792453,
+    "rank": 210
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.close",
+    "score": 0.24509803921568626,
+    "rank": 213
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.read",
+    "score": 0.24299065420560748,
+    "rank": 214
+  },
+  {
+    "api_name": "aiohttp.web_exceptions._HTTPMove.__init__",
+    "score": 0.2413793103448276,
+    "rank": 215
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.send_bytes",
+    "score": 0.23893805309734514,
+    "rank": 216
+  },
+  {
+    "api_name": "aiohttp.protocol.DeflateBuffer.feed_eof",
+    "score": 0.23853211009174313,
+    "rank": 217
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader.next",
+    "score": 0.2358490566037736,
+    "rank": 218
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.update_proxy",
+    "score": 0.23478260869565218,
+    "rank": 219
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PrefixResource.__init__",
+    "score": 0.23478260869565218,
+    "rank": 219
+  },
+  {
+    "api_name": "aiohttp.protocol.Response._add_default_headers",
+    "score": 0.23423423423423423,
+    "rank": 221
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamWriter.__init__",
+    "score": 0.2336448598130841,
+    "rank": 222
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.prepare",
+    "score": 0.23300970873786409,
+    "rank": 223
+  },
+  {
+    "api_name": "aiohttp.web_server.RequestHandler.__init__",
+    "score": 0.23300970873786409,
+    "rank": 223
+  },
+  {
+    "api_name": "aiohttp.errors.HttpProcessingError.__init__",
+    "score": 0.23148148148148148,
+    "rank": 225
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._serialize_io",
+    "score": 0.23148148148148148,
+    "rank": 225
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader.__init__",
+    "score": 0.23148148148148148,
+    "rank": 225
+  },
+  {
+    "api_name": "aiohttp.protocol.Response.calc_reason",
+    "score": 0.23148148148148148,
+    "rank": 225
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar._is_domain_match",
+    "score": 0.23140495867768596,
+    "rank": 229
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader._read_until_first_boundary",
+    "score": 0.23140495867768596,
+    "rank": 229
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpParser.parse_headers",
+    "score": 0.23,
+    "rank": 231
+  },
+  {
+    "api_name": "aiohttp.test_utils.BaseTestServer.close",
+    "score": 0.22857142857142856,
+    "rank": 232
+  },
+  {
+    "api_name": "aiohttp.web_server.Server.shutdown",
+    "score": 0.22857142857142856,
+    "rank": 232
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpPayloadParser.parse_length_payload",
+    "score": 0.22807017543859648,
+    "rank": 234
+  },
+  {
+    "api_name": "aiohttp.streams.DataQueue.feed_eof",
+    "score": 0.22641509433962265,
+    "rank": 235
+  },
+  {
+    "api_name": "aiohttp.worker.WSGIServer.__call__",
+    "score": 0.22549019607843138,
+    "rank": 236
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.unread_data",
+    "score": 0.22522522522522523,
+    "rank": 237
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector._create_connection",
+    "score": 0.22429906542056074,
+    "rank": 238
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.get_charset",
+    "score": 0.22429906542056074,
+    "rank": 238
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._serialize_form",
+    "score": 0.22429906542056074,
+    "rank": 238
+  },
+  {
+    "api_name": "aiohttp.test_utils.AioHTTPTestCase.setUp",
+    "score": 0.22429906542056074,
+    "rank": 238
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse._notify_content",
+    "score": 0.2222222222222222,
+    "rank": 242
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector._release_waiter",
+    "score": 0.2222222222222222,
+    "rank": 242
+  },
+  {
+    "api_name": "aiohttp.errors.InvalidHeader.__init__",
+    "score": 0.2222222222222222,
+    "rank": 242
+  },
+  {
+    "api_name": "aiohttp.web_server.RequestHandler.connection_lost",
+    "score": 0.2222222222222222,
+    "rank": 242
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.keep_alive",
+    "score": 0.22123893805309736,
+    "rank": 246
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.__repr__",
+    "score": 0.22115384615384615,
+    "rank": 247
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.receive_bytes",
+    "score": 0.22018348623853212,
+    "rank": 248
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.receive_str",
+    "score": 0.22018348623853212,
+    "rank": 248
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._serialize_json",
+    "score": 0.22018348623853212,
+    "rank": 248
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader._maybe_release_last_part",
+    "score": 0.22018348623853212,
+    "rank": 248
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.receive_bytes",
+    "score": 0.22018348623853212,
+    "rank": 248
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.receive_str",
+    "score": 0.22018348623853212,
+    "rank": 248
+  },
+  {
+    "api_name": "aiohttp.client._BaseRequestContextManager.__init__",
+    "score": 0.22,
+    "rank": 254
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession._ws_connect",
+    "score": 0.21951219512195122,
+    "rank": 255
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.text",
+    "score": 0.21904761904761905,
+    "rank": 256
+  },
+  {
+    "api_name": "aiohttp.test_utils.BaseTestServer.__init__",
+    "score": 0.21904761904761905,
+    "rank": 256
+  },
+  {
+    "api_name": "aiohttp.wsgi.WSGIServerHttpProtocol.create_wsgi_environ",
+    "score": 0.2180232558139535,
+    "rank": 258
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamProtocol.__init__",
+    "score": 0.2169811320754717,
+    "rank": 259
+  },
+  {
+    "api_name": "aiohttp.web.Application._make_request",
+    "score": 0.2169811320754717,
+    "rank": 259
+  },
+  {
+    "api_name": "aiohttp.protocol.DeflateBuffer.feed_data",
+    "score": 0.21621621621621623,
+    "rank": 261
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.update_body_from_data",
+    "score": 0.2154255319148936,
+    "rank": 262
+  },
+  {
+    "api_name": "aiohttp.signals.BaseSignal._send",
+    "score": 0.21495327102803738,
+    "rank": 263
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.read_nowait",
+    "score": 0.21428571428571427,
+    "rank": 264
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.decode",
+    "score": 0.21359223300970873,
+    "rank": 265
+  },
+  {
+    "api_name": "aiohttp._ws_impl.WebSocketWriter.close",
+    "score": 0.21296296296296297,
+    "rank": 266
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.DynamicResource.__init__",
+    "score": 0.21296296296296297,
+    "rank": 266
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.send_str",
+    "score": 0.21238938053097345,
+    "rank": 268
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar.save",
+    "score": 0.21153846153846154,
+    "rank": 269
+  },
+  {
+    "api_name": "aiohttp.streams.DataQueue.__init__",
+    "score": 0.21153846153846154,
+    "rank": 269
+  },
+  {
+    "api_name": "aiohttp.worker.WSGIServer.__init__",
+    "score": 0.21153846153846154,
+    "rank": 269
+  },
+  {
+    "api_name": "aiohttp.protocol.Request.__init__",
+    "score": 0.21100917431192662,
+    "rank": 272
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.__init__",
+    "score": 0.20952380952380953,
+    "rank": 273
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.Request._prepare_hook",
+    "score": 0.20952380952380953,
+    "rank": 273
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PrefixedSubAppResource.__init__",
+    "score": 0.20952380952380953,
+    "rank": 273
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader._read_chunk_from_length",
+    "score": 0.20909090909090908,
+    "rank": 276
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.request",
+    "score": 0.20754716981132076,
+    "rank": 277
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector.clear_dns_cache",
+    "score": 0.2066115702479339,
+    "rank": 278
+  },
+  {
+    "api_name": "aiohttp.connector.ProxyConnector._create_connection",
+    "score": 0.205607476635514,
+    "rank": 279
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.Response.write_eof",
+    "score": 0.20535714285714285,
+    "rank": 280
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse._setup_connection",
+    "score": 0.20388349514563106,
+    "rank": 281
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.connection_made",
+    "score": 0.2037037037037037,
+    "rank": 282
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker.init_process",
+    "score": 0.2037037037037037,
+    "rank": 282
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar.load",
+    "score": 0.20192307692307693,
+    "rank": 284
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._maybe_encode_stream",
+    "score": 0.2018348623853211,
+    "rank": 285
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader._read_boundary",
+    "score": 0.20175438596491227,
+    "rank": 286
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.wait",
+    "score": 0.19811320754716982,
+    "rank": 287
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse._start_pre_check",
+    "score": 0.19811320754716982,
+    "rank": 287
+  },
+  {
+    "api_name": "aiohttp.file_sender.FileSender.__init__",
+    "score": 0.19626168224299065,
+    "rank": 289
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartWriter.append_json",
+    "score": 0.19626168224299065,
+    "rank": 289
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._serialize_str",
+    "score": 0.19444444444444445,
+    "rank": 291
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.ws_connect",
+    "score": 0.19444444444444445,
+    "rank": 291
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.ws_connect",
+    "score": 0.19327731092436976,
+    "rank": 293
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker._notify_waiter_done",
+    "score": 0.1926605504587156,
+    "rank": 294
+  },
+  {
+    "api_name": "aiohttp._ws_impl.WebSocketWriter.ping",
+    "score": 0.19230769230769232,
+    "rank": 295
+  },
+  {
+    "api_name": "aiohttp._ws_impl.WebSocketWriter.pong",
+    "score": 0.19230769230769232,
+    "rank": 295
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar.clear",
+    "score": 0.19230769230769232,
+    "rank": 295
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker.handle_quit",
+    "score": 0.19090909090909092,
+    "rank": 298
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession._request",
+    "score": 0.19058823529411764,
+    "rank": 299
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.__anext__",
+    "score": 0.19047619047619047,
+    "rank": 300
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.wait_eof",
+    "score": 0.19047619047619047,
+    "rank": 300
+  },
+  {
+    "api_name": "aiohttp.web_server.Server._make_request",
+    "score": 0.19047619047619047,
+    "rank": 300
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.DynamicResource.url",
+    "score": 0.19047619047619047,
+    "rank": 300
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.__anext__",
+    "score": 0.19047619047619047,
+    "rank": 300
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse._post_init",
+    "score": 0.18867924528301888,
+    "rank": 305
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.text",
+    "score": 0.18867924528301888,
+    "rank": 305
+  },
+  {
+    "api_name": "aiohttp.protocol.DeflateBuffer.__init__",
+    "score": 0.18867924528301888,
+    "rank": 305
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PrefixedSubAppResource.add_prefix",
+    "score": 0.18867924528301888,
+    "rank": 305
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.terminate",
+    "score": 0.18811881188118812,
+    "rank": 309
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpPayloadParser.__init__",
+    "score": 0.18691588785046728,
+    "rank": 310
+  },
+  {
+    "api_name": "aiohttp.errors.BadStatusLine.__init__",
+    "score": 0.18627450980392157,
+    "rank": 311
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector._release_acquired",
+    "score": 0.18518518518518517,
+    "rank": 312
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.add_route",
+    "score": 0.18518518518518517,
+    "rank": 312
+  },
+  {
+    "api_name": "aiohttp.web_exceptions.HTTPUnavailableForLegalReasons.__init__",
+    "score": 0.18421052631578946,
+    "rank": 314
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector.clear_resolved_hosts",
+    "score": 0.1826086956521739,
+    "rank": 315
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.release",
+    "score": 0.18095238095238095,
+    "rank": 316
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.skip",
+    "score": 0.18095238095238095,
+    "rank": 316
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamProtocol.connection_made",
+    "score": 0.18095238095238095,
+    "rank": 316
+  },
+  {
+    "api_name": "aiohttp.test_utils.BaseTestServer.make_url",
+    "score": 0.18095238095238095,
+    "rank": 316
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.url",
+    "score": 0.18095238095238095,
+    "rank": 316
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.read",
+    "score": 0.1792452830188679,
+    "rank": 321
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.connection_lost",
+    "score": 0.1792452830188679,
+    "rank": 321
+  },
+  {
+    "api_name": "aiohttp.connector.Connection.close",
+    "score": 0.1782178217821782,
+    "rank": 323
+  },
+  {
+    "api_name": "aiohttp.connector.Connection.release",
+    "score": 0.1782178217821782,
+    "rank": 323
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.ping",
+    "score": 0.17757009345794392,
+    "rank": 325
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.pong",
+    "score": 0.17757009345794392,
+    "rank": 325
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornUVLoopWebWorker.init_process",
+    "score": 0.17592592592592593,
+    "rank": 327
+  },
+  {
+    "api_name": "aiohttp.wsgi.WSGIServerHttpProtocol.__init__",
+    "score": 0.17592592592592593,
+    "rank": 327
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.filename",
+    "score": 0.17475728155339806,
+    "rank": 329
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter.filename",
+    "score": 0.17475728155339806,
+    "rank": 329
+  },
+  {
+    "api_name": "aiohttp.connector.UnixConnector.__init__",
+    "score": 0.1743119266055046,
+    "rank": 331
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.set_tcp_cork",
+    "score": 0.1743119266055046,
+    "rank": 331
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.set_tcp_nodelay",
+    "score": 0.1743119266055046,
+    "rank": 331
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker._wait_next_notify",
+    "score": 0.1743119266055046,
+    "rank": 331
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PlainResource.url",
+    "score": 0.17307692307692307,
+    "rank": 335
+  },
+  {
+    "api_name": "aiohttp.wsgi.FileWrapper.__init__",
+    "score": 0.17307692307692307,
+    "rank": 335
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PlainResource.add_prefix",
+    "score": 0.17272727272727273,
+    "rank": 337
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PrefixResource.add_prefix",
+    "score": 0.17272727272727273,
+    "rank": 337
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse._cleanup_writer",
+    "score": 0.17142857142857143,
+    "rank": 339
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestServer.__init__",
+    "score": 0.17142857142857143,
+    "rank": 339
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker._get_valid_log_format",
+    "score": 0.17117117117117117,
+    "rank": 341
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartWriter.boundary",
+    "score": 0.16981132075471697,
+    "rank": 342
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.__repr__",
+    "score": 0.16981132075471697,
+    "rank": 342
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PlainResource.__init__",
+    "score": 0.16981132075471697,
+    "rank": 342
+  },
+  {
+    "api_name": "aiohttp.resolver.ThreadedResolver.__init__",
+    "score": 0.16831683168316833,
+    "rank": 345
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer._feed_data",
+    "score": 0.16822429906542055,
+    "rank": 346
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.readany",
+    "score": 0.16822429906542055,
+    "rank": 346
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpPayloadParser.parse_eof_payload",
+    "score": 0.168141592920354,
+    "rank": 348
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.write_eof",
+    "score": 0.16666666666666666,
+    "rank": 349
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.write_eof",
+    "score": 0.16666666666666666,
+    "rank": 349
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader.release",
+    "score": 0.1650485436893204,
+    "rank": 351
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartResponseWrapper.next",
+    "score": 0.1650485436893204,
+    "rank": 351
+  },
+  {
+    "api_name": "aiohttp._ws_impl.WebSocketWriter.__init__",
+    "score": 0.16346153846153846,
+    "rank": 353
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar._expire_cookie",
+    "score": 0.16037735849056603,
+    "rank": 354
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.tcp_cork",
+    "score": 0.16037735849056603,
+    "rank": 354
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.tcp_nodelay",
+    "score": 0.16037735849056603,
+    "rank": 354
+  },
+  {
+    "api_name": "aiohttp.connector.Connection.detach",
+    "score": 0.16,
+    "rank": 357
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.write_eof",
+    "score": 0.1574074074074074,
+    "rank": 358
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.can_start",
+    "score": 0.1568627450980392,
+    "rank": 359
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.patch",
+    "score": 0.1553398058252427,
+    "rank": 360
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.post",
+    "score": 0.1553398058252427,
+    "rank": 360
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.put",
+    "score": 0.1553398058252427,
+    "rank": 360
+  },
+  {
+    "api_name": "aiohttp.errors.FingerprintMismatch.__init__",
+    "score": 0.1553398058252427,
+    "rank": 360
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.text",
+    "score": 0.15384615384615385,
+    "rank": 364
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.POST",
+    "score": 0.1523809523809524,
+    "rank": 365
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlMappingMatchInfo.__init__",
+    "score": 0.1523809523809524,
+    "rank": 365
+  },
+  {
+    "api_name": "aiohttp.web.Application.register_on_finish",
+    "score": 0.15178571428571427,
+    "rank": 367
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.Resource.register_route",
+    "score": 0.1509433962264151,
+    "rank": 368
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.StaticResource.__repr__",
+    "score": 0.1509433962264151,
+    "rank": 368
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker.__init__",
+    "score": 0.1509433962264151,
+    "rank": 368
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.next",
+    "score": 0.1485148514851485,
+    "rank": 371
+  },
+  {
+    "api_name": "aiohttp.wsgi.FileWrapper.__next__",
+    "score": 0.1485148514851485,
+    "rank": 371
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.__anext__",
+    "score": 0.14705882352941177,
+    "rank": 373
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader.__anext__",
+    "score": 0.14705882352941177,
+    "rank": 373
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartResponseWrapper.__anext__",
+    "score": 0.14705882352941177,
+    "rank": 373
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.delete",
+    "score": 0.14563106796116504,
+    "rank": 376
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.get",
+    "score": 0.14563106796116504,
+    "rank": 376
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.head",
+    "score": 0.14563106796116504,
+    "rank": 376
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.options",
+    "score": 0.14563106796116504,
+    "rank": 376
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.patch",
+    "score": 0.14563106796116504,
+    "rank": 376
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.post",
+    "score": 0.14563106796116504,
+    "rank": 376
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.put",
+    "score": 0.14563106796116504,
+    "rank": 376
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.host",
+    "score": 0.14563106796116504,
+    "rank": 376
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.RoutesView.__init__",
+    "score": 0.14563106796116504,
+    "rank": 376
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.StaticResource.url",
+    "score": 0.14563106796116504,
+    "rank": 376
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartWriter.serialize",
+    "score": 0.14545454545454545,
+    "rank": 386
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.del_cookie",
+    "score": 0.14545454545454545,
+    "rank": 386
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.get",
+    "score": 0.14423076923076922,
+    "rank": 388
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.head",
+    "score": 0.14423076923076922,
+    "rank": 388
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.options",
+    "score": 0.14423076923076922,
+    "rank": 388
+  },
+  {
+    "api_name": "aiohttp.client._RequestContextManager.__aexit__",
+    "score": 0.14423076923076922,
+    "rank": 388
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.receive_json",
+    "score": 0.14285714285714285,
+    "rank": 392
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage._write_eof_payload",
+    "score": 0.14285714285714285,
+    "rank": 392
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.receive_json",
+    "score": 0.14285714285714285,
+    "rank": 392
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.log_access",
+    "score": 0.14150943396226415,
+    "rank": 395
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestServer._make_factory",
+    "score": 0.14150943396226415,
+    "rank": 395
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.DynamicResource.__repr__",
+    "score": 0.14150943396226415,
+    "rank": 395
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PlainResource.__repr__",
+    "score": 0.14150943396226415,
+    "rank": 395
+  },
+  {
+    "api_name": "aiohttp.streams.AsyncStreamIterator.__anext__",
+    "score": 0.14018691588785046,
+    "rank": 399
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader.from_response",
+    "score": 0.1388888888888889,
+    "rank": 400
+  },
+  {
+    "api_name": "aiohttp.worker.GunicornWebWorker.handle_abort",
+    "score": 0.13761467889908258,
+    "rank": 401
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.delete",
+    "score": 0.13725490196078433,
+    "rank": 402
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar.__iter__",
+    "score": 0.13725490196078433,
+    "rank": 402
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader._readline",
+    "score": 0.13725490196078433,
+    "rank": 402
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.SystemRoute.__init__",
+    "score": 0.13725490196078433,
+    "rank": 402
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.freeze",
+    "score": 0.13725490196078433,
+    "rank": 402
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.add_headers",
+    "score": 0.13592233009708737,
+    "rank": 407
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.ResourceRoute.url",
+    "score": 0.13592233009708737,
+    "rank": 407
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.drain",
+    "score": 0.1346153846153846,
+    "rank": 409
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.MatchInfoError.__init__",
+    "score": 0.1346153846153846,
+    "rank": 409
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.__init__",
+    "score": 0.1346153846153846,
+    "rank": 409
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.DynamicResource.url_for",
+    "score": 0.13333333333333333,
+    "rank": 412
+  },
+  {
+    "api_name": "aiohttp.web_server.RequestHandler.connection_made",
+    "score": 0.1320754716981132,
+    "rank": 413
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.StaticResource.set_options_route",
+    "score": 0.13043478260869565,
+    "rank": 414
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.wait_for_close",
+    "score": 0.12962962962962962,
+    "rank": 415
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.View._raise_allowed_methods",
+    "score": 0.12962962962962962,
+    "rank": 415
+  },
+  {
+    "api_name": "aiohttp.errors.FingerprintMismatch.__repr__",
+    "score": 0.12871287128712872,
+    "rank": 417
+  },
+  {
+    "api_name": "aiohttp.protocol.Response.status_line",
+    "score": 0.12844036697247707,
+    "rank": 418
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.request",
+    "score": 0.1262135922330097,
+    "rank": 419
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.feed_data",
+    "score": 0.1262135922330097,
+    "rank": 419
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.__aexit__",
+    "score": 0.125,
+    "rank": 421
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.ping",
+    "score": 0.125,
+    "rank": 421
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.pong",
+    "score": 0.125,
+    "rank": 421
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamParser.set_transport",
+    "score": 0.12380952380952381,
+    "rank": 424
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpParser.__init__",
+    "score": 0.12380952380952381,
+    "rank": 424
+  },
+  {
+    "api_name": "aiohttp.test_utils.AioHTTPTestCase.tearDown",
+    "score": 0.12380952380952381,
+    "rank": 424
+  },
+  {
+    "api_name": "aiohttp.test_utils.RawTestServer._make_factory",
+    "score": 0.12380952380952381,
+    "rank": 424
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.content_type",
+    "score": 0.12380952380952381,
+    "rank": 424
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.ResourceRoute.__init__",
+    "score": 0.12380952380952381,
+    "rank": 424
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestServer._close_hook",
+    "score": 0.12264150943396226,
+    "rank": 430
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlMappingMatchInfo.add_app",
+    "score": 0.12149532710280374,
+    "rank": 431
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.close",
+    "score": 0.1188118811881188,
+    "rank": 432
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.multipart",
+    "score": 0.1188118811881188,
+    "rank": 432
+  },
+  {
+    "api_name": "aiohttp._ws_impl.WebSocketError.__init__",
+    "score": 0.11650485436893204,
+    "rank": 434
+  },
+  {
+    "api_name": "aiohttp.client._DetachedRequestContextManager.__init__",
+    "score": 0.11650485436893204,
+    "rank": 434
+  },
+  {
+    "api_name": "aiohttp.client._DetachedWSRequestContextManager.__init__",
+    "score": 0.11650485436893204,
+    "rank": 434
+  },
+  {
+    "api_name": "aiohttp.errors.LineLimitExceededParserError.__init__",
+    "score": 0.11650485436893204,
+    "rank": 434
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.Resource.__init__",
+    "score": 0.11650485436893204,
+    "rank": 434
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlMappingMatchInfo.__repr__",
+    "score": 0.11650485436893204,
+    "rank": 434
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.url",
+    "score": 0.11538461538461539,
+    "rank": 440
+  },
+  {
+    "api_name": "aiohttp.protocol.Request.autochunked",
+    "score": 0.11538461538461539,
+    "rank": 440
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.Request.__init__",
+    "score": 0.11538461538461539,
+    "rank": 440
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.send_json",
+    "score": 0.11428571428571428,
+    "rank": 443
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.data_received",
+    "score": 0.11428571428571428,
+    "rank": 443
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.send_json",
+    "score": 0.11428571428571428,
+    "rank": 443
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.path_qs",
+    "score": 0.11320754716981132,
+    "rank": 446
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader.fetch_next_part",
+    "score": 0.1111111111111111,
+    "rank": 447
+  },
+  {
+    "api_name": "aiohttp._ws_impl.WSMessage.json",
+    "score": 0.11,
+    "rank": 448
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.MatchInfoError.__repr__",
+    "score": 0.10891089108910891,
+    "rank": 449
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PlainResource._match",
+    "score": 0.10891089108910891,
+    "rank": 449
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PrefixedSubAppResource.__iter__",
+    "score": 0.10891089108910891,
+    "rank": 449
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PrefixedSubAppResource.__len__",
+    "score": 0.10891089108910891,
+    "rank": 449
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractCookieJar.__init__",
+    "score": 0.10784313725490197,
+    "rank": 453
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpPrefixParser.__init__",
+    "score": 0.10784313725490197,
+    "rank": 453
+  },
+  {
+    "api_name": "aiohttp.web.Application.__setitem__",
+    "score": 0.10784313725490197,
+    "rank": 453
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.GET",
+    "score": 0.10784313725490197,
+    "rank": 453
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.path",
+    "score": 0.10784313725490197,
+    "rank": 453
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.scheme",
+    "score": 0.10784313725490197,
+    "rank": 453
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.post_init",
+    "score": 0.10784313725490197,
+    "rank": 453
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.host",
+    "score": 0.10679611650485436,
+    "rank": 460
+  },
+  {
+    "api_name": "aiohttp.errors.BadHttpMessage.__init__",
+    "score": 0.10679611650485436,
+    "rank": 460
+  },
+  {
+    "api_name": "aiohttp.streams.FlowControlStreamReader.readexactly",
+    "score": 0.10679611650485436,
+    "rank": 460
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.release",
+    "score": 0.10679611650485436,
+    "rank": 460
+  },
+  {
+    "api_name": "aiohttp.connector.UnixConnector._create_connection",
+    "score": 0.10576923076923077,
+    "rank": 464
+  },
+  {
+    "api_name": "aiohttp.signals.DebugSignal.send",
+    "score": 0.10576923076923077,
+    "rank": 464
+  },
+  {
+    "api_name": "aiohttp.signals.PreSignal.__init__",
+    "score": 0.10576923076923077,
+    "rank": 464
+  },
+  {
+    "api_name": "aiohttp.streams.FlowControlStreamReader.read",
+    "score": 0.10576923076923077,
+    "rank": 464
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.log_debug",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.streams.AsyncStreamReaderMixin.iter_chunked",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.streams.ChunksQueue.read",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.streams.FlowControlChunksQueue.read",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.query_string",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.raw_path",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.web_server.Server.connection_lost",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.add_delete",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.add_get",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.add_head",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.add_patch",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.add_post",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.add_put",
+    "score": 0.10476190476190476,
+    "rank": 468
+  },
+  {
+    "api_name": "aiohttp.errors.LineTooLong.__init__",
+    "score": 0.10377358490566038,
+    "rank": 481
+  },
+  {
+    "api_name": "aiohttp.streams.FlowControlStreamReader.read_nowait",
+    "score": 0.10377358490566038,
+    "rank": 481
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.enable_chunked_encoding",
+    "score": 0.10377358490566038,
+    "rank": 481
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.receive_msg",
+    "score": 0.10377358490566038,
+    "rank": 481
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.raise_for_status",
+    "score": 0.10091743119266056,
+    "rank": 485
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.closed",
+    "score": 0.09900990099009901,
+    "rank": 486
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartResponseWrapper.__init__",
+    "score": 0.09900990099009901,
+    "rank": 486
+  },
+  {
+    "api_name": "aiohttp.parsers._ParserBufferHelper.__init__",
+    "score": 0.09900990099009901,
+    "rank": 486
+  },
+  {
+    "api_name": "aiohttp.protocol.Response.autochunked",
+    "score": 0.09900990099009901,
+    "rank": 486
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.start_server",
+    "score": 0.09900990099009901,
+    "rank": 486
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.ResourceRoute.__repr__",
+    "score": 0.09900990099009901,
+    "rank": 486
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.StaticResource.__iter__",
+    "score": 0.09900990099009901,
+    "rank": 486
+  },
+  {
+    "api_name": "aiohttp.wsgi.WsgiResponse.__init__",
+    "score": 0.09900990099009901,
+    "rank": 486
+  },
+  {
+    "api_name": "aiohttp.test_utils.BaseTestServer.__enter__",
+    "score": 0.09803921568627451,
+    "rank": 494
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.__enter__",
+    "score": 0.09803921568627451,
+    "rank": 494
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.started",
+    "score": 0.09803921568627451,
+    "rank": 494
+  },
+  {
+    "api_name": "aiohttp.web_server.Server.connections",
+    "score": 0.09803921568627451,
+    "rank": 494
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector.resolve",
+    "score": 0.0970873786407767,
+    "rank": 498
+  },
+  {
+    "api_name": "aiohttp.streams.EmptyStreamReader.readexactly",
+    "score": 0.0970873786407767,
+    "rank": 498
+  },
+  {
+    "api_name": "aiohttp.test_utils.BaseTestServer.__exit__",
+    "score": 0.0970873786407767,
+    "rank": 498
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.__exit__",
+    "score": 0.0970873786407767,
+    "rank": 498
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.make_url",
+    "score": 0.0970873786407767,
+    "rank": 498
+  },
+  {
+    "api_name": "aiohttp.web.Application.finish",
+    "score": 0.0970873786407767,
+    "rank": 498
+  },
+  {
+    "api_name": "aiohttp.protocol.Request.status_line",
+    "score": 0.09523809523809523,
+    "rank": 504
+  },
+  {
+    "api_name": "aiohttp.web.Application._check_frozen",
+    "score": 0.09523809523809523,
+    "rank": 504
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.ResourceRoute.url_for",
+    "score": 0.09523809523809523,
+    "rank": 504
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector.resolved_hosts",
+    "score": 0.09433962264150944,
+    "rank": 507
+  },
+  {
+    "api_name": "aiohttp.wsgi.WSGIServerHttpProtocol.create_wsgi_response",
+    "score": 0.09433962264150944,
+    "rank": 507
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._serialize_default",
+    "score": 0.09345794392523364,
+    "rank": 509
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.keep_alive_timeout",
+    "score": 0.09174311926605505,
+    "rank": 510
+  },
+  {
+    "api_name": "aiohttp.client._BaseRequestContextManager.__await__",
+    "score": 0.09090909090909091,
+    "rank": 511
+  },
+  {
+    "api_name": "aiohttp.client._BaseRequestContextManager.__aenter__",
+    "score": 0.09,
+    "rank": 512
+  },
+  {
+    "api_name": "aiohttp.client._BaseRequestContextManager.__iter__",
+    "score": 0.09,
+    "rank": 512
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.extend",
+    "score": 0.09,
+    "rank": 512
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PlainResource.freeze",
+    "score": 0.09,
+    "rank": 512
+  },
+  {
+    "api_name": "aiohttp.web.Application.__delitem__",
+    "score": 0.0891089108910891,
+    "rank": 516
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.__setitem__",
+    "score": 0.0891089108910891,
+    "rank": 516
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.headers",
+    "score": 0.0891089108910891,
+    "rank": 516
+  },
+  {
+    "api_name": "aiohttp.web_server.Server.__call__",
+    "score": 0.0891089108910891,
+    "rank": 516
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PrefixedSubAppResource.__repr__",
+    "score": 0.0891089108910891,
+    "rank": 516
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.__enter__",
+    "score": 0.08823529411764706,
+    "rank": 521
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.set_exception",
+    "score": 0.08823529411764706,
+    "rank": 521
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse._send_headers",
+    "score": 0.08823529411764706,
+    "rank": 521
+  },
+  {
+    "api_name": "aiohttp.client._DetachedRequestContextManager.__await__",
+    "score": 0.08737864077669903,
+    "rank": 524
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartResponseWrapper.at_eof",
+    "score": 0.08737864077669903,
+    "rank": 524
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamProtocol.data_received",
+    "score": 0.08737864077669903,
+    "rank": 524
+  },
+  {
+    "api_name": "aiohttp.streams.FlowControlStreamReader.readany",
+    "score": 0.08737864077669903,
+    "rank": 524
+  },
+  {
+    "api_name": "aiohttp.streams.FlowControlStreamReader.readline",
+    "score": 0.08737864077669903,
+    "rank": 524
+  },
+  {
+    "api_name": "aiohttp.web.Application.__repr__",
+    "score": 0.08737864077669903,
+    "rank": 524
+  },
+  {
+    "api_name": "aiohttp.client._DetachedRequestContextManager.__iter__",
+    "score": 0.08653846153846154,
+    "rank": 530
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.raw_headers",
+    "score": 0.08653846153846154,
+    "rank": 530
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.rel_url",
+    "score": 0.08653846153846154,
+    "rank": 530
+  },
+  {
+    "api_name": "aiohttp.web_server.Server.connection_made",
+    "score": 0.08653846153846154,
+    "rank": 530
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.log_exception",
+    "score": 0.08571428571428572,
+    "rank": 534
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractRoute.handle_expect_header",
+    "score": 0.08411214953271028,
+    "rank": 535
+  },
+  {
+    "api_name": "aiohttp.client._BaseRequestContextManager.__next__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.connector.Connection.closed",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartWriter.__iter__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartWriter.__len__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.__bytes__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.__len__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.signals.PreSignal.ordinal",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.streams.AsyncStreamReaderMixin.__aiter__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.streams.DataQueue.__aiter__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.test_utils.BaseTestServer.started",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web.Application.__getitem__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web.Application.__iter__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web.Application.__len__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.__getitem__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.__iter__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.__len__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.prepared",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractResource.__init__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.Resource.__iter__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.Resource.__len__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.ResourcesView.__contains__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.ResourcesView.__len__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.RoutesView.__contains__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.RoutesView.__len__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.StaticResource.__len__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.__contains__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.__getitem__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.__iter__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.__len__",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.resources",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.routes",
+    "score": 0.08,
+    "rank": 536
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse._need_parse_response_body",
+    "score": 0.07964601769911504,
+    "rank": 567
+  },
+  {
+    "api_name": "aiohttp.connector.Connection.__repr__",
+    "score": 0.07920792079207921,
+    "rank": 568
+  },
+  {
+    "api_name": "aiohttp.resolver.AsyncResolver.close",
+    "score": 0.07920792079207921,
+    "rank": 568
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlMappingMatchInfo.apps",
+    "score": 0.07920792079207921,
+    "rank": 568
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamProtocol.is_connected",
+    "score": 0.0784313725490196,
+    "rank": 571
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.keep_alive",
+    "score": 0.0784313725490196,
+    "rank": 571
+  },
+  {
+    "api_name": "aiohttp.client._WSRequestContextManager.__aexit__",
+    "score": 0.07766990291262135,
+    "rank": 573
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._serialize_multipart",
+    "score": 0.07766990291262135,
+    "rank": 573
+  },
+  {
+    "api_name": "aiohttp.streams.AsyncStreamReaderMixin.iter_any",
+    "score": 0.07766990291262135,
+    "rank": 573
+  },
+  {
+    "api_name": "aiohttp.streams.DataQueue.at_eof",
+    "score": 0.07766990291262135,
+    "rank": 573
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.at_eof",
+    "score": 0.07766990291262135,
+    "rank": 573
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.keep_alive",
+    "score": 0.07766990291262135,
+    "rank": 573
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.output_length",
+    "score": 0.07766990291262135,
+    "rank": 573
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PlainResource.url_for",
+    "score": 0.07766990291262135,
+    "rank": 573
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.ResourceRoute.get_info",
+    "score": 0.07766990291262135,
+    "rank": 573
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlDispatcher.named_resources",
+    "score": 0.07766990291262135,
+    "rank": 573
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlMappingMatchInfo.get_info",
+    "score": 0.07766990291262135,
+    "rank": 573
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector.cached_hosts",
+    "score": 0.07692307692307693,
+    "rank": 584
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.force_close",
+    "score": 0.07692307692307693,
+    "rank": 584
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractResource.url",
+    "score": 0.07692307692307693,
+    "rank": 584
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractRoute.url",
+    "score": 0.07692307692307693,
+    "rank": 584
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.detach",
+    "score": 0.0707070707070707,
+    "rank": 588
+  },
+  {
+    "api_name": "aiohttp.parsers.ParserBuffer.exception",
+    "score": 0.0707070707070707,
+    "rank": 588
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractView.__init__",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.client._DetachedRequestContextManager.__del__",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.client._DetachedWSRequestContextManager.__del__",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.host",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientRequest.port",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.streams.AsyncStreamIterator.__init__",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.host",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.port",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.__delitem__",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.method",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.version",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.ResourceRoute.name",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.ResourcesView.__init__",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.SystemRoute.reason",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.SystemRoute.status",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlMappingMatchInfo.handler",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.View.__await__",
+    "score": 0.07,
+    "rank": 590
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartResponseWrapper.release",
+    "score": 0.06930693069306931,
+    "rank": 607
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.__exit__",
+    "score": 0.06862745098039216,
+    "rank": 608
+  },
+  {
+    "api_name": "aiohttp.test_utils.BaseTestServer.__aenter__",
+    "score": 0.06862745098039216,
+    "rank": 608
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.__aenter__",
+    "score": 0.06862745098039216,
+    "rank": 608
+  },
+  {
+    "api_name": "aiohttp.web.Application.cleanup",
+    "score": 0.06862745098039216,
+    "rank": 608
+  },
+  {
+    "api_name": "aiohttp.web.Application.shutdown",
+    "score": 0.06862745098039216,
+    "rank": 608
+  },
+  {
+    "api_name": "aiohttp.web.Application.startup",
+    "score": 0.06862745098039216,
+    "rank": 608
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.Request.app",
+    "score": 0.06862745098039216,
+    "rank": 608
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.SystemRoute.__repr__",
+    "score": 0.06862745098039216,
+    "rank": 608
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.write",
+    "score": 0.06862745098039216,
+    "rank": 608
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.__aexit__",
+    "score": 0.06796116504854369,
+    "rank": 617
+  },
+  {
+    "api_name": "aiohttp.client._BaseRequestContextManager.gi_code",
+    "score": 0.06796116504854369,
+    "rank": 617
+  },
+  {
+    "api_name": "aiohttp.client._BaseRequestContextManager.gi_frame",
+    "score": 0.06796116504854369,
+    "rank": 617
+  },
+  {
+    "api_name": "aiohttp.client._BaseRequestContextManager.gi_running",
+    "score": 0.06796116504854369,
+    "rank": 617
+  },
+  {
+    "api_name": "aiohttp.cookiejar.CookieJar.__len__",
+    "score": 0.06796116504854369,
+    "rank": 617
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamProtocol.eof_received",
+    "score": 0.06796116504854369,
+    "rank": 617
+  },
+  {
+    "api_name": "aiohttp.test_utils.BaseTestServer.__aexit__",
+    "score": 0.06796116504854369,
+    "rank": 617
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.__aexit__",
+    "score": 0.06796116504854369,
+    "rank": 617
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.body_length",
+    "score": 0.06796116504854369,
+    "rank": 617
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlMappingMatchInfo.expect_handler",
+    "score": 0.06796116504854369,
+    "rank": 617
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.body_length",
+    "score": 0.0673076923076923,
+    "rank": 627
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector._create_connection",
+    "score": 0.06666666666666667,
+    "rank": 628
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.DynamicResource.get_info",
+    "score": 0.06666666666666667,
+    "rank": 628
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PrefixedSubAppResource.get_info",
+    "score": 0.06666666666666667,
+    "rank": 628
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.StaticResource.get_info",
+    "score": 0.06666666666666667,
+    "rank": 628
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.exception",
+    "score": 0.06060606060606061,
+    "rank": 632
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamParser.exception",
+    "score": 0.06060606060606061,
+    "rank": 632
+  },
+  {
+    "api_name": "aiohttp.streams.DataQueue.exception",
+    "score": 0.06060606060606061,
+    "rank": 632
+  },
+  {
+    "api_name": "aiohttp.streams.EmptyStreamReader.exception",
+    "score": 0.06060606060606061,
+    "rank": 632
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.exception",
+    "score": 0.06060606060606061,
+    "rank": 632
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketReady.__bool__",
+    "score": 0.06060606060606061,
+    "rank": 632
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.exception",
+    "score": 0.06060606060606061,
+    "rank": 632
+  },
+  {
+    "api_name": "aiohttp._ws_impl.WSMessage.tp",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractRouter.freeze",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractRouter.frozen",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractView.request",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.connector",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.loop",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.version",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.connection",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.history",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.closed",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.protocol",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector.closed",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector.limit",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.connector.Connection.loop",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.connector.ProxyConnector.proxy",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector.family",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector.fingerprint",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.connector.UnixConnector.path",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamParser.output",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.version",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.protocol.Request.method",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.protocol.Request.path",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.protocol.Response.reason",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.protocol.Response.status",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.test_utils.BaseTestServer.closed",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.server",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.test_utils.TestClient.session",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web.Application.debug",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web.Application.frozen",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web.Application.loop",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web.Application.middlewares",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web.Application.router",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.content",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.transport",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.chunked",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.compression",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.cookies",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.headers",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.reason",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.status",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.task",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_server.Server.handler",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractResource.name",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractRoute.handler",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractRoute.method",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractRoute.resource",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.SystemRoute.name",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlMappingMatchInfo.freeze",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlMappingMatchInfo.route",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.closed",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.protocol",
+    "score": 0.06,
+    "rank": 639
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector.__exit__",
+    "score": 0.0594059405940594,
+    "rank": 690
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.SystemRoute._handler",
+    "score": 0.0594059405940594,
+    "rank": 690
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.at_eof",
+    "score": 0.058823529411764705,
+    "rank": 692
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartWriter._serialize_bytes",
+    "score": 0.058823529411764705,
+    "rank": 692
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader.at_eof",
+    "score": 0.058823529411764705,
+    "rank": 692
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamParser.at_eof",
+    "score": 0.058823529411764705,
+    "rank": 692
+  },
+  {
+    "api_name": "aiohttp.streams.DataQueue.is_eof",
+    "score": 0.058823529411764705,
+    "rank": 692
+  },
+  {
+    "api_name": "aiohttp.streams.EmptyStreamReader.read",
+    "score": 0.058823529411764705,
+    "rank": 692
+  },
+  {
+    "api_name": "aiohttp.streams.StreamReader.is_eof",
+    "score": 0.058823529411764705,
+    "rank": 692
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.cookie_jar",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.url_obj",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.close_code",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector.force_close",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.connector.ProxyConnector.proxy_auth",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector.verify_ssl",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamWriter.tcp_cork",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.parsers.StreamWriter.tcp_nodelay",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.server.ServerHttpProtocol.keepalive_timeout",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web.Application.on_cleanup",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web.Application.on_shutdown",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web.Application.on_startup",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest._prepare_hook",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.BaseRequest.has_body",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.Request.match_info",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.force_close",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web_reqrep.StreamResponse.keep_alive",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web_server.Server.request_factory",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web_server.Server.requests_count",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web_server.Server.time_service",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.MatchInfoError.http_exception",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PrefixedSubAppResource.url",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.UrlMappingMatchInfo.http_exception",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.close_code",
+    "score": 0.05825242718446602,
+    "rank": 699
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractCookieJar.update_cookies",
+    "score": 0.057692307692307696,
+    "rank": 723
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PlainResource.get_info",
+    "score": 0.057692307692307696,
+    "rank": 723
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.SystemRoute.get_info",
+    "score": 0.057692307692307696,
+    "rank": 723
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.SystemRoute.url",
+    "score": 0.057692307692307696,
+    "rank": 723
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.is_headers_sent",
+    "score": 0.05714285714285714,
+    "rank": 727
+  },
+  {
+    "api_name": "aiohttp.connector.TCPConnector.use_dns_cache",
+    "score": 0.05660377358490566,
+    "rank": 728
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.enable_chunked_encoding",
+    "score": 0.05660377358490566,
+    "rank": 728
+  },
+  {
+    "api_name": "aiohttp.web.Application.on_post_signal",
+    "score": 0.05660377358490566,
+    "rank": 728
+  },
+  {
+    "api_name": "aiohttp.web.Application.on_pre_signal",
+    "score": 0.05660377358490566,
+    "rank": 728
+  },
+  {
+    "api_name": "aiohttp.web.Application.on_response_prepare",
+    "score": 0.05660377358490566,
+    "rank": 728
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.PrefixedSubAppResource.url_for",
+    "score": 0.056074766355140186,
+    "rank": 733
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.SystemRoute.url_for",
+    "score": 0.056074766355140186,
+    "rank": 733
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.ResourcesView.__iter__",
+    "score": 0.050505050505050504,
+    "rank": 735
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.RoutesView.__iter__",
+    "score": 0.050505050505050504,
+    "rank": 735
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractView.__await__",
+    "score": 0.05,
+    "rank": 737
+  },
+  {
+    "api_name": "aiohttp.client_ws.ClientWebSocketResponse.__aiter__",
+    "score": 0.05,
+    "rank": 737
+  },
+  {
+    "api_name": "aiohttp.connector.BaseConnector.__enter__",
+    "score": 0.05,
+    "rank": 737
+  },
+  {
+    "api_name": "aiohttp.multipart.BodyPartReader.__aiter__",
+    "score": 0.05,
+    "rank": 737
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartReader.__aiter__",
+    "score": 0.05,
+    "rank": 737
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartResponseWrapper.__aiter__",
+    "score": 0.05,
+    "rank": 737
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartWriter.__enter__",
+    "score": 0.05,
+    "rank": 737
+  },
+  {
+    "api_name": "aiohttp.streams.AsyncStreamIterator.__aiter__",
+    "score": 0.05,
+    "rank": 737
+  },
+  {
+    "api_name": "aiohttp.web.Application.__call__",
+    "score": 0.05,
+    "rank": 737
+  },
+  {
+    "api_name": "aiohttp.web_ws.WebSocketResponse.__aiter__",
+    "score": 0.05,
+    "rank": 737
+  },
+  {
+    "api_name": "aiohttp.wsgi.FileWrapper.__iter__",
+    "score": 0.05,
+    "rank": 737
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractMatchInfo.handler",
+    "score": 0.04950495049504951,
+    "rank": 748
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractResolver.resolve",
+    "score": 0.04950495049504951,
+    "rank": 748
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractRouter.__init__",
+    "score": 0.04950495049504951,
+    "rank": 748
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractRouter.resolve",
+    "score": 0.04950495049504951,
+    "rank": 748
+  },
+  {
+    "api_name": "aiohttp.client.ClientSession.__aenter__",
+    "score": 0.04950495049504951,
+    "rank": 748
+  },
+  {
+    "api_name": "aiohttp.client_reqrep.ClientResponse.__aenter__",
+    "score": 0.04950495049504951,
+    "rank": 748
+  },
+  {
+    "api_name": "aiohttp.multipart.MultipartWriter.__exit__",
+    "score": 0.04950495049504951,
+    "rank": 748
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.autochunked",
+    "score": 0.04950495049504951,
+    "rank": 748
+  },
+  {
+    "api_name": "aiohttp.streams.EmptyStreamReader.readany",
+    "score": 0.04950495049504951,
+    "rank": 748
+  },
+  {
+    "api_name": "aiohttp.streams.EmptyStreamReader.readline",
+    "score": 0.04950495049504951,
+    "rank": 748
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractResource.resolve",
+    "score": 0.04950495049504951,
+    "rank": 748
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractRouter.post_init",
+    "score": 0.049019607843137254,
+    "rank": 759
+  },
+  {
+    "api_name": "aiohttp.streams.EmptyStreamReader.feed_data",
+    "score": 0.049019607843137254,
+    "rank": 759
+  },
+  {
+    "api_name": "aiohttp.streams.EmptyStreamReader.set_exception",
+    "score": 0.049019607843137254,
+    "rank": 759
+  },
+  {
+    "api_name": "aiohttp.test_utils.AioHTTPTestCase.get_app",
+    "score": 0.049019607843137254,
+    "rank": 759
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractCookieJar.filter_cookies",
+    "score": 0.04854368932038835,
+    "rank": 763
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractMatchInfo.add_app",
+    "score": 0.04854368932038835,
+    "rank": 763
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractView.__iter__",
+    "score": 0.04854368932038835,
+    "rank": 763
+  },
+  {
+    "api_name": "aiohttp.streams.EmptyStreamReader.at_eof",
+    "score": 0.04854368932038835,
+    "rank": 763
+  },
+  {
+    "api_name": "aiohttp.streams.EmptyStreamReader.is_eof",
+    "score": 0.04854368932038835,
+    "rank": 763
+  },
+  {
+    "api_name": "aiohttp.streams.EmptyStreamReader.read_nowait",
+    "score": 0.04854368932038835,
+    "rank": 763
+  },
+  {
+    "api_name": "aiohttp.streams.EmptyStreamReader.wait_eof",
+    "score": 0.04854368932038835,
+    "rank": 763
+  },
+  {
+    "api_name": "aiohttp.test_utils.RawTestServer._close_hook",
+    "score": 0.04854368932038835,
+    "rank": 763
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractResource.add_prefix",
+    "score": 0.04854368932038835,
+    "rank": 763
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractMatchInfo.expect_handler",
+    "score": 0.04807692307692308,
+    "rank": 772
+  },
+  {
+    "api_name": "aiohttp.protocol.HttpMessage.status_line",
+    "score": 0.047619047619047616,
+    "rank": 773
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractResource.freeze",
+    "score": 0.04040404040404041,
+    "rank": 774
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractCookieJar.clear",
+    "score": 0.04,
+    "rank": 775
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractMatchInfo.freeze",
+    "score": 0.04,
+    "rank": 775
+  },
+  {
+    "api_name": "aiohttp.resolver.ThreadedResolver.close",
+    "score": 0.04,
+    "rank": 775
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractMatchInfo.apps",
+    "score": 0.039603960396039604,
+    "rank": 778
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractResolver.close",
+    "score": 0.039603960396039604,
+    "rank": 778
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractRoute.name",
+    "score": 0.039603960396039604,
+    "rank": 778
+  },
+  {
+    "api_name": "aiohttp.streams.EmptyStreamReader.feed_eof",
+    "score": 0.0392156862745098,
+    "rank": 781
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractMatchInfo.get_info",
+    "score": 0.038834951456310676,
+    "rank": 782
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractResource.get_info",
+    "score": 0.038834951456310676,
+    "rank": 782
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractRoute.get_info",
+    "score": 0.038834951456310676,
+    "rank": 782
+  },
+  {
+    "api_name": "aiohttp.abc.AbstractMatchInfo.http_exception",
+    "score": 0.038461538461538464,
+    "rank": 785
+  },
+  {
+    "api_name": "aiohttp.test_utils.BaseTestServer._close_hook",
+    "score": 0.038461538461538464,
+    "rank": 785
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractResource.url_for",
+    "score": 0.038461538461538464,
+    "rank": 785
+  },
+  {
+    "api_name": "aiohttp.protocol.WebResponse._add_default_headers",
+    "score": 0.0380952380952381,
+    "rank": 788
+  },
+  {
+    "api_name": "aiohttp.test_utils.BaseTestServer._make_factory",
+    "score": 0.0380952380952381,
+    "rank": 788
+  },
+  {
+    "api_name": "aiohttp.web_urldispatcher.AbstractRoute.url_for",
+    "score": 0.0380952380952381,
+    "rank": 788
+  }
+]

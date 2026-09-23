@@ -1,0 +1,5 @@
+@@ -11,3 +11,3 @@
+            boltzmann=1.0, learn_rate=0.5, feps=1e-6, quench=1.0, m=1.0, n=1.0,
+-           lower=-100, upper=100, dwell=50):
++           lower=-100, upper=100, dwell=50, disp=True):
+     """Minimize a function using simulated annealing.

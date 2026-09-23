@@ -1,0 +1,100 @@
+{
+  "case": "matplotlib.colorbar.ColorbarPatch-matplotlib.colorbar.Colorbar-v3.3.4",
+  "fix_type": "fix_R",
+  "candidate_api": "matplotlib.colorbar.Colorbar",
+  "error": null,
+  "threshold_10pct": 85.4,
+  "algorithms_meeting_threshold": [
+    "mapBased",
+    "tokenBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 705,
+      "vi_rank": 265,
+      "delta": 440,
+      "exceeds_10pct": true
+    },
+    "tokenBased": {
+      "vi1_rank": 739,
+      "vi_rank": 838,
+      "delta": -99,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.0311,
+      "baseline_rank": 705,
+      "delta_baseline_to_vi": 440
+    },
+    "tokenBased": {
+      "baseline_score": 0.0612,
+      "baseline_rank": 739,
+      "delta_baseline_to_vi": -99
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 265,
+          "vi_score": null,
+          "restored_score": 0.0,
+          "restored_rank": 265,
+          "delta_vi_to_restored": 0,
+          "distance_to_baseline": 440
+        },
+        "tokenBased": {
+          "vi_rank": 838,
+          "vi_score": 0.0024,
+          "restored_score": 0.0021,
+          "restored_rank": 843,
+          "delta_vi_to_restored": -5,
+          "distance_to_baseline": 104
+        }
+      }
+    },
+    {
+      "block": "block_002",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 265,
+          "vi_score": null,
+          "restored_score": 0.0311,
+          "restored_rank": 705,
+          "delta_vi_to_restored": -440,
+          "distance_to_baseline": 0
+        },
+        "tokenBased": {
+          "vi_rank": 838,
+          "vi_score": 0.0024,
+          "restored_score": 0.0615,
+          "restored_rank": 741,
+          "delta_vi_to_restored": 97,
+          "distance_to_baseline": 2
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "mapBased": [
+      "block_002"
+    ],
+    "tokenBased": [
+      "block_002"
+    ]
+  },
+  "block_sign_labels": {
+    "map_up_token_down": [
+      "block_002"
+    ]
+  }
+}

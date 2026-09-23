@@ -1,0 +1,7 @@
+@@ -4,4 +4,5 @@
+         Returns a single value.
+         """
+         from dask.delayed import Delayed
+-        return Delayed(self.key, self.dask)
++        dsk = self._optimize(self.dask, [self.key])
++        return Delayed(self.key, dsk)

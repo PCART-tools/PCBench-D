@@ -1,0 +1,2287 @@
+[
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.concat",
+    "score": 0.576271186440678,
+    "rank": 1
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.get",
+    "score": 0.5555555555555556,
+    "rank": 2
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.get",
+    "score": 0.5223880597014925,
+    "rank": 3
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.to_integer",
+    "score": 0.5070422535211268,
+    "rank": 4
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.contains",
+    "score": 0.4925373134328358,
+    "rank": 5
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.contains",
+    "score": 0.4925373134328358,
+    "rank": 5
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rank",
+    "score": 0.47692307692307695,
+    "rank": 7
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.tail",
+    "score": 0.46875,
+    "rank": 8
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.count_matches",
+    "score": 0.4626865671641791,
+    "rank": 9
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.tail",
+    "score": 0.4603174603174603,
+    "rank": 10
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.to_time",
+    "score": 0.45588235294117646,
+    "rank": 11
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.gather",
+    "score": 0.45569620253164556,
+    "rank": 12
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.value_counts",
+    "score": 0.4430379746835443,
+    "rank": 13
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.contains",
+    "score": 0.43661971830985913,
+    "rank": 14
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.find",
+    "score": 0.43661971830985913,
+    "rank": 14
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__and__",
+    "score": 0.43478260869565216,
+    "rank": 16
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__or__",
+    "score": 0.43478260869565216,
+    "rank": 16
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__rand__",
+    "score": 0.43478260869565216,
+    "rank": 16
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__ror__",
+    "score": 0.43478260869565216,
+    "rank": 16
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__rxor__",
+    "score": 0.43478260869565216,
+    "rank": 16
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__xor__",
+    "score": 0.43478260869565216,
+    "rank": 16
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.json_decode",
+    "score": 0.42857142857142855,
+    "rank": 22
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.splitn",
+    "score": 0.42857142857142855,
+    "rank": 22
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.get",
+    "score": 0.4262295081967213,
+    "rank": 24
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.head",
+    "score": 0.417910447761194,
+    "rank": 25
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.tail",
+    "score": 0.417910447761194,
+    "rank": 25
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.zfill",
+    "score": 0.417910447761194,
+    "rank": 25
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.to_date",
+    "score": 0.41333333333333333,
+    "rank": 28
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.shift",
+    "score": 0.4117647058823529,
+    "rank": 29
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.shift",
+    "score": 0.4117647058823529,
+    "rank": 29
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_max",
+    "score": 0.41025641025641024,
+    "rank": 31
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_mean",
+    "score": 0.41025641025641024,
+    "rank": 31
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_min",
+    "score": 0.41025641025641024,
+    "rank": 31
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.split_exact",
+    "score": 0.4050632911392405,
+    "rank": 34
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_skew",
+    "score": 0.4,
+    "rank": 35
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.replace",
+    "score": 0.3977272727272727,
+    "rank": 36
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.join",
+    "score": 0.39705882352941174,
+    "rank": 37
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.fill_nan",
+    "score": 0.39705882352941174,
+    "rank": 37
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.join",
+    "score": 0.39705882352941174,
+    "rank": 37
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.contains_any",
+    "score": 0.39705882352941174,
+    "rank": 37
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.extract",
+    "score": 0.39705882352941174,
+    "rank": 37
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.second",
+    "score": 0.3939393939393939,
+    "rank": 42
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.hist",
+    "score": 0.39361702127659576,
+    "rank": 43
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_map",
+    "score": 0.39361702127659576,
+    "rank": 43
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.shuffle",
+    "score": 0.39285714285714285,
+    "rank": 45
+  },
+  {
+    "api_name": "polars.expr.struct.ExprStructNameSpace.__getitem__",
+    "score": 0.3902439024390244,
+    "rank": 46
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.append",
+    "score": 0.38461538461538464,
+    "rank": 47
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.split",
+    "score": 0.3835616438356164,
+    "rank": 48
+  },
+  {
+    "api_name": "polars.expr.binary.ExprBinaryNameSpace.decode",
+    "score": 0.379746835443038,
+    "rank": 49
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cast",
+    "score": 0.379746835443038,
+    "rank": 49
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.decode",
+    "score": 0.379746835443038,
+    "rank": 49
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.offset_by",
+    "score": 0.3787878787878788,
+    "rank": 52
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.ends_with",
+    "score": 0.3787878787878788,
+    "rank": 52
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.extract_all",
+    "score": 0.3787878787878788,
+    "rank": 52
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.starts_with",
+    "score": 0.3787878787878788,
+    "rank": 52
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.bottom_k",
+    "score": 0.375,
+    "rank": 56
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.top_k",
+    "score": 0.375,
+    "rank": 56
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cumulative_eval",
+    "score": 0.373134328358209,
+    "rank": 58
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.sort",
+    "score": 0.3728813559322034,
+    "rank": 59
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.backward_fill",
+    "score": 0.3728813559322034,
+    "rank": 59
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.forward_fill",
+    "score": 0.3728813559322034,
+    "rank": 59
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.eval",
+    "score": 0.3728813559322034,
+    "rank": 59
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.sort",
+    "score": 0.3728813559322034,
+    "rank": 59
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.join",
+    "score": 0.3728813559322034,
+    "rank": 59
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_median",
+    "score": 0.37209302325581395,
+    "rank": 65
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_sum",
+    "score": 0.37209302325581395,
+    "rank": 65
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.strip_chars",
+    "score": 0.37142857142857144,
+    "rank": 67
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.shift",
+    "score": 0.3707865168539326,
+    "rank": 68
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.unique",
+    "score": 0.37037037037037035,
+    "rank": 69
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.unique",
+    "score": 0.37037037037037035,
+    "rank": 69
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.tree_format",
+    "score": 0.36507936507936506,
+    "rank": 71
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.slice",
+    "score": 0.36470588235294116,
+    "rank": 72
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.repeat_by",
+    "score": 0.3611111111111111,
+    "rank": 73
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.pad_end",
+    "score": 0.36065573770491804,
+    "rank": 74
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.pad_start",
+    "score": 0.36065573770491804,
+    "rank": 74
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_std",
+    "score": 0.358695652173913,
+    "rank": 76
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_var",
+    "score": 0.358695652173913,
+    "rank": 76
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__pow__",
+    "score": 0.3561643835616438,
+    "rank": 78
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.pct_change",
+    "score": 0.3561643835616438,
+    "rank": 78
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.strip_chars_end",
+    "score": 0.3561643835616438,
+    "rank": 78
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.strip_chars_start",
+    "score": 0.3561643835616438,
+    "rank": 78
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.extract_many",
+    "score": 0.35526315789473684,
+    "rank": 82
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.inspect",
+    "score": 0.3548387096774194,
+    "rank": 83
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.extend_constant",
+    "score": 0.35294117647058826,
+    "rank": 84
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.replace_all",
+    "score": 0.3522727272727273,
+    "rank": 85
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.to_decimal",
+    "score": 0.3508771929824561,
+    "rank": 86
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.diff",
+    "score": 0.3492063492063492,
+    "rank": 87
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_quantile",
+    "score": 0.34615384615384615,
+    "rank": 88
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.std",
+    "score": 0.34545454545454546,
+    "rank": 89
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.var",
+    "score": 0.34545454545454546,
+    "rank": 89
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.std",
+    "score": 0.34545454545454546,
+    "rank": 89
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.var",
+    "score": 0.34545454545454546,
+    "rank": 89
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.limit",
+    "score": 0.3448275862068966,
+    "rank": 93
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.entropy",
+    "score": 0.3442622950819672,
+    "rank": 94
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.to_struct",
+    "score": 0.34408602150537637,
+    "rank": 95
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.ewm_mean",
+    "score": 0.34285714285714286,
+    "rank": 96
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.truncate",
+    "score": 0.34177215189873417,
+    "rank": 97
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.qcut",
+    "score": 0.33962264150943394,
+    "rank": 98
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.head",
+    "score": 0.3389830508474576,
+    "rank": 99
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.dot",
+    "score": 0.3384615384615385,
+    "rank": 100
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cut",
+    "score": 0.3375,
+    "rank": 101
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.add_business_days",
+    "score": 0.33636363636363636,
+    "rank": 102
+  },
+  {
+    "api_name": "polars.expr.binary.ExprBinaryNameSpace.contains",
+    "score": 0.3333333333333333,
+    "rank": 103
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.set_difference",
+    "score": 0.3333333333333333,
+    "rank": 103
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.set_intersection",
+    "score": 0.3333333333333333,
+    "rank": 103
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.set_union",
+    "score": 0.3333333333333333,
+    "rank": 103
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.to_array",
+    "score": 0.3333333333333333,
+    "rank": 103
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.slice",
+    "score": 0.3333333333333333,
+    "rank": 103
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__rpow__",
+    "score": 0.3287671232876712,
+    "rank": 109
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.kurtosis",
+    "score": 0.32786885245901637,
+    "rank": 110
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.sort",
+    "score": 0.32786885245901637,
+    "rank": 110
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.slice",
+    "score": 0.3263157894736842,
+    "rank": 112
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.quantile",
+    "score": 0.3246753246753247,
+    "rank": 113
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.all",
+    "score": 0.32142857142857145,
+    "rank": 114
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.any",
+    "score": 0.32142857142857145,
+    "rank": 114
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.ewm_std",
+    "score": 0.32142857142857145,
+    "rank": 114
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.ewm_var",
+    "score": 0.32142857142857145,
+    "rank": 114
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.reinterpret",
+    "score": 0.32142857142857145,
+    "rank": 114
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.skew",
+    "score": 0.32142857142857145,
+    "rank": 114
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.set_symmetric_difference",
+    "score": 0.3188405797101449,
+    "rank": 120
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.count_matches",
+    "score": 0.3181818181818182,
+    "rank": 121
+  },
+  {
+    "api_name": "polars.expr.binary.ExprBinaryNameSpace.ends_with",
+    "score": 0.3181818181818182,
+    "rank": 121
+  },
+  {
+    "api_name": "polars.expr.binary.ExprBinaryNameSpace.starts_with",
+    "score": 0.3181818181818182,
+    "rank": 121
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.count_matches",
+    "score": 0.3181818181818182,
+    "rank": 121
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.strip_prefix",
+    "score": 0.3181818181818182,
+    "rank": 121
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.strip_suffix",
+    "score": 0.3181818181818182,
+    "rank": 121
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.unique",
+    "score": 0.31746031746031744,
+    "rank": 127
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.head",
+    "score": 0.31746031746031744,
+    "rank": 127
+  },
+  {
+    "api_name": "polars.expr.whenthen.ChainedThen.otherwise",
+    "score": 0.31746031746031744,
+    "rank": 127
+  },
+  {
+    "api_name": "polars.expr.whenthen.Then.otherwise",
+    "score": 0.31746031746031744,
+    "rank": 127
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.bottom_k_by",
+    "score": 0.3162393162393162,
+    "rank": 131
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.top_k_by",
+    "score": 0.3162393162393162,
+    "rank": 131
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.replace_many",
+    "score": 0.313953488372093,
+    "rank": 133
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__eq__",
+    "score": 0.31343283582089554,
+    "rank": 134
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__ge__",
+    "score": 0.31343283582089554,
+    "rank": 134
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__gt__",
+    "score": 0.31343283582089554,
+    "rank": 134
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__le__",
+    "score": 0.31343283582089554,
+    "rank": 134
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__lt__",
+    "score": 0.31343283582089554,
+    "rank": 134
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__ne__",
+    "score": 0.31343283582089554,
+    "rank": 134
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.arg_sort",
+    "score": 0.3125,
+    "rank": 140
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.combine",
+    "score": 0.3118279569892473,
+    "rank": 141
+  },
+  {
+    "api_name": "polars.expr.binary.ExprBinaryNameSpace.encode",
+    "score": 0.3116883116883117,
+    "rank": 142
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.encode",
+    "score": 0.3116883116883117,
+    "rank": 142
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.round",
+    "score": 0.3103448275862069,
+    "rank": 144
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.gather_every",
+    "score": 0.30927835051546393,
+    "rank": 145
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__repr__",
+    "score": 0.3088235294117647,
+    "rank": 146
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.diff",
+    "score": 0.3076923076923077,
+    "rank": 147
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_max_by",
+    "score": 0.30612244897959184,
+    "rank": 148
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_mean_by",
+    "score": 0.30612244897959184,
+    "rank": 148
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_median_by",
+    "score": 0.30612244897959184,
+    "rank": 148
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_min_by",
+    "score": 0.30612244897959184,
+    "rank": 148
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_sum_by",
+    "score": 0.30612244897959184,
+    "rank": 148
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cum_count",
+    "score": 0.3050847457627119,
+    "rank": 153
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cum_max",
+    "score": 0.3050847457627119,
+    "rank": 153
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cum_min",
+    "score": 0.3050847457627119,
+    "rank": 153
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cum_prod",
+    "score": 0.3050847457627119,
+    "rank": 153
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cum_sum",
+    "score": 0.3050847457627119,
+    "rank": 153
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.set_sorted",
+    "score": 0.3050847457627119,
+    "rank": 153
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.map_batches",
+    "score": 0.30275229357798167,
+    "rank": 159
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.replace_time_zone",
+    "score": 0.3020833333333333,
+    "rank": 160
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.round",
+    "score": 0.2982456140350877,
+    "rank": 161
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.std",
+    "score": 0.2982456140350877,
+    "rank": 161
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.var",
+    "score": 0.2982456140350877,
+    "rank": 161
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.hash",
+    "score": 0.297029702970297,
+    "rank": 164
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.eq_missing",
+    "score": 0.296875,
+    "rank": 165
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.gather_every",
+    "score": 0.296875,
+    "rank": 165
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.ne_missing",
+    "score": 0.296875,
+    "rank": 165
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.to_struct",
+    "score": 0.2956521739130435,
+    "rank": 168
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.search_sorted",
+    "score": 0.29213483146067415,
+    "rank": 169
+  },
+  {
+    "api_name": "polars.expr.struct.ExprStructNameSpace.field",
+    "score": 0.29213483146067415,
+    "rank": 169
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.json_path_match",
+    "score": 0.2876712328767123,
+    "rank": 171
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_std_by",
+    "score": 0.2857142857142857,
+    "rank": 172
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_var_by",
+    "score": 0.2857142857142857,
+    "rank": 172
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.gather",
+    "score": 0.28431372549019607,
+    "rank": 174
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.reshape",
+    "score": 0.2833333333333333,
+    "rank": 175
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.filter",
+    "score": 0.27848101265822783,
+    "rank": 176
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling",
+    "score": 0.2777777777777778,
+    "rank": 177
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.__getitem__",
+    "score": 0.2777777777777778,
+    "rank": 177
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.round_sig_figs",
+    "score": 0.27419354838709675,
+    "rank": 179
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.to_datetime",
+    "score": 0.2734375,
+    "rank": 180
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.output_name",
+    "score": 0.2727272727272727,
+    "rank": 181
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.ewm_mean_by",
+    "score": 0.2717391304347826,
+    "rank": 182
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.pow",
+    "score": 0.2714285714285714,
+    "rank": 183
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.sample",
+    "score": 0.2702702702702703,
+    "rank": 184
+  },
+  {
+    "api_name": "polars.expr.whenthen.ChainedThen.when",
+    "score": 0.2692307692307692,
+    "rank": 185
+  },
+  {
+    "api_name": "polars.expr.whenthen.Then.when",
+    "score": 0.2692307692307692,
+    "rank": 185
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.serialize",
+    "score": 0.26804123711340205,
+    "rank": 187
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.interpolate_by",
+    "score": 0.2647058823529412,
+    "rank": 188
+  },
+  {
+    "api_name": "polars.expr.struct.ExprStructNameSpace.with_fields",
+    "score": 0.2631578947368421,
+    "rank": 189
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rolling_quantile_by",
+    "score": 0.2627118644067797,
+    "rank": 190
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.sample",
+    "score": 0.26174496644295303,
+    "rank": 191
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__add__",
+    "score": 0.26153846153846155,
+    "rank": 192
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__radd__",
+    "score": 0.26153846153846155,
+    "rank": 192
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.timestamp",
+    "score": 0.25806451612903225,
+    "rank": 194
+  },
+  {
+    "api_name": "polars.expr.whenthen.When.then",
+    "score": 0.25757575757575757,
+    "rank": 195
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.over",
+    "score": 0.2564102564102564,
+    "rank": 196
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.epoch",
+    "score": 0.25,
+    "rank": 197
+  },
+  {
+    "api_name": "polars.expr.whenthen.ChainedWhen.then",
+    "score": 0.25,
+    "rank": 197
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.clip",
+    "score": 0.24778761061946902,
+    "rank": 199
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__floordiv__",
+    "score": 0.24615384615384617,
+    "rank": 200
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__mod__",
+    "score": 0.24615384615384617,
+    "rank": 200
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__mul__",
+    "score": 0.24615384615384617,
+    "rank": 200
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__rfloordiv__",
+    "score": 0.24615384615384617,
+    "rank": 200
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__rmod__",
+    "score": 0.24615384615384617,
+    "rank": 200
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__rmul__",
+    "score": 0.24615384615384617,
+    "rank": 200
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__rsub__",
+    "score": 0.24615384615384617,
+    "rank": 200
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__rtruediv__",
+    "score": 0.24615384615384617,
+    "rank": 200
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__sub__",
+    "score": 0.24615384615384617,
+    "rank": 200
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__truediv__",
+    "score": 0.24615384615384617,
+    "rank": 200
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.to_string",
+    "score": 0.2459016393442623,
+    "rank": 210
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.extract_groups",
+    "score": 0.2459016393442623,
+    "rank": 210
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.pop",
+    "score": 0.24561403508771928,
+    "rank": 212
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.fill_null",
+    "score": 0.24324324324324326,
+    "rank": 213
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.from_json",
+    "score": 0.24242424242424243,
+    "rank": 214
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace._selector_add",
+    "score": 0.24193548387096775,
+    "rank": 215
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace._selector_and",
+    "score": 0.24193548387096775,
+    "rank": 215
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace._selector_sub",
+    "score": 0.24193548387096775,
+    "rank": 215
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace._selector_xor",
+    "score": 0.24193548387096775,
+    "rank": 215
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.is_column_selection",
+    "score": 0.24193548387096775,
+    "rank": 215
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.is_between",
+    "score": 0.24175824175824176,
+    "rank": 220
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.all",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.any",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.explode",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.max",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.median",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.min",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.reverse",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.sum",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.century",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.date",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.day",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.hour",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.microsecond",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.millennium",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.millisecond",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.minute",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.month",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.nanosecond",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.quarter",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.time",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.week",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.weekday",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.year",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.all",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.any",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.explode",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.len",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.max",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.mean",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.median",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.min",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.reverse",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.sum",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.reverse",
+    "score": 0.24074074074074073,
+    "rank": 221
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.explode",
+    "score": 0.23943661971830985,
+    "rank": 255
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.strptime",
+    "score": 0.23943661971830985,
+    "rank": 255
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.datetime",
+    "score": 0.23636363636363636,
+    "rank": 257
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.convert_time_zone",
+    "score": 0.234375,
+    "rank": 258
+  },
+  {
+    "api_name": "polars.expr.struct.ExprStructNameSpace.rename_fields",
+    "score": 0.23076923076923078,
+    "rank": 259
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.log",
+    "score": 0.22950819672131148,
+    "rank": 260
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.sort_by",
+    "score": 0.22857142857142856,
+    "rank": 261
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.arg_max",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.arg_min",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.n_unique",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.to_list",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.categorical.ExprCatNameSpace.get_categories",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.dst_offset",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.iso_year",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.month_end",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.month_start",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.ordinal_day",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.total_days",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.total_hours",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.total_microseconds",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.total_milliseconds",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.total_minutes",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.total_nanoseconds",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.total_seconds",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.arg_max",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.arg_min",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.drop_nulls",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.n_unique",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace._as_selector",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.undo_aliases",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.len_bytes",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.len_chars",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.to_lowercase",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.to_titlecase",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.to_uppercase",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.struct.ExprStructNameSpace.json_encode",
+    "score": 0.22807017543859648,
+    "rank": 262
+  },
+  {
+    "api_name": "polars.expr.expr.Expr._map_batches_wrapper.__call__",
+    "score": 0.225,
+    "rank": 291
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.is_in",
+    "score": 0.22321428571428573,
+    "rank": 292
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.register_plugin",
+    "score": 0.22142857142857142,
+    "rank": 293
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.cast_time_unit",
+    "score": 0.22058823529411764,
+    "rank": 294
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.interpolate",
+    "score": 0.21875,
+    "rank": 295
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.with_time_unit",
+    "score": 0.21739130434782608,
+    "rank": 296
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.base_utc_offset",
+    "score": 0.21666666666666667,
+    "rank": 297
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.is_leap_year",
+    "score": 0.21666666666666667,
+    "rank": 297
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.alias",
+    "score": 0.21666666666666667,
+    "rank": 297
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.concat",
+    "score": 0.21666666666666667,
+    "rank": 297
+  },
+  {
+    "api_name": "polars.expr.name.ExprNameNameSpace.prefix",
+    "score": 0.21666666666666667,
+    "rank": 297
+  },
+  {
+    "api_name": "polars.expr.name.ExprNameNameSpace.suffix",
+    "score": 0.21666666666666667,
+    "rank": 297
+  },
+  {
+    "api_name": "polars.expr.whenthen.ChainedThen._pyexpr",
+    "score": 0.21666666666666667,
+    "rank": 297
+  },
+  {
+    "api_name": "polars.expr.whenthen.Then._pyexpr",
+    "score": 0.21666666666666667,
+    "rank": 297
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.deserialize",
+    "score": 0.20634920634920634,
+    "rank": 305
+  },
+  {
+    "api_name": "polars.expr.name.ExprNameNameSpace.prefix_fields",
+    "score": 0.20634920634920634,
+    "rank": 305
+  },
+  {
+    "api_name": "polars.expr.name.ExprNameNameSpace.suffix_fields",
+    "score": 0.20634920634920634,
+    "rank": 305
+  },
+  {
+    "api_name": "polars.expr.name.ExprNameNameSpace.map",
+    "score": 0.203125,
+    "rank": 308
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.write_json",
+    "score": 0.20270270270270271,
+    "rank": 309
+  },
+  {
+    "api_name": "polars.expr.expr.Expr._from_pyexpr",
+    "score": 0.2,
+    "rank": 310
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.and_",
+    "score": 0.19672131147540983,
+    "rank": 311
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.abs",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.arccos",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.arccosh",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.arcsin",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.arcsinh",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.arctan",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.arctanh",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cbrt",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.ceil",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cos",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cosh",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cot",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.count",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.degrees",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.exp",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.explode",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.first",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.flatten",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.floor",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.implode",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.last",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.len",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.log1p",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.max",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.mean",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.median",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.min",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.mode",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.not_",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.product",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.radians",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rechunk",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.reverse",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rle",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.sign",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.sin",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.sinh",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.sqrt",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.sum",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.tan",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.tanh",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.name.ExprNameNameSpace.keep",
+    "score": 0.19642857142857142,
+    "rank": 312
+  },
+  {
+    "api_name": "polars.expr.name.ExprNameNameSpace.map_fields",
+    "score": 0.19402985074626866,
+    "rank": 354
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.or_",
+    "score": 0.1935483870967742,
+    "rank": 355
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.__eq__",
+    "score": 0.1917808219178082,
+    "rank": 356
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.eq",
+    "score": 0.1917808219178082,
+    "rank": 356
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__setstate__",
+    "score": 0.19047619047619047,
+    "rank": 358
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.strftime",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.add",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.eq",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.floordiv",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.ge",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.gt",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.le",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.lt",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.mod",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.mul",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.ne",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.sub",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.truediv",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.xor",
+    "score": 0.1896551724137931,
+    "rank": 359
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.agg_groups",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.arg_max",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.arg_min",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.arg_true",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.arg_unique",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.drop_nans",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.drop_nulls",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.is_duplicated",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.is_finite",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.is_infinite",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.is_nan",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.is_null",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.is_unique",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.lower_bound",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.n_unique",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.nan_max",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.nan_min",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.null_count",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.peak_max",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.peak_min",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.rle_id",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.shrink_dtype",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.to_physical",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.unique_counts",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.upper_bound",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.where",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.name.ExprNameNameSpace.to_lowercase",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.name.ExprNameNameSpace.to_uppercase",
+    "score": 0.1864406779661017,
+    "rank": 373
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.first",
+    "score": 0.18181818181818182,
+    "rank": 401
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.last",
+    "score": 0.18181818181818182,
+    "rank": 401
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.first",
+    "score": 0.18181818181818182,
+    "rank": 401
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.last",
+    "score": 0.18181818181818182,
+    "rank": 401
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.ne",
+    "score": 0.1780821917808219,
+    "rank": 405
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.approx_n_unique",
+    "score": 0.1774193548387097,
+    "rank": 406
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.is_first_distinct",
+    "score": 0.1774193548387097,
+    "rank": 406
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.is_last_distinct",
+    "score": 0.1774193548387097,
+    "rank": 406
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.is_not_nan",
+    "score": 0.1774193548387097,
+    "rank": 406
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.is_not_null",
+    "score": 0.1774193548387097,
+    "rank": 406
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__bool__",
+    "score": 0.1694915254237288,
+    "rank": 411
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__abs__",
+    "score": 0.16666666666666666,
+    "rank": 412
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__invert__",
+    "score": 0.16666666666666666,
+    "rank": 412
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.neg",
+    "score": 0.16666666666666666,
+    "rank": 412
+  },
+  {
+    "api_name": "polars.expr.whenthen.ChainedThen._from_pyexpr",
+    "score": 0.16666666666666666,
+    "rank": 412
+  },
+  {
+    "api_name": "polars.expr.whenthen.Then._from_pyexpr",
+    "score": 0.16666666666666666,
+    "rank": 412
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__neg__",
+    "score": 0.16363636363636364,
+    "rank": 417
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.log10",
+    "score": 0.16363636363636364,
+    "rank": 417
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.exclude",
+    "score": 0.16265060240963855,
+    "rank": 419
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.replace_strict",
+    "score": 0.15625,
+    "rank": 420
+  },
+  {
+    "api_name": "polars.expr.expr.Expr._map_batches_wrapper.__init__",
+    "score": 0.15476190476190477,
+    "rank": 421
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.has_nulls",
+    "score": 0.15254237288135594,
+    "rank": 422
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.name",
+    "score": 0.15,
+    "rank": 423
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.__ne__",
+    "score": 0.14864864864864866,
+    "rank": 424
+  },
+  {
+    "api_name": "polars.expr.name.ExprNameNameSpace.__init__",
+    "score": 0.14754098360655737,
+    "rank": 425
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.arr",
+    "score": 0.14516129032258066,
+    "rank": 426
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.bin",
+    "score": 0.14516129032258066,
+    "rank": 426
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.cat",
+    "score": 0.14516129032258066,
+    "rank": 426
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.list",
+    "score": 0.14516129032258066,
+    "rank": 426
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.meta",
+    "score": 0.14516129032258066,
+    "rank": 426
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.str",
+    "score": 0.14516129032258066,
+    "rank": 426
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.struct",
+    "score": 0.14516129032258066,
+    "rank": 426
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__getstate__",
+    "score": 0.14285714285714285,
+    "rank": 433
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__str__",
+    "score": 0.14285714285714285,
+    "rank": 433
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.dt",
+    "score": 0.140625,
+    "rank": 435
+  },
+  {
+    "api_name": "polars.expr.array.ExprArrayNameSpace.__init__",
+    "score": 0.13793103448275862,
+    "rank": 436
+  },
+  {
+    "api_name": "polars.expr.binary.ExprBinaryNameSpace.__init__",
+    "score": 0.13793103448275862,
+    "rank": 436
+  },
+  {
+    "api_name": "polars.expr.categorical.ExprCatNameSpace.__init__",
+    "score": 0.13793103448275862,
+    "rank": 436
+  },
+  {
+    "api_name": "polars.expr.datetime.ExprDateTimeNameSpace.__init__",
+    "score": 0.13793103448275862,
+    "rank": 436
+  },
+  {
+    "api_name": "polars.expr.list.ExprListNameSpace.__init__",
+    "score": 0.13793103448275862,
+    "rank": 436
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.__init__",
+    "score": 0.13793103448275862,
+    "rank": 436
+  },
+  {
+    "api_name": "polars.expr.string.ExprStringNameSpace.__init__",
+    "score": 0.13793103448275862,
+    "rank": 436
+  },
+  {
+    "api_name": "polars.expr.struct.ExprStructNameSpace.__init__",
+    "score": 0.13793103448275862,
+    "rank": 436
+  },
+  {
+    "api_name": "polars.expr.expr.Expr._repr_html_",
+    "score": 0.13559322033898305,
+    "rank": 444
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.is_column",
+    "score": 0.13559322033898305,
+    "rank": 444
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.root_names",
+    "score": 0.13114754098360656,
+    "rank": 446
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__pos__",
+    "score": 0.12962962962962962,
+    "rank": 447
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.has_multiple_outputs",
+    "score": 0.12903225806451613,
+    "rank": 448
+  },
+  {
+    "api_name": "polars.expr.meta.ExprMetaNameSpace.is_regex_projection",
+    "score": 0.12903225806451613,
+    "rank": 448
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.replace",
+    "score": 0.12840466926070038,
+    "rank": 450
+  },
+  {
+    "api_name": "polars.expr.whenthen.ChainedThen.__init__",
+    "score": 0.1206896551724138,
+    "rank": 451
+  },
+  {
+    "api_name": "polars.expr.whenthen.ChainedWhen.__init__",
+    "score": 0.1206896551724138,
+    "rank": 451
+  },
+  {
+    "api_name": "polars.expr.whenthen.Then.__init__",
+    "score": 0.1206896551724138,
+    "rank": 451
+  },
+  {
+    "api_name": "polars.expr.whenthen.When.__init__",
+    "score": 0.1206896551724138,
+    "rank": 451
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.__array_ufunc__",
+    "score": 0.11538461538461539,
+    "rank": 455
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.pipe",
+    "score": 0.11494252873563218,
+    "rank": 456
+  },
+  {
+    "api_name": "polars.expr.expr.Expr.map_elements",
+    "score": 0.09941520467836257,
+    "rank": 457
+  }
+]

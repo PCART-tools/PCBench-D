@@ -1,0 +1,17 @@
+# detail
+Number of changes: 1
+
+1. Modified | Function implementation code block
+   Replaced the entire body of `raise_ioerror(error)`.
+   The original implementation included:
+
+   * Exception-handling structure: call `Image.core.getcodecstatus(error)` to obtain `message`, and use `ERRORS.get(error)` after catching `AttributeError`;
+   * Conditional statement: when `message` was empty, set it to `"decoder error %d" % error`;
+   * Exception-raising statement: raise `OSError(message + " when reading image file")`.
+
+   The new implementation includes:
+
+   * API call: call `warnings.warn(...)` to issue a `DeprecationWarning`;
+   * Return statement: return the result of `raise_oserror(error)`.
+# /detail
+# mode：Modify function implementation (replace original implementation with warning call and return-call statement)

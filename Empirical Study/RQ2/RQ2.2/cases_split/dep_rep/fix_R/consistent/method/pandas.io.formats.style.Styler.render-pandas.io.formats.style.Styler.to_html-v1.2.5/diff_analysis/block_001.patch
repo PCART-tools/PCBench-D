@@ -1,0 +1,9 @@
+@@ -1,2 +1,7 @@
+-    def render(self, **kwargs) -> str:
++    def render(
++        self,
++        sparse_index: bool | None = None,
++        sparse_columns: bool | None = None,
++        **kwargs,
++    ) -> str:
+         """

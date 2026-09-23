@@ -1,0 +1,14 @@
+# detail
+Number of changes: 1
+
+1. Modified | `else`-branch code block
+   Changed the original reduction assignment from `r.sum(axis=axis[0], keepdims=keepdims).max(keepdims=keepdims)` to first perform `sum` along `axis[0]` and then `max` along `axis[1]`, with both operations fixed to `keepdims=True`; also added a branch that executes `squeeze(axis=axis)` on `r` when `keepdims is False`.
+   The original implementation included:
+   * Reduction assignment: `sum(...).max(...)`, with both calls using `keepdims=keepdims`.
+
+   The new implementation includes:
+   * Reduction assignment: `sum(axis=axis[0], keepdims=True).max(axis=axis[1], keepdims=True)`;
+   * Conditional check: `if keepdims is False`;
+   * Tensor squeezing: `r.squeeze(axis=axis)`.
+# /detail
+# mode：Modify conditional branch (modify call arguments and add conditional statement)

@@ -1,0 +1,21 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced multiple implementation sections in the method with a single call to `self._draw_all()`.
+   The original implementation included:
+
+   * Conditional statement: determine whether to call `self.minorticks_on()` based on `self.orientation` and `mpl.rcParams`;
+   * Method calls: set the long-axis label and tick positions and clear the major and minor ticks of the short axis;
+   * Method call and assignments: call `self._process_values()` and set `self.vmin` and `self.vmax`;
+   * Assignment and method call: obtain `X, Y` through `self._mesh()` and call `self._do_extends()`;
+   * Conditional statement: swap `lower, upper` when the long axis was inverted;
+   * Conditional statement: set axis limits according to `self.orientation`;
+   * Method call: call `self.update_ticks()`;
+   * Conditional statement: when `self.filled` was true, construct `ind` and call `self._add_solids()`.
+
+   The new implementation includes:
+
+   * Method call: call `self._draw_all()`.
+# /detail
+# mode：Modify method implementation (replace original implementation with call statement)

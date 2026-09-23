@@ -1,0 +1,14 @@
+    def getxmp(self):
+        """
+        Returns a dictionary containing the XMP tags.
+        Requires defusedxml to be installed.
+
+        :returns: XMP tags in a dictionary.
+        """
+
+        for segment, content in self.applist:
+            if segment == "APP1":
+                marker, xmp_tags = content.rsplit(b"\x00", 1)
+                if marker == b"http://ns.adobe.com/xap/1.0/":
+                    return self._getxmp(xmp_tags)
+        return {}

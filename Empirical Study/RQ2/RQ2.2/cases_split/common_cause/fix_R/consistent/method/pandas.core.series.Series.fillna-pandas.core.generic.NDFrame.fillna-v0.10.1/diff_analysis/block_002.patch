@@ -1,0 +1,5 @@
+@@ -35,3 +30,3 @@
+         if not self._can_hold_na:
+-            return self.copy() if not inplace else self
++            return self.copy() if not inplace else None
+  

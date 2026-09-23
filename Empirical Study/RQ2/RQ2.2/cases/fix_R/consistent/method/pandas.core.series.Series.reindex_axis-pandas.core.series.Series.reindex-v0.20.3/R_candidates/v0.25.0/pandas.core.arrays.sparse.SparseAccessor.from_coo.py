@@ -1,0 +1,47 @@
+    @classmethod
+    def from_coo(cls, A, dense_index=False):
+        """
+        Create a SparseSeries from a scipy.sparse.coo_matrix.
+
+        Parameters
+        ----------
+        A : scipy.sparse.coo_matrix
+        dense_index : bool, default False
+            If False (default), the SparseSeries index consists of only the
+            coords of the non-null entries of the original coo_matrix.
+            If True, the SparseSeries index consists of the full sorted
+            (row, col) coordinates of the coo_matrix.
+
+        Returns
+        -------
+        s : SparseSeries
+
+        Examples
+        --------
+        >>> from scipy import sparse
+        >>> A = sparse.coo_matrix(([3.0, 1.0, 2.0], ([1, 0, 0], [0, 2, 3])),
+                               shape=(3, 4))
+        >>> A
+        <3x4 sparse matrix of type '<class 'numpy.float64'>'
+                with 3 stored elements in COOrdinate format>
+        >>> A.todense()
+        matrix([[ 0.,  0.,  1.,  2.],
+                [ 3.,  0.,  0.,  0.],
+                [ 0.,  0.,  0.,  0.]])
+        >>> ss = pd.SparseSeries.from_coo(A)
+        >>> ss
+        0  2    1
+           3    2
+        1  0    3
+        dtype: float64
+        BlockIndex
+        Block locations: array([0], dtype=int32)
+        Block lengths: array([3], dtype=int32)
+        """
+        from pandas.core.sparse.scipy_sparse import _coo_to_sparse_series
+        from pandas import Series
+
+        result = _coo_to_sparse_series(A, dense_index=dense_index, sparse_series=False)
+        result = Series(result.array, index=result.index, copy=False)
+
+        return result

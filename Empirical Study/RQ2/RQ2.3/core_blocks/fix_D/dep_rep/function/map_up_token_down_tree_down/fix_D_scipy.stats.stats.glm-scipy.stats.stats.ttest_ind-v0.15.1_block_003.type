@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Conditional statement
+   Changed the implementation in the `equal_var` branch from directly computing `df`, `svar`, and `denom` to calling `_equal_var_ttest_denom(v1, n1, v2, n2)` and unpacking the result into `df` and `denom`.
+# /detail
+# mode：Modify conditional branch (replace computational logic with call-assignment statement)

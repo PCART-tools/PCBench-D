@@ -1,0 +1,6 @@
+@@ -56,2 +66,5 @@
+             except (TypeError, ValueError) as err:
++                if dtype.kind == "u" and "losslessly" in str(err):
++                    # keep the message from _astype_float_to_int_nansafe
++                    raise
+                 raise TypeError(

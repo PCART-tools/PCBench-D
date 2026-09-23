@@ -1,0 +1,15 @@
+# detail
+Number of changes: 1
+
+1. Modified | Class definition
+   Changed `PoolLimits` from a standalone class to a subclass of `Limits`, and replaced the entire class-body implementation.
+   The original implementation included:
+
+   * Constructor: define the parameters `max_keepalive`, `max_connections`, `soft_limit`, and `hard_limit`, set instance attributes, and assign values and call `warn_deprecated` when `soft_limit` or `hard_limit` was provided;
+   * Comparison method: define `__eq__`, returning the result of a type check and comparisons of the connection-limit fields.
+
+   The new implementation includes:
+
+   * Constructor: define a `**kwargs` parameter and call `warn_deprecated`.
+# /detail
+# mode：Add superclass; Remove method; Modify parameter signature; Modify method implementation (add warning call)

@@ -1,0 +1,10 @@
+# detail
+Number of changes: 2
+
+1. Added | Function call statement
+   Added a `warnings.warn` call with a deprecation-message string, `FutureWarning`, and `stacklevel=2`.
+
+2. Modified | Return statement
+   Changed the return expression from the logical disjunction of an `ABCDatetimeIndex` check with nonempty `tz` and `is_datetime64tz_dtype(arr)` to directly returning `is_datetime64tz_dtype(arr)`.
+# /detail
+# mode：Add warning call; Modify return statement (replace returned logical expression with return-call statement)

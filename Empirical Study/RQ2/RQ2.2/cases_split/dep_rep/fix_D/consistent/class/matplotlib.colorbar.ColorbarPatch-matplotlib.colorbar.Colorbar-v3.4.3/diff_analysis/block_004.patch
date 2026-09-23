@@ -1,0 +1,5 @@
+@@ -42,3 +123,3 @@
+         mappable.colorbar = self
+-        mappable.colorbar_cid = mappable.callbacksSM.connect(
++        mappable.colorbar_cid = mappable.callbacks.connect(
+             'changed', self.update_normal)

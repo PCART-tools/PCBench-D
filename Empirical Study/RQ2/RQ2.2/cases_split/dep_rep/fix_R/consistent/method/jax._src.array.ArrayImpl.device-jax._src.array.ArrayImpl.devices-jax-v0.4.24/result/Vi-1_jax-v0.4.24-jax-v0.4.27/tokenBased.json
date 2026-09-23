@@ -1,0 +1,7212 @@
+[
+  {
+    "api_name": "jax._src.array.ArrayImpl.__reduce__",
+    "score": 0.48,
+    "rank": 1
+  },
+  {
+    "api_name": "jax._src.mesh.ResourceEnv.with_mesh",
+    "score": 0.45,
+    "rank": 2
+  },
+  {
+    "api_name": "jax._src.stages.XlaLowering.hlo",
+    "score": 0.45,
+    "rank": 2
+  },
+  {
+    "api_name": "jax._src.test_util.vectorize_with_mpmath.get_context",
+    "score": 0.4461538461538462,
+    "rank": 4
+  },
+  {
+    "api_name": "jax._src.linear_util.EqualStore.store",
+    "score": 0.4444444444444444,
+    "rank": 5
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.primitives.AsyncCopyDescriptor.wait_send",
+    "score": 0.43636363636363634,
+    "rank": 6
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.evaluate",
+    "score": 0.4339622641509434,
+    "rank": 7
+  },
+  {
+    "api_name": "jax._src.lax.parallel.XeinsumSpecParser.parse_args",
+    "score": 0.43103448275862066,
+    "rank": 8
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.__setattr__",
+    "score": 0.42857142857142855,
+    "rank": 9
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.evaluate",
+    "score": 0.42857142857142855,
+    "rank": 9
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.logpdf",
+    "score": 0.42857142857142855,
+    "rank": 9
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger._error_message",
+    "score": 0.42592592592592593,
+    "rank": 12
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.on_device_size_in_bytes",
+    "score": 0.4230769230769231,
+    "rank": 13
+  },
+  {
+    "api_name": "jax._src.stages.Compiled.output_layouts",
+    "score": 0.4230769230769231,
+    "rank": 13
+  },
+  {
+    "api_name": "jax._src.checkify.FailedCheckError.get_effect_type",
+    "score": 0.42105263157894735,
+    "rank": 15
+  },
+  {
+    "api_name": "jax._src.core.DShapedArray.join",
+    "score": 0.41935483870967744,
+    "rank": 16
+  },
+  {
+    "api_name": "jax._src.array.Shard.index",
+    "score": 0.41818181818181815,
+    "rank": 17
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.SemanticallyEqualShardings.__hash__",
+    "score": 0.4166666666666667,
+    "rank": 18
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.getvar",
+    "score": 0.4117647058823529,
+    "rank": 19
+  },
+  {
+    "api_name": "jax._src.config.Config.add_option",
+    "score": 0.40350877192982454,
+    "rank": 20
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.__eq__",
+    "score": 0.40350877192982454,
+    "rank": 20
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.makevar",
+    "score": 0.4032258064516129,
+    "rank": 22
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprStackFrame.newvar",
+    "score": 0.4032258064516129,
+    "rank": 22
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTracer.aval",
+    "score": 0.4032258064516129,
+    "rank": 22
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.StaticDOMElement.html",
+    "score": 0.40298507462686567,
+    "rank": 25
+  },
+  {
+    "api_name": "jax._src.config._StateContextManager.value",
+    "score": 0.4,
+    "rank": 26
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshComputation.cost_analysis",
+    "score": 0.3968253968253968,
+    "rank": 27
+  },
+  {
+    "api_name": "jax._src.maps.EvaluationPlan.resource_axis_env",
+    "score": 0.3968253968253968,
+    "rank": 27
+  },
+  {
+    "api_name": "jax._src.core.DShapedArray.str_short",
+    "score": 0.39655172413793105,
+    "rank": 29
+  },
+  {
+    "api_name": "jax._src.maps.XMapPrimitive.bind",
+    "score": 0.39622641509433965,
+    "rank": 30
+  },
+  {
+    "api_name": "jax._src.gfile_cache.GFileCache.get",
+    "score": 0.39285714285714285,
+    "rank": 31
+  },
+  {
+    "api_name": "jax._src.source_info_util.NameStack.__str__",
+    "score": 0.39215686274509803,
+    "rank": 32
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.__enter__",
+    "score": 0.3898305084745763,
+    "rank": 33
+  },
+  {
+    "api_name": "jax._src.stages.XlaLowering.mhlo",
+    "score": 0.3898305084745763,
+    "rank": 33
+  },
+  {
+    "api_name": "jax._src.core.Jaxpr.replace",
+    "score": 0.3888888888888889,
+    "rank": 35
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.is_compatible_aval",
+    "score": 0.3880597014925373,
+    "rank": 36
+  },
+  {
+    "api_name": "jax._src.custom_batching.ClosedRule.__call__",
+    "score": 0.38596491228070173,
+    "rank": 37
+  },
+  {
+    "api_name": "jax._src.errors._JAXErrorMixin.__init__",
+    "score": 0.38596491228070173,
+    "rank": 37
+  },
+  {
+    "api_name": "jax._src.core.ShapedArray.join",
+    "score": 0.38571428571428573,
+    "rank": 39
+  },
+  {
+    "api_name": "jax._src.linear_util.WrappedFun.__repr__",
+    "score": 0.38235294117647056,
+    "rank": 40
+  },
+  {
+    "api_name": "jax._src.core.ClosedCallPrimitive.get_bind_params",
+    "score": 0.38095238095238093,
+    "rank": 41
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde._reshape_points",
+    "score": 0.38095238095238093,
+    "rank": 41
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.layout",
+    "score": 0.38028169014084506,
+    "rank": 43
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.total",
+    "score": 0.38,
+    "rank": 44
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.PmapExecutable.call",
+    "score": 0.38,
+    "rank": 44
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTracer.get_referent",
+    "score": 0.3793103448275862,
+    "rank": 46
+  },
+  {
+    "api_name": "jax._src.debugger.web_debugger.WebDebugger.get_globals",
+    "score": 0.37735849056603776,
+    "rank": 47
+  },
+  {
+    "api_name": "jax._src.debugger.web_debugger.WebDebugger.get_locals",
+    "score": 0.37735849056603776,
+    "rank": 47
+  },
+  {
+    "api_name": "jax._src.ad_util.SymbolicZero.__getattr__",
+    "score": 0.375,
+    "rank": 49
+  },
+  {
+    "api_name": "jax._src.api.ShapeDtypeStruct.__eq__",
+    "score": 0.375,
+    "rank": 49
+  },
+  {
+    "api_name": "jax._src.callback._FlatCallback.__call__",
+    "score": 0.375,
+    "rank": 49
+  },
+  {
+    "api_name": "jax._src.pallas.core.BlockSpec.compute_index",
+    "score": 0.375,
+    "rank": 49
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.addressable_shards",
+    "score": 0.3728813559322034,
+    "rank": 53
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.new_const",
+    "score": 0.3728813559322034,
+    "rank": 53
+  },
+  {
+    "api_name": "jax._src.core.MapPrimitive.bind",
+    "score": 0.37254901960784315,
+    "rank": 55
+  },
+  {
+    "api_name": "jax._src.custom_transpose.StoreEqual.store",
+    "score": 0.37254901960784315,
+    "rank": 55
+  },
+  {
+    "api_name": "jax._src.sharding_impls.DeviceIdSet.__repr__",
+    "score": 0.37254901960784315,
+    "rank": 55
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef.dtype",
+    "score": 0.37254901960784315,
+    "rank": 55
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef.shape",
+    "score": 0.37254901960784315,
+    "rank": 55
+  },
+  {
+    "api_name": "jax._src.state.types.RefIndexer.__getitem__",
+    "score": 0.37142857142857144,
+    "rank": 60
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.sqrt",
+    "score": 0.3709677419354839,
+    "rank": 61
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding.is_compatible_aval",
+    "score": 0.3698630136986301,
+    "rank": 62
+  },
+  {
+    "api_name": "jax._src.custom_transpose.CustomTransposePrimitive.bind",
+    "score": 0.3684210526315789,
+    "rank": 63
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.sublift",
+    "score": 0.36764705882352944,
+    "rank": 64
+  },
+  {
+    "api_name": "jax._src.pallas.triton.lowering._Extern.matches",
+    "score": 0.36764705882352944,
+    "rank": 64
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding.is_fully_replicated",
+    "score": 0.36764705882352944,
+    "rank": 64
+  },
+  {
+    "api_name": "jax._src.stages.Compiled.__call__",
+    "score": 0.36764705882352944,
+    "rank": 64
+  },
+  {
+    "api_name": "jax._src.config.Config.read",
+    "score": 0.3673469387755102,
+    "rank": 68
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTracer.__str__",
+    "score": 0.3673469387755102,
+    "rank": 68
+  },
+  {
+    "api_name": "jax._src.core.ConcreteArray.__eq__",
+    "score": 0.36507936507936506,
+    "rank": 70
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.__eq__",
+    "score": 0.36507936507936506,
+    "rank": 70
+  },
+  {
+    "api_name": "jax._src.core.ShapedArray.str_short",
+    "score": 0.36486486486486486,
+    "rank": 72
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__getattr__",
+    "score": 0.36363636363636365,
+    "rank": 73
+  },
+  {
+    "api_name": "jax._src.lax.parallel.XeinsumSpecParser.parse_axis_name",
+    "score": 0.36363636363636365,
+    "rank": 73
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.core.SemaphoreType.__call__",
+    "score": 0.36363636363636365,
+    "rank": 73
+  },
+  {
+    "api_name": "jax._src.config.Config.parse_flags_with_absl",
+    "score": 0.36231884057971014,
+    "rank": 76
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding.__repr__",
+    "score": 0.3620689655172414,
+    "rank": 77
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.__hash__",
+    "score": 0.3617021276595745,
+    "rank": 78
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.ModuleContext.backend",
+    "score": 0.36065573770491804,
+    "rank": 79
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTrace.lift",
+    "score": 0.36,
+    "rank": 80
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTrace.pure",
+    "score": 0.36,
+    "rank": 80
+  },
+  {
+    "api_name": "jax._src.debugging._DebugPrintFormatChecker.check_unused_args",
+    "score": 0.359375,
+    "rank": 82
+  },
+  {
+    "api_name": "jax._src.core.ClosedJaxpr.replace",
+    "score": 0.3584905660377358,
+    "rank": 83
+  },
+  {
+    "api_name": "jax._src.interpreters.xla._BackendSpecificTranslationsAdapter.__missing__",
+    "score": 0.3584905660377358,
+    "rank": 83
+  },
+  {
+    "api_name": "jax._src.pallas.core.AbstractMemoryRef.update",
+    "score": 0.3584905660377358,
+    "rank": 83
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.new_arg",
+    "score": 0.3582089552238806,
+    "rank": 86
+  },
+  {
+    "api_name": "jax._src.core.AbstractValue.__repr__",
+    "score": 0.35714285714285715,
+    "rank": 87
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.instantiate_const",
+    "score": 0.35714285714285715,
+    "rank": 87
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.ExecuteReplicated._add_tokens_to_inputs",
+    "score": 0.35714285714285715,
+    "rank": 87
+  },
+  {
+    "api_name": "jax._src.core.CallPrimitive.bind",
+    "score": 0.3559322033898305,
+    "rank": 90
+  },
+  {
+    "api_name": "jax._src.mesh.ResourceEnv.with_extra_loop",
+    "score": 0.3559322033898305,
+    "rank": 90
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.__eq__",
+    "score": 0.3559322033898305,
+    "rank": 90
+  },
+  {
+    "api_name": "jax._src.core.TraceStack.copy",
+    "score": 0.3541666666666667,
+    "rank": 93
+  },
+  {
+    "api_name": "jax._src.lax.stack.Stack.flatten",
+    "score": 0.3541666666666667,
+    "rank": 93
+  },
+  {
+    "api_name": "jax._src.pallas.core.AbstractMemoryRef.join",
+    "score": 0.3541666666666667,
+    "rank": 93
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTracer.__init__",
+    "score": 0.35294117647058826,
+    "rank": 96
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.new_const",
+    "score": 0.352112676056338,
+    "rank": 97
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.resample",
+    "score": 0.352112676056338,
+    "rank": 97
+  },
+  {
+    "api_name": "jax._src.core.TraceState.copy",
+    "score": 0.35185185185185186,
+    "rank": 99
+  },
+  {
+    "api_name": "jax._src.core.UnshapedArray.join",
+    "score": 0.35185185185185186,
+    "rank": 99
+  },
+  {
+    "api_name": "jax._src.prng.PRNGImpl.pprint",
+    "score": 0.35135135135135137,
+    "rank": 101
+  },
+  {
+    "api_name": "jax._src.core.ClosedJaxpr.__init__",
+    "score": 0.3508771929824561,
+    "rank": 102
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateRef.divide",
+    "score": 0.3508771929824561,
+    "rank": 102
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateRef.power",
+    "score": 0.3508771929824561,
+    "rank": 102
+  },
+  {
+    "api_name": "jax._src.config.Config.complete_absl_config",
+    "score": 0.35,
+    "rank": 105
+  },
+  {
+    "api_name": "jax._src.core.Primitive.bind",
+    "score": 0.35,
+    "rank": 105
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTracer.get_referent",
+    "score": 0.35,
+    "rank": 105
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.lowering.MosaicGridMapping._prepare_mesh_info",
+    "score": 0.35,
+    "rank": 105
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.BaseTpuCluster.get_process_count",
+    "score": 0.3492063492063492,
+    "rank": 109
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.lowering.MosaicGridMapping.get_dimension_semantics",
+    "score": 0.3484848484848485,
+    "rank": 110
+  },
+  {
+    "api_name": "jax._src.core.Literal.__init__",
+    "score": 0.34782608695652173,
+    "rank": 111
+  },
+  {
+    "api_name": "jax._src.maps.EvaluationPlan.subst_axes_with_resources",
+    "score": 0.34782608695652173,
+    "rank": 111
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.__len__",
+    "score": 0.34782608695652173,
+    "rank": 111
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.device_ids",
+    "score": 0.3469387755102041,
+    "rank": 114
+  },
+  {
+    "api_name": "jax._src.util.WrapKwArgs.__hash__",
+    "score": 0.3469387755102041,
+    "rank": 114
+  },
+  {
+    "api_name": "jax._src.checkify.BatchedError.__str__",
+    "score": 0.34615384615384615,
+    "rank": 116
+  },
+  {
+    "api_name": "jax._src.core.Tracer.sharding",
+    "score": 0.34615384615384615,
+    "rank": 116
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.DebuggerView.readline",
+    "score": 0.34615384615384615,
+    "rank": 116
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.ParallelCallableInfo.local_devices",
+    "score": 0.34615384615384615,
+    "rank": 116
+  },
+  {
+    "api_name": "jax._src.mesh.ResourceEnv.__repr__",
+    "score": 0.34615384615384615,
+    "rank": 116
+  },
+  {
+    "api_name": "jax._src.util.HashablePartial.__hash__",
+    "score": 0.34615384615384615,
+    "rank": 116
+  },
+  {
+    "api_name": "jax._src.stages.XlaLowering.as_text",
+    "score": 0.345679012345679,
+    "rank": 122
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.unsafe_buffer_pointer",
+    "score": 0.34545454545454546,
+    "rank": 123
+  },
+  {
+    "api_name": "jax._src.core.EvalTrace.process_primitive",
+    "score": 0.34545454545454546,
+    "rank": 123
+  },
+  {
+    "api_name": "jax._src.state.indexing.NDIndexer.tree_unflatten",
+    "score": 0.3448275862068966,
+    "rank": 125
+  },
+  {
+    "api_name": "jax._src.third_party.scipy.interpolate.RegularGridInterpolator._evaluate_nearest",
+    "score": 0.3448275862068966,
+    "rank": 125
+  },
+  {
+    "api_name": "jax._src.core.DArray.__init__",
+    "score": 0.34375,
+    "rank": 127
+  },
+  {
+    "api_name": "jax._src.internal_test_util.test_harnesses.Harness._args_from_dynargs",
+    "score": 0.34285714285714286,
+    "rank": 128
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ParsedPartitionSpec.insert_axis_partitions",
+    "score": 0.34177215189873417,
+    "rank": 129
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray._is_scalar",
+    "score": 0.3404255319148936,
+    "rank": 130
+  },
+  {
+    "api_name": "jax._src.api.ShapeDtypeStruct.__hash__",
+    "score": 0.34,
+    "rank": 131
+  },
+  {
+    "api_name": "jax._src.config.Config.update",
+    "score": 0.34,
+    "rank": 131
+  },
+  {
+    "api_name": "jax._src.core.DArray.__eq__",
+    "score": 0.34,
+    "rank": 131
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.__str__",
+    "score": 0.34,
+    "rank": 131
+  },
+  {
+    "api_name": "jax._src.core.JaxprPpContext.__init__",
+    "score": 0.33962264150943394,
+    "rank": 135
+  },
+  {
+    "api_name": "jax._src.linear_util.WrappedFun.populate_stores",
+    "score": 0.33962264150943394,
+    "rank": 135
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.primitives.AsyncCopyDescriptor.wait_recv",
+    "score": 0.33962264150943394,
+    "rank": 135
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase.tearDown",
+    "score": 0.33962264150943394,
+    "rank": 135
+  },
+  {
+    "api_name": "jax._src.maps.XMapPrimitive.post_process",
+    "score": 0.3392857142857143,
+    "rank": 139
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.__str__",
+    "score": 0.3387096774193548,
+    "rank": 140
+  },
+  {
+    "api_name": "jax._src.lax.stack.Stack.pop",
+    "score": 0.3387096774193548,
+    "rank": 140
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc.__eq__",
+    "score": 0.3387096774193548,
+    "rank": 140
+  },
+  {
+    "api_name": "jax._src.pallas.core.GridSpec.unzip_dynamic_grid_bounds",
+    "score": 0.33783783783783783,
+    "rank": 143
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.instantiate_const",
+    "score": 0.33766233766233766,
+    "rank": 144
+  },
+  {
+    "api_name": "jax._src.stages.XlaExecutable.memory_analysis",
+    "score": 0.3373493975903614,
+    "rank": 145
+  },
+  {
+    "api_name": "jax._src.ad_checkpoint.WrapHashably.__eq__",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.core.DArray.__hash__",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.core.DShapedArray.__eq__",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.core.Primitive.bind_with_trace",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.core.ShapedArray.__eq__",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.core.UnshapedArray.__eq__",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.core.UnshapedArray.update",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.layout.Layout.__eq__",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateRef.apply",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.pallas.core.AbstractMemoryRef.__eq__",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.copy",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.pprint",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.stages.XlaLowering.compiler_ir",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.state.discharge.Environment.read",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.state.indexing.Slice.from_slice",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef.join",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.tree_util._HashableCallableShim.__eq__",
+    "score": 0.3333333333333333,
+    "rank": 146
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.print_backtrace",
+    "score": 0.32926829268292684,
+    "rank": 163
+  },
+  {
+    "api_name": "jax._src.core.CallPrimitive.get_bind_params",
+    "score": 0.32894736842105265,
+    "rank": 164
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.TokenSet.update_tokens",
+    "score": 0.32894736842105265,
+    "rank": 164
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase.setUp",
+    "score": 0.3287671232876712,
+    "rank": 166
+  },
+  {
+    "api_name": "jax._src.source_info_util.NameStack.extend",
+    "score": 0.32857142857142857,
+    "rank": 167
+  },
+  {
+    "api_name": "jax._src.api.ShapeDtypeStruct.__repr__",
+    "score": 0.328125,
+    "rank": 168
+  },
+  {
+    "api_name": "jax._src.core.EvalTrace.process_call",
+    "score": 0.3275862068965517,
+    "rank": 169
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.__exit__",
+    "score": 0.3275862068965517,
+    "rank": 169
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.addressable_shards",
+    "score": 0.3275862068965517,
+    "rank": 169
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.global_shards",
+    "score": 0.3275862068965517,
+    "rank": 169
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__cuda_array_interface__",
+    "score": 0.32727272727272727,
+    "rank": 173
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.process_primitive",
+    "score": 0.32727272727272727,
+    "rank": 173
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.process_primitive",
+    "score": 0.32727272727272727,
+    "rank": 173
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.primitives.AsyncCopyDescriptor.start",
+    "score": 0.32727272727272727,
+    "rank": 173
+  },
+  {
+    "api_name": "jax._src.sharding_impls.DeviceIdSet.__add__",
+    "score": 0.3269230769230769,
+    "rank": 177
+  },
+  {
+    "api_name": "jax._src.api_util._HashableWithStrictTypeEquality.__eq__",
+    "score": 0.32653061224489793,
+    "rank": 178
+  },
+  {
+    "api_name": "jax._src.core.TraceStack.__repr__",
+    "score": 0.32653061224489793,
+    "rank": 178
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.shape",
+    "score": 0.32653061224489793,
+    "rank": 178
+  },
+  {
+    "api_name": "jax._src.pallas.core.GridSpec._get_in_out_specs",
+    "score": 0.3258426966292135,
+    "rank": 181
+  },
+  {
+    "api_name": "jax._src.core.AxisPrimitive.bind",
+    "score": 0.3246753246753247,
+    "rank": 182
+  },
+  {
+    "api_name": "jax._src.custom_transpose.CustomTransposePrimitive.get_bind_params",
+    "score": 0.3246753246753247,
+    "rank": 182
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.post_process_custom_vjp_call",
+    "score": 0.32432432432432434,
+    "rank": 184
+  },
+  {
+    "api_name": "jax._src.core.DShapedArray.update",
+    "score": 0.3225806451612903,
+    "rank": 185
+  },
+  {
+    "api_name": "jax._src.sharding_impls.XLACompatibleSharding._addressable_device_assignment",
+    "score": 0.3225806451612903,
+    "rank": 185
+  },
+  {
+    "api_name": "jax._src.lax.stack.Stack.push",
+    "score": 0.3220338983050847,
+    "rank": 187
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__iter__",
+    "score": 0.32142857142857145,
+    "rank": 188
+  },
+  {
+    "api_name": "jax._src.core.ConcreteArray.join",
+    "score": 0.32142857142857145,
+    "rank": 188
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.__iter__",
+    "score": 0.32142857142857145,
+    "rank": 188
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding.__eq__",
+    "score": 0.32142857142857145,
+    "rank": 188
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__dlpack_device__",
+    "score": 0.3211009174311927,
+    "rank": 192
+  },
+  {
+    "api_name": "jax._src.stages.Compiled.input_layouts",
+    "score": 0.32098765432098764,
+    "rank": 193
+  },
+  {
+    "api_name": "jax._src.util.HashableWrapper.__eq__",
+    "score": 0.32075471698113206,
+    "rank": 194
+  },
+  {
+    "api_name": "jax._src.core.MapPrimitive.get_bind_params",
+    "score": 0.32051282051282054,
+    "rank": 195
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.DynamicDiv.render",
+    "score": 0.32,
+    "rank": 196
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.post_process_call",
+    "score": 0.32,
+    "rank": 196
+  },
+  {
+    "api_name": "jax._src.sharding_impls.DeviceIdSet.__eq__",
+    "score": 0.32,
+    "rank": 196
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.__eq__",
+    "score": 0.32,
+    "rank": 196
+  },
+  {
+    "api_name": "jax._src.core.ConcreteArray.__init__",
+    "score": 0.3194444444444444,
+    "rank": 200
+  },
+  {
+    "api_name": "jax._src.sharding_impls.CanonicalizedParsedPartitionSpec.__init__",
+    "score": 0.3188405797101449,
+    "rank": 201
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.device_put_replicated",
+    "score": 0.3176470588235294,
+    "rank": 202
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.new_instantiated_literal",
+    "score": 0.31746031746031744,
+    "rank": 203
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.SPMDBatchTrace.get_axis_primitive_batcher",
+    "score": 0.31746031746031744,
+    "rank": 203
+  },
+  {
+    "api_name": "jax._src.maps.EvaluationPlan.to_mesh_axes",
+    "score": 0.31666666666666665,
+    "rank": 205
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.full",
+    "score": 0.31645569620253167,
+    "rank": 206
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.print_context",
+    "score": 0.3157894736842105,
+    "rank": 207
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.__init__",
+    "score": 0.3157894736842105,
+    "rank": 207
+  },
+  {
+    "api_name": "jax._src.util.HashablePartial.__eq__",
+    "score": 0.3148148148148148,
+    "rank": 209
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.BaseTpuCluster.get_process_id",
+    "score": 0.3142857142857143,
+    "rank": 210
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__format__",
+    "score": 0.3137254901960784,
+    "rank": 211
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.__getitem__",
+    "score": 0.3137254901960784,
+    "rank": 211
+  },
+  {
+    "api_name": "jax._src.core.Tracer.on_device_size_in_bytes",
+    "score": 0.3137254901960784,
+    "rank": 211
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.__hash__",
+    "score": 0.3137254901960784,
+    "rank": 211
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.core.AbstractSemaphore.join",
+    "score": 0.3137254901960784,
+    "rank": 211
+  },
+  {
+    "api_name": "jax._src.state.indexing.NDIndexer.tree_flatten",
+    "score": 0.3137254901960784,
+    "rank": 211
+  },
+  {
+    "api_name": "jax._src.util.HashableFunction.__eq__",
+    "score": 0.3137254901960784,
+    "rank": 211
+  },
+  {
+    "api_name": "jax._src.debugger.core.DebuggerFrame.tree_flatten",
+    "score": 0.3132530120481928,
+    "rank": 218
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.get_primitive_batcher",
+    "score": 0.3132530120481928,
+    "rank": 218
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.GceTpuCluster.is_env_present",
+    "score": 0.3125,
+    "rank": 220
+  },
+  {
+    "api_name": "jax._src.effects.JaxprInputEffect.__eq__",
+    "score": 0.3125,
+    "rank": 220
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.__getitem__",
+    "score": 0.3125,
+    "rank": 220
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.supported",
+    "score": 0.3125,
+    "rank": 220
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.DebuggerView.__init__",
+    "score": 0.3116883116883117,
+    "rank": 224
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.device_put_sharded",
+    "score": 0.3116883116883117,
+    "rank": 224
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.__eq__",
+    "score": 0.3114754098360656,
+    "rank": 226
+  },
+  {
+    "api_name": "jax._src.checkify.ErrorEffect.__lt__",
+    "score": 0.3108108108108108,
+    "rank": 227
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.SemanticallyEqualShardings.__eq__",
+    "score": 0.3108108108108108,
+    "rank": 227
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.CustomJVPCallPrimitive.get_bind_params",
+    "score": 0.30864197530864196,
+    "rank": 229
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateRef.add",
+    "score": 0.3076923076923077,
+    "rank": 230
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateRef.max",
+    "score": 0.3076923076923077,
+    "rank": 230
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateRef.min",
+    "score": 0.3076923076923077,
+    "rank": 230
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateRef.multiply",
+    "score": 0.3076923076923077,
+    "rank": 230
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateRef.set",
+    "score": 0.3076923076923077,
+    "rank": 230
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.__init__",
+    "score": 0.3076923076923077,
+    "rank": 230
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestLoader.getTestCaseNames",
+    "score": 0.30666666666666664,
+    "rank": 236
+  },
+  {
+    "api_name": "jax._src.state.indexing.NDIndexer.get_indexer_shape",
+    "score": 0.3064516129032258,
+    "rank": 237
+  },
+  {
+    "api_name": "jax._src.mesh.ResourceEnv.shape",
+    "score": 0.30434782608695654,
+    "rank": 238
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.sharding",
+    "score": 0.30434782608695654,
+    "rank": 238
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding.__eq__",
+    "score": 0.30434782608695654,
+    "rank": 238
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.__repr__",
+    "score": 0.30434782608695654,
+    "rank": 238
+  },
+  {
+    "api_name": "jax._src.stages.XlaExecutable.as_text",
+    "score": 0.30434782608695654,
+    "rank": 238
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.tree_unflatten",
+    "score": 0.3037974683544304,
+    "rank": 243
+  },
+  {
+    "api_name": "jax._src.lax.lax.BIntRules.result_handler",
+    "score": 0.30357142857142855,
+    "rank": 244
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.global_shards",
+    "score": 0.3023255813953488,
+    "rank": 245
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTracer.full_lower",
+    "score": 0.3018867924528302,
+    "rank": 246
+  },
+  {
+    "api_name": "jax._src.sharding.Sharding.addressable_devices",
+    "score": 0.3018867924528302,
+    "rank": 246
+  },
+  {
+    "api_name": "jax._src.core.ConcreteArray.update",
+    "score": 0.30158730158730157,
+    "rank": 248
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshExecutable.call",
+    "score": 0.30120481927710846,
+    "rank": 249
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.__hash__",
+    "score": 0.3,
+    "rank": 250
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding.__hash__",
+    "score": 0.3,
+    "rank": 250
+  },
+  {
+    "api_name": "jax._src.stages.Compiled.input_shardings",
+    "score": 0.3,
+    "rank": 250
+  },
+  {
+    "api_name": "jax._src.stages.Compiled.output_shardings",
+    "score": 0.3,
+    "rank": 250
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.instantiate_const_abstracted",
+    "score": 0.2987012987012987,
+    "rank": 254
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.FramePreview.__init__",
+    "score": 0.29850746268656714,
+    "rank": 255
+  },
+  {
+    "api_name": "jax._src.core.MainTrace.__eq__",
+    "score": 0.2982456140350877,
+    "rank": 256
+  },
+  {
+    "api_name": "jax._src.distributed.State.initialize_preemption_sync_manager",
+    "score": 0.2982456140350877,
+    "rank": 256
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.result_handler",
+    "score": 0.2982456140350877,
+    "rank": 256
+  },
+  {
+    "api_name": "jax._src.linear_util.Store.store",
+    "score": 0.2978723404255319,
+    "rank": 259
+  },
+  {
+    "api_name": "jax._src.pallas.triton.lowering._Extern.lower",
+    "score": 0.2976190476190476,
+    "rank": 260
+  },
+  {
+    "api_name": "jax._src.internal_test_util.test_harnesses.Harness._arg_maker",
+    "score": 0.2972972972972973,
+    "rank": 261
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.copy_to_host_async",
+    "score": 0.296875,
+    "rank": 262
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshComputation.compile",
+    "score": 0.296875,
+    "rank": 262
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.PmapComputation.compile",
+    "score": 0.296875,
+    "rank": 262
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase.assertArraysEqual",
+    "score": 0.2967032967032967,
+    "rank": 265
+  },
+  {
+    "api_name": "jax._src.checkify.BatchedError.__post_init__",
+    "score": 0.2962962962962963,
+    "rank": 266
+  },
+  {
+    "api_name": "jax._src.core.ShapedArray.__init__",
+    "score": 0.29508196721311475,
+    "rank": 267
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace._lift_tracers_in_aval",
+    "score": 0.2948717948717949,
+    "rank": 268
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.__hash__",
+    "score": 0.29411764705882354,
+    "rank": 269
+  },
+  {
+    "api_name": "jax._src.state.types.RefEffect._pretty_print",
+    "score": 0.29347826086956524,
+    "rank": 270
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase.assertDtypesMatch",
+    "score": 0.29333333333333333,
+    "rank": 271
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Slerp.__call__",
+    "score": 0.29245283018867924,
+    "rank": 272
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.check_replicated_trailing_dims",
+    "score": 0.2916666666666667,
+    "rank": 273
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.device_set",
+    "score": 0.2916666666666667,
+    "rank": 273
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__array__",
+    "score": 0.2909090909090909,
+    "rank": 275
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.BaseTpuCluster.get_coordinator_address",
+    "score": 0.2891566265060241,
+    "rank": 276
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.ShapePolyLoweringState.__init__",
+    "score": 0.2891566265060241,
+    "rank": 276
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace._new_const",
+    "score": 0.2891566265060241,
+    "rank": 276
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.custom_jvp.defjvps",
+    "score": 0.28888888888888886,
+    "rank": 279
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.CustomVJPCallPrimitive.impl",
+    "score": 0.28846153846153844,
+    "rank": 280
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding.__hash__",
+    "score": 0.28846153846153844,
+    "rank": 280
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.__hash__",
+    "score": 0.28846153846153844,
+    "rank": 280
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SPMDAxisContext.axis_env",
+    "score": 0.28846153846153844,
+    "rank": 280
+  },
+  {
+    "api_name": "jax._src.internal_test_util.export_back_compat_test_util.CompatTestBase.starter_data",
+    "score": 0.2878787878787879,
+    "rank": 284
+  },
+  {
+    "api_name": "jax._src.lax.lax.BIntRules.global_sharded_result_handler",
+    "score": 0.2875,
+    "rank": 285
+  },
+  {
+    "api_name": "jax._src.config.Config.config_with_absl",
+    "score": 0.28735632183908044,
+    "rank": 286
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.UnloadedMeshExecutable.build_unsafe_call",
+    "score": 0.28735632183908044,
+    "rank": 286
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTrace.process_primitive",
+    "score": 0.2872340425531915,
+    "rank": 288
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTrace.process_custom_jvp_call",
+    "score": 0.2872340425531915,
+    "rank": 288
+  },
+  {
+    "api_name": "jax._src.config.Config._read",
+    "score": 0.2857142857142857,
+    "rank": 290
+  },
+  {
+    "api_name": "jax._src.core.ShapedArray.__hash__",
+    "score": 0.2857142857142857,
+    "rank": 290
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.do_up",
+    "score": 0.2857142857142857,
+    "rank": 290
+  },
+  {
+    "api_name": "jax._src.layout.DeviceLocalLayout.__eq__",
+    "score": 0.2857142857142857,
+    "rank": 290
+  },
+  {
+    "api_name": "jax._src.state.types.RefEffect.__eq__",
+    "score": 0.2857142857142857,
+    "rank": 290
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.custom_floats",
+    "score": 0.2857142857142857,
+    "rank": 290
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.DynamicDiv.append",
+    "score": 0.2833333333333333,
+    "rank": 296
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.process_custom_jvp_call",
+    "score": 0.2833333333333333,
+    "rank": 296
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTracer.parents",
+    "score": 0.2833333333333333,
+    "rank": 296
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl._check_if_deleted",
+    "score": 0.2830188679245283,
+    "rank": 299
+  },
+  {
+    "api_name": "jax._src.checkify.Error.tree_unflatten",
+    "score": 0.2830188679245283,
+    "rank": 299
+  },
+  {
+    "api_name": "jax._src.checkify.FailedCheckError.__init__",
+    "score": 0.2830188679245283,
+    "rank": 299
+  },
+  {
+    "api_name": "jax._src.checkify.OOBError.__init__",
+    "score": 0.2830188679245283,
+    "rank": 299
+  },
+  {
+    "api_name": "jax._src.checkify.OOBError.get_effect_type",
+    "score": 0.2830188679245283,
+    "rank": 299
+  },
+  {
+    "api_name": "jax._src.core.ConcreteArray.str_short",
+    "score": 0.2830188679245283,
+    "rank": 299
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.Residuals.tree_unflatten",
+    "score": 0.2830188679245283,
+    "rank": 299
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.ColabDebugger.do_down",
+    "score": 0.2830188679245283,
+    "rank": 299
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.ColabDebugger.do_up",
+    "score": 0.2830188679245283,
+    "rank": 299
+  },
+  {
+    "api_name": "jax._src.state.indexing.Slice.tree_unflatten",
+    "score": 0.28125,
+    "rank": 308
+  },
+  {
+    "api_name": "jax._src.interpreters.xla._TranslationRuleAdapter.__setitem__",
+    "score": 0.2807017543859649,
+    "rank": 309
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.__str__",
+    "score": 0.2807017543859649,
+    "rank": 309
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.integrate_box_1d",
+    "score": 0.2803738317757009,
+    "rank": 311
+  },
+  {
+    "api_name": "jax._src.core.Tracer.tobytes",
+    "score": 0.28,
+    "rank": 312
+  },
+  {
+    "api_name": "jax._src.mesh.ResourceEnv.local_shape",
+    "score": 0.28,
+    "rank": 312
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef.__eq__",
+    "score": 0.28,
+    "rank": 312
+  },
+  {
+    "api_name": "jax._src.core.ShapedArray.update",
+    "score": 0.2777777777777778,
+    "rank": 315
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.DynamicDiv.__post_init__",
+    "score": 0.2777777777777778,
+    "rank": 315
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTracer._origin_msg",
+    "score": 0.2777777777777778,
+    "rank": 315
+  },
+  {
+    "api_name": "jax._src.lax.stack.Stack.create",
+    "score": 0.2777777777777778,
+    "rank": 315
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTrace.join",
+    "score": 0.27710843373493976,
+    "rank": 319
+  },
+  {
+    "api_name": "jax._src.core.Jaxpr.pretty_print",
+    "score": 0.27692307692307694,
+    "rank": 320
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.integrate_gaussian",
+    "score": 0.2767857142857143,
+    "rank": 321
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.integrate_kde",
+    "score": 0.2767857142857143,
+    "rank": 321
+  },
+  {
+    "api_name": "jax._src.maps.FrozenDict.__eq__",
+    "score": 0.2765957446808511,
+    "rank": 323
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.__len__",
+    "score": 0.2765957446808511,
+    "rank": 323
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.__mul__",
+    "score": 0.2765957446808511,
+    "rank": 323
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprStackFrame.find_progenitors",
+    "score": 0.2755102040816326,
+    "rank": 326
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTrace.process_custom_vjp_call",
+    "score": 0.2755102040816326,
+    "rank": 326
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.new_instantiated_const",
+    "score": 0.27472527472527475,
+    "rank": 328
+  },
+  {
+    "api_name": "jax._src.core.JaxprEqn.__repr__",
+    "score": 0.27450980392156865,
+    "rank": 329
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.__init__",
+    "score": 0.27450980392156865,
+    "rank": 329
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ParsedPartitionSpec.__init__",
+    "score": 0.27450980392156865,
+    "rank": 329
+  },
+  {
+    "api_name": "jax._src.numpy.index_tricks._Ogrid.__getitem__",
+    "score": 0.27380952380952384,
+    "rank": 332
+  },
+  {
+    "api_name": "jax._src.core.Tracer._pretty_print",
+    "score": 0.27358490566037735,
+    "rank": 333
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.UnloadedPmapExecutable.load",
+    "score": 0.2727272727272727,
+    "rank": 334
+  },
+  {
+    "api_name": "jax._src.lax.parallel.XeinsumSpecParser.parse_subscript",
+    "score": 0.2727272727272727,
+    "rank": 334
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ParsedPartitionSpec.unsynced_user_spec",
+    "score": 0.2727272727272727,
+    "rank": 334
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.replicate",
+    "score": 0.2727272727272727,
+    "rank": 334
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.is_fully_replicated",
+    "score": 0.2711864406779661,
+    "rank": 338
+  },
+  {
+    "api_name": "jax._src.pallas.core.BlockMapping.compute_start_indices",
+    "score": 0.27102803738317754,
+    "rank": 339
+  },
+  {
+    "api_name": "jax._src.core.Sublevel.__eq__",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.core.Tracer.delete",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.core.Tracer.devices",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.core.Tracer.tolist",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.core.UnshapedArray.__repr__",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.core.Var.__repr__",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.core._TempAxisName.__eq__",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.earray.EArray.__len__",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.maps._UniqueResourceName.__eq__",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.numpy.index_tricks._Mgrid.__getitem__",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.prng.KeyTy.__eq__",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.sharding.Sharding.device_set",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.device_set",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.device_set",
+    "score": 0.2708333333333333,
+    "rank": 340
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.GceTpuCluster._get_worker_list_in_slice",
+    "score": 0.2698412698412698,
+    "rank": 354
+  },
+  {
+    "api_name": "jax._src.internal_test_util.test_harnesses.Limitation.__str__",
+    "score": 0.2692307692307692,
+    "rank": 355
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTracer.full_lower",
+    "score": 0.2692307692307692,
+    "rank": 355
+  },
+  {
+    "api_name": "jax._src.lax.stack.Stack.unflatten",
+    "score": 0.2692307692307692,
+    "rank": 355
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.global_sharded_result_handler",
+    "score": 0.2692307692307692,
+    "rank": 355
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ShardingContext.__post_init__",
+    "score": 0.2692307692307692,
+    "rank": 355
+  },
+  {
+    "api_name": "jax._src.stages.Stage.donate_argnums",
+    "score": 0.2692307692307692,
+    "rank": 355
+  },
+  {
+    "api_name": "jax._src.custom_transpose.custom_transpose.__call__",
+    "score": 0.26881720430107525,
+    "rank": 361
+  },
+  {
+    "api_name": "jax._src.pretty_printer._TextDoc.__init__",
+    "score": 0.26865671641791045,
+    "rank": 362
+  },
+  {
+    "api_name": "jax._src.linear_util.WrappedFun.__eq__",
+    "score": 0.26785714285714285,
+    "rank": 363
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.GkeTpuCluster.is_env_present",
+    "score": 0.2676056338028169,
+    "rank": 364
+  },
+  {
+    "api_name": "jax._src.debugger.core.DebuggerFrame.from_frameinfo",
+    "score": 0.26666666666666666,
+    "rank": 365
+  },
+  {
+    "api_name": "jax._src.test_util.vectorize_with_mpmath.__init__",
+    "score": 0.26666666666666666,
+    "rank": 365
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ParsedPartitionSpec.get_partition_spec",
+    "score": 0.265625,
+    "rank": 367
+  },
+  {
+    "api_name": "jax._src.core.AbstractToken.join",
+    "score": 0.2653061224489796,
+    "rank": 368
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.__init__",
+    "score": 0.2653061224489796,
+    "rank": 368
+  },
+  {
+    "api_name": "jax._src.core.TraceStack.__init__",
+    "score": 0.2653061224489796,
+    "rank": 368
+  },
+  {
+    "api_name": "jax._src.core.Tracer.traceback",
+    "score": 0.2653061224489796,
+    "rank": 368
+  },
+  {
+    "api_name": "jax._src.earray.EArray.sharding",
+    "score": 0.2653061224489796,
+    "rank": 368
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.sublift",
+    "score": 0.2653061224489796,
+    "rank": 368
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.DeviceAssignmentMismatch._str",
+    "score": 0.2653061224489796,
+    "rank": 368
+  },
+  {
+    "api_name": "jax._src.profiler._PerfettoServer.do_GET",
+    "score": 0.2653061224489796,
+    "rank": 368
+  },
+  {
+    "api_name": "jax._src.image.scale.ResizeMethod.from_string",
+    "score": 0.26506024096385544,
+    "rank": 376
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc.accumulate",
+    "score": 0.26495726495726496,
+    "rank": 377
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.delete",
+    "score": 0.2641509433962264,
+    "rank": 378
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateRef.get",
+    "score": 0.2641509433962264,
+    "rank": 378
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.all_integer",
+    "score": 0.2641509433962264,
+    "rank": 378
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.all_unsigned",
+    "score": 0.2641509433962264,
+    "rank": 378
+  },
+  {
+    "api_name": "jax._src.util.OrderedSet.add",
+    "score": 0.2641509433962264,
+    "rank": 378
+  },
+  {
+    "api_name": "jax._src.lax.parallel.XeinsumSpecParser.parse_arg",
+    "score": 0.2631578947368421,
+    "rank": 383
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase.assertMultiLineStrippedEqual",
+    "score": 0.2631578947368421,
+    "rank": 383
+  },
+  {
+    "api_name": "jax._src.checkify.Error.get_exception",
+    "score": 0.26262626262626265,
+    "rank": 385
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc.reduceat",
+    "score": 0.26262626262626265,
+    "rank": 385
+  },
+  {
+    "api_name": "jax._src.dispatch.RuntimeTokenSet.block_until_ready",
+    "score": 0.26229508196721313,
+    "rank": 387
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.mean",
+    "score": 0.26229508196721313,
+    "rank": 387
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.devices",
+    "score": 0.2608695652173913,
+    "rank": 389
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTrace.process_axis_index",
+    "score": 0.2608695652173913,
+    "rank": 389
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.replicate_trailing_dims",
+    "score": 0.2608695652173913,
+    "rank": 389
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.BaseTpuCluster.wait_for_coordinator",
+    "score": 0.2604166666666667,
+    "rank": 392
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__dlpack__",
+    "score": 0.26,
+    "rank": 393
+  },
+  {
+    "api_name": "jax._src.internal_test_util.test_harnesses.Harness.dyn_fun",
+    "score": 0.26,
+    "rank": 393
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshExecutable.input_layouts",
+    "score": 0.26,
+    "rank": 393
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshExecutable.output_layouts",
+    "score": 0.26,
+    "rank": 393
+  },
+  {
+    "api_name": "jax._src.maps.XMapPrimitive.__init__",
+    "score": 0.26,
+    "rank": 393
+  },
+  {
+    "api_name": "jax._src.profiler._PerfettoServer.end_headers",
+    "score": 0.26,
+    "rank": 393
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.__reduce__",
+    "score": 0.26,
+    "rank": 393
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.shard_shape",
+    "score": 0.25984251968503935,
+    "rank": 400
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase._CheckAgainstNumpy",
+    "score": 0.2597402597402597,
+    "rank": 401
+  },
+  {
+    "api_name": "jax._src.core.DArray.__repr__",
+    "score": 0.25961538461538464,
+    "rank": 402
+  },
+  {
+    "api_name": "jax._src.checkify.Error.get",
+    "score": 0.25925925925925924,
+    "rank": 403
+  },
+  {
+    "api_name": "jax._src.core.Tracer._error_repr",
+    "score": 0.25925925925925924,
+    "rank": 403
+  },
+  {
+    "api_name": "jax._src.tree_util.Partial.__new__",
+    "score": 0.25882352941176473,
+    "rank": 405
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc.outer",
+    "score": 0.25806451612903225,
+    "rank": 406
+  },
+  {
+    "api_name": "jax._src.third_party.scipy.interpolate.RegularGridInterpolator._evaluate_linear",
+    "score": 0.2571428571428571,
+    "rank": 407
+  },
+  {
+    "api_name": "jax._src.state.indexing.Slice.tree_flatten",
+    "score": 0.25675675675675674,
+    "rank": 408
+  },
+  {
+    "api_name": "jax._src.debugger.web_debugger.WebDebugger.get_current_frame_data",
+    "score": 0.256198347107438,
+    "rank": 409
+  },
+  {
+    "api_name": "jax._src.internal_test_util.export_back_compat_test_util.CompatTestBase.load_testdata_nested",
+    "score": 0.2558139534883721,
+    "rank": 410
+  },
+  {
+    "api_name": "jax._src.internal_test_util.test_harnesses.Harness.__init__",
+    "score": 0.2558139534883721,
+    "rank": 410
+  },
+  {
+    "api_name": "jax._src.lax.lax._ArgMinMaxReducer.__call__",
+    "score": 0.2558139534883721,
+    "rank": 410
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__index__",
+    "score": 0.2553191489361702,
+    "rank": 413
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.rank",
+    "score": 0.2553191489361702,
+    "rank": 413
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.StaticDOMElement.render",
+    "score": 0.2553191489361702,
+    "rank": 413
+  },
+  {
+    "api_name": "jax._src.earray.EArray.__iter__",
+    "score": 0.2553191489361702,
+    "rank": 413
+  },
+  {
+    "api_name": "jax._src.maps.FrozenDict.__hash__",
+    "score": 0.2553191489361702,
+    "rank": 413
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding.device_set",
+    "score": 0.2553191489361702,
+    "rank": 413
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ParsedPartitionSpec.__eq__",
+    "score": 0.2553191489361702,
+    "rank": 413
+  },
+  {
+    "api_name": "jax._src.core.DConcreteArray.__init__",
+    "score": 0.2549019607843137,
+    "rank": 420
+  },
+  {
+    "api_name": "jax._src.core.Tracer.is_deleted",
+    "score": 0.2549019607843137,
+    "rank": 420
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef.update",
+    "score": 0.2549019607843137,
+    "rank": 420
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.do_pp",
+    "score": 0.2545454545454545,
+    "rank": 423
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.InputsHandler.__init__",
+    "score": 0.2545454545454545,
+    "rank": 423
+  },
+  {
+    "api_name": "jax._src.lax.lax.BIntRules.convert_from",
+    "score": 0.2545454545454545,
+    "rank": 423
+  },
+  {
+    "api_name": "jax._src.lax.lax.BIntRules.convert_to",
+    "score": 0.2545454545454545,
+    "rank": 423
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding._hlo_sharding_hash",
+    "score": 0.2545454545454545,
+    "rank": 423
+  },
+  {
+    "api_name": "jax._src.state.indexing.NDIndexer.is_dynamic_size",
+    "score": 0.2545454545454545,
+    "rank": 423
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__dlpack__",
+    "score": 0.2543859649122807,
+    "rank": 429
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.CodeViewer.update_code",
+    "score": 0.2543859649122807,
+    "rank": 429
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__repr__",
+    "score": 0.2542372881355932,
+    "rank": 431
+  },
+  {
+    "api_name": "jax._src.core.EvalTrace.process_custom_vjp_call",
+    "score": 0.2542372881355932,
+    "rank": 431
+  },
+  {
+    "api_name": "jax._src.pretty_printer._ConcatDoc.__init__",
+    "score": 0.2542372881355932,
+    "rank": 431
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc.__call__",
+    "score": 0.25333333333333335,
+    "rank": 434
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.CodeViewer._highlight_code",
+    "score": 0.2524271844660194,
+    "rank": 435
+  },
+  {
+    "api_name": "jax._src.checkify.Error._update",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.config.FlagHolder.__bool__",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.config._StateContextManager.__bool__",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.core.Literal.__repr__",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.core.Tracer.addressable_data",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.core.Tracer.addressable_shards",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.core.Tracer.global_shards",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.default",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.internal_test_util.export_back_compat_test_util.CompatTestBase.load_testdata",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.get_axis_primitive_batcher",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.lift",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.pure",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTracer.get_referent",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.default_process_primitive",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.TracerAsName.__eq__",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.ResultsHandler.__call__",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.lax.slicing.GatherScatterMode.from_any",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.maps.XMapPrimitive.get_bind_params",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.numpy.lax_numpy._ScalarMeta.__eq__",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.pallas.core.GridMapping.static_grid",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.pretty_printer._NestDoc.__init__",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.pretty_printer._SourceMapDoc.__init__",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.prng.KeyTy.itemsize",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.as_euler",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.state.indexing.Slice.__post_init__",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.all_floating",
+    "score": 0.25,
+    "rank": 436
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.RaggedAxis.move_stacked_axis",
+    "score": 0.24731182795698925,
+    "rank": 462
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ParsedPartitionSpec.from_user_input",
+    "score": 0.24561403508771928,
+    "rank": 463
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SPMDAxisContext.unsafe_axis_env",
+    "score": 0.24561403508771928,
+    "rank": 463
+  },
+  {
+    "api_name": "jax._src.state.types.RefView.shape",
+    "score": 0.24561403508771928,
+    "rank": 463
+  },
+  {
+    "api_name": "jax._src.checkify.FailedCheckError.tree_unflatten",
+    "score": 0.24528301886792453,
+    "rank": 466
+  },
+  {
+    "api_name": "jax._src.core.Sublevel.__lt__",
+    "score": 0.24489795918367346,
+    "rank": 467
+  },
+  {
+    "api_name": "jax._src.core._TempAxisName.__lt__",
+    "score": 0.24489795918367346,
+    "rank": 467
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh._internal_device_list",
+    "score": 0.24489795918367346,
+    "rank": 467
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.__repr__",
+    "score": 0.24489795918367346,
+    "rank": 467
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding.__repr__",
+    "score": 0.24489795918367346,
+    "rank": 467
+  },
+  {
+    "api_name": "jax._src.lax.parallel.XeinsumSpecParser.eof",
+    "score": 0.24444444444444444,
+    "rank": 472
+  },
+  {
+    "api_name": "jax._src.util.HashableFunction.__hash__",
+    "score": 0.24444444444444444,
+    "rank": 472
+  },
+  {
+    "api_name": "jax._src.sharding_impls.XLACompatibleSharding.is_equivalent_to",
+    "score": 0.2441860465116279,
+    "rank": 474
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.CodeViewer.__init__",
+    "score": 0.24285714285714285,
+    "rank": 475
+  },
+  {
+    "api_name": "jax._src.errors.ConcretizationTypeError.__init__",
+    "score": 0.24193548387096775,
+    "rank": 476
+  },
+  {
+    "api_name": "jax._src.ad_checkpoint.WrapHashably.__init__",
+    "score": 0.2413793103448276,
+    "rank": 477
+  },
+  {
+    "api_name": "jax._src.core.EvalTrace.process_custom_jvp_call",
+    "score": 0.2413793103448276,
+    "rank": 477
+  },
+  {
+    "api_name": "jax._src.clusters.ompi_cluster.OmpiCluster.get_coordinator_address",
+    "score": 0.24107142857142858,
+    "rank": 479
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.block_until_ready",
+    "score": 0.24074074074074073,
+    "rank": 480
+  },
+  {
+    "api_name": "jax._src.checkify.Error._add_placeholder_effects",
+    "score": 0.24074074074074073,
+    "rank": 480
+  },
+  {
+    "api_name": "jax._src.core.Trace.process_call",
+    "score": 0.24074074074074073,
+    "rank": 480
+  },
+  {
+    "api_name": "jax._src.core.Trace.process_map",
+    "score": 0.24074074074074073,
+    "rank": 480
+  },
+  {
+    "api_name": "jax._src.core.Tracer.unsafe_buffer_pointer",
+    "score": 0.24074074074074073,
+    "rank": 480
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.do_down",
+    "score": 0.24074074074074073,
+    "rank": 480
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.DeviceAssignmentMismatch.m_type_str",
+    "score": 0.24074074074074073,
+    "rank": 480
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.CustomJVPCallPrimitive.impl",
+    "score": 0.24,
+    "rank": 487
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.run",
+    "score": 0.24,
+    "rank": 487
+  },
+  {
+    "api_name": "jax._src.maps.AxisNamePos.__init__",
+    "score": 0.24,
+    "rank": 487
+  },
+  {
+    "api_name": "jax._src.maps.AxisNamePosWithRank.__init__",
+    "score": 0.24,
+    "rank": 487
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding.__reduce__",
+    "score": 0.24,
+    "rank": 487
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding._device_assignment",
+    "score": 0.24,
+    "rank": 487
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl._value",
+    "score": 0.2396694214876033,
+    "rank": 493
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.device_buffer",
+    "score": 0.2391304347826087,
+    "rank": 494
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.device_buffers",
+    "score": 0.2391304347826087,
+    "rank": 494
+  },
+  {
+    "api_name": "jax._src.core.NameGatheringSubst.__call__",
+    "score": 0.2391304347826087,
+    "rank": 494
+  },
+  {
+    "api_name": "jax._src.core.Trace.__repr__",
+    "score": 0.2391304347826087,
+    "rank": 494
+  },
+  {
+    "api_name": "jax._src.core.UnshapedArray.shape",
+    "score": 0.2391304347826087,
+    "rank": 494
+  },
+  {
+    "api_name": "jax._src.earray.EArray.copy",
+    "score": 0.2391304347826087,
+    "rank": 494
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.post_process_custom_jvp_call",
+    "score": 0.23893805309734514,
+    "rank": 500
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.make_sharded_array",
+    "score": 0.23863636363636365,
+    "rank": 501
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.TokenSet.create",
+    "score": 0.23809523809523808,
+    "rank": 502
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding.devices_indices_map",
+    "score": 0.23809523809523808,
+    "rank": 502
+  },
+  {
+    "api_name": "jax._src.debugger.web_debugger.WebDebugger.__init__",
+    "score": 0.2376237623762376,
+    "rank": 504
+  },
+  {
+    "api_name": "jax._src.core.ClosedJaxpr.pretty_print",
+    "score": 0.23728813559322035,
+    "rank": 505
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.PartialVal.get_aval",
+    "score": 0.23728813559322035,
+    "rank": 505
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.get_frame",
+    "score": 0.23684210526315788,
+    "rank": 507
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.PartialVal.__new__",
+    "score": 0.23655913978494625,
+    "rank": 508
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.is_deleted",
+    "score": 0.23636363636363636,
+    "rank": 509
+  },
+  {
+    "api_name": "jax._src.core.Tracer.block_until_ready",
+    "score": 0.23636363636363636,
+    "rank": 509
+  },
+  {
+    "api_name": "jax._src.core.Tracer.copy_to_host_async",
+    "score": 0.23636363636363636,
+    "rank": 509
+  },
+  {
+    "api_name": "jax._src.core.Tracer.is_fully_addressable",
+    "score": 0.23636363636363636,
+    "rank": 509
+  },
+  {
+    "api_name": "jax._src.core.Tracer.is_fully_replicated",
+    "score": 0.23636363636363636,
+    "rank": 509
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.do_p",
+    "score": 0.23636363636363636,
+    "rank": 509
+  },
+  {
+    "api_name": "jax._src.errors.TracerArrayConversionError.__init__",
+    "score": 0.23636363636363636,
+    "rank": 509
+  },
+  {
+    "api_name": "jax._src.errors.TracerBoolConversionError.__init__",
+    "score": 0.23636363636363636,
+    "rank": 509
+  },
+  {
+    "api_name": "jax._src.errors.TracerIntegerConversionError.__init__",
+    "score": 0.23636363636363636,
+    "rank": 509
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.local_sharded_result_handler",
+    "score": 0.23636363636363636,
+    "rank": 509
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc.at",
+    "score": 0.23595505617977527,
+    "rank": 519
+  },
+  {
+    "api_name": "jax._src.config._StateContextManager.__call__",
+    "score": 0.2358490566037736,
+    "rank": 520
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl._single_device_array_to_np_array",
+    "score": 0.23529411764705882,
+    "rank": 521
+  },
+  {
+    "api_name": "jax._src.config._StateContextManager._add_hooks",
+    "score": 0.23529411764705882,
+    "rank": 521
+  },
+  {
+    "api_name": "jax._src.core.Tracer._contents",
+    "score": 0.23529411764705882,
+    "rank": 521
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTracer.full_lower",
+    "score": 0.23529411764705882,
+    "rank": 521
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__bool__",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__complex__",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__float__",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__hex__",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__int__",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__oct__",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.config.Config.values",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.config._ThreadLocalStateCache.__init__",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.DebuggerView.write",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.CustomJVPException.__init__",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.CustomVJPException.__init__",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTrace.sublift",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTrace.sublift",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.size",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.complex",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.floating",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.integer",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.unsigned",
+    "score": 0.23404255319148937,
+    "rank": 525
+  },
+  {
+    "api_name": "jax._src.pallas.core.AbstractMemoryRef.__init__",
+    "score": 0.23333333333333334,
+    "rank": 543
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.GkeTpuCluster._get_process_id_in_slice",
+    "score": 0.23214285714285715,
+    "rank": 544
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.pipeline.PipelineArg.input_and_in_out",
+    "score": 0.23214285714285715,
+    "rank": 544
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace._current_truncated_name_stack",
+    "score": 0.23076923076923078,
+    "rank": 546
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.primitives.AsyncCopyDescriptor.__post_init__",
+    "score": 0.23076923076923078,
+    "rank": 546
+  },
+  {
+    "api_name": "jax._src.profiler._ProfileState.reset",
+    "score": 0.23076923076923078,
+    "rank": 546
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase.assertArraysAllClose",
+    "score": 0.23076923076923078,
+    "rank": 546
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding._from_parsed_pspec",
+    "score": 0.22950819672131148,
+    "rank": 550
+  },
+  {
+    "api_name": "jax._src.core.Primitive.impl",
+    "score": 0.22916666666666666,
+    "rank": 551
+  },
+  {
+    "api_name": "jax._src.linear_util.Store.val",
+    "score": 0.22916666666666666,
+    "rank": 551
+  },
+  {
+    "api_name": "jax._src.pallas.core.AbstractMemoryRef.__repr__",
+    "score": 0.22916666666666666,
+    "rank": 551
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde._setattr",
+    "score": 0.22916666666666666,
+    "rank": 551
+  },
+  {
+    "api_name": "jax._src.sharding_impls.DeviceIdSet.__init__",
+    "score": 0.22916666666666666,
+    "rank": 551
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding.__reduce__",
+    "score": 0.22916666666666666,
+    "rank": 551
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding.device_set",
+    "score": 0.22916666666666666,
+    "rank": 551
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.UnloadedPmapExecutable.build_execute_fun",
+    "score": 0.2288135593220339,
+    "rank": 558
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.ColabDebugger.__init__",
+    "score": 0.22857142857142856,
+    "rank": 559
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.BaseTpuCluster._get_num_slices",
+    "score": 0.22807017543859648,
+    "rank": 560
+  },
+  {
+    "api_name": "jax._src.core.EvalTrace.process_custom_transpose",
+    "score": 0.22807017543859648,
+    "rank": 560
+  },
+  {
+    "api_name": "jax._src.core.Trace.process_custom_transpose",
+    "score": 0.22807017543859648,
+    "rank": 560
+  },
+  {
+    "api_name": "jax._src.effects.JaxprInputEffect.replace",
+    "score": 0.22807017543859648,
+    "rank": 560
+  },
+  {
+    "api_name": "jax._src.dispatch.RuntimeTokenSet.get_token_input",
+    "score": 0.22727272727272727,
+    "rank": 564
+  },
+  {
+    "api_name": "jax._src.effects.JaxprInputEffect.__repr__",
+    "score": 0.22727272727272727,
+    "rank": 564
+  },
+  {
+    "api_name": "jax._src.pretty_printer._NestDoc.__repr__",
+    "score": 0.22727272727272727,
+    "rank": 564
+  },
+  {
+    "api_name": "jax._src.stages.Lowered.compile",
+    "score": 0.22727272727272727,
+    "rank": 564
+  },
+  {
+    "api_name": "jax._src.custom_batching.custom_vmap.__init__",
+    "score": 0.22641509433962265,
+    "rank": 568
+  },
+  {
+    "api_name": "jax._src.source_info_util.Transform.wrap",
+    "score": 0.22580645161290322,
+    "rank": 569
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.new_arg",
+    "score": 0.22522522522522523,
+    "rank": 570
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprStackFrame.to_jaxpr2",
+    "score": 0.225,
+    "rank": 571
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.process_custom_jvp_call",
+    "score": 0.2248062015503876,
+    "rank": 572
+  },
+  {
+    "api_name": "jax._src.api.ShapeDtypeStruct.__len__",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__len__",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.checkify.NaNError.__init__",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.core.UnshapedArray.__init__",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.ColabDebugger.run",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.DebuggerView.clear",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.DebuggerView.render",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.debugger.core.DebuggerFrame.tree_unflatten",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.debugger.core._DictWrapper.to_dict",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.JumbleTy.__repr__",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTrace.__init__",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.__reduce__",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.exp2",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.log10",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.log2",
+    "score": 0.22448979591836735,
+    "rank": 573
+  },
+  {
+    "api_name": "jax._src.core.Trace.process_custom_jvp_call",
+    "score": 0.22413793103448276,
+    "rank": 588
+  },
+  {
+    "api_name": "jax._src.distributed.State.shutdown",
+    "score": 0.22413793103448276,
+    "rank": 588
+  },
+  {
+    "api_name": "jax._src.core.UnshapedArray.__hash__",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.core.Var.__init__",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.core._TempAxisName.__repr__",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.effects.EffectTypeSet.contains",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.effects.JaxprInputEffect.__hash__",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.gfile_cache.GFileCache.__init__",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTracer.__init__",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.DeviceAssignmentMismatch._maybe_api_name",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.layout.Layout.__hash__",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ParsedPartitionSpec.__hash__",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef.__hash__",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.state.types.RefEffect.__hash__",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.util.HashableFunction.__repr__",
+    "score": 0.2222222222222222,
+    "rank": 590
+  },
+  {
+    "api_name": "jax._src.linear_util.WrappedFun.__init__",
+    "score": 0.22033898305084745,
+    "rank": 603
+  },
+  {
+    "api_name": "jax._src.core.ClosedJaxpr.map_jaxpr",
+    "score": 0.22,
+    "rank": 604
+  },
+  {
+    "api_name": "jax._src.core.MapPrimitive.process",
+    "score": 0.22,
+    "rank": 604
+  },
+  {
+    "api_name": "jax._src.core.MutableArray.__setitem__",
+    "score": 0.22,
+    "rank": 604
+  },
+  {
+    "api_name": "jax._src.core.ShapedArray._len",
+    "score": 0.22,
+    "rank": 604
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.DeviceAssignmentMismatch.device_ids",
+    "score": 0.22,
+    "rank": 604
+  },
+  {
+    "api_name": "jax._src.maps.XMapPrimitive.process",
+    "score": 0.22,
+    "rank": 604
+  },
+  {
+    "api_name": "jax._src.sharding_impls.XLACompatibleSharding._device_assignment",
+    "score": 0.22,
+    "rank": 604
+  },
+  {
+    "api_name": "jax._src.stages.Stage.in_avals",
+    "score": 0.22,
+    "rank": 604
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc.__init__",
+    "score": 0.21929824561403508,
+    "rank": 612
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTracer.__init__",
+    "score": 0.21875,
+    "rank": 613
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding._remake",
+    "score": 0.21839080459770116,
+    "rank": 614
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.DeviceAssignmentMismatch.source_info_str",
+    "score": 0.21818181818181817,
+    "rank": 615
+  },
+  {
+    "api_name": "jax._src.source_info_util.NameStack.transform",
+    "score": 0.21818181818181817,
+    "rank": 615
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTracer.aval",
+    "score": 0.21774193548387097,
+    "rank": 617
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.tobytes",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.core.DShapedArray.__hash__",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.FramePreview.clear",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTracer.__init__",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTracer._contents",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.linear_util.WrappedFun.__name__",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.pallas.core.AbstractMemoryRef.__hash__",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.__repr__",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.shape",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.inv",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.sharding_impls.DeviceIdSet.__iter__",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.test_util.ScalarShape.__getitem__",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.expm1",
+    "score": 0.21739130434782608,
+    "rank": 618
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.GkeTpuCluster._get_worker_list_in_slice",
+    "score": 0.21666666666666667,
+    "rank": 631
+  },
+  {
+    "api_name": "jax._src.core.Trace.process_custom_vjp_call",
+    "score": 0.21666666666666667,
+    "rank": 631
+  },
+  {
+    "api_name": "jax._src.linear_util.WrappedFun.wrap",
+    "score": 0.21666666666666667,
+    "rank": 631
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTrace.process_custom_transpose",
+    "score": 0.216,
+    "rank": 634
+  },
+  {
+    "api_name": "jax._src.config._StateContextManager._set",
+    "score": 0.21568627450980393,
+    "rank": 635
+  },
+  {
+    "api_name": "jax._src.core.Primitive.abstract_eval",
+    "score": 0.21568627450980393,
+    "rank": 635
+  },
+  {
+    "api_name": "jax._src.pretty_printer._BreakDoc.__init__",
+    "score": 0.21568627450980393,
+    "rank": 635
+  },
+  {
+    "api_name": "jax._src.pretty_printer._GroupDoc.__init__",
+    "score": 0.21568627450980393,
+    "rank": 635
+  },
+  {
+    "api_name": "jax._src.test_util._cached_property.__get__",
+    "score": 0.21568627450980393,
+    "rank": 635
+  },
+  {
+    "api_name": "jax._src.api.ShapeDtypeStruct.__init__",
+    "score": 0.2153846153846154,
+    "rank": 640
+  },
+  {
+    "api_name": "jax._src.pretty_printer.Doc.format",
+    "score": 0.21505376344086022,
+    "rank": 641
+  },
+  {
+    "api_name": "jax._src.array.Shard.device",
+    "score": 0.21428571428571427,
+    "rank": 642
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.core.MemoryRef.get_aval",
+    "score": 0.21428571428571427,
+    "rank": 642
+  },
+  {
+    "api_name": "jax._src.gfile_cache.GFileCache.put",
+    "score": 0.21374045801526717,
+    "rank": 644
+  },
+  {
+    "api_name": "jax._src.third_party.scipy.interpolate.RegularGridInterpolator._find_indices",
+    "score": 0.21374045801526717,
+    "rank": 644
+  },
+  {
+    "api_name": "jax._src.layout.Layout.__init__",
+    "score": 0.21311475409836064,
+    "rank": 646
+  },
+  {
+    "api_name": "jax._src.checkify.FailedCheckError.__str__",
+    "score": 0.2127659574468085,
+    "rank": 647
+  },
+  {
+    "api_name": "jax._src.core.MainTrace.__hash__",
+    "score": 0.2127659574468085,
+    "rank": 647
+  },
+  {
+    "api_name": "jax._src.core.MainTrace.__repr__",
+    "score": 0.2127659574468085,
+    "rank": 647
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__iter__",
+    "score": 0.2127659574468085,
+    "rank": 647
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.Residuals.__iter__",
+    "score": 0.2127659574468085,
+    "rank": 647
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.DynamicDiv.clear",
+    "score": 0.2127659574468085,
+    "rank": 647
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.IndexedAxisSize.__repr__",
+    "score": 0.2127659574468085,
+    "rank": 647
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.__reduce__",
+    "score": 0.2127659574468085,
+    "rank": 647
+  },
+  {
+    "api_name": "jax._src.prng.KeyTy.__hash__",
+    "score": 0.2127659574468085,
+    "rank": 647
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.zero",
+    "score": 0.2127659574468085,
+    "rank": 647
+  },
+  {
+    "api_name": "jax._src.sharding_impls.DeviceIdSet.__hash__",
+    "score": 0.2127659574468085,
+    "rank": 647
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef.__repr__",
+    "score": 0.2127659574468085,
+    "rank": 647
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.ExecuteReplicated._handle_token_bufs",
+    "score": 0.21212121212121213,
+    "rank": 659
+  },
+  {
+    "api_name": "jax._src.core.Primitive.def_abstract_eval",
+    "score": 0.21153846153846154,
+    "rank": 660
+  },
+  {
+    "api_name": "jax._src.core.TraceState.__init__",
+    "score": 0.21153846153846154,
+    "rank": 660
+  },
+  {
+    "api_name": "jax._src.core.UnshapedArray.str_short",
+    "score": 0.21153846153846154,
+    "rank": 660
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTracer._assert_live",
+    "score": 0.21153846153846154,
+    "rank": 660
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.is_multi_process",
+    "score": 0.21153846153846154,
+    "rank": 660
+  },
+  {
+    "api_name": "jax._src.pallas.core.AbstractMemoryRef.at_least_vspace",
+    "score": 0.21153846153846154,
+    "rank": 660
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.lowering.MosaicGridMapping.has_communication",
+    "score": 0.21153846153846154,
+    "rank": 660
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.integrate_box",
+    "score": 0.21153846153846154,
+    "rank": 660
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.__init__",
+    "score": 0.21153846153846154,
+    "rank": 660
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.reshape",
+    "score": 0.21153846153846154,
+    "rank": 660
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.transpose",
+    "score": 0.21153846153846154,
+    "rank": 660
+  },
+  {
+    "api_name": "jax._src.util.HashableWrapper.__init__",
+    "score": 0.21153846153846154,
+    "rank": 660
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.SemanticallyEqualShardings.__init__",
+    "score": 0.21052631578947367,
+    "rank": 672
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.PmapExecutable.__init__",
+    "score": 0.20967741935483872,
+    "rank": 673
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.identity",
+    "score": 0.208955223880597,
+    "rank": 674
+  },
+  {
+    "api_name": "jax._src.checkify.Error._replace",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__bool__",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__complex__",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__float__",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__hex__",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__index__",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__int__",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__oct__",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__setitem__",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.custom_batching.ClosedRule.__init__",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.RaggedAxis.size",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.TokenSet.__init__",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.lax.control_flow.solves._LinearSolveTuple.transpose",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.linear_util.WrappedFun.__hash__",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef._setitem",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.util.HashablePartial.__call__",
+    "score": 0.20833333333333334,
+    "rank": 675
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.post_process_map",
+    "score": 0.2076923076923077,
+    "rank": 691
+  },
+  {
+    "api_name": "jax._src.checkify.OOBError.__str__",
+    "score": 0.20754716981132076,
+    "rank": 692
+  },
+  {
+    "api_name": "jax._src.config.FlagHolder._set",
+    "score": 0.20754716981132076,
+    "rank": 692
+  },
+  {
+    "api_name": "jax._src.core.DShapedArray.at_least_vspace",
+    "score": 0.20754716981132076,
+    "rank": 692
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.Residuals.__init__",
+    "score": 0.20754716981132076,
+    "rank": 692
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.BaseTpuCluster._get_slice_id",
+    "score": 0.20689655172413793,
+    "rank": 696
+  },
+  {
+    "api_name": "jax._src.internal_test_util.test_harnesses.Limitation.__init__",
+    "score": 0.20689655172413793,
+    "rank": 696
+  },
+  {
+    "api_name": "jax._src.lax.lax.BIntRules.physical_element_aval",
+    "score": 0.20689655172413793,
+    "rank": 696
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.addressable_data",
+    "score": 0.20689655172413793,
+    "rank": 696
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.core.PrefetchScalarGridSpec.__init__",
+    "score": 0.20588235294117646,
+    "rank": 700
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.TokenSet.__len__",
+    "score": 0.20454545454545456,
+    "rank": 701
+  },
+  {
+    "api_name": "jax._src.lax.lax._ArgMinMaxReducer.__repr__",
+    "score": 0.20454545454545456,
+    "rank": 701
+  },
+  {
+    "api_name": "jax._src.maps.FrozenDict.__len__",
+    "score": 0.20454545454545456,
+    "rank": 701
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ParsedPartitionSpec.__len__",
+    "score": 0.20454545454545456,
+    "rank": 701
+  },
+  {
+    "api_name": "jax._src.source_info_util.NameStack.__len__",
+    "score": 0.20454545454545456,
+    "rank": 701
+  },
+  {
+    "api_name": "jax._src.state.types.RefEffect.__str__",
+    "score": 0.20454545454545456,
+    "rank": 701
+  },
+  {
+    "api_name": "jax._src.core.MutableArray.__getitem__",
+    "score": 0.20408163265306123,
+    "rank": 707
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh._repr",
+    "score": 0.20408163265306123,
+    "rank": 707
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding._device_assignment",
+    "score": 0.20408163265306123,
+    "rank": 707
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding._device_assignment",
+    "score": 0.20408163265306123,
+    "rank": 707
+  },
+  {
+    "api_name": "jax._src.core.ShapedArray.at_least_vspace",
+    "score": 0.2037037037037037,
+    "rank": 711
+  },
+  {
+    "api_name": "jax._src.internal_test_util.export_back_compat_test_util.CompatTestBase.default_jax_backend",
+    "score": 0.2037037037037037,
+    "rank": 711
+  },
+  {
+    "api_name": "jax._src.maps.EvaluationPlan.axis_subst",
+    "score": 0.2037037037037037,
+    "rank": 711
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase.assertNoWarnings",
+    "score": 0.2037037037037037,
+    "rank": 711
+  },
+  {
+    "api_name": "jax._src.tpu_custom_call.CostEstimate.to_json",
+    "score": 0.2037037037037037,
+    "rank": 711
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.CustomJVPCallPrimitive.bind",
+    "score": 0.20353982300884957,
+    "rank": 716
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.logical_sharding",
+    "score": 0.20353982300884957,
+    "rank": 716
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTrace.post_process_call",
+    "score": 0.2032520325203252,
+    "rank": 718
+  },
+  {
+    "api_name": "jax._src.stages.Compiled.__init__",
+    "score": 0.203125,
+    "rank": 719
+  },
+  {
+    "api_name": "jax._src.third_party.scipy.interpolate.RegularGridInterpolator.__init__",
+    "score": 0.2013888888888889,
+    "rank": 720
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.ndim",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.checkify.Error.__str__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.clusters.slurm_cluster.SlurmCluster.get_coordinator_address",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.core.MainTrace.__init__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.TokenSet.effects",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.TokenSet.subset",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.sublift",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTracer.__repr__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTracer.__init__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.ResultsHandler.__init__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.lax.stack.Stack.__repr__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.layout.Layout.__repr__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.maps.SerialLoop.__eq__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.maps._UniqueResourceName.__repr__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.local_mesh",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateRef.__repr__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.core.AbstractSemaphoreTy.__eq__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.pretty_printer._SourceMapDoc.__repr__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.physical_element_aval",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.ndim",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.concatenate",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.__repr__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef.set",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase.setUpClass",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.arcsin",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.arcsinh",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.util.Hashable.__eq__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.util.HashablePartial.__init__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.util.Unhashable.__eq__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.util.WrapKwArgs.__eq__",
+    "score": 0.2,
+    "rank": 721
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.__init__",
+    "score": 0.19718309859154928,
+    "rank": 751
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.addressable_data",
+    "score": 0.19672131147540983,
+    "rank": 752
+  },
+  {
+    "api_name": "jax._src.core.UnshapedArray.at_least_vspace",
+    "score": 0.19642857142857142,
+    "rank": 753
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl._copy_single_device_array_to_host_async",
+    "score": 0.19607843137254902,
+    "rank": 754
+  },
+  {
+    "api_name": "jax._src.core.DShapedArray.__init__",
+    "score": 0.19607843137254902,
+    "rank": 754
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.CustomVJPCallPrimitive.post_process",
+    "score": 0.19607843137254902,
+    "rank": 754
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc.__hash__",
+    "score": 0.19607843137254902,
+    "rank": 754
+  },
+  {
+    "api_name": "jax._src.api.ShapeDtypeStruct.layout",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.size",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.core.Jaxpr.__str__",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__repr__",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.earray.EArray.__repr__",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.lax.lax.Precision.__repr__",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateHelper.__getitem__",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.partition_spec.PartitionSpec.__reduce__",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.pjit.IgnoreKey.__eq__",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.aval",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.size",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.sharding_impls.DeviceIdSet.__len__",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.state.types.RefView.__getattr__",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.util.OrderedSet.__len__",
+    "score": 0.1956521739130435,
+    "rank": 758
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTrace.process_custom_jvp_call",
+    "score": 0.19548872180451127,
+    "rank": 772
+  },
+  {
+    "api_name": "jax._src.third_party.scipy.interpolate.RegularGridInterpolator.__call__",
+    "score": 0.1952662721893491,
+    "rank": 773
+  },
+  {
+    "api_name": "jax._src.internal_test_util.test_harnesses.Harness.filter",
+    "score": 0.1951219512195122,
+    "rank": 774
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.process_custom_transpose",
+    "score": 0.19444444444444445,
+    "rank": 775
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Slerp.init",
+    "score": 0.19333333333333333,
+    "rank": 776
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.tan",
+    "score": 0.19327731092436976,
+    "rank": 777
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.tanh",
+    "score": 0.19327731092436976,
+    "rank": 777
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.__init__",
+    "score": 0.19298245614035087,
+    "rank": 779
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MismatchType.__str__",
+    "score": 0.19298245614035087,
+    "rank": 779
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding.__init__",
+    "score": 0.1927710843373494,
+    "rank": 781
+  },
+  {
+    "api_name": "jax._src.core.ClosedJaxpr._repr_pretty_",
+    "score": 0.19230769230769232,
+    "rank": 782
+  },
+  {
+    "api_name": "jax._src.core.Jaxpr._repr_pretty_",
+    "score": 0.19230769230769232,
+    "rank": 782
+  },
+  {
+    "api_name": "jax._src.core.MapPrimitive.post_process",
+    "score": 0.19230769230769232,
+    "rank": 782
+  },
+  {
+    "api_name": "jax._src.custom_transpose.custom_transpose.__init__",
+    "score": 0.19230769230769232,
+    "rank": 782
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.DynamicDiv.update",
+    "score": 0.19230769230769232,
+    "rank": 782
+  },
+  {
+    "api_name": "jax._src.earray.EArray.block_until_ready",
+    "score": 0.19230769230769232,
+    "rank": 782
+  },
+  {
+    "api_name": "jax._src.errors.NonConcreteBooleanIndexError.__init__",
+    "score": 0.19230769230769232,
+    "rank": 782
+  },
+  {
+    "api_name": "jax._src.numpy.lax_numpy._ScalarMeta.__instancecheck__",
+    "score": 0.19230769230769232,
+    "rank": 782
+  },
+  {
+    "api_name": "jax._src.pretty_printer._TextDoc.__repr__",
+    "score": 0.19230769230769232,
+    "rank": 782
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.block_until_ready",
+    "score": 0.19230769230769232,
+    "rank": 782
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef.at_least_vspace",
+    "score": 0.19230769230769232,
+    "rank": 782
+  },
+  {
+    "api_name": "jax._src.core.MutableArray.__init__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.core.Tracer.at",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.debugger.core._DictWrapper.__init__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.debugging.ShardingCallbackInfo.__init__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.earray.EArray.__init__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.LoweringRuleContext.replace",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.ModuleContext.replace",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.TracerAsName.__init__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.InputsHandler.__str__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla._thread_local_decorator.__call__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.interpreters.xla.TranslationContext.replace",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.lax.stack.Stack.__init__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateRef.__init__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.numpy.lax_numpy._ScalarMeta.__hash__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.primitives.AsyncCopyDescriptor.wait",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.partition_spec.PartitionSpec.__new__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.partition_spec.PartitionSpec.__repr__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.prng.KeyTy.name",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.random.PRNGSpec.__eq__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.single",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.sharding_impls.CanonicalizedParsedPartitionSpec.__repr__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding._preprocess",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ParsedPartitionSpec.__repr__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.boolean",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.tree_util._HashableCallableShim.__call__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.util.HashableFunction.__call__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.util.HashableFunction.__init__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.util.OrderedSet.__init__",
+    "score": 0.19148936170212766,
+    "rank": 793
+  },
+  {
+    "api_name": "jax._src.custom_batching.custom_vmap.__call__",
+    "score": 0.19117647058823528,
+    "rank": 821
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.from_euler",
+    "score": 0.1910828025477707,
+    "rank": 822
+  },
+  {
+    "api_name": "jax._src.lax.parallel.XeinsumSpecParser.maybe_take",
+    "score": 0.19047619047619047,
+    "rank": 823
+  },
+  {
+    "api_name": "jax._src.ad_util.Zero.from_value",
+    "score": 0.1896551724137931,
+    "rank": 824
+  },
+  {
+    "api_name": "jax._src.stages.XlaExecutable.cost_analysis",
+    "score": 0.1895424836601307,
+    "rank": 825
+  },
+  {
+    "api_name": "jax._src.core.MainTrace.with_cur_sublevel",
+    "score": 0.18867924528301888,
+    "rank": 826
+  },
+  {
+    "api_name": "jax._src.profiler.StepTraceAnnotation.__init__",
+    "score": 0.18867924528301888,
+    "rank": 826
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.custom_jvp.__init__",
+    "score": 0.18840579710144928,
+    "rank": 828
+  },
+  {
+    "api_name": "jax._src.pretty_printer._ColorDoc.__init__",
+    "score": 0.18823529411764706,
+    "rank": 829
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.default",
+    "score": 0.18791946308724833,
+    "rank": 830
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.named_rank",
+    "score": 0.1875,
+    "rank": 831
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.positional_rank",
+    "score": 0.1875,
+    "rank": 831
+  },
+  {
+    "api_name": "jax._src.core.Primitive.def_impl",
+    "score": 0.1875,
+    "rank": 831
+  },
+  {
+    "api_name": "jax._src.maps.FrozenDict.__init__",
+    "score": 0.1875,
+    "rank": 831
+  },
+  {
+    "api_name": "jax._src.maps._UniqueResourceName.__init__",
+    "score": 0.1875,
+    "rank": 831
+  },
+  {
+    "api_name": "jax._src.mesh._ThreadResourcesLocalState.__init__",
+    "score": 0.1875,
+    "rank": 831
+  },
+  {
+    "api_name": "jax._src.state.types.RefView.__setitem__",
+    "score": 0.1875,
+    "rank": 831
+  },
+  {
+    "api_name": "jax._src.util.HashableWrapper.__hash__",
+    "score": 0.1875,
+    "rank": 831
+  },
+  {
+    "api_name": "jax._src.checkify.Error._get_batched_exception",
+    "score": 0.18705035971223022,
+    "rank": 839
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.__new__",
+    "score": 0.18674698795180722,
+    "rank": 840
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.apply",
+    "score": 0.1864406779661017,
+    "rank": 841
+  },
+  {
+    "api_name": "jax._src.pallas.core.BlockSpec.__init__",
+    "score": 0.18627450980392157,
+    "rank": 842
+  },
+  {
+    "api_name": "jax._src.clusters.cluster.ClusterEnv.__init_subclass__",
+    "score": 0.18518518518518517,
+    "rank": 843
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.StaticDOMElement.append",
+    "score": 0.18518518518518517,
+    "rank": 843
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.TokenSet.items",
+    "score": 0.18518518518518517,
+    "rank": 843
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.is_fully_replicated",
+    "score": 0.18518518518518517,
+    "rank": 843
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.__init__",
+    "score": 0.18446601941747573,
+    "rank": 847
+  },
+  {
+    "api_name": "jax._src.core.ClosedJaxpr.in_avals",
+    "score": 0.1836734693877551,
+    "rank": 848
+  },
+  {
+    "api_name": "jax._src.core.ClosedJaxpr.out_avals",
+    "score": 0.1836734693877551,
+    "rank": 848
+  },
+  {
+    "api_name": "jax._src.core.TraceStack.next_level",
+    "score": 0.1836734693877551,
+    "rank": 848
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.StaticDOMElement.replace",
+    "score": 0.1836734693877551,
+    "rank": 848
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding._device_assignment",
+    "score": 0.1836734693877551,
+    "rank": 848
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ParsedPartitionSpec.user_spec",
+    "score": 0.1836734693877551,
+    "rank": 848
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding._device_assignment",
+    "score": 0.1836734693877551,
+    "rank": 848
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef._getitem",
+    "score": 0.1836734693877551,
+    "rank": 848
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef.get",
+    "score": 0.1836734693877551,
+    "rank": 848
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding.with_memory_kind",
+    "score": 0.18333333333333332,
+    "rank": 857
+  },
+  {
+    "api_name": "jax._src.linear_util.WrappedFun.call_wrapped",
+    "score": 0.18243243243243243,
+    "rank": 858
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__init__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.checkify.NaNError.__str__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.core.Trace.full_raise",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.CustomJVPCallPrimitive.post_process",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.internal_test_util.export_back_compat_test_util.CompatTestBase.run_current",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.UndefinedPrimal.__repr__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTrace.process_primitive",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.layout.DeviceLocalLayout.__repr__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.maps.FrozenDict.__repr__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateHelper.__repr__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.pretty_printer._BreakDoc.__repr__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.pretty_printer._ConcatDoc.__repr__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.pretty_printer._GroupDoc.__repr__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.tree_util.DictKey.__str__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.tree_util.FlattenedIndexKey.__str__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.tree_util.SequenceKey.__str__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.tree_util._HashableCallableShim.__repr__",
+    "score": 0.18181818181818182,
+    "rank": 859
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.post_process_custom_vjp_call_fwd",
+    "score": 0.18115942028985507,
+    "rank": 876
+  },
+  {
+    "api_name": "jax._src.core.Trace.__init__",
+    "score": 0.18032786885245902,
+    "rank": 877
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__array_module__",
+    "score": 0.18,
+    "rank": 878
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.DeviceAssignmentMismatch.platform",
+    "score": 0.18,
+    "rank": 878
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.set_bandwidth",
+    "score": 0.18,
+    "rank": 878
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding.addressable_devices",
+    "score": 0.18,
+    "rank": 878
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ShardingContext.axis_env",
+    "score": 0.18,
+    "rank": 878
+  },
+  {
+    "api_name": "jax._src.test_util.BufferDonationTestCase.assertDeleted",
+    "score": 0.18,
+    "rank": 878
+  },
+  {
+    "api_name": "jax._src.internal_test_util.test_harnesses.Harness.args_maker",
+    "score": 0.17857142857142858,
+    "rank": 884
+  },
+  {
+    "api_name": "jax._src.profiler._ProfileState.__init__",
+    "score": 0.17857142857142858,
+    "rank": 884
+  },
+  {
+    "api_name": "jax._src.api_util._HashableByObjectId.__hash__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.api_util._HashableWithStrictTypeEquality.__hash__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__str__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.tolist",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.core.ClosedJaxpr.__repr__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.core.ClosedJaxpr.__str__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.core.ConcreteArray.__hash__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.core.Sublevel.__repr__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.core._TempAxisName.__hash__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.custom_batching.ClosedRule.__str__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.TracerAsName.__hash__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.layout.DeviceLocalLayout.__hash__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.maps.FrozenDict.__iter__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.maps.SerialLoop.__hash__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.maps._UniqueResourceName.__hash__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.pjit.IgnoreKey.__hash__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ParsedPartitionSpec.__iter__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.tree_util._HashableCallableShim.__hash__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.util.Hashable.__hash__",
+    "score": 0.17777777777777778,
+    "rank": 886
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprStackFrame.to_jaxpr",
+    "score": 0.17763157894736842,
+    "rank": 905
+  },
+  {
+    "api_name": "jax._src.checkify.DivisionByZeroError.get_effect_type",
+    "score": 0.17647058823529413,
+    "rank": 906
+  },
+  {
+    "api_name": "jax._src.checkify.NaNError.get_effect_type",
+    "score": 0.17647058823529413,
+    "rank": 906
+  },
+  {
+    "api_name": "jax._src.core.Primitive.def_custom_bind",
+    "score": 0.17647058823529413,
+    "rank": 906
+  },
+  {
+    "api_name": "jax._src.core.Primitive.def_effectful_abstract_eval",
+    "score": 0.17647058823529413,
+    "rank": 906
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.DeviceAssignmentMismatch._dev_ids_plat_str",
+    "score": 0.17647058823529413,
+    "rank": 906
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.copy_to_host_async",
+    "score": 0.17647058823529413,
+    "rank": 906
+  },
+  {
+    "api_name": "jax._src.array.Shard.__repr__",
+    "score": 0.17543859649122806,
+    "rank": 912
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshExecutable.unsafe_call",
+    "score": 0.17543859649122806,
+    "rank": 912
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.PmapExecutable.unsafe_call",
+    "score": 0.17543859649122806,
+    "rank": 912
+  },
+  {
+    "api_name": "jax._src.source_info_util.NameStack.wrap_name",
+    "score": 0.17543859649122806,
+    "rank": 912
+  },
+  {
+    "api_name": "jax._src.ad_util.Zero.__repr__",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.api_util._HashableByObjectId.__eq__",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.core.AbstractValue.join",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.core.AbstractValue.update",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.names",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__len__",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__reduce__",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.core.Tracer.aval",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.core.Var.__lt__",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.CodeViewer.update",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.dispatch.RuntimeTokenSet.clear",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.internal_test_util.export_back_compat_test_util.CompatTestBase.serialize",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTracer.aval",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.frame",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.InputsHandler.__call__",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.empty",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc.__repr__",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.pjit._MostRecentPjitCallExecutable.__init__",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.dtype",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.__call__",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.n",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.pdf",
+    "score": 0.17391304347826086,
+    "rank": 916
+  },
+  {
+    "api_name": "jax._src.custom_transpose.custom_transpose.def_transpose",
+    "score": 0.17307692307692307,
+    "rank": 938
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh._flat_devices_set",
+    "score": 0.17307692307692307,
+    "rank": 938
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh._flat_devices_tuple",
+    "score": 0.17307692307692307,
+    "rank": 938
+  },
+  {
+    "api_name": "jax._src.numpy.lax_numpy._ScalarMeta.__call__",
+    "score": 0.17307692307692307,
+    "rank": 938
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.with_memory_kind",
+    "score": 0.1724137931034483,
+    "rank": 942
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.get_replicated",
+    "score": 0.171875,
+    "rank": 943
+  },
+  {
+    "api_name": "jax._src.config._StateContextManager.__init__",
+    "score": 0.17054263565891473,
+    "rank": 944
+  },
+  {
+    "api_name": "jax._src.core.DuplicateAxisNameError.__init__",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__reversed__",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.core._TempAxisName.__init__",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.core.bint.name",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.debugger.core._DictWrapper.tree_flatten",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.core.AbstractSemaphoreTy.__hash__",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.prng.PRNGImpl.__hash__",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.random.PRNGSpec.__hash__",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.random.PRNGSpec.__str__",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.magnitude",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.stages.XlaLowering.stablehlo",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.state.types.RefView.__getitem__",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.test_util._cached_property.__init__",
+    "score": 0.1702127659574468,
+    "rank": 945
+  },
+  {
+    "api_name": "jax._src.array.Shard.replica_id",
+    "score": 0.16981132075471697,
+    "rank": 958
+  },
+  {
+    "api_name": "jax._src.config.Config.__init__",
+    "score": 0.16981132075471697,
+    "rank": 958
+  },
+  {
+    "api_name": "jax._src.state.indexing.Slice.is_dynamic_size",
+    "score": 0.16981132075471697,
+    "rank": 958
+  },
+  {
+    "api_name": "jax._src.state.indexing.Slice.is_dynamic_start",
+    "score": 0.16981132075471697,
+    "rank": 958
+  },
+  {
+    "api_name": "jax._src.test_util.BufferDonationTestCase.assertNotDeleted",
+    "score": 0.16981132075471697,
+    "rank": 958
+  },
+  {
+    "api_name": "jax._src.internal_test_util.test_harnesses.Harness.dyn_args_maker",
+    "score": 0.1694915254237288,
+    "rank": 963
+  },
+  {
+    "api_name": "jax._src.source_info_util.NameStack.__add__",
+    "score": 0.1694915254237288,
+    "rank": 963
+  },
+  {
+    "api_name": "jax._src.source_info_util.NameStack.__radd__",
+    "score": 0.1694915254237288,
+    "rank": 963
+  },
+  {
+    "api_name": "jax._src.state.indexing.NDIndexer.__post_init__",
+    "score": 0.16939890710382513,
+    "rank": 966
+  },
+  {
+    "api_name": "jax._src.core.Jaxpr.__init__",
+    "score": 0.16901408450704225,
+    "rank": 967
+  },
+  {
+    "api_name": "jax._src.source_info_util.SourceInfo.replace",
+    "score": 0.16883116883116883,
+    "rank": 968
+  },
+  {
+    "api_name": "jax._src.custom_batching.custom_vmap.def_vmap",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.custom_vjp.__init__",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTracer.is_known",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.ExecuteReplicated.__call__",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTrace.pure",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.PmapComputation.__init__",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.layout.DeviceLocalLayout.__init__",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.pallas.core.GridSpec.get_grid_mapping",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.profiler._PerfettoServer.do_POST",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding.with_memory_kind",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.stages.XlaExecutable.input_layouts",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.stages.XlaExecutable.output_layouts",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.util.StrictABCMeta.register",
+    "score": 0.16666666666666666,
+    "rank": 969
+  },
+  {
+    "api_name": "jax._src.test_util.vectorize_with_mpmath.__call__",
+    "score": 0.1657142857142857,
+    "rank": 982
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.default_process_primitive",
+    "score": 0.16455696202531644,
+    "rank": 983
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.__init__",
+    "score": 0.1643835616438356,
+    "rank": 984
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.devices_indices_map",
+    "score": 0.16393442622950818,
+    "rank": 985
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.devices_indices_map",
+    "score": 0.16393442622950818,
+    "rank": 985
+  },
+  {
+    "api_name": "jax._src.sharding_impls.XLACompatibleSharding.devices_indices_map",
+    "score": 0.16393442622950818,
+    "rank": 985
+  },
+  {
+    "api_name": "jax._src.pallas.core.GridMapping.num_dynamic_grid_bounds",
+    "score": 0.16363636363636364,
+    "rank": 988
+  },
+  {
+    "api_name": "jax._src.source_info_util.NameStack.__getitem__",
+    "score": 0.16363636363636364,
+    "rank": 988
+  },
+  {
+    "api_name": "jax._src.stages.Specialized.__init__",
+    "score": 0.16363636363636364,
+    "rank": 988
+  },
+  {
+    "api_name": "jax._src.stages.Stage.in_tree",
+    "score": 0.16363636363636364,
+    "rank": 988
+  },
+  {
+    "api_name": "jax._src.util.OrderedSet.update",
+    "score": 0.16363636363636364,
+    "rank": 988
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc._accumulate_via_scan",
+    "score": 0.16336633663366337,
+    "rank": 993
+  },
+  {
+    "api_name": "jax._src.checkify.NaNError.tree_flatten",
+    "score": 0.16326530612244897,
+    "rank": 994
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.named_items",
+    "score": 0.16326530612244897,
+    "rank": 994
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.named_sizes",
+    "score": 0.16326530612244897,
+    "rank": 994
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.DebuggerView.update_frame",
+    "score": 0.16326530612244897,
+    "rank": 994
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.local_devices",
+    "score": 0.16326530612244897,
+    "rank": 994
+  },
+  {
+    "api_name": "jax._src.util.OrderedSet.__iter__",
+    "score": 0.16326530612244897,
+    "rank": 994
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.CustomVJPCallPrimitive.bind",
+    "score": 0.16216216216216217,
+    "rank": 1000
+  },
+  {
+    "api_name": "jax._src.sharding.Sharding.devices_indices_map",
+    "score": 0.16129032258064516,
+    "rank": 1001
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.log1p",
+    "score": 0.16129032258064516,
+    "rank": 1001
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTracer._origin_msg",
+    "score": 0.16080402010050251,
+    "rank": 1003
+  },
+  {
+    "api_name": "jax._src.clusters.ompi_cluster.OmpiCluster.get_process_count",
+    "score": 0.16071428571428573,
+    "rank": 1004
+  },
+  {
+    "api_name": "jax._src.clusters.ompi_cluster.OmpiCluster.get_process_id",
+    "score": 0.16071428571428573,
+    "rank": 1004
+  },
+  {
+    "api_name": "jax._src.clusters.slurm_cluster.SlurmCluster.get_process_count",
+    "score": 0.16071428571428573,
+    "rank": 1004
+  },
+  {
+    "api_name": "jax._src.clusters.slurm_cluster.SlurmCluster.get_process_id",
+    "score": 0.16071428571428573,
+    "rank": 1004
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.core.SemaphoreType.get_aval",
+    "score": 0.16071428571428573,
+    "rank": 1004
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.as_rotvec",
+    "score": 0.16071428571428573,
+    "rank": 1004
+  },
+  {
+    "api_name": "jax._src.stages.Compiled.as_text",
+    "score": 0.16071428571428573,
+    "rank": 1004
+  },
+  {
+    "api_name": "jax._src.stages.Compiled.cost_analysis",
+    "score": 0.16071428571428573,
+    "rank": 1004
+  },
+  {
+    "api_name": "jax._src.stages.Compiled.memory_analysis",
+    "score": 0.16071428571428573,
+    "rank": 1004
+  },
+  {
+    "api_name": "jax._src.stages.Lowered.cost_analysis",
+    "score": 0.16071428571428573,
+    "rank": 1004
+  },
+  {
+    "api_name": "jax._src.checkify.Error.tree_flatten",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.core.Trace.lift",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.core.Trace.pure",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.core.Trace.sublift",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.Residuals.tree_flatten",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.custom_jvp.defjvp",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.ModuleContext.new_channel",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTracer.aval",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh._local_mesh",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.pipeline.PipelineArg.tree_flatten",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.as_matrix",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.as_mrp",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.stages.XlaExecutable.call",
+    "score": 0.16,
+    "rank": 1014
+  },
+  {
+    "api_name": "jax._src.linear_util.Store.reset",
+    "score": 0.1590909090909091,
+    "rank": 1027
+  },
+  {
+    "api_name": "jax._src.tree_util.GetAttrKey.__str__",
+    "score": 0.1590909090909091,
+    "rank": 1027
+  },
+  {
+    "api_name": "jax._src.sharding.Sharding.addressable_devices_indices_map",
+    "score": 0.15873015873015872,
+    "rank": 1029
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshExecutable.__init__",
+    "score": 0.15841584158415842,
+    "rank": 1030
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.GceTpuCluster._get_process_id_in_slice",
+    "score": 0.15789473684210525,
+    "rank": 1031
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.process_call",
+    "score": 0.15730337078651685,
+    "rank": 1032
+  },
+  {
+    "api_name": "jax._src.checkify.FailedCheckError.tree_flatten",
+    "score": 0.1568627450980392,
+    "rank": 1033
+  },
+  {
+    "api_name": "jax._src.checkify.OOBError.tree_flatten",
+    "score": 0.1568627450980392,
+    "rank": 1033
+  },
+  {
+    "api_name": "jax._src.core.AbstractValue.at_least_vspace",
+    "score": 0.1568627450980392,
+    "rank": 1033
+  },
+  {
+    "api_name": "jax._src.core.MutableArray.__repr__",
+    "score": 0.1568627450980392,
+    "rank": 1033
+  },
+  {
+    "api_name": "jax._src.core.Trace.process_primitive",
+    "score": 0.1568627450980392,
+    "rank": 1033
+  },
+  {
+    "api_name": "jax._src.lax.parallel.XeinsumSpecParser.__init__",
+    "score": 0.1568627450980392,
+    "rank": 1033
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl._check_and_rearrange",
+    "score": 0.15675675675675677,
+    "rank": 1039
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.process_custom_vjp_call",
+    "score": 0.1566265060240964,
+    "rank": 1040
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprStackFrame.__init__",
+    "score": 0.15584415584415584,
+    "rank": 1041
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.dtype",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.core.ClosedJaxpr.eqns",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.core.TraceStack.pop",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.CodeViewer.clear",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.DebuggerView.read",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.FramePreview.render",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.DynamicDiv.tag",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.StaticDOMElement.__repr__",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.StaticDOMElement.__str__",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.debugger.web_debugger.WebDebugger.run",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.linear_util.EqualStore.reset",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.linear_util.EqualStore.val",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.linear_util.Store.__nonzero__",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.pretty_printer.Doc.__str__",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.itemsize",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.ndim",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.shape",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.state.types.RefView.dtype",
+    "score": 0.15555555555555556,
+    "rank": 1042
+  },
+  {
+    "api_name": "jax._src.clusters.ompi_cluster.OmpiCluster.get_local_process_id",
+    "score": 0.15517241379310345,
+    "rank": 1060
+  },
+  {
+    "api_name": "jax._src.clusters.slurm_cluster.SlurmCluster.get_local_process_id",
+    "score": 0.15517241379310345,
+    "rank": 1060
+  },
+  {
+    "api_name": "jax._src.config.FlagHolder.__init__",
+    "score": 0.15492957746478872,
+    "rank": 1062
+  },
+  {
+    "api_name": "jax._src.debugger.core._DictWrapper.tree_unflatten",
+    "score": 0.15384615384615385,
+    "rank": 1063
+  },
+  {
+    "api_name": "jax._src.errors.UnexpectedTracerError.__init__",
+    "score": 0.15384615384615385,
+    "rank": 1063
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh._local_devices_set",
+    "score": 0.15384615384615385,
+    "rank": 1063
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.tree_flatten",
+    "score": 0.15384615384615385,
+    "rank": 1063
+  },
+  {
+    "api_name": "jax._src.stages.Compiled.runtime_executable",
+    "score": 0.15384615384615385,
+    "rank": 1063
+  },
+  {
+    "api_name": "jax._src.state.types.RefView.is_dynamic_size",
+    "score": 0.15384615384615385,
+    "rank": 1063
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.FramePreview.update_frame",
+    "score": 0.15300546448087432,
+    "rank": 1069
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.process_custom_vjp_call",
+    "score": 0.15300546448087432,
+    "rank": 1069
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.UnloadedMeshExecutable.load",
+    "score": 0.15254237288135594,
+    "rank": 1071
+  },
+  {
+    "api_name": "jax._src.ad_util.SymbolicZero.__repr__",
+    "score": 0.15217391304347827,
+    "rank": 1072
+  },
+  {
+    "api_name": "jax._src.core.NameGatheringSubst.__init__",
+    "score": 0.15217391304347827,
+    "rank": 1072
+  },
+  {
+    "api_name": "jax._src.core.ThreadLocalState.__init__",
+    "score": 0.15217391304347827,
+    "rank": 1072
+  },
+  {
+    "api_name": "jax._src.lax.parallel.XeinsumSpecParser.cur",
+    "score": 0.15217391304347827,
+    "rank": 1072
+  },
+  {
+    "api_name": "jax._src.linear_util.EqualStore.__init__",
+    "score": 0.15217391304347827,
+    "rank": 1072
+  },
+  {
+    "api_name": "jax._src.maps.FrozenDict.__getitem__",
+    "score": 0.15217391304347827,
+    "rank": 1072
+  },
+  {
+    "api_name": "jax._src.sharding_impls.ParsedPartitionSpec.__getitem__",
+    "score": 0.15217391304347827,
+    "rank": 1072
+  },
+  {
+    "api_name": "jax._src.source_info_util._SourceInfoContext.__init__",
+    "score": 0.15217391304347827,
+    "rank": 1072
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.inexact",
+    "score": 0.15217391304347827,
+    "rank": 1072
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.square",
+    "score": 0.15217391304347827,
+    "rank": 1072
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.process_primitive",
+    "score": 0.15204678362573099,
+    "rank": 1082
+  },
+  {
+    "api_name": "jax._src.pallas.core.GridSpec.__init__",
+    "score": 0.1518987341772152,
+    "rank": 1083
+  },
+  {
+    "api_name": "jax._src.stages.Lowered.compiler_ir",
+    "score": 0.15151515151515152,
+    "rank": 1084
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.ModuleContext.add_keepalive",
+    "score": 0.1509433962264151,
+    "rank": 1085
+  },
+  {
+    "api_name": "jax._src.sharding.Sharding.memory_kind",
+    "score": 0.1509433962264151,
+    "rank": 1085
+  },
+  {
+    "api_name": "jax._src.mesh.ResourceEnv.physical_resource_axes",
+    "score": 0.15,
+    "rank": 1087
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.core.TPUMemorySpace.__call__",
+    "score": 0.15,
+    "rank": 1087
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.with_memory_kind",
+    "score": 0.15,
+    "rank": 1087
+  },
+  {
+    "api_name": "jax._src.stages.Lowered.as_text",
+    "score": 0.15,
+    "rank": 1087
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.shape",
+    "score": 0.14893617021276595,
+    "rank": 1091
+  },
+  {
+    "api_name": "jax._src.core.ClosedJaxpr.effects",
+    "score": 0.14893617021276595,
+    "rank": 1091
+  },
+  {
+    "api_name": "jax._src.core.UnshapedArray.__ne__",
+    "score": 0.14893617021276595,
+    "rank": 1091
+  },
+  {
+    "api_name": "jax._src.core.bint.type",
+    "score": 0.14893617021276595,
+    "rank": 1091
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.CodeViewer.render",
+    "score": 0.14893617021276595,
+    "rank": 1091
+  },
+  {
+    "api_name": "jax._src.dispatch.RuntimeTokenSet.__init__",
+    "score": 0.14893617021276595,
+    "rank": 1091
+  },
+  {
+    "api_name": "jax._src.lax.stack.Stack.empty",
+    "score": 0.14893617021276595,
+    "rank": 1091
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.d",
+    "score": 0.14893617021276595,
+    "rank": 1091
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef.at",
+    "score": 0.14893617021276595,
+    "rank": 1091
+  },
+  {
+    "api_name": "jax._src.core.TraceStack.push",
+    "score": 0.14814814814814814,
+    "rank": 1100
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.lift",
+    "score": 0.14814814814814814,
+    "rank": 1100
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.pure",
+    "score": 0.14814814814814814,
+    "rank": 1100
+  },
+  {
+    "api_name": "jax._src.pretty_printer.Doc.__add__",
+    "score": 0.14814814814814814,
+    "rank": 1100
+  },
+  {
+    "api_name": "jax._src.sharding.Sharding.is_fully_addressable",
+    "score": 0.14814814814814814,
+    "rank": 1100
+  },
+  {
+    "api_name": "jax._src.sharding.Sharding.is_fully_replicated",
+    "score": 0.14814814814814814,
+    "rank": 1100
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.is_fully_replicated",
+    "score": 0.14814814814814814,
+    "rank": 1100
+  },
+  {
+    "api_name": "jax._src.stages.XlaExecutable.input_shardings",
+    "score": 0.14814814814814814,
+    "rank": 1100
+  },
+  {
+    "api_name": "jax._src.stages.XlaExecutable.output_shardings",
+    "score": 0.14814814814814814,
+    "rank": 1100
+  },
+  {
+    "api_name": "jax._src.stages.XlaLowering.cost_analysis",
+    "score": 0.14814814814814814,
+    "rank": 1100
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase.tearDownClass",
+    "score": 0.14814814814814814,
+    "rank": 1100
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.LoweringRuleContext.set_tokens_out",
+    "score": 0.14754098360655737,
+    "rank": 1111
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding.__init__",
+    "score": 0.14754098360655737,
+    "rank": 1111
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.weak_type",
+    "score": 0.14583333333333334,
+    "rank": 1113
+  },
+  {
+    "api_name": "jax._src.checkify.JaxException.tree_flatten",
+    "score": 0.14583333333333334,
+    "rank": 1113
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__array__",
+    "score": 0.14583333333333334,
+    "rank": 1113
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.current_frame",
+    "score": 0.14583333333333334,
+    "rank": 1113
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc.reduce",
+    "score": 0.14553990610328638,
+    "rank": 1117
+  },
+  {
+    "api_name": "jax._src.sharding.Sharding.shard_shape",
+    "score": 0.14545454545454545,
+    "rank": 1118
+  },
+  {
+    "api_name": "jax._src.stages.XlaExecutable.xla_extension_executable",
+    "score": 0.14545454545454545,
+    "rank": 1118
+  },
+  {
+    "api_name": "jax._src.state.discharge.Environment.write",
+    "score": 0.14545454545454545,
+    "rank": 1118
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase.assertAllClose",
+    "score": 0.14485981308411214,
+    "rank": 1121
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshComputation.__init__",
+    "score": 0.14473684210526316,
+    "rank": 1122
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.do_list",
+    "score": 0.14285714285714285,
+    "rank": 1123
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.ModuleContext.add_host_callback",
+    "score": 0.14285714285714285,
+    "rank": 1123
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.ParallelCallableInfo.out_axes",
+    "score": 0.14285714285714285,
+    "rank": 1123
+  },
+  {
+    "api_name": "jax._src.interpreters.xla._TranslationRuleAdapter.__init__",
+    "score": 0.14285714285714285,
+    "rank": 1123
+  },
+  {
+    "api_name": "jax._src.lax.lax.Precision._missing_",
+    "score": 0.14285714285714285,
+    "rank": 1123
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.from_rotvec",
+    "score": 0.14285714285714285,
+    "rank": 1123
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.with_memory_kind",
+    "score": 0.14285714285714285,
+    "rank": 1123
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SPMDAxisContext.extend_manual",
+    "score": 0.14285714285714285,
+    "rank": 1123
+  },
+  {
+    "api_name": "jax._src.sharding_impls.XLACompatibleSharding.shard_shape",
+    "score": 0.14285714285714285,
+    "rank": 1123
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.all_inexact",
+    "score": 0.14285714285714285,
+    "rank": 1123
+  },
+  {
+    "api_name": "jax._src.maps.EvaluationPlan.from_axis_resources",
+    "score": 0.14204545454545456,
+    "rank": 1133
+  },
+  {
+    "api_name": "jax._src.internal_test_util.test_harnesses.Limitation.filter",
+    "score": 0.14102564102564102,
+    "rank": 1134
+  },
+  {
+    "api_name": "jax._src.stages.Lowered.__init__",
+    "score": 0.14102564102564102,
+    "rank": 1134
+  },
+  {
+    "api_name": "jax._src.core.DropVar.__init__",
+    "score": 0.14035087719298245,
+    "rank": 1136
+  },
+  {
+    "api_name": "jax._src.effects.EffectTypeSet.add_type",
+    "score": 0.14035087719298245,
+    "rank": 1136
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprStackFrame.add_eqn",
+    "score": 0.14035087719298245,
+    "rank": 1136
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.PartialVal.known",
+    "score": 0.14035087719298245,
+    "rank": 1136
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.from_matrix",
+    "score": 0.14035087719298245,
+    "rank": 1136
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.from_mrp",
+    "score": 0.14035087719298245,
+    "rank": 1136
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.from_quat",
+    "score": 0.14035087719298245,
+    "rank": 1136
+  },
+  {
+    "api_name": "jax._src.source_info_util.Scope.wrap",
+    "score": 0.14035087719298245,
+    "rank": 1136
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.__getitem__",
+    "score": 0.14009661835748793,
+    "rank": 1144
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.do_quit",
+    "score": 0.14,
+    "rank": 1145
+  },
+  {
+    "api_name": "jax._src.stages.XlaExecutable.runtime_executable",
+    "score": 0.14,
+    "rank": 1145
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.numeric",
+    "score": 0.14,
+    "rank": 1145
+  },
+  {
+    "api_name": "jax._src.sharding.Sharding.with_memory_kind",
+    "score": 0.13793103448275862,
+    "rank": 1148
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTrace.process_custom_vjp_call",
+    "score": 0.1377245508982036,
+    "rank": 1149
+  },
+  {
+    "api_name": "jax._src.core.AbstractValue.str_short",
+    "score": 0.13725490196078433,
+    "rank": 1150
+  },
+  {
+    "api_name": "jax._src.core.Token.block_until_ready",
+    "score": 0.13725490196078433,
+    "rank": 1150
+  },
+  {
+    "api_name": "jax._src.earray.EArray.copy_to_host_async",
+    "score": 0.13725490196078433,
+    "rank": 1150
+  },
+  {
+    "api_name": "jax._src.state.types.RefView.at",
+    "score": 0.13725490196078433,
+    "rank": 1150
+  },
+  {
+    "api_name": "jax._src.test_util.vectorize_with_mpmath.nptomp",
+    "score": 0.13679245283018868,
+    "rank": 1154
+  },
+  {
+    "api_name": "jax._src.ad_checkpoint.WrapHashably.__hash__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.checkify.DivisionByZeroError.__str__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.core.DropVar.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.core.Primitive.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.core.SomeTracer.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.internal_test_util.test_harnesses.Harness.__str__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTracer._contents",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.layout.AutoLayout.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.maps.DotDotDotRepr.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.mesh.Mesh.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.nn.functions.Unspecified.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.partition_spec._UnconstrainedPartitionSingleton.__str__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.pjit.PytreeLeaf.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.pretty_printer._NilDoc.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.sharding_impls.UnspecifiedValue.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.stages.PytreeLeaf.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase.rng",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.tpu_custom_call.CustomCallBackendConfig.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.traceback_util.SimplifiedTraceback.__str__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.typing.DeprecatedArg.__repr__",
+    "score": 0.13636363636363635,
+    "rank": 1155
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.custom_jvp.__call__",
+    "score": 0.13574660633484162,
+    "rank": 1175
+  },
+  {
+    "api_name": "jax._src.core.Primitive.get_bind_params",
+    "score": 0.1346153846153846,
+    "rank": 1176
+  },
+  {
+    "api_name": "jax._src.core.ShapedArray.strip_named_shape",
+    "score": 0.1346153846153846,
+    "rank": 1176
+  },
+  {
+    "api_name": "jax._src.core.UnshapedArray.strip_weak_type",
+    "score": 0.1346153846153846,
+    "rank": 1176
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.StaticDOMElement.attr",
+    "score": 0.1346153846153846,
+    "rank": 1176
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.ModuleContext.axis_env",
+    "score": 0.1346153846153846,
+    "rank": 1176
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.TokenSet.get",
+    "score": 0.1346153846153846,
+    "rank": 1176
+  },
+  {
+    "api_name": "jax._src.test_util._LazyDtypes.all",
+    "score": 0.1346153846153846,
+    "rank": 1176
+  },
+  {
+    "api_name": "jax._src.util.OrderedSet.__contains__",
+    "score": 0.1346153846153846,
+    "rank": 1176
+  },
+  {
+    "api_name": "jax._src.state.indexing.NDIndexer.from_indices_shape",
+    "score": 0.13452914798206278,
+    "rank": 1184
+  },
+  {
+    "api_name": "jax._src.array.Shard.__init__",
+    "score": 0.13414634146341464,
+    "rank": 1185
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.ExecuteReplicated.__init__",
+    "score": 0.13380281690140844,
+    "rank": 1186
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.sharding",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.array.Shard.data",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.core.ClosedJaxpr.literals",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.core.EvalTrace.pure",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.core.NamedShape.positional",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.CodeViewer.append",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.DebuggerView.append",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.DebuggerView.update",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.FramePreview.append",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.FramePreview.update",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.linear_util.Store.__init__",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.mesh.ResourceEnv.loop_resource_axes",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding._to_xla_hlo_sharding",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.sharding_impls.XLACompatibleSharding._to_xla_hlo_sharding",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.negative",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.positive",
+    "score": 0.13333333333333333,
+    "rank": 1187
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshExecutable.create_cpp_call",
+    "score": 0.13270142180094788,
+    "rank": 1203
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.is_fully_addressable",
+    "score": 0.1320754716981132,
+    "rank": 1204
+  },
+  {
+    "api_name": "jax._src.array.ArrayImpl.is_fully_replicated",
+    "score": 0.1320754716981132,
+    "rank": 1204
+  },
+  {
+    "api_name": "jax._src.checkify.JaxException.tree_unflatten",
+    "score": 0.1320754716981132,
+    "rank": 1204
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTrace.post_process_custom_jvp_call",
+    "score": 0.1320754716981132,
+    "rank": 1204
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTrace.post_process_custom_vjp_call",
+    "score": 0.1320754716981132,
+    "rank": 1204
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.TracebackCaches.__init__",
+    "score": 0.1320754716981132,
+    "rank": 1204
+  },
+  {
+    "api_name": "jax._src.numpy.lax_numpy._ScalarMeta.__ne__",
+    "score": 0.1320754716981132,
+    "rank": 1204
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.is_fully_addressable",
+    "score": 0.1320754716981132,
+    "rank": 1204
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.is_fully_addressable",
+    "score": 0.1320754716981132,
+    "rank": 1204
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.is_fully_addressable",
+    "score": 0.1320754716981132,
+    "rank": 1204
+  },
+  {
+    "api_name": "jax._src.dispatch.RuntimeTokenSet.set_token_result",
+    "score": 0.13114754098360656,
+    "rank": 1214
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.PartialVal.unknown",
+    "score": 0.13114754098360656,
+    "rank": 1214
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding._to_xla_hlo_sharding",
+    "score": 0.13114754098360656,
+    "rank": 1214
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding._to_xla_hlo_sharding",
+    "score": 0.13114754098360656,
+    "rank": 1214
+  },
+  {
+    "api_name": "jax._src.stages.XlaLowering.compile",
+    "score": 0.13114754098360656,
+    "rank": 1214
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.process_custom_jvp_call",
+    "score": 0.1306532663316583,
+    "rank": 1219
+  },
+  {
+    "api_name": "jax._src.api_util._HashableByObjectId.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.api_util._HashableWithStrictTypeEquality.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.checkify.Error.throw",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.checkify.JaxException.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.core.DArray.__len__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.core.Token.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.core.bint.__str__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.UndefinedPrimal.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshComputation.stablehlo",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.PmapComputation.stablehlo",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla._thread_local_decorator.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.lax.lax.Precision.__str__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.lax.lax._ArgMinMaxReducer.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.maps.SerialLoop.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.numpy.array_methods._IndexUpdateHelper.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.core.AbstractSemaphoreTy.__repr__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.core.TPUMemorySpace.__str__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.prng.KeyTy.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.prng.KeyTy.__repr__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.prng.PRNGImpl.__str__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.random.PRNGSpec.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.stages.Wrapped.__call__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.tree_util._HashableCallableShim.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.util.Hashable.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.util.Unhashable.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.util.WrapKwArgs.__init__",
+    "score": 0.13043478260869565,
+    "rank": 1220
+  },
+  {
+    "api_name": "jax._src.internal_test_util.export_back_compat_test_util.CompatTestBase.run_serialized",
+    "score": 0.13020833333333334,
+    "rank": 1246
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc._reduceat_via_scan",
+    "score": 0.12992125984251968,
+    "rank": 1247
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTrace.process_map",
+    "score": 0.12987012987012986,
+    "rank": 1248
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding.is_fully_addressable",
+    "score": 0.12962962962962962,
+    "rank": 1249
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.post_process_call",
+    "score": 0.12871287128712872,
+    "rank": 1250
+  },
+  {
+    "api_name": "jax._src.maps.EvaluationPlan.vectorize_and_loop",
+    "score": 0.1282051282051282,
+    "rank": 1251
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.custom_vjp.defvjp",
+    "score": 0.12790697674418605,
+    "rank": 1252
+  },
+  {
+    "api_name": "jax._src.stages.Compiled.call",
+    "score": 0.1278538812785388,
+    "rank": 1253
+  },
+  {
+    "api_name": "jax._src.core.DShapedArray._len",
+    "score": 0.1276595744680851,
+    "rank": 1254
+  },
+  {
+    "api_name": "jax._src.core.Jaxpr.effects",
+    "score": 0.1276595744680851,
+    "rank": 1254
+  },
+  {
+    "api_name": "jax._src.effects.EffectTypeSet.__init__",
+    "score": 0.1276595744680851,
+    "rank": 1254
+  },
+  {
+    "api_name": "jax._src.lax.lax.Precision.name",
+    "score": 0.1276595744680851,
+    "rank": 1254
+  },
+  {
+    "api_name": "jax._src.lax.lax.Precision.value",
+    "score": 0.1276595744680851,
+    "rank": 1254
+  },
+  {
+    "api_name": "jax._src.stages.Executable.input_layouts",
+    "score": 0.1276595744680851,
+    "rank": 1254
+  },
+  {
+    "api_name": "jax._src.stages.Executable.output_layouts",
+    "score": 0.1276595744680851,
+    "rank": 1254
+  },
+  {
+    "api_name": "jax._src.clusters.cluster.ClusterEnv.auto_detect_unset_distributed_params",
+    "score": 0.12755102040816327,
+    "rank": 1261
+  },
+  {
+    "api_name": "jax._src.checkify.OOBError.tree_unflatten",
+    "score": 0.12727272727272726,
+    "rank": 1262
+  },
+  {
+    "api_name": "jax._src.clusters.cluster.ClusterEnv.get_process_count",
+    "score": 0.12727272727272726,
+    "rank": 1262
+  },
+  {
+    "api_name": "jax._src.clusters.cluster.ClusterEnv.get_process_id",
+    "score": 0.12727272727272726,
+    "rank": 1262
+  },
+  {
+    "api_name": "jax._src.clusters.cluster.ClusterEnv.is_env_present",
+    "score": 0.12727272727272726,
+    "rank": 1262
+  },
+  {
+    "api_name": "jax._src.clusters.ompi_cluster.OmpiCluster.is_env_present",
+    "score": 0.12727272727272726,
+    "rank": 1262
+  },
+  {
+    "api_name": "jax._src.clusters.slurm_cluster.SlurmCluster.is_env_present",
+    "score": 0.12727272727272726,
+    "rank": 1262
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.physical_sharding",
+    "score": 0.12698412698412698,
+    "rank": 1268
+  },
+  {
+    "api_name": "jax._src.sharding.Sharding.is_equivalent_to",
+    "score": 0.12698412698412698,
+    "rank": 1268
+  },
+  {
+    "api_name": "jax._src.earray.EArray.addressable_shards",
+    "score": 0.125,
+    "rank": 1270
+  },
+  {
+    "api_name": "jax._src.earray.EArray.global_shards",
+    "score": 0.125,
+    "rank": 1270
+  },
+  {
+    "api_name": "jax._src.maps.ResourceCount.to_local",
+    "score": 0.125,
+    "rank": 1270
+  },
+  {
+    "api_name": "jax._src.pjit.JitWrapped.specialize",
+    "score": 0.125,
+    "rank": 1270
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.memory_kind",
+    "score": 0.125,
+    "rank": 1270
+  },
+  {
+    "api_name": "jax._src.stages.Wrapped.lower",
+    "score": 0.125,
+    "rank": 1270
+  },
+  {
+    "api_name": "jax._src.test_util.JaxTestCase._CompileAndCheck",
+    "score": 0.12322274881516587,
+    "rank": 1276
+  },
+  {
+    "api_name": "jax._src.dispatch.RuntimeTokenSet.set_output_runtime_token",
+    "score": 0.12307692307692308,
+    "rank": 1277
+  },
+  {
+    "api_name": "jax._src.mesh.ResourceEnv.resource_axes",
+    "score": 0.12280701754385964,
+    "rank": 1278
+  },
+  {
+    "api_name": "jax._src.stages.Lowered.from_flat_info",
+    "score": 0.12264150943396226,
+    "rank": 1279
+  },
+  {
+    "api_name": "jax._src.core.AbstractToken.str_short",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.core.Jaxpr.constvars",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.core.Jaxpr.invars",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.core.Jaxpr.outvars",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.do_where",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.pjit.JitWrapped.eval_shape",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.tangent_dtype",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.as_quat",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.stages.Executable.as_text",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.stages.Executable.call",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.stages.Executable.cost_analysis",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.stages.Executable.memory_analysis",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.stages.Executable.runtime_executable",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.stages.Lowering.cost_analysis",
+    "score": 0.12244897959183673,
+    "rank": 1280
+  },
+  {
+    "api_name": "jax._src.numpy.index_tricks._AxisConcat.__getitem__",
+    "score": 0.12186379928315412,
+    "rank": 1294
+  },
+  {
+    "api_name": "jax._src.interpreters.batching.BatchTrace.process_map",
+    "score": 0.1214574898785425,
+    "rank": 1295
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.process_custom_transpose",
+    "score": 0.12077294685990338,
+    "rank": 1296
+  },
+  {
+    "api_name": "jax._src.checkify.JaxException.__init_subclass__",
+    "score": 0.12,
+    "rank": 1297
+  },
+  {
+    "api_name": "jax._src.core.Primitive.__init__",
+    "score": 0.12,
+    "rank": 1297
+  },
+  {
+    "api_name": "jax._src.core.Sublevel.__init__",
+    "score": 0.12,
+    "rank": 1297
+  },
+  {
+    "api_name": "jax._src.core.Tracer.__init__",
+    "score": 0.12,
+    "rank": 1297
+  },
+  {
+    "api_name": "jax._src.effects.JaxprInputEffect.__init__",
+    "score": 0.12,
+    "rank": 1297
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshExecutable.xla_extension_executable",
+    "score": 0.12,
+    "rank": 1297
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.PmapExecutable.xla_extension_executable",
+    "score": 0.12,
+    "rank": 1297
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.primitives.AsyncCopyDescriptor.is_remote",
+    "score": 0.12,
+    "rank": 1297
+  },
+  {
+    "api_name": "jax._src.sharding_impls.AUTO.__init__",
+    "score": 0.12,
+    "rank": 1297
+  },
+  {
+    "api_name": "jax._src.distributed.State.initialize",
+    "score": 0.11808118081180811,
+    "rank": 1306
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.process_map",
+    "score": 0.11787072243346007,
+    "rank": 1307
+  },
+  {
+    "api_name": "jax._src.core.Jaxpr.eqns",
+    "score": 0.11764705882352941,
+    "rank": 1308
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTrace.process_call",
+    "score": 0.11764705882352941,
+    "rank": 1308
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.physical_const",
+    "score": 0.11764705882352941,
+    "rank": 1308
+  },
+  {
+    "api_name": "jax._src.core.JaxprEqn.replace",
+    "score": 0.11724137931034483,
+    "rank": 1311
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding._to_xla_hlo_sharding",
+    "score": 0.11666666666666667,
+    "rank": 1312
+  },
+  {
+    "api_name": "jax._src.interpreters.ad.JVPTrace.process_call",
+    "score": 0.11538461538461539,
+    "rank": 1313
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.post_process_custom_jvp_call",
+    "score": 0.11538461538461539,
+    "rank": 1313
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.post_process_custom_vjp_call",
+    "score": 0.11538461538461539,
+    "rank": 1313
+  },
+  {
+    "api_name": "jax._src.layout.DeviceLocalLayout._to_xla_layout",
+    "score": 0.11538461538461539,
+    "rank": 1313
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding.memory_kind",
+    "score": 0.11538461538461539,
+    "rank": 1313
+  },
+  {
+    "api_name": "jax._src.sharding_impls.NamedSharding.memory_kind",
+    "score": 0.11538461538461539,
+    "rank": 1313
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PositionalSharding.memory_kind",
+    "score": 0.11538461538461539,
+    "rank": 1313
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding.memory_kind",
+    "score": 0.11538461538461539,
+    "rank": 1313
+  },
+  {
+    "api_name": "jax._src.effects.EffectTypeSet.filter_in",
+    "score": 0.11475409836065574,
+    "rank": 1321
+  },
+  {
+    "api_name": "jax._src.checkify.NaNError.tree_unflatten",
+    "score": 0.11320754716981132,
+    "rank": 1322
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshExecutable.input_shardings",
+    "score": 0.11320754716981132,
+    "rank": 1322
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MeshExecutable.output_shardings",
+    "score": 0.11320754716981132,
+    "rank": 1322
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.pipeline.PipelineArg.tree_unflatten",
+    "score": 0.11320754716981132,
+    "rank": 1322
+  },
+  {
+    "api_name": "jax._src.stages.Executable.input_shardings",
+    "score": 0.11320754716981132,
+    "rank": 1322
+  },
+  {
+    "api_name": "jax._src.stages.Executable.output_shardings",
+    "score": 0.11320754716981132,
+    "rank": 1322
+  },
+  {
+    "api_name": "jax._src.ad_util.SymbolicZero.__init__",
+    "score": 0.1111111111111111,
+    "rank": 1328
+  },
+  {
+    "api_name": "jax._src.ad_util.Zero.__init__",
+    "score": 0.1111111111111111,
+    "rank": 1328
+  },
+  {
+    "api_name": "jax._src.checkify.JaxException.get_effect_type",
+    "score": 0.1111111111111111,
+    "rank": 1328
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.BaseTpuCluster._get_process_id_in_slice",
+    "score": 0.1111111111111111,
+    "rank": 1328
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.DebuggerView.isatty",
+    "score": 0.1111111111111111,
+    "rank": 1328
+  },
+  {
+    "api_name": "jax._src.earray.EArray.addressable_data",
+    "score": 0.1111111111111111,
+    "rank": 1328
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.lowering.MosaicGridMapping.get_extra_args",
+    "score": 0.1111111111111111,
+    "rank": 1328
+  },
+  {
+    "api_name": "jax._src.scipy.stats.kde.gaussian_kde.__init__",
+    "score": 0.1111111111111111,
+    "rank": 1328
+  },
+  {
+    "api_name": "jax._src.state.types.AbstractRef.__init__",
+    "score": 0.1111111111111111,
+    "rank": 1328
+  },
+  {
+    "api_name": "jax._src.test_util.ScalarShape.__len__",
+    "score": 0.1111111111111111,
+    "rank": 1328
+  },
+  {
+    "api_name": "jax._src.clusters.cluster.ClusterEnv.get_coordinator_address",
+    "score": 0.109375,
+    "rank": 1338
+  },
+  {
+    "api_name": "jax._src.effects.EffectTypeSet.filter_not_in",
+    "score": 0.109375,
+    "rank": 1338
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.BaseTpuCluster._get_worker_list_in_slice",
+    "score": 0.10714285714285714,
+    "rank": 1340
+  },
+  {
+    "api_name": "jax._src.core.Jaxpr.debug_info",
+    "score": 0.10714285714285714,
+    "rank": 1340
+  },
+  {
+    "api_name": "jax._src.numpy.index_tricks._AxisConcat.__len__",
+    "score": 0.10638297872340426,
+    "rank": 1342
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.process_call",
+    "score": 0.10622710622710622,
+    "rank": 1343
+  },
+  {
+    "api_name": "jax._src.custom_derivatives.custom_vjp.__call__",
+    "score": 0.1056338028169014,
+    "rank": 1344
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTracer.full_lower",
+    "score": 0.10416666666666667,
+    "rank": 1345
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.MapTracer.full_lower",
+    "score": 0.10416666666666667,
+    "rank": 1345
+  },
+  {
+    "api_name": "jax._src.debugger.cli_debugger.CliDebugger.do_continue",
+    "score": 0.10204081632653061,
+    "rank": 1347
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.PartialVal.get_known",
+    "score": 0.1016949152542373,
+    "rank": 1348
+  },
+  {
+    "api_name": "jax._src.sharding_impls.GSPMDSharding._to_xla_hlo_sharding",
+    "score": 0.1016949152542373,
+    "rank": 1348
+  },
+  {
+    "api_name": "jax._src.stages.Lowering.as_text",
+    "score": 0.1016949152542373,
+    "rank": 1348
+  },
+  {
+    "api_name": "jax._src.stages.Lowering.compiler_ir",
+    "score": 0.1016949152542373,
+    "rank": 1348
+  },
+  {
+    "api_name": "jax._src.core.Tracer._origin_msg",
+    "score": 0.1,
+    "rank": 1352
+  },
+  {
+    "api_name": "jax._src.core.Tracer.get_referent",
+    "score": 0.1,
+    "rank": 1352
+  },
+  {
+    "api_name": "jax._src.lax.lax.BIntRules.logical_sharding",
+    "score": 0.1,
+    "rank": 1352
+  },
+  {
+    "api_name": "jax._src.lax.lax.BIntRules.physical_sharding",
+    "score": 0.1,
+    "rank": 1352
+  },
+  {
+    "api_name": "jax._src.stages.Lowering.compile",
+    "score": 0.1,
+    "rank": 1352
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.lowering.MosaicGridMapping.__init__",
+    "score": 0.09967845659163987,
+    "rank": 1357
+  },
+  {
+    "api_name": "jax._src.core.AbstractToken.at_least_vspace",
+    "score": 0.09803921568627451,
+    "rank": 1358
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc._at_via_scan",
+    "score": 0.09764309764309764,
+    "rank": 1359
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.core.PrefetchScalarGridSpec.get_grid_mapping",
+    "score": 0.09722222222222222,
+    "rank": 1360
+  },
+  {
+    "api_name": "jax._src.scipy.spatial.transform.Rotation.random",
+    "score": 0.0967741935483871,
+    "rank": 1361
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.post_process_map",
+    "score": 0.09491525423728814,
+    "rank": 1362
+  },
+  {
+    "api_name": "jax._src.test_util.vectorize_with_mpmath.mptonp",
+    "score": 0.09480122324159021,
+    "rank": 1363
+  },
+  {
+    "api_name": "jax._src.nn.initializers.Initializer.__call__",
+    "score": 0.0945945945945946,
+    "rank": 1364
+  },
+  {
+    "api_name": "jax._src.sharding_impls.PmapSharding.is_equivalent_to",
+    "score": 0.09333333333333334,
+    "rank": 1365
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.PartialVal.is_known",
+    "score": 0.09259259259259259,
+    "rank": 1366
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding.is_fully_addressable",
+    "score": 0.09259259259259259,
+    "rank": 1366
+  },
+  {
+    "api_name": "jax._src.sharding_impls.SingleDeviceSharding.is_fully_replicated",
+    "score": 0.09259259259259259,
+    "rank": 1366
+  },
+  {
+    "api_name": "jax._src.core.AbstractValue.strip_named_shape",
+    "score": 0.09090909090909091,
+    "rank": 1369
+  },
+  {
+    "api_name": "jax._src.core.AbstractValue.strip_weak_type",
+    "score": 0.09090909090909091,
+    "rank": 1369
+  },
+  {
+    "api_name": "jax._src.debugger.colab_debugger.DebuggerView.flush",
+    "score": 0.09090909090909091,
+    "rank": 1369
+  },
+  {
+    "api_name": "jax._src.stages.Executable.create_cpp_call",
+    "score": 0.08928571428571429,
+    "rank": 1372
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.DOMElement.render",
+    "score": 0.08888888888888889,
+    "rank": 1373
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.DynamicDOMElement.clear",
+    "score": 0.08888888888888889,
+    "rank": 1373
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.DynamicDOMElement.render",
+    "score": 0.08888888888888889,
+    "rank": 1373
+  },
+  {
+    "api_name": "jax._src.numpy.ufunc_api.ufunc._reduce_via_scan",
+    "score": 0.088,
+    "rank": 1376
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.process_custom_vjp_call",
+    "score": 0.08552631578947369,
+    "rank": 1377
+  },
+  {
+    "api_name": "jax._src.core.Tracer._assert_live",
+    "score": 0.0851063829787234,
+    "rank": 1378
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.ModuleContext.__init__",
+    "score": 0.08424908424908426,
+    "rank": 1379
+  },
+  {
+    "api_name": "jax._src.basearray.Array.dtype",
+    "score": 0.08333333333333333,
+    "rank": 1380
+  },
+  {
+    "api_name": "jax._src.basearray.Array.ndim",
+    "score": 0.08333333333333333,
+    "rank": 1380
+  },
+  {
+    "api_name": "jax._src.basearray.Array.sharding",
+    "score": 0.08333333333333333,
+    "rank": 1380
+  },
+  {
+    "api_name": "jax._src.basearray.Array.size",
+    "score": 0.08333333333333333,
+    "rank": 1380
+  },
+  {
+    "api_name": "jax._src.lax.lax.BIntRules.replicate_trailing_dims",
+    "score": 0.08333333333333333,
+    "rank": 1380
+  },
+  {
+    "api_name": "jax._src.typing.DuckTypedArray.dtype",
+    "score": 0.08333333333333333,
+    "rank": 1380
+  },
+  {
+    "api_name": "jax._src.typing.DuckTypedArray.shape",
+    "score": 0.08333333333333333,
+    "rank": 1380
+  },
+  {
+    "api_name": "jax._src.typing.SupportsDType.dtype",
+    "score": 0.08333333333333333,
+    "rank": 1380
+  },
+  {
+    "api_name": "jax._src.dtypes.ExtendedDType.type",
+    "score": 0.08163265306122448,
+    "rank": 1388
+  },
+  {
+    "api_name": "jax._src.basearray.Array.shape",
+    "score": 0.08,
+    "rank": 1389
+  },
+  {
+    "api_name": "jax._src.compilation_cache_interface.CacheInterface.get",
+    "score": 0.08,
+    "rank": 1389
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.DynamicDOMElement.append",
+    "score": 0.08,
+    "rank": 1389
+  },
+  {
+    "api_name": "jax._src.debugger.colab_lib.DynamicDOMElement.update",
+    "score": 0.08,
+    "rank": 1389
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.lowering.MosaicGridMapping.maybe_compress_grid",
+    "score": 0.08,
+    "rank": 1389
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.T",
+    "score": 0.08,
+    "rank": 1389
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.__getitem__",
+    "score": 0.08,
+    "rank": 1389
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.flatten",
+    "score": 0.0784313725490196,
+    "rank": 1396
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.ravel",
+    "score": 0.0784313725490196,
+    "rank": 1396
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.reshape",
+    "score": 0.0784313725490196,
+    "rank": 1396
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.squeeze",
+    "score": 0.0784313725490196,
+    "rank": 1396
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.swapaxes",
+    "score": 0.0784313725490196,
+    "rank": 1396
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.take",
+    "score": 0.0784313725490196,
+    "rank": 1396
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.transpose",
+    "score": 0.0784313725490196,
+    "rank": 1396
+  },
+  {
+    "api_name": "jax._src.test_util.numpy_with_mpmath.normalize",
+    "score": 0.07837837837837838,
+    "rank": 1403
+  },
+  {
+    "api_name": "jax._src.lax.lax.Precision.__new__",
+    "score": 0.078125,
+    "rank": 1404
+  },
+  {
+    "api_name": "jax._src.prng.PRNGKeyArray.at",
+    "score": 0.07692307692307693,
+    "rank": 1405
+  },
+  {
+    "api_name": "jax._src.basearray.Array.addressable_shards",
+    "score": 0.07547169811320754,
+    "rank": 1406
+  },
+  {
+    "api_name": "jax._src.basearray.Array.global_shards",
+    "score": 0.07547169811320754,
+    "rank": 1406
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.ConstantHandler.__call__",
+    "score": 0.07547169811320754,
+    "rank": 1406
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.post_process_custom_jvp_call",
+    "score": 0.07547169811320754,
+    "rank": 1406
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.post_process_custom_vjp_call",
+    "score": 0.07547169811320754,
+    "rank": 1406
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.convert_from",
+    "score": 0.07547169811320754,
+    "rank": 1406
+  },
+  {
+    "api_name": "jax._src.prng.KeyTyRules.convert_to",
+    "score": 0.07547169811320754,
+    "rank": 1406
+  },
+  {
+    "api_name": "jax._src.basearray.Array.is_fully_addressable",
+    "score": 0.07407407407407407,
+    "rank": 1413
+  },
+  {
+    "api_name": "jax._src.basearray.Array.is_fully_replicated",
+    "score": 0.07407407407407407,
+    "rank": 1413
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.post_process_call",
+    "score": 0.07407407407407407,
+    "rank": 1413
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.DynamicJaxprTrace.post_process_map",
+    "score": 0.07407407407407407,
+    "rank": 1413
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.pipeline.PipelineBody.__call__",
+    "score": 0.07407407407407407,
+    "rank": 1413
+  },
+  {
+    "api_name": "jax._src.internal_test_util.export_back_compat_test_util.CompatTestBase.run_one_test",
+    "score": 0.0728643216080402,
+    "rank": 1418
+  },
+  {
+    "api_name": "jax._src.basearray.Array.addressable_data",
+    "score": 0.07272727272727272,
+    "rank": 1419
+  },
+  {
+    "api_name": "jax._src.clusters.cloud_tpu_cluster.BaseTpuCluster.is_env_present",
+    "score": 0.07272727272727272,
+    "rank": 1419
+  },
+  {
+    "api_name": "jax._src.compilation_cache_interface.CacheInterface.put",
+    "score": 0.07272727272727272,
+    "rank": 1419
+  },
+  {
+    "api_name": "jax._src.tpu_custom_call.CustomCallBackendConfig.to_json",
+    "score": 0.07242990654205607,
+    "rank": 1422
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.process_map",
+    "score": 0.07052896725440806,
+    "rank": 1423
+  },
+  {
+    "api_name": "jax._src.clusters.cluster.ClusterEnv.get_local_process_id",
+    "score": 0.07017543859649122,
+    "rank": 1424
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.pipeline.MakePipelineRefs.__call__",
+    "score": 0.06666666666666667,
+    "rank": 1425
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.UnloadedPmapExecutable.from_hlo",
+    "score": 0.06607929515418502,
+    "rank": 1426
+  },
+  {
+    "api_name": "jax._src.partition_spec.PartitionSpec.__init__",
+    "score": 0.06521739130434782,
+    "rank": 1427
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.pipeline.MakePipelineAllocations.__call__",
+    "score": 0.06451612903225806,
+    "rank": 1428
+  },
+  {
+    "api_name": "jax._src.monitoring.EventListenerWithMetadata.__call__",
+    "score": 0.06349206349206349,
+    "rank": 1429
+  },
+  {
+    "api_name": "jax._src.interpreters.partial_eval.JaxprTrace.process_call",
+    "score": 0.05947136563876652,
+    "rank": 1430
+  },
+  {
+    "api_name": "jax._src.monitoring.EventDurationListenerWithMetadata.__call__",
+    "score": 0.058823529411764705,
+    "rank": 1431
+  },
+  {
+    "api_name": "jax._src.debugger.core.Debugger.__call__",
+    "score": 0.05555555555555555,
+    "rank": 1432
+  },
+  {
+    "api_name": "jax._src.numpy.lax_numpy.PadStatFunc.__call__",
+    "score": 0.05555555555555555,
+    "rank": 1432
+  },
+  {
+    "api_name": "jax._src.lax.lax.BIntRules.check_replicated_trailing_dims",
+    "score": 0.05263157894736842,
+    "rank": 1434
+  },
+  {
+    "api_name": "jax._src.interpreters.mlir.LoweringRule.__call__",
+    "score": 0.05194805194805195,
+    "rank": 1435
+  },
+  {
+    "api_name": "jax._src.numpy.reductions.CumulativeReduction.__call__",
+    "score": 0.05128205128205128,
+    "rank": 1436
+  },
+  {
+    "api_name": "jax._src.interpreters.pxla.UnloadedMeshExecutable.from_hlo",
+    "score": 0.046232876712328765,
+    "rank": 1437
+  },
+  {
+    "api_name": "jax._src.state.discharge.DischargeRule.__call__",
+    "score": 0.0449438202247191,
+    "rank": 1438
+  },
+  {
+    "api_name": "jax._src.interpreters.xla.TranslationRule.__call__",
+    "score": 0.042105263157894736,
+    "rank": 1439
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.pipeline.StartManualPrefetch.__call__",
+    "score": 0.034782608695652174,
+    "rank": 1440
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.pipeline.StartPipelinePrefetch.__call__",
+    "score": 0.034482758620689655,
+    "rank": 1441
+  },
+  {
+    "api_name": "jax._src.pallas.mosaic.pipeline.Pipeline.__call__",
+    "score": 0.02702702702702703,
+    "rank": 1442
+  }
+]

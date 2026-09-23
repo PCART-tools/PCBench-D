@@ -1,0 +1,51 @@
+    def draw_all(self):
+        """
+        Calculate any free parameters based on the current cmap and norm,
+        and do all the drawing.
+        """
+        if self.orientation == 'vertical':
+            if mpl.rcParams['ytick.minor.visible']:
+                self.minorticks_on()
+        else:
+            if mpl.rcParams['xtick.minor.visible']:
+                self.minorticks_on()
+        self._long_axis().set(label_position=self.ticklocation,
+                              ticks_position=self.ticklocation)
+        self._short_axis().set_ticks([])
+        self._short_axis().set_ticks([], minor=True)
+
+        # Set self._boundaries and self._values, including extensions.
+        # self._boundaries are the edges of each square of color, and
+        # self._values are the value to map into the norm to get the
+        # color:
+        self._process_values()
+        # Set self.vmin and self.vmax to first and last boundary, excluding
+        # extensions:
+        self.vmin, self.vmax = self._boundaries[self._inside][[0, -1]]
+        # Compute the X/Y mesh.
+        X, Y = self._mesh()
+        # draw the extend triangles, and shrink the inner axes to accommodate.
+        # also adds the outline path to self.outline spine:
+        self._do_extends()
+        lower, upper = self.vmin, self.vmax
+        if self._long_axis().get_inverted():
+            # If the axis is inverted, we need to swap the vmin/vmax
+            lower, upper = upper, lower
+        if self.orientation == 'vertical':
+            self.ax.set_xlim(0, 1)
+            self.ax.set_ylim(lower, upper)
+        else:
+            self.ax.set_ylim(0, 1)
+            self.ax.set_xlim(lower, upper)
+
+        # set up the tick locators and formatters.  A bit complicated because
+        # boundary norms + uniform spacing requires a manual locator.
+        self.update_ticks()
+
+        if self.filled:
+            ind = np.arange(len(self._values))
+            if self._extend_lower():
+                ind = ind[1:]
+            if self._extend_upper():
+                ind = ind[:-1]
+            self._add_solids(X, Y, self._values[ind, np.newaxis])

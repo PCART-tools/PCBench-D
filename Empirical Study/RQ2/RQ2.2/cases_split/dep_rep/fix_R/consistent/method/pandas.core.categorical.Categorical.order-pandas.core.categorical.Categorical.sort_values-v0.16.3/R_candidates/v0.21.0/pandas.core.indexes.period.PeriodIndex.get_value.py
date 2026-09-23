@@ -1,0 +1,42 @@
+    def get_value(self, series, key):
+        """
+        Fast lookup of value from 1-dimensional ndarray. Only use this if you
+        know what you're doing
+        """
+        s = com._values_from_object(series)
+        try:
+            return com._maybe_box(self,
+                                  super(PeriodIndex, self).get_value(s, key),
+                                  series, key)
+        except (KeyError, IndexError):
+            try:
+                asdt, parsed, reso = parse_time_string(key, self.freq)
+                grp = frequencies.Resolution.get_freq_group(reso)
+                freqn = frequencies.get_freq_group(self.freq)
+
+                vals = self._values
+
+                # if our data is higher resolution than requested key, slice
+                if grp < freqn:
+                    iv = Period(asdt, freq=(grp, 1))
+                    ord1 = iv.asfreq(self.freq, how='S').ordinal
+                    ord2 = iv.asfreq(self.freq, how='E').ordinal
+
+                    if ord2 < vals[0] or ord1 > vals[-1]:
+                        raise KeyError(key)
+
+                    pos = np.searchsorted(self._values, [ord1, ord2])
+                    key = slice(pos[0], pos[1] + 1)
+                    return series[key]
+                elif grp == freqn:
+                    key = Period(asdt, freq=self.freq).ordinal
+                    return com._maybe_box(self, self._engine.get_value(s, key),
+                                          series, key)
+                else:
+                    raise KeyError(key)
+            except TypeError:
+                pass
+
+            key = Period(key, self.freq).ordinal
+            return com._maybe_box(self, self._engine.get_value(s, key),
+                                  series, key)

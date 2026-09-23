@@ -1,0 +1,27 @@
+@@ -16,26 +18,2 @@
+             If `None` all rows are used.
+-
+-        See Also
+-        --------
+-        json_path_match : Extract the first match of json string with provided JSONPath
+-            expression.
+-
+-        Examples
+-        --------
+-        >>> df = pl.DataFrame(
+-        ...     {"json": ['{"a":1, "b": true}', None, '{"a":2, "b": false}']}
+-        ... )
+-        >>> dtype = pl.Struct([pl.Field("a", pl.Int64), pl.Field("b", pl.Boolean)])
+-        >>> df.with_columns(extracted=pl.col("json").str.json_extract(dtype))
+-        shape: (3, 2)
+-        ┌─────────────────────┬─────────────┐
+-        │ json                ┆ extracted   │
+-        │ ---                 ┆ ---         │
+-        │ str                 ┆ struct[2]   │
+-        ╞═════════════════════╪═════════════╡
+-        │ {"a":1, "b": true}  ┆ {1,true}    │
+-        │ null                ┆ {null,null} │
+-        │ {"a":2, "b": false} ┆ {2,false}   │
+-        └─────────────────────┴─────────────┘
+-
+         """

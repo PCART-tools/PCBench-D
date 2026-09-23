@@ -1,0 +1,6 @@
+    @Substitution(name='rolling')
+    @Appender(_doc_template)
+    @Appender(_shared_docs['var'])
+    def var(self, ddof=1, *args, **kwargs):
+        nv.validate_rolling_func('var', args, kwargs)
+        return super(Rolling, self).var(ddof=ddof, **kwargs)

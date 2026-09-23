@@ -1,0 +1,5 @@
+@_wraps(np.square, module='numpy')
+@partial(jit, inline=True)
+def square(x):
+  _check_arraylike("square", x)
+  return lax.integer_pow(x, 2)

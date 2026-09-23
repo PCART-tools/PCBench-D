@@ -1,0 +1,44 @@
+    def autofmt_xdate(self, bottom=0.2, rotation=30, ha='right', which=None):
+        """
+        Date ticklabels often overlap, so it is useful to rotate them
+        and right align them.  Also, a common use case is a number of
+        subplots with shared xaxes where the x-axis is date data.  The
+        ticklabels are often long, and it helps to rotate them on the
+        bottom subplot and turn them off on other subplots, as well as
+        turn off xlabels.
+
+        Parameters
+        ----------
+        bottom : scalar
+            The bottom of the subplots for :meth:`subplots_adjust`.
+
+        rotation : angle in degrees
+            The rotation of the xtick labels.
+
+        ha : string
+            The horizontal alignment of the xticklabels.
+
+        which : {None, 'major', 'minor', 'both'}
+            Selects which ticklabels to rotate. Default is None which works
+            the same as major.
+        """
+        allsubplots = all(hasattr(ax, 'is_last_row') for ax in self.axes)
+        if len(self.axes) == 1:
+            for label in self.axes[0].get_xticklabels(which=which):
+                label.set_ha(ha)
+                label.set_rotation(rotation)
+        else:
+            if allsubplots:
+                for ax in self.get_axes():
+                    if ax.is_last_row():
+                        for label in ax.get_xticklabels(which=which):
+                            label.set_ha(ha)
+                            label.set_rotation(rotation)
+                    else:
+                        for label in ax.get_xticklabels(which=which):
+                            label.set_visible(False)
+                        ax.set_xlabel('')
+
+        if allsubplots:
+            self.subplots_adjust(bottom=bottom)
+        self.stale = True

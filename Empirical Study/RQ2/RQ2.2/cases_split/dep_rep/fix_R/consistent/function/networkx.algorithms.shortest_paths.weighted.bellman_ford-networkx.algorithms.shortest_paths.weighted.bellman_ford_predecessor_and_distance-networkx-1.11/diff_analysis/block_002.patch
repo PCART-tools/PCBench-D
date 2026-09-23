@@ -1,0 +1,8 @@
+@@ -62,4 +4,5 @@
+     """
+-    if source not in G:
+-        raise KeyError("Node %s is not found in the graph" % source)
++    msg = "Function bellman_ford() is deprecated and will be removed" \
++        "in 2.1, use bellman_ford_predecessor_and_distance() instead."
++    _warnings.warn(msg, DeprecationWarning)
+  

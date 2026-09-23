@@ -1,0 +1,2 @@
+class ThreadSafetyError(Exception):
+    pass

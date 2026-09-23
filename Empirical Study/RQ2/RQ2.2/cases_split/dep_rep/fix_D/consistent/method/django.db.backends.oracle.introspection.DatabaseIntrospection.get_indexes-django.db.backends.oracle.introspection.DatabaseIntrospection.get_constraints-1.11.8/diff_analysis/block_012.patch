@@ -1,0 +1,5 @@
+@@ -97,3 +82,3 @@
+                     FROM user_constraints cons
+-                    WHERE cols.index_name = cons.index_name
++                    WHERE ind.index_name = cons.index_name
+                 ) AND cols.index_name = ind.index_name

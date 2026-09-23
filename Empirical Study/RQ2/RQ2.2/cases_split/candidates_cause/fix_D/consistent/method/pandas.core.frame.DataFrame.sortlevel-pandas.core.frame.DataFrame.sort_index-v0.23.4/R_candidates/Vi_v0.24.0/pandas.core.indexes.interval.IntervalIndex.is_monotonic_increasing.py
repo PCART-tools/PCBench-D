@@ -1,0 +1,7 @@
+    @cache_readonly
+    def is_monotonic_increasing(self):
+        """
+        Return True if the IntervalIndex is monotonic increasing (only equal or
+        increasing values), else False
+        """
+        return self._multiindex.is_monotonic_increasing

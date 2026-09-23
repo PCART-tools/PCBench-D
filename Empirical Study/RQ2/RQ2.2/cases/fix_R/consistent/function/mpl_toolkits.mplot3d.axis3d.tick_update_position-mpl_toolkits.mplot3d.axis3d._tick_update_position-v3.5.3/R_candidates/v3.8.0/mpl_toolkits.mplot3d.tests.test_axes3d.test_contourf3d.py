@@ -1,0 +1,11 @@
+@mpl3d_image_comparison(['contourf3d.png'], style='mpl20')
+def test_contourf3d():
+    fig = plt.figure()
+    ax = fig.add_subplot(projection='3d')
+    X, Y, Z = axes3d.get_test_data(0.05)
+    ax.contourf(X, Y, Z, zdir='z', offset=-100, cmap=cm.coolwarm)
+    ax.contourf(X, Y, Z, zdir='x', offset=-40, cmap=cm.coolwarm)
+    ax.contourf(X, Y, Z, zdir='y', offset=40, cmap=cm.coolwarm)
+    ax.set_xlim(-40, 40)
+    ax.set_ylim(-40, 40)
+    ax.set_zlim(-100, 100)

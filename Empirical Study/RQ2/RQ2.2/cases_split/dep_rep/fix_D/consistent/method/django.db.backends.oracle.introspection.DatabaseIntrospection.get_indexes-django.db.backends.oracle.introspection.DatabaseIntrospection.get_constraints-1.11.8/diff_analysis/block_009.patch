@@ -1,0 +1,5 @@
+@@ -70,3 +57,3 @@
+                 cons.table_name = UPPER(%s)
+-            ORDER BY cols.position
++            GROUP BY cons.constraint_name, rcols.table_name, rcols.column_name
+         """, [table_name])

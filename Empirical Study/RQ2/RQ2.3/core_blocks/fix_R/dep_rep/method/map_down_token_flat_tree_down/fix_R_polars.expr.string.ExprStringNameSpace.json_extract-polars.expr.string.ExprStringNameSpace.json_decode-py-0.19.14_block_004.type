@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Return statement
+   Changed the return expression from `wrap_expr(self._pyexpr.str_json_extract(dtype, infer_schema_length))` to `self.json_decode(dtype, infer_schema_length)`.
+# /detail
+# mode：Modify return-call statement (change called function)

@@ -1,0 +1,20 @@
+    def get_ticks_direction(self, minor=False):
+        """
+        Return an array of this Axis' tick directions.
+
+        Parameters
+        ----------
+        minor : bool, default: False
+            True to return the minor tick directions,
+            False to return the major tick directions.
+
+        Returns
+        -------
+        array of tick directions
+        """
+        if minor:
+            return np.array(
+                [tick._tickdir for tick in self.get_minor_ticks()])
+        else:
+            return np.array(
+                [tick._tickdir for tick in self.get_major_ticks()])

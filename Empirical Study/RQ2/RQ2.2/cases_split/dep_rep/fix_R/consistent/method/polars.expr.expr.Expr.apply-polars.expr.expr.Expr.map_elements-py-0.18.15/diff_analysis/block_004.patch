@@ -1,0 +1,72 @@
+@@ -50,71 +41,2 @@
+  
+-        Notes
+-        -----
+-        * Using ``apply`` is strongly discouraged as you will be effectively running
+-          python "for" loops. This will be very slow. Wherever possible you should
+-          strongly prefer the native expression API to achieve the best performance.
+-
+-        * If your function is expensive and you don't want it to be called more than
+-          once for a given input, consider applying an ``@lru_cache`` decorator to it.
+-          With suitable data you may achieve order-of-magnitude speedups (or more).
+-
+-        Warnings
+-        --------
+-        If ``return_dtype`` is not provided, this may lead to unexpected results.
+-        We allow this, but it is considered a bug in the user's query.
+-
+-        Examples
+-        --------
+-        >>> df = pl.DataFrame(
+-        ...     {
+-        ...         "a": [1, 2, 3, 1],
+-        ...         "b": ["a", "b", "c", "c"],
+-        ...     }
+-        ... )
+-
+-        In a selection context, the function is applied by row.
+-
+-        >>> df.with_columns(  # doctest: +SKIP
+-        ...     pl.col("a").apply(lambda x: x * 2).alias("a_times_2"),
+-        ... )
+-        shape: (4, 3)
+-        ┌─────┬─────┬───────────┐
+-        │ a   ┆ b   ┆ a_times_2 │
+-        │ --- ┆ --- ┆ ---       │
+-        │ i64 ┆ str ┆ i64       │
+-        ╞═════╪═════╪═══════════╡
+-        │ 1   ┆ a   ┆ 2         │
+-        │ 2   ┆ b   ┆ 4         │
+-        │ 3   ┆ c   ┆ 6         │
+-        │ 1   ┆ c   ┆ 2         │
+-        └─────┴─────┴───────────┘
+-
+-        It is better to implement this with an expression:
+-
+-        >>> df.with_columns(
+-        ...     (pl.col("a") * 2).alias("a_times_2"),
+-        ... )  # doctest: +IGNORE_RESULT
+-
+-        In a GroupBy context the function is applied by group:
+-
+-        >>> df.lazy().groupby("b", maintain_order=True).agg(
+-        ...     pl.col("a").apply(lambda x: x.sum())
+-        ... ).collect()
+-        shape: (3, 2)
+-        ┌─────┬─────┐
+-        │ b   ┆ a   │
+-        │ --- ┆ --- │
+-        │ str ┆ i64 │
+-        ╞═════╪═════╡
+-        │ a   ┆ 1   │
+-        │ b   ┆ 2   │
+-        │ c   ┆ 4   │
+-        └─────┴─────┘
+-
+-        It is better to implement this with an expression:
+-
+-        >>> df.groupby("b", maintain_order=True).agg(
+-        ...     pl.col("a").sum(),
+-        ... )  # doctest: +IGNORE_RESULT
+-
+         """

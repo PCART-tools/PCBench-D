@@ -1,0 +1,3 @@
+class CumulativeReduction(Protocol):
+  def __call__(self, a: ArrayLike, axis: Axis = None,
+               dtype: DTypeLike | None = None, out: None = None) -> Array: ...

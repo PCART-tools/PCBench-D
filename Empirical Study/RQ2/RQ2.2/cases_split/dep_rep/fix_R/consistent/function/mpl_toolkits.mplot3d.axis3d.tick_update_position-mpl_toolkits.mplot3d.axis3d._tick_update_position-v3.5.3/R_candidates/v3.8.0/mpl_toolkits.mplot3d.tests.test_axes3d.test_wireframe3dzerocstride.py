@@ -1,0 +1,6 @@
+@mpl3d_image_comparison(['wireframe3dzerocstride.png'], style='mpl20')
+def test_wireframe3dzerocstride():
+    fig = plt.figure()
+    ax = fig.add_subplot(projection='3d')
+    X, Y, Z = axes3d.get_test_data(0.05)
+    ax.plot_wireframe(X, Y, Z, rcount=13, ccount=0)

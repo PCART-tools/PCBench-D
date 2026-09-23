@@ -1,0 +1,4 @@
+@wraps(chunk.min)
+def min(a, axis=None, keepdims=False, split_every=None):
+    return reduction(a, chunk.min, chunk.min, axis=axis, keepdims=keepdims,
+                     dtype=a._dtype, split_every=split_every)

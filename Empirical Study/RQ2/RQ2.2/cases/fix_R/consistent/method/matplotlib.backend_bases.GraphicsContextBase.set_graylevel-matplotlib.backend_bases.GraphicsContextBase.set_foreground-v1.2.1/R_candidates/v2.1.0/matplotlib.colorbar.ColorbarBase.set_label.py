@@ -1,0 +1,7 @@
+    def set_label(self, label, **kw):
+        '''
+        Label the long axis of the colorbar
+        '''
+        self._label = '%s' % (label, )
+        self._labelkw = kw
+        self._set_label()

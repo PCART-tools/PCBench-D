@@ -1,0 +1,4 @@
+@@ -10,2 +15,2 @@
+         return (yield from self._loop.create_unix_connection(
+-            self._factory, self.path, **kwargs))
++            self._factory, self._path, **kwargs))

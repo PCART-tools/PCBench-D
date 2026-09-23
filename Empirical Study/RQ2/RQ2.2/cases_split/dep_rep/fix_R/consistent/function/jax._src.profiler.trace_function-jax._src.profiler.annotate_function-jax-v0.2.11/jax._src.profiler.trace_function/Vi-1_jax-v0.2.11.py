@@ -1,0 +1,36 @@
+def trace_function(func: Callable, name: str = None, **kwargs):
+  """Decorator that generates a trace event for the execution of a function.
+
+  For example:
+
+  >>> import jax, jax.numpy as jnp
+  >>>
+  >>> @jax.profiler.trace_function
+  >>> def f(x):
+  ...   return jnp.dot(x, x.T).block_until_ready()
+  >>>
+  >>> f(jnp.ones((1000, 1000))
+
+  This will cause an "f" event to show up on the trace timeline if the
+  function execution occurs while the process is being traced by TensorBoard.
+
+  Arguments can be passed to the decorator via :py:func:`functools.partial`.
+
+  >>> import jax, jax.numpy as jnp
+  >>> from functools import partial
+  >>>
+  >>> @partial(jax.profiler.trace_function, name="event_name")
+  >>> def f(x):
+  ...   return jnp.dot(x, x.T).block_until_ready()
+  >>>
+  >>> f(jnp.ones((1000, 1000))
+  """
+
+  name = name or getattr(func, '__qualname__', None)
+  name = name or func.__name__
+  @wraps(func)
+  def wrapper(*args, **kwargs):
+    with TraceContext(name, **kwargs):
+      return func(*args, **kwargs)
+    return wrapper
+  return wrapper

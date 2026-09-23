@@ -1,0 +1,16 @@
+# detail
+Number of changes: 3
+
+1. Modified | Assignment statement
+   Replaced the call to `expr.xreplace(...)` in the expression assigned to `expr` with a call to `rv_subs(expr, rvs)`.
+
+2. Added | Implementation code block
+   Added a probability-list assignment and conditional branches based on the type of `expr`.
+   This includes:
+   * Assignment statement: assign to `probs` a list of `self.prob_of(elem)` values for elements in `self.domain`;
+   * Conditional statement: test whether `expr` is a `Logic` or `Relational` instance and assign `parse_domain` and `bools` accordingly.
+
+3. Modified | Return statement
+   Changed the summation content of `return sum(...)` from a list comprehension based on `expr.xreplace(dict(elem)) * self.prob_of(elem)` to a list comprehension based on `Piecewise((prob * elem, blv), (S.Zero, True))` and `zip(probs, parse_domain, bools)`.
+# /detail
+# mode：Modify call-assignment statement; Add conditional statement; Modify return statement

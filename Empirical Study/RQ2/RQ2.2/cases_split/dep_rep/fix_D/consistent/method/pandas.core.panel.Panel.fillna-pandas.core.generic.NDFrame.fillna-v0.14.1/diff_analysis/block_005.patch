@@ -1,0 +1,7 @@
+@@ -92,2 +93,6 @@
+                     value = Series(value)
++                elif not com.is_list_like(value):
++                    pass
++                else:
++                    raise ValueError("invalid fill value with a %s" % type(value))
+  

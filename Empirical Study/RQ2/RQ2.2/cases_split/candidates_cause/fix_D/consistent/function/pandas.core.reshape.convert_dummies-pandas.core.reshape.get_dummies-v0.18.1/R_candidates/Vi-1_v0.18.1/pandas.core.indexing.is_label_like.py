@@ -1,0 +1,3 @@
+def is_label_like(key):
+    # select a label or row
+    return not isinstance(key, slice) and not is_list_like_indexer(key)

@@ -1,0 +1,4 @@
+@@ -1,1 +1,3 @@
++    @_api.deprecated(
++        "3.4", alternative="manager.set_window_title or GUI-specific methods")
+     def set_window_title(self, title):

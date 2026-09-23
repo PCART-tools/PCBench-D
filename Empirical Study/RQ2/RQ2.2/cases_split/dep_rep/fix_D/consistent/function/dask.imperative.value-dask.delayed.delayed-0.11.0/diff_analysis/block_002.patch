@@ -1,0 +1,8 @@
+@@ -18,2 +18,7 @@
+         deterministic keys. Default is False.
++    nout : int, optional
++        The number of outputs returned from calling the resulting ``Delayed``
++        object. If provided, the ``Delayed`` output of the call can be iterated
++        into ``nout`` objects, allowing for unpacking of results. By default
++        iteration over ``Delayed`` objects will error.
+  

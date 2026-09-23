@@ -1,0 +1,10 @@
+        def transform_affine(self, points):
+            # docstring inherited
+            # The major speed trap here is just converting to the
+            # points to an array in the first place.  If we can use
+            # more arrays upstream, that should help here.
+            if not isinstance(points, (np.ma.MaskedArray, np.ndarray)):
+                cbook._warn_external(
+                    f'A non-numpy array of type {type(points)} was passed in '
+                    f'for transformation, which results in poor performance.')
+            return self._transform_affine(points)

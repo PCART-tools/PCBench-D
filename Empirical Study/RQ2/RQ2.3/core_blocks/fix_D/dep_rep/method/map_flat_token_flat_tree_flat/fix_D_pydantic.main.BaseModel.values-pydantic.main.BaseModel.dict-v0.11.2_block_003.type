@@ -1,0 +1,8 @@
+# detail
+Change count: 1
+
+1. Modify | Return statement
+
+   Changed the dictionary comprehension from iterating directly over `self` and using `k` as the key to iterating over `self._iter(by_alias=by_alias)` and using `get_key(k)` as the key.
+# /detail
+# mode: Modify return statement（modify dictionary construction logic）

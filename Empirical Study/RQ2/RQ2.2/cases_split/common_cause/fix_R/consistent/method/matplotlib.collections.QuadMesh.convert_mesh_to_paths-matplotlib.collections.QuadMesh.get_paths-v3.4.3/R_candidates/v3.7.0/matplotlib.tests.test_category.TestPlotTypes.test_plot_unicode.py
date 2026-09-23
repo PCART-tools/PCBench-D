@@ -1,0 +1,6 @@
+    @pytest.mark.parametrize("plotter", PLOT_LIST, ids=PLOT_IDS)
+    def test_plot_unicode(self, plotter):
+        ax = plt.figure().subplots()
+        words = ['Здравствуйте', 'привет']
+        plotter(ax, words, [0, 1])
+        axis_test(ax.xaxis, words)

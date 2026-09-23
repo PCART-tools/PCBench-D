@@ -1,0 +1,5 @@
+@@ -31,3 +22,3 @@
+             for key, value in kwargs.items():
+-                assign(key.split('.'), value, config)
++                self._assign(key.split('.'), value, config, old=self.old)
+  

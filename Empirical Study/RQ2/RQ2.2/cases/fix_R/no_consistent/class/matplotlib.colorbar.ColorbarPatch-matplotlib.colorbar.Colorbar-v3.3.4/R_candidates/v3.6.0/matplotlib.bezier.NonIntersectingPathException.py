@@ -1,0 +1,2 @@
+class NonIntersectingPathException(ValueError):
+    pass

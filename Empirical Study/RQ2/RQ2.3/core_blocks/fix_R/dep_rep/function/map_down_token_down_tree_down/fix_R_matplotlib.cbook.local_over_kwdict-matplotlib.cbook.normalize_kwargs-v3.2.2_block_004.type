@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original implementation involving a local-variable assignment, iteration over `keys`, popping arguments from `kwargs`, conditional checks, a warning call, and returning `out` with directly returning `_local_over_kwdict(local_var, kwargs, *keys, IgnoredKeywordWarning)`.
+   The original implementation included:
+
+   * Assignment statement: assign `local_var` to `out`;
+   * Loop statement: iterate over `keys`;
+   * Conditional statements: test `kwarg_val` and `out`;
+   * Call statement: call `_warn_external`;
+   * Return statement: return `out`.
+
+   The new implementation includes:
+
+   * Return statement: return the result of `_local_over_kwdict(local_var, kwargs, *keys, IgnoredKeywordWarning)`.
+# /detail
+# mode：Modify implementation block (replace original implementation with return-call statement)

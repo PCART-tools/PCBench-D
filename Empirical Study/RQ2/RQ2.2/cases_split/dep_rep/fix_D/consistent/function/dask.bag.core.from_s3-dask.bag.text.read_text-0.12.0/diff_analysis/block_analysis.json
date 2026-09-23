@@ -1,0 +1,132 @@
+{
+  "case": "dask.bag.core.from_s3-dask.bag.text.read_text-0.12.0",
+  "fix_type": "fix_D",
+  "candidate_api": "dask.bag.text.read_text",
+  "error": null,
+  "threshold_10pct": 3.7,
+  "algorithms_meeting_threshold": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "delta_vi1_to_vi": {
+    "mapBased": {
+      "vi1_rank": 27,
+      "vi_rank": 19,
+      "delta": 8,
+      "exceeds_10pct": true
+    },
+    "tokenBased": {
+      "vi1_rank": 21,
+      "vi_rank": 14,
+      "delta": 7,
+      "exceeds_10pct": true
+    },
+    "treeBased": {
+      "vi1_rank": 27,
+      "vi_rank": 16,
+      "delta": 11,
+      "exceeds_10pct": true
+    }
+  },
+  "algorithms": [
+    "mapBased",
+    "tokenBased",
+    "treeBased"
+  ],
+  "baseline": {
+    "mapBased": {
+      "baseline_score": 0.3166,
+      "baseline_rank": 27,
+      "delta_baseline_to_vi": 8
+    },
+    "tokenBased": {
+      "baseline_score": 0.322,
+      "baseline_rank": 21,
+      "delta_baseline_to_vi": 7
+    },
+    "treeBased": {
+      "baseline_score": 0.3593,
+      "baseline_rank": 27,
+      "delta_baseline_to_vi": 11
+    }
+  },
+  "blocks": [
+    {
+      "block": "block_001",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 19,
+          "vi_score": 0.3985,
+          "restored_score": 0.3166,
+          "restored_rank": 27,
+          "delta_vi_to_restored": -8,
+          "distance_to_baseline": 0
+        },
+        "tokenBased": {
+          "vi_rank": 14,
+          "vi_score": 0.3882,
+          "restored_score": 0.3128,
+          "restored_rank": 21,
+          "delta_vi_to_restored": -7,
+          "distance_to_baseline": 0
+        },
+        "treeBased": {
+          "vi_rank": 16,
+          "vi_score": 0.4157,
+          "restored_score": 0.3555,
+          "restored_rank": 27,
+          "delta_vi_to_restored": -11,
+          "distance_to_baseline": 0
+        }
+      }
+    },
+    {
+      "block": "block_002",
+      "patch_ok": true,
+      "algorithms": {
+        "mapBased": {
+          "vi_rank": 19,
+          "vi_score": 0.3985,
+          "restored_score": 0.3985,
+          "restored_rank": 19,
+          "delta_vi_to_restored": 0,
+          "distance_to_baseline": 8
+        },
+        "tokenBased": {
+          "vi_rank": 14,
+          "vi_score": 0.3882,
+          "restored_score": 0.4024,
+          "restored_rank": 14,
+          "delta_vi_to_restored": 0,
+          "distance_to_baseline": 7
+        },
+        "treeBased": {
+          "vi_rank": 16,
+          "vi_score": 0.4157,
+          "restored_score": 0.4217,
+          "restored_rank": 15,
+          "delta_vi_to_restored": 1,
+          "distance_to_baseline": 12
+        }
+      }
+    }
+  ],
+  "core_blocks": {
+    "mapBased": [
+      "block_001"
+    ],
+    "tokenBased": [
+      "block_001"
+    ],
+    "treeBased": [
+      "block_001"
+    ]
+  },
+  "block_sign_labels": {
+    "map_up_token_up_tree_up": [
+      "block_001"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the original multiline-text preprocessing implementation in the method with a call to `self._prepare_multiline_text(...)`, assigning the returned values to `font, anchor, lines`.
+   The original implementation included:
+
+   * Conditional statements: check `direction == "ttb"`, `anchor is None`, `len(anchor) != 2`, and `anchor[1] in "tb"`, and either assign values or raise `ValueError`;
+   * Conditional statement: when `font is None`, call `self._getfont(font_size)` and assign the result to `font`;
+   * Assignment statements: initialize `widths`, `max_width`, `lines`, and `line_spacing`;
+   * Loop statement: iterate over `lines`, call `self.textlength(...)` to compute `line_width`, append it to `widths`, and update `max_width`;
+   * Conditional statement: adjust `top` according to `anchor[1]`.
+
+   The new implementation includes:
+
+   * Assignment statement: call `self._prepare_multiline_text(...)` with `xy`, `text`, `font`, `anchor`, `spacing`, `align`, `direction`, `features`, `language`, `stroke_width`, `embedded_color`, and `font_size`, and unpack the result into `font, anchor, lines`.
+# /detail
+# mode：Modify implementation block (replace conditional statement, for loop, and call-assignment statement with single call-assignment statement)

@@ -1,0 +1,10 @@
+# detail
+Number of changes: 1
+
+1. Added | Conditional statement
+   Added an `if radix is None` branch that calls `issue_deprecation_warning` and assigns `2` to `radix`.
+   This includes:
+   * Function call: call `issue_deprecation_warning` with a warning message and `version="0.19.8"`;
+   * Assignment statement: assign `2` to `radix`.
+# /detail
+# mode：Add conditional statement

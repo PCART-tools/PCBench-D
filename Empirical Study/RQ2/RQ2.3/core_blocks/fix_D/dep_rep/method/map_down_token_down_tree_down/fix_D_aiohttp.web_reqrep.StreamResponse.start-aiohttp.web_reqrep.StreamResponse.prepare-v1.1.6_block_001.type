@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Call statement
+   Replaced the logic that iterated over `request.match_info.apps` and called `app.on_response_prepare.send(request, self)` with a call to `request._prepare_hook(self)`.
+# /detail
+# mode：Modify call statement (replace loop-based calls with single call)

@@ -1,0 +1,11 @@
+@@ -61,2 +74,10 @@
+         # pass copy=False because any copying will be done in the astype above
++        if self._is_backward_compat_public_numeric_index:
++            # this block is needed so e.g. NumericIndex[int8].astype("int32") returns
++            # NumericIndex[int32] and not Int64Index with dtype int64.
++            # When Int64Index etc. are removed from the code base, removed this also.
++            if isinstance(dtype, np.dtype) and is_numeric_dtype(dtype):
++                return self._constructor(
++                    new_values, name=self.name, dtype=dtype, copy=False
++                )
+         return Index(new_values, name=self.name, dtype=new_values.dtype, copy=False)

@@ -1,0 +1,7 @@
+# detail
+Number of changes: 1
+
+1. Modified | Implementation code block
+   Replaced the calls to `self.set_cmap(mappable.get_cmap())` and `self.set_clim(mappable.get_clim())` with a call to `_log.debug('colorbar mappable changed')`.
+# /detail
+# mode：Modify implementation block (remove call statement and add call statement)

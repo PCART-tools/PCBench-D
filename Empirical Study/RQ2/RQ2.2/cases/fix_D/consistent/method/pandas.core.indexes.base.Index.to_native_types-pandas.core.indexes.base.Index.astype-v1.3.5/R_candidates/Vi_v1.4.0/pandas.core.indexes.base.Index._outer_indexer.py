@@ -1,0 +1,10 @@
+    @final
+    def _outer_indexer(
+        self: _IndexT, other: _IndexT
+    ) -> tuple[ArrayLike, npt.NDArray[np.intp], npt.NDArray[np.intp]]:
+        # Caller is responsible for ensuring other.dtype == self.dtype
+        sv = self._get_engine_target()
+        ov = other._get_engine_target()
+        joined_ndarray, lidx, ridx = libjoin.outer_join_indexer(sv, ov)
+        joined = self._from_join_target(joined_ndarray)
+        return joined, lidx, ridx

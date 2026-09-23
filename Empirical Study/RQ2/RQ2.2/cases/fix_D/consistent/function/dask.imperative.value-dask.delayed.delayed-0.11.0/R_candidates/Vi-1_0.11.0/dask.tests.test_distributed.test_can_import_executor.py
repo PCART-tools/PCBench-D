@@ -1,0 +1,2 @@
+def test_can_import_executor():
+    from dask.distributed import Executor  # noqa: F401

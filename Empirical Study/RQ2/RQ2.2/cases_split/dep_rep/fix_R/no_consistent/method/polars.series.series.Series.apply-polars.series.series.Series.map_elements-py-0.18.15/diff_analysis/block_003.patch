@@ -1,0 +1,30 @@
+@@ -41,29 +26,2 @@
+  
+-        Warnings
+-        --------
+-        If ``return_dtype`` is not provided, this may lead to unexpected results.
+-        We allow this, but it is considered a bug in the user's query.
+-
+-        Notes
+-        -----
+-        If your function is expensive and you don't want it to be called more than
+-        once for a given input, consider applying an ``@lru_cache`` decorator to it.
+-        With suitable data you may achieve order-of-magnitude speedups (or more).
+-
+-        Examples
+-        --------
+-        >>> s = pl.Series("a", [1, 2, 3])
+-        >>> s.apply(lambda x: x + 10)  # doctest: +SKIP
+-        shape: (3,)
+-        Series: 'a' [i64]
+-        [
+-                11
+-                12
+-                13
+-        ]
+-
+-        Returns
+-        -------
+-        Series
+-
+         """

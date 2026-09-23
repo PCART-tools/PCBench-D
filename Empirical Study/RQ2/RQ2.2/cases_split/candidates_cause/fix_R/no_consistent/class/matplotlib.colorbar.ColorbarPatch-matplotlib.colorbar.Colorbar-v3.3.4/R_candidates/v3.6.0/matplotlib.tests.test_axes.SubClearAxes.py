@@ -1,0 +1,2 @@
+    class SubClearAxes(ClearAxes):
+        pass
