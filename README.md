@@ -1,6 +1,6 @@
 # PCBench-D
 
-PCBench-D is a benchmark and replication package for studying how deprecated APIs and their replacements evolve across versions of Python libraries. It contains **830 maintainer-specified deprecated API → replacement API mappings** from **33 libraries**, **830 manually reviewed invocation cases**, and the data and scripts for an empirical study of replacement locality, cross-version rankings, and post-deprecation lifecycles.
+PCBench-D is a benchmark and replication package for studying how deprecated APIs and their replacements evolve across versions of Python libraries. It contains **830 maintainer-specified deprecated API → replacement API mappings** from **33 libraries**, **830 manually reviewed invocation cases**, and the data and scripts for an empirical study of replacement locality, cross-version rankings, and post-deprecation lifecycles. For details of the empirical study, please refer to our [arXiv paper](https://doi.org/10.48550/arXiv.2609.32618).
 
 The related [PCBench](https://github.com/PCART-tools/PCBench) benchmark focuses on Python API parameter compatibility. PCBench-D uses the same set of 33 libraries but studies deprecated API–replacement API relationships and the continued availability of deprecated APIs.
 
